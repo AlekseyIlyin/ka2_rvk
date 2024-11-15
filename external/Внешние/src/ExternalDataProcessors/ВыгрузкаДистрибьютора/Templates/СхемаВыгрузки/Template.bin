@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:tns="http://www.agentplus.ru/UD/FromDistributors" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.agentplus.ru/UD/FromDistributors" version="1.0.0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="Exchange.Data">
+        <xs:all minOccurs="0">
+          <xs:element name="List.Номенклатура" type="tns:CatalogList.Номенклатура"/>
+          <xs:element name="List.ТорговыеТочки" type="tns:CatalogList.апТорговыеТочки"/>   
+          <xs:element name="List.ОстаткиТоваров" type="tns:DocumentList.апКорректировкаОстатковДистрибьютора"/>
+          <xs:element name="List.Продажи" type="tns:DocumentList.ДокументПродажи"/>
+		  <xs:element name="List.Менеджеры" type="tns:CatalogList.Менеджеры"/>
+		  <xs:element name="List.ВыпискиИзБанка" type="tns:DocumentList.ВыпискиИзБанка"/>
+		  <xs:element name="List.Контрагенты" type="tns:CatalogList.Контрагенты"/>
+		  <xs:element name="List.Склады" type="tns:CatalogList.Склады"/>
+		  <xs:element name="List.Ошибки" type="tns:CatalogList.Ошибки"/>
+        </xs:all>
+        <xs:attribute name="Date" type="xs:dateTime" />
+		<xs:attribute name="BeginningOfPeriod" type="xs:dateTime" />
+		<xs:attribute name="EndOfPeriod" type="xs:dateTime" />
+		<xs:attribute name="DistributorCode" type="xs:string" />
+		<xs:attribute name="FileContents" type="xs:string" />
+		<xs:attribute name="ConfigNameVersion" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="TreatmentNameVersion" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="FTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="PasswordFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="UserFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="CatalogFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="PassiveFTPServer" type="xs:boolean" minOccurs="0"/>
+		<xs:attribute name="ReserveFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="ReservePasswordFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="ReserveUserFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="ReserveCatalogFTPServer" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="ReservePassiveFTPServer" type="xs:boolean" minOccurs="0"/>
+    </xs:complexType>
+    <xs:complexType name="CatalogObject.апТорговыеТочки">
+      <xs:all>
+        <xs:element name="УникальныйИдентификатор" type="tns:CatalogRef.апТорговыеТочки" minOccurs="0"/>
+        <xs:element name="Код" type="xs:string"/>
+        <xs:element name="Наименование" type="xs:string" minOccurs="0"/>
+        <xs:element name="НаименованиеПолное" type="xs:string" minOccurs="0"/>
+        <xs:element name="АдресДоставкиТТ" type="xs:string" minOccurs="0"/>
+        <xs:element name="АдресЭлектроннойПочтыТТ" type="xs:string" minOccurs="0"/>
+        <xs:element name="ТелефонТТ" type="xs:string" minOccurs="0"/>
+        <xs:element name="ФактАдресТТ" type="xs:string" minOccurs="0"/>
+        <xs:element name="Уровень" type="xs:decimal" minOccurs="0"/>
+        <xs:element name="ГоловнаяТТ" type="tns:CatalogRef.апТорговыеТочки" minOccurs="0"/>
+        <xs:element name="ПометкаУдаления" type="xs:boolean" minOccurs="0"/> 
+		<xs:element name="Менеджер" type="tns:CatalogRef.Менеджеры" minOccurs="0"/>		
+      </xs:all>
+    </xs:complexType>
+	 <xs:complexType name="CatalogObject.Контрагенты">
+      <xs:all>
+        <xs:element name="УникальныйИдентификатор" type="tns:CatalogRef.Контрагенты"/>
+        <xs:element name="Код" type="xs:string"/>
+        <xs:element name="Наименование" type="xs:string"/>
+        <xs:element name="ИНН" type="xs:string" minOccurs="0"/>
+        <xs:element name="НаименованиеПолное" type="xs:string" minOccurs="0"/>
+        <xs:element name="Уровень" type="xs:decimal" minOccurs="0"/>
+        <xs:element name="ГоловнойКонтрагент" type="tns:CatalogRef.Контрагент" minOccurs="0"/>
+        <xs:element name="КПП" type="xs:string" minOccurs="0"/> 
+		<xs:element name="ЮридическоеФизическоеЛицо" type="xs:string" minOccurs="0"/> 
+        <xs:element name="ПометкаУдаления" type="xs:boolean" minOccurs="0"/> 
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogObject.Менеджеры">
+      <xs:all>
+        <xs:element name="УникальныйИдентификатор" type="tns:CatalogRef.Менеджеры"/>
+		<xs:element name="Наименование" type="xs:string"/>
+		<xs:element name="ПометкаУдаления" type="xs:boolean"/>  
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogObject.Склады">
+      <xs:all>
+        <xs:element name="УникальныйИдентификатор" type="tns:CatalogRef.Склады"/>
+		<xs:element name="Наименование" type="xs:string"/>
+		<xs:element name="ПометкаУдаления" type="xs:boolean"/>  
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="CatalogObject.Номенклатура">
+    <xs:complexType name="CatalogObject.Ошибки">
+      <xs:all>
+        <xs:element name="Код" type="xs:string"/>
+        <xs:element name="Наименование" type="xs:string" minOccurs="0"/>
+        <xs:element name="ТипОбъекта" type="xs:string" minOccurs="0"/>	
+		<xs:element name="ОписаниеОшибки" type="xs:string" minOccurs="0"/>
+      </xs:all>
+    </xs:complexType>
+      <xs:all>
+        <xs:element name="УникальныйИдентификатор" type="tns:CatalogRef.Номенклатура"/>
+        <xs:element name="Код" type="xs:string"/>
+        <xs:element name="Наименование" type="xs:string"/>
+        <xs:element name="Артикул" type="xs:string" minOccurs="0" LocalName="Артикул"/>
+		<xs:element name="БазоваяЕдиницаИзмерения" type="xs:string" minOccurs="0" LocalName="Единица измерения"/>
+        <xs:element name="НаименованиеПолное" type="xs:string" minOccurs="0" LocalName="Полное наименование"/>      
+		<xs:element name="СтавкаНДС" type="xs:decimal" minOccurs="0" LocalName="Ставка НДС"/>      
+        <xs:element name="ПометкаУдаления" type="xs:boolean" minOccurs="0"/>
+		<xs:element name="ШтрихКоды" type="tns:CatalogTabularSectionRow.Номенклатура.ШтрихКоды" minOccurs="0" maxOccurs="99999" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogTabularSectionRow.Номенклатура.ШтрихКоды">
+      <xs:all>
+        <xs:element name="ШтрихКод" type="xs:string" minOccurs="0"/>
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentObject.апКорректировкаОстатковДистрибьютора">
+      <xs:all>
+        <xs:element name="Период" type="xs:dateTime"/>
+        <xs:element name="Товары" type="tns:DocumentTabularSectionRow.апКорректировкаОстатковДистрибьютора.Товары" minOccurs="0" maxOccurs="99999" />
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentTabularSectionRow.апКорректировкаОстатковДистрибьютора.Товары">
+      <xs:all>
+        <xs:element name="Номенклатура" type="tns:CatalogRef.Номенклатура"/>
+		<xs:element name="Склад" type="tns:CatalogRef.Склады" minOccurs="0"/>
+        <xs:element name="ИмяВидаОперации" type="xs:string"/>
+        <xs:element name="НачальныйОстаток" type="xs:decimal"/>
+        <xs:element name="Приход" type="xs:decimal"/>
+        <xs:element name="Расход" type="xs:decimal"/>
+        <xs:element name="КонечныйОстаток" type="xs:decimal"/>
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentObject.ДокументПродажи">
+      <xs:all>
+        <xs:element name="СсылкаДокумента" type="tns:DocumentRef.ДокументПродажи" />
+        <xs:element name="ТипДокумента" type="tns:EnumRef.ТипыДокументаПродажи"/>
+        <xs:element name="Дата" type="xs:dateTime"/>
+        <xs:element name="Номер" type="xs:string"/>
+        <xs:element name="ТорговаяТочка" type="tns:CatalogRef.апТорговыеТочки"  minOccurs="0"/>
+		<xs:element name="Склад" type="tns:CatalogRef.Склады" minOccurs="0"/>
+		<xs:element name="Контрагент" type="tns:CatalogRef.Контрагенты"  minOccurs="0"/>
+        <xs:element name="АдресДоставки" type="xs:string" minOccurs="0"/>
+		<xs:element name="Агент" type="xs:string" minOccurs="0"/>
+		<xs:element name="ДокументОснование" type="xs:string" minOccurs="0"/>
+		<xs:element name="ПометкаУдаления" type="xs:boolean" default="false" minOccurs="0"/> 
+		<xs:element name="Проведен" type="xs:boolean" default="true" minOccurs="0"/> 
+		<xs:element name="СуммаВключаетНДС" type="xs:boolean" default="false" minOccurs="0"/> 
+		<xs:element name="ВидКорректировки" type="xs:string" minOccurs="0"/> 
+		<xs:element name="Товары" type="tns:DocumentTabularSectionRow.ДокументПродажи.Товары" minOccurs="0" maxOccurs="99999" />
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentTabularSectionRow.ДокументПродажи.Товары">
+      <xs:all minOccurs="0">
+        <xs:element name="Номенклатура" type="tns:CatalogRef.Номенклатура"/>
+        <xs:element name="Количество" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="ЕдиницаИзмерения" type="xs:string" minOccurs="0"/>
+		<xs:element name="Коэффициент" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="Вес" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="Сумма" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="Цена" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="СтавкаНДС" type="xs:decimal" minOccurs="0" LocalName="Ставка НДС"/>      
+		<xs:element name="СуммаНДС" type="xs:decimal" minOccurs="0" LocalName="Сумма НДС"/>   
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="DocumentObject.ВыпискиИзБанка">
+      <xs:all>
+        <xs:element name="СсылкаДокумента" type="tns:DocumentRef.ВыпискиИзБанка" />
+        <xs:element name="ТипДокумента" type="tns:EnumRef.ТипыДокументаВыпискиИзБанка"/>
+        <xs:element name="Дата" type="xs:dateTime"/>
+        <xs:element name="Номер" type="xs:string"/>
+        <xs:element name="Валюта" type="xs:string" minOccurs="0"/>
+        <xs:element name="Курс" type="xs:decimal" minOccurs="0"/>
+        <xs:element name="СуммаДокумента" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="ДокументОснование" type="xs:string" minOccurs="0"/>
+		<xs:element name="КодОперации" type="xs:string" minOccurs="0"/>
+		<xs:element name="КонтрагентДокумента" type="tns:CatalogRef.Контрагенты" minOccurs="0"/>
+		<xs:element name="ТорговаяТочкаДокумента" type="tns:CatalogRef.апТорговыеТочки" minOccurs="0"/>
+		<xs:element name="Агент" type="xs:string" minOccurs="0"/>
+		<xs:element name="РасшифровкаПлатежа" type="tns:DocumentTabularSectionRow.ВыпискиИзБанка.РасшифровкаПлатежа" minOccurs="0" maxOccurs="99999" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="DocumentTabularSectionRow.ВыпискиИзБанка.РасшифровкаПлатежа">
+      <xs:all>
+        <xs:element name="ТорговаяТочка" type="tns:CatalogRef.апТорговыеТочки" minOccurs="0"/>
+		<xs:element name="Сумма" type="xs:decimal" minOccurs="0"/>
+		<xs:element name="ОснованиеПлатежа" type="xs:string" minOccurs="0"/>
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="CatalogList.апТорговыеТочки">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.апТорговыеТочки" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogList.Контрагенты">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.Контрагенты" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="CatalogList.Номенклатура">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.Номенклатура" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogList.Менеджеры">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.Менеджеры" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogList.Склады">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.Склады" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="CatalogList.Ошибки">
+      <xs:all>
+        <xs:element name="Object" type="tns:CatalogObject.Ошибки" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentList.апКорректировкаОстатковДистрибьютора">
+      <xs:all>
+        <xs:element name="Object" type="tns:DocumentObject.апКорректировкаОстатковДистрибьютора" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentList.ДокументПродажи">
+      <xs:all>
+        <xs:element name="Object" type="tns:DocumentObject.ДокументПродажи" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+	<xs:complexType name="DocumentList.ВыпискиИзБанка">
+      <xs:all>
+        <xs:element name="Object" type="tns:DocumentObject.ВыпискиИзБанка" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+      </xs:all>
+    </xs:complexType>
+    <xs:simpleType name="CatalogRef.апТорговыеТочки">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+	<xs:simpleType name="CatalogRef.Контрагенты">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+    <xs:simpleType name="CatalogRef.Номенклатура">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+	<xs:simpleType name="CatalogRef.Менеджеры">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+	<xs:simpleType name="CatalogRef.Склады">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+    <xs:simpleType name="DocumentRef.ДокументПродажи">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+	<xs:simpleType name="DocumentRef.ВыпискиИзБанка">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>  
+	<xs:simpleType name="CatalogRef.Контрагенты">
+      <xs:restriction base="tns:Идентификатор" />
+    </xs:simpleType>
+	<xs:simpleType name="Идентификатор">
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="36" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="EnumRef.ТипыДокументаПродажи">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="РеализацияТоваровУслуг" />
+        <xs:enumeration value="ВозвратТоваровОтКлиента" />
+		<xs:enumeration value="КорректировкаРеализации" />
+		<xs:enumeration value="ОтчетОРозничныхПродажах" />
+        <xs:enumeration value="Другой" />
+      </xs:restriction>
+    </xs:simpleType>
+	<xs:simpleType name="EnumRef.ТипыДокументаВыпискиИзБанка">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="ПКО" />
+        <xs:enumeration value="СтрокаВыпискиПриход" />
+      </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

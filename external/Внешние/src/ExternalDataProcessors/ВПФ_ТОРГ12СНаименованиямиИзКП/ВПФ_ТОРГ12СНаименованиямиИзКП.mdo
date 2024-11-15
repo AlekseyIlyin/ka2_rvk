@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5e79801-856e-4ce0-a040-02badcb1c8b3">
+  <producedTypes>
+    <objectType typeId="bd816037-57a8-46f5-aae4-4f448f94c2c1" valueTypeId="7e447e88-171a-40d6-9357-6284e6c587b6"/>
+  </producedTypes>
+  <name>ВПФ_ТОРГ12СНаименованиямиИзКП</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВПФ ТОРГ12 с наименованиями из КП 1.03</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="b7de7329-890b-42ce-bc6f-2c0e5c02fbaa"/>
+  <defaultForm>ExternalDataProcessor.ВПФ_ТОРГ12СНаименованиямиИзКП.Form.Форма</defaultForm>
+  <attributes uuid="73962f3d-2e9a-4f8d-94ed-68fe0ffee802">
+    <name>СсылкаНаОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2d557f5f-96ef-4675-897a-da051576317b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="03ff0c2c-ca72-44e7-a906-01c975764af5">
+    <name>ПФ_MXL_ТОРГ12</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТОРГ-12</value>
+    </synonym>
+  </templates>
+  <templates uuid="7c66276c-8f32-458c-b8b6-76d586b61028">
+    <name>ПФ_MXL_ТОРГ12_ГТД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТОРГ-12 (с ГТД)</value>
+    </synonym>
+  </templates>
+  <templates uuid="23a85cfe-2c06-4ddc-ad63-0bf58718ecae">
+    <name>ПФ_MXL_СчетФактура451</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет-фактура (постановление №451)</value>
+    </synonym>
+    <comment>Макет счета-фактуры согласно постановлению №451 от 26.05.2009 г.</comment>
+  </templates>
+  <templates uuid="ecf767ab-8390-47a2-ab54-8d3ff11e65b1">
+    <name>ПФ_MXL_СчетФактура1137</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет-фактура (постановление №1137)</value>
+    </synonym>
+    <comment>Макет счета-фактуры согласно постановлению №1137 от 26.12.2011 г.</comment>
+  </templates>
+  <templates uuid="c59b4dd8-cbde-46b5-b17b-94dffbe6ac81">
+    <name>ПФ_MXL_СчетФактураКорректировочный1137</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировочный счет-фактура</value>
+    </synonym>
+  </templates>
+  <templates uuid="834eca8d-5a18-47d1-af3c-2be5b835f962">
+    <name>ПФ_MXL_СчетНаОплату</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату</value>
+    </synonym>
+  </templates>
+</mdclass:ExternalDataProcessor>

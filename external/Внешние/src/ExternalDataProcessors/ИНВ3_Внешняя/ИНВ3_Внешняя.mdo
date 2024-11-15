@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ed10e60-c5d0-48cb-b102-47f86f0611ed">
+  <producedTypes>
+    <objectType typeId="51e37698-49dd-4cf7-864a-4e89745d4f42" valueTypeId="954ec2ad-dacc-4b8b-9f89-9814a499322d"/>
+  </producedTypes>
+  <name>ИНВ3_Внешняя</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИНВ3 внешняя</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="3f2d60da-aae7-4d57-a7cf-6c18b199457b"/>
+  <defaultForm>ExternalDataProcessor.ИНВ3_Внешняя.Form.ФормаПечати</defaultForm>
+  <attributes uuid="c8c7ee39-f4bc-473c-87db-c748445c2102">
+    <name>СсылкаНаОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИнвентаризационнаяОпись</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="e965038f-c018-4d50-8803-a7fbdaa529be">
+    <name>ФормаПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печати</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3079fceb-b635-497d-9b0b-eefe85130373">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2746e06c-59da-4b05-a3b5-4b4851054c0b">
+    <name>ПФ_MXL_ИНВ3_Внешняя</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНВ-3</value>
+    </synonym>
+    <comment>Инвентаризационная опись товарно-материальных ценностей (унифицированная форма № ИНВ-3)</comment>
+  </templates>
+</mdclass:ExternalDataProcessor>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="761bfbde-2485-4369-addb-4c8a820d2446">
+  <producedTypes>
+    <objectType typeId="15002a7f-aa3f-4526-ab21-7e0ef310990d" valueTypeId="573f08e4-3097-41e8-b74c-d45c563df4d1"/>
+  </producedTypes>
+  <name>ВыгрузкаДистрибьютора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных дистрибьютора</value>
+  </synonym>
+  <comment>(ver 1.20.0.0)</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="f1bb5a56-9497-4fe5-80cf-a4db6abe9ac0"/>
+  <defaultForm>ExternalDataProcessor.ВыгрузкаДистрибьютора.Form.ПодборИВыгрузка</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="adb64eaf-0c88-4eec-8dd8-04a9ac8cbcea">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущая версия обработки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d80c91a-8780-4db6-8bc1-7b439abe6fdd">
+    <name>УдалитьКодДистрибьютора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить код дистрибьютора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор, выданный организацией, для которой предназначены выгружаемые данные.</value>
+    </toolTip>
+    <mask>#####</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="903b52fb-f1a7-4d66-9de3-9a99b6c0f734">
+    <name>КаталогОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Локальный каталог, в который выгружаются данные при отключенной опции &quot;Использовать FTP-сервер&quot;. При включенной опции каталог обмена используется в качестве промежуточного звена при загрузке/выгрузке данных с применением FTP-сервера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="312de62f-c796-4b47-a727-fb4b4a404cc7">
+    <name>КаталогНаСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог на сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Каталог на FTP-сервере, в который выгружаются и из которого загружаются данные.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a0845a26-2951-45cd-8153-5cee0feebafc">
+    <name>ПарольФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль пользователя на указанном FTP-сервере.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="adea1b56-c359-497c-8742-6b3d9aa36a2f">
+    <name>ПассивныйРежимФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пассивный режим ФТП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет тип ftp-соединения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d1b2cfd-0628-4c8e-b61f-7bb49bef939f">
+    <name>ПользовательФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя пользователя на указанном FTP-сервере.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e91dee16-e6a0-451e-8e12-a252138bc84d">
+    <name>СерверФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>FTP-сервер, с которым осуществляется соединение.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0971bae1-f9a6-4a02-80a3-6961ec76dd2c">
+    <name>ФайлЛога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл лога</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите полный путь к текстовому файлу, расположенному на сервере с базой, в котором будет вестись история выгрузки/загрузки данных через FTP.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c104728b-c4ac-4df9-b0b7-fe1d9dca3657">
+    <name>ПодключениеУстановлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение установлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="49cce8b4-0cee-4f10-8270-1736ec9e3c5c">
+    <name>ВыгружатьГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать группы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f7dcac26-7225-4e75-83d5-15d6cc96092f">
+    <name>ИспользоватьФТПСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать FTP-Сервер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительный реквизит справочника &quot;Номенклатура&quot; с типом Число (15, 3, неотрицательное), содержащий коэффициент пересчета количества товара из единицы хранения в отчетную единицу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43ae2f49-04a2-4131-8f1a-db1aae591eb5">
+    <name>КолвоДнейВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать данные автоматически за последние</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней, за которое выгружаются данные по регламентному заданию.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0351b99e-6487-4891-a719-dec39cc1aa88">
+    <name>ДопРеквизитКоэффициентаПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. реквизит коэффициента пересчета в отчетную единицу</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительный реквизит справочника &quot;Номенклатура&quot; с типом Число (15, 3, неотрицательное), содержащий коэффициент пересчета количества товара из единицы хранения остатков в отчетную единицу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8a6ead3c-47b1-499d-a5a5-60ed808ac70d">
+    <name>РежимОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отбора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выберите режим отбора объектов: по полям объекта выгрузки или с использованием произвольного запроса.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="86c42e68-6a2e-4758-af72-8554ce2420e4">
+    <name>ОбъектВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект выгрузки</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект метаданных, являющийся основным источником выгружемых данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c5f2b7f-fca6-4334-813a-326f6567906a">
+    <name>ТекстЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87b295a6-ffab-4ef2-afd0-34ae6c940248">
+    <name>ТекстПроизвольногоЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст произвольного запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Введите тест произвольного запроса вручную, либо с помощью конструктора запроса.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f0d3ef5f-e0e2-4e1b-836f-4fc75010e70d">
+    <name>ОтборДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор данных</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3fa79019-a5db-4a68-b2b5-ec8300611975">
+    <name>ПараметрыЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры запроса</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="295aa065-96fc-4fdf-ac85-4371da465e2c">
+    <name>ВыгружаемыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружаемые данные</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="81563ebf-570e-4fa3-a718-767314783c15">
+    <name>ТабОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб остатки</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b5c073b2-a8c5-4564-ab93-21ddc41e118c">
+    <name>ТабПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТабПродажи</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ebec0c47-543c-4cb1-8eb9-e4b33e123414">
+    <name>НачПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нач периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="981fa814-bff6-4798-975d-dbacc759c747">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="380d7434-e877-42f2-9ad4-471424722af5">
+    <name>ВерсияКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия конфигурации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="03e39f2a-eab5-4afd-8439-46b3643346d7">
+    <name>ВыгружатьАдресДоставкиКакТТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать адрес доставки как ТТ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="134d9341-f18c-4d16-b61b-e97cb74d5dea">
+    <name>ВыгружатьОстаткиПоСкладам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать остатки по складам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="939004e3-e69e-44fe-80d8-58e2dec77a90">
+    <name>ТабОплатыКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб оплаты клиентов</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a9d0efc4-bdcc-4696-a04a-42e74726e15b">
+    <name>ЭтоПрофМодуль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это проф модуль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3cd9d8cd-f841-421f-abf6-03ca1b0d8bc0">
+    <name>НастройкиАгентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки агентов</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4719096f-0da6-4dcc-80c2-a2eff3ae28c2">
+    <name>ВыгрузкаТорговыхТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торговые точки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b861927b-9eb6-471f-8c89-6c519884d9b2">
+    <name>ВыгрузкаКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b73a53d7-5e92-4d22-be0b-5a927f1fcfcc">
+    <name>РазрешитьДополнительнуюВыгрузкуПоЗапросу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить дополнительную выгрузку по запросу поставщика</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="28c6398a-bcaf-4e39-8c35-99408dcbbb1b">
+    <name>ПарольРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль пользователя на указанном FTP-сервере.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="05f49fc7-b293-42b3-97b6-6a8cdb3f62f8">
+    <name>ПассивныйРежимРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пассивный режим резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет тип ftp-соединения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fc7106dc-e2a5-4105-b523-2f886c5daac4">
+    <name>ПользовательРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя пользователя на указанном FTP-сервере.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c0c79956-6f58-4f21-8286-45cd812a78a4">
+    <name>СерверРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>FTP-сервер, с которым осуществляется соединение.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="94cad55e-6b35-41c8-b1e5-a36fe99e0e25">
+    <name>КаталогНаРезервномСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог на резервном сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Каталог на FTP-сервере, в который выгружаются и из которого загружаются данные.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="698b4e31-a50f-4de5-b44b-01d7561ad24a">
+    <name>ПодключениеУстановленоРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение установлено резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="645b3f28-a88d-48a1-9a1e-f031637df2f1">
+    <name>АгентИзДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агент из документов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если опция отключена, то агент в документе берется из торговой точки самого документа. В противном случае, агент берется из поля ответственный менеджер. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1d022d78-0861-481e-8561-3bcb705cd12b">
+    <name>v2ФорматВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>V2 формат выгрузки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="812d04c5-27b5-4f13-965a-c843189cb1a9">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c20922ec-72c9-46f4-84bf-73f124ab2484">
+    <name>ПортФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт ФТП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="13afdc32-4a91-4e06-ace5-1904d8608804">
+    <name>ПортРезервногоФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт резервного ФТП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="c6e745e7-7d38-4fa9-bd71-0b0f136a7170">
+    <name>ПодборИВыгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора и выгрузки объектов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f9180c3b-a8e5-4290-b2a6-d252c6f9966b">
+    <name>ВыборОбъектаМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор объекта метаданных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fce0e074-adaa-4db4-92ba-eb6c0ff6ab30">
+    <name>НастройкиФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки FTP-соединения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83a9ba43-5790-47fb-b1a9-8118eaae5916">
+    <name>НастройкиОпциональные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки опциональные</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1a30d4e9-b88e-4b40-aee5-86e9a4ca1fa0">
+    <name>КоэффициентыУпаковок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициенты упаковок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a44daaeb-ec24-4b2f-be9d-7079b809be1e">
+    <name>Инструкция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="50436703-4b8c-4f87-85d8-80d841c48782">
+    <name>СхемаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="2eac6c01-42ad-47e2-8a26-d47f929104b6">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="ae85c693-b9cc-4643-bdd2-8f968739b8c4">
+    <name>МакетОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет остатки</value>
+    </synonym>
+  </templates>
+  <templates uuid="5ecb3d10-f613-4157-b88e-9f3ce01b403d">
+    <name>МакетОплатыКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет оплаты клиентов</value>
+    </synonym>
+  </templates>
+  <templates uuid="b743c005-1482-4ff6-8cf5-8b2986d5dc46">
+    <name>ПараметрыОтборы_ERP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отборы ERP</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="acffaef7-f237-4e68-82d1-32f35d25c58d">
+    <name>ПараметрыОтборы_БП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отборы БП</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b6a94baf-43ed-43f1-9826-27b29caa92af">
+    <name>ПараметрыОтборы_Розница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отборы розница</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e604cbc4-6375-4e38-824c-1bf256a1f723">
+    <name>ПараметрыОтборы_УНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отборы УНФ</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a9a01994-889c-4214-8d6c-19868edac950">
+    <name>Инструкция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>

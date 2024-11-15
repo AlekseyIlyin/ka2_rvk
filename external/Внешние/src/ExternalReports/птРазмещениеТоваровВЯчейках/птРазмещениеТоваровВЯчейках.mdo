@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalReport xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c15dd719-249c-4099-aae4-9dc231f60bd0">
+  <producedTypes>
+    <objectType typeId="59f95683-e153-48a9-8cdc-c723700dd95e" valueTypeId="bb410293-6ce2-4841-b332-e36cec04e80f"/>
+  </producedTypes>
+  <name>птРазмещениеТоваровВЯчейках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размещение товаров в ячейках (Програмтех)</value>
+  </synonym>
+  <containedObjects classId="e41aff26-25cf-4bb6-b6c1-3f478a75f374" objectId="cd34d61d-b550-4fd0-a0a7-03d0f5112047"/>
+  <mainDataCompositionSchema>ExternalReport.птРазмещениеТоваровВЯчейках.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="af6ed4fb-2c99-477a-83aa-2b9e050717bc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:ExternalReport>

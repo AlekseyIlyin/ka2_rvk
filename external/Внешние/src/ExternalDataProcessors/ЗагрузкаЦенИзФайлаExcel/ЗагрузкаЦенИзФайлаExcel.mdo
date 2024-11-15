@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ecd263da-a97f-45ce-95e6-87ae9db23676">
+  <producedTypes>
+    <objectType typeId="371cb696-88eb-403d-bcee-be252b4e5030" valueTypeId="9df6b543-c1bf-4871-b4bb-c16a9e9edc8f"/>
+  </producedTypes>
+  <name>ЗагрузкаЦенИзФайлаExcel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка цен из файла excel</value>
+  </synonym>
+  <comment>версия 08.06.2019</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="c08d2f0c-eb15-44a7-a487-6b07cbba8996"/>
+  <defaultForm>ExternalDataProcessor.ЗагрузкаЦенИзФайлаExcel.Form.Форма</defaultForm>
+  <attributes uuid="e35548b2-7ce3-4fae-bea7-fa28220cd6f0">
+    <name>ДокументСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ссылка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УстановкаЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2ab0913-acfc-4b07-8dc5-58701ef26607">
+    <name>АдресХранилищаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранилища данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="57e65eb4-6408-4c2d-9879-623c0f56b10b">
+    <name>ВидЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eb0313c0-3925-400b-91c8-9424fc8462cc">
+    <name>ВидИдентификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид идентификации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="f1a1f65c-5749-4f38-ace7-1e298e7434ea">
+    <producedTypes>
+      <objectType typeId="12e036a3-7726-4f96-b1c1-14ddf9adaa57" valueTypeId="89f64275-256d-46ae-b6f8-a2ad0e31c50e"/>
+      <rowType typeId="fcdc5b4a-c4ee-4b67-b0b2-b2d8d733a8cc" valueTypeId="e763513a-52cd-4e24-a4c5-c626e79bb750"/>
+    </producedTypes>
+    <name>СоответствиеНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие номенклатуры</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6f11d25c-cd40-4b0d-9b6a-f3fffab16f6c">
+      <name>ЗначениеИдентификации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение идентификации</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2c006a8f-5aab-4d6d-9041-cdd76054456a">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура 1С</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e2f0594d-4684-490a-a528-4e1b5074e0f3">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f493a0fa-0d7c-49fe-9a1e-b8b380ee5dc1">
+      <name>Упаковка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Упаковка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Если у выбранной номенклатуры используются упаковки, то можно выбрать упаковку номенклатуры</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <changeMode>DontChange</changeMode>
+        <field>0:fa358103-b0d9-4936-b18c-99a353b041d9/0:9d03fe16-0be3-43c0-946b-4e518d310a23</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ba1a6401-84bf-43af-b4e7-1ba67ac9f06d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53a8accd-1959-42aa-8fa0-0439adbb575a">
+    <name>ФормаНастройкиЗагрузкиИзФайлаExcel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки загрузки из файла excel</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>

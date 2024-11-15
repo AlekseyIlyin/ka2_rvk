@@ -1,0 +1,2613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2815780d-eb38-4c3a-b114-23d5715cb55b">
+  <producedTypes>
+    <objectType typeId="dae06096-43b7-4b3d-900c-d89883baf81f" valueTypeId="c34915d2-cbc5-4b99-a49c-cb2c66ce41af"/>
+  </producedTypes>
+  <name>апОбменДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Агент Плюс: Обмен данными с мобильными устройствами</value>
+  </synonym>
+  <comment>Обмен данными с мобильными устройствами (ver 2.0.3.157 не убирать!) </comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="66abf6f7-24d4-4739-96cf-73e901612e29"/>
+  <defaultForm>ExternalDataProcessor.апОбменДанными.Form.ГлавнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="9f1483c0-fad9-430f-88dd-28fcf74e1150">
+    <name>FTPАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Address UA</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес FTP-сервера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dd897e9d-a843-4410-a1df-dfa84633ccad">
+    <name>FTPКаталогСервера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог сервера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь к каталогу на FTP-сервере</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d64e159b-ad5b-44e2-b93c-c00afd3357a7">
+    <name>FTPПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для доступа к FTP-серверу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2a523256-94b6-4431-b6fb-6da533a98599">
+    <name>FTPПассивныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пассивный режим</value>
+    </synonym>
+    <comment>Пассивный режим соединения с FTP-сервером</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пассивный режим соединения с FTP-сервером.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc7f821b-c940-49ba-9f28-0ab041744c7d">
+    <name>FTPПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь для авторизации на FTP-сервере</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fe0f6435-9d50-40c8-8c3c-36a6d2854869">
+    <name>АвтозапускОбменаДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автозапуск обмена данными</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Автоматически запускать обмен данными при запуске обработки (если нет ошибок настройки обработки).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6003ebfe-86e1-40a8-ac76-6eb9643d0ec8">
+    <name>ВерсияНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия настроек</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7a80c59c-f72d-4e43-8182-a36bc92ccde4">
+    <name>ВестиУчетМаркированныхТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести учет маркированных товаров</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать коды маркировки «Честный знак» в документах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="37805ee6-19fa-420f-bc77-9e593f4ae546">
+    <name>ВзаиморасчетыНеопределеннаяДатаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщать о неопредёленной дате платежа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="736aa4ca-9b9b-4479-b4c1-37c6a9e97748">
+    <name>ВидВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5f33aa51-c239-4672-8397-1854bcfbb099">
+    <name>ВидКИАдресДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес доставки (вид)</value>
+    </synonym>
+    <comment>Ссылка на элемент справочника, который связан с адресом доставки</comment>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид контактной информации, отвечающей за адрес доставки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Родитель</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.ВидыКонтактнойИнформации.СправочникПартнеры</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="567fed73-e65e-41f7-84d9-850699ad047e">
+    <name>ВидЦеныДляРасчетаРентабельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены для расчета рентабельности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выберите вид цены, на основании которой будет сделан расчет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bd2999c3-4714-40c7-a21f-936310a93824">
+    <name>ВключатьКодыНоменклатурыВНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщать о неопредёленной дате платежа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включать коды номенклатуры в наименование</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="96073032-0422-4e53-9d62-cf66549b19dc">
+    <name>ВременныеТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временные таблицы</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Структура для доступа к таблицам значений при обмене данными. Используется для чтения таблиц из сохраненных настроек с полным составом колонок.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59bed2f4-fe70-4d2d-aa14-89ed1028e4d7">
+    <name>ВыбАгент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранный агент</value>
+    </synonym>
+    <comment>Выбранный торговый агент (пользователь мобильного устройства)</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выбранный пользователь мобильного устройства - торговый представитель (агент)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b238164d-844c-40fd-a382-3f1d35423abd">
+    <name>ВыбНастройкиАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки текущего агента</value>
+    </synonym>
+    <comment>Настройки текущего агента при обмене данными</comment>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1a86cf26-c0ff-4493-a9e6-291fc187b409">
+    <name>ВыгружатьДолгиТолькоПоДокументамАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать долги только по документам агента</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="85b36352-919d-446f-a815-4915c314420d">
+    <name>ВыгружатьЗаказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать заказы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать документы продаж в мобильное устройство</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="82f6453e-b8ab-4719-bb3f-8410e784d6dd">
+    <name>ВыгружатьЗаказыПоПартнерамАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать продажи по партнерам агента</value>
+    </synonym>
+    <comment>Выгружать в МУ документы продаж по партнерам, закрепленным за торговым агентом</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d11a62f-dc82-43ad-9781-a3496b36e7d3">
+    <name>ВыгружатьИзображенияПартнеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать изображения партнеров</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать изображения партнеров в мобильные устройства. Выгрузка изображений увеличивает объем передаваемых данных в мобильные устройства.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="286664fc-aefa-4b73-ba09-3a05d44e02ae">
+    <name>ВыгружатьИзображенияТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать изображения товаров</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать изображения товаров в мобильные устройства. Выгрузка изображений увеличивает объем передаваемых данных в мобильные устройства.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73bb1a69-d120-4d74-8861-0dc2a66bb26b">
+    <name>ВыгружатьИзображенияТоваровОграничиватьВыгрузку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничить выгрузку фотографий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>&quot;Один раз в день&quot; - включить ограничение количества выгрузок изображений. Если агент не успеет получить изображения после первой выгрузки, то они будут им получены на следующий день.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7f26cf8b-79c1-4c54-b138-8e1dbbd55d12">
+    <name>ВыгружатьИсториюПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать историю продаж</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать историю продаж в мобильное устройство (МУ). Внимание! Выбор данного флажка увеличивает время выгрузки данных из 1С:Предприятия в МУ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bdfc3217-8744-402f-a024-edd2ba03a15e">
+    <name>ВыгружатьМаршруты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать маршруты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать маршруты посещения партнеров (торговых точек). Маршруты выгружаются в МУ из &quot;Списка торговых точек&quot; (если в списке включена детализация до графика посещений или до плана посещений).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4db7038e-2d4a-4666-8851-6ef5ca76dd8b">
+    <name>ВыгружатьПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать перемещения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать перемещения в мобильное устройство (выгружаются только те перемещения, которые ранее были созданы агентом в мобильном устройстве).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="78ae75e4-8005-4e35-b40f-50004258ad88">
+    <name>ВыгружатьПерсональныеЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать персональные цены и скидки</value>
+    </synonym>
+    <comment>Выгружать персональные цены для партнеров</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать персональные цены и скидки для партнеров (торговых точек) из индивидуальных соглашений. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="620da6a4-e5c5-4064-a9ad-0842c0467914">
+    <name>ВыгружатьСтартовыеНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать стартовые номера документов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ececb5d-2b55-40c8-8f18-3d893df4f70b">
+    <name>ВыгружатьТоварыСНулевымОстатком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать номенклатуру с нулевыми остатками</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать номенклатуру с нулевыми остатками</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73eb6c9b-97bb-4472-a8ca-47b8e384f602">
+    <name>ВыгружатьТолькоПросроченныеДолги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать только просроченные долги</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4f67bbe1-e0d8-4547-a680-d73dc8be4707">
+    <name>ВыгружатьШтрихКодыТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать штрих-коды</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подбирать товары по штрих-кодам на мобильном устройстве.
+Если включена опция «Вести учет маркированных товаров», то настройка будет неактивной.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dbfd9fe7-12cf-4869-9c4c-9217a44d742b">
+    <name>ВыделятьЦветомПросроченныеДолги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выделять цветом просроченные долги</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30a0b9b8-2562-44be-bd4d-15728bec31b1">
+    <name>ГлубинаИсторииПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глубина истории продаж</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать историю продаж за указанное количество прошедших дней</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a1e81575-b26d-4058-bb38-e6bbd26fbd69">
+    <name>ДокументыЗаданий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы заданий</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="36b53993-8a58-4a56-8177-1fb553a3e406">
+    <name>ДокументыМерчендайзинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы мерчендайзинга</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a26a9849-2fb5-46ed-8c8b-9e930b44dd44">
+    <name>ДокументыПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы посещений</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="63ec175b-9e59-4a20-abdf-2f815fba8790">
+    <name>ЗагружатьВиртуальныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать виртуальные документы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загружать из мобильного устройства документы &quot;Посещения&quot;,&quot;Мерчендайзинг&quot; и &quot;Задания&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f752c49-344e-4ac5-be2a-99298dc7f6a9">
+    <name>ЗагружатьДокументыТекущейДатой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать документы в ЦБД текущей датой </value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загружать документы в ЦБД с текущей датой</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="619eebdd-1632-4f18-a84c-c743638a91d8">
+    <name>ЗапретитьПродажиБезУказанияЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запретить продажи без указания цены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Запретить в МУ оформление документов &quot;Заказ&quot; если у выбранного в документе клиента не закреплена &quot;цена продажи по умолчанию&quot;. Например, когда в выбранном соглашении не указана цена продажи.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f1b15809-f0c6-40ac-befd-a70257af85b2">
+    <name>ЗапросыМобильныхУстройств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запросы мобильных устройств</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5be74fdd-87e7-4ce4-9bd0-ed92dbc9ae66">
+    <name>ИменаПодкаталоговОбменаНаОсновеФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имена подкаталогов обмена на основе ФИО агентов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Генерировать имена подкаталогов обмена агентов на основе ФИО. Если флаг снят, то имена генерируются на основании идентификаторов МУ, закрепленными за агентами. Если МУ загружаются из ЛК, то рекомендуется снять флажок.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cc8e1cec-bf58-48ee-9520-de5c5e5911e2">
+    <name>ИнтервалАвтообмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал автообмена (сек.)</value>
+    </synonym>
+    <comment>Интервал автообмена в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Интервал проверки поступления новых данных от мобильных устройств в секундах (кроме обмена через Службу обмена данными).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30067494-ddf7-4756-9029-71018d4d7f56">
+    <name>ИнтервалВыгрузкиЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал выгрузки документов продаж</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней назад (начиная от текущей даты), за которые выгружать документы продаж в мобильное устройство.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e18ea55e-ae5a-400e-8b4b-aaf191e712cd">
+    <name>ИнтервалВыгрузкиМаршрутов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал выгрузки маршрутов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней вперед от текущей даты, за которые выгружать маршруты в мобильное устройство.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6500aaf4-4837-4bb8-a4e6-a953e723fe94">
+    <name>ИнтервалВыгрузкиПеремещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал выгрузки перемещений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней назад (начиная от текущй даты), за которые выгружать перемещения в мобильное устройство.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ee5b54d4-79d5-44bd-bfaf-bb7be1d8613c">
+    <name>ИнтервалПросроченныхДолгов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней просрочки долга</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней просрочки оплаты, при достижении которого считать долг просроченным.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bbf2ac38-a7aa-4a9c-862b-c67fdd9c5f24">
+    <name>ИспользоватьАвтообмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать автообмен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Автоматически проверять данные от мобильных устройств и загружать полученные данные. После загрузки полученных данных выгружать в мобильное устройство ответные данные.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2fe6de6c-dbd3-4167-9bea-2acdc3672fb7">
+    <name>ИспользоватьАдресаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать адреса доставки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать адреса доставки для Партнеров (торговых точек)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="275a2bca-8fbf-4848-aa6b-23c1ddf3f303">
+    <name>ИспользоватьВидыДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать виды доставки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Константа регулирует возможность использования видов доставки в документе &quot;Заказ&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="283f2db8-ac10-4b69-9efe-f6646babc522">
+    <name>ИспользоватьДоговорыИлиСоглашения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать договоры или соглашения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать договоры или соглашения в мобильном устройстве</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a9fafb9b-0067-4348-babe-11d6f39480de">
+    <name>ИспользоватьКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать контрагентов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включить в мобильном приложении режим работы с контрагентами (помимо партнеров).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>Use</createOnInput>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="d43ec11f-53c2-4917-b45a-63c3f56a071e">
+    <name>ИспользоватьНумерациюЦБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать нумерацию ЦБД</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документы, загружаемые из мобильного приложения, будут нумероваться по правилам нумерации ИБ 1С:Предприятия.  В противном случае документы будут нумероваться согласно номерам, присвоенным им в мобильном приложении.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6ad76eef-2d96-488e-8e78-600725712e7c">
+    <name>ИспользоватьОплатуКаспи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать оплату с Kaspi.kz</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ec8410fe-f3a9-4990-9ba1-70b472c123c3">
+    <name>ИспользоватьПланыПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать планы продаж по номенклатуре</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать планы продаж.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8cf608c2-9ab6-46e0-80d3-6e771a8d1efc">
+    <name>ИспользоватьПланыПродажПоТоварнымКатегориям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать планы продаж по категориям</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать планы продаж по товарным категориям. Выгрузка товарных категорий доступна для мобильного приложения версии 1.0.21.17 и выше.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0666ad42-b27f-4a09-a863-10a187de5d72">
+    <name>ИспользоватьПунктыРазгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать пункты разгрузки</value>
+    </synonym>
+    <comment>Добавлено КТ-2000</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включить в мобильном приложении режим работы с пунктами разгрузок в качестве торговых точек. Данная опция доступна только для конфигурации УТАП.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fd67e252-cdbb-49fd-b582-da6b33c9d598">
+    <name>ИспользоватьТорговыеТочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать торговые точки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="11bfa087-2b5d-4407-abf4-d73900020e9a">
+    <name>ИспользоватьХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать характеристики номенклатуры</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать характеристики номенклатуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="21402687-9eb0-4454-b760-8131abf2954f">
+    <name>КартаЦентр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта центр</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Центр карты (используется для отображения карты по умолчанию в центре и для геокодирования адресов)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5947ca7e-3870-4d5e-89cc-a172b333a227">
+    <name>КаспиДанныеОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каспи данные организаций</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae7fb55a-5efb-43ae-b0ca-bd7011d074db">
+    <name>КаталогДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рабочий каталог для хранения данных модуля обмена. В случае многопользовательской работы с 1С:Предприятием важно указывать абсолютный сетевой путь с полным доступом пользователей. Например: &quot;\\Server\Exchange&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f10748b8-8619-41f8-ba54-cb075df677a4">
+    <name>КаталогОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Каталог обмена данными со Службой обмена данными (СОД)
+или для другого способа обмена с мобильными устройствами. 
+Назначается автоматически как подкаталог &quot;Каталога данных&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d21aba88-8198-411c-a7ed-4c0cf625eba3">
+    <name>КатегорииДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категории документов</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a11b21a6-6c0b-4258-b23e-2104adf08f25">
+    <name>КоличествоИнтерваловИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество интервалов истории</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество интервалов истории продаж. Глубина истории продаж делится на указанное количество интервалов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1b3dfd3b-955b-422d-8ff5-7933f1ba4b33">
+    <name>КомпоновщикНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновщик настроек</value>
+    </synonym>
+    <type>
+      <types>DataCompositionSettingsComposer</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4bad61bc-9d04-43f2-a11b-d0eee4242641">
+    <name>КомпоновщикНастроекКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновщик настроек КД</value>
+    </synonym>
+    <type>
+      <types>DataCompositionSettingsComposer</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Компоновщик настроек для выгрузки данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f8cde13f-9716-4efe-978b-fca8160c4dc1">
+    <name>ЛКЗапомнитьЛогинИПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запомнить логин и пароль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Запомнить логин и пароль доступа в &quot;Личный кабинет&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cad5af56-b4a4-4886-a721-e75bfbe2569e">
+    <name>ЛКИдентификаторКаналаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЛКИдентификатор канала обмена</value>
+    </synonym>
+    <comment>Идентификатор канала обмена, полученного из ЛК</comment>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="41fc5238-021f-49a1-a2aa-622f94673a8d">
+    <name>ЛКИдентификаторУС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор в ЛК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор учетной системы в ЛК.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73de594d-92c4-4a37-a993-b396da19b841">
+    <name>ЛКЛогин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин клиента в ЛК</value>
+    </synonym>
+    <comment>Логин клиента в &quot;Личном кабинете&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор клиента в &quot;Личном кабинете&quot;. Уточните свой идентификатор в технической поддержке компании &quot;Агент Плюс&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b6c0a4e2-5524-4f28-a18d-e737d302edd3">
+    <name>ЛКНазваниеУС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название учетной системы</value>
+    </synonym>
+    <comment>Название учетной системы для регистрации в ЛК</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Название учетной системы как ее показывать в &quot;Личном кабинете&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f5b45955-f288-47af-9914-db3c38af0dfd">
+    <name>ЛКПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль доступа</value>
+    </synonym>
+    <comment>Пароль для получения данных из ЛК</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль получения данных из &quot;Личного кабинета&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="330c3694-c09b-451a-b684-fc94144f7227">
+    <name>ЛКПодтверждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЛКПодтверждение</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4851ccf7-7db4-46ab-912e-cb5e4b443493">
+    <name>ЛКТокенУС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен УС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Токен авторизации обмена данными через &quot;Личный кабинет&quot;. Генерируется в &quot;Личном кабинете&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3ec161ad-65da-4299-b635-b8c6883bff23">
+    <name>МаксимальноеРасстояниеОтТТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное расстояние от ТТ</value>
+    </synonym>
+    <comment>Максимально допустимое расстояние от ТТ в метрах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимально допустимое расстояние (в метрах) от торговой точки при создании документов в мобильном устройстве</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e64714d6-2e36-4294-8df8-538f0d893b08">
+    <name>МаксКоличествоВиртуальныхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс. количество виртуальных документов</value>
+    </synonym>
+    <comment>Максимальное количество виртуальных документов одного вида в журнале документов</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальное количество виртуальных документов одного вида в журнале документов. Чем больше значение, тем медленней открывается журнал.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="d120feb8-e018-4775-aacd-7173b2456dd5">
+    <name>МобильныеУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица значений  Мобильные устройства</value>
+    </synonym>
+    <comment>Таблица значений  Мобильные устройства</comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c941883b-fd6c-4b5e-993f-42a990110aa2">
+    <name>НастройкиАгентаПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки агента по умолчанию</value>
+    </synonym>
+    <comment>Настройки для торгового агента &quot;По умолчанию&quot;</comment>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="659d8853-95a2-41d0-b0b8-6ff4b33326a2">
+    <name>НастройкиАгентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки агентов</value>
+    </synonym>
+    <comment>Настройки торговых агентов</comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f3db9b31-1f5a-4a05-ad73-80770578678c">
+    <name>ОбновлятьДокументыПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновлять документы в ЦБД</value>
+    </synonym>
+    <comment>Обновлять документы при загрузке</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документы при загрузке в УТ из мобильного устройства будут обновлены, если они уже были загружены ранее.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d0415564-3fa9-4793-bc71-00c23a028fd2">
+    <name>ОтветнаяВыгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответная выгрузка</value>
+    </synonym>
+    <comment>Выгружать данные в МУ в ответ на полученные данные</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать данные в мобильное устройство в ответ на полученные данные.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e80fe38d-a302-46a1-b63e-2f2a2f10de3d">
+    <name>ОчищатьДокументыПередЗагрузкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очищать документы перед загрузкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5a9d1253-5a39-4f57-8c8e-5ef36b837aed">
+    <name>ОчищатьСправочникиПередЗагрузкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очищать справочники перед загрузкой</value>
+    </synonym>
+    <comment>Выполнять очистку справочников перед загрузкой</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7e6fad4b-bc65-4352-b728-660a8cdc181d">
+    <name>ПериодХраненияЛогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период хранения логов (дней)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b15fd803-7511-4958-a154-214e7ac18524">
+    <name>ПодтверждатьВсеФотографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждать все фотографии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подтверждать все фотографии, полученные из МУ (вне зависимости от статуса их загрузки в ЦБД).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="25b08bb5-a9b9-4253-aaa7-2c596b5deced">
+    <name>ПодтвержденияТолькоДляПроведенных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждения только для проведенных документов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если загруженный из мобильного устройства документ проведен в ЦБД, то он блокируется в мобильном устройстве от изменений торгового агента.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4f25352d-5202-487c-adf7-ece178ceee14">
+    <name>ПоказыватьАдресКоординат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать адрес координат</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>На формах документов вместо GPS-координат выводить адрес, полученный из геосервиса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4a002300-90cf-4dc1-b8ea-80497dfe3fbf">
+    <name>ПоказыватьРентабельность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать рентабельность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При включении настройки в документах &quot;Заказ&quot; и &quot;Реализация&quot; на мобильном устройстве будет рассчитан и показан процент рентабельности. Вы можете выбрать вид цены, на основании которой будет сделан расчет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a32f66ff-2419-4d54-b4ee-8c1384db2f35">
+    <name>ПроверятьРегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять регламентное задание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать регламентное задание для автономного обмена данными с мобильными устройствами</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="126574d3-8ec5-462b-913a-f5efa210827b">
+    <name>ПроводитьДокументыПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документы при загрузке из мобильного устройства будут проводиться.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7b1d886-335c-4a51-91df-852254e1f4ae">
+    <name>ПроводитьДокументыСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы список</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="113ec926-e05f-4c0d-996c-0c5550585295">
+    <name>РазрешитьВозвратНаОснованииЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить возврат товара на основании заказа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f6b5de2-4f1c-44ad-a274-b4bff402a512">
+    <name>РазрешитьСоздаватьЗаявкуНаВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить создавать заявку на возврат</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="500d2556-bd93-4397-9d87-851d64158621">
+    <name>РегистрОстатковТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр остатков товаров</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Регистр, из которого выгружать остатки товаров в мобильные устройства.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5a74f43a-1803-4529-a8cb-745513d6257f">
+    <name>РежимВыгрузкиВУД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим выгрузки в УД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительно выгружать данные в &quot;Агент Плюс: Управление дистрибуцией&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e5de11ee-a1b1-4f78-b182-94e1cac19583">
+    <name>РежимВыгрузкиКодовНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим выгрузки кодов номенклатуры</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0fdf1fe1-a637-4653-a385-4a8d92aa5a5b">
+    <name>РежимВыгрузкиРекомендуемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим выгрузки &quot;Рекомендуемый&quot;</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данная опция изменяет режим выгрузки справочников &quot;Контрагенты&quot; и &quot;Торговые точки&quot; в мобильное устройство. Предназначена для сохранения совместимости с предыдущими версиями мобильного приложения Агент Плюс</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc718640-487e-4245-ae67-cc79671631e7">
+    <name>РежимЗагрузкиЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим загрузки заказов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>Use</createOnInput>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="a49f32a2-18c2-45e7-ae69-bc1bfa6d92d1">
+    <name>РежимРасчетаСкидок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расчета скидок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Режим расчета скидок в документах &quot;Заказ&quot; и &quot;Реализация&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="40120b52-4b4e-451f-9e0b-889e697c1843">
+    <name>СкрыватьБыструюНастройку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрывать &quot;Быструю настройку&quot;</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не предлагать быструю настройку. Включить &quot;Быструю настройку&quot; можно в разделе &quot;Сервис&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6f0f9723-b373-4ddf-b331-79257d8ea98e">
+    <name>СОДАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Интернет-адрес службы обмена данными &quot;Агент Плюс: СОД&quot;. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c4233f4c-73c5-4600-b84a-dbb66c9626e3">
+    <name>СОДПорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер интернет-порта службы обмена данными &quot;Агент Плюс: СОД&quot;. </value>
+    </toolTip>
+    <mask>999999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ba74365d-ce2b-4727-b615-4e978cfb6db5">
+    <name>СОДПутьКПанелиУправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к панели управления СОД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a86bfe87-281a-4ac3-8a4a-2196820a4052">
+    <name>СпискиТорговыхТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки торговых точек</value>
+    </synonym>
+    <comment>Списки торговых точек (в т.ч. и маршруты)</comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c67006c8-b4e9-4b86-b4ff-7f3b6405a4bd">
+    <name>СписокОчищаемыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список очищаемых документов</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Список видов документов в мобильном устройстве, которые будут автоматически удаляться перед загрузкой новых данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2fee6cac-b356-4116-8f80-0b2df249f51c">
+    <name>СписокОчищаемыхСправочников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список очищаемых справочников</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Список видов справочников в мобильном устройстве, которые будут автоматически очищаться перед загрузкой новых данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="51e97c37-caac-41d1-be46-718e30a9c8fa">
+    <name>СпособДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ доставки по умолчанию</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыДоставки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ доставки по умолчанию, при загрузке документов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c2388616-e976-4a26-ab20-e7d2528851c3">
+    <name>СпособОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обмена c МУ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ обмена данными с мобильными устройствами</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>DontUse</createOnInput>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="e5cd7f58-74fa-4320-89d9-8333c63c885c">
+    <name>СправочникВидыЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты посещений</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d9d6fcc-082f-48a2-bd57-69aca1b17bff">
+    <name>СправочникДополнительныеОтчетыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команды для мобильных устройств</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93c40fbc-450d-4800-acdf-5173968eed78">
+    <name>СправочникКомандыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команды для мобильных устройств</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8bd1cf66-f8ac-493c-8885-3e48466eb745">
+    <name>СправочникРезультатыПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты посещений</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a4fe4863-117b-425f-aad8-70be105eb521">
+    <name>СправочникФотографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник фотографии</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="37231c2a-2901-4a67-a7b7-a0e4779210fe">
+    <name>СправочникШаблоныАнкет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны анкет</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cf406b72-d6af-4f6d-bac5-50edd8db0de1">
+    <name>СтатусЗаказовКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус заказов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЗаказовКлиентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Проставлять указанный статус для загруженных документов &quot;Заказ клиента&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="55ea039b-71d7-4f8d-b3f3-9acaa79578b4">
+    <name>СтатусРеализацияТоваровУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус реализаций</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыРеализацийТоваровУслуг</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Проставлять указанный статус для загруженных документов &quot;РеализацияТоваровУслуг&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d73df65-79b3-4256-8307-00713a70477a">
+    <name>СтатусыПартнеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы партнеров</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5101506d-f6dd-4e50-9044-dd2a5386cca1">
+    <name>УчитыватьРезервы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать резервы при выгрузке остатков</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать остатки с учетом зарезервированного товара</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83b5097b-88f0-4e1a-a187-b6da71d56eb9">
+    <name>ЦветПросроченныхДолгов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет просроченных долгов</value>
+    </synonym>
+    <type>
+      <types>Color</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="56a069b6-c1e8-4a03-b25c-66e00c741667">
+    <producedTypes>
+      <objectType typeId="abc7cffb-e129-4a56-bad9-d75aba5616fb" valueTypeId="2262a9b5-33a8-47c0-82d8-f3c94ec72ad4"/>
+      <rowType typeId="7ac66a76-c679-44db-bc7a-da0585e58cd5" valueTypeId="b2ef2095-975d-4008-88a1-2762856af4c8"/>
+    </producedTypes>
+    <name>ТабСтартовыеНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стартовые номера</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2d4f22a1-3cce-407e-9abc-009eaeb04b58">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нумератор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="41db2874-68eb-4753-a42c-02ebde1c130a">
+      <name>ВидДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="73b6dba2-e377-42a1-abf9-5fd38499226d">
+      <name>Префикс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Префикс</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>16</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="ff8e6531-6276-4b96-9a8d-22cf5a9bdaf9">
+      <name>СтартовыйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стартовый номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>16</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f5b9262c-2012-49a6-bc2b-c93f68f871d1">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="9f2e8709-5bb4-4e63-b3f2-c4cf82a5d321">
+    <name>БыстраяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Быстрая настройка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="90738463-2de2-4f3e-8d8c-ad2bdcb5e544">
+    <name>ВыборАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор торгового агента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="54b592de-667a-48fb-a357-c9dc8ade9a16">
+    <name>ВыборВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор времени</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26616409-d1dd-4a8f-a7e0-71e9683df332">
+    <name>ВыборГрафика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор графика</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5095a964-6dc6-4cd2-865a-f8ea38fff304">
+    <name>ВыборЗагруженногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор загруженного документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fecd2817-c876-4c43-a84f-719b0fee2e93">
+    <name>ВыборКоординат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор координат</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c7e008b-d5be-4c29-9ff2-8c17e37cd5ad">
+    <name>ВыборМестоположения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор местоположения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c743067-67c9-40f1-83a4-1f89601cf2e2">
+    <name>ВыборПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор периода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bc63a526-545d-47c3-920f-5d1c5bba3386">
+    <name>ВыборЦвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор цвета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cfa4973a-abd9-4e7c-bb5a-f604db6a4c57">
+    <name>ВыборЦентраКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор центра карты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fd575a83-131b-4b74-8c28-bd951ba25a39">
+    <name>ГлавнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главная форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7cf83cfa-1122-49e0-be62-3941a4aaf423">
+    <name>ДокументЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мерчендайзинг</value>
+    </synonym>
+    <comment>Документ мерчендайзинга</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="465b0aba-5a90-469e-93bf-1ab9da683126">
+    <name>ДокументМерчендайзинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мерчендайзинг</value>
+    </synonym>
+    <comment>Документ мерчендайзинга</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5484fd42-c8fa-4054-a8ce-49e53bd0d2ef">
+    <name>ДокументПосещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посещение</value>
+    </synonym>
+    <comment>Документ мерчендайзинга</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0a697ec-7c6a-4c76-9f80-0f480c6a75de">
+    <name>ДокументыЗаданий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы заданий</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ac11605-de81-40fa-9c11-a59db0c093f6">
+    <name>ДокументыМерчендайзинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы мерчендайзинга</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1d6dfba1-bca0-45eb-837f-129911971df6">
+    <name>ДокументыПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы посещений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b17eddc3-487f-44b3-aa50-72b7cc30823c">
+    <name>ЖурналОбменаДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал обмена данными</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="548f68d2-d23d-4af9-ae11-eb954a7e85b5">
+    <name>ЗапросыМобильногоУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запросы мобильного устройства</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="03ac142a-cd2b-4584-b7c2-4ec425cba177">
+    <name>ИсторияВерсий</name>
+    <synonym>
+      <key>ru</key>
+      <value>История версий</value>
+    </synonym>
+    <comment>История версий обработки</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="acba220a-db08-4f10-8d10-f1ea695ef443">
+    <name>КатегорииДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категории документов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7d0c06a5-dfa3-46f3-9aa2-a1459a5698a0">
+    <name>ЛичныйКабинет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Личный кабинет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2272b010-5aab-46ea-bbf1-f6cc3302514c">
+    <name>ЛичныйКабинетЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на доступ в &quot;Личный кабинет&quot;</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc61418c-336b-4f24-9bb3-a988f383ea85">
+    <name>МобильноеУстройство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильное устройство</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9de11cb9-52e4-4484-a02e-db56a9145fd7">
+    <name>МобильныеУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильные устройства</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="daada578-da25-46d0-8d65-6188ebf5eb83">
+    <name>МобильныеУстройстваНастройкаЗагрузкиИзЛК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка загрузки мобильных устройств из ЛК</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6a354870-1b08-4e61-807d-d006e41a10af">
+    <name>МодульКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль карты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7402713f-2859-47cd-bf6a-af7f901b8d10">
+    <name>МодульОбщий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль общий</value>
+    </synonym>
+    <comment>Общий клиентский модуль</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2ec8255d-1c38-4e55-be0f-28c912e7f4f9">
+    <name>МодульОбщийМТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль общий МТ</value>
+    </synonym>
+    <comment>Общий клиентский модуль со спецификой мобильной торговли</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="43dc170b-298a-41ae-a3ec-9e8b7c73567c">
+    <name>МодульСправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль справки</value>
+    </synonym>
+    <comment>Модуль внешней справки</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="44bd6cc0-e4fe-4637-be2b-5b6229c2e720">
+    <name>НастройкиАгентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки агентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f0ed0bab-46ae-445d-85f0-ea29e28b7905">
+    <name>НастройкиМобильногоПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки мобильного приложения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e88b522b-6403-41e2-b295-ccd0febe6233">
+    <name>НастройкиМодуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки модуля</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a1f5f11-c482-4e3e-bb58-ffd4986feff1">
+    <name>ОбменДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен данными</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f02b2c47-64b2-42dc-9047-56113207c110">
+    <name>ОтчетВыполнениеПланаПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение плана посещений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9bb44fb4-2e85-4ace-ad9b-d4264f2d3fae">
+    <name>ОтчетВыполнениеПлановПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение планов продаж</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b43f7e4-a1e1-4f2c-bf33-14cd1dedb169">
+    <name>ОтчетКонтрольПередвиженийАгентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль передвижений агентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="882c6657-1f7f-42f0-8243-83b9cd1534e4">
+    <name>ОтчетФотоОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет фото отчет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f7084156-b98f-4ac3-a705-4fa859c95cd0">
+    <name>ПрикрепленнаяФотография</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прикрепленная фотография</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fce162a5-65cb-4141-9dc6-2d458c538d62">
+    <name>ПрикрепленныеФотографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прикрепленные фотографии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d66acce-eceb-4942-9561-a5f7615a17fc">
+    <name>ПросмотрНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ae0571b-fe91-4413-a880-c05ee1432166">
+    <name>РасписаниеТрекинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписание трекинга</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c3a3d8dc-e061-483b-a034-a5b7657fcc98">
+    <name>РегистрацияРегламентногоЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация регламентного задания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c03c9653-b253-4031-9d13-2f9780ef1349">
+    <name>РедакторМеток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор меток</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6b4b762-42be-47db-abdb-e897843b5808">
+    <name>СпискиТорговыхТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки торговых точек</value>
+    </synonym>
+    <comment>Маршруты для посещения торговых точек</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="18c388d9-86ad-48f1-9566-0b41622e37e0">
+    <name>СписокТорговыхТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список торговых точек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75cd9e3f-ed94-4eba-86af-c39c43b3fb08">
+    <name>СправочникВидыЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны анкет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="877b430a-6077-4704-a9bf-25533bab9f31">
+    <name>СправочникДополнительныеОтчетыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные отчеты для мобильных устройств</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b7fdcc0-d1c8-434a-93cb-bf13adee1202">
+    <name>СправочникКомандыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команды для мобильных устройств</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1f201053-cf78-48a8-be92-ce0c1f23a44e">
+    <name>СправочникРезультатыПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты посещений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0dbe9828-cd2c-42a6-b7fc-12c04523e1b1">
+    <name>СправочникШаблоныАнкет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны анкет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9220b569-1ad2-49d0-aefa-2abb5e890e8d">
+    <name>СтатусыПартнеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы партнеров</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="06bbc327-9b55-4511-9c2a-31f28fff40ca">
+    <name>ТехническаяПоддержка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая поддержка компании &quot;Агент Плюс&quot;</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="49428027-43a0-463b-89e3-7bc3df38bbd1">
+    <name>ФормаПросмотраФото</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма просмотра фото</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4ee4204-5d21-45b1-8aba-1d657bf104ef">
+    <name>ЭлементСправочникаВидыЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8a472af3-bef2-4d8e-8133-9396cab69df9">
+    <name>ЭлементСправочникаКомандыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда для мобидьных устойств</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0ffa0cf0-654f-4f6c-a098-a2f46177ac64">
+    <name>ЭлементСправочникаРезультатыПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты посещений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="328ef37f-ce32-4ab7-b4e2-b8ae5a696a0f">
+    <name>ЭлементСправочникаДополнительныеОтчетыДляМУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет для мобильного устройства</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d82a00be-bb54-41bc-a3b0-500d5f924f82">
+    <name>ЭлементСправочникаШаблоныАнкет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты посещений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e9e86a4b-ea00-4c46-9641-3e18f0972986">
+    <name>Версии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версии</value>
+    </synonym>
+    <comment>Версии обработки</comment>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="531a4312-66ef-4b71-b02a-ddf89d4dbdfd">
+    <name>КартаGoogleMaps</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта google maps</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="dcebf630-228b-44a3-b13f-2718bb8a92e6">
+    <name>КартаOSM</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта OSM</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="0a858cf6-7b8e-4b7d-811e-ca48bfa70229">
+    <name>КартаYandexMaps</name>
+    <synonym>
+      <key>ru</key>
+      <value>Yandex maps</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9195a8d4-9e31-4698-9871-78fab5b8b673">
+    <name>НастройкиМобильногоПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки мобильного приложения</value>
+    </synonym>
+    <comment>Шаблон настройки МТ Базовой</comment>
+  </templates>
+  <templates uuid="74c19352-f319-459d-9add-9b1ce2581edd">
+    <name>ОтчетПланПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет План посещений</value>
+    </synonym>
+  </templates>
+  <templates uuid="052c13ec-2845-41ba-8062-5f9881ce37e3">
+    <name>ПланПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>План посещений</value>
+    </synonym>
+  </templates>
+  <templates uuid="be0ffc96-609b-40d9-a452-ff77bddffae9">
+    <name>СКДВыгружаемыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДВыгружаемые данные</value>
+    </synonym>
+    <comment>СКД лля выгружаемых данных в мобильные устройства, закрепляемые за агентами</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="56ca67aa-8823-4a5e-8a70-1958316ff1fa">
+    <name>СКДВыгружаемыеДанныеGR</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДВыгружаемые данные GR</value>
+    </synonym>
+    <comment>СКД лля выгружаемых данных в мобильные устройства, закрепляемые за агентами. (Реализация для конфигурации УТ_GR)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="9395b9c0-d158-4b14-8633-588d54495e21">
+    <name>СКДПараметровФотоОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДПараметров фото отчета</value>
+    </synonym>
+    <comment>СКД параметров отчета</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="eb42c881-b3a5-4106-b848-5b2e3a8480c9">
+    <name>СКДПланыПродажНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДПланы продаж номенклатура</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e6b50350-932b-4332-a282-613fdaf35fae">
+    <name>ФотоОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото отчет</value>
+    </synonym>
+  </templates>
+  <templates uuid="a9553558-2fe3-4510-b055-7995113fd7c4">
+    <name>NoPhoto</name>
+    <synonym>
+      <key>ru</key>
+      <value>No photo</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>

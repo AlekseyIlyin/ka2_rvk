@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44fd8575-ef85-4fbf-8834-5b0e48954c08">
+  <producedTypes>
+    <objectType typeId="09006b62-22b9-49e8-9348-bef96afc5694" valueTypeId="b18a74c1-d89a-426c-8a67-d728e607b7c9"/>
+  </producedTypes>
+  <name>ЗаполнениеПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение подразделений</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="e8df3d81-543c-453e-95b4-7138b6f7eb65"/>
+  <defaultForm>ExternalDataProcessor.ЗаполнениеПодразделений.Form.Форма</defaultForm>
+  <attributes uuid="efe2edf3-f3a1-43d0-866a-1c1c01b99607">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="038954d3-88e7-4394-9942-53087a7de297">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="0aa6ff77-852b-404e-869c-94408345d992">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>

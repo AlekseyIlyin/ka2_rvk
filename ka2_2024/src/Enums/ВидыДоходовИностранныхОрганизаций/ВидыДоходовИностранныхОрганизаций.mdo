@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="246d6597-aff2-4325-80e3-06fbc364e9bc">
+  <producedTypes>
+    <refType typeId="90b607a0-a029-49cf-84fb-cac29556091c" valueTypeId="5b57ed60-6bf4-4c6a-9fd6-316471554e15"/>
+    <listType typeId="38a1c91b-01af-40fa-ab2f-fabee5cb7320" valueTypeId="ad018b9e-26fa-4efa-a953-886025c905eb"/>
+    <managerType typeId="00b092c1-7c2c-4409-8830-6eddb07a1fd6" valueTypeId="1738bfb9-7117-4f5e-a35b-8223beec2ab5"/>
+  </producedTypes>
+  <name>ВидыДоходовИностранныхОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды доходов иностранных организаций</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="899f307c-0fa8-43fb-b211-0e8bf29eccf6">
+    <name>Дивиденды</name>
+    <synonym>
+      <key>ru</key>
+      <value>01 - Дивиденды</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0b3bd25b-cdd6-43b6-8b72-ce347a9ee282">
+    <name>ДивидендыКонтролируемаяЗадолженность</name>
+    <synonym>
+      <key>ru</key>
+      <value>02 - Дивиденды из числа приравненных процентов по контролируемой задолженности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cac9eb44-5a15-4e04-a559-3f124c4d4c37">
+    <name>ДивидендыНоминальныйДержатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>03 - Дивиденды по ценным бумагам на счете депо иностранного номинального держателя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6e265a58-aad5-4002-b81a-da85c7dd5a8e">
+    <name>ДивидендыУполномоченныйДержатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>04 - Дивиденды по ценным бумагам на счете депо иностранного уполномоченного держателя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="32bae016-aa92-45d1-9346-22c7824f5766">
+    <name>ДивидендыДепозитарныеПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>05 - Дивиденды по ценным бумагам на счете депо депозитарных программ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a922a3ef-730c-49c5-937a-8d15619eda12">
+    <name>ИныеДоходыЦБНоминальныйДержатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>06 - Иные доходы по российским ценным бумагам на счете депо иностранного номинального держателя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ddc65a30-1f61-4045-89b9-d865a50a53b8">
+    <name>ИныеДоходыЦБУполномоченныйДержатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>07 - Иные доходы по российским ценным бумагам на счете депо иностранного уполномоченного держателя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2b33ee3e-4135-4a11-adf2-78892a0e52f2">
+    <name>ИныеДоходыЦБДепозитарныеПрограмы</name>
+    <synonym>
+      <key>ru</key>
+      <value>08 - Иные доходы по российским ценным бумагам на счете депо депозитарных программ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="92bfdd96-8758-42f7-803e-0933ae62ba1e">
+    <name>ДоходыОтРаспределенияПрибыли</name>
+    <synonym>
+      <key>ru</key>
+      <value>09 - Доходы от распределения прибыли или имущества организаций, иных лиц, в том числе при их ликвидации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4f944d32-34bc-410a-bae0-258de6071af9">
+    <name>ДоходыГосЦБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>10 - Доходы по гос. и муниципальным ценным бумагам, которые предусматривают доход в виде процентов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="121353d6-c9c9-4e75-8176-185e465539dd">
+    <name>ПроцентныйДоход</name>
+    <synonym>
+      <key>ru</key>
+      <value>11 - Процентный доход от долговых обязательств российских организаций любого вида</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="61990891-c3c3-4b6b-8069-ce9683a9b2a5">
+    <name>ДоходыИнтеллектуальнаяСобственность</name>
+    <synonym>
+      <key>ru</key>
+      <value>12 - Доходы от использования в РФ прав на объекты интеллектуальной собственности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a4c2f984-ce88-41ae-b90d-08505c930389">
+    <name>ДоходыОтРеализацииАкцийРФБолее50</name>
+    <synonym>
+      <key>ru</key>
+      <value>13 - Доходы от реализации акций организаций (более 50% активов в РФ, кроме п. 9 ст. 280 НК)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9fe8141f-0245-442d-899e-21c46b6786e0">
+    <name>ДоходыОтРеализацииАкцийРФНеБолее50</name>
+    <synonym>
+      <key>ru</key>
+      <value>14 - Доходы от реализации акций организаций (не более 50% активов в РФ)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b79baae7-7c9d-46a1-bcbc-d4ec3cb320e0">
+    <name>ДоходыРеализацияЦенныхБумаг</name>
+    <synonym>
+      <key>ru</key>
+      <value>15 - Доходы от реализации ценных бумаг</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a63c67a5-c498-4185-ad02-4f3c0cde74fe">
+    <name>ДоходыСрочныеФинИнструменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>16 - Доходы по операциям с финансовыми инструментами срочных сделок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8338f576-d344-452c-8078-1a3d656c8af6">
+    <name>ДоходыВалютныеОпераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>17 - Доходы от операций с иностранной валютой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1bc789be-c1ad-4bc3-8f1a-43dacb4c5901">
+    <name>ДоходыРеализацияНедвижимостиРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>18 - Доходы от реализации недвижимого имущества, находящегося на территории РФ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f5de7378-bfeb-42e2-b937-2db720698fe9">
+    <name>ДоходыРеализацияНедвижимостиНеРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>19 - Доходы от реализации недвижимого имущества, находящегося за пределами территории РФ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eba54c89-abb0-4552-adea-833953caa055">
+    <name>ДоходыРеализацияИмущества</name>
+    <synonym>
+      <key>ru</key>
+      <value>20 - Доходы от реализации движимого имущества</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b44f3edd-ae6d-45f1-9f60-ebf6c2dd2eb4">
+    <name>ДоходыАрендаИмуществаРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>21 - Доходы от сдачи в аренду или субаренду (лизинг) имущества, используемого на территории РФ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="87c11f02-cb9c-4d7b-8bf7-8ccb9a4d7148">
+    <name>ДоходыАрендаИмуществаНеРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>22 - Доходы от сдачи в аренду или субаренду (лизинг) имущества, используемого за пределами РФ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="187be645-86d9-48d4-8b9d-733d8fab2871">
+    <name>ДоходыАрендаТранспортаМеждународныеПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>23 - Доходы от аренды транспорта, судов, контейнеров, используемых в международных перевозках</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e4808680-07b2-40b8-9ab5-6baab4bf3578">
+    <name>ДоходыМеждународныеПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>24 - Доходы от международных перевозок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3e92ce2c-006c-48cf-8d73-357b6389c37a">
+    <name>ДоходыТЭО</name>
+    <synonym>
+      <key>ru</key>
+      <value>25 - Доходы от транспортно-экспедиционного обслуживания</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7fa75224-20f2-475f-8528-59a291f0f71b">
+    <name>ПремииСтрахование</name>
+    <synonym>
+      <key>ru</key>
+      <value>26 - Премии по прямому страхованию и сострахованию</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="232aa350-264d-4c84-8a05-4c9753fb60a8">
+    <name>ПроцентыДепоПремий</name>
+    <synonym>
+      <key>ru</key>
+      <value>27 - Проценты на депо премий (за исключением доходов, напрямую указанных в настоящем Перечне)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9f822bb3-a3f9-49de-9be0-8a6e09cb705f">
+    <name>ШтрафыПени</name>
+    <synonym>
+      <key>ru</key>
+      <value>28 - Штрафы и пени за нарушение договорных обязательств</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b5e702d2-e3b0-47c9-9c32-e6eb7024cdee">
+    <name>ДоходыПИФБолее50</name>
+    <synonym>
+      <key>ru</key>
+      <value>29 - Доходы от реализации паев закрытых ПИФ (более 50% активов в РФ)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d9990857-cdd5-470c-91dd-d1fd82e8d204">
+    <name>ДоходыПИФНеБолее50</name>
+    <synonym>
+      <key>ru</key>
+      <value>30 - Доходы от реализации паев закрытых ПИФ (не более 50% активов в РФ)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="31da8fbb-2fad-4e8f-b705-21f081855241">
+    <name>ДоходыЦФА</name>
+    <synonym>
+      <key>ru</key>
+      <value>31 - Доходы по операциям с цифровыми финансовыми активами и (или) цифровыми правами</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9e5834bd-6c8e-4b50-98cc-119c9d32c09b">
+    <name>ДоходыСервисныеРиски</name>
+    <synonym>
+      <key>ru</key>
+      <value>32 - Доходы участника соглашения о сервисных рисках (п. 30,31 части 2 статьи 250 НК)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4dbb0888-9264-4ec4-8e52-0af7b1b030df">
+    <name>ДоходыТовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>33 - Доходы от продажи товаров, не предусмотренные в вышеуказанных пунктах настоящего Перечня</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a781ce3-be0b-4bc3-8237-3ec32e3a9e1a">
+    <name>ДоходыИноеИмуществоНеОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>34 - Доходы от продажи иного имущества, не подлежащие налогообложению у источника выплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e0742286-5187-43b4-9c93-e0f96ca0f8e1">
+    <name>ДоходыИмущественныеПраваНеОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>35 - Доходы от продажи имущественных прав, не подлежащие налогообложению у источника выплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="53a7fc79-b723-4f20-a57f-2dd631f6e92a">
+    <name>ДоходыУслугиНеОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>36 - Доходы от осуществления работ, оказания услуг на территории РФ, не облагаемые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fcf3e2f9-9d5e-4cf6-bdad-cc5517307db8">
+    <name>ДоходыОблигацииНеОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>37 - Доходы от реализации облигаций , не облагаемые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6cb7c286-471b-4a39-a267-bec17a214182">
+    <name>ДоходыВПределахВкладаАкционера</name>
+    <synonym>
+      <key>ru</key>
+      <value>38 - Доходы в пределах суммы вклада акционера в хозяйственное общество </value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ed92ea6-9f8b-4cef-879b-997b9be5bf5e">
+    <name>ИныеДоходыОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>39 - Иные доходы, подлежащие обложению налогом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="af687e56-ffa8-46c6-b520-e8016ff2d983">
+    <name>ИныеДоходыНеОблагаемые</name>
+    <synonym>
+      <key>ru</key>
+      <value>40 - Иные доходы, не подлежащие налогообложению</value>
+    </synonym>
+  </enumValues>
+  <templates uuid="a696a9d0-1ca8-43cc-86e2-fef7fa01f25c">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Enum>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1fe638b-acc2-4436-95ce-6bd3d27f0a3b">
+  <producedTypes>
+    <objectType typeId="9a39c08c-bdab-469c-8639-171aeff63733" valueTypeId="9f050e2f-ac22-47b3-a1ab-849918e87254"/>
+    <refType typeId="f5700434-6b4e-4d4f-b2cf-9309453ffdbb" valueTypeId="3a116156-88ea-471f-a05b-a3591da9481d"/>
+    <selectionType typeId="9139f2c1-1e27-4324-b566-a37b47d4eb3b" valueTypeId="f45307ec-b12e-437b-9d5f-426214281d44"/>
+    <listType typeId="468d5d6b-14d0-434d-a38b-c501ec550711" valueTypeId="73a5beab-82c2-4cf2-bc83-e3e2333c4669"/>
+    <managerType typeId="6bb6de2f-8557-4962-a85b-580eb9fa2092" valueTypeId="cf1108b6-5933-46fc-952d-c213dca8a8be"/>
+  </producedTypes>
+  <name>ШаблоныДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШаблоныДокументов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="7be89998-dea3-4118-9883-a574002d9a62">
+      <name>ЗапросСправки2НДФЛ</name>
+      <description>Запрос справки 2-НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="577f29ab-039d-43ae-beda-7c203e1fe1a4">
+      <name>ЗапросСправкиПоОстаткамОтпуска</name>
+      <description>Запрос справки по остаткам отпуска</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ee60966b-0429-411f-80ae-3528c92f60ca">
+      <name>ЗапросСправкиСМестаРаботы</name>
+      <description>Запрос справки с места работы</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5aa9192c-c240-46cc-be20-880472e0e9b4">
+      <name>ЗаявлениеНаКомпенсациюОтпуска</name>
+      <description>Заявление на компенсацию отпуска</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5cd56464-a595-4f15-a0e5-e6a1b7bf9a63">
+      <name>ЗаявлениеНаНалоговыеВычеты</name>
+      <description>Заявление на налоговые вычеты</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b326271a-c6d3-4d8b-997b-36d46a4ee1ad">
+      <name>ЗаявлениеНаОтпуск</name>
+      <description>Заявление на отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0050ecf2-340b-4d59-afa1-966bf1a57c72">
+      <name>ЗаявлениеНаУдержаниеДСВ</name>
+      <description>Заявление на удержание ДСВ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="fe2823ba-9409-4538-9001-be80930dd989">
+      <name>ЗаявлениеОбИзмененииЛичныхДанных</name>
+      <description>Заявление об изменении личных данных</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d934aaf5-c755-412f-a05a-d1571ed44f8d">
+      <name>Отсутствие</name>
+      <description>Отсутствие</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ШаблоныДокументов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ШаблоныДокументов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="67f322d1-d7ca-4b2c-a937-bd1b1883e257">
+    <name>МакетДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет документа</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3d0a409-aacf-48cd-b50b-68444b03bbd5">
+    <name>ХешНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш настроек</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется при обновлении программы.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="86e3163e-7aa3-4661-81f0-cf6011866c94">
+    <name>ТребуетсяСогласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется согласование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9effe80-4fdc-44a2-a522-84a057a91ad1">
+    <name>КодДокументаКадровогоМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код документа кадрового мероприятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КодыДокументовКадровыхМероприятий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b27356b7-6cea-4c98-9e48-c0ecb91a775b">
+    <name>ВАрхиве</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон больше не используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Установите флажок, если начисление больше не планируется использовать.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9ab37a8f-39df-46bb-8cb2-c81de07270b2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="77c6e504-fe7b-4ebb-b9f7-e2806c59a66a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="53acd697-774f-42e3-9a85-75d968ebecb3">
+    <name>МакетыПредопределенныхВариантов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макеты предопределенных вариантов</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

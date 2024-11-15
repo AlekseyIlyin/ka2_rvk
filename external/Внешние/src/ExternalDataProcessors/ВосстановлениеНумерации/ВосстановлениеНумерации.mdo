@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e47c5b2-2b1e-41fb-901c-d8882bdd607e">
+  <producedTypes>
+    <objectType typeId="4c750509-cb6d-43bf-989a-59a4d5c657fd" valueTypeId="e5bdf4dc-df36-4f17-9b94-d31ad1cd4934"/>
+  </producedTypes>
+  <name>ВосстановлениеНумерации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Восстановление нумерации</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="87fafe3a-ddac-4144-a3c1-f41cf89054ab"/>
+  <defaultForm>ExternalDataProcessor.ВосстановлениеНумерации.Form.Форма</defaultForm>
+  <attributes uuid="d374c40c-6024-4b8d-80dd-d4ee0813eab3">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3a0f8fab-650e-4242-8a03-59af23443c4a">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="74438b8d-de19-45ac-8bb8-ede6d1e50d38">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="ae064157-0afe-4d7b-b4eb-a1508b27012c">
+    <name>ПоказыватьТолькоПроблемные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать только проблемные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="cfce9ab8-afea-4988-a273-089a60ca5d78">
+    <producedTypes>
+      <objectType typeId="bdea6465-1e79-4435-84f0-80e98ffe0c0f" valueTypeId="f9d59177-ce2a-44a9-8980-a8836a799903"/>
+      <rowType typeId="191d6ff0-79ec-48da-a2b1-72ed92ae7e31" valueTypeId="689a667b-303f-467a-978b-617cbaa584b4"/>
+    </producedTypes>
+    <name>ОбъектыДляОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты для обработки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d9def971-4d1a-40f3-8346-1c6cfe3682ed">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>DocumentRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8b63a6d3-2bc2-4784-a021-46683a06bfc2">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="dcc8f467-9b9c-47d0-afdd-28b49cc829dc">
+      <name>Номер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2dfb0001-71dc-4bec-aa93-82c72a16de04">
+      <name>НомерНовый</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер новый</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e98a8ee0-f904-4acc-9b4e-f23f5171a351">
+      <name>НарушенПорядок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нарушен порядок</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="82aa2800-2ec0-4bfc-a827-708a31b0bd7a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
