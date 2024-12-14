@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8f34b5e0-066f-454b-854e-6e2e73d753ba" extendedConfigurationObject="9ca75ff4-fa62-49dd-9655-4570cc73fdd9">
+  <producedTypes>
+    <objectType typeId="31fed2b8-4110-4493-82d4-6e5ad0c2ef20" valueTypeId="31ffe44e-7c15-4475-989b-3cdda3d5062d"/>
+    <refType typeId="fec04f78-2084-40d5-b044-9bcc4ccdb895" valueTypeId="eb718491-0546-4be0-9501-a2db7ee38f32"/>
+    <selectionType typeId="98ccea12-4d97-4fa6-9f6d-8eb4fd8a1eec" valueTypeId="bbe14b6d-c63f-4c6f-9458-6c179a1dbbee"/>
+    <listType typeId="ab2258d2-c716-4c8f-8680-334be52908c9" valueTypeId="f20fc6fc-2e4a-4f66-b783-288cda0ac7d2"/>
+    <managerType typeId="f7b6b381-1a6d-422e-a846-257769cfea88" valueTypeId="40e5136c-b497-4a76-85dd-4601d9c6260b"/>
+  </producedTypes>
+  <name>ТаможеннаяДекларацияИмпорт</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

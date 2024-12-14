@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6d706f45-682b-4be0-bb99-208a2358d022" extendedConfigurationObject="050b09a5-e36c-42b6-b337-cdddd2968bea">
+  <producedTypes>
+    <objectType typeId="0f9adeea-ce99-4cda-b040-344d19110cde" valueTypeId="24ef6bc1-a1d5-4d43-a426-061284c3ea1b"/>
+    <refType typeId="d3744d95-8374-487a-bdbc-fe5744f840b8" valueTypeId="9fd9adb9-996d-4b83-949f-d0d932fdb78d"/>
+    <selectionType typeId="5c20224a-bbd2-4eac-8433-2e5e380dac17" valueTypeId="57c92108-f5b3-4530-aa37-4fc9e043b7d8"/>
+    <listType typeId="709f3314-e18b-451a-bb37-dc7036a1f213" valueTypeId="bef965ca-8db5-43c9-ac86-389efe314612"/>
+    <managerType typeId="655ae6e8-2d26-4334-ad7c-4aa014547c50" valueTypeId="47388add-ec92-4777-a8a4-43e43904e5f9"/>
+  </producedTypes>
+  <name>ПеремещениеТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

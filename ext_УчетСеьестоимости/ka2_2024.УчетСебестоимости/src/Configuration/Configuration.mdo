@@ -29,10 +29,10 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <defaultRoles>Role.усОсновнаяРоль</defaultRoles>
-  <version>1.03</version>
+  <vendor>Кайрус</vendor>
+  <version>1.04</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.25</compatibilityMode>
   <languages uuid="d8ebb5d1-0260-40e7-89ab-666295311d68">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -128,24 +128,47 @@
   <catalogs>Catalog.УсловияОбслуживанияПартнеровТорговымиПредставителями</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <documents>Document.ВводОстатков</documents>
   <documents>Document.ВводОстатковОПродажахЗаПрошлыеПериоды</documents>
   <documents>Document.ВводОстатковПрочиеРасходы</documents>
   <documents>Document.ВводОстатковТоваров</documents>
+  <documents>Document.ВнутреннееПотребление</documents>
   <documents>Document.ВозвратТоваровОтКлиента</documents>
+  <documents>Document.ВозвратТоваровПоставщику</documents>
+  <documents>Document.ДвижениеПродукцииИМатериалов</documents>
+  <documents>Document.КорректировкаНазначенияТоваров</documents>
   <documents>Document.КорректировкаПриобретения</documents>
   <documents>Document.КорректировкаРеализации</documents>
   <documents>Document.КорректировкаРегистров</documents>
   <documents>Document.ОприходованиеИзлишковТоваров</documents>
+  <documents>Document.ОтчетКомиссионера</documents>
+  <documents>Document.ОтчетКомиссионераОСписании</documents>
+  <documents>Document.ОтчетКомитентуОСписании</documents>
+  <documents>Document.ОтчетОРозничныхВозвратах</documents>
   <documents>Document.ОтчетОРозничныхПродажах</documents>
+  <documents>Document.ОтчетПереработчика</documents>
+  <documents>Document.ОтчетПереработчика2_5</documents>
   <documents>Document.ПервичныйДокумент</documents>
+  <documents>Document.ПередачаСырьяПереработчику</documents>
   <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.ПеремещениеТоваров</documents>
+  <documents>Document.ПоступлениеОтПереработчика</documents>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.ПриобретениеУслугПрочихАктивов</documents>
+  <documents>Document.ПроизводствоБезЗаказа</documents>
+  <documents>Document.РаспределениеВозвратныхОтходов</documents>
+  <documents>Document.РаспределениеПрочихЗатрат</documents>
   <documents>Document.РасходныйКассовыйОрдер</documents>
   <documents>Document.РасчетСебестоимостиТоваров</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.СборкаТоваров</documents>
   <documents>Document.СписаниеБезналичныхДенежныхСредств</documents>
   <documents>Document.СписаниеНедостачТоваров</documents>
+  <documents>Document.ТаможеннаяДекларацияИмпорт</documents>
+  <documents>Document.ВозвратТоваровМеждуОрганизациями</documents>
+  <documents>Document.ПересортицаТоваров</documents>
+  <documents>Document.РасчетРезервовПодОбесценениеЗапасов</documents>
+  <documents>Document.ПоступлениеТоваровОтХранителя</documents>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.СпособыДоставки</enums>

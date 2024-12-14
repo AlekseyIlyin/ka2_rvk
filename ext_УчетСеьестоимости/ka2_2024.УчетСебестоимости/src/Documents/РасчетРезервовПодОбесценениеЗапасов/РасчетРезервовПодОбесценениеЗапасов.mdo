@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9a21259a-e02c-4a9b-8f48-500caa4de018" extendedConfigurationObject="526e480b-b18e-4c00-affe-6b9d4922c750">
+  <producedTypes>
+    <objectType typeId="3525bfa4-3821-4599-99e7-94aa753c68e2" valueTypeId="b3a5ba52-afb4-4a72-88a8-4f45e1fc5c1f"/>
+    <refType typeId="8a85702d-162b-4b9d-8c8d-eed4d501a29c" valueTypeId="c557ccc9-1fc2-4f4b-b586-0c47e92db6b8"/>
+    <selectionType typeId="e6605c61-394f-48c1-a3a7-ac7db861f013" valueTypeId="b48b23e6-ccdd-4acc-80ae-d06b40bdb4f7"/>
+    <listType typeId="087cf6e2-d8d9-4ba2-a276-b2ce1d87884b" valueTypeId="2a5a3b76-a2fe-4c79-96ca-8ecdfdbdf7e0"/>
+    <managerType typeId="6f76b999-1c2c-4254-a877-273a82ebf114" valueTypeId="d0fa9cd2-0068-4e75-8df3-d0d01f2f30f6"/>
+  </producedTypes>
+  <name>РасчетРезервовПодОбесценениеЗапасов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

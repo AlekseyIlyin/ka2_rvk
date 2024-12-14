@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="ae9e1a9a-a256-4d3c-9466-69ad5c99dc79" extendedConfigurationObject="46bd86cd-8521-46c5-b121-55593ccd011f">
+  <producedTypes>
+    <objectType typeId="78112f96-246f-43d2-aac7-abab3da6aa3c" valueTypeId="b91df806-369c-43d7-946f-383535f680f5"/>
+    <refType typeId="fabfcc5a-313b-42d0-bbf7-1916129cad7e" valueTypeId="a0812699-2a30-45ff-9451-ef19b3c34165"/>
+    <selectionType typeId="a38a1f1e-93ee-42e5-96a9-604d0aa9d38f" valueTypeId="201c0f50-1ed6-45a7-bc04-683c5bfea939"/>
+    <listType typeId="8011b84e-46b9-4e17-9293-08a18f039bbb" valueTypeId="3d14dc7e-b05a-4bff-a8da-37f4a6e60326"/>
+    <managerType typeId="1a16be44-fd5b-4acf-a612-e07cdf2a84dd" valueTypeId="9b4f5ffb-8888-42de-abbb-b5d19ba17712"/>
+  </producedTypes>
+  <name>ПересортицаТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

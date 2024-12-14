@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="abc1d3cf-a85c-4ece-aea0-26595f3d5eac" extendedConfigurationObject="875880ed-82fe-442b-a3d0-193a359c10f3">
+  <producedTypes>
+    <objectType typeId="97a51289-2edc-4c78-a36d-5a65d0efa195" valueTypeId="12c24757-ee82-4080-98d2-55503372db51"/>
+    <refType typeId="92a9e3af-53f0-4fe4-bd32-729d39236c67" valueTypeId="10860def-89cb-4c2b-8f03-3eda218e94c0"/>
+    <selectionType typeId="33f97afc-1211-4bf5-8844-8251720401bd" valueTypeId="8f8c6ddc-fdec-47f6-b64b-4e76415e4239"/>
+    <listType typeId="1ea17286-94d5-4ae7-abb9-3517c5442eb2" valueTypeId="b7fbdd3d-55c1-4799-921d-2263475280e5"/>
+    <managerType typeId="ecbcb5bb-b2a2-49f8-92ec-d7ee81aa4bf7" valueTypeId="77f10407-b20d-4046-b96b-48faaa198f00"/>
+  </producedTypes>
+  <name>ПередачаСырьяПереработчику</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

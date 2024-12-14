@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0ba96905-3647-467d-9b0d-ba6285744450" extendedConfigurationObject="b726b4a4-d691-4fa0-bef7-e6f1bd056cbf">
+  <producedTypes>
+    <objectType typeId="83f4e935-8c22-41fd-a789-9af44d04af8e" valueTypeId="2279c823-d2e7-4c70-9570-6b5ba2ccacc2"/>
+    <refType typeId="15f4e59e-8f21-4e5e-bc51-3e63fd47b836" valueTypeId="8cb76de0-253e-483d-8578-a9c86e8c514e"/>
+    <selectionType typeId="29f49abb-c119-45a0-ba3d-e35edfe49eee" valueTypeId="48f05b23-d670-4cf2-8127-bd3753fe4230"/>
+    <listType typeId="786226b2-6bc1-444c-b02f-0d7564eb2673" valueTypeId="dd07b24d-18d4-4fe9-9249-c142e2222d1e"/>
+    <managerType typeId="2ecfebce-f3d4-4c17-8047-b7e95412eea7" valueTypeId="5cd97dbb-9ce9-4dc3-9741-36c6085fbda8"/>
+  </producedTypes>
+  <name>ВнутреннееПотребление</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="56a74efd-5935-4f9d-a924-fd136bb150dd" extendedConfigurationObject="ed0cdd3f-d72b-4f55-b40a-1e6507d3c55b">
+  <producedTypes>
+    <objectType typeId="94be5d12-2faa-49e7-bf5b-edee71626b3c" valueTypeId="1559a9c3-b254-4fbb-b9f1-79300837411b"/>
+    <refType typeId="19040f91-da6b-456e-9246-bf5d8fd16bbb" valueTypeId="26c4e7f9-5539-46ab-87d7-d6c0692fcde3"/>
+    <selectionType typeId="ab932f36-6f8d-4997-ba22-b61c3d1993b4" valueTypeId="ab2fde71-d7d4-4f60-8d83-bf8ead944b61"/>
+    <listType typeId="0be8a28b-fe31-4c52-bd9b-4879d4de7033" valueTypeId="146d26aa-597a-4c6f-9b86-44470d0c1abe"/>
+    <managerType typeId="2de96bc0-3165-4e3c-b122-3e94b162bbfa" valueTypeId="720ca402-8507-44ec-a214-f61e796c48b1"/>
+  </producedTypes>
+  <name>ОтчетОРозничныхВозвратах</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+  <registerRecords>AccumulationRegister.усПродажи</registerRecords>
+</mdclass:Document>
