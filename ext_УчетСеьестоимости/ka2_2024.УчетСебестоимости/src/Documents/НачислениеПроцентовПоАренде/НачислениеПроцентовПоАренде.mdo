@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="5de85d8f-a0e6-4643-8bf3-bbf74f30e1b9" extendedConfigurationObject="21d6df98-1c1e-407a-8755-fc1c794df363">
+  <producedTypes>
+    <objectType typeId="c4d12c6d-4988-4578-ae8f-8022344c5fa8" valueTypeId="220980b1-21fa-462f-aba6-9b77269d88d1"/>
+    <refType typeId="7489802a-ed65-492e-85b7-4c52c3e14663" valueTypeId="2296a698-d8d4-45be-8464-e937fa677515"/>
+    <selectionType typeId="fee8b5e7-4d98-4ad8-8241-c44f19ab0428" valueTypeId="d424631b-5c4b-4028-a57d-787649be6c11"/>
+    <listType typeId="02e92bc5-2e72-47ae-af77-a222b10c5cf1" valueTypeId="8ee7a33c-c8e6-4e08-8300-a3f18220c4be"/>
+    <managerType typeId="5b69db64-72ea-4c56-af03-974bbfcd924c" valueTypeId="f570bed4-80d7-4aaf-8118-7f1c4c853e07"/>
+  </producedTypes>
+  <name>НачислениеПроцентовПоАренде</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

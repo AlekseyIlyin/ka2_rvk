@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e48ef7e4-902e-4037-a3fa-16478fac011e" extendedConfigurationObject="db4ee291-37e9-4a72-9caf-cbcdaae50287">
+  <producedTypes>
+    <objectType typeId="688795f8-9f5e-4402-bc98-fdd086f4ed01" valueTypeId="e93c1473-2a49-4e6a-aed2-d53436b6cf63"/>
+    <refType typeId="db2ee798-67d3-4a75-b2b1-8dbd065d5a90" valueTypeId="0cc379f2-7efb-48e3-9cc5-6eae0d901f3f"/>
+    <selectionType typeId="e91351f3-defd-4d41-b1c9-324460aa51b6" valueTypeId="c816d6f8-b9cf-412a-9438-5307cee635e1"/>
+    <listType typeId="dc639a6f-2483-4afb-a312-e3bc417a20eb" valueTypeId="08682a07-39dc-4eb1-9c94-5bf51b492339"/>
+    <managerType typeId="db7b38c0-9289-4cd6-91b3-e4c0b396aebc" valueTypeId="da04cb9d-0229-4a65-8387-f639d1249f46"/>
+  </producedTypes>
+  <name>ОтражениеЗарплатыВФинансовомУчете2_5</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

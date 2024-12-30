@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="327899de-3746-4dbc-92ee-9c2c8a6c6b1c" extendedConfigurationObject="7ecdbd0d-7dbf-443d-af41-e9cde537fb1b">
+  <producedTypes>
+    <objectType typeId="a7a232c2-1819-4086-a069-7e7e802d217b" valueTypeId="ae900994-6f36-46fc-8b90-26a9eb4b56c4"/>
+    <refType typeId="1213f8e5-2af5-4dab-92e3-dc6ca926afab" valueTypeId="dc8af315-24cf-4650-8b6f-687d6628364a"/>
+    <selectionType typeId="3a3bf56a-b458-4e33-8839-3f38fe6ab3fb" valueTypeId="6b8aec1f-fe6a-455c-a606-85d2a7220a3a"/>
+    <listType typeId="2a6a9085-2325-4052-a5ee-f293dbad5953" valueTypeId="dd98555d-9f7d-47ff-92f7-5872838bd5e5"/>
+    <managerType typeId="de81006a-915f-42bd-876e-2e5ca1513ec5" valueTypeId="d0efba6b-2ab4-44f8-9f13-5b0d70bc912a"/>
+  </producedTypes>
+  <name>РаспределениеПроизводственныхЗатрат</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

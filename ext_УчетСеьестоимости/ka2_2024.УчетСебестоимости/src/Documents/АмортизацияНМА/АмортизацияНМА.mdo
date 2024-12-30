@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="59316bfb-a4cf-42e8-baea-abeb81048783" extendedConfigurationObject="c1bb9462-1108-4615-be91-e8cb4bc5ac90">
+  <producedTypes>
+    <objectType typeId="740b0531-f92e-4372-9b18-be9fd53d383b" valueTypeId="fb963648-5a8c-4678-ae2a-b0bb06e2d692"/>
+    <refType typeId="97faeaf0-5108-498e-a996-daa727047803" valueTypeId="9cbe4c55-10b6-413d-a0c6-bdf10bebfe96"/>
+    <selectionType typeId="47f7e417-5666-4fc6-a25a-1085093a7ecc" valueTypeId="7306c3f8-f328-4985-a143-fa07dc7a8255"/>
+    <listType typeId="c71a6419-bf7f-45be-bbde-b99937856398" valueTypeId="c0eda378-5bae-4f6e-8e00-aa8d90c2020d"/>
+    <managerType typeId="f7e395ed-15c0-4ecb-b718-a997e75e52ba" valueTypeId="cb2f64b5-ac2c-4d72-949e-4e98fee49ef6"/>
+  </producedTypes>
+  <name>АмортизацияНМА</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

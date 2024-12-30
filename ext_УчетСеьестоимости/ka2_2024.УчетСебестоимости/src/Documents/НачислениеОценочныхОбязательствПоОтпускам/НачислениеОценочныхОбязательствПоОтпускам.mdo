@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3c2f20e9-45b4-4649-b111-d60800963fc6" extendedConfigurationObject="59d9c6cd-c0ce-4d66-81d7-0f2ce83e24e5">
+  <producedTypes>
+    <objectType typeId="2a97e64a-881e-49e6-9295-98def672087e" valueTypeId="b799d9ee-8fc5-49ed-a966-a145c50718b2"/>
+    <refType typeId="7f710122-520f-4c2e-8376-45ea9ca62624" valueTypeId="a86e7f7c-060e-4ff6-b1cf-521b504dbb70"/>
+    <selectionType typeId="ed23ada2-946a-42be-883e-fd50e796316a" valueTypeId="6884ca76-5f49-4104-8026-4db1a29cd05a"/>
+    <listType typeId="93f2ca34-d8f0-455f-91ef-10543cbab886" valueTypeId="b0ad0391-4034-4013-834b-e2e52fb0109e"/>
+    <managerType typeId="57e93e9e-b5ef-472d-a9a8-5e76b40fdf7d" valueTypeId="68983d5b-8986-426c-9d5a-1c1a049a8db4"/>
+  </producedTypes>
+  <name>НачислениеОценочныхОбязательствПоОтпускам</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

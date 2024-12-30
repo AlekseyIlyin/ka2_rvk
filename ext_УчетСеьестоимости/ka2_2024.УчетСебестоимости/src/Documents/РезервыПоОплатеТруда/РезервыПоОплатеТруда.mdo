@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="90f4ccea-6920-45db-9eae-f741f00c6ed5" extendedConfigurationObject="57b6cf4e-6baf-485a-9dfa-5125f8e62383">
+  <producedTypes>
+    <objectType typeId="6c6f441b-3508-4832-97af-feb54f2e37fa" valueTypeId="eff03bc3-7578-415e-9c7d-e9d2cf41bddc"/>
+    <refType typeId="8dc33b3f-9821-4ff1-a340-4193e3b429df" valueTypeId="d41c682d-5733-4a7f-86d2-3c85ac04dcd6"/>
+    <selectionType typeId="2bd4eb2d-08f0-4fb7-a2e2-5640580542ad" valueTypeId="cfc6fdf1-91c6-4d2b-a87b-344f4f5db563"/>
+    <listType typeId="6bd316b2-c279-4a2c-954e-60096ecfbea4" valueTypeId="2aa494a0-180e-46f8-b0f9-9ef6f5e5f989"/>
+    <managerType typeId="c38abaaf-3f76-4a2e-9815-48bd8c9a0462" valueTypeId="8349ed0b-bdc4-47b0-9c4a-5a458e765175"/>
+  </producedTypes>
+  <name>РезервыПоОплатеТруда</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

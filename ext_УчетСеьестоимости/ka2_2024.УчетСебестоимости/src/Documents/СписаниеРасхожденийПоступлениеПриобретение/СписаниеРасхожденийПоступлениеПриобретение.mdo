@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8582ae27-cefd-494d-878f-a5c07fe0f93f" extendedConfigurationObject="e84c1bcc-9cc0-40bf-87dd-fc069f3d4a55">
+  <producedTypes>
+    <objectType typeId="04679bf2-8f4a-4fb4-a755-4e283428d8db" valueTypeId="35eca1d8-56d5-4a9c-9cac-2bc9ebf18ec7"/>
+    <refType typeId="b48abc52-6ca1-4ed8-81c6-f97d48d001ec" valueTypeId="fbbdc813-a59c-44be-8415-be6ddbcd7428"/>
+    <selectionType typeId="c108d785-8550-46b9-8c13-fa876a4d1762" valueTypeId="64429507-9220-4cdb-ac50-8a41fdf74e8c"/>
+    <listType typeId="24a9f106-0d58-4d7e-a44a-3bcd1c4df921" valueTypeId="e2069884-06eb-4026-9c64-e95dd3841db5"/>
+    <managerType typeId="bc582386-191d-46c0-8a7a-ceef2e4cd0c7" valueTypeId="58d3bdb5-793e-4d39-ae09-1475ed9a2f37"/>
+  </producedTypes>
+  <name>СписаниеРасхожденийПоступлениеПриобретение</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

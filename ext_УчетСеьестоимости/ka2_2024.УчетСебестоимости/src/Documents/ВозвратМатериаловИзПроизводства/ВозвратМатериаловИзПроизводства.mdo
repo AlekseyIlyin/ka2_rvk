@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="587f5f3a-c6f3-4b44-be05-0f93cceb80d0" extendedConfigurationObject="b2d9aeb9-d64a-4c82-be61-7b553c250d92">
+  <producedTypes>
+    <objectType typeId="a81572a7-dff7-4143-93f6-d974af8f5c2d" valueTypeId="d7acb589-bffd-49a5-971c-896faa4d3136"/>
+    <refType typeId="37cd3247-f15a-4757-ab29-7241c53c934f" valueTypeId="e50cffe0-a18f-4efb-ab15-8837d5e0f5c8"/>
+    <selectionType typeId="dba5302c-07f6-441e-a4a2-4af7554119f0" valueTypeId="25bedd12-3f68-47b1-af1d-66e91181422b"/>
+    <listType typeId="b364d090-2b5c-4012-b65f-3b2e9326bccc" valueTypeId="b6eed9a5-a4f1-43f2-8881-c7b8c71d482e"/>
+    <managerType typeId="986e073a-60b6-40eb-8ba5-7090d0a70615" valueTypeId="0ac1e64c-561d-4083-8c4e-1bdd982ecdc1"/>
+  </producedTypes>
+  <name>ВозвратМатериаловИзПроизводства</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d694d402-c264-445d-8631-e1bb91e99ee0" extendedConfigurationObject="a726f939-eee9-4d7f-bca3-11410135f17d">
+  <producedTypes>
+    <objectType typeId="3154573a-839b-4e89-a0c3-b63cdf28e7ac" valueTypeId="9de233f2-9f46-430d-99a9-0573faed5893"/>
+    <refType typeId="9a84c8d1-a95c-48af-a242-e526e3c52702" valueTypeId="67602ce2-e4ac-44a0-ac9a-9a1e5709ea32"/>
+    <selectionType typeId="da0cdb92-ff9f-4f7a-b8f0-0d3250f7b9f7" valueTypeId="173457e7-9d55-4771-89bd-4528315d1c1d"/>
+    <listType typeId="c072f20e-3270-4b42-a84d-28c8e0c54f51" valueTypeId="5bc48af5-43a2-4f7e-a7d4-b0f933cc06ee"/>
+    <managerType typeId="0ff9a4d7-2838-46c9-a316-101e55bac9ba" valueTypeId="ad0891b8-85a1-451f-bb02-9a6c0391cd7c"/>
+  </producedTypes>
+  <name>КорректировкаВидаДеятельностиНДС</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e113b02f-5fba-49e6-8f1a-dd4b0b45ab0b" extendedConfigurationObject="38704ecc-0815-4eee-87ba-389be2a9dd47">
+  <producedTypes>
+    <objectType typeId="a810217e-5ec0-4b0c-a11b-c314b7de463d" valueTypeId="c6e56535-6703-4b64-a7f6-4b789909e87a"/>
+    <refType typeId="68db8406-ef55-4a44-8430-94f3f072b9ab" valueTypeId="58939c9f-3732-4041-ad06-89b6d919e365"/>
+    <selectionType typeId="4bfbcddb-2c0e-4089-9d59-83a5ff6ae387" valueTypeId="b95735b8-f6bd-4ade-bf63-6b75c18ad626"/>
+    <listType typeId="e188936f-00da-427b-8db6-fc87bf4c631b" valueTypeId="75d071e2-8260-4773-ab66-38c42271156c"/>
+    <managerType typeId="e3f42a85-f04b-4d1a-b291-e9f27cff1778" valueTypeId="ec035aa4-0b5a-46c3-aabd-04eb7dcce11e"/>
+  </producedTypes>
+  <name>ИзменениеУсловийДоговораАренды</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

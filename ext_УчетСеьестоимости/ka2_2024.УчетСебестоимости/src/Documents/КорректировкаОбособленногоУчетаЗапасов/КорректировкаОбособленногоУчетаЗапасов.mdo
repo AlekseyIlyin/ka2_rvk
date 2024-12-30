@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="98f6af7d-2669-4b18-a399-cb9767611263" extendedConfigurationObject="3f6e20dc-0962-4f81-9b79-db172a1b6015">
+  <producedTypes>
+    <objectType typeId="71c40ccc-d829-4f0a-bf09-629e72cd68d7" valueTypeId="ac0da638-4ff0-4d56-a03c-0a394725c8b2"/>
+    <refType typeId="ce66fc0b-f7bf-4021-8b24-99c8cbb66b75" valueTypeId="e20c7102-0ace-4fc0-a85b-fe5bc993ec9c"/>
+    <selectionType typeId="e3950f30-ad2e-4200-9b7c-6d0e6dcbe370" valueTypeId="7de3dc77-6304-467b-a237-2457ba27e53c"/>
+    <listType typeId="0de8b334-feea-4347-a21a-7fa105052089" valueTypeId="9e284c4e-adb7-46cb-a949-29d10746615c"/>
+    <managerType typeId="9f9c7f98-b1d7-49ab-ae57-4574719fb4bf" valueTypeId="009a1a29-aabe-40b1-88cd-5af7b7df78d5"/>
+  </producedTypes>
+  <name>КорректировкаОбособленногоУчетаЗапасов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

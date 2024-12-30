@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="34349166-678d-4af1-a470-1cb3c3f66eb4" extendedConfigurationObject="523aebfa-6119-47ec-8687-966b6accd368">
+  <producedTypes>
+    <objectType typeId="0d2e3658-bd6d-4476-a3d5-4b0c506c850d" valueTypeId="19836ae3-6a96-410d-80ef-033aa8156443"/>
+    <refType typeId="25422740-f5bc-423a-a71b-e0a3bb7863a9" valueTypeId="7d684f67-5e3e-48a9-85fb-bc8328cd47ce"/>
+    <selectionType typeId="59e8999e-afa2-4740-8786-5ee474cf136e" valueTypeId="22b5dd0d-bcf9-4295-9bcf-e8fe0c10d2cd"/>
+    <listType typeId="94e95602-d143-4edc-9d69-3b548c19ee2d" valueTypeId="1cc40b12-8fd1-4d68-a07d-8940ae17f1c8"/>
+    <managerType typeId="51e289eb-a265-4ffa-bca3-bd439749be5c" valueTypeId="db3f03a9-2bf0-47e1-b31f-c2bd8fe20efc"/>
+  </producedTypes>
+  <name>ИсправлениеРазвернутогоСальдоТоваровОрганизаций</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

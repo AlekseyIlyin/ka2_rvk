@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="26c40967-0d20-467a-aeb1-b5bdd4b97a27" extendedConfigurationObject="0af49beb-c742-4f23-aa07-90e632b32368">
+  <producedTypes>
+    <objectType typeId="df7974c1-2aed-4a5d-b5d2-f169a3a9e8ab" valueTypeId="11c6403a-176c-4da4-a089-57a113f9ebe0"/>
+    <refType typeId="e96f5bcd-be78-4ac9-8755-678a3b03b707" valueTypeId="766a6e58-3460-4848-be23-7978c01739e1"/>
+    <selectionType typeId="6a43b22b-30ea-47a0-9bb9-c1489f2693ff" valueTypeId="296758c4-cb86-43ad-aa0e-a4fa80385594"/>
+    <listType typeId="a52c4b66-33dd-4756-9855-6e266b71b078" valueTypeId="6e3ced85-53b2-402c-b23e-af8de21a6f10"/>
+    <managerType typeId="a16fd524-9e8a-4e7e-905a-aecfe26bc221" valueTypeId="99fcbfee-979a-4d25-941a-7885b2906ec0"/>
+  </producedTypes>
+  <name>АктВыполненныхВнутреннихРабот</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

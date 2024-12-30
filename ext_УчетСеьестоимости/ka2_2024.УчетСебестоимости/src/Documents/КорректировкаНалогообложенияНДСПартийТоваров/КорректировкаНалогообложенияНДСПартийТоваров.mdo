@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="401bb08f-9c65-4a82-84ba-fc3d270c0401" extendedConfigurationObject="e6c1cb4a-3ffa-4ff0-b736-2e3b7a770865">
+  <producedTypes>
+    <objectType typeId="0045ede2-c25a-49df-83ce-82b54b2b03d8" valueTypeId="2597a145-6ed7-404b-983c-47675237eaa1"/>
+    <refType typeId="ca9daad5-3ac3-4120-8262-16c08582daa8" valueTypeId="58203f45-424a-430e-9753-0a9abadaabd7"/>
+    <selectionType typeId="0bcfe6e8-d273-4f31-b4ce-77437ef9dbce" valueTypeId="b5b86c32-5bf6-4b70-b7e3-9139d5acbc40"/>
+    <listType typeId="7f217184-3d75-4678-b42c-069c198f0a3e" valueTypeId="e74f3a2b-a600-4f69-93be-5a1629b7fd3d"/>
+    <managerType typeId="2bbb9e76-0560-4a39-b8a5-ae607907e83b" valueTypeId="d1783dc3-2a38-4bda-98df-1fa1adbc1ae7"/>
+  </producedTypes>
+  <name>КорректировкаНалогообложенияНДСПартийТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

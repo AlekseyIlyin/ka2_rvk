@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="22467b4a-d3fb-41f2-b95c-a7cd73e733aa" extendedConfigurationObject="623f14da-8031-4584-882f-46a56a6557b9">
+  <producedTypes>
+    <objectType typeId="eb39103e-e706-4201-85cf-5ed507b1d339" valueTypeId="23b5d88d-4ea4-4126-a669-77a7cf2bdb11"/>
+    <refType typeId="1660c912-0529-483c-a6db-6707a25f3a49" valueTypeId="7feaa9d4-a5b6-419e-8f8e-988af8a51b11"/>
+    <selectionType typeId="4e0360f9-cf7b-4baa-9e31-bf00bd008e07" valueTypeId="06d0de5c-8daf-49b4-be2e-c4b92e6802ef"/>
+    <listType typeId="bc33a65f-2ffa-45d8-8be9-29c061952f0d" valueTypeId="611ec108-691c-40c4-8654-3eb172ffac1b"/>
+    <managerType typeId="250c52a3-0bc1-4c4d-9f45-d350a9388646" valueTypeId="d6e85dd0-6631-4449-83ba-cb6e79ac6933"/>
+  </producedTypes>
+  <name>ВыкупПринятыхНаХранениеТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

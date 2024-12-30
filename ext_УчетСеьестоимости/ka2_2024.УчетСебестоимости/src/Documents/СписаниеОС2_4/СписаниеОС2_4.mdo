@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0a4dbcac-b4d1-4713-8b03-f9202c1940fa" extendedConfigurationObject="860e98ca-f89d-4564-b153-04121cbdb4fc">
+  <producedTypes>
+    <objectType typeId="5e646f74-360c-43d6-99df-2d77ba42967b" valueTypeId="f8e5f5e5-2172-4530-a160-6df036a6618e"/>
+    <refType typeId="66dd4373-9af2-496e-b2a6-2137bb07ec5e" valueTypeId="00713394-4e50-4fe3-9ea4-22f98a697bb3"/>
+    <selectionType typeId="70a8c13e-fdfe-4185-ac34-4e10925f056a" valueTypeId="72369dae-10ae-47d2-8939-451c8073b568"/>
+    <listType typeId="7e5521ca-6c6c-4ef3-951e-e64408db6596" valueTypeId="19abedea-556a-4612-8e06-421c273f4c7b"/>
+    <managerType typeId="3b094426-96f6-445f-9222-fdd69693864c" valueTypeId="9658d2fc-bce6-4916-a963-986d6da84680"/>
+  </producedTypes>
+  <name>СписаниеОС2_4</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

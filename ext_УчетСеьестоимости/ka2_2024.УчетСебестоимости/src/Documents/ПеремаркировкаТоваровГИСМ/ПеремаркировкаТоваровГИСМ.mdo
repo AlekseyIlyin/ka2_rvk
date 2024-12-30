@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0fd4fbd6-77cb-43d0-9e79-52be10be114b" extendedConfigurationObject="db8c07bb-61d7-4026-a20f-811bed0a743a">
+  <producedTypes>
+    <objectType typeId="7950acd9-f10b-40a0-90ea-521b90ce426a" valueTypeId="20ec0306-1bd4-47f7-93e5-ee3f505a6021"/>
+    <refType typeId="80571891-4fd4-4916-bbe7-e3897e8c24c2" valueTypeId="f9cd3036-05a9-45d8-8ac3-f9fe335996b6"/>
+    <selectionType typeId="ddd59d51-57f0-45d3-af33-50ccdd035610" valueTypeId="d4fca155-d42f-421f-bde9-66c6d3abb705"/>
+    <listType typeId="9c0f4784-4010-4be0-bfb5-411e9a0b8718" valueTypeId="7287c002-daa7-4c48-bf1b-77e309f17925"/>
+    <managerType typeId="5fbbf227-24cf-4756-8881-2261eb82eba4" valueTypeId="e0a5b0c3-884f-425b-9949-2bea40af9d2a"/>
+  </producedTypes>
+  <name>ПеремаркировкаТоваровГИСМ</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

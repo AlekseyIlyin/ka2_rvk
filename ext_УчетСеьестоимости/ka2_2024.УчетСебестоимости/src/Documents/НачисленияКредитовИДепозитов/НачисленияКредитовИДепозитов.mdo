@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d4fa4a7e-2061-434b-9219-b98fd741248d" extendedConfigurationObject="8b84ed48-f371-48d6-be7c-fda11c0fb81d">
+  <producedTypes>
+    <objectType typeId="e82ce986-0411-4554-9fb2-160ad0038b7d" valueTypeId="72569c70-b8df-4fda-a94e-9726047db380"/>
+    <refType typeId="b3adbbce-4925-4f76-8b00-dede0c953f22" valueTypeId="bb8623be-29df-4cff-8e71-6eb3190f319c"/>
+    <selectionType typeId="a807b88b-65a4-4cec-973a-219bce9816cc" valueTypeId="0bd4fa88-4fa2-4bcb-812d-d3d32c3d4ad5"/>
+    <listType typeId="92d78948-6f4a-4ed7-96f1-a4aedffc6c91" valueTypeId="1c4ed83d-4a19-4db8-8d5f-078e44deabc2"/>
+    <managerType typeId="8dd8b113-12ef-4fe5-8344-b7ce0fef4058" valueTypeId="c7b90387-0828-4037-9227-025d42ab3d9f"/>
+  </producedTypes>
+  <name>НачисленияКредитовИДепозитов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0f0fcec8-54be-4b7a-817e-e1c980855663" extendedConfigurationObject="92b6a577-8497-47a1-b896-0283e78b52f7">
+  <producedTypes>
+    <objectType typeId="817f40cd-4663-4323-89c6-fd767a03b5f6" valueTypeId="ea9458d7-35e8-43c3-aafc-85aa57d161e5"/>
+    <refType typeId="5c76579a-b994-4ab6-9258-3dcd885b51b7" valueTypeId="6c804d35-73fc-49ae-9cc9-823c6cb6e9a6"/>
+    <selectionType typeId="45553fdc-22d2-42ac-a199-1d6fff148f40" valueTypeId="a2cd6844-6f7f-481f-b9a1-71212cc55d1f"/>
+    <listType typeId="61d1a67d-965d-4f23-9be3-1689f5d2a7db" valueTypeId="0b37dda5-5c04-4733-9c6c-d9a49a74e019"/>
+    <managerType typeId="ccef5a67-0918-4c08-985a-87a915dfb907" valueTypeId="5d8bd57e-c362-47d5-bfc6-c3cb953830d3"/>
+  </producedTypes>
+  <name>СчетФактураНалоговыйАгент</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

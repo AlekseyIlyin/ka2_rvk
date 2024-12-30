@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8069548d-ab82-4b48-9416-a0ff7a5d65da" extendedConfigurationObject="a99b75b4-8e49-4e46-8df8-c58c5aa08d77">
+  <producedTypes>
+    <objectType typeId="b1dd7ac6-6d91-490a-a3f7-e8f0ab67d719" valueTypeId="44a19935-135f-41f7-8cb8-44d59051995b"/>
+    <refType typeId="397ce093-79e5-4344-9ccf-395d263262e6" valueTypeId="ed5a2a16-e742-4867-b361-6e71c3fcb790"/>
+    <selectionType typeId="e2f8aad4-cacf-46fd-bfce-47d84512677d" valueTypeId="dc73cd9c-3f18-4ddc-8195-5448c470a3b0"/>
+    <listType typeId="6dcc59d3-0b0b-44e0-a569-e3a091562ac0" valueTypeId="02de64eb-b2fb-4c4d-bbcb-f608a6f0a08b"/>
+    <managerType typeId="5b9f1568-adfc-4145-9935-32c6acee1ec9" valueTypeId="221fedcc-5ec8-45d3-a69a-e3d7fd4875bb"/>
+  </producedTypes>
+  <name>МаркировкаТоваровГИСМ</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

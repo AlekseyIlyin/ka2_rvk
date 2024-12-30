@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f08befa6-f944-4fbd-a36f-765113b93cb9" extendedConfigurationObject="6fc9de54-3141-4852-9cb8-c1be947c406a">
+  <producedTypes>
+    <objectType typeId="476c59d9-90c0-48c9-8f50-21c7c9ed0c62" valueTypeId="2dd27bf3-1bbf-4bcf-8ee7-d220d190fbb2"/>
+    <refType typeId="87c3aac5-caf7-496c-8ab0-f5afc4fc5233" valueTypeId="43cced24-1bc3-4c8c-9c36-3f7cabd84241"/>
+    <selectionType typeId="4e020a23-9ea6-491c-8c5b-b78134f8f566" valueTypeId="9c3abfec-a39a-4dae-bb78-4bd13f69569c"/>
+    <listType typeId="0cd4e133-650d-4317-9e77-6b171cda8895" valueTypeId="873c2ea3-a636-4002-ba8c-66c0a18545ac"/>
+    <managerType typeId="247962f5-8b89-443b-8716-b0e617ee7d6c" valueTypeId="9bf2a10b-d1d4-4b6b-932e-b58895b459e5"/>
+  </producedTypes>
+  <name>РаспределениеРасходовБудущихПериодов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

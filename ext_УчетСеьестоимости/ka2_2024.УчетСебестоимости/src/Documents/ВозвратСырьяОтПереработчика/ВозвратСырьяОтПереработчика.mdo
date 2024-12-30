@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d8fec09c-48bc-4e9d-a7ef-c2d8307a01e1" extendedConfigurationObject="9323766d-7cf9-40d8-9fcc-a20431993092">
+  <producedTypes>
+    <objectType typeId="c0789419-535b-4896-a397-4481d6541201" valueTypeId="e1f7abfa-f745-424f-8318-11bf356982ed"/>
+    <refType typeId="3d8836db-2ea2-4898-afc5-7c5e9ca3212c" valueTypeId="9bb3cc48-424a-414a-a8c9-eb87b5aa8fe0"/>
+    <selectionType typeId="890464da-f4c7-47ab-8f53-c15cd51f7a2b" valueTypeId="7ca376fd-9d46-4102-b69e-d33ed29a0577"/>
+    <listType typeId="58832485-0b21-400f-abab-be3d115826d0" valueTypeId="16f78383-d3a4-44b7-b076-a9dc9e0f0fb0"/>
+    <managerType typeId="c5faf391-5248-47a3-aa18-8bd6a5b79c2a" valueTypeId="54b64743-60a3-4fc9-922c-9d49927fa129"/>
+  </producedTypes>
+  <name>ВозвратСырьяОтПереработчика</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

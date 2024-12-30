@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="bfe2e0ef-7640-4348-9033-07d0a0317d40" extendedConfigurationObject="59e930f5-213f-4dac-96fa-b6988ca7380e">
+  <producedTypes>
+    <objectType typeId="2344e19d-b263-4dd4-a655-a11c667cef21" valueTypeId="d5790c25-7e33-466a-b34e-f9808542cac2"/>
+    <refType typeId="7fa24d08-e459-4559-80d9-6ce69fc18de6" valueTypeId="6f29d257-2d74-43f8-80b9-2c01b0ffa644"/>
+    <selectionType typeId="436e528d-8be8-4a46-9294-b57b14de96b6" valueTypeId="3122bb13-13f4-4836-bcf4-b19c2e91b3c1"/>
+    <listType typeId="0cabe5ff-5cbc-4091-a76f-14e92b14228a" valueTypeId="29985771-085a-4d3e-94c0-8b682feae5d8"/>
+    <managerType typeId="8c6d9ee1-deb9-4fe6-ae22-6c8569f8693b" valueTypeId="063d8fe4-a211-4b6a-9299-b2fc9d81050f"/>
+  </producedTypes>
+  <name>ПрочиеДоходыРасходы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

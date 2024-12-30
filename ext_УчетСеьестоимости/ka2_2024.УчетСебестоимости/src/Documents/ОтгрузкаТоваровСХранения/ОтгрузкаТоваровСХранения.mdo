@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="63f2dbac-5a68-4472-beb5-50e77508189e" extendedConfigurationObject="d4ea3dd1-aebc-4e26-808c-a5edc9ee54b1">
+  <producedTypes>
+    <objectType typeId="bab1e58a-278f-43b4-92cd-4ed3328c503e" valueTypeId="8ac017ad-d0f4-4577-97c4-9529e529e733"/>
+    <refType typeId="670261dc-c96f-4a15-9030-a7cae9da2ca4" valueTypeId="7f0ab6cb-7891-4c65-bfcd-dfc7ba975d1a"/>
+    <selectionType typeId="16420cb2-15cb-46b6-8996-17a32e448ba3" valueTypeId="fa6337e7-1c2f-46df-b7fb-c70592632402"/>
+    <listType typeId="a56a2023-da35-4f24-8f89-08d6459839bd" valueTypeId="29d2964f-fd5c-462e-ae5a-9a6aae0d1f1a"/>
+    <managerType typeId="73387eaa-7050-4bd3-ba0d-35dfb3d6879a" valueTypeId="cdebd138-57e5-4916-bfcc-bfbf4df91c52"/>
+  </producedTypes>
+  <name>ОтгрузкаТоваровСХранения</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>

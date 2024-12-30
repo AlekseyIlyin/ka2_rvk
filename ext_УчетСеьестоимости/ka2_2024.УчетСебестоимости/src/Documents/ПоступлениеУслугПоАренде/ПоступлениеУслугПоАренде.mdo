@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="15fe754e-f770-4a81-8dec-e7de1b6d3923" extendedConfigurationObject="d7ce1807-a660-4a56-a35f-7410c2a562a7">
+  <producedTypes>
+    <objectType typeId="d1828c84-0ad8-4e34-b27b-9f7370b8ab77" valueTypeId="6db9546b-b42c-4c02-8002-a3dcc547e271"/>
+    <refType typeId="b8e7ec97-b7ab-4273-ba78-a01fa9b9f1f2" valueTypeId="cec97a4e-470e-4ccd-ab5a-9a3f96e76e45"/>
+    <selectionType typeId="de6750fd-cdab-4021-8c80-f6cfc53b40f2" valueTypeId="4d5c0e30-da9a-47a1-b68c-0e6ff1058855"/>
+    <listType typeId="ca008144-c4c5-4562-81d8-0673b81918f4" valueTypeId="67a71b28-a656-4da0-a6fe-e99f74e15f26"/>
+    <managerType typeId="a10e495d-2e46-4d63-997a-26098715034b" valueTypeId="1e215e8b-6869-480c-9f8e-68e7cfb96cf8"/>
+  </producedTypes>
+  <name>ПоступлениеУслугПоАренде</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <registerRecords>AccumulationRegister.усОстаткиПоПартиям</registerRecords>
+</mdclass:Document>
