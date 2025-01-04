@@ -33,7 +33,6 @@
   <version>1.01</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.25</compatibilityMode>
   <languages uuid="136b6751-0261-4a88-88ae-3099dfd8bd73">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -69,6 +68,7 @@
   <commonModules>CommonModule.СобытияФорм</commonModules>
   <commonModules>CommonModule.ФормированиеПараметровФискальногоЧекаСерверПереопределяемый</commonModules>
   <commonModules>CommonModule.ФормированиеФискальныхЧековСерверПереопределяемый</commonModules>
+  <commonModules>CommonModule.УдалениеПомеченныхОбъектовСлужебный</commonModules>
   <constants>Constant.рвк_АдресПолучателяОшибокЖР</constants>
   <constants>Constant.рвк_ВключитьИнтеркампани</constants>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>

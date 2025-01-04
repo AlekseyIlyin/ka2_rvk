@@ -18,8 +18,21 @@
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>DontUse</createOnInput>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Параметр подсистемы</value>
+  </objectPresentation>
   <type>
     <types>Date</types>
+    <types>Boolean</types>
+    <types>Number</types>
+    <types>String</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
     <dateQualifiers/>
   </type>
   <foldersOnTop>true</foldersOnTop>
@@ -33,6 +46,14 @@
       <type>
         <types>Date</types>
         <dateQualifiers/>
+      </type>
+    </items>
+    <items id="291d707a-092b-4b17-920b-fb39195bd67b">
+      <name>КонтролироватьОстаток</name>
+      <description>Контролировать остаток</description>
+      <code></code>
+      <type>
+        <types>Boolean</types>
       </type>
     </items>
   </predefined>
