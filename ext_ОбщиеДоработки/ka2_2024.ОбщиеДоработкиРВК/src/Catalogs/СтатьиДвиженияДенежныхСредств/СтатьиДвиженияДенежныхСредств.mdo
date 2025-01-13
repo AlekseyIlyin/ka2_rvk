@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e2964ade-c6f0-4736-8c45-447b75dd658b" extendedConfigurationObject="14acec6d-fed6-45ff-b38d-019e8efe98fa">
+  <producedTypes>
+    <objectType typeId="c30fd0f6-cd36-4622-bd32-f281ee6714b4" valueTypeId="59f02fd6-ccbd-4e94-aaf7-6d95f37c1db4"/>
+    <refType typeId="1f4f67f4-f4de-45df-80ed-e5ff8ce1a325" valueTypeId="d1bd01f6-86d2-48c4-ba1f-25d8786f27cc"/>
+    <selectionType typeId="2b5dbf37-418e-4a91-82b9-620c746c017e" valueTypeId="1e849049-1409-4977-aa5d-f138a333bc55"/>
+    <listType typeId="46892438-3114-42b8-a608-279c77fe7e3a" valueTypeId="450f9b7d-e0c2-45ca-a0c4-cf95872513ed"/>
+    <managerType typeId="ca82fa86-42b0-416d-be5c-d2846b0ebdf2" valueTypeId="faad22fd-cb40-4e58-a72a-aae824b083bc"/>
+  </producedTypes>
+  <name>СтатьиДвиженияДенежныхСредств</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <forms uuid="68502f16-fc96-40ff-9354-b44fb2252cde" extendedConfigurationObject="bb252fb9-6e9b-40aa-b362-2395abf76745">
+    <name>ФормаВыбораПоХозяйственнойОперации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Catalog>
