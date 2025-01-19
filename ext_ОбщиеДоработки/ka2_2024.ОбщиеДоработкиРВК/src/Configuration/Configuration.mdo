@@ -43,6 +43,9 @@
   </languages>
   <styleItems>StyleItem.ИтогиФон</styleItems>
   <styleItems>StyleItem.ЦветФонаВыделения</styleItems>
+  <styleItems>StyleItem.ЦветТекстаЗапрошеноКоммерческиеПредложения</styleItems>
+  <styleItems>StyleItem.ЖирныйШрифтБЭД</styleItems>
+  <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
   <commonPictures>CommonPicture.ВниманиеКрасный</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
@@ -57,6 +60,8 @@
   <commonPictures>CommonPicture.СерииНоменклатурыКолонкаСтатусов</commonPictures>
   <commonPictures>CommonPicture.СостоянияСтрок</commonPictures>
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
+  <commonPictures>CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</commonPictures>
+  <commonPictures>CommonPicture.Комментарий</commonPictures>
   <roles>Role.рвк_ОсновнаяРоль</roles>
   <commonModules>CommonModule.ЗапасыСервер</commonModules>
   <commonModules>CommonModule.ПроведениеДокументов</commonModules>
@@ -83,6 +88,7 @@
   <catalogs>Catalog.СтатьиДвиженияДенежныхСредств</catalogs>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.КоммерческоеПредложениеКлиенту</documents>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПриемкиТоваров</enums>
@@ -91,4 +97,5 @@
   <enums>Enum.СтатусыДоговоровКонтрагентов</enums>
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
+  <enums>Enum.ВидыОперацийКоммерческихПредложений</enums>
 </mdclass:Configuration>
