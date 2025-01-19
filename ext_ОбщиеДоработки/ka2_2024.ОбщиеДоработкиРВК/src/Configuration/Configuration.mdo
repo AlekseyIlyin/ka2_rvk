@@ -74,6 +74,8 @@
   <commonModules>CommonModule.ФормированиеПараметровФискальногоЧекаСерверПереопределяемый</commonModules>
   <commonModules>CommonModule.ФормированиеФискальныхЧековСерверПереопределяемый</commonModules>
   <commonModules>CommonModule.УдалениеПомеченныхОбъектовСлужебный</commonModules>
+  <definedTypes>DefinedType.ОснованиеСчетФактураВыданный</definedTypes>
+  <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <constants>Constant.рвк_АдресПолучателяОшибокЖР</constants>
   <constants>Constant.рвк_ВключитьИнтеркампани</constants>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
@@ -89,6 +91,8 @@
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.КоммерческоеПредложениеКлиенту</documents>
+  <documents>Document.СчетФактураВыданный</documents>
+  <documents>Document.КорректировкаРеализации</documents>
   <enums>Enum.ВариантыВыбытияМаркируемойПродукции</enums>
   <enums>Enum.ВариантыОформленияПродажи</enums>
   <enums>Enum.ВариантыПриемкиТоваров</enums>
