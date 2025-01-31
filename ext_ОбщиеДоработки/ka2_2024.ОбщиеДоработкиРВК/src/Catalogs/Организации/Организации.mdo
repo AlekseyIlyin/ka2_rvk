@@ -12,4 +12,22 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
+  <forms uuid="7c024053-778e-40b1-83c0-9a4c14cb58fd" extendedConfigurationObject="05b92c4f-6c1c-4b9e-b8c5-05dbb1b2d919">
+    <name>ФормаЭлемента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <commands uuid="d9195008-30ba-4cb6-996d-5b0c7497527b" extendedConfigurationObject="61cecb87-209d-4d51-853b-9de28bca1d8f">
+    <name>Реквизиты</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <group>Checked</group>
+      <commandParameterTypeExtension/>
+    </extension>
+    <group>FormCommandBarImportant</group>
+  </commands>
 </mdclass:Catalog>
