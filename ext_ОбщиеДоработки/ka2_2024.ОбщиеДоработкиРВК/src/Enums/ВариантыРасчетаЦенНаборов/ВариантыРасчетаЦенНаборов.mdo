@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="15358ab9-7f20-4b93-b105-13bdd0d299bb" extendedConfigurationObject="a9f357e7-d8a1-41d9-8e8c-998aba7763d9">
+  <producedTypes>
+    <refType typeId="84fa2abe-9720-4b0c-9a53-4f267d9ad534" valueTypeId="09594015-212c-4383-9e10-df4900125bec"/>
+    <listType typeId="fc17aba0-022a-415e-9d24-8ef4db37daa8" valueTypeId="651c6e96-ee40-4deb-8802-6f9e90d517f3"/>
+    <managerType typeId="c36fb920-76ee-449e-a737-6d196fc18abc" valueTypeId="33954661-4681-439d-aa50-b3ed6ce80931"/>
+  </producedTypes>
+  <name>ВариантыРасчетаЦенНаборов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="b21782e5-2942-4493-b179-3fa9a2c9d0cd" extendedConfigurationObject="95ffa208-4f6c-4263-a3c2-f5da92f7a1cd">
+    <name>РассчитываетсяИзЦенКомплектующих</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="af216908-f995-4e67-bfff-14ca4edd2f41" extendedConfigurationObject="3397ef23-61b6-4d41-9c81-5d406f66703f">
+    <name>ЦенаЗадаетсяЗаНаборРаспределяетсяПоЦенам</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="cd74ddd2-940d-44e7-a7e7-a97c845cd4e5" extendedConfigurationObject="299a1f71-e30b-4908-8487-03a62b1c6d26">
+    <name>ЦенаЗадаетсяЗаНаборРаспределяетсяПоДолям</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

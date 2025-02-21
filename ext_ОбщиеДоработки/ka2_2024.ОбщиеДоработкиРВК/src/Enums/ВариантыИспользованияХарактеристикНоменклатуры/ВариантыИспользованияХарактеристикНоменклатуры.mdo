@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9e8b1c6e-026a-4dbe-bbaa-6dd273a51cbf" extendedConfigurationObject="24711251-eb0c-4d8e-9fc2-dec1853a6bc5">
+  <producedTypes>
+    <refType typeId="00004042-5baf-4a2d-a22f-e5d83d42ed55" valueTypeId="8a549365-f195-4e22-b975-26a6c9ff0370"/>
+    <listType typeId="82369988-84e0-4cbb-bcf5-533e36a5aac7" valueTypeId="09a8174b-8dad-4b95-9614-413019f3e5a7"/>
+    <managerType typeId="3058a50c-d7e3-43fa-959c-8aeedc742697" valueTypeId="55510ee4-0b34-4c3a-898f-2c91909a63bb"/>
+  </producedTypes>
+  <name>ВариантыИспользованияХарактеристикНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="f49eb051-e51b-430e-961f-a4f3e31d55dd" extendedConfigurationObject="15c1cae0-77b2-42e1-a9de-a4c4f175befc">
+    <name>ОбщиеДляВидаНоменклатуры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="c7a087f6-31d8-48be-8ac5-bf4122172978" extendedConfigurationObject="13319a72-4e20-4b5f-b9ce-d7497f40a1ac">
+    <name>ОбщиеСДругимВидомНоменклатуры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="e6c83db3-04d0-4a6a-af45-b5989b5771ef" extendedConfigurationObject="f51a8342-ea7d-40c4-ab28-217a0342be10">
+    <name>ИндивидуальныеДляНоменклатуры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

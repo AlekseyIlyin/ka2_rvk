@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7aa070e4-c35b-454e-9639-331f308c31dc" extendedConfigurationObject="6acd3aa2-61e9-49e7-be2a-40e6ad0e4ef4">
+  <producedTypes>
+    <refType typeId="927986e6-2a83-4aa4-8ba1-d9ddc3a9351f" valueTypeId="96c6af7c-7268-4eed-be81-0238e5df5c2e"/>
+    <listType typeId="a70855c9-6191-40db-9a39-104f35eec43d" valueTypeId="1dc86857-1345-498d-a783-50b340380d59"/>
+    <managerType typeId="8edd5d7a-91a2-4dfc-a9c5-00c9626d4243" valueTypeId="11006a57-124b-4924-bc96-b7837d7a4bea"/>
+  </producedTypes>
+  <name>НастройкиИспользованияСерийНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="10391d49-3056-4972-a881-58268892f9aa" extendedConfigurationObject="b652662e-74f7-49e5-a093-a623c1c276ad">
+    <name>ЭкземплярТовара</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="e6212fdb-6086-45a6-b40b-b88efc3148fe" extendedConfigurationObject="298969c8-8fe6-4d10-a0a3-2efc243e4439">
+    <name>ПартияТоваров</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

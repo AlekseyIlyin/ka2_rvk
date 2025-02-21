@@ -50,6 +50,7 @@
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ЦветТекстаНевыбраннойКартинки</styleItems>
+  <styleItems>StyleItem.ТекстИнформационнойНадписи</styleItems>
   <commonPictures>CommonPicture.ВниманиеКрасный</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьПоШаблону</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
@@ -66,6 +67,8 @@
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</commonPictures>
   <commonPictures>CommonPicture.Комментарий</commonPictures>
+  <commonPictures>CommonPicture.ДополнительныеРеквизитыСведения</commonPictures>
+  <commonPictures>CommonPicture.ИнформацияПоНедоступнымПолям</commonPictures>
   <roles>Role.рвк_ОсновнаяРоль</roles>
   <commonModules>CommonModule.ЗапасыСервер</commonModules>
   <commonModules>CommonModule.ПроведениеДокументов</commonModules>
@@ -81,6 +84,9 @@
   <definedTypes>DefinedType.ОснованиеСчетФактураВыданный</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСуммаЛюбогоЗнака</definedTypes>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
+  <commonCommands>CommonCommand.ЗадачиПоПредмету</commonCommands>
+  <commonCommands>CommonCommand.МоиЗаметкиПоПредмету</commonCommands>
+  <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <constants>Constant.рвк_АдресПолучателяОшибокЖР</constants>
   <constants>Constant.рвк_ВключитьИнтеркампани</constants>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
@@ -93,6 +99,7 @@
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.УпаковкиЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.СтатьиДвиженияДенежныхСредств</catalogs>
+  <catalogs>Catalog.ВидыНоменклатуры</catalogs>
   <documents>Document.ПриобретениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.КоммерческоеПредложениеКлиенту</documents>
@@ -108,4 +115,10 @@
   <enums>Enum.ТипыНалогообложенияНДС</enums>
   <enums>Enum.ХозяйственныеОперации</enums>
   <enums>Enum.ВидыОперацийКоммерческихПредложений</enums>
+  <enums>Enum.ВариантыРасчетаЦенНаборов</enums>
+  <enums>Enum.ВариантыПредставленияНаборовВПечатныхФормах</enums>
+  <enums>Enum.ВариантыИспользованияХарактеристикНоменклатуры</enums>
+  <enums>Enum.НастройкиИспользованияСерийНоменклатуры</enums>
+  <enums>Enum.ТочностиУказанияСрокаГодности</enums>
+  <enums>Enum.ВариантОтбораДляКлючаЦен</enums>
 </mdclass:Configuration>
