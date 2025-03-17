@@ -1168,6 +1168,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="aae2844a-5a5f-4055-a09c-6ac0e12c59c4">
+    <name>ПорядокЗачетаОплатНакладных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок зачета оплат и накладных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиЗачетаОплатНакладных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="9bc1fd6e-e4fb-4e25-8f6f-cbf24ce0c571">
     <producedTypes>
       <objectType typeId="505e82d6-14ef-4cda-95f9-0e3b3b8aa358" valueTypeId="00f7becf-f762-4456-9041-c874657829b3"/>

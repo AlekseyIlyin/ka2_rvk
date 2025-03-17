@@ -3485,6 +3485,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.СтатусСинхронизацииТорговыеПредложения</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -5863,6 +5867,10 @@
                       <valuesPicture xsi:type="core:PictureRef">
                         <picture>CommonPicture.УдалитьИнформация</picture>
                       </valuesPicture>
+                      <border xsi:type="core:BorderDef">
+                        <style>Single</style>
+                        <width>1</width>
+                      </border>
                       <fileDragMode>AsFileRef</fileDragMode>
                     </extInfo>
                   </items>
@@ -7951,6 +7959,10 @@
                       <valuesPicture xsi:type="core:PictureRef">
                         <picture>CommonPicture.УдалитьИнформация</picture>
                       </valuesPicture>
+                      <border xsi:type="core:BorderDef">
+                        <style>Single</style>
+                        <width>1</width>
+                      </border>
                       <fileDragMode>AsFileRef</fileDragMode>
                     </extInfo>
                   </items>
@@ -14807,36 +14819,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьГрузоперевозчиков</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить грузоперевозчиков</value>
-    </title>
-    <id>18</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьЗаказыНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить заказы на доставку</value>
-    </title>
-    <id>23</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ОтборыИзменение</name>
     <title>
       <key>ru</key>
@@ -14924,21 +14906,6 @@
         <precision>5</precision>
       </numberQualifiers>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеОформитьЗаказНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание оформить заказ на доставку</value>
-    </title>
-    <id>28</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -15062,51 +15029,6 @@
       <common>true</common>
     </edit>
     <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеСоздатьМультизаказНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание создать мультизаказ на доставку</value>
-    </title>
-    <id>115</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеОформитьМультизаказНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание оформить мультизаказ на доставку</value>
-    </title>
-    <id>116</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеДобавитьЗаказНаДоставкуВМультизаказ</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание добавить заказ на доставку в мультизаказ</value>
-    </title>
-    <id>117</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <attributes>
     <name>ТребованияКТС</name>
@@ -15633,21 +15555,6 @@
     </columns>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьУслугиТарифов</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить услуги тарифов</value>
-    </title>
-    <id>123</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ТребованияКТСПредставление</name>
     <title>
       <key>ru</key>
@@ -15658,21 +15565,6 @@
       <types>String</types>
       <stringQualifiers/>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьТарифы</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить тарифы</value>
-    </title>
-    <id>143</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -16007,6 +15899,21 @@
         </numberQualifiers>
       </itemValueType>
     </extInfo>
+  </attributes>
+  <attributes>
+    <name>Кэш</name>
+    <title>
+      <key>ru</key>
+      <value>Кэш</value>
+    </title>
+    <id>171</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>ОбновитьМультизаказы</name>

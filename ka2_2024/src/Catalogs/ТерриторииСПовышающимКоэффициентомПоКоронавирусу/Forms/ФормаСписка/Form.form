@@ -125,10 +125,6 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>SetDeletionMark</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Код</name>
       <id>19</id>
@@ -571,10 +567,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

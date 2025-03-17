@@ -1165,15 +1165,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="aaf2876e-3818-4c33-ad76-0dc78b8e930f">
-    <name>ОтборОстаточногоСрокаИспользования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отбор остаточного срока использования</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="89e39adf-9fa4-4d06-bf74-8eac3de2fb11">
     <name>ФормаСпискаНедвижимость</name>
     <synonym>
@@ -1197,6 +1188,15 @@
     <synonym>
       <key>ru</key>
       <value>Транспорт</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0953f629-3f08-4af4-a365-4781707c1ac9">
+    <name>НастройкаОтборовФормыВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка отборов формы выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

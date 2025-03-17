@@ -1005,8 +1005,6 @@
             <segments>Объект.НМА</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
-          <excludedCommands>Change</excludedCommands>
-          <excludedCommands>EndEdit</excludedCommands>
           <items xsi:type="form:FormField">
             <name>НМАНомерСтроки</name>
             <id>144</id>
@@ -1129,7 +1127,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Item.НМА.StandardCommand.Add</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2193,9 +2191,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Post</excludedCommands>
-  <excludedCommands>PostAndClose</excludedCommands>
-  <excludedCommands>Write</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

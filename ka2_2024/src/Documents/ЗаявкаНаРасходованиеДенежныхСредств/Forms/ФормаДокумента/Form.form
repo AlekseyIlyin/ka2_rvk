@@ -14276,6 +14276,7 @@
       <types>DocumentRef.ВозвратТоваровОтКлиента</types>
       <types>DocumentRef.ПриобретениеТоваровУслуг</types>
       <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.АктПремииКлиенту</types>
       <types>CatalogRef.ДоговорыКонтрагентов</types>
       <types>DocumentRef.ПоступлениеДенежныхДокументов</types>
       <types>DocumentRef.АвансовыйОтчет</types>
@@ -15996,6 +15997,80 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ТекущийБанковскийСчет</name>
+    <title>
+      <key>ru</key>
+      <value>Текущий банковский счет</value>
+    </title>
+    <id>93</id>
+    <valueType>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЭтоПодборЗаявок</name>
+    <title>
+      <key>ru</key>
+      <value>Это подбор заявок</value>
+    </title>
+    <id>94</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ФилиалыОрганизации</name>
+    <title>
+      <key>ru</key>
+      <value>Филиалы организации</value>
+    </title>
+    <id>95</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ДоступныеОперацииПоОснованию</name>
+    <title>
+      <key>ru</key>
+      <value>Доступные операции по основанию</value>
+    </title>
+    <id>97</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>ПодборПоОстаткам</name>

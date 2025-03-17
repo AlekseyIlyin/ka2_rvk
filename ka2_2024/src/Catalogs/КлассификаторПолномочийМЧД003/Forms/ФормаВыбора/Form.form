@@ -51,9 +51,6 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>CreateFolder</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Полномочие</name>
       <id>16</id>
@@ -476,15 +473,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>CreateFolder</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>HierarchicalList</excludedCommands>
-  <excludedCommands>List</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
-  <excludedCommands>Tree</excludedCommands>
   <width>150</width>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>

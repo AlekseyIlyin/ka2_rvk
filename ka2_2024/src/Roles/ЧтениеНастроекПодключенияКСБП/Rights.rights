@@ -15,6 +15,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.НастройкиОтображенияКомандСБП</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.КомплекснаяАвтоматизация</name>
 		<right>
 			<name>MainWindowModeNormal</name>
@@ -75,6 +82,21 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПлатежнаяСсылкаСБП</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>

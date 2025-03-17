@@ -1748,6 +1748,10 @@
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
                     <handlers>
+                      <event>AutoComplete</event>
+                      <name>Подключаемый_АвтоПодбор</name>
+                    </handlers>
+                    <handlers>
                       <event>StartChoice</event>
                       <name>Подключаемый_НачалоВыбора</name>
                     </handlers>
@@ -3033,6 +3037,10 @@
                 <showInFooter>true</showInFooter>
                 <extInfo xsi:type="form:InputFieldExtInfo">
                   <handlers>
+                    <event>AutoComplete</event>
+                    <name>Подключаемый_АвтоПодбор</name>
+                  </handlers>
+                  <handlers>
                     <event>StartChoice</event>
                     <name>Подключаемый_НачалоВыбора</name>
                   </handlers>
@@ -3951,6 +3959,10 @@
                 <showInFooter>true</showInFooter>
                 <extInfo xsi:type="form:InputFieldExtInfo">
                   <handlers>
+                    <event>AutoComplete</event>
+                    <name>Подключаемый_АвтоПодбор</name>
+                  </handlers>
+                  <handlers>
                     <event>StartChoice</event>
                     <name>Подключаемый_НачалоВыбора</name>
                   </handlers>
@@ -4423,13 +4435,17 @@
           <items xsi:type="form:FormField">
             <name>КлючОрганизацииНСПК</name>
             <id>1178</id>
+            <title>
+              <key>ru</key>
+              <value>Ключ (API KEY)</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>КлючОрганизацииНСПК</segments>
+              <segments>Объект.КлючОрганизацииНСПК</segments>
             </dataPath>
             <extendedTooltip>
               <name>КлючОрганизацииНСПКРасширеннаяПодсказка</name>
@@ -10386,6 +10402,177 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
+          <name>ГруппаРезервыПоОплатеТрудаОтступ</name>
+          <id>1251</id>
+          <items xsi:type="form:Decoration">
+            <name>ОтступРезервыПоОплатеТруда</name>
+            <id>1253</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ОтступРезервыПоОплатеТрудаРасширеннаяПодсказка</name>
+              <id>1255</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ОтступРезервыПоОплатеТрудаКонтекстноеМеню</name>
+              <id>1254</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаРезервыПоОплатеТруда</name>
+            <id>1256</id>
+            <items xsi:type="form:Decoration">
+              <name>ОписаниеРезервыПоОплатеТруда</name>
+              <id>1258</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОписаниеРезервыПоОплатеТрудаРасширеннаяПодсказка</name>
+                <id>1260</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОписаниеРезервыПоОплатеТрудаКонтекстноеМеню</name>
+                <id>1259</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+                <verticalAlign>Top</verticalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>ОткрытьРезервыПоОплатеТруда</name>
+              <id>1261</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;link ОткрытьНастройкиРезервовПоОплатеТруда>Изменить&lt;/></value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОткрытьРезервыПоОплатеТрудаРасширеннаяПодсказка</name>
+                <id>1263</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОткрытьРезервыПоОплатеТрудаКонтекстноеМеню</name>
+                <id>1262</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <handlers>
+                  <event>URLProcessing</event>
+                  <name>Подключаемый_ОбработкаНавигационнойСсылкиФормы</name>
+                </handlers>
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Резервы по оплате труда</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаРезервыПоОплатеТрудаРасширеннаяПодсказка</name>
+              <id>1257</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Резервы по оплате труда:</value>
+          </title>
+          <titleFont xsi:type="core:FontRef">
+            <font>System.DefaultGUIFont</font>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </titleFont>
+          <extendedTooltip>
+            <name>ГруппаРезервыПоОплатеТрудаОтступРасширеннаяПодсказка</name>
+            <id>1252</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
           <name>ГруппаРезервыОтпусковОтступ</name>
           <id>954</id>
           <items xsi:type="form:Decoration">
@@ -11076,6 +11263,10 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЦветТекстаНевыбраннойКартинки</color>
                 </textColor>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormGroup">
@@ -11404,6 +11595,10 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЦветТекстаНевыбраннойКартинки</color>
                 </textColor>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormGroup">
@@ -12992,6 +13187,24 @@
     <id>72</id>
     <valueType>
       <types>UUID</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИсторияКПП</name>
+    <title>
+      <key>ru</key>
+      <value>История КПП</value>
+    </title>
+    <id>73</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
     </valueType>
     <view>
       <common>true</common>

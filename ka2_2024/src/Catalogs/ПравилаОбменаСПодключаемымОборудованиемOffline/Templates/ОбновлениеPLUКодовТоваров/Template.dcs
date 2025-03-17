@@ -829,7 +829,7 @@
 					ИЛИ ИндивидуальныеЦеныНоменклатурыСрезПоследних.Цена = 0
 				ТОГДА ЦеныНоменклатурыСрезПоследних.Цена
 			ИНАЧЕ ИндивидуальныеЦеныНоменклатурыСрезПоследних.Цена
-		КОНЕЦ) КАК Цена,
+		КОНЕЦ)*&amp;ШаблонПодстановкиВычисляемогоКоэффициента КАК Цена,
 	ТоварыНаСкладахОстатки.ВНаличииОстаток КАК ОстатокНаСкладе,
 	(НЕ &amp;ИсключитьНулевыеОстаткиПоСкладу
 			ИЛИ &amp;ИсключитьНулевыеОстаткиПоСкладу
@@ -1050,6 +1050,26 @@
 			<v8:Type>xs:boolean</v8:Type>
 		</valueType>
 		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ШаблонПодстановкиВычисляемогоКоэффициента</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Шаблон подстановки вычисляемого коэффициента</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">1</value>
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 	</parameter>

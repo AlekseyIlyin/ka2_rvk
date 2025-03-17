@@ -136,9 +136,23 @@
         <value></value>
       </code>
     </items>
+    <items id="0a34511c-9648-4361-8f11-c913fbf0f32a">
+      <name>ЗаявлениеНаОтмену</name>
+      <description>Заявление на отмену</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
     <items id="b326271a-c6d3-4d8b-997b-36d46a4ee1ad">
       <name>ЗаявлениеНаОтпуск</name>
       <description>Заявление на отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0d73e9c9-c4a6-4de4-ab3a-4f9897fa64a2">
+      <name>ЗаявлениеНаПереносОтпуска</name>
+      <description>Заявление на перенос отпуска</description>
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
@@ -256,6 +270,40 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="9c5587d6-8189-4a76-9737-347c0370f65a">
+    <name>ТребуетПодписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует подписания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При оформлении требует подписания сотрудником</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a057053-4ee5-4e4a-b062-db8f0f404312">
+    <name>ТребуетсяНаличиеВложений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется наличие вложений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="9ab37a8f-39df-46bb-8cb2-c81de07270b2">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -274,11 +322,108 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="50409766-b00e-4674-9ef9-95d0b8e36a97">
+    <name>ВизуализаторДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Визуализатор документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="53acd697-774f-42e3-9a85-75d968ebecb3">
     <name>МакетыПредопределенныхВариантов</name>
     <synonym>
       <key>ru</key>
       <value>Макеты предопределенных вариантов</value>
     </synonym>
+  </templates>
+  <templates uuid="ee37bb2f-d47c-4b5f-b87f-9479243cb6e0">
+    <name>ЗапросСправки2НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос справки 2-НДФЛ</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="cc778647-4834-47db-bd7d-819db19dda0b">
+    <name>ЗапросСправкиПоОстаткамОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос справки по остаткам отпуска</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="aa88419d-3436-4731-ac6c-26037f840239">
+    <name>ЗапросСправкиСМестаРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос справки с места работы</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="01d8996f-03ed-48f3-a7ce-af6c79e46d8b">
+    <name>ЗаявлениеНаКомпенсациюОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на компенсацию отпуска</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5e143dd5-4759-4542-8090-e74a4df3d0b8">
+    <name>ЗаявлениеНаНалоговыеВычеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на налоговые вычеты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8e81b469-f9f3-451f-8956-61c10bab7012">
+    <name>ЗаявлениеНаОтпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на отпуск</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="0ec6d36f-dcb8-4441-826c-ac1d9cd41174">
+    <name>ЗаявлениеНаУдержаниеДСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на удержание ДСВ</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4e80ca48-8cb9-47c7-aa88-5dab7676cffd">
+    <name>ЗаявлениеОбИзмененииЛичныхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление об изменении личных данных</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="451e6bfc-49fe-4e6e-86a3-4038e64af226">
+    <name>Отсутствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствие</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f39f6eec-4c6b-4c0e-84ee-52c58d46a56f">
+    <name>ЗаявлениеНаПереносОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на перенос отпуска</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a40e1ed6-478b-452a-b9a5-5130e7dfcd42">
+    <name>ЗаявлениеНаОтмену</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на отмену</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
 </mdclass:Catalog>

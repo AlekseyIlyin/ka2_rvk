@@ -11,15 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="5d387f6c-c6a2-42d3-abcb-45c016aab89f">
-    <name>Форма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2014 1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="ddc3be34-6cd4-4805-9ed7-291d42e34ba6">
     <name>Форма2020_4</name>
     <synonym>
@@ -38,6 +29,14 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <templates uuid="2fd511a4-500d-422f-acad-1184b0ed59d2">
+    <name>ЭкранныеФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экранные формы</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
   <templates uuid="6e707ef8-6b9c-4cae-86e9-8676e8797882">
     <name>БланкиПечати_Форма2014_1</name>
     <synonym>
@@ -54,11 +53,11 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
-  <templates uuid="ab97d73b-61f2-42af-a13c-e99cd2f1c66d">
-    <name>TIFF_2014_1</name>
+  <templates uuid="04722476-6122-472f-85dd-0b9174a6289c">
+    <name>БланкиПечати_Форма2024_1</name>
     <synonym>
       <key>ru</key>
-      <value>1112501_5.01000_04.tif</value>
+      <value>Печатные бланки</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -70,33 +69,11 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
-  <templates uuid="8e4c1f76-3af4-4972-8e05-630ef8c37e5e">
-    <name>СхемаВыгрузкиФорма2014_1</name>
+  <templates uuid="459893c9-72e2-4f6a-9d53-340c2db8ca89">
+    <name>TIFF_2024_1</name>
     <synonym>
       <key>ru</key>
-      <value>Схема выгрузки</value>
-    </synonym>
-  </templates>
-  <templates uuid="1a24ec79-67d1-4f4a-8e8d-19fbd6277e2a">
-    <name>СхемаВыгрузкиФорма2020_4</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки форма 2020 4</value>
-    </synonym>
-  </templates>
-  <templates uuid="2fd511a4-500d-422f-acad-1184b0ed59d2">
-    <name>ЭкранныеФормы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранные формы</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="04722476-6122-472f-85dd-0b9174a6289c">
-    <name>БланкиПечати_Форма2024_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатные бланки</value>
+      <value>1112501_5.03000_07.tif</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -105,6 +82,13 @@
     <synonym>
       <key>ru</key>
       <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="1a24ec79-67d1-4f4a-8e8d-19fbd6277e2a">
+    <name>СхемаВыгрузкиФорма2020_4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки форма 2020 4</value>
     </synonym>
   </templates>
   <templates uuid="4d18212a-cc5a-49cd-889a-86539c2d295f">
@@ -148,13 +132,5 @@
       <key>ru</key>
       <value>Печатный бланк</value>
     </synonym>
-  </templates>
-  <templates uuid="459893c9-72e2-4f6a-9d53-340c2db8ca89">
-    <name>TIFF_2024_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>1112501_5.03000_07.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
 </mdclass:Report>

@@ -708,6 +708,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="b6d0757c-577d-4830-ba39-dbfbe27e9434">
+    <name>КодПрименяемыйВНалоговойОтчетностиС2025Года</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код, применяемый в налоговой отчетности с 2025 года</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="855a5f80-decf-47d5-bddd-601c32435423">
     <name>ФормаВыбора</name>
     <synonym>

@@ -193,6 +193,30 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ФизическиеЛицаПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("ВладелецФайла")
+#Иначе
+#ПоЗначениям( "Справочник.ФизическиеЛицаПрисоединенныеФайлы","Чтение","",
+"ГруппыФизическихЛиц","ВладелецФайла",
+"","","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ФизическиеЛица</name>
 		<right>
 			<name>Read</name>

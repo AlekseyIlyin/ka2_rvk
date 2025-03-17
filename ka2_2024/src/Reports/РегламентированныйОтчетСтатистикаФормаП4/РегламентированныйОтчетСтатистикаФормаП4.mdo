@@ -235,11 +235,32 @@
       <value>Списки2022 кв1</value>
     </synonym>
   </templates>
+  <templates uuid="7c51c8b0-c7a9-4f87-8fe3-feb45926c7cd">
+    <name>Списки2023Кв1_месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2023 кв1 месяц</value>
+    </synonym>
+  </templates>
   <templates uuid="7cc192a0-97fa-4aaf-ae75-b19d9c859770">
     <name>Списки2023Кв1_квартал</name>
     <synonym>
       <key>ru</key>
       <value>Списки2023 кв1 квартал</value>
+    </synonym>
+  </templates>
+  <templates uuid="ed9ee178-1964-429e-aa66-7da5562b34fa">
+    <name>Списки2025Кв1_месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2025 кв1 месяц</value>
+    </synonym>
+  </templates>
+  <templates uuid="c6cc817f-68f2-4ea3-a0e6-efad161d0086">
+    <name>Списки2025Кв1_квартал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2025 кв1 квартал</value>
     </synonym>
   </templates>
   <templates uuid="52986d2c-83cb-4f62-939e-544d0470a376">
@@ -322,6 +343,22 @@
     </synonym>
     <comment>Дополнительные атрибуты для выгрузки в XML</comment>
   </templates>
+  <templates uuid="43d7db6f-88cd-4c0b-817e-a1ee48418b6c">
+    <name>АтрибВыгрузкиXML2025Кв1_месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атриб выгрузки XML2025 кв1 месяц</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
+  <templates uuid="f8f9e383-5ca7-42b5-8b6f-079aaa0edc1b">
+    <name>АтрибВыгрузкиXML2025Кв1_квартал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атриб выгрузки XML2025 кв1 квартал</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
   <templates uuid="7a586f22-b71f-436c-8e68-6a5307488746">
     <name>СхемаВыгрузкиXML2013Кв1</name>
     <synonym>
@@ -369,6 +406,13 @@
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки XML2023 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="4c23cfd2-0972-4269-a3af-201c62c1b284">
+    <name>СхемаВыгрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2025 кв1</value>
     </synonym>
   </templates>
   <templates uuid="d052f841-1280-4500-ba39-a97ae0da1a13">
@@ -448,6 +492,13 @@
       <value>Форма отчета2023 кв1 форма отчета</value>
     </synonym>
   </templates>
+  <templates uuid="12601a16-e2a3-4a1f-a92a-693a3f999a25">
+    <name>ФормаОтчета2025Кв1_ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв1 форма отчета</value>
+    </synonym>
+  </templates>
   <templates uuid="5c3bc7e1-73f9-425e-92d1-7ad22a3d199b">
     <name>СоставПоказателей2014Кв1</name>
     <synonym>
@@ -504,21 +555,12 @@
       <value>Состав показателей2023 кв1</value>
     </synonym>
   </templates>
-  <templates uuid="526f9f7d-29cf-4bff-bc55-08a67c6011ba">
-    <name>ШаблонРосстата2025Кв1_месяц</name>
+  <templates uuid="da3a98f6-9972-4dc3-a491-baeb1292d91e">
+    <name>СоставПоказателей2025Кв1</name>
     <synonym>
       <key>ru</key>
-      <value>Шаблон росстата2025 кв1 месяц</value>
+      <value>Состав показателей2025 кв1</value>
     </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="fe75aea4-e989-4b6d-bc0d-da43e060a60a">
-    <name>ШаблонРосстата2025Кв1_квартал</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон росстата2025 кв1 квартал</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="1d18118c-491c-434f-86fc-87ba09e112e5">
     <name>ШаблонРосстата2023Кв1_месяц</name>
@@ -533,6 +575,22 @@
     <synonym>
       <key>ru</key>
       <value>Шаблон росстата2023 кв1 квартал</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="526f9f7d-29cf-4bff-bc55-08a67c6011ba">
+    <name>ШаблонРосстата2025Кв1_месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон росстата2025 кв1 месяц</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="fe75aea4-e989-4b6d-bc0d-da43e060a60a">
+    <name>ШаблонРосстата2025Кв1_квартал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон росстата2025 кв1 квартал</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -584,6 +642,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="dd146532-a989-4cfb-bfb0-48c499bae143">
+    <name>НастройкиЗагрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки XML2025 кв1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="3450b878-f343-4181-b24b-d5db6fef1f7c">
     <name>НастройкиСравнения2020Кв1</name>
     <synonym>
@@ -613,72 +679,6 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения2023 кв1</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="7c51c8b0-c7a9-4f87-8fe3-feb45926c7cd">
-    <name>Списки2023Кв1_месяц</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки2023 кв1 месяц</value>
-    </synonym>
-  </templates>
-  <templates uuid="ed9ee178-1964-429e-aa66-7da5562b34fa">
-    <name>Списки2025Кв1_месяц</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки2025 кв1 месяц</value>
-    </synonym>
-  </templates>
-  <templates uuid="c6cc817f-68f2-4ea3-a0e6-efad161d0086">
-    <name>Списки2025Кв1_квартал</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки2025 кв1 квартал</value>
-    </synonym>
-  </templates>
-  <templates uuid="43d7db6f-88cd-4c0b-817e-a1ee48418b6c">
-    <name>АтрибВыгрузкиXML2025Кв1_месяц</name>
-    <synonym>
-      <key>ru</key>
-      <value>Атриб выгрузки XML2025 кв1 месяц</value>
-    </synonym>
-    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
-  </templates>
-  <templates uuid="f8f9e383-5ca7-42b5-8b6f-079aaa0edc1b">
-    <name>АтрибВыгрузкиXML2025Кв1_квартал</name>
-    <synonym>
-      <key>ru</key>
-      <value>Атриб выгрузки XML2025 кв1 квартал</value>
-    </synonym>
-    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
-  </templates>
-  <templates uuid="4c23cfd2-0972-4269-a3af-201c62c1b284">
-    <name>СхемаВыгрузкиXML2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки XML2025 кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="12601a16-e2a3-4a1f-a92a-693a3f999a25">
-    <name>ФормаОтчета2025Кв1_ФормаОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма отчета2025 кв1 форма отчета</value>
-    </synonym>
-  </templates>
-  <templates uuid="da3a98f6-9972-4dc3-a491-baeb1292d91e">
-    <name>СоставПоказателей2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состав показателей2025 кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="dd146532-a989-4cfb-bfb0-48c499bae143">
-    <name>НастройкиЗагрузкиXML2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки XML2025 кв1</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

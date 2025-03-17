@@ -57,7 +57,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Write</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -1679,7 +1679,7 @@
               </extInfo>
             </extendedTooltip>
             <type>UsualButton</type>
-            <commandName>Form.Item.ТаблицаВложений.StandardCommand.Add</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1710,7 +1710,7 @@
               </extInfo>
             </extendedTooltip>
             <type>UsualButton</type>
-            <commandName>Form.Item.ТаблицаВложений.StandardCommand.Delete</commandName>
+            <commandName>0</commandName>
             <representation>Picture</representation>
             <width>3</width>
             <autoMaxWidth>true</autoMaxWidth>
@@ -1949,8 +1949,6 @@
           <segments>Объект.Вложения</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ТаблицаВложенийИмяФайла</name>
           <id>228</id>

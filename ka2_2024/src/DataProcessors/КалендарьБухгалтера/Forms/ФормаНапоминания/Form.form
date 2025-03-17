@@ -38,7 +38,7 @@
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>СобытияКартинкаОповещениеExtendedTooltip</name>
+        <name>СобытияКартинкаОповещениеРасширеннаяПодсказка</name>
         <id>27</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -74,6 +74,10 @@
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -88,7 +92,7 @@
         <segments>События.ТипСообщения</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СобытияТипСообщенияExtendedTooltip</name>
+        <name>СобытияТипСообщенияРасширеннаяПодсказка</name>
         <id>28</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -141,7 +145,7 @@
         <segments>События.Срок</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СобытияСрокExtendedTooltip</name>
+        <name>СобытияСрокРасширеннаяПодсказка</name>
         <id>29</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -193,7 +197,7 @@
         <segments>События.Периодичность</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СобытияПериодичностьExtendedTooltip</name>
+        <name>СобытияПериодичностьРасширеннаяПодсказка</name>
         <id>30</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -245,7 +249,7 @@
         <segments>События.НазваниеОтчетаИлиНалога</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СобытияНазваниеОтчетаИлиНалогаExtendedTooltip</name>
+        <name>СобытияНазваниеОтчетаИлиНалогаРасширеннаяПодсказка</name>
         <id>31</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -298,7 +302,7 @@
         <segments>События.Организация</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СобытияОрганизацияExtendedTooltip</name>
+        <name>СобытияОрганизацияРасширеннаяПодсказка</name>
         <id>32</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -470,7 +474,7 @@
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>СобытияExtendedTooltip</name>
+      <name>СобытияРасширеннаяПодсказка</name>
       <id>26</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -496,7 +500,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>КонтекстноеМенюВывестиСписокExtendedTooltip</name>
+          <name>КонтекстноеМенюВывестиСписокРасширеннаяПодсказка</name>
           <id>25</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -567,7 +571,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ОткрытьExtendedTooltip</name>
+        <name>ОткрытьРасширеннаяПодсказка</name>
         <id>34</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -602,7 +606,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ОтменитьExtendedTooltip</name>
+        <name>ОтменитьРасширеннаяПодсказка</name>
         <id>35</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -638,7 +642,7 @@
       <value>Кнопки</value>
     </toolTip>
     <extendedTooltip>
-      <name>КнопкиExtendedTooltip</name>
+      <name>КнопкиРасширеннаяПодсказка</name>
       <id>33</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -677,7 +681,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ЗакрытьExtendedTooltip</name>
+        <name>ЗакрытьРасширеннаяПодсказка</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>

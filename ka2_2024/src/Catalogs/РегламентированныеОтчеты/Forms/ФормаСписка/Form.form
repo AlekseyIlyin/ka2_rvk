@@ -20,12 +20,6 @@
       </dataPath>
       <skipOnInput>false</skipOnInput>
       <titleLocation>None</titleLocation>
-      <excludedCommands>Change</excludedCommands>
-      <excludedCommands>Copy</excludedCommands>
-      <excludedCommands>Create</excludedCommands>
-      <excludedCommands>CreateFolder</excludedCommands>
-      <excludedCommands>Delete</excludedCommands>
-      <excludedCommands>SetDeletionMark</excludedCommands>
       <items xsi:type="form:FormField">
         <name>ДеревоНаименование</name>
         <id>5</id>
@@ -279,12 +273,6 @@
       <defaultItem>true</defaultItem>
       <skipOnInput>false</skipOnInput>
       <titleLocation>None</titleLocation>
-      <excludedCommands>Change</excludedCommands>
-      <excludedCommands>Copy</excludedCommands>
-      <excludedCommands>Create</excludedCommands>
-      <excludedCommands>CreateFolder</excludedCommands>
-      <excludedCommands>Delete</excludedCommands>
-      <excludedCommands>SetDeletionMark</excludedCommands>
       <items xsi:type="form:FormField">
         <name>Наименование</name>
         <id>33</id>
@@ -1257,12 +1245,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>CreateFolder</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

@@ -3705,7 +3705,7 @@
                 <event>StartChoice</event>
                 <name>СпособРасчетаВознагражденияНачалоВыбора</name>
               </handlers>
-              <maxWidth>29</maxWidth>
+              <maxWidth>38</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
@@ -3763,9 +3763,9 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
-                <width>10</width>
+                <width>11</width>
                 <autoMaxWidth>true</autoMaxWidth>
-                <maxWidth>10</maxWidth>
+                <maxWidth>11</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>false</horizontalStretch>
                 <wrap>true</wrap>
@@ -3826,8 +3826,8 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
-                <width>10</width>
-                <autoMaxWidth>true</autoMaxWidth>
+                <width>11</width>
+                <maxWidth>17</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>false</horizontalStretch>
                 <wrap>true</wrap>
@@ -3910,8 +3910,9 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <width>10</width>
+              <width>11</width>
               <autoMaxWidth>true</autoMaxWidth>
+              <maxWidth>11</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <horizontalStretch>false</horizontalStretch>
               <wrap>true</wrap>
@@ -4642,6 +4643,65 @@
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
               <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ПредставлениеКодаСпециальныхОбстоятельств</name>
+            <id>622</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ПредставлениеКодаСпециальныхОбстоятельств</segments>
+            </dataPath>
+            <toolTip>
+              <key>ru</key>
+              <value>Используется при формировании электронного документа УПД по приказу ЕД-7-26/970@ от 19.12.23 для предоставления в ФНС</value>
+            </toolTip>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ПредставлениеКодаСпециальныхОбстоятельствРасширеннаяПодсказка</name>
+              <id>624</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПредставлениеКодаСпециальныхОбстоятельствКонтекстноеМеню</name>
+              <id>623</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ПредставлениеКодаСпециальныхОбстоятельствНачалоВыбора</name>
+              </handlers>
+              <handlers>
+                <event>Opening</event>
+                <name>ПредставлениеКодаСпециальныхОбстоятельствОткрытие</name>
+              </handlers>
+              <handlers>
+                <event>Clearing</event>
+                <name>ПредставлениеКодаСпециальныхОбстоятельствОчистка</name>
+              </handlers>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <clearButton>true</clearButton>
+              <openButton>true</openButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5376,29 +5436,184 @@
           <textEdit>true</textEdit>
         </extInfo>
       </items>
-      <items xsi:type="form:FormField">
-        <name>СуммаВсего</name>
-        <id>453</id>
-        <title>
-          <key>ru</key>
-          <value>Всего</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Товары.TotalСуммаПродажи</segments>
-        </dataPath>
-        <extendedTooltip>
-          <name>СуммаВсегоРасширеннаяПодсказка</name>
-          <id>455</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницыНДС</name>
+        <id>634</id>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаСНДС</name>
+          <id>636</id>
+          <items xsi:type="form:FormField">
+            <name>СуммаНДС</name>
+            <id>638</id>
+            <title>
+              <key>ru</key>
+              <value>НДС</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.Товары.TotalСуммаПродажиНДС</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СуммаНДСРасширеннаяПодсказка</name>
+              <id>640</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СуммаНДСКонтекстноеМеню</name>
+              <id>639</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <horizontalAlign>Right</horizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>10</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <format>
+                <key>ru</key>
+                <value>ЧДЦ=2; ЧН=0,00</value>
+              </format>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница СНДС</value>
+          </title>
+          <extendedTooltip>
+            <name>СтраницаСНДСРасширеннаяПодсказка</name>
+            <id>637</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаБезНДС</name>
+          <id>641</id>
+          <items xsi:type="form:FormField">
+            <name>ПолеБезНДС</name>
+            <id>643</id>
+            <title>
+              <key>ru</key>
+              <value>НДС</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.Товары.TotalСуммаПродажиНДС</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ПолеБезНДСРасширеннаяПодсказка</name>
+              <id>645</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПолеБезНДСКонтекстноеМеню</name>
+              <id>644</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <horizontalAlign>Right</horizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>10</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <format>
+                <key>ru</key>
+                <value>ЧН='Без НДС'</value>
+              </format>
+              <editFormat>
+                <key>ru</key>
+                <value>ЧН='Без НДС'</value>
+              </editFormat>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница без НДС</value>
+          </title>
+          <verticalStretch>true</verticalStretch>
+          <extendedTooltip>
+            <name>СтраницаБезНДСРасширеннаяПодсказка</name>
+            <id>642</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <verticalAlign>Center</verticalAlign>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страницы НДС</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаСтраницыНДСРасширеннаяПодсказка</name>
+          <id>635</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -5406,35 +5621,198 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>СуммаВсегоКонтекстноеМеню</name>
-          <id>454</id>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницыВсего</name>
+        <id>646</id>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаВсегоСНДС</name>
+          <id>648</id>
+          <items xsi:type="form:FormField">
+            <name>СуммаВсегоСНДС</name>
+            <id>650</id>
+            <title>
+              <key>ru</key>
+              <value>Всего с НДС</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.Товары.TotalСуммаПродажи</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СуммаВсегоСНДСРасширеннаяПодсказка</name>
+              <id>652</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СуммаВсегоСНДСКонтекстноеМеню</name>
+              <id>651</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <horizontalAlign>Right</horizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>10</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <format>
+                <key>ru</key>
+                <value>ЧДЦ=2; ЧН=0,00</value>
+              </format>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <readOnly>true</readOnly>
-        <horizontalAlign>Right</horizontalAlign>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <width>10</width>
+          <title>
+            <key>ru</key>
+            <value>Страница с НДС</value>
+          </title>
+          <extendedTooltip>
+            <name>СтраницаВсегоСНДСРасширеннаяПодсказка</name>
+            <id>649</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаВсегоБезНДС</name>
+          <id>653</id>
+          <items xsi:type="form:FormField">
+            <name>СуммаВсегоБезНДС</name>
+            <id>655</id>
+            <title>
+              <key>ru</key>
+              <value>Всего</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.Товары.TotalСуммаПродажи</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СуммаВсегоБезНДСРасширеннаяПодсказка</name>
+              <id>657</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СуммаВсегоБезНДСКонтекстноеМеню</name>
+              <id>656</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <horizontalAlign>Right</horizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>14</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <format>
+                <key>ru</key>
+                <value>ЧДЦ=2; ЧН=0,00</value>
+              </format>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница без НДС</value>
+          </title>
+          <extendedTooltip>
+            <name>СтраницаВсегоБезНДСРасширеннаяПодсказка</name>
+            <id>654</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страницы всего</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страницы НДС</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницыВсегоРасширеннаяПодсказка</name>
+          <id>647</id>
+          <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <format>
-            <key>ru</key>
-            <value>ЧДЦ=2; ЧН=0,00</value>
-          </format>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -5475,6 +5853,7 @@
           <autoFill>true</autoFill>
         </contextMenu>
         <type>LabelField</type>
+        <groupVerticalAlign>Center</groupVerticalAlign>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -6851,6 +7230,26 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ПредставлениеКодаСпециальныхОбстоятельств</name>
+    <title>
+      <key>ru</key>
+      <value>Код спец. обстоятельств</value>
+    </title>
+    <id>34</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ЛокализацияРФ</functionalOptions>
+    <savedData>true</savedData>
   </attributes>
   <formCommands>
     <name>РассчитатьВознаграждение</name>

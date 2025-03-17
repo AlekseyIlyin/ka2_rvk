@@ -377,11 +377,6 @@
     </dataPath>
     <skipOnInput>false</skipOnInput>
     <titleLocation>None</titleLocation>
-    <excludedCommands>CancelSearch</excludedCommands>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>Find</excludedCommands>
-    <excludedCommands>SetDateInterval</excludedCommands>
     <items xsi:type="form:FormField">
       <name>ПредставлениеПериода</name>
       <id>50</id>
@@ -1013,25 +1008,14 @@
   </handlers>
   <excludedCommands>Abort</excludedCommands>
   <excludedCommands>Cancel</excludedCommands>
-  <excludedCommands>CancelSearch</excludedCommands>
-  <excludedCommands>Change</excludedCommands>
   <excludedCommands>Close</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
   <excludedCommands>CustomizeForm</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>Find</excludedCommands>
   <excludedCommands>Ignore</excludedCommands>
-  <excludedCommands>ListSettings</excludedCommands>
   <excludedCommands>No</excludedCommands>
   <excludedCommands>OK</excludedCommands>
-  <excludedCommands>OutputList</excludedCommands>
-  <excludedCommands>Refresh</excludedCommands>
   <excludedCommands>RestoreValues</excludedCommands>
   <excludedCommands>Retry</excludedCommands>
   <excludedCommands>SaveValues</excludedCommands>
-  <excludedCommands>SetDateInterval</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>

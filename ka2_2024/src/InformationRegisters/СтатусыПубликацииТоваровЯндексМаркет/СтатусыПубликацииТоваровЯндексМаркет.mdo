@@ -61,10 +61,10 @@
     <value>Статус публикации объекта маркетплейса Яндекс Маркет</value>
   </recordPresentation>
   <resources uuid="fbe088cf-2472-41cc-a33c-a5c5a79bf9ef">
-    <name>ИдентификаторПубликации</name>
+    <name>УдалитьИдентификаторПубликации</name>
     <synonym>
       <key>ru</key>
-      <value>Идентификатор публикации</value>
+      <value>Удалить идентификатор публикации</value>
     </synonym>
     <type>
       <types>String</types>
@@ -79,7 +79,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-    <indexing>Index</indexing>
   </resources>
   <resources uuid="be93f4b0-3f8e-4b64-8d03-c8d2d59b09a6">
     <name>ИдентификаторПредложения</name>
@@ -90,7 +89,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>36</length>
+        <length>255</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -391,6 +390,22 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="82977a19-0273-4ef0-934e-ca4cc1250670">
+    <name>НоменклатураПартнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура партнера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>

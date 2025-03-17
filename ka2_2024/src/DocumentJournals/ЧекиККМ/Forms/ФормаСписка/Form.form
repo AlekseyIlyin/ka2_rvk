@@ -1175,6 +1175,36 @@
           <representationInContextMenu>Auto</representationInContextMenu>
           <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
         </items>
+        <items xsi:type="form:Button">
+          <name>ОткрытьОперацииПроверкиКМ</name>
+          <id>221</id>
+          <title>
+            <key>ru</key>
+            <value>Открыть журнал проверки кодов маркировки</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьОперацииПроверкиКМРасширеннаяПодсказка</name>
+            <id>222</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ОткрытьОперацииПроверкиКМ</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+          <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+        </items>
         <items xsi:type="form:FormGroup">
           <name>СоздатьНаОсновании</name>
           <id>53</id>
@@ -3186,8 +3216,8 @@
 	ВЫБОР
 		КОГДА ЧекиККМ.Ссылка ССЫЛКА Документ.ЧекККМ
 			ТОГДА ВЫБОР
-				КОГДА ЧекиККМ.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыЧековККМ.Отложен)
-				ИЛИ ЧекиККМ.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыЧековККМ.ТоварЗарезервирован)
+				КОГДА ЧекиККМ.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыЧековККМ.ОтложенБезРезервирования)
+				ИЛИ ЧекиККМ.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыЧековККМ.ОтложенСРезервированием)
 					ТОГДА ИСТИНА
 				ИНАЧЕ ЛОЖЬ
 			КОНЕЦ
@@ -3903,6 +3933,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОтчетБезГашения</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьОперацииПроверкиКМ</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть операции проверки КМ</value>
+    </title>
+    <id>13</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть операции проверки КМ</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьОперацииПроверкиКМ</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

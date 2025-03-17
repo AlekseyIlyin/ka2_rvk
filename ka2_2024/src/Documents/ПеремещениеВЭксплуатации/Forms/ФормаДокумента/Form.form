@@ -938,6 +938,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -1099,7 +1103,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Товары.ТоварыНомерГТДСтранаПроисхождения</segments>
+            <segments>Объект.Товары.СтранаПроисхождения</segments>
           </dataPath>
           <extendedTooltip>
             <name>ТоварыНомерГТДСтранаПроисхожденияРасширеннаяПодсказка</name>
@@ -2790,10 +2794,10 @@
         </edit>
       </columns>
       <columns>
-        <name>ТоварыНомерГТДСтранаПроисхождения</name>
+        <name>СтранаПроисхождения</name>
         <title>
           <key>ru</key>
-          <value>Товары номер ГТДСтрана происхождения</value>
+          <value>Страна происхождения</value>
         </title>
         <id>10</id>
         <valueType>

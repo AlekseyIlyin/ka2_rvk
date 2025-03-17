@@ -505,6 +505,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ВниманиеКрасный</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -1322,6 +1326,49 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>СписокДокументыЗакупкиСоглашение</name>
+      <id>1010</id>
+      <title>
+        <key>ru</key>
+        <value>Соглашение</value>
+      </title>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументыЗакупки.Соглашение</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СписокДокументыЗакупкиСоглашениеРасширеннаяПодсказка</name>
+        <id>1012</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокДокументыЗакупкиСоглашениеКонтекстноеМеню</name>
+        <id>1011</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>СписокДокументыЗакупкиПодразделение</name>
       <id>900</id>
       <title>
@@ -1775,6 +1822,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ИсключитьИзНастройкиФормированияПроводок</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -3378,6 +3429,10 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
+      <event>ValueChoice</event>
+      <name>СписокДокументыЗакупкиВыборЗначения</name>
+    </handlers>
+    <handlers>
       <event>Selection</event>
       <name>СписокВыбор</name>
     </handlers>
@@ -4219,6 +4274,7 @@
 	ВЫРАЗИТЬ(РеестрДокументовПереопределяемый.Контрагент.Ключ КАК Справочник.Контрагенты) КАК Контрагент,
 	РеестрДокументовПереопределяемый.Контрагент КАК КонтрагентКлюч,
 	РеестрДокументовПереопределяемый.Договор КАК Договор,
+	&amp;Соглашение КАК Соглашение,
 	РеестрДокументовПереопределяемый.Организация КАК Организация,
 	РеестрДокументовПереопределяемый.Подразделение КАК Подразделение,
 	РеестрДокументовПереопределяемый.МестоХранения КАК МестоХранения,
@@ -4611,6 +4667,21 @@
         <field>ИдентификаторЗаписи</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Соглашение</dataPath>
+        <field>Соглашение</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Соглашение</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.СоглашенияСПоставщиками</types>
+        </valueType>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НаправлениеДеятельности</dataPath>
         <field>НаправлениеДеятельности</field>
       </fields>
@@ -4710,6 +4781,19 @@
             <content>
               <key>ru</key>
               <value>Статус проверки</value>
+            </content>
+          </localValue>
+        </title>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>Соглашение</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Соглашение</value>
             </content>
           </localValue>
         </title>
@@ -5416,6 +5500,43 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ВыборДокументаПриобретения</name>
+    <title>
+      <key>ru</key>
+      <value>Выбор документа приобретения</value>
+    </title>
+    <id>42</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СоответствиеТиповДокументов</name>
+    <title>
+      <key>ru</key>
+      <value>Соответствие типов документов</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>СписокПровести</name>

@@ -265,11 +265,11 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>СписокМаркируемаяПродукцияДатаОбязательнойМаркировки</name>
-        <id>127</id>
+        <name>СписокМаркируемаяПродукцияДатаКонтрольПроизводства</name>
+        <id>210</id>
         <title>
           <key>ru</key>
-          <value>Обязательная маркировка</value>
+          <value>Производство</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -277,20 +277,19 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СписокМаркируемаяПродукция.ДатаОбязательнойМаркировки</segments>
+          <segments>СписокМаркируемаяПродукция.ДатаКонтрольПроизводства</segments>
         </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Обязательность нанесения кода маркировки на потребительскую упаковку и подачи в систему маркировки сведения о вводе в оборот</value>
+        </toolTip>
         <handlers>
           <event>OnChange</event>
-          <name>СписокМаркируемаяПродукцияДатаОбязательнойМаркировкиПриИзменении</name>
+          <name>СписокМаркируемаяПродукцияДатаКонтрольПроизводстваПриИзменении</name>
         </handlers>
         <extendedTooltip>
-          <name>СписокМаркируемаяПродукцияДатаОбязательнойМаркировкиРасширеннаяПодсказка</name>
-          <id>129</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>СписокМаркируемаяПродукцияДатаКонтрольПроизводстваРасширеннаяПодсказка</name>
+          <id>212</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -299,24 +298,20 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокМаркируемаяПродукцияДатаОбязательнойМаркировкиКонтекстноеМеню</name>
-          <id>128</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>СписокМаркируемаяПродукцияДатаКонтрольПроизводстваКонтекстноеМеню</name>
+          <id>211</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
-        <editMode>EnterOnInput</editMode>
+        <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <headerHorizontalAlign>Center</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <width>17</width>
-          <autoMaxWidth>true</autoMaxWidth>
+          <width>7</width>
+          <maxWidth>7</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
@@ -324,11 +319,12 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежима</name>
-        <id>188</id>
+        <name>СписокМаркируемаяПродукцияДатаКонтрольВыводИзОборота</name>
+        <id>216</id>
         <title>
           <key>ru</key>
-          <value>Разрешительный режим на ККТ</value>
+          <value>Вывод
+из оборота</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -336,16 +332,16 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СписокМаркируемаяПродукция.ДатаОбязательногоВключенияРазрешительногоРежима</segments>
+          <segments>СписокМаркируемаяПродукция.ДатаКонтрольВыводИзОборота</segments>
         </dataPath>
+        <titleHeight>3</titleHeight>
+        <toolTip>
+          <key>ru</key>
+          <value>Обязательность передачи сведений в систему цифровой маркировки о выводе из оборота по прочим причинам (не являющимся продажей в розницу)</value>
+        </toolTip>
         <extendedTooltip>
-          <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежимаРасширеннаяПодсказка</name>
-          <id>190</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>СписокМаркируемаяПродукцияДатаКонтрольВыводИзОборотаРасширеннаяПодсказка</name>
+          <id>218</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -354,28 +350,446 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежимаКонтекстноеМеню</name>
-          <id>189</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>СписокМаркируемаяПродукцияДатаКонтрольВыводИзОборотаКонтекстноеМеню</name>
+          <id>217</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <headerHorizontalAlign>Center</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <width>20</width>
-          <autoMaxWidth>true</autoMaxWidth>
+          <width>7</width>
+          <maxWidth>7</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>СписокМаркируемаяПродукцияДатаЗапретПродажиНемаркированныхОстатков</name>
+        <id>213</id>
+        <title>
+          <key>ru</key>
+          <value>Запрет
+продаж
+без марок</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокМаркируемаяПродукция.ДатаЗапретПродажиНемаркированныхОстатков</segments>
+        </dataPath>
+        <titleHeight>3</titleHeight>
+        <toolTip>
+          <key>ru</key>
+          <value>Запрет на оборот немаркированных остатков товаров</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>СписокМаркируемаяПродукцияДатаЗапретПродажиНемаркированныхОстатковРасширеннаяПодсказка</name>
+          <id>215</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СписокМаркируемаяПродукцияДатаЗапретПродажиНемаркированныхОстатковКонтекстноеМеню</name>
+          <id>214</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Center</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>7</width>
+          <maxWidth>7</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>СписокМаркируемаяПродукцияДатаПрослеживаемостьПеремещенияМеждуМОД</name>
+        <id>222</id>
+        <title>
+          <key>ru</key>
+          <value>Перемещение 
+между 
+МОД</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокМаркируемаяПродукция.ДатаПрослеживаемостьПеремещенияМеждуМОД</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>СписокМаркируемаяПродукцияДатаПрослеживаемостьПеремещенияМеждуМОДРасширеннаяПодсказка</name>
+          <id>224</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СписокМаркируемаяПродукцияДатаПрослеживаемостьПеремещенияМеждуМОДКонтекстноеМеню</name>
+          <id>223</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Center</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>7</width>
+          <maxWidth>7</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>СписокМаркируемаяПродукцияРозница</name>
+        <id>200</id>
+        <items xsi:type="form:FormField">
+          <name>СписокМаркируемаяПродукцияДатаРозницаУведомительныйРежим</name>
+          <id>219</id>
+          <title>
+            <key>ru</key>
+            <value>УР</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокМаркируемаяПродукция.ДатаРозницаУведомительныйРежим</segments>
+          </dataPath>
+          <titleHeight>1</titleHeight>
+          <toolTip>
+            <key>ru</key>
+            <value>Уведомительный режим - обязательность сканирования кодов на кассе при продаже маркированной продукции и передачи сведений о продажах в систему маркировки с использованием онлайн-касс</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокМаркируемаяПродукцияДатаРозницаУведомительныйРежимРасширеннаяПодсказка</name>
+            <id>221</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокМаркируемаяПродукцияДатаРозницаУведомительныйРежимКонтекстноеМеню</name>
+            <id>220</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>7</width>
+            <maxWidth>7</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежима</name>
+          <id>188</id>
+          <title>
+            <key>ru</key>
+            <value>РР</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокМаркируемаяПродукция.ДатаРозницаРазрешительныйРежим</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Разрешительный режим - обязательность онлайн проверки кодов маркировки при розничной продаже</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежимаРасширеннаяПодсказка</name>
+            <id>190</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияРазрешительногоРежимаКонтекстноеМеню</name>
+            <id>189</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>7</width>
+            <maxWidth>7</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияЛокальнойПроверкиРазрешительногоРежима</name>
+          <id>191</id>
+          <title>
+            <key>ru</key>
+            <value>ЛМ ЧЗ</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокМаркируемаяПродукция.ДатаРозницаЛокальныйРазрешительныйРежим</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Локальный разрешительный режим с применением ЛМ ЧЗ - обязательность локальной проверки кодов маркировки при розничной продаже</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияЛокальнойПроверкиРазрешительногоРежимаРасширеннаяПодсказка</name>
+            <id>193</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокМаркируемаяПродукцияДатаОбязательногоВключенияЛокальнойПроверкиРазрешительногоРежимаКонтекстноеМеню</name>
+            <id>192</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>7</width>
+            <maxWidth>7</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Розничная продажа</value>
+        </title>
+        <groupHorizontalAlign>Center</groupHorizontalAlign>
+        <extendedTooltip>
+          <name>СписокМаркируемаяПродукцияРозницаРасширеннаяПодсказка</name>
+          <id>201</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>ColumnGroup</type>
+        <extInfo xsi:type="form:ColumnGroupExtInfo">
+          <showTitle>true</showTitle>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>СписокМаркируемаяПродукцияОпт</name>
+        <id>202</id>
+        <items xsi:type="form:FormField">
+          <name>СписокМаркируемаяПродукцияДатаОптКонтрольОСУ</name>
+          <id>204</id>
+          <title>
+            <key>ru</key>
+            <value>ОСУ</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокМаркируемаяПродукция.ДатаОптКонтрольОСУ</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Обязательность передачи сведений об обороте маркированных товаров (возможно применение объемно-сортового учета)</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокМаркируемаяПродукцияДатаОптКонтрольОСУРасширеннаяПодсказка</name>
+            <id>206</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокМаркируемаяПродукцияДатаОптКонтрольОСУКонтекстноеМеню</name>
+            <id>205</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>7</width>
+            <maxWidth>7</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СписокМаркируемаяПродукцияДатаОптКонтрольПоштучно</name>
+          <id>207</id>
+          <title>
+            <key>ru</key>
+            <value>Поэкземплярно</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокМаркируемаяПродукция.ДатаОптКонтрольПоштучно</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Обязательность передачи сведений об обороте маркированных товаров в поэкземплярном учете</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокМаркируемаяПродукцияДатаОптКонтрольПоштучноРасширеннаяПодсказка</name>
+            <id>209</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокМаркируемаяПродукцияДатаОптКонтрольПоштучноКонтекстноеМеню</name>
+            <id>208</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>9</width>
+            <maxWidth>9</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Оптовая продажа</value>
+        </title>
+        <groupHorizontalAlign>Center</groupHorizontalAlign>
+        <extendedTooltip>
+          <name>СписокМаркируемаяПродукцияОптРасширеннаяПодсказка</name>
+          <id>203</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>ColumnGroup</type>
+        <extInfo xsi:type="form:ColumnGroupExtInfo">
+          <showTitle>true</showTitle>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Center</headerHorizontalAlign>
         </extInfo>
       </items>
       <commandBarLocation>None</commandBarLocation>
@@ -536,7 +950,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <width>85</width>
+      <width>142</width>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <heightControlVariant>ByContent</heightControlVariant>
@@ -948,6 +1362,61 @@
       <group>HorizontalIfPossible</group>
       <behavior>Collapsible</behavior>
       <controlRepresentation>Picture</controlRepresentation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаНастройкиПодключенияЛМЧЗ</name>
+    <id>198</id>
+    <items xsi:type="form:Button">
+      <name>НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</name>
+      <id>196</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежимаРасширеннаяПодсказка</name>
+        <id>197</id>
+        <type>Label</type>
+        <maxWidth>60</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Hyperlink</type>
+      <commandName>Form.Command.НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ГруппаНастройкиПодключенияЛМЧЗРасширеннаяПодсказка</name>
+      <id>199</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Auto</behavior>
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
       <throughAlign>Auto</throughAlign>
@@ -1993,6 +2462,7 @@
     <event>OnClose</event>
     <name>ПриЗакрытии</name>
   </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
@@ -2116,12 +2586,12 @@
       </edit>
     </columns>
     <columns>
-      <name>ДатаОбязательнойМаркировки</name>
+      <name>ДатаРозницаРазрешительныйРежим</name>
       <title>
         <key>ru</key>
-        <value>Обязательная маркировка</value>
+        <value>Разрешительный режим на ККТ</value>
       </title>
-      <id>3</id>
+      <id>21</id>
       <valueType>
         <types>Date</types>
         <dateQualifiers>
@@ -2136,12 +2606,152 @@
       </edit>
     </columns>
     <columns>
-      <name>ДатаОбязательногоВключенияРазрешительногоРежима</name>
+      <name>ДатаРозницаЛокальныйРазрешительныйРежим</name>
       <title>
         <key>ru</key>
-        <value>Разрешительный режим на ККТ</value>
+        <value>Дата розница локальный разрешительный режим</value>
       </title>
-      <id>21</id>
+      <id>22</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаКонтрольПроизводства</name>
+      <title>
+        <key>ru</key>
+        <value>Дата контроля производства</value>
+      </title>
+      <id>23</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаКонтрольВыводИзОборота</name>
+      <title>
+        <key>ru</key>
+        <value>Дата контроля при выводе из оборота</value>
+      </title>
+      <id>24</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаРозницаУведомительныйРежим</name>
+      <title>
+        <key>ru</key>
+        <value>Дата обязательной проверки уведомительного режима (розница)</value>
+      </title>
+      <id>25</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаОптКонтрольПоштучно</name>
+      <title>
+        <key>ru</key>
+        <value>Дата обязательной маркировки при продаже поштучно (опт)</value>
+      </title>
+      <id>26</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаОптКонтрольОСУ</name>
+      <title>
+        <key>ru</key>
+        <value>Дата обязательной маркировки при продаже по ОСУ (опт)</value>
+      </title>
+      <id>27</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаЗапретПродажиНемаркированныхОстатков</name>
+      <title>
+        <key>ru</key>
+        <value>Дата запрета продажи немаркированных остатков</value>
+      </title>
+      <id>28</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаПрослеживаемостьПеремещенияМеждуМОД</name>
+      <title>
+        <key>ru</key>
+        <value>Дата прослеживаемость перемещения между МОД</value>
+      </title>
+      <id>29</id>
       <valueType>
         <types>Date</types>
         <dateQualifiers>
@@ -2460,6 +3070,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>НастроитьЗагрузкуСведенийОбОтклонениях</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки подключения к ЛМ ЧЗ</value>
+    </title>
+    <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки подключения к Локальным модулям &quot;Честный знак&quot; для локальной проверки разрешительного режима.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

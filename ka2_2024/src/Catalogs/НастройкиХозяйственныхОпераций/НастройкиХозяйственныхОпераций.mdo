@@ -2092,6 +2092,20 @@
           <value></value>
         </code>
       </content>
+      <content id="af2ac699-f691-4204-b705-aae2bfcb2bb0">
+        <name>ОтражениеПремииПоставщикаРетроБонус</name>
+        <description>Отражение премии поставщика (ретро-бонус)</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="645b6d97-62b2-4772-aaae-1467ed592dec">
+        <name>ВводОстатковПремийПоставщиков</name>
+        <description>Ввод остатков премий поставщиков</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
     </items>
     <items id="06269a61-3170-4f90-9855-cbb16c401d97">
       <name>Зарплата</name>
@@ -3711,6 +3725,20 @@
           <value></value>
         </code>
       </content>
+      <content id="4ab3940d-6999-4d2f-8a4b-04b67e2efcb8">
+        <name>ПереносРНПТМатериаловНаПродукцию</name>
+        <description>Перенос РНПТ материалов на продукцию</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="3c946a40-cd21-4b64-be1e-50b5ba6907ce">
+        <name>ВыбытиеРНПТМатериаловИзПроизводства</name>
+        <description>Выбытие РНПТ материалов из производства</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
     </items>
     <items id="af39621f-c640-47fd-9ac9-f3de7494641c">
       <name>Склад</name>
@@ -4241,7 +4269,7 @@
         </content>
         <content id="6f92948e-eed4-4718-a9c5-eccc40a4032a">
           <name>ВозвратДенежныхСредствОтПоставщика</name>
-          <description>Возврат ДС от поставщика</description>
+          <description>Возврат или иное поступление от поставщика</description>
           <code xsi:type="core:StringValue">
             <value></value>
           </code>
@@ -4262,7 +4290,7 @@
         </content>
         <content id="174148e5-a012-4d60-adfd-06cc34c5d573">
           <name>ВозвратОплатыКлиенту</name>
-          <description>Возврат оплаты клиенту</description>
+          <description>Возврат или иная оплата клиенту</description>
           <code xsi:type="core:StringValue">
             <value></value>
           </code>

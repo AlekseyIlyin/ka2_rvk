@@ -113,26 +113,6 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <choiceList>
-            <value xsi:type="core:ReferenceValue">
-              <value>Enum.РазделыИсточниковДанныхБюджетирования.EnumValue.ОперативныйУчет</value>
-            </value>
-          </choiceList>
-          <choiceList>
-            <value xsi:type="core:ReferenceValue">
-              <value>Enum.РазделыИсточниковДанныхБюджетирования.EnumValue.РегламентированныйУчет</value>
-            </value>
-          </choiceList>
-          <choiceList>
-            <value xsi:type="core:ReferenceValue">
-              <value>Enum.РазделыИсточниковДанныхБюджетирования.EnumValue.МеждународныйУчет</value>
-            </value>
-          </choiceList>
-          <choiceList>
-            <value xsi:type="core:ReferenceValue">
-              <value>Enum.РазделыИсточниковДанныхБюджетирования.EnumValue.ПроизвольныеДанные</value>
-            </value>
-          </choiceList>
           <backColor xsi:type="core:ColorRef">
             <color>Style.ФонУправляющегоПоля</color>
           </backColor>
@@ -2482,6 +2462,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КонтактнаяИнформацияНеактуально</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">

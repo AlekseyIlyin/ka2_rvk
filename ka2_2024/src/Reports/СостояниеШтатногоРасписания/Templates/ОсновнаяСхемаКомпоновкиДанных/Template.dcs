@@ -255,7 +255,7 @@
 	"ТолькоРазрешенные" = ИСТИНА
 	И "ДатаАктуальности" = &amp;ДатаАктуальности
 	И "ВключатьНачисления" = ЛОЖЬ
-	И "ВключаяЗакрытые" = ИСТИНА
+	И "ВключаяЗакрытые" = &amp;ВключаяЗакрытые
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -880,7 +880,7 @@
 	"ТолькоРазрешенные" = ИСТИНА
 	И "ДатаАктуальности" = &amp;ДатаАктуальности
 	И "ВключатьНачисления" = ЛОЖЬ
-	И "ВключаяЗакрытые" = ИСТИНА
+	И "ВключаяЗакрытые" = &amp;ВключаяЗакрытые
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1915,6 +1915,22 @@
 			</v8:StringQualifiers>
 		</valueType>
 		<value xsi:type="xs:string">Временно освобождена (кадровым переводом)</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ВключаяЗакрытые</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Включая закрытые</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 		<use>Always</use>
@@ -3763,6 +3779,10 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>СостояниеПозиции15</dcscor:parameter>
 					<dcscor:value xsi:type="xs:string">Временно освобождена</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВключаяЗакрытые</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>

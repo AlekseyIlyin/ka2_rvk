@@ -142,6 +142,11 @@
         <segments>Контрагент</segments>
       </dataPath>
       <titleLocation>Top</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Отбор по контрагенту, указанному в шапке документа.</value>
+      </toolTip>
+      <toolTipRepresentation>Button</toolTipRepresentation>
       <handlers>
         <event>OnChange</event>
         <name>ОтборКонтрагентПриИзменении</name>
@@ -203,6 +208,11 @@
         <segments>Партнер</segments>
       </dataPath>
       <titleLocation>Top</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Отбор по клиенту, указанному в шапке документа.</value>
+      </toolTip>
+      <toolTipRepresentation>Button</toolTipRepresentation>
       <handlers>
         <event>OnChange</event>
         <name>ОтборПартнерПриИзменении</name>
@@ -399,6 +409,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.КоллекцияСкрепка</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -2315,7 +2329,7 @@
     <name>Партнер</name>
     <title>
       <key>ru</key>
-      <value>Партнер</value>
+      <value>Клиент</value>
     </title>
     <id>6</id>
     <valueType>

@@ -164,6 +164,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="fab7cfaf-281e-4862-8597-f56d3d0df0b1">
+    <name>НалоговаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая база</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КатегорииДоходовНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <dimensions uuid="6f73542d-f086-4d7d-948c-6e277eab76f4">
     <name>ГоловнаяОрганизация</name>
     <synonym>
@@ -208,8 +221,16 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <choiceParameters>
       <name>Отбор.ГруппаВычета</name>
-      <value xsi:type="core:ReferenceValue">
-        <value>Enum.ГруппыВычетовПоНДФЛ.EnumValue.Имущественные</value>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ГруппыВычетовПоНДФЛ.EnumValue.Имущественные</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ГруппыВычетовПоНДФЛ.EnumValue.Социальные</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ГруппыВычетовПоНДФЛ.EnumValue.СоциальныеПоУведомлениюНО</value>
+        </values>
       </value>
     </choiceParameters>
     <fullTextSearch>Use</fullTextSearch>

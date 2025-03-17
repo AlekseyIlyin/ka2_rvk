@@ -261,7 +261,7 @@
           <id>34</id>
           <title>
             <key>ru</key>
-            <value>Графа 13. Стоимость товара &lt;colorstyle -16>*&lt;/></value>
+            <value>Графа 13. Стоимость товара (RUB) &lt;colorstyle -16>*&lt;/></value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -270,7 +270,7 @@
           </userVisible>
           <toolTip>
             <key>ru</key>
-            <value>Указывается  фактически уплаченная цена товара в валюте, указанной в графе 7 статистической формы, за ВСЁ количество товара (не 1 единицу измерения, а за весь товар).</value>
+            <value>Указывается цифровыми символами фактически уплаченная цена товара в валюте, указанной в графе 7 статистической формы, за ВСЁ количество товара (не 1 единицу измерения, а за весь товар).</value>
           </toolTip>
           <toolTipRepresentation>Button</toolTipRepresentation>
           <extendedTooltip>
@@ -890,7 +890,7 @@
           </userVisible>
           <toolTip>
             <key>ru</key>
-            <value>Указывается стоимость товара в совокупности с расходами, пересчитанная в российские рубли. Пересчет стоимости в российские рубли осуществляется по курсу, ЦБ РФ на дату отгрузки товаров либо их получения.</value>
+            <value>Указывается стоимость товара в совокупности с расходами по доставке товара до границы страны импортера (экспортера), пересчитанная в рубли. Пересчет стоимости в рубли осуществляется по курсу, установленному ЦБ РФ на дату отгрузки товаров либо их получения</value>
           </toolTip>
           <toolTipRepresentation>Button</toolTipRepresentation>
           <extendedTooltip>
@@ -4332,8 +4332,8 @@
     <valueType>
       <types>Number</types>
       <numberQualifiers>
-        <precision>18</precision>
-        <scale>2</scale>
+        <precision>20</precision>
+        <scale>4</scale>
       </numberQualifiers>
     </valueType>
     <view>

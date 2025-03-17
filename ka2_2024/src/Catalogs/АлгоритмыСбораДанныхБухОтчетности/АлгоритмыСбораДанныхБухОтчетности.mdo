@@ -122,7 +122,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>4</length>
+        <length>20</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -308,6 +308,42 @@
       </synonym>
       <type>
         <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ecb262fa-66f3-4828-ad5e-fdc62f0ffb50">
+    <producedTypes>
+      <objectType typeId="6ec76f8f-80c6-4d58-bd35-074ee3c161ce" valueTypeId="96568968-72ce-4ef0-80d2-96e0fe04390a"/>
+      <rowType typeId="c5e0ec47-539c-433f-baf3-4e7ef6109ca4" valueTypeId="c6fc2fa3-209f-40c7-842a-461a33bafb55"/>
+    </producedTypes>
+    <name>Группировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4c0f69d7-33cd-40e7-8809-72df69e51fb1">
+      <name>ПутьКданным</name>
+      <synonym>
+        <key>ru</key>
+        <value>Путь кданным</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>23</length>
+        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

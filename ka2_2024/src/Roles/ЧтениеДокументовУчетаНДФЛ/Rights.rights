@@ -43,6 +43,96 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениям( "Документ.ЕжегодныеСтандартныеВычеты","Чтение","",
+"Организации","Организация",
+"ГруппыФизическихЛиц","Сотрудник","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.StandardAttribute.Posted</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.StandardAttribute.Date</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.StandardAttribute.Number</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.ПрименятьВычетыС</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЕжегодныеСтандартныеВычетыПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("ВладелецФайла")
+#Иначе
+#ПоЗначениям( "Справочник.ЕжегодныеСтандартныеВычетыПрисоединенныеФайлы","Чтение","",
+"Организации","ВладелецФайла.Организация",
+"ГруппыФизическихЛиц","ВладелецФайла.Сотрудник","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВозвратНДФЛПрисоединенныеФайлы.Attribute.ПодписанЭП</name>
 		<right>
 			<name>Edit</name>
@@ -79,6 +169,13 @@
 	</object>
 	<object>
 		<name>Document.АвансовыйПлатежИностранцаПоНДФЛ.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.TabularSection.ДополнительныеРеквизиты</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -210,6 +307,27 @@
 	</object>
 	<object>
 		<name>Document.ПерерасчетНДФЛ.TabularSection.Сотрудники.Attribute.МесяцНалоговогоПериода</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.КодНалоговогоОргана</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.Сотрудник</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -382,7 +500,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПерерасчетНДФЛ.TabularSection.Сотрудники.Attribute.ПримененныйВычетЛичный</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.ДатаЗапрета</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -554,6 +686,13 @@
 	</object>
 	<object>
 		<name>Catalog.ВозвратНДФЛПрисоединенныеФайлы.TabularSection.УдалитьСертификатыШифрования.Attribute.Сертификат</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.Организация</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -858,6 +997,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.TabularSection.ДополнительныеРеквизиты.Attribute.ТекстоваяСтрока</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ</name>
 		<right>
 			<name>Read</name>
@@ -888,6 +1034,13 @@
 	</object>
 	<object>
 		<name>Document.ПерерасчетНДФЛ.Attribute.НалоговыйПериод</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1004,6 +1157,13 @@
 	</object>
 	<object>
 		<name>Document.ПерерасчетНДФЛ.TabularSection.КорректировкиВыплаты.Attribute.ИдентификаторСтроки</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.Ответственный</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1194,6 +1354,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.НалоговыйПериод</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПерерасчетНДФЛ.TabularSection.Сотрудники.Attribute.ИдентификаторСтрокиНДФЛ</name>
 		<right>
 			<name>Edit</name>
@@ -1209,6 +1376,13 @@
 	</object>
 	<object>
 		<name>Document.АвансовыйПлатежИностранцаПоНДФЛ.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЕжегодныеСтандартныеВычеты.Attribute.РазмерВычета</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

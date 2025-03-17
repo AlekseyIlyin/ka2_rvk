@@ -3328,6 +3328,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3987,6 +3991,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.КоллекцияПиктограммыТренда</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -8912,6 +8920,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -11291,21 +11300,29 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>LabelField</type>
+              <type>InputField</type>
               <readOnly>true</readOnly>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:LabelFieldExtInfo">
+              <extInfo xsi:type="form:InputFieldExtInfo">
                 <width>10</width>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>false</horizontalStretch>
+                <wrap>true</wrap>
                 <format>
                   <key>ru</key>
                   <value>ЧН='Без НДС'</value>
                 </format>
+                <editFormat>
+                  <key>ru</key>
+                  <value>ЧН='Без НДС'</value>
+                </editFormat>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -14114,6 +14131,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ЕстьПравоНаДобавлениеКорректировки</name>
+    <title>
+      <key>ru</key>
+      <value>Есть право на добавление корректировки</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ЗаполнитьЦеныПоСоглашению</name>
     <title>
@@ -15015,6 +15049,10 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>CommonCommand.ПрисоединенныеФайлы</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.ДанныеЗаказовСервисДоставки.StandardCommand.OpenByValue.ДокументОснование</command>
         <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>

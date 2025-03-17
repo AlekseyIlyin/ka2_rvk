@@ -148,6 +148,9 @@
     <mdObject>Document.АктОРасхожденияхПослеПриемки</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.НачислениеРетроБонусовПоставщикаПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.РегистрацииВНалоговомОргане</mdObject>
   </content>
   <content>
@@ -158,9 +161,6 @@
   </content>
   <content>
     <mdObject>InformationRegister.ЗоныДоставкиКурьеров</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.ПлановыйФОТИтоги</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ТранспортныеСредства</mdObject>
@@ -194,6 +194,9 @@
   </content>
   <content>
     <mdObject>Catalog.ГруппыАналитическогоУчетаНоменклатуры</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РегистрацииОтветовНаЗапросыФССДляРасчетаПособий</mdObject>
   </content>
   <content>
     <mdObject>Document.УведомлениеОПредоставленииПолномочийПредставителю</mdObject>
@@ -298,6 +301,9 @@
     <mdObject>Document.ПогашениеСтоимостиТМЦВЭксплуатации</mdObject>
   </content>
   <content>
+    <mdObject>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузки</mdObject>
   </content>
   <content>
@@ -370,6 +376,9 @@
     <mdObject>Constant.ШаблонЭтикеткиДляДоставки</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ЭтоБизКубБРО</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.СоответствиеНоменклатурыЕГАИС</mdObject>
   </content>
   <content>
@@ -379,7 +388,13 @@
     <mdObject>Document.ПорчаТоваров</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.БухучетНачисленийСотрудниковРаспределение</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьПочтовыйКлиент</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.ЕжегодныеСтандартныеВычеты</mdObject>
   </content>
   <content>
     <mdObject>Constant.ВариантОбособленияТоваровВПродажах</mdObject>
@@ -430,6 +445,9 @@
     <mdObject>Constant.АналитическийУчетПоГруппамПродукции</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковКонтрагенты</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьМногофункциональностьДокументов</mdObject>
   </content>
   <content>
@@ -443,6 +461,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.ПодчиненностьПодразделенийОрганизаций</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ЕжегодныеСтандартныеВычетыПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.НастройкаБлокировкиОтИзменений</mdObject>
@@ -463,6 +484,9 @@
     <mdObject>InformationRegister.ПримененияЕНВД</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ЗавершенныеУсловияРетроБонусовПоставщиков</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.НаборыДополнительныхРеквизитовИСведений</mdObject>
   </content>
   <content>
@@ -472,9 +496,6 @@
     <mdObject>Constant.ИспользоватьАвтоматическуюОтправкуПолучениеДанныхЕГАИС</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.РабочиеМестаСотрудниковИнтервальный</mdObject>
-  </content>
-  <content>
     <mdObject>InformationRegister.ДанныеОтчетаПроизводственнойЛинииИСМП</mdObject>
   </content>
   <content>
@@ -482,6 +503,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.ПериодыНерабочихДнейКалендаря</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НачисленнаяЗарплатаПросмотрОрганизации</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьДистанционнуюРаботу</mdObject>
@@ -517,7 +541,10 @@
     <mdObject>Constant.ИспользоватьУпаковкиНоменклатуры</mdObject>
   </content>
   <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаНалоговыйВычет</mdObject>
+    <mdObject>InformationRegister.ЗаявленияОВеденииТрудовыхКнижекИспр</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ЛетДоУничтоженияПерсональныхДанныхСотрудников</mdObject>
   </content>
   <content>
     <mdObject>Document.УпаковочныйЛист</mdObject>
@@ -575,9 +602,6 @@
   </content>
   <content>
     <mdObject>AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</mdObject>
-  </content>
-  <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаОтсутствиеПоБолезни</mdObject>
   </content>
   <content>
     <mdObject>Catalog.НастройкиРегламентныхЗаданийСАТУРН</mdObject>
@@ -745,7 +769,10 @@
     <mdObject>Document.ВводОстатковСПодотчетниками</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ЗначенияПериодическихПоказателейРасчетаЗарплатыСотрудниковИнтервальный</mdObject>
+    <mdObject>Constant.СпособФормированияИнтервальныхРегистров</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.УчитыватьОплачиваемоеНерабочееВремяИСуммыВСреднемЗаработке</mdObject>
   </content>
   <content>
     <mdObject>Constant.ВыводитьСерииВПечатныхФормах</mdObject>
@@ -818,6 +845,9 @@
   </content>
   <content>
     <mdObject>Document.ВводПервоначальныхСведенийДляРасчетаТранспортногоНалога</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ПлановыеНачисленияПросмотрОрганизации</mdObject>
   </content>
   <content>
     <mdObject>Document.ОтпускПоУходуЗаРебенком</mdObject>
@@ -901,6 +931,9 @@
     <mdObject>InformationRegister.МаксимальныйРазмерЕжемесячнойСтраховойВыплаты</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.ПриказОПрекращенииБронированияПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.НаборыЗначенийДоступа</mdObject>
   </content>
   <content>
@@ -914,6 +947,9 @@
   </content>
   <content>
     <mdObject>Catalog.ДемонстрационныеСценарииПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.НастройкиПодключенияКОнлайнЗаказам</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьОбособленныеПодразделенияВыделенныеНаБаланс</mdObject>
@@ -941,6 +977,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.НастройкиУчетаСтраховыхВзносов</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковСклады</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ОбъектыУчетаРезервовПредстоящихРасходов</mdObject>
@@ -1003,6 +1042,9 @@
     <mdObject>Document.ЧекККМВозврат</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ВерсияДанныхДатЗапретаИзмененияБЗК</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ПланПроизводстваПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -1058,6 +1100,9 @@
   </content>
   <content>
     <mdObject>Document.ОтчетПереработчика</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ВестиРасчетыСБюджетомПоНДФЛ</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ВидыПлатежей</mdObject>
@@ -1123,6 +1168,9 @@
     <mdObject>InformationRegister.ОбновлениеКлючейДоступаКДанным</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.АктПремииПоставщикаПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ПересортицаТоваровУХранителя</mdObject>
   </content>
   <content>
@@ -1130,6 +1178,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.ИерархияПартнеров</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.НачислениеРетроБонусовПоставщика</mdObject>
   </content>
   <content>
     <mdObject>Document.УведомлениеОПрекращенииОтпускаПоУходуЗаРебенком</mdObject>
@@ -1165,13 +1216,16 @@
     <mdObject>InformationRegister.ABCXYZКлассификацияНоменклатуры</mdObject>
   </content>
   <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаСправкаОстаткиОтпусков</mdObject>
-  </content>
-  <content>
     <mdObject>InformationRegister.АктивацияПодарочныхСертификатов</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ЗавершенныеУсловияРетроБонусовПоставщиковИстория</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.АктВыполненныхРаботПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РаспределениеМестВыплатЗарплатыСотрудников</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ЗависимостиПравДоступа</mdObject>
@@ -1261,6 +1315,9 @@
     <mdObject>Document.ИзменениеУсловийИсполнительногоЛиста</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НачисленнаяЗарплатаПросмотрФизическиеЛица</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ГруппыДоступаВидовБюджетов</mdObject>
   </content>
   <content>
@@ -1271,6 +1328,9 @@
   </content>
   <content>
     <mdObject>Document.НачислениеПроцентовПоАренде</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ЗастрахованныеЛицаСЭДО</mdObject>
   </content>
   <content>
     <mdObject>Catalog.УстановкаЦенНоменклатурыПрисоединенныеФайлы</mdObject>
@@ -1297,6 +1357,9 @@
     <mdObject>Catalog.ИсточникиДанныхПланирования</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.СогласияНаУведомленияОбЭЛН</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ПринятиеКУчетуОС</mdObject>
   </content>
   <content>
@@ -1321,10 +1384,10 @@
     <mdObject>Catalog.ОтменаСовмещенияПрисоединенныеФайлы</mdObject>
   </content>
   <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаСправкаСМестаРаботы</mdObject>
+    <mdObject>Constant.ИспользоватьОтражениеЗарплатыВФинансовомУчетеМеждународный</mdObject>
   </content>
   <content>
-    <mdObject>Constant.ИспользоватьОтражениеЗарплатыВФинансовомУчетеМеждународный</mdObject>
+    <mdObject>InformationRegister.КоэффициентыПовышенияЗаработкаУчитываемыеПриИндексации</mdObject>
   </content>
   <content>
     <mdObject>Document.ПродлениеКонтрактаДоговора</mdObject>
@@ -1351,9 +1414,6 @@
     <mdObject>Catalog.ВыкупВозвратнойТарыУПоставщикаПрисоединенныеФайлы</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаИзменитьЛичныеДанныеПрисоединенныеФайлы</mdObject>
-  </content>
-  <content>
     <mdObject>Constant.ВестиСведенияДляДекларацийАлкоВРознице</mdObject>
   </content>
   <content>
@@ -1363,7 +1423,7 @@
     <mdObject>InformationRegister.НастройкиСистемыНалогообложения</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаСправкаОстаткиОтпусковПрисоединенныеФайлы</mdObject>
+    <mdObject>Catalog.СписаниеРетроБонусовКлиентаПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.СостоянияДокументовЗачисленияЗарплаты</mdObject>
@@ -1373,6 +1433,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьИнтеграциюС1СДокументооборот3</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ПорядокЗачетаОплатНакладных</mdObject>
   </content>
   <content>
     <mdObject>Catalog.СкидкиНаценки</mdObject>
@@ -1477,13 +1540,7 @@
     <mdObject>InformationRegister.МестаВыплатыЗарплатыСотрудников</mdObject>
   </content>
   <content>
-    <mdObject>Constant.РассчитыватьДокументыПриРедактировании</mdObject>
-  </content>
-  <content>
     <mdObject>Document.ВедомостьУплатыАДВ_11</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.СтатьиФинансированияБазыСреднегоЗаработка</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ПартииСАТУРН</mdObject>
@@ -1499,6 +1556,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьПризнакРассмотрено</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РезультатыПубликацииДокументовКЭДО</mdObject>
   </content>
   <content>
     <mdObject>Catalog.СтруктураПредприятия</mdObject>
@@ -1561,6 +1621,9 @@
     <mdObject>InformationRegister.ИсторияРегистрацийВНалоговомОргане</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ДокументыКЭДОКПересчетуСостояний</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ИнформативныеЦеныНоменклатуры</mdObject>
   </content>
   <content>
@@ -1574,6 +1637,9 @@
   </content>
   <content>
     <mdObject>Catalog.УведомлениеОбИзмененииРасчетаПособияПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСерииНоменклатурыДляЦенообразования</mdObject>
@@ -1639,6 +1705,9 @@
     <mdObject>Catalog.НоменклатураПрисоединенныеФайлы</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.ПриказОБронированииРаботниковПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.РежимРаботыСТестовымКонтуромВЕТИС</mdObject>
   </content>
   <content>
@@ -1660,6 +1729,9 @@
     <mdObject>Document.МодернизацияОС</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПереченьСпециальныхОбстоятельствДокументаЭДО</mdObject>
+  </content>
+  <content>
     <mdObject>AccumulationRegister.ВзаиморасчетыССотрудниками</mdObject>
   </content>
   <content>
@@ -1673,6 +1745,9 @@
   </content>
   <content>
     <mdObject>Catalog.ВидыДоходовНДФЛ</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.ПеремещениеМеждуМОДИСМП</mdObject>
   </content>
   <content>
     <mdObject>Document.ПервичныйДокумент</mdObject>
@@ -1813,9 +1888,6 @@
     <mdObject>Constant.ИспользоватьПродажуАгентскихУслуг</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаДобровольныеСтраховыеВзносыПрисоединенныеФайлы</mdObject>
-  </content>
-  <content>
     <mdObject>Document.МодернизацияОС2_4</mdObject>
   </content>
   <content>
@@ -1864,6 +1936,9 @@
     <mdObject>Catalog.СпособыОтраженияРасходов</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ИспользоватьКЭДО</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -1903,6 +1978,9 @@
     <mdObject>InformationRegister.РасчетРазницВОценкеАктивовИОбязательств</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ЗначенияПоказателейРасчетаРезервов</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ПорядокУплатыНалоговНаМестах</mdObject>
   </content>
   <content>
@@ -1916,9 +1994,6 @@
   </content>
   <content>
     <mdObject>Document.ПачкаДокументовСЗВ_6_3</mdObject>
-  </content>
-  <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаИзменитьЛичныеДанные</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.СостоянияСогласованияВДокументообороте</mdObject>
@@ -1952,6 +2027,9 @@
   </content>
   <content>
     <mdObject>Document.ВводДанныхПоНалогуНаПрибыль</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ЗаявлениеОВвозеТоваровПолученноеПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>Constant.НеЗакрыватьЗаказыПереработчикамБезПолнойОтработки</mdObject>
@@ -2023,9 +2101,6 @@
     <mdObject>ChartOfAccounts.Хозрасчетный</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.НакопленныеСтажиФизическихЛиц</mdObject>
-  </content>
-  <content>
     <mdObject>Catalog.Заметки</mdObject>
   </content>
   <content>
@@ -2084,6 +2159,9 @@
   </content>
   <content>
     <mdObject>Document.ОрдерНаОтражениеИзлишковТоваров</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.КадровыеДанныеРедактированиеОрганизации</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьКомиссиюПриЗакупках</mdObject>
@@ -2200,6 +2278,9 @@
     <mdObject>Constant.ИспользоватьПодразделения</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПриостановленияТрудовыхДоговоровКонтрактов</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ОрдерНаОтражениеПересортицыТоваров</mdObject>
   </content>
   <content>
@@ -2212,7 +2293,7 @@
     <mdObject>Document.НазначениеОпросов</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаОтсутствиеПоБолезниПрисоединенныеФайлы</mdObject>
+    <mdObject>InformationRegister.СоответствиеПользователейУзлам1СДокументооборота</mdObject>
   </content>
   <content>
     <mdObject>Catalog.НастройкиРасчетаРезервовПоОплатеТруда</mdObject>
@@ -2231,9 +2312,6 @@
   </content>
   <content>
     <mdObject>Catalog.СДИЗЗЕРНО</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.ПлановыйФОТ</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьПроизводствоНаСтороне2_5</mdObject>
@@ -2386,9 +2464,6 @@
     <mdObject>Catalog.Патенты</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ПлановыеАвансыИнтервальный</mdObject>
-  </content>
-  <content>
     <mdObject>AccumulationRegister.ЛимитыПоДаннымБюджетирования</mdObject>
   </content>
   <content>
@@ -2414,6 +2489,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьДемонстрационныеСценарии</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковТовары</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользуетсяЦенообразование20</mdObject>
@@ -2506,6 +2584,9 @@
     <mdObject>Document.ПачкаДокументовАДВ_2</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.СправкаОПодтверждающихДокументахПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -2546,9 +2627,6 @@
   </content>
   <content>
     <mdObject>InformationRegister.НастройкиВерсионированияОбъектов</mdObject>
-  </content>
-  <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаДобровольныеСтраховыеВзносы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.НеобходимыеКорректировкиСтажаПФР</mdObject>
@@ -2635,6 +2713,9 @@
     <mdObject>InformationRegister.МероприятияТрудовойДеятельностиПрочие</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ОтключитьИнтеграциюСУчетнымиСистемами</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьСделкиСКлиентами</mdObject>
   </content>
   <content>
@@ -2642,6 +2723,9 @@
   </content>
   <content>
     <mdObject>Catalog.КлассификаторПолномочийМЧД003</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ПодписиДокументовКЭДО</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ЦеныНоменклатурыПоставщиков</mdObject>
@@ -2657,6 +2741,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСвязанныеДокументы1СДокументооборота</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.КатегорииПолучателейСтимулирующихВыплатФСС</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьАвтоматическуюОтправкуПолучениеДанныхИСМП</mdObject>
@@ -2681,6 +2768,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьРасширенныеВозможностиЗаказаКлиента</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НачисленнаяЗарплатаРедактированиеФизическиеЛица</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьДатыЗапретаЗагрузки</mdObject>
@@ -2719,9 +2809,6 @@
     <mdObject>Constant.ИспользоватьОперацииСводнойКорректировкиЗадолженностиПоПриобретению</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаНалоговыйВычетПрисоединенныеФайлы</mdObject>
-  </content>
-  <content>
     <mdObject>AccumulationRegister.ДвиженияДоходыРасходыПрочиеАктивыПассивы</mdObject>
   </content>
   <content>
@@ -2750,6 +2837,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьРозничныеПродажи</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ВедетсяУчетСогласийНаПрисоединениеККЭДО</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьРабочиеМестаОхраныТруда</mdObject>
@@ -2786,6 +2876,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьВерсионированиеОбъектов</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.ЗаявлениеОВвозеТоваровПолученное</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ВидыОтпусков</mdObject>
@@ -2849,6 +2942,9 @@
   </content>
   <content>
     <mdObject>Constant.НеИспользоватьРасширенноеОбеспечениеПотребностей</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.КодыДокументовКадровыхМероприятий</mdObject>
   </content>
   <content>
     <mdObject>Document.ЖурналУчетаСчетовФактурДляПередачиВЭлектронномВиде</mdObject>
@@ -3001,6 +3097,9 @@
     <mdObject>InformationRegister.СведенияРеглОтчетАлкоПрил34Декларация</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НачисленияНеУчитываемыеПриРасчетеДоплатыЗаСовмещение</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ОбластиХранения</mdObject>
   </content>
   <content>
@@ -3013,7 +3112,13 @@
     <mdObject>InformationRegister.СтавкиНалогаНаИмущество</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ЗаявленияОВеденииТрудовыхКнижекПереданныеИспр</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ДоходВНатуральнойФорме</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.СНИЛСВходящихСообщенийСЭДО</mdObject>
   </content>
   <content>
     <mdObject>Catalog.БанковскиеКартыКонтрагентов</mdObject>
@@ -3220,9 +3325,6 @@
     <mdObject>Document.Совмещение</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ПлановыеНачисленияИнтервальный</mdObject>
-  </content>
-  <content>
     <mdObject>Catalog.МаркетинговыеМероприятия</mdObject>
   </content>
   <content>
@@ -3230,6 +3332,9 @@
   </content>
   <content>
     <mdObject>Catalog.СкладскиеГруппыУпаковок</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НастройкиПрямыхВыплатФСССотрудниковПодробности</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьОтчетВедомостьРасчетовМеждуОрганизациями</mdObject>
@@ -3310,6 +3415,9 @@
     <mdObject>Catalog.ПравилаПолученияФактаПоПоказателямБюджетов</mdObject>
   </content>
   <content>
+    <mdObject>ChartOfCharacteristicTypes.НачисленияПодключаемыеХарактеристики</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ЗаполненыДвиженияАктивовПассивов</mdObject>
   </content>
   <content>
@@ -3376,10 +3484,16 @@
     <mdObject>Document.ПрочиеДоходыРасходы</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПлановыеНачисленияРедактированиеОрганизации</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ВариантУпорядочиванияПотребностейПоЗаказамДляОбеспечения</mdObject>
   </content>
   <content>
     <mdObject>Constant.КоличествоПериодовРасчетаТоварныхОграничений</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.КоэффициентыПовышенияЗаработкаУчитываемыеПриИндексацииИспр</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ХарактеристикиНоменклатуры</mdObject>
@@ -3461,9 +3575,6 @@
   </content>
   <content>
     <mdObject>InformationRegister.ОстаткиПродукцииВЕТИС</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.ТерриторииСотрудниковИнтервальный</mdObject>
   </content>
   <content>
     <mdObject>Document.СчетФактураПолученный</mdObject>
@@ -3610,6 +3721,9 @@
     <mdObject>InformationRegister.СвязиПоказателейБюджетов</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.КадровыеДанныеРедактированиеФизическиеЛица</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ДанныеСостоянийСотрудников</mdObject>
   </content>
   <content>
@@ -3617,6 +3731,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьРазделыТаможеннойДекларацииИмпорт</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковСегментыТоваров</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьПланированиеЗакупок</mdObject>
@@ -3656,6 +3773,9 @@
   </content>
   <content>
     <mdObject>Constant.НоваяАрхитектураВзаиморасчетов</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.МашиночитаемыеДоверенностиОбмена</mdObject>
   </content>
   <content>
     <mdObject>Catalog.КассыККМ</mdObject>
@@ -3769,6 +3889,9 @@
     <mdObject>Document.РаспоряжениеНаПеремещениеДенежныхСредств</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.РегистрацииУведомленийОПрекращенииОтпускаПоУходуЗаРебенком</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ПринятиеКУчетуУзловКомпонентовАмортизации</mdObject>
   </content>
   <content>
@@ -3851,6 +3974,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.ПрименениеПлановыхНачислений</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ДанныеСверкиСВоеннымКомиссариатом</mdObject>
   </content>
   <content>
     <mdObject>AccumulationRegister.РасходыПриУСНМатериалы</mdObject>
@@ -3950,9 +4076,6 @@
   </content>
   <content>
     <mdObject>Catalog.КомандировкиСотрудниковПрисоединенныеФайлы</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.ВидыЗанятостиСотрудниковИнтервальный</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.МестаВыплатыЗарплатыПодразделений</mdObject>
@@ -4087,6 +4210,9 @@
     <mdObject>AccumulationRegister.БухгалтерскиеВзаиморасчетыССотрудниками</mdObject>
   </content>
   <content>
+    <mdObject>AccumulationRegister.РетроБонусыПоставщиков</mdObject>
+  </content>
+  <content>
     <mdObject>Document.СписаниеНМА</mdObject>
   </content>
   <content>
@@ -4162,6 +4288,9 @@
     <mdObject>AccumulationRegister.ТоварыКОтбору</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ФизическиеЛицаПрисоединенныеККЭДО</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.СпособыОбеспеченияПотребностей</mdObject>
   </content>
   <content>
@@ -4192,6 +4321,9 @@
     <mdObject>Constant.ИспользоватьТоварыВПутиОтПоставщиков</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.УточнениеКодовФИАСПоМОДамИСМП</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ПользовательскиеНастройкиДоступаКОбработкам</mdObject>
   </content>
   <content>
@@ -4199,9 +4331,6 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСегментыПартнеров</mdObject>
-  </content>
-  <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаОтпуск</mdObject>
   </content>
   <content>
     <mdObject>Constant.КонтролироватьОстаткиТоваровОрганизацийКОформлениюПоПоступлениям</mdObject>
@@ -4256,6 +4385,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьABCXYZКлассификациюНоменклатурыПоКоличествуПродаж</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ЭлектронныеПодписиКЭДО</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ГрафикНачисленияПроцентовПоДоходнойАренде</mdObject>
@@ -4438,6 +4570,9 @@
     <mdObject>Document.ПереводНаРаботуСКоронавирусом</mdObject>
   </content>
   <content>
+    <mdObject>Document.УсловияРетроБонусовПоставщика</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.НеЗакрыватьЗаказыНаВнутреннееПотреблениеБезПолнойОтгрузки</mdObject>
   </content>
   <content>
@@ -4472,6 +4607,9 @@
   </content>
   <content>
     <mdObject>Catalog.ПроизводственныеКалендари</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ФизическиеЛицаБронированияКомандировок</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.КадроваяИсторияСотрудников</mdObject>
@@ -4621,6 +4759,9 @@
     <mdObject>Constant.ВыводитьДопКолонкиНДС</mdObject>
   </content>
   <content>
+    <mdObject>Document.ВыбытиеРНПТМатериаловИзПроизводства</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьДатуИВремяВСрокахЗадач</mdObject>
   </content>
   <content>
@@ -4654,7 +4795,7 @@
     <mdObject>Constant.ИспользоватьМногострановойУчет</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ОсновныеСотрудникиФизическихЛиц</mdObject>
+    <mdObject>InformationRegister.НастройкиЭлектронныхТрудовыхКнижек</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьУзлыОбъектовЭксплуатации</mdObject>
@@ -4676,6 +4817,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьУчетПрочихДоходовРасходовРегл</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.КоэффициентИндексацииЗаработкаИспр</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.СклоненияПредставленийОбъектов</mdObject>
@@ -4789,6 +4933,9 @@
     <mdObject>Catalog.ОписиИсходящихДокументовВНалоговыеОрганы</mdObject>
   </content>
   <content>
+    <mdObject>Document.СписаниеРетроБонусовПоставщика</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ПолитикиУчетаСерий</mdObject>
   </content>
   <content>
@@ -4855,7 +5002,7 @@
     <mdObject>AccumulationRegister.ТоварыНаСкладах</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ДанныеДляПодбораСотрудников</mdObject>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковПоставщики</mdObject>
   </content>
   <content>
     <mdObject>Document.СписаниеНедостачТоваров</mdObject>
@@ -4867,6 +5014,9 @@
     <mdObject>Constant.ИспользоватьСборкуРазборку</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковУсловия</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ВыбиратьВариантВыводаСкидокПриПечатиДокументовПродажи</mdObject>
   </content>
   <content>
@@ -4876,7 +5026,7 @@
     <mdObject>Constant.КонтрольЛимитовПоДаннымБюджетирования2_5</mdObject>
   </content>
   <content>
-    <mdObject>Constant.ПечататьОтдельныйСлипЧекЕГАИС</mdObject>
+    <mdObject>Constant.УдалитьПечататьОтдельныйСлипЧекЕГАИС</mdObject>
   </content>
   <content>
     <mdObject>Constant.ВидимостьДатыНачалаПеречисленияЗарплатыЧерезПереводыВПути</mdObject>
@@ -4901,9 +5051,6 @@
   </content>
   <content>
     <mdObject>Catalog.ИзменениеГрафикаРаботыСпискомПрисоединенныеФайлы</mdObject>
-  </content>
-  <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаСправкаСМестаРаботыПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.СправкиНДФЛДляИФНССведенияОДоходах</mdObject>
@@ -4942,7 +5089,7 @@
     <mdObject>Document.КадровыйПереводСписком</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.СборГрафиковОтпусковПрисоединенныеФайлы</mdObject>
+    <mdObject>InformationRegister.ДанныеКадровыхИзмененийДляВоенкомата</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ОшибочныеРеквизитыКонтрагентов</mdObject>
@@ -5002,6 +5149,9 @@
     <mdObject>InformationRegister.ДетализацияСебестоимостиПартииТоваровПостатейныеЗатраты</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПользователиСЭДО</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.КодыТоваровПодключаемогоОборудованияOffline</mdObject>
   </content>
   <content>
@@ -5027,6 +5177,9 @@
   </content>
   <content>
     <mdObject>Document.ВыработкаНМА</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.НастройкиОбменаНСПК</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьЗаявкиНаРасходованиеДенежныхСредств</mdObject>
@@ -5149,7 +5302,13 @@
     <mdObject>InformationRegister.СкрытыеРегламентированныеОтчеты</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НастройкиПрямыхВыплатФСССотрудников</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ДемонстрационныеСценарии</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.БухучетЗарплатыСотрудниковИспр</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ДанныеОснованийСчетовФактур</mdObject>
@@ -5176,9 +5335,6 @@
     <mdObject>Constant.ОптимизироватьЗапасыРаспределительногоЦентра</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.СтроковыеСведенияФизическихЛиц</mdObject>
-  </content>
-  <content>
     <mdObject>Document.ОтчетПереработчика2_5</mdObject>
   </content>
   <content>
@@ -5203,13 +5359,22 @@
     <mdObject>AccumulationRegister.РасчетыСПоставщиками</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НастройкиПечатныхФормБЗК</mdObject>
+  </content>
+  <content>
     <mdObject>AccumulationRegister.ТоварыПереданныеНаКомиссию</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьФайловоеХранилище1СДокументооборота</mdObject>
   </content>
   <content>
+    <mdObject>ChartOfCharacteristicTypes.ДолжностиПодключаемыеХарактеристики</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ДатаНачалаКонтроляОстатковПриПеречисленииНДФЛ</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ТерриторииОрганизацийПоКоронавирусу</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ПоказателиПремирования</mdObject>
@@ -5225,9 +5390,6 @@
   </content>
   <content>
     <mdObject>Document.ПачкаДокументовСЗВ_К</mdObject>
-  </content>
-  <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаСправка2НДФЛ</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ПрименениеДополнительныхПериодическихПоказателейРасчетаЗарплатыСотрудниковИспр</mdObject>
@@ -5296,6 +5458,9 @@
     <mdObject>InformationRegister.СреднийЗаработокОбщийСЭДО</mdObject>
   </content>
   <content>
+    <mdObject>Document.ПереносРНПТМатериаловНаПродукцию</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьПериодичностьОформленияВыработки</mdObject>
   </content>
   <content>
@@ -5312,6 +5477,9 @@
   </content>
   <content>
     <mdObject>Catalog.ПравилаПолученияФактаПоСтатьямБюджетов</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ДанныеСверкиСДокументамиВоинскогоУчета</mdObject>
   </content>
   <content>
     <mdObject>Document.ЗаказПоставщику</mdObject>
@@ -5396,6 +5564,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьУпаковочныеЛисты</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ИдентификаторыОнлайнЗаказов</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ЗаказНаПеремещениеПрисоединенныеФайлы</mdObject>
@@ -5495,6 +5666,9 @@
   </content>
   <content>
     <mdObject>Document.ИзменениеШтатногоРасписания</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НастройкиПолученияУведомленийОбЭЛН</mdObject>
   </content>
   <content>
     <mdObject>Document.ФормированиеПартийЗЕРНО</mdObject>
@@ -5659,6 +5833,9 @@
     <mdObject>InformationRegister.ПартнерыСегмента</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПлановыеНачисленияПросмотрФизическиеЛица</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.РегистрацияЦенНоменклатурыПоставщикаПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -5740,10 +5917,10 @@
     <mdObject>Constant.ДополнительныйЯзык2</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ИсторияСамостоятельныхКлассификационныхЕдиницВторичный</mdObject>
+    <mdObject>Constant.ИспользуетсяУправлениеПроизводством21и22</mdObject>
   </content>
   <content>
-    <mdObject>Constant.ИспользуетсяУправлениеПроизводством21и22</mdObject>
+    <mdObject>InformationRegister.ПодпискиНаУведомленияОбЭЛН</mdObject>
   </content>
   <content>
     <mdObject>Catalog.НастройкиРМК</mdObject>
@@ -5795,6 +5972,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьПланированиеПродажПоКатегориям</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.УдалитьТипыЗаписейВзаиморасчетовЗаполнены</mdObject>
   </content>
   <content>
     <mdObject>Catalog.РеестрСведенийНеобходимыхДляНазначенияИВыплатыПособийПрисоединенныеФайлы</mdObject>
@@ -5893,9 +6073,6 @@
     <mdObject>InformationRegister.МестонахождениеОС</mdObject>
   </content>
   <content>
-    <mdObject>Constant.СервисКабинетСотрудникаВЛокальнойСети</mdObject>
-  </content>
-  <content>
     <mdObject>InformationRegister.СинхронизацияОбъектовВЕТИС</mdObject>
   </content>
   <content>
@@ -5951,6 +6128,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.СведенияРеглОтчетАлкоПрил23Декларация</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ОснованияПриостановленияТрудовыхДоговоровКонтрактов</mdObject>
   </content>
   <content>
     <mdObject>Document.ТаможеннаяДекларацияИмпорт</mdObject>
@@ -6187,7 +6367,7 @@
     <mdObject>Catalog.ПриемНаРаботуСпискомПрисоединенныеФайлы</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаОтсутствиеПрисоединенныеФайлы</mdObject>
+    <mdObject>InformationRegister.СохраняемыйЗаработокПриВзысканиях</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьОтветственноеХранение</mdObject>
@@ -6299,6 +6479,12 @@
   </content>
   <content>
     <mdObject>Catalog.ЗначенияСвойствОбъектовИерархия</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РегистрацииИсходящихСообщенийОСтраховыхСлучаяхФСС</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.ПриказОПрекращенииБронирования</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ВидыВремениДляВыявленияНачислений</mdObject>
@@ -6436,6 +6622,9 @@
     <mdObject>Catalog.ВидыПланов</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ПлановыеНачисленияРедактированиеФизическиеЛица</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ОснованияПолномочийОтветственныхЛиц</mdObject>
   </content>
   <content>
@@ -6448,10 +6637,10 @@
     <mdObject>Constant.ИспользоватьОбработкуОбъектов1СДокументооборота</mdObject>
   </content>
   <content>
-    <mdObject>BusinessProcess.ЗаявкаСотрудникаОтсутствие</mdObject>
+    <mdObject>Catalog.ПередачаТоваровМеждуОрганизациямиПрисоединенныеФайлы</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ПередачаТоваровМеждуОрганизациямиПрисоединенныеФайлы</mdObject>
+    <mdObject>InformationRegister.СообщенияФССОбИзмененииСостоянийЭЛН</mdObject>
   </content>
   <content>
     <mdObject>Document.ЗапросСтатусовВыплатыПособия</mdObject>
@@ -6482,9 +6671,6 @@
   </content>
   <content>
     <mdObject>InformationRegister.ФизическиеЛицаДокументов</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.СтандартныеВычетыПоНДФЛВторичный</mdObject>
   </content>
   <content>
     <mdObject>Document.ЗапросАкцизныхМарокЕГАИС</mdObject>
@@ -6527,6 +6713,12 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьНесколькоРасчетныхСчетов</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ПечатныеФормыОнлайнЗаказов</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.АктПремииПоставщика</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСкладыВТабличнойЧастиДокументовПродажи</mdObject>
@@ -6623,6 +6815,9 @@
   </content>
   <content>
     <mdObject>Catalog.РегламентированныйОтчетПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РазделыДатЗапретаИзмененияОбъектовБЗК</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ГруппыИсполнителейЗадач</mdObject>
@@ -6730,9 +6925,6 @@
     <mdObject>InformationRegister.ПерерасчетЗарплаты</mdObject>
   </content>
   <content>
-    <mdObject>Document.СборГрафиковОтпусков</mdObject>
-  </content>
-  <content>
     <mdObject>Document.ВозвратМатериаловИзПроизводства</mdObject>
   </content>
   <content>
@@ -6746,6 +6938,9 @@
   </content>
   <content>
     <mdObject>ChartOfCharacteristicTypes.ШтатноеРасписаниеПодключаемыеХарактеристики</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РегистрацииЗапросовСреднегоЗаработкаСЭДО</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ОписьЗаявленийСотрудниковНаВыплатуПособийПрисоединенныеФайлы</mdObject>
@@ -6913,10 +7108,13 @@
     <mdObject>Catalog.РаспределениеВозвратныхОтходовПрисоединенныеФайлы</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ВерсииПоставяемыхНастроек</mdObject>
+    <mdObject>InformationRegister.ВерсииПоставляемыхНастроек</mdObject>
   </content>
   <content>
     <mdObject>Catalog.СостояниеВБраке</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.КатегорииДолжностейПолучателейСтимулирующихВыплатФСС</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.БухучетРабочегоВремениСотрудников</mdObject>
@@ -6953,9 +7151,6 @@
   </content>
   <content>
     <mdObject>Catalog.Назначения</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.ГрафикРаботыСотрудниковИнтервальный</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьВнутреннееСогласованиеКоммерческихПредложений</mdObject>
@@ -7012,6 +7207,9 @@
     <mdObject>Constant.БлокировкаФоновогоРаспределенияРасчетов</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ДатаОбработкиКадровыхДанныхФСС</mdObject>
+  </content>
+  <content>
     <mdObject>Document.УлучшениеНМА</mdObject>
   </content>
   <content>
@@ -7025,6 +7223,9 @@
   </content>
   <content>
     <mdObject>Catalog.ВнутреннееПотреблениеПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.ПриказОБронированииРаботников</mdObject>
   </content>
   <content>
     <mdObject>Catalog.УбыткиПрошлыхЛет</mdObject>
@@ -7129,6 +7330,9 @@
     <mdObject>Constant.ИспользоватьГруппыАналитическогоУчетаНоменклатуры</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НастройкиПрямыхВыплатФССОрганизаций</mdObject>
+  </content>
+  <content>
     <mdObject>ChartOfCalculationTypes.Начисления</mdObject>
   </content>
   <content>
@@ -7183,6 +7387,9 @@
     <mdObject>AccumulationRegister.ЗаказыМатериаловСУчетомКорректировок</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.БухучетИзлишнеУдержанногоНДФЛ</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.СведенияРеглОтчетАлкоПрил33Декларация</mdObject>
   </content>
   <content>
@@ -7228,7 +7435,7 @@
     <mdObject>Catalog.ПричиныСписанияОС</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.НумерацияЧековККТ</mdObject>
+    <mdObject>InformationRegister.УдалитьНумерацияЧековККТ</mdObject>
   </content>
   <content>
     <mdObject>Document.РеестрСчетовФактурПоставщика</mdObject>
@@ -7282,9 +7489,6 @@
     <mdObject>Constant.ХранитьОперацииВРесурсныхСпецификациях</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ПрименениеСтандартныхВычетовПоНДФЛВторичный</mdObject>
-  </content>
-  <content>
     <mdObject>Document.ГрафикОтпусков</mdObject>
   </content>
   <content>
@@ -7298,6 +7502,9 @@
   </content>
   <content>
     <mdObject>Constant.ИспользоватьЗагрузкуКурсовВалютЕЦБ</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НастройкиСистемыБронированияКомандировок</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ПричиныПроигрышаСделок</mdObject>
@@ -7444,6 +7651,9 @@
     <mdObject>InformationRegister.ИдентификаторыДокументовНаРаботаВРоссии</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ИспользоватьАвтоматическуюОтправкуСотрудниковБронированияКомандировок</mdObject>
+  </content>
+  <content>
     <mdObject>Document.НазначениеПлановогоНачисления</mdObject>
   </content>
   <content>
@@ -7501,6 +7711,9 @@
     <mdObject>AccumulationRegister.ОтработанноеВремяПоСотрудникам</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.БухучетЗарплатыСотрудников</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.НеИспользоватьПроверкуЗаданийЗакрытияМесяцаВОтчетахРегл</mdObject>
   </content>
   <content>
@@ -7511,6 +7724,9 @@
   </content>
   <content>
     <mdObject>Constant.ВариантОбособленияТоваровВПеремещении</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НачисленнаяЗарплатаРедактированиеОрганизации</mdObject>
   </content>
   <content>
     <mdObject>Constant.РаботаВБюджетномУчреждении</mdObject>
@@ -7540,7 +7756,7 @@
     <mdObject>Document.СписаниеПартийЗЕРНО</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ВерсииПоставяемыхНастроекОбластейДанных</mdObject>
+    <mdObject>InformationRegister.ВерсииПоставляемыхНастроекОбластейДанных</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьABCXYZКлассификациюНоменклатурыПоВыручке</mdObject>
@@ -7550,6 +7766,9 @@
   </content>
   <content>
     <mdObject>Catalog.ПрожиточныеМинимумы</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ИзмененияФизическихЛицБронированияКомандировок</mdObject>
   </content>
   <content>
     <mdObject>CalculationRegister.Начисления</mdObject>
@@ -7672,6 +7891,9 @@
     <mdObject>Document.АннулированиеПодарочныхСертификатов</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.УсловияРетроБонусовПоставщикаПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>AccumulationRegister.ДвиженияКонтрагентКонтрагент</mdObject>
   </content>
   <content>
@@ -7691,9 +7913,6 @@
   </content>
   <content>
     <mdObject>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании</mdObject>
-  </content>
-  <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаСправка2НДФЛПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьРейтингиПродажНоменклатуры</mdObject>
@@ -7720,7 +7939,13 @@
     <mdObject>InformationRegister.СпецификацииИзделий</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.СостоянияДокументовКЭДО</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьСервисСклоненияMorpher</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.НастройкиБухучета</mdObject>
   </content>
   <content>
     <mdObject>Constant.ДатаНачалаУчетаПрослеживаемыхИмпортныхТоваров</mdObject>
@@ -7828,6 +8053,9 @@
     <mdObject>Catalog.ПрофессииРабочих</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ДанныеУзлов1СДокументооборота</mdObject>
+  </content>
+  <content>
     <mdObject>AccumulationRegister.ДенежныеДокументы</mdObject>
   </content>
   <content>
@@ -7912,6 +8140,9 @@
     <mdObject>Catalog.ПериодыОплаченныеДоНачалаЭксплуатацииПрисоединенныеФайлы</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НазначениеПоказателейРасчетаРезервов</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ЗначенияПериодическихПоказателейРасчетаЗарплатыОрганизаций</mdObject>
   </content>
   <content>
@@ -7939,6 +8170,9 @@
     <mdObject>AccumulationRegister.СведенияОДоходахНДФЛ</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ПредопределенныеШаблоныСообщенийОнлайнЗаказов</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ЭлектронныеПредставленияРегламентированныхОтчетов</mdObject>
   </content>
   <content>
@@ -7948,6 +8182,9 @@
     <mdObject>Constant.ИспользоватьУчетНДС</mdObject>
   </content>
   <content>
+    <mdObject>Constant.ВыводитьПолныеНаименованияРетроБонусовКлиентов</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.СведенияОбИнвалидностиФизическихЛиц</mdObject>
   </content>
   <content>
@@ -7955,6 +8192,9 @@
   </content>
   <content>
     <mdObject>Document.РаспределениеНДС</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ДанныеСохраняемогоЗаработкаПриВзысканиях</mdObject>
   </content>
   <content>
     <mdObject>Constant.УправлениеПредприятием</mdObject>
@@ -7976,6 +8216,9 @@
   </content>
   <content>
     <mdObject>Catalog.ВыкупТоваровХранителемПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.СодержимоеРассылокКонтролирующихОрганов</mdObject>
   </content>
   <content>
     <mdObject>Document.ВозвратОСИзАренды2_4</mdObject>
@@ -8026,6 +8269,9 @@
     <mdObject>Document.ПриемНаРаботу</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ОснованияУвольненияВАрхиве</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.ВстречаПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -8033,6 +8279,9 @@
   </content>
   <content>
     <mdObject>Document.ОтгулСписком</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ПодразделенияБронированияКомандировок</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ГрафикНачисленияПроцентовПоАренде</mdObject>
@@ -8102,6 +8351,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.АрхивДанныхРегламентированнойОтчетности</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ИспользоватьОбщийПериодОтпускаВДокументах</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСоглашенияСКлиентами</mdObject>
@@ -8197,9 +8449,6 @@
     <mdObject>Constant.ИспользуетсяТолькоУправлениеПроизводством21</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.СтатусФизическихЛицКакНалогоплательщиковНДФЛВторичный</mdObject>
-  </content>
-  <content>
     <mdObject>Catalog.ПравилаОбработкиЭлектроннойПочты</mdObject>
   </content>
   <content>
@@ -8227,9 +8476,6 @@
     <mdObject>InformationRegister.ИсторияВыполненияОбменовСЗЕРНО</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ОрганизацииВКоторыхРаботалиСотрудники</mdObject>
-  </content>
-  <content>
     <mdObject>Constant.КоличествоПериодовABCКлассификацииПартнеров</mdObject>
   </content>
   <content>
@@ -8248,7 +8494,13 @@
     <mdObject>InformationRegister.СведенияОРежимахРаботыФормыСотрудника</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.БухучетНачисленийСотрудниковИспр</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ПеремаркировкаТоваровГИСМ</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ТерриторииСПовышающимКоэффициентомПоКоронавирусу</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьСоглашенияСПоставщиками</mdObject>
@@ -8566,6 +8818,9 @@
     <mdObject>Constant.АктуализироватьДанныеПриФормированииОтчетов</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.БухучетНачисленийСотрудников</mdObject>
+  </content>
+  <content>
     <mdObject>Constant.ИспользоватьНесколькоКасс</mdObject>
   </content>
   <content>
@@ -8689,6 +8944,9 @@
     <mdObject>Document.СписаниеРасхожденийПоступлениеПриобретение</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.ФайлыОнлайнЗаказов</mdObject>
+  </content>
+  <content>
     <mdObject>Document.ИсполнительныйЛист</mdObject>
   </content>
   <content>
@@ -8773,9 +9031,6 @@
     <mdObject>Document.МатериальнаяПомощь</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.ИсторияРегистрацийВНалоговомОрганеВторичный</mdObject>
-  </content>
-  <content>
     <mdObject>Constant.ИспользоватьВнутреннееСогласованиеЗаявокНаВозвратТоваровОтКлиентов</mdObject>
   </content>
   <content>
@@ -8842,6 +9097,12 @@
     <mdObject>InformationRegister.РеестрКадровыхПриказов</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.СостояниеСогласияНаПрисоединениеККЭДО</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ИдентификаторыОперацийСБПb2b</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.СтатусыУведомленийОбОтгрузкеМаркированныхТоваровГИСМ</mdObject>
   </content>
   <content>
@@ -8885,6 +9146,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.КонтактыВзаимодействий</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.АвтоматическиОбновляемыеГрафикиРаботыСотрудников</mdObject>
   </content>
   <content>
     <mdObject>Catalog.ОперацияНалоговогоУчетаПоНДФЛПрисоединенныеФайлы</mdObject>
@@ -8944,9 +9208,6 @@
     <mdObject>Catalog.МоделиБюджетирования</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.МакетыКомпоновкиДанных</mdObject>
-  </content>
-  <content>
     <mdObject>Catalog.ГруппыФинансовогоУчетаНоменклатуры</mdObject>
   </content>
   <content>
@@ -8959,6 +9220,9 @@
     <mdObject>InformationRegister.СтатусыЗастрахованныхФизическихЛиц</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.ВидыРетроБонусовПоставщиков</mdObject>
+  </content>
+  <content>
     <mdObject>Catalog.БизнесРегионы</mdObject>
   </content>
   <content>
@@ -8969,6 +9233,9 @@
   </content>
   <content>
     <mdObject>Constant.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.АдресГрузополучателяБратьИзАдресаДоставки</mdObject>
   </content>
   <content>
     <mdObject>Document.Сторно</mdObject>
@@ -9136,6 +9403,9 @@
     <mdObject>Document.ТТНВходящаяЕГАИС</mdObject>
   </content>
   <content>
+    <mdObject>InformationRegister.НастройкиУведомленийОбЭЛН</mdObject>
+  </content>
+  <content>
     <mdObject>Document.СчетФактураКомиссионеру</mdObject>
   </content>
   <content>
@@ -9155,9 +9425,6 @@
   </content>
   <content>
     <mdObject>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств</mdObject>
-  </content>
-  <content>
-    <mdObject>InformationRegister.РазмерВычетовНДФЛВторичный</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.СтатусыОформленияДокументовЗЕРНО</mdObject>
@@ -9226,13 +9493,16 @@
     <mdObject>Catalog.РолиКонтактныхЛицПартнеров</mdObject>
   </content>
   <content>
+    <mdObject>Document.РазрешениеНаОтгрузкуИСМП</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.РеквизитыПлатежныхДокументовПеречисленияЗарплаты</mdObject>
   </content>
   <content>
     <mdObject>Document.ЗаявлениеАбонентаСпецоператораСвязи</mdObject>
   </content>
   <content>
-    <mdObject>Constant.ЗачетОплатПоДатеПлатежа</mdObject>
+    <mdObject>Constant.УдалитьЗачетОплатПоДатеПлатежа</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ДокументыПоВыпущеннойПродукции</mdObject>
@@ -9269,6 +9539,9 @@
   </content>
   <content>
     <mdObject>InformationRegister.СтатусыОформленияДокументовИСМП</mdObject>
+  </content>
+  <content>
+    <mdObject>Constant.ИспользоватьРетроБонусыПоставщиков</mdObject>
   </content>
   <content>
     <mdObject>Constant.ДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров</mdObject>
@@ -9328,10 +9601,10 @@
     <mdObject>Catalog.НоменклатураКонтрагентов</mdObject>
   </content>
   <content>
-    <mdObject>Catalog.ЗаявкаСотрудникаОтпускПрисоединенныеФайлы</mdObject>
+    <mdObject>Document.ЗапросНаВыпискуИзЕГРЮЛ_ЕГРИП</mdObject>
   </content>
   <content>
-    <mdObject>Document.ЗапросНаВыпискуИзЕГРЮЛ_ЕГРИП</mdObject>
+    <mdObject>Catalog.СписаниеРетроБонусовПоставщикаПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ТрудоваяДеятельностьФизическихЛиц</mdObject>
@@ -9376,9 +9649,6 @@
     <mdObject>Constant.ИспользоватьАвтоматическиеСкидкиВПродажах</mdObject>
   </content>
   <content>
-    <mdObject>InformationRegister.КадроваяИсторияСотрудниковИнтервальный</mdObject>
-  </content>
-  <content>
     <mdObject>Catalog.ВедомостьПрочихДоходовВКассуПрисоединенныеФайлы</mdObject>
   </content>
   <content>
@@ -9386,6 +9656,9 @@
   </content>
   <content>
     <mdObject>Catalog.НазначениеРабочихМестСотрудникамПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.РНПТМатериаловВПроизводстве</mdObject>
   </content>
   <content>
     <mdObject>Catalog.МестаХраненияСАТУРН</mdObject>
@@ -9403,13 +9676,13 @@
     <mdObject>InformationRegister.РасчетСебестоимостиДатыКорректировокОстатков</mdObject>
   </content>
   <content>
-    <mdObject>Constant.ИспользоватьСборГрафиковОтпусков</mdObject>
-  </content>
-  <content>
     <mdObject>Constant.ИспользоватьИнтеграциюСЯндексМаркет</mdObject>
   </content>
   <content>
     <mdObject>Constant.ИспользоватьДатуНачалаЗадач</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.РетроБонусыПоставщиковИНН</mdObject>
   </content>
   <content>
     <mdObject>Document.УдержаниеДобровольныхСтраховыхВзносов</mdObject>

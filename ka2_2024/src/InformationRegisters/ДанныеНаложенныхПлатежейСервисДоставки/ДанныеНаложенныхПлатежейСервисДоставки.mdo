@@ -12,7 +12,7 @@
   <name>ДанныеНаложенныхПлатежейСервисДоставки</name>
   <synonym>
     <key>ru</key>
-    <value>Данные наложенных платежей сервис доставки</value>
+    <value>Данные наложенных платежей (Сервис доставки)</value>
   </synonym>
   <editType>InDialog</editType>
   <standardAttributes>
@@ -49,6 +49,14 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Данные наложенного платежа (Сервис доставки)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Данные наложенных платежей (Сервис доставки)</value>
+  </listPresentation>
   <resources uuid="40378e3b-f22d-4c80-8893-cd5cf1f634d3">
     <name>Состояние</name>
     <synonym>
@@ -56,7 +64,7 @@
       <value>Состояние</value>
     </synonym>
     <type>
-      <types>EnumRef.СостоянияОбработкиНаложенныхПлатежейСервисДоставки</types>
+      <types>EnumRef.СостоянияОбработкиПроцедурСинхронизацииСервисДоставки</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -217,99 +217,6 @@
 		<denyIncompleteValues>true</denyIncompleteValues>
 	</parameter>
 	<parameter>
-		<name>СоставУчастников</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Состав участников</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СоставыУчастниковРетроБонусов</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>СоставТоваров</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Состав товаров</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СоставыТоваровРетроБонусов</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>Участники</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Участники</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СоставыСписковРетроБонусов</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>Товары</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Товары</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СоставыСписковРетроБонусов</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>СегментыЗафиксированы</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Сегменты зафиксированы</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:boolean</v8:Type>
-		</valueType>
-		<value xsi:type="xs:boolean">false</value>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>КомментарийСегментыНеЗафиксированы</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Комментарий сегменты не зафиксированы</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:string</v8:Type>
-			<v8:StringQualifiers>
-				<v8:Length>0</v8:Length>
-				<v8:AllowedLength>Variable</v8:AllowedLength>
-			</v8:StringQualifiers>
-		</valueType>
-		<value xsi:type="xs:string">Данные о составе сегментов не зафиксированы, могут быть изменены по правилам формирования сегментов</value>
-		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
 		<name>ВариантОтчета</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -348,26 +255,26 @@
 		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
-		<name>ДокументУРБПервичный</name>
+		<name>ВыводитьАртикул</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Документ УРБПервичный</v8:content>
+				<v8:content>Выводить артикул</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.УсловияРетроБонусовКлиентов</v8:Type>
+			<v8:Type>xs:boolean</v8:Type>
 		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<parameter>
-		<name>ДокументУРБПредставление</name>
+		<name>КомментарийСегментыНеЗафиксированы</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Документ УРБПредставление</v8:content>
+				<v8:content>Комментарий сегменты не зафиксированы</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -379,26 +286,6 @@
 		</valueType>
 		<value xsi:type="xs:string"/>
 		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>ДокументУРБПервичныйПредставление</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Документ УРБПервичный представление</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:string</v8:Type>
-			<v8:StringQualifiers>
-				<v8:Length>0</v8:Length>
-				<v8:AllowedLength>Variable</v8:AllowedLength>
-			</v8:StringQualifiers>
-		</valueType>
-		<value xsi:type="xs:string"/>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>КомментарийСегментыЗафиксированы</name>
@@ -415,23 +302,8 @@
 				<v8:AllowedLength>Variable</v8:AllowedLength>
 			</v8:StringQualifiers>
 		</valueType>
-		<value xsi:type="xs:string">Расчёт и начисление ретро-бонуса осуществляется по данным зафиксированного состава сегментов</value>
+		<value xsi:type="xs:string"/>
 		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
-		<name>ВыводитьАртикул</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Выводить артикул</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:boolean</v8:Type>
-		</valueType>
-		<value xsi:type="xs:boolean">false</value>
-		<useRestriction>false</useRestriction>
-		<use>Always</use>
 	</parameter>
 	<template>
 		<name>Макет1</name>
@@ -635,6 +507,20 @@
 					<dcsset:userSettingID>5d3c4269-ed4d-4ca1-a36d-2c7d035a3939</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КодНоменклатуры</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
 			<dcsset:conditionalAppearance>
 				<dcsset:item>
 					<dcsset:selection>
@@ -748,20 +634,6 @@
 						<dcsset:comparisonType>Filled</dcsset:comparisonType>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Номенклатура</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Характеристика</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>КодНоменклатуры</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
@@ -890,6 +762,20 @@
 					<dcsset:userSettingID>c5bade65-df67-404d-abe1-0a320e33f254</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КодНоменклатуры</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
 			<dcsset:conditionalAppearance>
 				<dcsset:item>
 					<dcsset:selection>
@@ -969,20 +855,6 @@
 						<dcsset:comparisonType>Filled</dcsset:comparisonType>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Номенклатура</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Характеристика</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>КодНоменклатуры</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
-				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>

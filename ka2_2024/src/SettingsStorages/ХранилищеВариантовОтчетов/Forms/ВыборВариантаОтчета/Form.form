@@ -503,6 +503,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ВариантыОтчетовДоступныеВсемПользователям</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -613,6 +617,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.НазначенияВариантовОтчетов</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -657,10 +665,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ДеревоВариантовОтчетаSearchString</name>
+      <name>ДеревоВариантовОтчетаСтрокаПоиска</name>
       <id>47</id>
       <extendedTooltip>
-        <name>ДеревоВариантовОтчетаSearchStringExtendedTooltip</name>
+        <name>ДеревоВариантовОтчетаСтрокаПоискаРасширеннаяПодсказка</name>
         <id>49</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -675,7 +683,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ДеревоВариантовОтчетаSearchStringContextMenu</name>
+        <name>ДеревоВариантовОтчетаСтрокаПоискаКонтекстноеМеню</name>
         <id>48</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -695,10 +703,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ДеревоВариантовОтчетаViewStatus</name>
+      <name>ДеревоВариантовОтчетаСостояниеПросмотра</name>
       <id>50</id>
       <extendedTooltip>
-        <name>ДеревоВариантовОтчетаViewStatusExtendedTooltip</name>
+        <name>ДеревоВариантовОтчетаСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>52</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -713,7 +721,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ДеревоВариантовОтчетаViewStatusContextMenu</name>
+        <name>ДеревоВариантовОтчетаСостояниеПросмотраКонтекстноеМеню</name>
         <id>51</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -734,10 +742,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ДеревоВариантовОтчетаSearchControl</name>
+      <name>ДеревоВариантовОтчетаУправлениеПоиском</name>
       <id>53</id>
       <extendedTooltip>
-        <name>ДеревоВариантовОтчетаSearchControlExtendedTooltip</name>
+        <name>ДеревоВариантовОтчетаУправлениеПоискомРасширеннаяПодсказка</name>
         <id>55</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -752,7 +760,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ДеревоВариантовОтчетаSearchControlContextMenu</name>
+        <name>ДеревоВариантовОтчетаУправлениеПоискомКонтекстноеМеню</name>
         <id>54</id>
         <visible>true</visible>
         <enabled>true</enabled>

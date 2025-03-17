@@ -468,7 +468,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Форма по КНД 1190803 в формате 4.02</v8:content>
+							<v8:content>Форма по КНД 1190803 в формате 4.03</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -483,7 +483,9 @@
 к приказу ФНС России
 от 22.11.2018 № ММВ-7-21/652@
 в редакции приказа ФНС России
-18.06.2021 № ЕД-7-21/574@</v8:content>
+18.06.2021 № ЕД-7-21/574@,
+от 29.10.2024 № ЕД-7-21/899@
+</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -491,12 +493,6 @@
 			<c>
 				<c>
 					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content> </v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 		</row>
@@ -1027,7 +1023,7 @@
 		<width>272</width>
 	</format>
 	<format>
-		<height>255</height>
+		<height>291</height>
 	</format>
 	<format>
 		<font>0</font>
@@ -1073,6 +1069,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#FFFFC0</backColor>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
@@ -1115,6 +1112,7 @@
 		<font>2</font>
 		<border>1</border>
 		<backColor>#FFFFC0</backColor>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
@@ -1135,6 +1133,7 @@
 		<border>1</border>
 		<width>359</width>
 		<backColor>#FFFFC0</backColor>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
@@ -1155,6 +1154,7 @@
 		<border>1</border>
 		<width>359</width>
 		<backColor>#FFFFC0</backColor>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
@@ -1170,6 +1170,8 @@
 	<format>
 		<font>2</font>
 		<border>1</border>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 		<backColor>#FFFFC0</backColor>
 		<textPlacement>Wrap</textPlacement>
 		<protection>false</protection>
@@ -1195,7 +1197,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#FFFFC0</backColor>
-		<textPlacement>Wrap</textPlacement>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>

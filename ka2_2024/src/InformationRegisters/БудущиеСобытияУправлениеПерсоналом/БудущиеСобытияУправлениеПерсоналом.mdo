@@ -68,13 +68,15 @@
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="b8b0d8c0-b8b6-4b50-a66e-527ac26af154">
-    <name>Сотрудник</name>
+    <name>Объект</name>
     <synonym>
       <key>ru</key>
-      <value>Сотрудник</value>
+      <value>Объект</value>
     </synonym>
     <type>
+      <types>CatalogRef.Должности</types>
       <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ШтатноеРасписание</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

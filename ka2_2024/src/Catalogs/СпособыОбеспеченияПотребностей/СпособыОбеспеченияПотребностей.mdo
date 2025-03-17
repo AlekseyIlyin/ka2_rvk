@@ -244,21 +244,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b23d8fb1-bef5-4878-88c8-91b9eb80db10">
-    <name>Календарь</name>
-    <synonym>
-      <key>ru</key>
-      <value>Календарь</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Календари</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="d4b99c43-19ab-4d98-b4a9-6346e7a84727">
     <name>СрокИсполненияЗаказа</name>
     <synonym>
@@ -337,10 +322,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="9f53b668-3b0f-41b3-9f44-f0938ae70247">
-    <name>ДатаСледующейПоставки</name>
+    <name>УдалитьДатаСледующейПоставки</name>
     <synonym>
       <key>ru</key>
-      <value>Дата следующей поставки</value>
+      <value>(не используется) Дата следующей поставки</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -355,10 +340,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="8df97ae6-62c5-42f2-b41c-fc57ec431e1c">
-    <name>ПлановаяДатаПоставки</name>
+    <name>ПерваяДатаВГрафикеПоставок</name>
     <synonym>
       <key>ru</key>
-      <value>Плановая дата поставки</value>
+      <value>Первая дата в графике поставок</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -373,10 +358,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="529f6eb3-eaa7-41a0-a5c1-05bef043d3b1">
-    <name>ФормироватьПлановыеЗаказы</name>
+    <name>ФормироватьЗаказыПоРасписанию</name>
     <synonym>
       <key>ru</key>
-      <value>Формировать плановые заказы</value>
+      <value>Формировать заказы по расписанию</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -388,10 +373,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="c2e925d9-6ee2-4d77-ad48-047e79fe0828">
-    <name>ПлановаяДатаЗаказа</name>
+    <name>УдалитьПлановаяДатаЗаказа</name>
     <synonym>
       <key>ru</key>
-      <value>Плановая дата заказа</value>
+      <value>(не используется) Плановая дата заказа</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -436,6 +421,90 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="76e29db4-f24d-4ef9-848d-feff1c1daea5">
+    <name>ФормироватьЗаказыПоТочкеЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формировать заказы по точке заказа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4f689b3e-1c1a-4a5e-96c2-ee3205e839f8">
+    <name>ГрафикПоставок</name>
+    <synonym>
+      <key>ru</key>
+      <value>График поставок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Календари</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7b83f08-8cca-47c5-b236-8535749b6b1c">
+    <name>ПериодичностьГрафикаПоставок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность графика поставок</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПериодичностьГрафика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45429aac-a793-4b0e-84ea-9dead09c91c5">
+    <name>КоличествоПериодовВИнтервалеМеждуПоставками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество периодов в интервале между поставками</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c70323e-c1fa-476b-96d9-4d682c922931">
+    <name>ВариантОбеспечиваемогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант обеспечиваемого периода</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыОбеспечиваемогоПериода</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыОбеспечиваемогоПериода.EnumValue.НеОграничен</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

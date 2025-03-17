@@ -34,12 +34,6 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>Catalog.ВидыВыплатБывшимСотрудникам.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
@@ -53,27 +47,7 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>Catalog.ТарифыПлатежныхАгентов.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>Document.ВедомостьНаВыплатуЗарплатыВБанк.StandardCommand.Create</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>Document.ВедомостьНаВыплатуЗарплатыПеречислением.StandardCommand.Create</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>Document.ВедомостьНаВыплатуЗарплатыВКассу.StandardCommand.Create</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>DocumentJournal.ВедомостиПрочихДоходов.StandardCommand.OpenList</command>
@@ -83,6 +57,22 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>DataProcessor.ФормированиеДокументовНаВыплатуПоВедомостям.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ВедомостьПрочихДоходовВБанк.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ВедомостьПрочихДоходовВКассу.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ВедомостьПрочихДоходовПеречислением.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.Кассы.Command.КассыПредприятия</command>
       <visible/>
     </visibilityFragments>
   </commandsVisibility>
@@ -95,11 +85,12 @@
     </placementFragments>
     <placementFragments>
       <group>NavigationPanelSeeAlso</group>
-      <commands>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</commands>
       <commands>Catalog.ВидыВыплатБывшимСотрудникам.StandardCommand.OpenList</commands>
       <commands>Catalog.ВидыПрочихДоходовФизическихЛиц.StandardCommand.OpenList</commands>
       <commands>Catalog.ЗарплатныеПроекты.StandardCommand.OpenList</commands>
       <commands>Catalog.ТарифыПлатежныхАгентов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ЛицевыеСчетаСотрудниковПоЗарплатнымПроектам.StandardCommand.OpenList</commands>
+      <commands>Catalog.Кассы.Command.КассыПредприятия</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
@@ -109,7 +100,6 @@
       <commands>DocumentJournal.ВедомостиНаВыплатуЗарплаты.StandardCommand.OpenList</commands>
       <commands>DocumentJournal.ВедомостиПрочихДоходов.StandardCommand.OpenList</commands>
       <commands>DataProcessor.ПлатежиПоРезультатамРасчетаЗарплаты.Command.ПлатежиПоРезультатамРасчетаЗарплаты</commands>
-      <commands>Catalog.Кассы.Command.КассыПредприятия</commands>
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
@@ -126,15 +116,15 @@
       <commands>Document.ПодтверждениеЗачисленияЗарплаты.StandardCommand.OpenList</commands>
       <commands>DataProcessor.ОбменСБанкамиПоЗарплатнымПроектам.Command.ВводЛицевыхСчетов</commands>
       <commands>DocumentJournal.ПрочиеДоходы.StandardCommand.OpenList</commands>
-      <commands>Document.КомпенсацияЗаЗадержкуЗарплаты.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelSeeAlso</group>
-      <commands>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</commands>
+      <commands>Catalog.Кассы.Command.КассыПредприятия</commands>
       <commands>Catalog.ВидыВыплатБывшимСотрудникам.StandardCommand.OpenList</commands>
       <commands>Catalog.ВидыПрочихДоходовФизическихЛиц.StandardCommand.OpenList</commands>
       <commands>Catalog.ЗарплатныеПроекты.StandardCommand.OpenList</commands>
       <commands>Catalog.ТарифыПлатежныхАгентов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ЛицевыеСчетаСотрудниковПоЗарплатнымПроектам.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelCreate</group>
@@ -148,8 +138,6 @@
       <commands>Catalog.ЗарплатныеПроекты.StandardCommand.Create</commands>
       <commands>Document.ЗаявкаНаЗакрытиеЛицевыхСчетовСотрудников.StandardCommand.Create</commands>
       <commands>Document.ЗаявкаНаОткрытиеЛицевыхСчетовСотрудников.StandardCommand.Create</commands>
-      <commands>Document.КомпенсацияЗаЗадержкуЗарплаты.StandardCommand.Create</commands>
-      <commands>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.Create</commands>
       <commands>Document.ПодтверждениеЗачисленияЗарплаты.StandardCommand.Create</commands>
       <commands>Document.ПодтверждениеОткрытияЛицевыхСчетовСотрудников.StandardCommand.Create</commands>
       <commands>Catalog.ТарифыПлатежныхАгентов.StandardCommand.Create</commands>

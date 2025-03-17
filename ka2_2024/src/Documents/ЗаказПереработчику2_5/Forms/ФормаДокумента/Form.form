@@ -2731,6 +2731,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Внимание16</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -7672,6 +7676,7 @@
             </valuesPicture>
             <border xsi:type="core:BorderDef">
               <style>Single</style>
+              <width>1</width>
             </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
@@ -7885,6 +7890,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -17135,10 +17144,8 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <width>10</width>
-          <autoMaxWidth>true</autoMaxWidth>
+          <maxWidth>10</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
-          <horizontalStretch>false</horizontalStretch>
           <wrap>true</wrap>
           <format>
             <key>ru</key>
@@ -17205,7 +17212,6 @@
             <extInfo xsi:type="form:InputFieldExtInfo">
               <maxWidth>10</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>false</horizontalStretch>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -17254,16 +17260,13 @@
             </contextMenu>
             <type>InputField</type>
             <readOnly>true</readOnly>
-            <horizontalAlign>Right</horizontalAlign>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <width>10</width>
-              <autoMaxWidth>true</autoMaxWidth>
+              <maxWidth>10</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>false</horizontalStretch>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -17345,16 +17348,19 @@
             </contextMenu>
             <type>InputField</type>
             <readOnly>true</readOnly>
-            <horizontalAlign>Right</horizontalAlign>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
               <maxWidth>10</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>false</horizontalStretch>
               <wrap>true</wrap>
+              <editFormat>
+                <key>ru</key>
+                <value>ЧН='Без НДС'</value>
+              </editFormat>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
@@ -17406,16 +17412,13 @@
             </contextMenu>
             <type>InputField</type>
             <readOnly>true</readOnly>
-            <horizontalAlign>Right</horizontalAlign>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <width>10</width>
-              <autoMaxWidth>true</autoMaxWidth>
+              <maxWidth>14</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>false</horizontalStretch>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -17460,7 +17463,6 @@
           <key>ru</key>
           <value>Группа страницы сумма услуг</value>
         </title>
-        <groupVerticalAlign>Center</groupVerticalAlign>
         <extendedTooltip>
           <name>ГруппаСтраницыСуммаУслугРасширеннаяПодсказка</name>
           <id>3318</id>
@@ -17519,15 +17521,14 @@
           <autoFill>true</autoFill>
         </contextMenu>
         <type>LabelField</type>
+        <readOnly>true</readOnly>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
-          <width>4</width>
-          <autoMaxWidth>true</autoMaxWidth>
+          <maxWidth>4</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
-          <horizontalStretch>false</horizontalStretch>
         </extInfo>
       </items>
       <visible>true</visible>
@@ -17556,6 +17557,7 @@
       </extendedTooltip>
       <type>UsualGroup</type>
       <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
         <showLeftMargin>true</showLeftMargin>
         <united>true</united>
         <backColor xsi:type="core:ColorDef">

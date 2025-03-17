@@ -209,6 +209,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ВниманиеКрасный</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -439,7 +443,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>СписокКорректировкиРеализации.ХозяйственнаяОперация</segments>
+        <segments>СписокКорректировкиРеализации.ВидКорректировки</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокКорректировкиРеализацииВидОперацииРасширеннаяПодсказка</name>

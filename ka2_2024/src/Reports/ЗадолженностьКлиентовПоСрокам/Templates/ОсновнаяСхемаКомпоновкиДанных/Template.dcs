@@ -620,7 +620,8 @@
 			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПроизводственныеКалендари</v8:Type>
 		</valueType>
 		<value xsi:type="dcscor:DesignTimeValue">Справочник.ПроизводственныеКалендари.ПустаяСсылка</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>ВариантКлассификацииЗадолженности</name>
@@ -820,7 +821,7 @@
 			<dcsat:item xsi:type="dcsat:TableRow">
 				<dcsat:tableCell>
 					<dcsat:item xsi:type="dcsat:Field">
-						<dcsat:value xsi:type="dcscor:Parameter"/>
+						<dcsat:value xsi:type="dcscor:Parameter"></dcsat:value>
 					</dcsat:item>
 					<dcsat:appearance>
 						<dcscor:item>
@@ -914,6 +915,7 @@
 					<dcsset:userSettingID>03e2416b-cbb0-491c-8658-4e83e4a6f569</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Календарь</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.ПроизводственныеКалендари.ПустаяСсылка</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -1378,6 +1380,7 @@
 					<dcsset:userSettingID>03e2416b-cbb0-491c-8658-4e83e4a6f569</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Календарь</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.ПроизводственныеКалендари.ПустаяСсылка</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>

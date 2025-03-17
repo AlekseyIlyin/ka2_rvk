@@ -916,13 +916,7 @@
         <segments>ДинСписокПолучателя</segments>
       </dataPath>
       <titleLocation>Top</titleLocation>
-      <excludedCommands>Change</excludedCommands>
       <excludedCommands>CopyToClipboard</excludedCommands>
-      <excludedCommands>DynamicListStandardSettings</excludedCommands>
-      <excludedCommands>LoadDynamicListSettings</excludedCommands>
-      <excludedCommands>OutputList</excludedCommands>
-      <excludedCommands>Refresh</excludedCommands>
-      <excludedCommands>SaveDynamicListSettings</excludedCommands>
       <items xsi:type="form:FormField">
         <name>ПолучательНаименование</name>
         <id>229</id>
@@ -1155,7 +1149,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПолучателей.StandardCommand.FindByCurrentValue</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1186,7 +1180,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПолучателей.StandardCommand.Find</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1217,7 +1211,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПолучателей.StandardCommand.CancelSearch</commandName>
+          <commandName>0</commandName>
           <representation>Picture</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1279,7 +1273,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПолучателей.StandardCommand.ListSettings</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>

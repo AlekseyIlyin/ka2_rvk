@@ -615,20 +615,22 @@
 	СправочникСпособыОбеспеченияПотребностей.Соглашение,
 	СправочникСпособыОбеспеченияПотребностей.ТипОбеспечения,
 	СправочникСпособыОбеспеченияПотребностей.ВидЦеныПоставщика,
-	СправочникСпособыОбеспеченияПотребностей.Календарь,
 	СправочникСпособыОбеспеченияПотребностей.СрокИсполненияЗаказа,
 	СправочникСпособыОбеспеченияПотребностей.ДлительностьВДнях,
 	СправочникСпособыОбеспеченияПотребностей.ОбеспечиваемыйПериод,
 	СправочникСпособыОбеспеченияПотребностей.Подразделение,
-	СправочникСпособыОбеспеченияПотребностей.ДатаСледующейПоставки,
-	СправочникСпособыОбеспеченияПотребностей.ПлановаяДатаПоставки,
-	СправочникСпособыОбеспеченияПотребностей.ФормироватьПлановыеЗаказы,
-	СправочникСпособыОбеспеченияПотребностей.ПлановаяДатаЗаказа,
-	СправочникСпособыОбеспеченияПотребностей.Предопределенный,
+	СправочникСпособыОбеспеченияПотребностей.ГарантированныйСрокОбеспечения,
+	СправочникСпособыОбеспеченияПотребностей.СпособПланированияПолуфабрикатов,
+	СправочникСпособыОбеспеченияПотребностей.ФормироватьЗаказыПоТочкеЗаказа,
+	СправочникСпособыОбеспеченияПотребностей.ФормироватьЗаказыПоРасписанию,
+	СправочникСпособыОбеспеченияПотребностей.ГрафикПоставок,
+	СправочникСпособыОбеспеченияПотребностей.ПерваяДатаВГрафикеПоставок,
+	СправочникСпособыОбеспеченияПотребностей.ПериодичностьГрафикаПоставок,
+	СправочникСпособыОбеспеченияПотребностей.КоличествоПериодовВИнтервалеМеждуПоставками,
+	СправочникСпособыОбеспеченияПотребностей.ВариантОбеспечиваемогоПериода,
 	СправочникСпособыОбеспеченияПотребностей.ИмяПредопределенныхДанных
 ИЗ
-	Справочник.СпособыОбеспеченияПотребностей КАК СправочникСпособыОбеспеченияПотребностей
-</queryText>
+	Справочник.СпособыОбеспеченияПотребностей КАК СправочникСпособыОбеспеченияПотребностей</queryText>
       <mainTable>Catalog.СпособыОбеспеченияПотребностей</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -668,20 +670,12 @@
         <field>Соглашение</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ФормироватьПлановыеЗаказы</dataPath>
-        <field>ФормироватьПлановыеЗаказы</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ТипОбеспечения</dataPath>
         <field>ТипОбеспечения</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ВидЦеныПоставщика</dataPath>
         <field>ВидЦеныПоставщика</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Календарь</dataPath>
-        <field>Календарь</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СрокИсполненияЗаказа</dataPath>
@@ -700,24 +694,44 @@
         <field>Подразделение</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДатаСледующейПоставки</dataPath>
-        <field>ДатаСледующейПоставки</field>
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПлановаяДатаПоставки</dataPath>
-        <field>ПлановаяДатаПоставки</field>
+        <dataPath>ФормироватьЗаказыПоТочкеЗаказа</dataPath>
+        <field>ФормироватьЗаказыПоТочкеЗаказа</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПлановаяДатаЗаказа</dataPath>
-        <field>ПлановаяДатаЗаказа</field>
+        <dataPath>ФормироватьЗаказыПоРасписанию</dataPath>
+        <field>ФормироватьЗаказыПоРасписанию</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ГрафикПоставок</dataPath>
+        <field>ГрафикПоставок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПериодичностьГрафикаПоставок</dataPath>
+        <field>ПериодичностьГрафикаПоставок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоПериодовВИнтервалеМеждуПоставками</dataPath>
+        <field>КоличествоПериодовВИнтервалеМеждуПоставками</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантОбеспечиваемогоПериода</dataPath>
+        <field>ВариантОбеспечиваемогоПериода</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФормироватьЗаказыПоРасписанию</dataPath>
+        <field>ФормироватьЗаказыПоРасписанию</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Предопределенный</dataPath>
         <field>Предопределенный</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИмяПредопределенныхДанных</dataPath>
-        <field>ИмяПредопределенныхДанных</field>
+        <dataPath>ПерваяДатаВГрафикеПоставок</dataPath>
+        <field>ПерваяДатаВГрафикеПоставок</field>
       </fields>
     </extInfo>
   </attributes>

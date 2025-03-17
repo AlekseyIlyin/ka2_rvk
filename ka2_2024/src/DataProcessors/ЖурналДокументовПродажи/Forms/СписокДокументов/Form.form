@@ -497,6 +497,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ВниманиеКрасный</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -1621,6 +1625,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ИсключитьИзНастройкиФормированияПроводок</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -5326,6 +5334,26 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>СоответствиеТиповДокументов</name>
+    <title>
+      <key>ru</key>
+      <value>Соответствие типов документов</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>СписокПровести</name>

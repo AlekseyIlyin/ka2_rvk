@@ -42,6 +42,7 @@
     <types>DocumentRef.ПоступлениеУслугПоАренде</types>
     <types>DocumentRef.ЛистКассовойКниги</types>
     <types>DocumentRef.КонтролируемаяСделка</types>
+    <types>DocumentRef.ПереносРНПТМатериаловНаПродукцию</types>
     <types>DocumentRef.ИнойДокументПодтвержденияНДС</types>
     <types>DocumentRef.ПроизводственнаяОперацияВЕТИС</types>
     <types>DocumentRef.ОтчетКомиссионера</types>
@@ -118,6 +119,7 @@
     <types>DocumentRef.ЗапросКоммерческихПредложенийПоставщиков</types>
     <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
     <types>DocumentRef.ПеремещениеТоваров</types>
+    <types>DocumentRef.РазрешениеНаОтгрузкуИСМП</types>
     <types>DocumentRef.РегистрацияПрочихКонтролируемыхСделок</types>
     <types>DocumentRef.СверкаВзаиморасчетов2_5_11</types>
     <types>DocumentRef.ЗапросОстатковПартийСАТУРН</types>
@@ -126,6 +128,7 @@
     <types>DocumentRef.Отпуск</types>
     <types>DocumentRef.ДвижениеПродукцииИМатериалов</types>
     <types>DocumentRef.ЗаявлениеОВвозеТоваров</types>
+    <types>DocumentRef.ЗаявлениеОВвозеТоваровПолученное</types>
     <types>DocumentRef.ЗаказНаСборку</types>
     <types>DocumentRef.КорректировкаРеализации</types>
     <types>DocumentRef.КоммерческоеПредложениеПоставщика</types>
@@ -155,9 +158,11 @@
     <types>DocumentRef.КорректировкаЗадолженностиПоФинансовымИнструментам</types>
     <types>DocumentRef.ДоговорЗаймаСотруднику</types>
     <types>DocumentRef.ОстаткиЕГАИС</types>
+    <types>DocumentRef.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentRef.УведомлениеОПланируемомИмпортеЕГАИС</types>
     <types>DocumentRef.ПересортицаТоваров</types>
     <types>DocumentRef.ВыбытиеДенежныхДокументов</types>
+    <types>DocumentRef.НачислениеРетроБонусовПоставщика</types>
     <types>DocumentRef.УлучшениеНМА</types>
     <types>DocumentRef.ВводОстатковРасходовПриУСН</types>
     <types>DocumentRef.ПодтверждениеЗачисленияЗарплаты</types>
@@ -184,6 +189,8 @@
     <types>DocumentRef.ДоверенностьВыданная</types>
     <types>DocumentRef.Увольнение</types>
     <types>DocumentRef.ПриобретениеУслугПрочихАктивов</types>
+    <types>DocumentRef.ПеремещениеМеждуМОДИСМП</types>
+    <types>DocumentRef.АктПремииПоставщика</types>
     <types>DocumentRef.АктВыполненныхРабот</types>
     <types>DocumentRef.ОтчетОРозничныхПродажах</types>
     <types>DocumentRef.СписаниеНМА2_4</types>
@@ -277,6 +284,7 @@
     <types>DocumentRef.ОприходованиеИзлишковТоваровУХранителя</types>
     <types>DocumentRef.НакладнаяСАТУРН</types>
     <types>DocumentRef.ВыводИзОборотаИСМП</types>
+    <types>DocumentRef.УсловияРетроБонусовПоставщика</types>
     <types>DocumentRef.ПринятиеКУчетуНМА</types>
     <types>DocumentRef.ИнвентаризацияНМА</types>
     <types>DocumentRef.СчетФактураПолученныйНалоговыйАгент</types>
@@ -462,6 +470,8 @@
   <content>Document.ЗаявкаНаРасходованиеДенежныхСредств.TabularSection.РасшифровкаПлатежа.Attribute.ОбъектРасчетов</content>
   <content>Document.ЗаявлениеОВвозеТоваров.Attribute.СторнируемыйДокумент</content>
   <content>Document.ЗаявлениеОВвозеТоваров.TabularSection.Товары.Attribute.ДокументПоступления</content>
+  <content>Document.ЗаявлениеОВвозеТоваровПолученное.Attribute.РанееПредставленноеЗаявление</content>
+  <content>Document.ЗаявлениеОВвозеТоваровПолученное.TabularSection.ДокументыОтгрузки.Attribute.ДокументОтгрузки</content>
   <content>Document.ИзделияИЗатратыНЗП.Attribute.Назначение</content>
   <content>Document.ИзделияИЗатратыНЗП.TabularSection.МатериалыИУслуги.Attribute.Назначение</content>
   <content>Document.ИзменениеПараметровНМА.Attribute.ДокументОснование</content>
@@ -881,7 +891,16 @@
   <content>Document.НачислениеРетроБонусовКлиента.Attribute.ДокументУсловий</content>
   <content>Document.НачислениеЕНП.Attribute.ДокументОснование</content>
   <content>Document.ПриемкаТоваровНаХранение.Attribute.СторнируемыйДокумент</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства.TabularSection.Товары.Attribute.ПартияПроизводства</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства.TabularSection.Товары.Attribute.Назначение</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.Attribute.Назначение</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.TabularSection.Товары.Attribute.ПартияПроизводства</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.TabularSection.Товары.Attribute.Назначение</content>
   <content>Document.АктПремииКлиенту.TabularSection.РетроБонусы.Attribute.ДокументУсловий</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства.Attribute.СторнируемыйДокумент</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.Attribute.СторнируемыйДокумент</content>
+  <content>Document.УсловияРетроБонусовПоставщика.Attribute.СторнируемыйДокумент</content>
+  <content>Document.УсловияРетроБонусовПоставщика.Attribute.ИсправляемыйДокумент</content>
   <content>Document.АктПримененияСАТУРН.Attribute.ДокументОснование</content>
   <content>Document.НакладнаяСАТУРН.Attribute.ДокументОснование</content>
   <content>Document.АктИнвентаризацииСАТУРН.Attribute.ДокументОснование</content>
@@ -939,4 +958,10 @@
   <content>Document.ВводОстатковВнеоборотныхАктивов2_4.TabularSection.НМА.Attribute.ДокументПринятияКУчетуУУ</content>
   <content>Document.ВводОстатковТМЦВЭксплуатации.Attribute.ИсправляемыйДокумент</content>
   <content>Document.ВводОстатковТМЦВЭксплуатации.TabularSection.ТМЦВЭксплуатации.Attribute.АналитикаРасходов</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.Attribute.ДокументОснование</content>
+  <content>Document.АктПремииПоставщика.TabularSection.РетроБонусы.Attribute.ДокументУсловий</content>
+  <content>Document.НачислениеРетроБонусовПоставщика.Attribute.ДокументУсловий</content>
+  <content>Document.СписаниеРетроБонусовПоставщика.TabularSection.РасшифровкаСписаний.Attribute.ДокументУсловий</content>
+  <content>Document.ВозвратВОборотИСМП.Attribute.ДокументОснование</content>
+  <content>Document.ПеремещениеМеждуМОДИСМП.Attribute.ДокументОснование</content>
 </mdclass:FilterCriterion>

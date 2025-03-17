@@ -308,6 +308,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.Скрепка</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -573,6 +577,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.Приоритеты</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -1184,6 +1192,10 @@
           <items xsi:type="form:Button">
             <name>СписокСоздатьВыплатаЗаработнойПлаты</name>
             <id>124</id>
+            <title>
+              <key>ru</key>
+              <value>Выплату по ведомости</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3814,7 +3826,7 @@
     <name>СоздатьВозвратДенежныхСредствКлиенту</name>
     <title>
       <key>ru</key>
-      <value>Возврат оплаты клиенту</value>
+      <value>Возврат или иная оплата клиенту</value>
     </title>
     <id>2</id>
     <toolTip>

@@ -37,6 +37,28 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрНакопленияДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям", "ФизическоеЛицо", "", "", "", "")
+#Иначе
+#ПоЗначениям( "РегистрНакопления.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям","Чтение","","ГруппыФизическихЛиц","ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</name>
 		<right>
 			<name>Read</name>

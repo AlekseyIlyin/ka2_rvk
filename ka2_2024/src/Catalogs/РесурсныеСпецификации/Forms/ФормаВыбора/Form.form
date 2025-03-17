@@ -447,7 +447,6 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Refresh</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Наименование</name>
       <id>4</id>
@@ -1236,22 +1235,10 @@
   </handlers>
   <excludedCommands>Abort</excludedCommands>
   <excludedCommands>Cancel</excludedCommands>
-  <excludedCommands>CancelSearch</excludedCommands>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Find</excludedCommands>
-  <excludedCommands>HierarchicalList</excludedCommands>
   <excludedCommands>Ignore</excludedCommands>
-  <excludedCommands>LevelDown</excludedCommands>
-  <excludedCommands>LevelUp</excludedCommands>
-  <excludedCommands>List</excludedCommands>
-  <excludedCommands>ListSettings</excludedCommands>
-  <excludedCommands>MoveItem</excludedCommands>
   <excludedCommands>No</excludedCommands>
   <excludedCommands>OK</excludedCommands>
-  <excludedCommands>OutputList</excludedCommands>
-  <excludedCommands>Refresh</excludedCommands>
   <excludedCommands>Retry</excludedCommands>
-  <excludedCommands>Tree</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>

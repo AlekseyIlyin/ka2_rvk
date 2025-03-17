@@ -511,7 +511,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <attributes uuid="02e8258b-67cb-48f6-8890-34becf203599">
@@ -557,6 +556,23 @@
     <type>
       <types>Boolean</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e8fda782-f93f-4c45-826c-5741b389448c">
+    <name>ОперацияВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция взаиморасчетов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОперацииВзаиморасчетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для определения типов записей взаиморасчетов при распределении расчетов.</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>

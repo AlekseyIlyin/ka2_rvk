@@ -171,7 +171,7 @@
 		<sourceExpression>ЭлементОтчета</sourceExpression>
 		<destinationExpression>Родитель</destinationExpression>
 		<parameter>Родители</parameter>
-		<parameterListAllowed>true</parameterListAllowed>
+		<parameterListAllowed>false</parameterListAllowed>
 		<startExpression>ЗНАЧЕНИЕ(Справочник.ЭлементыФинансовыхОтчетов.ПустаяСсылка)</startExpression>
 	</dataSetLink>
 	<calculatedField>

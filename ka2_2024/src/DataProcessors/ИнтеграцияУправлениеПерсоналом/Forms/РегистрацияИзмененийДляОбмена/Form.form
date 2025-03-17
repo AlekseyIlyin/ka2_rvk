@@ -512,6 +512,10 @@
           </userVisible>
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
+        <handlers>
+          <event>ChoiceProcessing</event>
+          <name>ИзмененияДляОбменаОбработкаВыбора</name>
+        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>

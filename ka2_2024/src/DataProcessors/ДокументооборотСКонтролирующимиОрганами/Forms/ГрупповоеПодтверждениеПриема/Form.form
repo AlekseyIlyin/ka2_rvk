@@ -766,6 +766,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.Пламя</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -1482,6 +1486,23 @@
       <valueType>
         <types>String</types>
         <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ПодтверждениеОтправилОператор</name>
+      <title>
+        <key>ru</key>
+        <value>Подтверждение отправил оператор</value>
+      </title>
+      <id>16</id>
+      <valueType>
+        <types>Boolean</types>
       </valueType>
       <view>
         <common>true</common>

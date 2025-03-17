@@ -7,7 +7,7 @@
   </synonym>
   <source>
     <types>InformationRegisterRecordSet.КэшДанныхПоставляемыхНастроек</types>
-    <types>InformationRegisterRecordSet.ВерсииПоставяемыхНастроек</types>
+    <types>InformationRegisterRecordSet.ВерсииПоставляемыхНастроек</types>
   </source>
   <event>OnWrite</event>
   <handler>CommonModule.РаботаВМоделиСервисаБСП.КонтрольНеразделенныхНаборовЗаписейПриЗаписи</handler>

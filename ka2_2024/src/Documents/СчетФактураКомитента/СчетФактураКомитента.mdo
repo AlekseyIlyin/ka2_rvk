@@ -99,6 +99,7 @@
   <defaultObjectForm>Document.СчетФактураКомитента.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.СчетФактураКомитента.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.СчетФактураКомитента.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <registerRecords>AccumulationRegister.ФактическиеДанныеБюджетирования</registerRecords>
   <registerRecords>InformationRegister.ЖурналУчетаСчетовФактур</registerRecords>
@@ -451,7 +452,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Пользователь, оформивший документ  и ответственный за его обработку.</value>
+      <value>Пользователь, оформивший документ и ответственный за его обработку.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -50,28 +50,11 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
-    <attributes uuid="0e9c1f81-90b0-4a0f-bdca-a4c1d2c6c33c">
-      <name>ОбеспечиваемыйПериод</name>
-      <synonym>
-        <key>ru</key>
-        <value>Обеспечиваемый период</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
     <attributes uuid="b67b8809-79ff-4659-8511-bd275424abdc">
-      <name>ДатаСледующейПоставки</name>
+      <name>ГраницаПериодаОбеспечения</name>
       <synonym>
         <key>ru</key>
-        <value>Дата следующей поставки</value>
+        <value>Граница периода обеспечения</value>
       </synonym>
       <type>
         <types>Date</types>
@@ -111,42 +94,15 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="22ed7483-1bec-4984-9d10-c18e8ea47137">
-      <name>НаступилаДатаОчередногоЗаказа</name>
+      <name>КЗаказуТовары</name>
       <synonym>
         <key>ru</key>
-        <value>Наступила дата очередного заказа</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="774c231d-5b93-4674-a8ee-cbee7e374540">
-      <name>ФормироватьПлановыеЗаказы</name>
-      <synonym>
-        <key>ru</key>
-        <value>Формировать плановые заказы</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="d74245af-5c76-4ed7-8de8-a97d53440c4d">
-      <name>СрокИсполненияЗаказа</name>
-      <synonym>
-        <key>ru</key>
-        <value>Срок исполнения заказа</value>
+        <value>К заказу товары</value>
       </synonym>
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>10</precision>
-          <nonNegative>true</nonNegative>
+          <precision>1</precision>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
@@ -201,14 +157,117 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
-    <attributes uuid="4a7e1faa-aac7-4d6e-b6b4-6737069371a7">
-      <name>НетГрафикаПоставок</name>
+    <attributes uuid="dd7b3f5b-d5b8-4e42-8d01-2c09d9773038">
+      <name>ФормироватьЗаказыПоТочкеЗаказа</name>
       <synonym>
         <key>ru</key>
-        <value>Нет графика поставок</value>
+        <value>Формировать заказы по точке заказа</value>
       </synonym>
       <type>
         <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6fe8bc23-96ba-4e6d-b8d4-c412a5373bc5">
+      <name>ФормироватьЗаказыПоРасписанию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Формировать заказы по расписанию</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b1ebca82-19e6-453c-b121-b677d6fdf77f">
+      <name>ВариантОбеспечиваемогоПериода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант обеспечиваемого периода</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВариантыОбеспечиваемогоПериода</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="78bad506-10c2-48ae-94d1-730102495061">
+      <name>ДатаПоставкиПоТочкеЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата поставки по точке заказа</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="51e13ae0-30cd-4b15-b9b4-7de03219ceb9">
+      <name>ДатаПоставкиПоГрафику</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата поставки по графику</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f7245c97-a3c6-4522-bf2c-f66d855b9525">
+      <name>ГраницаПериодаОбеспеченияПоГрафику</name>
+      <synonym>
+        <key>ru</key>
+        <value>Граница периода обеспечения по графику</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6d3a8a40-5365-4eab-aff8-fc7a4b197292">
+      <name>ГраницаПериодаОбеспеченияПоТочкеЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Граница периода обеспечения по точке заказа</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a19ec611-c2c4-4cd0-af81-7c25a8801133">
+      <name>ГрафикПоставок</name>
+      <synonym>
+        <key>ru</key>
+        <value>График поставок</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Календари</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -391,23 +450,6 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
-    <attributes uuid="357e812c-f60f-460b-86bb-476af6db9287">
-      <name>СрокДоПлановойПоставки</name>
-      <synonym>
-        <key>ru</key>
-        <value>Срок до плановой поставки</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>5</precision>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
     <attributes uuid="e289c027-77e9-4ed3-b972-0dc3294d6967">
       <name>ОбеспечиваемыйПериод</name>
       <synonym>
@@ -481,35 +523,6 @@
       </synonym>
       <type>
         <types>EnumRef.ТипыИзмеряемыхВеличин</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="499d0e13-54de-40ec-b678-11f44a260ce4">
-      <name>ФормироватьПлановыеЗаказы</name>
-      <synonym>
-        <key>ru</key>
-        <value>Формировать плановые заказы</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="66d3d7ef-af8b-4afc-8858-2637c97bb748">
-      <name>ДатаЗаказа</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дата заказа</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -609,6 +622,23 @@
         <numberQualifiers>
           <precision>15</precision>
           <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="87ad8631-7a85-4fe8-a016-f2d6f4ad85d5">
+      <name>КЗаказуТовары</name>
+      <synonym>
+        <key>ru</key>
+        <value>К заказу товары</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
@@ -760,51 +790,6 @@
           <scale>3</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="691cc02a-c6da-4510-8e14-98c15900906b">
-      <name>ФормироватьПлановыеЗаказы</name>
-      <synonym>
-        <key>ru</key>
-        <value>Формировать плановые заказы</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="573a5f7d-0ab0-4718-9089-8ed4cce482b1">
-      <name>ДатаЗаказа</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дата заказа</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="7b0b17e6-2e5d-4f14-bd31-650ad8446c89">
-      <name>ДатаСледующейПоставкиПоГрафику</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дата следующей поставки по графику</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -1021,6 +1006,55 @@
         <numberQualifiers>
           <precision>15</precision>
           <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e1af4199-88cf-4543-8263-98c6c6b8799a">
+      <name>ДатаПоставкиПоСпособуОбеспечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата поставки по способу обеспечения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2b769de6-270e-41a5-af26-146c8356ea42">
+      <name>ДатаПоставкиРасчетная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата поставки расчетная</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="57212185-fb15-4984-b7fc-bed52bf6915d">
+      <name>КЗаказуТовары</name>
+      <synonym>
+        <key>ru</key>
+        <value>К заказу товары</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>

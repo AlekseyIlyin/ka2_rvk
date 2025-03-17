@@ -91,10 +91,6 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>HierarchicalList</excludedCommands>
-    <excludedCommands>List</excludedCommands>
-    <excludedCommands>MoveItem</excludedCommands>
-    <excludedCommands>Tree</excludedCommands>
     <items xsi:type="form:FormGroup">
       <name>ГруппаНаименование</name>
       <id>31</id>
@@ -491,10 +487,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>HierarchicalList</excludedCommands>
-  <excludedCommands>List</excludedCommands>
-  <excludedCommands>MoveItem</excludedCommands>
-  <excludedCommands>Tree</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

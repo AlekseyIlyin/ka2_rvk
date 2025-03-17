@@ -66,131 +66,14 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="3e823948-ddc3-4c1f-9922-63104612466a">
-    <name>ПФР</name>
-    <synonym>
+    <format>
       <key>ru</key>
-      <value>ПФР (всего)</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="8c6be9ca-0959-4a72-876d-563bc0f798d7">
-    <name>ПФРНакопительная</name>
-    <synonym>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
       <key>ru</key>
-      <value>ПФР, накопительная часть</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="1f51523a-897c-4ef7-9c0a-ec4e2ca42e50">
-    <name>ФСС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ОСС</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="bb4ebbc0-2aa4-4bb1-90e8-16bc79226de7">
-    <name>ФССсИностранцев</name>
-    <synonym>
-      <key>ru</key>
-      <value>ФСС с вр. пребыв. иностранцев</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="a875774b-a9ba-4d31-b229-fb33a68da856">
-    <name>ФФОМС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ОМС</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="c1b68a74-8628-4437-9e68-91fc89417e57">
-    <name>ТФОМС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ТФОМС</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
+      <value>ЧДЦ=2</value>
+    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -212,6 +95,187 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3e823948-ddc3-4c1f-9922-63104612466a">
+    <name>ПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФР (всего)</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8c6be9ca-0959-4a72-876d-563bc0f798d7">
+    <name>ПФРНакопительная</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФР, накопительная часть</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f51523a-897c-4ef7-9c0a-ec4e2ca42e50">
+    <name>ФСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОСС</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bb4ebbc0-2aa4-4bb1-90e8-16bc79226de7">
+    <name>ФССсИностранцев</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСС с вр. пребыв. иностранцев</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a875774b-a9ba-4d31-b229-fb33a68da856">
+    <name>ФФОМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОМС</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c1b68a74-8628-4437-9e68-91fc89417e57">
+    <name>ТФОМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТФОМС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2</value>
+    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>

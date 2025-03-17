@@ -15,6 +15,8 @@
     <value>Вскрытые потребительские упаковки ИС</value>
   </synonym>
   <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВскрытыеПотребительскиеУпаковкиИС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВскрытыеПотребительскиеУпаковкиИС.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -153,7 +155,7 @@
       <value>Документ</value>
     </synonym>
     <type>
-      <types>DefinedType.ДокументПодключениеКегаКОборудованиюРозливаИСМП</types>
+      <types>DocumentRef.ПодключениеКегаКОборудованиюРозливаИСМП</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -340,4 +342,22 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <forms uuid="75d6f132-79d7-4669-8884-c28aeffc1d42">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вскрытие потребительской упаковки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="71755d4e-9583-4fa7-b6dd-a6fb9f302cf6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вскрытие потребительской упаковки ИС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:InformationRegister>

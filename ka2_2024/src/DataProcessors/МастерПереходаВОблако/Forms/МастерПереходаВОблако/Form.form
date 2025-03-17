@@ -4824,7 +4824,7 @@
             </extInfo>
           </items>
           <items xsi:type="form:Decoration">
-            <name>МгирацияЛиния2</name>
+            <name>МиграцияЛиния2</name>
             <id>455</id>
             <title>
               <key>ru</key>
@@ -4836,13 +4836,8 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>МгирацияЛиния2РасширеннаяПодсказка</name>
+              <name>МиграцияЛиния2РасширеннаяПодсказка</name>
               <id>457</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4851,13 +4846,8 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>МгирацияЛиния2КонтекстноеМеню</name>
+              <name>МиграцияЛиния2КонтекстноеМеню</name>
               <id>456</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>Label</type>
@@ -11502,6 +11492,40 @@
     <valueType>
       <types>String</types>
       <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Проверка1СПлюсВыполнена</name>
+    <title>
+      <key>ru</key>
+      <value>Проверка 1С:Плюс выполнена</value>
+    </title>
+    <id>94</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>УстановленыРасширения1СПлюс</name>
+    <title>
+      <key>ru</key>
+      <value>Установлены расширения 1С:Плюс</value>
+    </title>
+    <id>95</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

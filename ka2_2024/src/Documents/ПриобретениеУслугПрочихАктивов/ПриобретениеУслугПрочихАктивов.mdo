@@ -1450,6 +1450,11 @@
         <name>Отбор.Владелец</name>
         <field>Document.ПриобретениеУслугПрочихАктивов.TabularSection.Расходы.Attribute.СтатьяРасходов</field>
       </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>ДатаСведений</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.ПриобретениеУслугПрочихАктивов.StandardAttribute.Date</field>
+      </choiceParameterLinks>
       <linkByType>
         <field>Document.ПриобретениеУслугПрочихАктивов.TabularSection.Расходы.Attribute.СтатьяРасходов</field>
       </linkByType>
@@ -1600,7 +1605,7 @@
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Направление деятельности расчетов с партнерами</value>
+        <value>Направление деятельности, по которому отражаются расходы</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

@@ -901,6 +901,11 @@
         <name>Отбор.Владелец</name>
         <field>Document.ВнутреннееПотребление.TabularSection.Товары.Attribute.СтатьяРасходов</field>
       </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>ДатаСведений</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.ВнутреннееПотребление.StandardAttribute.Date</field>
+      </choiceParameterLinks>
       <linkByType>
         <field>Document.ВнутреннееПотребление.TabularSection.Товары.Attribute.СтатьяРасходов</field>
       </linkByType>

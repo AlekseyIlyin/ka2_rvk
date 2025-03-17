@@ -7,6 +7,8 @@
   </synonym>
   <source>
     <types>CatalogObject.ГрафикиРаботыСотрудников</types>
+    <types>CatalogObject.ВидыОтпусков</types>
+    <types>CatalogObject.РабочиеМестаОхраныТруда</types>
   </source>
   <event>BeforeWrite</event>
   <handler>CommonModule.ИнтеграцияУправлениеПерсоналомСобытияРасширенный.ОбъектПередЗаписью</handler>

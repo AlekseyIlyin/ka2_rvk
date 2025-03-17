@@ -54,6 +54,7 @@
     <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
     <types>DocumentRef.ПоступлениеУслугПоАренде</types>
     <types>DocumentRef.ЛистКассовойКниги</types>
+    <types>DocumentRef.ПереносРНПТМатериаловНаПродукцию</types>
     <types>DocumentRef.ПараметрыНачисленияЗемельногоНалога</types>
     <types>CatalogRef.СкладскиеЯчейки</types>
     <types>DocumentRef.ПереносЗатратНаПерсоналМеждуСтатьями</types>
@@ -190,6 +191,7 @@
     <types>DocumentRef.ДвижениеПродукцииИМатериалов</types>
     <types>DocumentRef.ОрдерНаОтражениеПорчиТоваров</types>
     <types>DocumentRef.ЗаявлениеОВвозеТоваров</types>
+    <types>DocumentRef.ЗаявлениеОВвозеТоваровПолученное</types>
     <types>DocumentRef.ЗаказНаСборку</types>
     <types>DocumentRef.РеестрСведенийНеобходимыхДляНазначенияИВыплатыПособий</types>
     <types>DocumentRef.КорректировкаРеализации</types>
@@ -239,6 +241,7 @@
     <types>DocumentRef.ИсполнительныйЛист</types>
     <types>DocumentRef.ОтгулСписком</types>
     <types>DocumentRef.ДоговорЗаймаСотруднику</types>
+    <types>DocumentRef.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentRef.ОплатаДнейУходаЗаДетьмиИнвалидами</types>
     <types>DocumentRef.ВводНачальныхОстатковОтпусков</types>
     <types>DocumentRef.ПересортицаТоваров</types>
@@ -285,6 +288,7 @@
     <types>DocumentRef.ПереводКДругомуРаботодателю</types>
     <types>DocumentRef.ПеремещениеВДругоеПодразделение</types>
     <types>DocumentRef.ВыработкаНМА</types>
+    <types>DocumentRef.ЕжегодныеСтандартныеВычеты</types>
     <types>CatalogRef.СертификатыКлючейЭлектроннойПодписиИШифрования</types>
     <types>DocumentRef.АмортизацияНМА2_4</types>
     <types>DocumentRef.ПриобретениеУслугПрочихАктивов</types>
@@ -384,9 +388,11 @@
     <types>CatalogRef.КонтактныеЛицаПартнеров</types>
     <types>DocumentRef.ВводПервоначальныхСведенийДляРасчетаТранспортногоНалога</types>
     <types>CatalogRef.ПодключаемоеОборудование</types>
+    <types>DocumentRef.ПриказОПрекращенииБронирования</types>
     <types>DocumentRef.ПрекращениеПодработки</types>
     <types>CatalogRef.ФизическиеЛица</types>
     <types>ChartOfCharacteristicTypesRef.КаналыРекламныхВоздействий</types>
+    <types>DocumentRef.ПриказОБронированииРаботников</types>
     <types>DocumentRef.ИсходящаяСправкаОЗаработкеДляРасчетаПособий</types>
     <types>DocumentRef.ВзаимозачетЗадолженности</types>
     <types>DocumentRef.ДепонированиеЗарплаты</types>

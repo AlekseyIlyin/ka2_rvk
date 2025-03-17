@@ -114,6 +114,7 @@
   <defaultChoiceForm>Document.СторнированиеНачислений.Form.ФормаСписка</defaultChoiceForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>CalculationRegister.Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</registerRecords>
   <registerRecords>AccumulationRegister.ДанныеОперативногоУчетаРабочегоВремениСотрудников</registerRecords>
   <registerRecords>AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</registerRecords>
   <registerRecords>InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</registerRecords>
@@ -143,6 +144,7 @@
   <registerRecords>InformationRegister.ЗначенияПоказателейНачислений</registerRecords>
   <registerRecords>InformationRegister.ДокументыУчтенныеПриРасчетеНДФЛ</registerRecords>
   <registerRecords>AccumulationRegister.ПредоставленныеСтандартныеИСоциальныеВычетыНДФЛ</registerRecords>
+  <registerRecords>AccumulationRegister.НачисленияПоДоговорамГПХ</registerRecords>
   <registerRecords>AccumulationRegister.ЗарплатаКВыплатеАвансом</registerRecords>
   <registerRecords>AccumulationRegister.УдержанияПоИсполнительнымДокументам</registerRecords>
   <registerRecords>InformationRegister.ЗанятостьПозицийШтатногоРасписания</registerRecords>
@@ -907,7 +909,7 @@
         <value>Документ основание</value>
       </synonym>
       <type>
-        <types>DefinedType.ОснованиеНачисления</types>
+        <types>DefinedType.ОснованиеНачисленияУдержания</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

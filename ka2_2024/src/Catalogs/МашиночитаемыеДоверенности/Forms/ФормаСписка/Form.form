@@ -1064,6 +1064,10 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -1208,6 +1212,10 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -2312,6 +2320,44 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияОткрытьМашиночитаемыеДоверенности</name>
+    <id>278</id>
+    <title>
+      <key>ru</key>
+      <value>Открыть машиночитаемые доверенности</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияОткрытьМашиночитаемыеДоверенностиРасширеннаяПодсказка</name>
+      <id>280</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияОткрытьМашиночитаемыеДоверенностиКонтекстноеМеню</name>
+      <id>279</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <handlers>
+        <event>URLProcessing</event>
+        <name>ДекорацияОткрытьМашиночитаемыеДоверенностиОбработкаНавигационнойСсылки</name>
+      </handlers>
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>ГруппаЛегенда</name>
     <id>176</id>
@@ -3142,6 +3188,24 @@
 				РегистрСведений.МашиночитаемыеДоверенностиПредставителиИДоверители КАК МашиночитаемыеДоверенностиПредставителиИДоверители
 			ГДЕ
 				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Доверитель)
+				И МашиночитаемыеДоверенностиПредставителиИДоверители.НаименованиеОрганизации = &amp;ДоверительНаименованиеОрганизации)),
+
+	(СправочникМашиночитаемыеДоверенности.Ссылка В
+			(ВЫБРАТЬ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.МашиночитаемаяДоверенность КАК МашиночитаемаяДоверенность
+			ИЗ
+				РегистрСведений.МашиночитаемыеДоверенностиПредставителиИДоверители КАК МашиночитаемыеДоверенностиПредставителиИДоверители
+			ГДЕ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Доверитель)
+				И МашиночитаемыеДоверенностиПредставителиИДоверители.ФИО = &amp;ДоверительФИО)),
+			
+	(СправочникМашиночитаемыеДоверенности.Ссылка В
+			(ВЫБРАТЬ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.МашиночитаемаяДоверенность КАК МашиночитаемаяДоверенность
+			ИЗ
+				РегистрСведений.МашиночитаемыеДоверенностиПредставителиИДоверители КАК МашиночитаемыеДоверенностиПредставителиИДоверители
+			ГДЕ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Доверитель)
 				И МашиночитаемыеДоверенностиПредставителиИДоверители.ИНН = &amp;ДоверительИНН)),
 	(СправочникМашиночитаемыеДоверенности.Ссылка В
 			(ВЫБРАТЬ
@@ -3175,7 +3239,24 @@
 			ГДЕ
 				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Доверитель)
 				И МашиночитаемыеДоверенностиПредставителиИДоверители.КПП = &amp;ДоверительКПП)),
-			
+	(СправочникМашиночитаемыеДоверенности.Ссылка В
+			(ВЫБРАТЬ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.МашиночитаемаяДоверенность КАК МашиночитаемаяДоверенность
+			ИЗ
+				РегистрСведений.МашиночитаемыеДоверенностиПредставителиИДоверители КАК МашиночитаемыеДоверенностиПредставителиИДоверители
+			ГДЕ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Представитель)
+				И МашиночитаемыеДоверенностиПредставителиИДоверители.НаименованиеОрганизации = &amp;ПредставительНаименованиеОрганизации)),
+
+	(СправочникМашиночитаемыеДоверенности.Ссылка В
+			(ВЫБРАТЬ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.МашиночитаемаяДоверенность КАК МашиночитаемаяДоверенность
+			ИЗ
+				РегистрСведений.МашиночитаемыеДоверенностиПредставителиИДоверители КАК МашиночитаемыеДоверенностиПредставителиИДоверители
+			ГДЕ
+				МашиночитаемыеДоверенностиПредставителиИДоверители.ТипУчастника = ЗНАЧЕНИЕ(Перечисление.ТипыУчастниковМЧД.Представитель)
+				И МашиночитаемыеДоверенностиПредставителиИДоверители.ФИО = &amp;ПредставительФИО)),
+		
 	(СправочникМашиночитаемыеДоверенности.Ссылка В
 			(ВЫБРАТЬ
 				МашиночитаемыеДоверенностиПредставителиИДоверители.МашиночитаемаяДоверенность КАК МашиночитаемаяДоверенность
@@ -3763,6 +3844,78 @@
         <values xsi:type="core:BooleanValue"/>
         <useRestriction>true</useRestriction>
       </parameters>
+      <parameters>
+        <name>ДоверительНаименованиеОрганизации</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Доверитель наименование организации</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+      </parameters>
+      <parameters>
+        <name>ДоверительФИО</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Доверитель ФИО</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+      </parameters>
+      <parameters>
+        <name>ПредставительНаименованиеОрганизации</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Представитель наименование организации</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+      </parameters>
+      <parameters>
+        <name>ПредставительФИО</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Представитель ФИО</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -3821,17 +3974,6 @@
     <valueType>
       <types>CatalogRef.Пользователи</types>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ЗначениеДоверитель</name>
-    <id>9</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -3956,6 +4098,28 @@
       <types>String</types>
       <stringQualifiers/>
     </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОтборПоДоверителю</name>
+    <id>4</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОтборПоПредставителю</name>
+    <id>7</id>
+    <valueType/>
     <view>
       <common>true</common>
     </view>

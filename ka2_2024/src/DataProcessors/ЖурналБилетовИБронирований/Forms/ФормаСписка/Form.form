@@ -1032,6 +1032,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ИсключитьИзНастройкиФормированияПроводок</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -2222,10 +2226,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаСтрокаПоиска</name>
+      <name>СписокДокументовСтрокаПоиска</name>
       <id>218</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>СписокДокументовСтрокаПоискаРасширеннаяПодсказка</name>
         <id>220</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2240,7 +2244,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>СписокДокументовСтрокаПоискаКонтекстноеМеню</name>
         <id>219</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2260,10 +2264,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаСостояниеПросмотра</name>
+      <name>СписокДокументовСостояниеПросмотра</name>
       <id>224</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>СписокДокументовСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>226</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2278,7 +2282,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>СписокДокументовСостояниеПросмотраКонтекстноеМеню</name>
         <id>225</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2300,10 +2304,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаУправлениеПоиском</name>
+      <name>СписокДокументовУправлениеПоиском</name>
       <id>221</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>СписокДокументовУправлениеПоискомРасширеннаяПодсказка</name>
         <id>223</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2318,7 +2322,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>СписокДокументовУправлениеПоискомКонтекстноеМеню</name>
         <id>222</id>
         <visible>true</visible>
         <enabled>true</enabled>

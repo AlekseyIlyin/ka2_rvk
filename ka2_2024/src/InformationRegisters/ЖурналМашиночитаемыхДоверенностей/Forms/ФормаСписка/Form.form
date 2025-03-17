@@ -511,6 +511,46 @@
             <autoMaxHeight>true</autoMaxHeight>
           </extInfo>
         </items>
+        <items xsi:type="form:FormField">
+          <name>СтатусВРеестреФНС</name>
+          <id>411</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Список.СтатусВРеестреФНС</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СтатусВРеестреФНСРасширеннаяПодсказка</name>
+            <id>413</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СтатусВРеестреФНСКонтекстноеМеню</name>
+            <id>412</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
         <commandBarLocation>None</commandBarLocation>
         <autoCommandBar>
           <name>СписокКоманднаяПанель</name>
@@ -1372,6 +1412,35 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </items>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияОписаниеОшибкиРегистрации</name>
+              <id>414</id>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияОписаниеОшибкиРегистрацииРасширеннаяПодсказка</name>
+                <id>416</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияОписаниеОшибкиРегистрацииКонтекстноеМеню</name>
+                <id>415</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1398,7 +1467,7 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>AlwaysHorizontal</group>
+              <group>Vertical</group>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
               <backColor xsi:type="core:ColorRef">
@@ -1622,6 +1691,32 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
       <locationInCommandBar>InCommandBar</locationInCommandBar>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Обновить</name>
+      <id>417</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ОбновитьРасширеннаяПодсказка</name>
+        <id>418</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Обновить</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
     </items>
     <items xsi:type="form:FormGroup">
       <name>ГруппаСоздать</name>
@@ -1986,6 +2081,7 @@
   <excludedCommands>CancelSearch</excludedCommands>
   <excludedCommands>Find</excludedCommands>
   <excludedCommands>FindByCurrentValue</excludedCommands>
+  <excludedCommands>Refresh</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
@@ -2055,17 +2151,17 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Хеш,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Номер,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ВсеДоверители,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ВсеПредставители,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаВыдачи,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаОкончанияДействия,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Верна,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Действует,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ПометкаУдаления,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность,
-	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаИзменения,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Хеш КАК Хеш,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Номер КАК Номер,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ВсеДоверители КАК ВсеДоверители,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ВсеПредставители КАК ВсеПредставители,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаВыдачи КАК ДатаВыдачи,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаОкончанияДействия КАК ДатаОкончанияДействия,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Верна КАК Верна,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Действует КАК Действует,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ПометкаУдаления КАК ПометкаУдаления,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность КАК Доверенность,
+	ЖурналМашиночитаемыхДоверенностейПереопределяемый.ДатаИзменения КАК ДатаИзменения,
 	ВЫБОР
 		КОГДА ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность ССЫЛКА Справочник.МЧД003
 		И ВЫРАЗИТЬ(ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность КАК Справочник.МЧД003).Подписана = ЛОЖЬ
@@ -2093,14 +2189,33 @@
 	ВЫБОР
 		КОГДА ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность ССЫЛКА Справочник.МЧД003
 			ТОГДА ВЫРАЗИТЬ(ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность КАК Справочник.МЧД003).Подписана
-		ИНАЧЕ Ложь
+		ИНАЧЕ ЛОЖЬ
 	КОНЕЦ КАК Подписана,
-	Строка(100) КАК Передоверие,
+	ВЫБОР
+		КОГДА
+			ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность.СтатусВРеестреФНС = ЗНАЧЕНИЕ(Перечисление.СтатусыМашиночитаемойДоверенностиВРеестреФНС.ПустаяСсылка)
+		ИЛИ
+			(ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность.СтатусВРеестреФНС = ЗНАЧЕНИЕ(Перечисление.СтатусыМашиночитаемойДоверенностиВРеестреФНС.ОшибкаРегистрации)
+		И НЕ ОчередьЗапросовРР.ВидЗапроса ЕСТЬ NULL)
+			ТОГДА ВЫБОР
+				КОГДА ОчередьЗапросовРР.ВидЗапроса = &quot;Регистрация в РР&quot;
+					ТОГДА &quot;В очереди на регистрацию&quot;
+				ИНАЧЕ &quot;Не зарегистрирована&quot;
+			КОНЕЦ
+		ИНАЧЕ ВЫБОР
+			КОГДА ОчередьЗапросовРР.ВидЗапроса = &quot;Отзыв в РР&quot;
+				ТОГДА &quot;В очереди на отзыв&quot;
+			ИНАЧЕ ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность.СтатусВРеестреФНС
+		КОНЕЦ
+	КОНЕЦ КАК СтатусВРеестреФНС,
+	СТРОКА(100) КАК Передоверие,
 	НЕОПРЕДЕЛЕНО КАК Доверенности
-{ГДЕ
-	ПометкаУдаления = &amp;ПоказыватьПомеченныеНаУдаление}
 ИЗ
-	РегистрСведений.ЖурналМашиночитаемыхДоверенностей КАК ЖурналМашиночитаемыхДоверенностейПереопределяемый</queryText>
+	РегистрСведений.ЖурналМашиночитаемыхДоверенностей КАК ЖурналМашиночитаемыхДоверенностейПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОчередьЗапросовВРеестрМЧДЭДО КАК ОчередьЗапросовРР
+		ПО ЖурналМашиночитаемыхДоверенностейПереопределяемый.Доверенность = ОчередьЗапросовРР.Доверенность
+{ГДЕ
+	(ЖурналМашиночитаемыхДоверенностейПереопределяемый.ПометкаУдаления = &amp;ПоказыватьПомеченныеНаУдаление)}</queryText>
       <mainTable>InformationRegister.ЖурналМашиночитаемыхДоверенностей</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -2235,6 +2350,18 @@
           </localValue>
         </title>
       </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтатусВРеестреФНС</dataPath>
+        <field>СтатусВРеестреФНС</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Статус в реестре ФНС</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
       <parameters>
         <name>ПоказыватьПомеченныеНаУдаление</name>
         <title>
@@ -2342,6 +2469,21 @@
     <settingsSavedData xsi:type="form:DataPath">
       <segments>ПоказыватьПомеченныеНаУдаление</segments>
     </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>ДанныеПоМЧДВОчереди</name>
+    <title>
+      <key>ru</key>
+      <value>Данные по МЧДВОчереди</value>
+    </title>
+    <id>21</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>СоздатьЗаявлениеНаРегистрацию</name>
@@ -2528,6 +2670,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>СоздатьЗаявлениеНаРегистрациюПередоверия</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Обновить</name>
+    <title>
+      <key>ru</key>
+      <value>Обновить</value>
+    </title>
+    <id>21</id>
+    <use>
+      <common>true</common>
+    </use>
+    <shortcut>F5</shortcut>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Refresh</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Обновить</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

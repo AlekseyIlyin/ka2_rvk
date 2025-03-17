@@ -122,6 +122,15 @@
       </synonym>
       <handler>ПолучитьДанныеПодарочногоСертификатаGET</handler>
     </methods>
+    <methods uuid="e90b1574-c3af-4202-8600-2dc6e8ef40e4">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПолучитьДанныеПодарочногоСертификатаPOST</handler>
+    </methods>
   </urlTemplates>
   <urlTemplates uuid="201f8e7d-1351-41f8-992b-e416c3895374">
     <name>РазблокироватьПодарочныйСертификат</name>
@@ -448,6 +457,108 @@
         <value>GET</value>
       </synonym>
       <handler>ПолучитьСписокСкидокПоВидамОплатыGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="17e60c39-be0a-4d82-897b-53a895c777fb">
+    <name>ОбъединитьБонусныеКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объединить бонусные карты</value>
+    </synonym>
+    <template>/unitedbonuscards/</template>
+    <methods uuid="bdcfb92b-7dd8-4d27-a5b4-d852edb31797">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ОбъединитьБонусныеКартыPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bb214cc3-f510-4ffa-9583-4bf947eab8ff">
+    <name>РазблокироватьБонусыКлиентаНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокировать бонусы клиента новый</value>
+    </synonym>
+    <template>/unlockclientbonusesnew/</template>
+    <methods uuid="f8a9b8b6-04f1-4392-a682-5143a7f28334">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>РазблокироватьБонусыКлиентаНовыйPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="31495aca-b516-428a-adbd-f981d8c692e0">
+    <name>СписатьБонусыКлиентаНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списать бонусы клиента новый</value>
+    </synonym>
+    <template>/writeoffclientbonusesnew/</template>
+    <methods uuid="13688d03-9e26-45c8-a777-b7cbc81dae74">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>СписатьБонусыКлиентаНовыйPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c2827a7e-cffa-44e5-bcde-8dba3f4db475">
+    <name>РазблокироватьПодарочныйСертификатНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокировать подарочный сертификат новый</value>
+    </synonym>
+    <template>/unlockgiftcardnew/</template>
+    <methods uuid="f28a4580-339b-4f8a-98fa-8651d4649157">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>РазблокироватьПодарочныйСертификатНовыйPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c19c7f9b-1c3c-4929-9f65-be0e55c18506">
+    <name>СписатьПодарочныйСертификатНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списать подарочный сертификат новый</value>
+    </synonym>
+    <template>/writeoffgiftcardnew/</template>
+    <methods uuid="8fd144fc-8d50-4835-9e0d-6251fd0cc03f">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>СписатьПодарочныйСертификатНовыйPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="83655ac4-b347-42aa-8eb8-00ee90a7f367">
+    <name>РазблокироватьПромокодНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокировать промокод новый</value>
+    </synonym>
+    <template>/unlockpromocodenew/</template>
+    <methods uuid="f761fe92-d242-4572-9ed4-00af8b486650">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>РазблокироватьПромокодНовыйPOST</handler>
     </methods>
   </urlTemplates>
 </mdclass:HTTPService>

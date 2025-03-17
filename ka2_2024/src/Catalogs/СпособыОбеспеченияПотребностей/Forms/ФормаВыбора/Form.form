@@ -685,8 +685,8 @@
         <field>ВидЦеныПоставщика</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ФормироватьПлановыеЗаказы</dataPath>
-        <field>ФормироватьПлановыеЗаказы</field>
+        <dataPath>ФормироватьЗаказыПоРасписанию</dataPath>
+        <field>ФормироватьЗаказыПоРасписанию</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ТипОбеспечения</dataPath>
@@ -699,18 +699,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Подразделение</dataPath>
         <field>Подразделение</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДатаСледующейПоставки</dataPath>
-        <field>ДатаСледующейПоставки</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПлановаяДатаПоставки</dataPath>
-        <field>ПлановаяДатаПоставки</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПлановаяДатаЗаказа</dataPath>
-        <field>ПлановаяДатаЗаказа</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ГарантированныйСрокОбеспечения</dataPath>

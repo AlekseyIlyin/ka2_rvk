@@ -915,6 +915,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.Наборы</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -1593,6 +1597,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.СтатусыОшибок</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3607,7 +3615,6 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьРеализациюПоНесколькимЗаказам</functionalOptions>
   </attributes>
   <attributes>
     <name>СписокЗаказов</name>

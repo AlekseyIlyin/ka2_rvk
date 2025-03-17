@@ -92,11 +92,14 @@
     <types>InformationRegisterRecordSet.СоставГруппСотрудников</types>
     <types>AccumulationRegisterRecordSet.ПартииПроизводственныхЗатрат</types>
     <types>InformationRegisterRecordSet.ЗначенияПериодическихПоказателейРасчетаЗарплатыСотрудников</types>
+    <types>InformationRegisterRecordSet.ЗавершенныеУсловияРетроБонусовПоставщиковИстория</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковУсловия</types>
     <types>InformationRegisterRecordSet.КадровыеДанныеРедактированиеФизическиеЛица</types>
     <types>InformationRegisterRecordSet.УчетнаяПолитикаФинансовогоУчета</types>
     <types>InformationRegisterRecordSet.ДанныеСостоянийСотрудников</types>
     <types>InformationRegisterRecordSet.УчетнаяПолитикаПоНДФЛ</types>
     <types>InformationRegisterRecordSet.РетроБонусыКлиентовДоговорыСоглашения</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковКонтрагенты</types>
     <types>AccumulationRegisterRecordSet.ЗапасыИПотребности</types>
     <types>AccumulationRegisterRecordSet.ПланыПродаж</types>
     <types>InformationRegisterRecordSet.ПриостановленияТрудовыхДоговоровКонтрактовИнтервальный</types>
@@ -117,6 +120,7 @@
     <types>InformationRegisterRecordSet.УсловияУдержанияПоИсполнительномуДокументу</types>
     <types>AccumulationRegisterRecordSet.ДвиженияПоНДС</types>
     <types>AccumulationRegisterRecordSet.РасходыПриУСН</types>
+    <types>AccumulationRegisterRecordSet.РетроБонусыПоставщиков</types>
     <types>InformationRegisterRecordSet.СчетчикиВыгрузок</types>
     <types>AccumulationRegisterRecordSet.ПланыВнутреннихПотреблений</types>
     <types>AccumulationRegisterRecordSet.ТоварыВЯчейках</types>
@@ -146,6 +150,7 @@
     <types>InformationRegisterRecordSet.ДанныеЛичногоКабинетаЕНС</types>
     <types>InformationRegisterRecordSet.ЗначенияПоказателейРасчетаРезервов</types>
     <types>InformationRegisterRecordSet.РетроБонусыКлиентовТовары</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковСегментыТоваров</types>
     <types>InformationRegisterRecordSet.НастройкиПрямыхВыплатФСССотрудниковПодробности</types>
     <types>InformationRegisterRecordSet.СтавкаКомпенсацииЗаЗадержкуЗарплаты</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил22Раздел1Поступления</types>
@@ -183,6 +188,7 @@
     <types>AccumulationRegisterRecordSet.ОтработанноеВремяПоСотрудникам</types>
     <types>InformationRegisterRecordSet.ИсторияРегистрацийВОрганеПФР</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил22Раздел2Возвраты</types>
+    <types>InformationRegisterRecordSet.ЗаданияКРаспределениюЗапасов</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил25Раздел3Возвраты</types>
     <types>InformationRegisterRecordSet.СтандартныеВычетыФизическихЛицНДФЛ</types>
     <types>InformationRegisterRecordSet.ДанныеПервичныхДокументов</types>
@@ -206,6 +212,7 @@
     <types>InformationRegisterRecordSet.ТерриториальныеУсловияПФР</types>
     <types>AccumulationRegisterRecordSet.ЗадолженностьПоУдержаниямФизическихЛиц</types>
     <types>AccumulationRegisterRecordSet.ПланыЗакупок</types>
+    <types>AccumulationRegisterRecordSet.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</types>
     <types>AccumulationRegisterRecordSet.ДенежныеСредстваВКассахККМ</types>
     <types>AccumulationRegisterRecordSet.УдержанияДоПределаПоСотрудникам</types>
     <types>AccumulationRegisterRecordSet.ПланыСборкиРазборки</types>
@@ -315,6 +322,7 @@
     <types>InformationRegisterRecordSet.ПериодыРаботыСКоронавирусом</types>
     <types>InformationRegisterRecordSet.ПредметыПапкиВзаимодействий</types>
     <types>AccumulationRegisterRecordSet.ИнвестицииВАренду</types>
+    <types>InformationRegisterRecordSet.ИмпортируемыеТоварыТорговыхПлощадок</types>
     <types>AccumulationRegisterRecordSet.СтраховыеВзносыПереданныеВПФР</types>
     <types>InformationRegisterRecordSet.ПерерасчетУдержаний</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил26Раздел3Возвраты</types>
@@ -330,6 +338,7 @@
     <types>InformationRegisterRecordSet.ПрименениеДополнительныхПериодическихПоказателейРасчетаЗарплатыСотрудников</types>
     <types>InformationRegisterRecordSet.НастройкиОбменаРПН</types>
     <types>InformationRegisterRecordSet.ЗаданияКФормированиюДвиженийПоВНА</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковТовары</types>
     <types>AccumulationRegisterRecordSet.ЛимитыРасходаДенежныхСредств</types>
     <types>InformationRegisterRecordSet.СнимкиОтчетов</types>
     <types>InformationRegisterRecordSet.НДССостояниеРеализации0</types>
@@ -367,6 +376,7 @@
     <types>InformationRegisterRecordSet.СтоимостьТоваров</types>
     <types>InformationRegisterRecordSet.РеестрЭПД</types>
     <types>InformationRegisterRecordSet.СодержимоеТранспортныхКонтейнеров</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковПоставщики</types>
     <types>InformationRegisterRecordSet.НастройкиУчетныхЗаписейЭлектроннойПочты</types>
     <types>InformationRegisterRecordSet.ОтчитывающиесяПоВзносамОрганизации</types>
     <types>InformationRegisterRecordSet.СтатусыОтправки</types>
@@ -427,7 +437,9 @@
     <types>InformationRegisterRecordSet.УдалитьСведенияОЗастрахованныхЛицахФСС</types>
     <types>InformationRegisterRecordSet.ЖурналЗагрузкиЕНС</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил37Раздел2Возвраты</types>
+    <types>InformationRegisterRecordSet.ЗавершенныеУсловияРетроБонусовПоставщиков</types>
     <types>InformationRegisterRecordSet.РасчетЭффектаИзмененияСтавокНалогаНаПрибыль</types>
+    <types>AccumulationRegisterRecordSet.РНПТМатериаловВПроизводстве</types>
     <types>AccumulationRegisterRecordSet.ДенежныеСредстваВПути</types>
     <types>InformationRegisterRecordSet.ОперацииСПрослеживаемымиТоварами</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил33Декларация</types>
@@ -439,6 +451,7 @@
     <types>InformationRegisterRecordSet.ПлановыеНачисленияПоДоговорам</types>
     <types>AccumulationRegisterRecordSet.ДвиженияДенежныеСредстваДоходыРасходы</types>
     <types>AccumulationRegisterRecordSet.ДвиженияКонтрагентДоходыРасходы</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковСклады</types>
     <types>InformationRegisterRecordSet.ИсправлениеПараметровНалогаНаИмущество</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил17Декларация</types>
     <types>InformationRegisterRecordSet.ИсторияПоказателейПоШтатномуРасписанию</types>
@@ -460,6 +473,7 @@
     <types>InformationRegisterRecordSet.БухучетЗарплатыОрганизаций</types>
     <types>InformationRegisterRecordSet.ЗапросыДляПовторнойОтправкиСЭДО</types>
     <types>AccumulationRegisterRecordSet.ТоварыОрганизацийКПередаче</types>
+    <types>InformationRegisterRecordSet.СтатусыПубликацииТоваровЯндексМаркет</types>
     <types>InformationRegisterRecordSet.УдалитьАктуальныеДокументыЭДО</types>
     <types>InformationRegisterRecordSet.СведенияРеглОтчетАлкоПрил14Декларация</types>
     <types>AccumulationRegisterRecordSet.ДвиженияСерийТоваров</types>
@@ -514,6 +528,8 @@
     <types>InformationRegisterRecordSet.СохраняемыйЗаработокПриВзысканиях</types>
     <types>InformationRegisterRecordSet.РасчетРезервовПоСомнительнымДолгам</types>
     <types>InformationRegisterRecordSet.СвязиПоказателейБюджетов</types>
+    <types>InformationRegisterRecordSet.МашиночитаемыеДоверенностиОбмена</types>
+    <types>InformationRegisterRecordSet.ИдентификаторыОнлайнЗаказов</types>
     <types>InformationRegisterRecordSet.ДатыПередачиТоваровНаКомиссию</types>
     <types>InformationRegisterRecordSet.НастройкиЗарплатаКадрыРасширенная</types>
     <types>InformationRegisterRecordSet.ПлановыеАвансы</types>
@@ -629,6 +645,7 @@
     <types>InformationRegisterRecordSet.ПараметрыИсчисленияПроцентаСевернойНадбавкиФизическихЛиц</types>
     <types>InformationRegisterRecordSet.СпециальностиФизическихЛиц</types>
     <types>AccumulationRegisterRecordSet.РасчетыПоНалогамНаЕдиномНалоговомСчете</types>
+    <types>InformationRegisterRecordSet.РетроБонусыПоставщиковИНН</types>
     <types>AccumulationRegisterRecordSet.ЗаказыНаСборку</types>
     <types>AccumulationRegisterRecordSet.НачисленияУдержанияПоКонтрагентамАкционерам</types>
     <types>InformationRegisterRecordSet.ПлановыйФОТИтоги</types>

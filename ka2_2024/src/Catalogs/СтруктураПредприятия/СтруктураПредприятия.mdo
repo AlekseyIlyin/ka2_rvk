@@ -178,6 +178,7 @@
   <defaultObjectForm>Catalog.СтруктураПредприятия.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.СтруктураПредприятия.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.СтруктураПредприятия.Form.ФормаВыбора</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
   <attributes uuid="2cba4b23-321f-4fd9-b529-c3dc3cae3989">
     <name>ТекущийРуководитель</name>
     <synonym>
@@ -935,6 +936,42 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9caf7b1-1b75-4af0-9762-76bbf3220b0d">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОрганизацийПодразделений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9103f1dd-5e8b-4ba7-8d75-7ea5c8b98ebb">
+    <name>КоэффициентРастяженияГрафикаПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент растяжения графика производства</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

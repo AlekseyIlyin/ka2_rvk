@@ -68,6 +68,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="c90dcda6-ad5f-4e33-9242-aa639de0e455">
+    <name>ДатаОтветаИзмененная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ответа измененная</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="b9655650-883d-44cf-9b3e-7cb4e1901685">
     <name>ДатаОтправкиТребования</name>
     <synonym>
@@ -205,6 +223,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="a4ab5dc6-20ed-46d2-bdc2-586ec8a67192">
+    <name>ОтветУжеДан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ уже дан (в другой программе)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="98919769-6713-4440-8876-a9a8a3443632">
     <name>ПодтвердитьДо</name>
     <synonym>
@@ -231,39 +264,6 @@
     </synonym>
     <type>
       <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="a4ab5dc6-20ed-46d2-bdc2-586ec8a67192">
-    <name>ОтветУжеДан</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответ уже дан (в другой программе)</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="c90dcda6-ad5f-4e33-9242-aa639de0e455">
-    <name>ДатаОтветаИзмененная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата ответа измененная</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -30,7 +30,7 @@
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>СтатусОтправкиКартинкаExtendedTooltip</name>
+        <name>СтатусОтправкиКартинкаРасширеннаяПодсказка</name>
         <id>21</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -68,6 +68,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.СтатусыРегламентированныхОтчетов</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -83,7 +87,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>ДатаОтправкиExtendedTooltip</name>
+        <name>ДатаОтправкиРасширеннаяПодсказка</name>
         <id>22</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -129,7 +133,7 @@
         <segments>Список.ДатаЗакрытия</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ДатаЗакрытияExtendedTooltip</name>
+        <name>ДатаЗакрытияРасширеннаяПодсказка</name>
         <id>23</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -176,7 +180,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>СтатусОтправкиExtendedTooltip</name>
+        <name>СтатусОтправкиРасширеннаяПодсказка</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -266,7 +270,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>ОрганизацияExtendedTooltip</name>
+        <name>ОрганизацияРасширеннаяПодсказка</name>
         <id>25</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -313,7 +317,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>ОтчетСсылкаExtendedTooltip</name>
+        <name>ОтчетСсылкаРасширеннаяПодсказка</name>
         <id>26</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -360,7 +364,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>ИдентификаторОтправкиНаСервереExtendedTooltip</name>
+        <name>ИдентификаторОтправкиНаСервереРасширеннаяПодсказка</name>
         <id>27</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -522,7 +526,7 @@
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>СписокExtendedTooltip</name>
+      <name>СписокРасширеннаяПодсказка</name>
       <id>20</id>
       <visible>true</visible>
       <enabled>true</enabled>

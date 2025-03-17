@@ -1024,7 +1024,7 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаИнфОбнПрограммы</name>
+        <name>ГруппаИнформацииОбновленияПрограммы</name>
         <id>478</id>
         <items xsi:type="form:FormGroup">
           <name>ГруппаСообщениеДоступноОбновление</name>
@@ -2749,17 +2749,12 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа инф обн программы</value>
+          <value>Группа информации обновления программы</value>
         </title>
         <horizontalStretch>true</horizontalStretch>
         <extendedTooltip>
-          <name>ГруппаИнфОбнПрограммыРасширеннаяПодсказка</name>
+          <name>ГруппаИнформацииОбновленияПрограммыРасширеннаяПодсказка</name>
           <id>479</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -10293,6 +10288,23 @@
     <valueType>
       <types>String</types>
       <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЗапрещенаРаботаСХостом</name>
+    <title>
+      <key>ru</key>
+      <value>Запрещена работа с хостом</value>
+    </title>
+    <id>67</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

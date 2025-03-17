@@ -316,6 +316,121 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
+    <name>ГруппаПанельN259_ФЗ</name>
+    <id>498</id>
+    <items xsi:type="form:Decoration">
+      <name>ПоянениеПанельN259_ФЗ</name>
+      <id>500</id>
+      <title>
+        <key>ru</key>
+        <value>С 5 февраля 2025 г. срок ответа отсчитывается от 6-го дня после отправки требования из ИФНС и больше не зависит от даты отправки подтверждения приема. Подтверждения приема требований будут отправляться автоматически. &lt;link https://its.1c.ru/db/elreps/content/30/hdoc>Подробнее&lt;/></value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПоянениеПанельN259_ФЗРасширеннаяПодсказка</name>
+        <id>502</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПоянениеПанельN259_ФЗКонтекстноеМеню</name>
+        <id>501</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <formatted>true</formatted>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <groupVerticalAlign>Center</groupVerticalAlign>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ЗакрытьПанельN259_ФЗ</name>
+      <id>503</id>
+      <title>
+        <key>ru</key>
+        <value>Закрыть</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ЗакрытьПанельN259_ФЗРасширеннаяПодсказка</name>
+        <id>505</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЗакрытьПанельN259_ФЗКонтекстноеМеню</name>
+        <id>504</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <groupHorizontalAlign>Right</groupHorizontalAlign>
+      <groupVerticalAlign>Center</groupVerticalAlign>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <handlers>
+          <event>Click</event>
+          <name>ЗакрытьПанельИнформацииНажатие</name>
+        </handlers>
+        <hyperlink>true</hyperlink>
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа панель n259 ФЗ</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа панель n259 ФЗ</value>
+    </toolTip>
+    <horizontalStretch>true</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаПанельN259_ФЗРасширеннаяПодсказка</name>
+      <id>499</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <backColor xsi:type="core:ColorRef">
+        <color>Style.ЦветФонаТекущейОтправки</color>
+      </backColor>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
     <name>ГруппаПанельОтправки</name>
     <id>131</id>
     <items xsi:type="form:FormGroup">
@@ -2131,14 +2246,20 @@
             <userVisible>
               <common>true</common>
             </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ДатаПриемаПредставлениеРасширеннаяПодсказка</name>
               <id>409</id>
+              <title>
+                <key>ru</key>
+                <value>С 5 февраля 2025 г. отменена обязанность отправлять подтверждение приема в течение 6 дней после получения требования (N 259-ФЗ от 08.08.2024 г.). &lt;link https://its.1c.ru/db/elreps/content/30/hdoc>Подробнее&lt;/></value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <formatted>true</formatted>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2310,14 +2431,20 @@
             <userVisible>
               <common>true</common>
             </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ДатаОтветаПредставлениеРасширеннаяПодсказка</name>
               <id>412</id>
+              <title>
+                <key>ru</key>
+                <value>С 5 февраля 2025 г. срок ответа отсчитывается от 6-го дня после отправки требования из ИФНС и больше не зависит от даты отправки подтверждения приема (N 259-ФЗ от 08.08.2024 г.). &lt;link https://its.1c.ru/db/elreps/content/30/hdoc>Подробнее&lt;/></value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <formatted>true</formatted>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5215,6 +5342,40 @@
     <id>18</id>
     <valueType>
       <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПодтверждениеОтправилОператор</name>
+    <title>
+      <key>ru</key>
+      <value>Подтверждение отправил оператор</value>
+    </title>
+    <id>25</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СостояниеСдачиОтчетности</name>
+    <title>
+      <key>ru</key>
+      <value>Состояние сдачи отчетности</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>EnumRef.СостояниеСдачиОтчетности</types>
     </valueType>
     <view>
       <common>true</common>

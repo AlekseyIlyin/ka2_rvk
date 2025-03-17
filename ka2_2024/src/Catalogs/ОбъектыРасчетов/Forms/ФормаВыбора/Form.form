@@ -5339,6 +5339,11 @@
             </content>
           </localValue>
         </title>
+        <useRestriction>
+          <condition>true</condition>
+          <group>true</group>
+          <order>true</order>
+        </useRestriction>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>КОплате</dataPath>
@@ -5351,6 +5356,11 @@
             </content>
           </localValue>
         </title>
+        <useRestriction>
+          <condition>true</condition>
+          <group>true</group>
+          <order>true</order>
+        </useRestriction>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Оплачивается</dataPath>
@@ -5363,6 +5373,11 @@
             </content>
           </localValue>
         </title>
+        <useRestriction>
+          <condition>true</condition>
+          <group>true</group>
+          <order>true</order>
+        </useRestriction>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>РазрешенаРаботаСДочернимиПартнерами</dataPath>

@@ -101,7 +101,6 @@
   <dataLockFields>Catalog.Назначения.Attribute.Договор</dataLockFields>
   <dataLockFields>Catalog.Назначения.Attribute.Заказ</dataLockFields>
   <dataLockFields>Catalog.Назначения.Attribute.ТипНазначения</dataLockFields>
-  <dataLockFields>Catalog.Назначения.Attribute.ТипОбъектаНазначения</dataLockFields>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
@@ -277,6 +276,22 @@
       <key>ru</key>
       <value>Если признак выставлен, то контроль превышения обеспечения над потребностями проводиться по данному назначению не будет. В этом случае будет выполняться только контроль наличия.</value>
     </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ca93f4fa-9a06-4500-a3a5-752077d25c68">
+    <name>УчитыватьСтавкиНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать ставки НДС</value>
+    </synonym>
+    <comment>Формировать отчеты о закупках под принципала по ставкам НДС</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

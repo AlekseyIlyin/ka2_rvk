@@ -722,6 +722,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Наборы</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1062,6 +1066,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3437,6 +3445,203 @@
             <textEdit>true</textEdit>
           </extInfo>
         </items>
+        <items xsi:type="form:FormField">
+          <name>АкцизныеМаркиЧастичноеВыбытиеКоличество</name>
+          <id>514</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АкцизныеМарки.ЧастичноеВыбытиеКоличество</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>АкцизныеМаркиЧастичноеВыбытиеКоличествоРасширеннаяПодсказка</name>
+            <id>516</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АкцизныеМаркиЧастичноеВыбытиеКоличествоКонтекстноеМеню</name>
+            <id>515</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <extendedEditMultipleValues>true</extendedEditMultipleValues>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>АкцизныеМаркиЧастичноеВыбытиеВариантУчета</name>
+          <id>517</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АкцизныеМарки.ЧастичноеВыбытиеВариантУчета</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>АкцизныеМаркиЧастичноеВыбытиеВариантУчетаРасширеннаяПодсказка</name>
+            <id>519</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АкцизныеМаркиЧастичноеВыбытиеВариантУчетаКонтекстноеМеню</name>
+            <id>518</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <extendedEditMultipleValues>true</extendedEditMultipleValues>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>АкцизныеМаркиЧастичноеВыбытиеНоменклатура</name>
+          <id>520</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АкцизныеМарки.ЧастичноеВыбытиеНоменклатура</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>АкцизныеМаркиЧастичноеВыбытиеНоменклатураРасширеннаяПодсказка</name>
+            <id>522</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АкцизныеМаркиЧастичноеВыбытиеНоменклатураКонтекстноеМеню</name>
+            <id>521</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <extendedEditMultipleValues>true</extendedEditMultipleValues>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>АкцизныеМаркиЧастичноеВыбытиеХарактеристика</name>
+          <id>523</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АкцизныеМарки.ЧастичноеВыбытиеХарактеристика</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>АкцизныеМаркиЧастичноеВыбытиеХарактеристикаРасширеннаяПодсказка</name>
+            <id>525</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АкцизныеМаркиЧастичноеВыбытиеХарактеристикаКонтекстноеМеню</name>
+            <id>524</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <extendedEditMultipleValues>true</extendedEditMultipleValues>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>АкцизныеМаркиВыбытиеБутылки</name>
+          <id>526</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АкцизныеМарки.ВыбытиеБутылки</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>АкцизныеМаркиВыбытиеБутылкиРасширеннаяПодсказка</name>
+            <id>528</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АкцизныеМаркиВыбытиеБутылкиКонтекстноеМеню</name>
+            <id>527</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
         <commandBarLocation>None</commandBarLocation>
         <autoCommandBar>
           <name>АкцизныеМаркиКоманднаяПанель</name>
@@ -3921,7 +4126,7 @@
                 <textEdit>true</textEdit>
                 <choiceList>
                   <value xsi:type="core:ReferenceValue">
-                    <value>Enum.СтатусыЧековККМ.EnumValue.ТоварЗарезервирован</value>
+                    <value>Enum.СтатусыЧековККМ.EnumValue.ОтложенСРезервированием</value>
                   </value>
                 </choiceList>
                 <choiceList>
@@ -3936,7 +4141,7 @@
                 </choiceList>
                 <choiceList>
                   <value xsi:type="core:ReferenceValue">
-                    <value>Enum.СтатусыЧековККМ.EnumValue.Отложен</value>
+                    <value>Enum.СтатусыЧековККМ.EnumValue.ОтложенБезРезервирования</value>
                   </value>
                 </choiceList>
                 <choiceList>

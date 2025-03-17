@@ -44,11 +44,34 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="fbc3a38c-ec4b-465b-abc0-801f75837599">
+    <name>ФормаОтчета2024Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет совокупного размера прибыли</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="2ab43f5d-e69a-4448-a4a5-5b54f58989a2">
     <name>МБ_1150021_5_02000_02_tif</name>
     <synonym>
       <key>ru</key>
       <value>1150021_5.02000_02.tif</value>
+    </synonym>
+    <comment>Шаблон печати машиночитаемой формы</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="44012b95-1217-4565-a579-a01381c92642">
+    <name>МБ_1150021_5_03000_03_tif</name>
+    <synonym>
+      <key>ru</key>
+      <value>1150021_5.03000_03.tif</value>
     </synonym>
     <comment>Шаблон печати машиночитаемой формы</comment>
     <templateType>BinaryData</templateType>
@@ -61,11 +84,27 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="527642ca-6d0c-4c93-beac-5e6f758ddf79">
+    <name>НастройкиЗагрузкиXML2024Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2024 (кв.4)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="29f08c19-8f60-49fe-8a62-8c67f7b9febb">
     <name>НастройкиСравнения2019Кв4</name>
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения отчетов 2019 (кв.4)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6a9d34df-f2d8-49f0-85d0-8429ddb74b2a">
+    <name>НастройкиСравнения2024Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения отчетов 2024 (кв.4)</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -83,6 +122,20 @@
       <value>Титульный лист</value>
     </synonym>
   </templates>
+  <templates uuid="0f91b4c0-b66f-4729-82a2-28857d9ce4a0">
+    <name>ПечатныйБланк2024Кв4_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет</value>
+    </synonym>
+  </templates>
+  <templates uuid="d46c51b5-9c11-4b6c-ad7f-fe59e4ac391a">
+    <name>ПечатныйБланк2024Кв4_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
   <templates uuid="d7f12a4c-440a-4039-8f99-d88ecf5cb7f3">
     <name>СпискиВыбора2019Кв4</name>
     <synonym>
@@ -90,8 +143,22 @@
       <value>Списки выбора</value>
     </synonym>
   </templates>
+  <templates uuid="8553a7ab-7164-4482-83ed-659c16d89c12">
+    <name>СпискиВыбора2024Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
   <templates uuid="e7298268-2c6e-41da-904d-5142f8f9f8f3">
     <name>СхемаВыгрузки502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
+  <templates uuid="70423a8e-e762-4f35-af5a-35bba638898b">
+    <name>СхемаВыгрузки503</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки</value>
@@ -106,6 +173,20 @@
   </templates>
   <templates uuid="6bd4196b-ae74-4e38-be01-49c83a8743d3">
     <name>ФормаОтчета2019Кв4_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный</value>
+    </synonym>
+  </templates>
+  <templates uuid="5155f9a7-dcd1-46e3-b1d3-df5299f8e345">
+    <name>ФормаОтчета2024Кв4_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет</value>
+    </synonym>
+  </templates>
+  <templates uuid="9ff4615f-146e-44f3-9a21-18c3cfd42546">
+    <name>ФормаОтчета2024Кв4_Титульный</name>
     <synonym>
       <key>ru</key>
       <value>Титульный</value>

@@ -696,7 +696,11 @@
 	НастройкиПодключенияКСистемеБыстрыхПлатежей.Предопределенный КАК Предопределенный,
 	НастройкиПодключенияКСистемеБыстрыхПлатежей.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
 	ВЫБОР
-		КОГДА НастройкиПодключенияКСистемеБыстрыхПлатежей.ЭтоГруппа
+		КОГДА НастройкиПодключенияКСистемеБыстрыхПлатежей.ЭтоГруппа И НастройкиПодключенияКСистемеБыстрыхПлатежей.Родитель = Значение(Справочник.НастройкиПодключенияКСистемеБыстрыхПлатежей.ПустаяСсылка) И НастройкиПодключенияКСистемеБыстрыхПлатежей.ВариантНастройки = Значение(Перечисление.ВариантыНастройкиСБП.b2b)
+			ТОГДА 3
+		КОГДА НастройкиПодключенияКСистемеБыстрыхПлатежей.ЭтоГруппа И НастройкиПодключенияКСистемеБыстрыхПлатежей.Родитель = Значение(Справочник.НастройкиПодключенияКСистемеБыстрыхПлатежей.ПустаяСсылка) И НастройкиПодключенияКСистемеБыстрыхПлатежей.ВариантНастройки = Значение(Перечисление.ВариантыНастройкиСБП.c2b)
+			ТОГДА 2
+		КОГДА НастройкиПодключенияКСистемеБыстрыхПлатежей.ЭтоГруппа И НастройкиПодключенияКСистемеБыстрыхПлатежей.Родитель &lt;> Значение(Справочник.НастройкиПодключенияКСистемеБыстрыхПлатежей.ПустаяСсылка)
 			ТОГДА 1
 		ИНАЧЕ 0
 	КОНЕЦ КАК Картинка,
@@ -714,6 +718,10 @@
         <field>ПометкаУдаления</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СсылкаПеренаправления</dataPath>
+        <field>СсылкаПеренаправления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИдентификаторМерчанта</dataPath>
         <field>ИдентификаторМерчанта</field>
       </fields>
@@ -726,20 +734,32 @@
         <field>Ссылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторУчастника</dataPath>
-        <field>ИдентификаторУчастника</field>
+        <dataPath>Используется</dataPath>
+        <field>Используется</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантНастройки</dataPath>
+        <field>ВариантНастройки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьИдентификатор</dataPath>
+        <field>УдалитьИдентификатор</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Родитель</dataPath>
         <field>Родитель</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Наименование</dataPath>
-        <field>Наименование</field>
+        <dataPath>УдалитьПлатежнаяСистема</dataPath>
+        <field>УдалитьПлатежнаяСистема</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЭтоГруппа</dataPath>
         <field>ЭтоГруппа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Предопределенный</dataPath>
@@ -758,20 +778,8 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Используется</dataPath>
-        <field>Используется</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>УдалитьИдентификатор</dataPath>
-        <field>УдалитьИдентификатор</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>УдалитьПлатежнаяСистема</dataPath>
-        <field>УдалитьПлатежнаяСистема</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>СсылкаПеренаправления</dataPath>
-        <field>СсылкаПеренаправления</field>
+        <dataPath>ИдентификаторУчастника</dataPath>
+        <field>ИдентификаторУчастника</field>
       </fields>
     </extInfo>
   </attributes>

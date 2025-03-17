@@ -11,15 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="e992a009-7489-4956-b9e9-db8b622c1a06">
-    <name>Форма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2014 1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="a1810be1-ca0d-4169-8e7e-9002b40e5459">
     <name>Форма2020_1</name>
     <synonym>
@@ -29,27 +20,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="961ce0b9-b7aa-4c13-b51c-acfba48af940">
-    <name>Форма2014_1</name>
+  <forms uuid="9039f062-9933-44ee-bfe3-84bc105e1cc4">
+    <name>Форма2025_1</name>
     <synonym>
       <key>ru</key>
-      <value>Форма2014 1</value>
+      <value>Уведомление о выборе налогового органа для постановки на учет</value>
     </synonym>
-  </templates>
-  <templates uuid="cf8fc7e6-93c5-4279-9086-6c049413d84c">
-    <name>ПараметрыФорма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры форма2014 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="7a6ad376-ab9d-4f01-9bf9-6ce8a4127b50">
-    <name>СхемаВыгрузкиФорма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки форма2014 1</value>
-    </synonym>
-  </templates>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="f4528a3a-ffd0-4355-8ba0-985a63516742">
     <name>Печать_MXL_Форма2014_1</name>
     <synonym>
@@ -106,5 +85,41 @@
       <key>ru</key>
       <value>Печатный бланк</value>
     </synonym>
+  </templates>
+  <templates uuid="7825118f-35b3-4667-93a5-e63ed33b2bb2">
+    <name>Титульная_2025_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="957ab294-3ae4-4e1d-a522-73eea081cc7e">
+    <name>СхемаВыгрузкиФорма2025_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
+  <templates uuid="f381e745-1cbc-4f81-ad8c-2eb52f83b615">
+    <name>СпискиВыбора2025_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="63ad6219-3c1f-44da-bd2c-ba1170636f8e">
+    <name>Печать_Форма2025_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="2b5fc1b2-8010-4618-a60d-3ebb19917f2f">
+    <name>TIFF_2025_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1111054_5.03000_03.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
   </templates>
 </mdclass:Report>

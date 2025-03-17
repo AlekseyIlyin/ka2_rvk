@@ -261,6 +261,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияРезультатыВыполненияДействий</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -393,6 +397,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ЗамокЗащищенныйУчастник</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -574,6 +582,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>StdPicture.Document</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -1503,31 +1515,114 @@
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
-            <items xsi:type="form:FormField">
-              <name>ОжидатьЗавершения</name>
-              <id>114</id>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаНастройкиФлагов</name>
+              <id>144</id>
+              <items xsi:type="form:FormField">
+                <name>ОжидатьЗавершения</name>
+                <id>114</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ОжидатьЗавершения</segments>
+                </dataPath>
+                <titleLocation>Right</titleLocation>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Если настройка выключена, обработка перейдет к следующему действию, не дожидаясь выполнения задач ознакомления</value>
+                </toolTip>
+                <toolTipRepresentation>Button</toolTipRepresentation>
+                <extendedTooltip>
+                  <name>ОжидатьЗавершенияРасширеннаяПодсказка</name>
+                  <id>116</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ОжидатьЗавершенияКонтекстноеМеню</name>
+                  <id>115</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>CheckBoxField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>ПодписыватьУЭП</name>
+                <id>127</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ПодписыватьУЭП</segments>
+                </dataPath>
+                <titleLocation>Right</titleLocation>
+                <extendedTooltip>
+                  <name>ПодписыватьУЭПРасширеннаяПодсказка</name>
+                  <id>129</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ПодписыватьУЭПКонтекстноеМеню</name>
+                  <id>128</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>CheckBoxField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+              </items>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ОжидатьЗавершения</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <toolTip>
+              <title>
                 <key>ru</key>
-                <value>Если настройка выключена, обработка перейдет к следующему действию, не дожидаясь выполнения задач ознакомления</value>
-              </toolTip>
-              <toolTipRepresentation>Button</toolTipRepresentation>
+                <value>Группа настройки флагов</value>
+              </title>
               <extendedTooltip>
-                <name>ОжидатьЗавершенияРасширеннаяПодсказка</name>
-                <id>116</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
+                <name>ГруппаНастройкиФлаговРасширеннаяПодсказка</name>
+                <id>145</id>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1535,66 +1630,14 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <contextMenu>
-                <name>ОжидатьЗавершенияКонтекстноеМеню</name>
-                <id>115</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-            </items>
-            <items xsi:type="form:FormField">
-              <name>ПодписыватьУЭП</name>
-              <id>127</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПодписыватьУЭП</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <extendedTooltip>
-                <name>ПодписыватьУЭПРасширеннаяПодсказка</name>
-                <id>129</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ПодписыватьУЭПКонтекстноеМеню</name>
-                <id>128</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1911,7 +1954,7 @@
         <id>10</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -3289,6 +3332,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>НедоступноГруппа</name>
+      <title>
+        <key>ru</key>
+        <value>Недоступно группа</value>
+      </title>
+      <id>44</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>АвторID</name>
@@ -3658,7 +3718,7 @@
     <name>ПодписыватьУЭП</name>
     <title>
       <key>ru</key>
-      <value>Подписывать УЭП</value>
+      <value>Подписывать усиленной ЭП</value>
     </title>
     <id>23</id>
     <valueType>
@@ -3819,6 +3879,24 @@
       <value>Представление запуска</value>
     </title>
     <id>32</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОсновнойПредмет</name>
+    <title>
+      <key>ru</key>
+      <value>Основной предмет</value>
+    </title>
+    <id>45</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>
@@ -4012,6 +4090,13 @@
   </parameters>
   <parameters>
     <name>ОсновнойПредметТип</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОсновнойПредмет</name>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

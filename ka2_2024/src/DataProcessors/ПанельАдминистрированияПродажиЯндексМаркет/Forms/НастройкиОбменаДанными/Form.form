@@ -1611,6 +1611,390 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
+            <name>ГруппаПартнерДанныеМагазина</name>
+            <id>2116</id>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаПартнерДанныеМагазина1</name>
+              <id>2118</id>
+              <items xsi:type="form:Decoration">
+                <name>ДекорацияПартнерДанныеМагазина1</name>
+                <id>2120</id>
+                <title>
+                  <key>ru</key>
+                  <value>Декорация партнер данные магазина</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ДекорацияПартнерДанныеМагазина1РасширеннаяПодсказка</name>
+                  <id>2122</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ДекорацияПартнерДанныеМагазина1КонтекстноеМеню</name>
+                  <id>2121</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <width>2</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>false</horizontalStretch>
+                <extInfo xsi:type="form:PictureDecorationExtInfo">
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.Этап3</picture>
+                  </picture>
+                  <fileDragMode>AsFileRef</fileDragMode>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>ДекорацияПартнерДанныеМагазина2</name>
+                <id>2123</id>
+                <title>
+                  <key>ru</key>
+                  <value>Партнер:</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ДекорацияПартнерДанныеМагазина2РасширеннаяПодсказка</name>
+                  <id>2125</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ДекорацияПартнерДанныеМагазина2КонтекстноеМеню</name>
+                  <id>2124</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа партнер данные магазина</value>
+              </title>
+              <extendedTooltip>
+                <name>ГруппаПартнерДанныеМагазина1РасширеннаяПодсказка</name>
+                <id>2119</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>AlwaysHorizontal</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаПартнерДанныеМагазина2</name>
+              <id>2126</id>
+              <items xsi:type="form:Decoration">
+                <name>ДекорацияОтступ24</name>
+                <id>2128</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ДекорацияОтступ24РасширеннаяПодсказка</name>
+                  <id>2130</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ДекорацияОтступ24КонтекстноеМеню</name>
+                  <id>2129</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <width>3</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>false</horizontalStretch>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаПартнерДанныеМагазина4</name>
+                <id>2131</id>
+                <items xsi:type="form:FormGroup">
+                  <name>ГруппаПартнерДанныеМагазина5</name>
+                  <id>2133</id>
+                  <items xsi:type="form:Decoration">
+                    <name>ДекорацияПартнерДанныеМагазина5</name>
+                    <id>2135</id>
+                    <title>
+                      <key>ru</key>
+                      <value>Партнер:</value>
+                    </title>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДекорацияПартнерДанныеМагазина5РасширеннаяПодсказка</name>
+                      <id>2137</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <contextMenu>
+                      <name>ДекорацияПартнерДанныеМагазина5КонтекстноеМеню</name>
+                      <id>2136</id>
+                      <autoFill>true</autoFill>
+                    </contextMenu>
+                    <type>Label</type>
+                    <width>9</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </items>
+                  <items xsi:type="form:FormField">
+                    <name>ПартнерДанныеМагазина</name>
+                    <id>2138</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <dataPath xsi:type="form:DataPath">
+                      <segments>Партнер</segments>
+                    </dataPath>
+                    <titleLocation>None</titleLocation>
+                    <toolTipRepresentation>None</toolTipRepresentation>
+                    <handlers>
+                      <event>OnChange</event>
+                      <name>ПартнерПриИзменении</name>
+                    </handlers>
+                    <extendedTooltip>
+                      <name>ПартнерДанныеМагазинаРасширеннаяПодсказка</name>
+                      <id>2140</id>
+                      <title>
+                        <key>ru</key>
+                        <value>Модель работы, применяемая для текущего магазина.</value>
+                      </title>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <contextMenu>
+                      <name>ПартнерДанныеМагазинаКонтекстноеМеню</name>
+                      <id>2139</id>
+                      <autoFill>true</autoFill>
+                    </contextMenu>
+                    <type>InputField</type>
+                    <editMode>Enter</editMode>
+                    <showInHeader>true</showInHeader>
+                    <headerHorizontalAlign>Left</headerHorizontalAlign>
+                    <showInFooter>true</showInFooter>
+                    <extInfo xsi:type="form:InputFieldExtInfo">
+                      <width>36</width>
+                      <maxWidth>40</maxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <wrap>true</wrap>
+                      <autoMarkIncomplete>true</autoMarkIncomplete>
+                      <typeDomainEnabled>true</typeDomainEnabled>
+                      <textEdit>true</textEdit>
+                    </extInfo>
+                  </items>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <title>
+                    <key>ru</key>
+                    <value>Группа партнер данные магазина 5</value>
+                  </title>
+                  <extendedTooltip>
+                    <name>ГруппаПартнерДанныеМагазина5РасширеннаяПодсказка</name>
+                    <id>2134</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>UsualGroup</type>
+                  <extInfo xsi:type="form:UsualGroupExtInfo">
+                    <group>AlwaysHorizontal</group>
+                    <showLeftMargin>true</showLeftMargin>
+                    <united>true</united>
+                    <throughAlign>Auto</throughAlign>
+                    <currentRowUse>Auto</currentRowUse>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:Decoration">
+                  <name>ДекорацияПартнерДанныеМагазинаПодсказка</name>
+                  <id>2141</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Партнер, представляющий торговую площадку Яндекс Маркет.</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ДекорацияПартнерДанныеМагазинаПодсказкаРасширеннаяПодсказка</name>
+                    <id>2143</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ДекорацияПартнерДанныеМагазинаПодсказкаКонтекстноеМеню</name>
+                    <id>2142</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>Label</type>
+                  <maxWidth>83</maxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <horizontalStretch>true</horizontalStretch>
+                  <textColor xsi:type="core:ColorRef">
+                    <color>Style.ПоясняющийТекст</color>
+                  </textColor>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа партнер данные магазина 4</value>
+                </title>
+                <extendedTooltip>
+                  <name>ГруппаПартнерДанныеМагазина4РасширеннаяПодсказка</name>
+                  <id>2132</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>Vertical</group>
+                  <verticalSpacing>Half</verticalSpacing>
+                  <behavior>Auto</behavior>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа схема работы 2</value>
+              </title>
+              <extendedTooltip>
+                <name>ГруппаПартнерДанныеМагазина2РасширеннаяПодсказка</name>
+                <id>2127</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>AlwaysHorizontal</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа партнер данные магазина</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаПартнерДанныеМагазинаРасширеннаяПодсказка</name>
+              <id>2117</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <representation>NormalSeparation</representation>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
             <name>ГруппаДанныеАвторизации</name>
             <id>934</id>
             <items xsi:type="form:FormGroup">
@@ -1659,17 +2043,17 @@
                 <horizontalStretch>false</horizontalStretch>
                 <extInfo xsi:type="form:PictureDecorationExtInfo">
                   <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.Этап3</picture>
+                    <picture>CommonPicture.Этап4</picture>
                   </picture>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
               <items xsi:type="form:Decoration">
-                <name>ДекорацияДанныеАвторизации2</name>
-                <id>941</id>
+                <name>ДекорацияНомерМагазина</name>
+                <id>1994</id>
                 <title>
                   <key>ru</key>
-                  <value>Данные авторизации:</value>
+                  <value>Номер магазина:</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1677,8 +2061,8 @@
                   <common>true</common>
                 </userVisible>
                 <extendedTooltip>
-                  <name>ДекорацияДанныеАвторизации2РасширеннаяПодсказка</name>
-                  <id>943</id>
+                  <name>ДекорацияНомерМагазинаРасширеннаяПодсказка</name>
+                  <id>1996</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -1692,8 +2076,8 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ДекорацияДанныеАвторизации2КонтекстноеМеню</name>
-                  <id>942</id>
+                  <name>ДекорацияНомерМагазинаКонтекстноеМеню</name>
+                  <id>1995</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -1702,6 +2086,8 @@
                   <autoFill>true</autoFill>
                 </contextMenu>
                 <type>Label</type>
+                <width>16</width>
+                <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <extInfo xsi:type="form:LabelDecorationExtInfo">
                   <horizontalAlign>Left</horizontalAlign>
@@ -1719,314 +2105,6 @@
               <extendedTooltip>
                 <name>ГруппаДанныеАвторизации1РасширеннаяПодсказка</name>
                 <id>1170</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualGroup</type>
-              <extInfo xsi:type="form:UsualGroupExtInfo">
-                <group>AlwaysHorizontal</group>
-                <showLeftMargin>true</showLeftMargin>
-                <united>true</united>
-                <throughAlign>Auto</throughAlign>
-                <currentRowUse>Auto</currentRowUse>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormGroup">
-              <name>ГруппаДанныеАвторизации2</name>
-              <id>1171</id>
-              <items xsi:type="form:Decoration">
-                <name>ДекорацияОтступ3</name>
-                <id>1173</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ДекорацияОтступ3РасширеннаяПодсказка</name>
-                  <id>1175</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>ДекорацияОтступ3КонтекстноеМеню</name>
-                  <id>1174</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>Label</type>
-                <width>3</width>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <horizontalStretch>false</horizontalStretch>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </items>
-              <items xsi:type="form:FormGroup">
-                <name>ГруппаДанныеАвторизации3</name>
-                <id>1950</id>
-                <items xsi:type="form:FormGroup">
-                  <name>ГруппаИдентификаторКабинета</name>
-                  <id>819</id>
-                  <items xsi:type="form:Decoration">
-                    <name>ДекорацияИдентификаторКабинета</name>
-                    <id>1180</id>
-                    <title>
-                      <key>ru</key>
-                      <value>Идентификатор кабинета:</value>
-                    </title>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <extendedTooltip>
-                      <name>ДекорацияИдентификаторКабинетаРасширеннаяПодсказка</name>
-                      <id>1182</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <type>Label</type>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <extInfo xsi:type="form:LabelDecorationExtInfo">
-                        <horizontalAlign>Left</horizontalAlign>
-                      </extInfo>
-                    </extendedTooltip>
-                    <contextMenu>
-                      <name>ДекорацияИдентификаторКабинетаКонтекстноеМеню</name>
-                      <id>1181</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <autoFill>true</autoFill>
-                    </contextMenu>
-                    <type>Label</type>
-                    <width>16</width>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </items>
-                  <items xsi:type="form:FormField">
-                    <name>ИдентификаторКабинета</name>
-                    <id>821</id>
-                    <title>
-                      <key>ru</key>
-                      <value>Идентификатор кабинета</value>
-                    </title>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <dataPath xsi:type="form:DataPath">
-                      <segments>ИдентификаторКабинета</segments>
-                    </dataPath>
-                    <titleLocation>None</titleLocation>
-                    <toolTipRepresentation>None</toolTipRepresentation>
-                    <extendedTooltip>
-                      <name>ИдентификаторКабинетаРасширеннаяПодсказка</name>
-                      <id>823</id>
-                      <title>
-                        <key>ru</key>
-                        <value>Идентификатор кабинета можно узнать в &lt;link https://partner.market.yandex.ru/>личном&lt;/>&lt;link https://partner.market.yandex.ru/> &lt;/>&lt;link https://partner.market.yandex.ru/>кабинете&lt;/>&lt;link https://partner.market.yandex.ru/> &lt;/>&lt;link https://partner.market.yandex.ru/>Яндекс&lt;/>&lt;link https://partner.market.yandex.ru/> &lt;/>&lt;link https://partner.market.yandex.ru/>Маркет&lt;/>. В меню слева выберите &quot;Настройки&quot;, далее &quot;Кабинеты&quot;, а затем в правом верхнем углу откройте переключатель бизнес-аккаунтов. Чтобы скопировать идентификатор, наведите на него указатель мыши и нажмите появившуюся кнопку.</value>
-                      </title>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <formatted>true</formatted>
-                      <type>Label</type>
-                      <width>46</width>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <extInfo xsi:type="form:LabelDecorationExtInfo">
-                        <horizontalAlign>Left</horizontalAlign>
-                      </extInfo>
-                    </extendedTooltip>
-                    <contextMenu>
-                      <name>ИдентификаторКабинетаКонтекстноеМеню</name>
-                      <id>822</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <autoFill>true</autoFill>
-                    </contextMenu>
-                    <type>InputField</type>
-                    <editMode>Enter</editMode>
-                    <showInHeader>true</showInHeader>
-                    <headerHorizontalAlign>Left</headerHorizontalAlign>
-                    <showInFooter>true</showInFooter>
-                    <extInfo xsi:type="form:InputFieldExtInfo">
-                      <width>19</width>
-                      <maxWidth>23</maxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <wrap>true</wrap>
-                      <autoMarkIncomplete>true</autoMarkIncomplete>
-                      <chooseType>true</chooseType>
-                      <typeDomainEnabled>true</typeDomainEnabled>
-                      <textEdit>true</textEdit>
-                    </extInfo>
-                  </items>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <title>
-                    <key>ru</key>
-                    <value>Группа идентификатор кабинета</value>
-                  </title>
-                  <extendedTooltip>
-                    <name>ГруппаИдентификаторКабинетаРасширеннаяПодсказка</name>
-                    <id>820</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <type>UsualGroup</type>
-                  <extInfo xsi:type="form:UsualGroupExtInfo">
-                    <group>AlwaysHorizontal</group>
-                    <representation>WeakSeparation</representation>
-                    <showLeftMargin>true</showLeftMargin>
-                    <united>true</united>
-                    <throughAlign>Auto</throughAlign>
-                    <currentRowUse>Auto</currentRowUse>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:Decoration">
-                  <name>ДекорацияИдентификаторКабинетаПодсказка</name>
-                  <id>1732</id>
-                  <title>
-                    <key>ru</key>
-                    <value>&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f>Идентификатор кабинета можно узнать в &lt;/>&lt;link https://partner.market.yandex.ru/>личном кабинете Яндекс Маркет&lt;/>&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f>. В меню слева выберите &quot;Настройки&quot;, далее &quot;Кабинеты&quot;, а затем в правом верхнем углу откройте переключатель бизнес-аккаунтов. Чтобы скопировать идентификатор, наведите на него мышь и нажмите появившуюся кнопку.&lt;/></value>
-                  </title>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <extendedTooltip>
-                    <name>ДекорацияИдентификаторКабинетаПодсказкаРасширеннаяПодсказка</name>
-                    <id>1734</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>ДекорацияИдентификаторКабинетаПодсказкаКонтекстноеМеню</name>
-                    <id>1733</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <formatted>true</formatted>
-                  <type>Label</type>
-                  <maxWidth>83</maxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <horizontalStretch>true</horizontalStretch>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </items>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <title>
-                  <key>ru</key>
-                  <value>Группа данные авторизации 3</value>
-                </title>
-                <extendedTooltip>
-                  <name>ГруппаДанныеАвторизации3РасширеннаяПодсказка</name>
-                  <id>1951</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <type>UsualGroup</type>
-                <extInfo xsi:type="form:UsualGroupExtInfo">
-                  <group>Vertical</group>
-                  <verticalSpacing>Half</verticalSpacing>
-                  <behavior>Auto</behavior>
-                  <showLeftMargin>true</showLeftMargin>
-                  <united>true</united>
-                  <throughAlign>Auto</throughAlign>
-                  <currentRowUse>Auto</currentRowUse>
-                </extInfo>
-              </items>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <title>
-                <key>ru</key>
-                <value>Группа данные авторизации 2</value>
-              </title>
-              <extendedTooltip>
-                <name>ГруппаДанныеАвторизации2РасширеннаяПодсказка</name>
-                <id>1172</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
@@ -2099,51 +2177,6 @@
                 <items xsi:type="form:FormGroup">
                   <name>ГруппаНомерМагазина</name>
                   <id>1992</id>
-                  <items xsi:type="form:Decoration">
-                    <name>ДекорацияНомерМагазина</name>
-                    <id>1994</id>
-                    <title>
-                      <key>ru</key>
-                      <value>Номер магазина:</value>
-                    </title>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <extendedTooltip>
-                      <name>ДекорацияНомерМагазинаРасширеннаяПодсказка</name>
-                      <id>1996</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <type>Label</type>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <extInfo xsi:type="form:LabelDecorationExtInfo">
-                        <horizontalAlign>Left</horizontalAlign>
-                      </extInfo>
-                    </extendedTooltip>
-                    <contextMenu>
-                      <name>ДекорацияНомерМагазинаКонтекстноеМеню</name>
-                      <id>1995</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <autoFill>true</autoFill>
-                    </contextMenu>
-                    <type>Label</type>
-                    <width>16</width>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </items>
                   <items xsi:type="form:FormField">
                     <name>НомерМагазина</name>
                     <id>1997</id>
@@ -2198,10 +2231,18 @@
                     <headerHorizontalAlign>Left</headerHorizontalAlign>
                     <showInFooter>true</showInFooter>
                     <extInfo xsi:type="form:InputFieldExtInfo">
-                      <width>19</width>
+                      <handlers>
+                        <event>StartChoice</event>
+                        <name>НомерМагазинаНачалоВыбора</name>
+                      </handlers>
+                      <width>38</width>
                       <maxWidth>23</maxWidth>
                       <autoMaxHeight>true</autoMaxHeight>
                       <wrap>true</wrap>
+                      <choiceButton>true</choiceButton>
+                      <choiceButtonPicture xsi:type="core:PictureRef">
+                        <picture>CommonPicture.ВставитьИзБуфераОбмена</picture>
+                      </choiceButtonPicture>
                       <autoMarkIncomplete>true</autoMarkIncomplete>
                       <chooseType>true</chooseType>
                       <typeDomainEnabled>true</typeDomainEnabled>
@@ -8097,7 +8138,7 @@
                 <id>1651</id>
                 <title>
                   <key>ru</key>
-                  <value>Сведения о юридическом лице торговой площадки:</value>
+                  <value>Сведения о торговой площадке:</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -8306,6 +8347,7 @@
                       <autoFill>true</autoFill>
                     </contextMenu>
                     <type>InputField</type>
+                    <readOnly>true</readOnly>
                     <editMode>Enter</editMode>
                     <showInHeader>true</showInHeader>
                     <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -9258,7 +9300,7 @@
                 <id>2007</id>
                 <title>
                   <key>ru</key>
-                  <value>Указываются сведения о юридическом лице торговой площадки Яндекс Маркет для отражения в документах.</value>
+                  <value>Указываются сведения о торговой площадке Яндекс Маркет для отражения в документах. Изменение данных о партнере доступно на странице &quot;Данные магазина&quot;.</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -11754,6 +11796,23 @@
     <id>33</id>
     <valueType>
       <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПредыдущийПартнер</name>
+    <title>
+      <key>ru</key>
+      <value>Предыдущий партнер</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>CatalogRef.Партнеры</types>
     </valueType>
     <view>
       <common>true</common>

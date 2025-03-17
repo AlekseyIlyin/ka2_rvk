@@ -150,8 +150,6 @@
             </dataPath>
             <titleLocation>None</titleLocation>
             <excludedCommands>CopyToClipboard</excludedCommands>
-            <excludedCommands>Delete</excludedCommands>
-            <excludedCommands>ListSettings</excludedCommands>
             <items xsi:type="form:FormField">
               <name>СотрудникиБезОтношенийНаименование</name>
               <id>10</id>
@@ -486,7 +484,7 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <commandName>Form.Item.СотрудникиБезОтношений.StandardCommand.Change</commandName>
+                <commandName>0</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>

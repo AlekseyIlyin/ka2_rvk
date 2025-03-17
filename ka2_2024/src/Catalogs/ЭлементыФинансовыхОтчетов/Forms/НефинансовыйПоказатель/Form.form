@@ -129,6 +129,52 @@
   <items xsi:type="form:FormGroup">
     <name>ГруппаПредставление</name>
     <id>425</id>
+    <items xsi:type="form:FormField">
+      <name>ВыражениеПредставления</name>
+      <id>528</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ВыражениеПредставления</segments>
+      </dataPath>
+      <titleHeight>2</titleHeight>
+      <extendedTooltip>
+        <name>ВыражениеПредставленияРасширеннаяПодсказка</name>
+        <id>530</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ВыражениеПредставленияКонтекстноеМеню</name>
+        <id>529</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>StartChoice</event>
+          <name>ВыражениеПредставленияНачалоВыбора</name>
+        </handlers>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <choiceButton>true</choiceButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+      </extInfo>
+    </items>
     <items xsi:type="form:FormGroup">
       <name>ГруппаНаименование</name>
       <id>360</id>
@@ -1354,6 +1400,26 @@
     <id>20</id>
     <valueType>
       <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВыражениеПредставления</name>
+    <title>
+      <key>ru</key>
+      <value>Выражение представления</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
     </valueType>
     <view>
       <common>true</common>

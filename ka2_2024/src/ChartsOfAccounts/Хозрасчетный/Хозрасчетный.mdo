@@ -575,6 +575,9 @@
         <description>Дополнительные расходы по оборудованию к установке</description>
         <code>07.ДР</code>
         <order> 07.ДР</order>
+        <accountingFlags>ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям</accountingFlags>
+        <accountingFlags>ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности</accountingFlags>
+        <accountingFlags>ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет</accountingFlags>
         <extDimensionTypes>
           <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиЗатрат</characteristicType>
           <turnover>true</turnover>
@@ -3316,7 +3319,7 @@
         </childItems>
         <childItems id="dc0dbae9-65b3-40ec-b62a-8e36364f1e14">
           <name>НДФЛ_ДоходыСвышеПредельнойВеличины</name>
-          <description>НДФЛ с доходов свыше предельной величины, исчисленный налоговым агентом</description>
+          <description>НДФЛ с доходов свыше предельной величины, исчисленный налоговым агентом (до 2025 года)</description>
           <code>68.01.2</code>
           <accountType>ActivePassive</accountType>
           <order> 68.01.2</order>
@@ -3578,7 +3581,7 @@
         </childItems>
         <childItems id="0fe2ccc3-064b-4e92-b685-ef9c0a53449c">
           <name>НДФЛ_ИП_НалоговаяБазаСвышеПредельнойВеличины</name>
-          <description>НДФЛ индивидуального предпринимателя</description>
+          <description>НДФЛ индивидуального предпринимателя с доходов свыше предельной величины (до 2025 года)</description>
           <code>68.21.2</code>
           <accountType>ActivePassive</accountType>
           <order> 68.21.2</order>

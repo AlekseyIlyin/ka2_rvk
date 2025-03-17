@@ -2633,6 +2633,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Внимание16</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -9688,7 +9692,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.СуммаНДС</segments>
               </dataPath>
-              <titleLocation>None</titleLocation>
+              <titleLocation>Left</titleLocation>
               <extendedTooltip>
                 <name>ПолеБезНДСПродукцииРасширеннаяПодсказка</name>
                 <id>1289</id>
@@ -9714,20 +9718,30 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>LabelField</type>
+              <type>InputField</type>
               <readOnly>true</readOnly>
               <horizontalAlign>Right</horizontalAlign>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:LabelFieldExtInfo">
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>10</width>
+                <autoMaxWidth>true</autoMaxWidth>
                 <maxWidth>10</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
                 <format>
                   <key>ru</key>
                   <value>ЧН='Без НДС'</value>
                 </format>
+                <editFormat>
+                  <key>ru</key>
+                  <value>ЧН='Без НДС'</value>
+                </editFormat>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -9938,7 +9952,7 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
-                <width>15</width>
+                <width>14</width>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>

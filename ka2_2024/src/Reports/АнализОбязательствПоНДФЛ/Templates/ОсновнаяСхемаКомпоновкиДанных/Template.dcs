@@ -140,7 +140,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>К уплате</v8:content>
+					<v8:content>Удержано</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -150,7 +150,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>К уплате с превышения</v8:content>
+					<v8:content>Удержано 15%</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -161,6 +161,36 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Уплачено с превышения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдержаноСПревышенияПоСтавке18</dataPath>
+			<field>УдержаноСПревышенияПоСтавке18</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удержано 18%</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдержаноСПревышенияПоСтавке20</dataPath>
+			<field>УдержаноСПревышенияПоСтавке20</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удержано 20%</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдержаноСПревышенияПоСтавке22</dataPath>
+			<field>УдержаноСПревышенияПоСтавке22</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удержано 22%</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -178,6 +208,9 @@
 	НДФЛКПеречислению.КрайнийСрокУплаты КАК СрокУплатыДатаУплаты,
 	НДФЛКПеречислению.Сумма КАК Удержано,
 	НДФЛКПеречислению.СуммаСПревышения КАК УдержаноСПревышения,
+	НДФЛКПеречислению.СуммаСПревышенияПоСтавке18 КАК УдержаноСПревышенияПоСтавке18,
+	НДФЛКПеречислению.СуммаСПревышенияПоСтавке20 КАК УдержаноСПревышенияПоСтавке20,
+	НДФЛКПеречислению.СуммаСПревышенияПоСтавке22 КАК УдержаноСПревышенияПоСтавке22,
 	0 КАК Перечислено,
 	0 КАК ПеречисленоСПревышения
 ИЗ
@@ -199,6 +232,9 @@
 	NULL,
 	НДФЛПеречисленный.РегистрацияВНалоговомОргане,
 	НДФЛПеречисленный.Период,
+	0,
+	0,
+	0,
 	0,
 	0,
 	НДФЛПеречисленный.Сумма,
@@ -253,6 +289,18 @@
 	<totalField>
 		<dataPath>ПеречисленоСПревышения</dataPath>
 		<expression>Сумма(ПеречисленоСПревышения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УдержаноСПревышенияПоСтавке18</dataPath>
+		<expression>Сумма(УдержаноСПревышенияПоСтавке18)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УдержаноСПревышенияПоСтавке20</dataPath>
+		<expression>Сумма(УдержаноСПревышенияПоСтавке20)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УдержаноСПревышенияПоСтавке22</dataPath>
+		<expression>Сумма(УдержаноСПревышенияПоСтавке22)</expression>
 	</totalField>
 	<parameter>
 		<name>ПериодКонтрольСроков</name>
@@ -662,6 +710,11 @@
 								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">УдержаноСПревышения</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:order>
@@ -1042,6 +1095,11 @@
 								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">УдержаноСПревышения</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:order>
@@ -1174,16 +1232,25 @@
 						<dcsset:item>
 							<dcsset:field>УдержаноСПревышения</dcsset:field>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1281,6 +1348,15 @@
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
 								<dcsset:field>УдержаноСПревышения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
 							</dcsset:item>
 						</dcsset:selection>
 					</dcsset:column>
@@ -1442,16 +1518,25 @@
 						<dcsset:item>
 							<dcsset:field>УдержаноСПревышения</dcsset:field>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1573,6 +1658,15 @@
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
 								<dcsset:field>УдержаноСПревышения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
 							</dcsset:item>
 						</dcsset:selection>
 					</dcsset:column>
@@ -1751,16 +1845,25 @@
 						<dcsset:item>
 							<dcsset:field>УдержаноСПревышения</dcsset:field>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1906,6 +2009,15 @@
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
 								<dcsset:field>УдержаноСПревышения</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке18</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке20</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>УдержаноСПревышенияПоСтавке22</dcsset:field>
 							</dcsset:item>
 						</dcsset:selection>
 					</dcsset:column>

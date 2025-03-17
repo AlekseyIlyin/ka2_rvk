@@ -110,6 +110,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="1203ebb8-87d2-4093-a4a8-911404017942">
+    <name>НастройкиЗагрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2024 (кв.1)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="9df38b57-90de-41cb-80ca-5c95ba119fba">
     <name>НастройкиСравнения2015Кв4</name>
     <synonym>
@@ -131,6 +139,14 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения отчетов 2021 (кв.2)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="16fb187c-059a-44dd-b8f8-e4191aa95701">
+    <name>НастройкиСравнения2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения отчетов 2024 (кв.1)</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -176,6 +192,20 @@
       <value>Титульный лист</value>
     </synonym>
   </templates>
+  <templates uuid="a64bfea0-b870-48d4-ad16-2618b7bef769">
+    <name>ПечатныйБланк2024Кв1_Реестр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр</value>
+    </synonym>
+  </templates>
+  <templates uuid="aba6d156-5260-4297-a088-d939be0800e7">
+    <name>ПечатныйБланк2024Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
   <templates uuid="5b38fa59-9d11-4dc0-b357-1197a4bdabef">
     <name>СпискиВыбора2015Кв4</name>
     <synonym>
@@ -192,6 +222,13 @@
   </templates>
   <templates uuid="1fb63413-b3ae-475b-9964-a74f6c35ca5e">
     <name>СпискиВыбора2021Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора значений</value>
+    </synonym>
+  </templates>
+  <templates uuid="7c48c562-1698-461b-b4a2-7c62b5a88e8b">
+    <name>СпискиВыбора2024Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Списки выбора значений</value>
@@ -239,6 +276,20 @@
       <value>Схема выгрузки</value>
     </synonym>
   </templates>
+  <templates uuid="65b7632d-98cc-4b7b-af5d-ceaaa7179681">
+    <name>СхемаВыгрузки504_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
+  <templates uuid="9a4781ac-95a3-4a80-a01c-227c9cc9d277">
+    <name>СхемаВыгрузки504_2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
   <templates uuid="c64b718f-405c-47e2-b3e4-e9d3fb064a2c">
     <name>ФормаОтчета2015Кв4_Реестр</name>
     <synonym>
@@ -279,57 +330,6 @@
     <synonym>
       <key>ru</key>
       <value>Титульный лист</value>
-    </synonym>
-  </templates>
-  <templates uuid="1203ebb8-87d2-4093-a4a8-911404017942">
-    <name>НастройкиЗагрузкиXML2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки из файла XML 2024 (кв.1)</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="16fb187c-059a-44dd-b8f8-e4191aa95701">
-    <name>НастройкиСравнения2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки сравнения отчетов 2024 (кв.1)</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="a64bfea0-b870-48d4-ad16-2618b7bef769">
-    <name>ПечатныйБланк2024Кв1_Реестр</name>
-    <synonym>
-      <key>ru</key>
-      <value>Реестр</value>
-    </synonym>
-  </templates>
-  <templates uuid="aba6d156-5260-4297-a088-d939be0800e7">
-    <name>ПечатныйБланк2024Кв1_Титульный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Титульный лист</value>
-    </synonym>
-  </templates>
-  <templates uuid="7c48c562-1698-461b-b4a2-7c62b5a88e8b">
-    <name>СпискиВыбора2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора значений</value>
-    </synonym>
-  </templates>
-  <templates uuid="65b7632d-98cc-4b7b-af5d-ceaaa7179681">
-    <name>СхемаВыгрузки504_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки</value>
-    </synonym>
-  </templates>
-  <templates uuid="9a4781ac-95a3-4a80-a01c-227c9cc9d277">
-    <name>СхемаВыгрузки504_2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки</value>
     </synonym>
   </templates>
   <templates uuid="062451de-b66d-4214-a01a-16428a4017dd">

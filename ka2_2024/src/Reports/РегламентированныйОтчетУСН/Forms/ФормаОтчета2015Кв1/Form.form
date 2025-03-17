@@ -762,7 +762,7 @@
     <horizontalStretch>true</horizontalStretch>
     <verticalStretch>false</verticalStretch>
     <extendedTooltip>
-      <name>ГруппаПанельОтправкиExtendedTooltip</name>
+      <name>ГруппаПанельОтправкиРасширеннаяПодсказка</name>
       <id>12153</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -802,7 +802,7 @@
       <value>Реквизиты</value>
     </toolTip>
     <extendedTooltip>
-      <name>РеквизитыExtendedTooltip</name>
+      <name>РеквизитыРасширеннаяПодсказка</name>
       <id>137</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -852,7 +852,7 @@
           <segments>РазделыОтчета.КолонкаРазделыОтчета</segments>
         </dataPath>
         <extendedTooltip>
-          <name>РазделыОтчетаКолонкаРазделыОтчетаExtendedTooltip</name>
+          <name>РазделыОтчетаКолонкаРазделыОтчетаРасширеннаяПодсказка</name>
           <id>145</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1023,7 +1023,7 @@
         </extInfo>
       </searchControlAddition>
       <extendedTooltip>
-        <name>РазделыОтчетаExtendedTooltip</name>
+        <name>РазделыОтчетаРасширеннаяПодсказка</name>
         <id>144</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1085,7 +1085,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ТабличныйДокументExtendedTooltip</name>
+          <name>ТабличныйДокументРасширеннаяПодсказка</name>
           <id>147</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1301,7 +1301,7 @@
         <value>Страница отчета</value>
       </toolTip>
       <extendedTooltip>
-        <name>СтраницаОтчетаExtendedTooltip</name>
+        <name>СтраницаОтчетаРасширеннаяПодсказка</name>
         <id>146</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1338,7 +1338,7 @@
       <value>Отчет</value>
     </toolTip>
     <extendedTooltip>
-      <name>ОтчетExtendedTooltip</name>
+      <name>ОтчетРасширеннаяПодсказка</name>
       <id>143</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1379,7 +1379,7 @@
         <name>КомментарийПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>КомментарийExtendedTooltip</name>
+        <name>КомментарийРасширеннаяПодсказка</name>
         <id>149</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1430,7 +1430,7 @@
       <value>Подвал</value>
     </toolTip>
     <extendedTooltip>
-      <name>ПодвалExtendedTooltip</name>
+      <name>ПодвалРасширеннаяПодсказка</name>
       <id>148</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -2078,7 +2078,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>ЗагрузитьExtendedTooltip</name>
+          <name>ЗагрузитьРасширеннаяПодсказка</name>
           <id>12</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2130,7 +2130,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОбновитьExtendedTooltip</name>
+        <name>ОбновитьРасширеннаяПодсказка</name>
         <id>130</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2162,7 +2162,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОткрытьФормуНастроекExtendedTooltip</name>
+        <name>ОткрытьФормуНастроекРасширеннаяПодсказка</name>
         <id>129</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -4933,6 +4933,41 @@
       <numberQualifiers>
         <precision>10</precision>
       </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>АдресХранилища</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес хранилища</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИдентификаторЗадания</name>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>UUID</types>
     </valueType>
     <view>
       <common>true</common>

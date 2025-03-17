@@ -189,7 +189,7 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>ПарольПользователяУчетнойСистеимы</name>
+        <name>ПарольПользователяУчетнойСистемы</name>
         <id>28</id>
         <title>
           <key>ru</key>
@@ -205,16 +205,11 @@
         </dataPath>
         <handlers>
           <event>OnChange</event>
-          <name>ПарольПользователяУчетнойСистеимыПриИзменении</name>
+          <name>ПарольПользователяУчетнойСистемыПриИзменении</name>
         </handlers>
         <extendedTooltip>
-          <name>ПарольПользователяУчетнойСистеимыРасширеннаяПодсказка</name>
+          <name>ПарольПользователяУчетнойСистемыРасширеннаяПодсказка</name>
           <id>30</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -223,13 +218,8 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ПарольПользователяУчетнойСистеимыКонтекстноеМеню</name>
+          <name>ПарольПользователяУчетнойСистемыКонтекстноеМеню</name>
           <id>29</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>

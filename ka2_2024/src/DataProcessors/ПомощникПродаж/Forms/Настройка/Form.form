@@ -3424,7 +3424,7 @@
                   </extInfo>
                 </items>
                 <items xsi:type="form:Decoration">
-                  <name>ДекорацияЗаказКлиента1</name>
+                  <name>ДекорацияЗаказКлиентаЗаказРеализация</name>
                   <id>526</id>
                   <title>
                     <key>ru</key>
@@ -3435,13 +3435,8 @@
                     <common>true</common>
                   </userVisible>
                   <extendedTooltip>
-                    <name>ДекорацияЗаказКлиента1РасширеннаяПодсказка</name>
+                    <name>ДекорацияЗаказКлиентаЗаказРеализацияРасширеннаяПодсказка</name>
                     <id>528</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
                     <type>Label</type>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -3450,13 +3445,8 @@
                     </extInfo>
                   </extendedTooltip>
                   <contextMenu>
-                    <name>ДекорацияЗаказКлиента1КонтекстноеМеню</name>
+                    <name>ДекорацияЗаказКлиентаЗаказРеализацияКонтекстноеМеню</name>
                     <id>527</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>Label</type>
@@ -5407,6 +5397,39 @@
               <items xsi:type="form:FormGroup">
                 <name>ГруппаЗаказКлиентаСоздаватьПечататьЗаказКлиентаПередачаТоваровХранителю</name>
                 <id>445</id>
+                <items xsi:type="form:Decoration">
+                  <name>ДекорацияЗаказКлиентаЗаказПередача</name>
+                  <id>574</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Заказ клиента</value>
+                  </title>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ДекорацияЗаказКлиентаЗаказПередачаРасширеннаяПодсказка</name>
+                    <id>576</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ДекорацияЗаказКлиентаЗаказПередачаКонтекстноеМеню</name>
+                    <id>575</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </items>
                 <items xsi:type="form:FormField">
                   <name>СтатусЗаказКлиентаПередачаТоваровХранителю</name>
                   <id>447</id>

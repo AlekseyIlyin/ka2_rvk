@@ -4272,6 +4272,7 @@
                 <dataPath xsi:type="form:DataPath">
                   <segments>Доходы</segments>
                 </dataPath>
+                <titleLocation>None</titleLocation>
                 <extendedTooltip>
                   <name>ДоходыРасширеннаяПодсказка</name>
                   <id>995</id>
@@ -4320,7 +4321,7 @@
                 </dataPath>
                 <toolTip>
                   <key>ru</key>
-                  <value>по умолчанию считается в пределах 100 человек</value>
+                  <value>по умолчанию считается в пределах %1 человек</value>
                 </toolTip>
                 <toolTipRepresentation>Button</toolTipRepresentation>
                 <extendedTooltip>

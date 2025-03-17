@@ -437,6 +437,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.КоллекцияРезультатыВыполненияДействий</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -491,6 +495,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ОтветственныйИсполнитель</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -653,6 +661,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ЗамокЗащищенныйУчастник</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -777,6 +789,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>StdPicture.Document</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -1941,26 +1957,65 @@
                   <textEdit>true</textEdit>
                 </extInfo>
               </items>
-              <items xsi:type="form:FormField">
-                <name>ПодписыватьРезолюцииЭП</name>
-                <id>529</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:DataPath">
-                  <segments>ПодписыватьРезолюцииЭП</segments>
-                </dataPath>
-                <titleLocation>Right</titleLocation>
-                <extendedTooltip>
-                  <name>ПодписыватьРезолюцииЭПРасширеннаяПодсказка</name>
-                  <id>531</id>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаНастройкиФлагов</name>
+                <id>586</id>
+                <items xsi:type="form:FormField">
+                  <name>ПодписыватьРезолюцииЭП</name>
+                  <id>529</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>ПодписыватьРезолюцииЭП</segments>
+                  </dataPath>
+                  <titleLocation>Right</titleLocation>
+                  <extendedTooltip>
+                    <name>ПодписыватьРезолюцииЭПРасширеннаяПодсказка</name>
+                    <id>531</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПодписыватьРезолюцииЭПКонтекстноеМеню</name>
+                    <id>530</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>CheckBoxField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа настройки флагов</value>
+                </title>
+                <extendedTooltip>
+                  <name>ГруппаНастройкиФлаговРасширеннаяПодсказка</name>
+                  <id>587</id>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -1968,22 +2023,14 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <contextMenu>
-                  <name>ПодписыватьРезолюцииЭПКонтекстноеМеню</name>
-                  <id>530</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>CheckBoxField</type>
-                <editMode>Enter</editMode>
-                <showInHeader>true</showInHeader>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>Vertical</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
               </items>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2702,7 +2749,7 @@
         <id>185</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -5179,6 +5226,24 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ОсновнойПредмет</name>
+    <title>
+      <key>ru</key>
+      <value>Основной предмет</value>
+    </title>
+    <id>64</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Готово</name>
     <title>
@@ -5497,6 +5562,13 @@
   </parameters>
   <parameters>
     <name>ОсновнойПредметТип</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОсновнойПредмет</name>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

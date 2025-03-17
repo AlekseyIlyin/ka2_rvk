@@ -373,6 +373,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
+            <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
           </items>
           <items xsi:type="form:FormGroup">
             <name>ГруппаРегистрУчета</name>
@@ -686,6 +687,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
+            <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
           </items>
           <items xsi:type="form:Button">
             <name>ПоказатьНастройкиВсеДействия</name>
@@ -716,6 +718,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
+            <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
           </items>
           <items xsi:type="form:Button">
             <name>КнопкаОткрытьНовоеОкноВсеДействия</name>
@@ -746,6 +749,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
+            <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
           </items>
           <items xsi:type="form:FormGroup">
             <name>ГруппаСохранитьЗагрузить</name>
@@ -780,6 +784,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <items xsi:type="form:Button">
               <name>СохранитьНастройкиОтчета</name>
@@ -811,6 +816,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -874,6 +880,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <items xsi:type="form:Button">
               <name>СохранитьРегистрУчетаИПодписатьЭЦПВсеДействия</name>
@@ -904,6 +911,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <items xsi:type="form:Button">
               <name>СписокРегистровБухгалтерскогоУчетаВсеДействия</name>
@@ -934,6 +942,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1034,6 +1043,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <items xsi:type="form:Button">
               <name>Справка</name>
@@ -1065,6 +1075,7 @@
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <representationInContextMenu>Auto</representationInContextMenu>
+              <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1873,10 +1884,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ОтборыSearchString</name>
+                <name>ОтборыСтрокаПоиска</name>
                 <id>613</id>
                 <extendedTooltip>
-                  <name>ОтборыSearchStringExtendedTooltip</name>
+                  <name>ОтборыСтрокаПоискаРасширеннаяПодсказка</name>
                   <id>615</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -1891,7 +1902,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ОтборыSearchStringContextMenu</name>
+                  <name>ОтборыСтрокаПоискаКонтекстноеМеню</name>
                   <id>614</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -1911,10 +1922,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ОтборыViewStatus</name>
+                <name>ОтборыСостояниеПросмотра</name>
                 <id>616</id>
                 <extendedTooltip>
-                  <name>ОтборыViewStatusExtendedTooltip</name>
+                  <name>ОтборыСостояниеПросмотраРасширеннаяПодсказка</name>
                   <id>618</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -1929,7 +1940,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ОтборыViewStatusContextMenu</name>
+                  <name>ОтборыСостояниеПросмотраКонтекстноеМеню</name>
                   <id>617</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -1951,10 +1962,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ОтборыSearchControl</name>
+                <name>ОтборыУправлениеПоиском</name>
                 <id>619</id>
                 <extendedTooltip>
-                  <name>ОтборыSearchControlExtendedTooltip</name>
+                  <name>ОтборыУправлениеПоискомРасширеннаяПодсказка</name>
                   <id>621</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -1969,7 +1980,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ОтборыSearchControlContextMenu</name>
+                  <name>ОтборыУправлениеПоискомКонтекстноеМеню</name>
                   <id>620</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2565,10 +2576,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>УсловноеОформлениеSearchString</name>
+                <name>УсловноеОформлениеСтрокаПоиска</name>
                 <id>641</id>
                 <extendedTooltip>
-                  <name>УсловноеОформлениеSearchStringExtendedTooltip</name>
+                  <name>УсловноеОформлениеСтрокаПоискаРасширеннаяПодсказка</name>
                   <id>643</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2583,7 +2594,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>УсловноеОформлениеSearchStringContextMenu</name>
+                  <name>УсловноеОформлениеСтрокаПоискаКонтекстноеМеню</name>
                   <id>642</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2603,10 +2614,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>УсловноеОформлениеViewStatus</name>
+                <name>УсловноеОформлениеСостояниеПросмотра</name>
                 <id>644</id>
                 <extendedTooltip>
-                  <name>УсловноеОформлениеViewStatusExtendedTooltip</name>
+                  <name>УсловноеОформлениеСостояниеПросмотраРасширеннаяПодсказка</name>
                   <id>646</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2621,7 +2632,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>УсловноеОформлениеViewStatusContextMenu</name>
+                  <name>УсловноеОформлениеСостояниеПросмотраКонтекстноеМеню</name>
                   <id>645</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2643,10 +2654,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>УсловноеОформлениеSearchControl</name>
+                <name>УсловноеОформлениеУправлениеПоиском</name>
                 <id>647</id>
                 <extendedTooltip>
-                  <name>УсловноеОформлениеSearchControlExtendedTooltip</name>
+                  <name>УсловноеОформлениеУправлениеПоискомРасширеннаяПодсказка</name>
                   <id>649</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -2661,7 +2672,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>УсловноеОформлениеSearchControlContextMenu</name>
+                  <name>УсловноеОформлениеУправлениеПоискомКонтекстноеМеню</name>
                   <id>648</id>
                   <visible>true</visible>
                   <enabled>true</enabled>

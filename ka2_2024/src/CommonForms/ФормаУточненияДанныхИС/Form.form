@@ -2294,10 +2294,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ТаблицаСтрокаПоиска</name>
+              <name>ДанныеДокументаСтрокаПоиска</name>
               <id>150</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>ТаблицаСтрокаПоискаРасширеннаяПодсказка</name>
                 <id>152</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -2312,7 +2312,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>ТаблицаСтрокаПоискаКонтекстноеМеню</name>
                 <id>151</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -2332,10 +2332,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>Addition</name>
+              <name>ДанныеДокументаСостояниеПросмотра</name>
               <id>156</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>ДанныеДокументаСостояниеПросмотраРасширеннаяПодсказка</name>
                 <id>158</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -2350,7 +2350,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>ДанныеДокументаСостояниеПросмотраКонтекстноеМеню</name>
                 <id>157</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -2372,10 +2372,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ТаблицаУправлениеПоиском</name>
+              <name>ДанныеДокументаУправлениеПоиском</name>
               <id>153</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>ДанныеДокументаУправлениеПоискомРасширеннаяПодсказка</name>
                 <id>155</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -2390,7 +2390,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>ДанныеДокументаУправлениеПоискомКонтекстноеМеню</name>
                 <id>154</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -3047,6 +3047,7 @@
   </handlers>
   <width>41</width>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>

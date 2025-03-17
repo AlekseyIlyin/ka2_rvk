@@ -229,26 +229,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="ce0d4416-9083-47d2-9ac4-20bebe7a8b22">
-    <name>Резерв</name>
-    <synonym>
-      <key>ru</key>
-      <value>Резерв</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="b1640808-e7c6-4807-936d-bd90cf45049d">
     <name>Свободно</name>
     <synonym>
@@ -298,6 +278,26 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ce0d4416-9083-47d2-9ac4-20bebe7a8b22">
+    <name>РезервироватьНаСкладеПоВсемЗаказамСводно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резервировать на складе по всем заказам сводно</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>

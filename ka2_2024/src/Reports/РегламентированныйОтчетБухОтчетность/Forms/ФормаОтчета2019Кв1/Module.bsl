@@ -466,8 +466,10 @@
 			СсылкаНаСайтМинфина = "https://buh.ru/articles/documents/103596/";
 		ИначеЕсли СтруктураРеквизитовФормы.мДатаКонцаПериодаОтчета < '2023-01-01' Тогда
 			СсылкаНаСайтМинфина = "https://buh.ru/articles/documents/127590/";
-		Иначе
+		ИначеЕсли СтруктураРеквизитовФормы.мДатаКонцаПериодаОтчета < '2024-01-01' Тогда
 			СсылкаНаСайтМинфина = "https://buh.ru/news/kakie-kompanii-dolzhny-provesti-obyazatelnyy-audit-otchetnosti-za-2023-god.html";
+		Иначе
+			СсылкаНаСайтМинфина = "https://buh.ru/news/opublikovan-perechen-sluchaev-provedeniya-obyazatelnogo-audita-otchetnosti-za-2024-god.html";
 		КонецЕсли;
 		ОнлайнСервисыРегламентированнойОтчетностиКлиент.ПопытатьсяПерейтиПоНавигационнойСсылке(СсылкаНаСайтМинфина);
 	КонецЕсли;

@@ -252,17 +252,6 @@
               <segments>СписокНоменклатура</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
-            <excludedCommands>Change</excludedCommands>
-            <excludedCommands>DynamicListStandardSettings</excludedCommands>
-            <excludedCommands>HierarchicalList</excludedCommands>
-            <excludedCommands>LevelDown</excludedCommands>
-            <excludedCommands>LevelUp</excludedCommands>
-            <excludedCommands>List</excludedCommands>
-            <excludedCommands>ListSettings</excludedCommands>
-            <excludedCommands>LoadDynamicListSettings</excludedCommands>
-            <excludedCommands>MoveItem</excludedCommands>
-            <excludedCommands>SaveDynamicListSettings</excludedCommands>
-            <excludedCommands>Tree</excludedCommands>
             <items xsi:type="form:FormField">
               <name>ТаблицаТоваровНоменклатура</name>
               <id>117</id>
@@ -907,7 +896,7 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <commandName>Form.Item.СписокРасширенныйПоискНоменклатура.StandardCommand.Refresh</commandName>
+                  <commandName>0</commandName>
                   <representation>Auto</representation>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>

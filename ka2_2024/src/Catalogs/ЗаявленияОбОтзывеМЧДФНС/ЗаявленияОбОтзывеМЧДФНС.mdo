@@ -1140,6 +1140,43 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="47b54900-aa42-4404-81a2-95fa9939a03d">
+    <name>ДоверительФЛ_НомЕРН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЕРН доверителя-физлица </value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="77cf2c4d-2ea1-4c5c-a08c-707728113836">
+    <name>ЛицоБезДовФЛ_НомЕРН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЕРН лица без доверенности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="01f5118f-be4a-4cec-bb63-d64aa543b804">
     <producedTypes>
       <objectType typeId="d1f8e1d2-9e00-4c02-af91-bd8c35286821" valueTypeId="f18fcc1d-e9c0-4ab5-9b8e-47c07fa8a84f"/>
@@ -1706,6 +1743,23 @@
       </synonym>
       <type>
         <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8385dc23-9865-4ea5-aa40-25648b4ed3da">
+      <name>ПредставительФЛ_НомЕРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ЕРН представителя-физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

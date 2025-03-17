@@ -2010,6 +2010,81 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
+          <name>НачисленияГруппаПериодРасчетаСреднего</name>
+          <id>2133</id>
+          <items xsi:type="form:FormField">
+            <name>НачисленияПериодРасчетаСреднегоЗаработка</name>
+            <id>2135</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.Начисления.ПериодРасчетаСреднегоЗаработка</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>НачисленияПериодРасчетаСреднегоЗаработкаРасширеннаяПодсказка</name>
+              <id>2137</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НачисленияПериодРасчетаСреднегоЗаработкаКонтекстноеМеню</name>
+              <id>2136</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>EnterOnInput</editMode>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>15</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>false</horizontalStretch>
+              <wrap>true</wrap>
+              <extendedEditMultipleValues>true</extendedEditMultipleValues>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ЗаблокированныйРеквизитЦвет</color>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <scale>100</scale>
+              </font>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible/>
+          <title>
+            <key>ru</key>
+            <value>Период сохр.заработка</value>
+          </title>
+          <readOnly>true</readOnly>
+          <extendedTooltip>
+            <name>НачисленияГруппаПериодРасчетаСреднегоРасширеннаяПодсказка</name>
+            <id>2134</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <showTitle>true</showTitle>
+            <showInHeader>true</showInHeader>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
           <name>ДатыНачисления</name>
           <id>286</id>
           <items xsi:type="form:FormGroup">
@@ -2299,33 +2374,125 @@
               <textEdit>true</textEdit>
             </extInfo>
           </items>
-          <items xsi:type="form:FormField">
-            <name>НачисленияНормативОтчисленийВРезерв</name>
-            <id>2045</id>
-            <title>
-              <key>ru</key>
-              <value>%</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.Начисления.НормативОтчисленийВРезерв</segments>
-            </dataPath>
-            <toolTip>
-              <key>ru</key>
-              <value>Норматив</value>
-            </toolTip>
-            <extendedTooltip>
-              <name>НачисленияНормативОтчисленийВРезервРасширеннаяПодсказка</name>
-              <id>2047</id>
+          <items xsi:type="form:FormGroup">
+            <name>НачисленияГруппаНачисленияНормативОтчисленийВРезерв</name>
+            <id>2141</id>
+            <items xsi:type="form:FormField">
+              <name>НачисленияНормативОтчисленийВРезерв</name>
+              <id>2045</id>
+              <title>
+                <key>ru</key>
+                <value>% БУ</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.Начисления.НормативОтчисленийВРезерв</segments>
+              </dataPath>
+              <toolTip>
+                <key>ru</key>
+                <value>Норматив</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>НачисленияНормативОтчисленийВРезервРасширеннаяПодсказка</name>
+                <id>2047</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>НачисленияНормативОтчисленийВРезервКонтекстноеМеню</name>
+                <id>2046</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>EnterOnInput</editMode>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>5</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>false</horizontalStretch>
+                <wrap>true</wrap>
+                <markNegatives>true</markNegatives>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>НачисленияНормативОтчисленийВРезервНУ</name>
+              <id>2138</id>
+              <title>
+                <key>ru</key>
+                <value>% НУ</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.Начисления.НормативОтчисленийВРезервНУ</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>НачисленияНормативОтчисленийВРезервНУРасширеннаяПодсказка</name>
+                <id>2140</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>НачисленияНормативОтчисленийВРезервНУКонтекстноеМеню</name>
+                <id>2139</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>EnterOnInput</editMode>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>%</value>
+            </title>
+            <extendedTooltip>
+              <name>НачисленияГруппаНачисленияНормативОтчисленийВРезервРасширеннаяПодсказка</name>
+              <id>2142</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2333,31 +2500,11 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <contextMenu>
-              <name>НачисленияНормативОтчисленийВРезервКонтекстноеМеню</name>
-              <id>2046</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <width>5</width>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>false</horizontalStretch>
-              <wrap>true</wrap>
-              <markNegatives>true</markNegatives>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
+            <type>ColumnGroup</type>
+            <extInfo xsi:type="form:ColumnGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+              <showInHeader>true</showInHeader>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -3578,25 +3725,113 @@
                   <textEdit>true</textEdit>
                 </extInfo>
               </items>
-              <items xsi:type="form:FormField">
-                <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносы</name>
-                <id>2058</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.Взносы.НормативОтчисленийВРезервСтраховыеВзносы</segments>
-                </dataPath>
-                <extendedTooltip>
-                  <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыРасширеннаяПодсказка</name>
-                  <id>2060</id>
+              <items xsi:type="form:FormGroup">
+                <name>ВзносыГруппаНормативОтчисленийСтраховыеВзносы</name>
+                <id>2143</id>
+                <items xsi:type="form:FormField">
+                  <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносы</name>
+                  <id>2058</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.Взносы.НормативОтчисленийВРезервСтраховыеВзносы</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыРасширеннаяПодсказка</name>
+                    <id>2060</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыКонтекстноеМеню</name>
+                    <id>2059</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>5</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <horizontalStretch>false</horizontalStretch>
+                    <wrap>true</wrap>
+                    <markNegatives>true</markNegatives>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыНУ</name>
+                  <id>2145</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.Взносы.НормативОтчисленийВРезервСтраховыеВзносыНУ</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыНУРасширеннаяПодсказка</name>
+                    <id>2147</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыНУКонтекстноеМеню</name>
+                    <id>2146</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>%</value>
+                </title>
+                <extendedTooltip>
+                  <name>ВзносыГруппаНормативОтчисленийСтраховыеВзносыРасширеннаяПодсказка</name>
+                  <id>2144</id>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -3604,30 +3839,10 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <contextMenu>
-                  <name>ВзносыНормативОтчисленийВРезервСтраховыеВзносыКонтекстноеМеню</name>
-                  <id>2059</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>InputField</type>
-                <editMode>EnterOnInput</editMode>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:InputFieldExtInfo">
-                  <width>5</width>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <horizontalStretch>false</horizontalStretch>
-                  <wrap>true</wrap>
-                  <markNegatives>true</markNegatives>
-                  <chooseType>true</chooseType>
-                  <typeDomainEnabled>true</typeDomainEnabled>
-                  <textEdit>true</textEdit>
+                <type>ColumnGroup</type>
+                <extInfo xsi:type="form:ColumnGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -3817,25 +4032,113 @@
                   <textEdit>true</textEdit>
                 </extInfo>
               </items>
-              <items xsi:type="form:FormField">
-                <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаи</name>
-                <id>2063</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.Взносы.НормативОтчисленийВРезервФССНесчастныеСлучаи</segments>
-                </dataPath>
-                <extendedTooltip>
-                  <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиРасширеннаяПодсказка</name>
-                  <id>2065</id>
+              <items xsi:type="form:FormGroup">
+                <name>ВзносыГруппаНормативОтчисленийФССНесчастнчеСлучаи</name>
+                <id>2148</id>
+                <items xsi:type="form:FormField">
+                  <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаи</name>
+                  <id>2063</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.Взносы.НормативОтчисленийВРезервФССНесчастныеСлучаи</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиРасширеннаяПодсказка</name>
+                    <id>2065</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиКонтекстноеМеню</name>
+                    <id>2064</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>5</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <horizontalStretch>false</horizontalStretch>
+                    <wrap>true</wrap>
+                    <markNegatives>true</markNegatives>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиНУ</name>
+                  <id>2150</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.Взносы.НормативОтчисленийВРезервФССНесчастныеСлучаиНУ</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиНУРасширеннаяПодсказка</name>
+                    <id>2152</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиНУКонтекстноеМеню</name>
+                    <id>2151</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>%</value>
+                </title>
+                <extendedTooltip>
+                  <name>ВзносыГруппаНормативОтчисленийФССНесчастнчеСлучаиРасширеннаяПодсказка</name>
+                  <id>2149</id>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -3843,30 +4146,10 @@
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
-                <contextMenu>
-                  <name>ВзносыНормативОтчисленийВРезервФССНесчастныеСлучаиКонтекстноеМеню</name>
-                  <id>2064</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>InputField</type>
-                <editMode>EnterOnInput</editMode>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:InputFieldExtInfo">
-                  <width>5</width>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <horizontalStretch>false</horizontalStretch>
-                  <wrap>true</wrap>
-                  <markNegatives>true</markNegatives>
-                  <chooseType>true</chooseType>
-                  <typeDomainEnabled>true</typeDomainEnabled>
-                  <textEdit>true</textEdit>
+                <type>ColumnGroup</type>
+                <extInfo xsi:type="form:ColumnGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -8938,16 +9221,16 @@
     </items>
     <items xsi:type="form:FormGroup">
       <name>ГруппаДополнительно</name>
-      <id>2127</id>
+      <id>4127</id>
       <items xsi:type="form:FormGroup">
         <name>ГруппаПрочиеДоходыИРасходы</name>
-        <id>2133</id>
+        <id>4133</id>
         <items xsi:type="form:FormGroup">
           <name>ГруппаПрочиеДоходы</name>
-          <id>2131</id>
+          <id>4131</id>
           <items xsi:type="form:FormField">
             <name>СтатьяДоходов</name>
-            <id>2135</id>
+            <id>4135</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -8962,7 +9245,7 @@
             </handlers>
             <extendedTooltip>
               <name>СтатьяДоходовРасширеннаяПодсказка</name>
-              <id>2137</id>
+              <id>4137</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -8977,7 +9260,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>СтатьяДоходовКонтекстноеМеню</name>
-              <id>2136</id>
+              <id>4136</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -9005,7 +9288,7 @@
           </items>
           <items xsi:type="form:FormField">
             <name>АналитикаДоходов</name>
-            <id>2141</id>
+            <id>4141</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -9020,7 +9303,7 @@
             </handlers>
             <extendedTooltip>
               <name>АналитикаДоходовРасширеннаяПодсказка</name>
-              <id>2143</id>
+              <id>4143</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -9035,7 +9318,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>АналитикаДоходовКонтекстноеМеню</name>
-              <id>2142</id>
+              <id>4142</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -9068,7 +9351,7 @@
           </title>
           <extendedTooltip>
             <name>ГруппаПрочиеДоходыРасширеннаяПодсказка</name>
-            <id>2132</id>
+            <id>4132</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -9102,7 +9385,7 @@
         </title>
         <extendedTooltip>
           <name>ГруппаПрочиеДоходыИРасходыРасширеннаяПодсказка</name>
-          <id>2134</id>
+          <id>4134</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -9136,7 +9419,7 @@
       </title>
       <extendedTooltip>
         <name>ГруппаДополнительноРасширеннаяПодсказка</name>
-        <id>2128</id>
+        <id>4128</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -10542,6 +10825,26 @@
         <id>32</id>
         <valueType>
           <types>EnumRef.СпособыРасчетаНачислений</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ПериодРасчетаСреднегоЗаработка</name>
+        <title>
+          <key>ru</key>
+          <value>Период расчета среднего заработка</value>
+        </title>
+        <id>34</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>21</length>
+          </stringQualifiers>
         </valueType>
         <view>
           <common>true</common>

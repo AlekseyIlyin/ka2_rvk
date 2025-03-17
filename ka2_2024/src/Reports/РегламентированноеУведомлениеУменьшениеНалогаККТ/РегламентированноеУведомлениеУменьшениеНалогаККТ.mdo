@@ -20,6 +20,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="238c7ce0-cefd-4149-a312-8f4115829657">
+    <name>Форма2024_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об уменьшении суммы налога на расходов по приобретению ККТ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="bdeea70b-b3af-4ef8-80e8-1b64b6be6d11">
     <name>Печать_Форма2018_1_Титульная</name>
     <synonym>
@@ -41,11 +50,39 @@
       <value>Печать форма2018 1 лист Б</value>
     </synonym>
   </templates>
+  <templates uuid="886dfb9a-4a89-40f9-b16e-bd9047e4b3cc">
+    <name>Печать_Форма2024_1_Титульная</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="df8d6451-5973-451c-b83f-3baf683eaa45">
+    <name>Печать_Форма2024_1_ЛистА</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="cddc21fb-6d35-4f02-99c4-04d11ff42c17">
+    <name>Печать_Форма2024_1_ЛистБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
   <templates uuid="d7acb01e-b1e4-412a-ad1a-ea66683429ca">
     <name>СхемаВыгрузкиФорма2018_1</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки форма2018 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="e9162f63-e6da-4252-89e2-170d4de4f077">
+    <name>СхемаВыгрузкиФорма2024_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
     </synonym>
   </templates>
   <templates uuid="bbdba890-ebfa-4287-a954-a263597d2ea8">
@@ -76,6 +113,34 @@
       <value>Форма2018 1 лист Б</value>
     </synonym>
   </templates>
+  <templates uuid="3b7e8afb-1468-4474-99ca-602b6e3bfd03">
+    <name>Форма2024_1_Титульная</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="7a4b2e19-8ea9-4344-809d-cb4dc39bf485">
+    <name>Форма2024_1_СвПрККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="7af30a89-f8d9-49f6-bc45-8bb9b89ba393">
+    <name>Форма2024_1_УмСумНалПрККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="c64d58d4-5cde-4365-89b3-8cc8d37b3326">
+    <name>Форма2024_1_СвПатСумНалУм</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
   <templates uuid="4047ac68-1c7d-42b5-b546-124bab2eaa0b">
     <name>СпискиВыбора2018_1</name>
     <synonym>
@@ -83,11 +148,26 @@
       <value>Списки выбора2018 1</value>
     </synonym>
   </templates>
+  <templates uuid="17c91091-9d22-4feb-9750-48bc33b3a971">
+    <name>СпискиВыбора2024_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
   <templates uuid="a46d4397-54a1-4645-b0da-64d786a3995a">
     <name>TIFF_2018_1</name>
     <synonym>
       <key>ru</key>
       <value>1112020_5.02000_02.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="59139c67-67e3-40b5-933d-4ecda758188b">
+    <name>TIFF_2024_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1154003_5.01000_01.tif</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>

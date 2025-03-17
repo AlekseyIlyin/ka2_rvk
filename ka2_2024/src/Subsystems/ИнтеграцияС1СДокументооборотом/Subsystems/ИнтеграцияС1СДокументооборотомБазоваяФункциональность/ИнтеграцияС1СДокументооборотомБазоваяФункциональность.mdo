@@ -30,7 +30,7 @@
   <content>InformationRegister.ОбъектыИнтегрированныеС1СДокументооборотом</content>
   <content>Role.БазовыеПраваБИД</content>
   <content>Role.ИспользованиеИнтеграцииС1СДокументооборотом</content>
-  <content>ScheduledJob.ИнтеграцияС1СДокументооборотВыполнитьОбменДанными</content>
+  <content>ScheduledJob.УдалитьИнтеграцияС1СДокументооборотВыполнитьОбменДанными</content>
   <content>CommonModule.ИнтеграцияС1СДокументооборотБазоваяФункциональностьПовтИсп</content>
   <content>DataProcessor.ИнтеграцияС1СДокументооборотБазоваяФункциональность</content>
   <content>CommonModule.ИнтеграцияС1СДокументооборотБазоваяФункциональностьКлиентСервер</content>
@@ -160,5 +160,15 @@
   <content>SessionParameter.ИнтеграцияС1СДокументооборотСхемаXML</content>
   <content>CommonPicture.УстановитьСебяПроверяющим</content>
   <content>CommonPicture.ДобавитьУчастников</content>
+  <content>ScheduledJob.ОбменДаннымиС1СДокументооборотом</content>
+  <content>InformationRegister.ДанныеУзлов1СДокументооборота</content>
+  <content>InformationRegister.СоответствиеПользователейУзлам1СДокументооборота</content>
+  <content>SessionParameter.ИнтеграцияС1СДокументооборотУзел</content>
+  <content>CommonPicture.СменитьУзел</content>
+  <content>CommonPicture.ЗакрепитьУзел</content>
+  <content>CommonPicture.ОткрепитьУзел</content>
+  <content>CommonPicture.КоллекцияАктивностьУзлов</content>
+  <content>CommonPicture.СерыйКруг</content>
+  <content>Enum.ТипыРасположенияИнформационнойБазы</content>
   <parentSubsystem>Subsystem.ИнтеграцияС1СДокументооборотом</parentSubsystem>
 </mdclass:Subsystem>

@@ -236,6 +236,13 @@
         <value></value>
       </code>
     </items>
+    <items id="6eeb2933-bfc9-4102-a33c-f7af7bf154d4">
+      <name>УчастникиТехнополиса</name>
+      <description>Организации-участники Технополиса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
     <items id="905e37b9-c5fb-4611-b672-de941f2437c2">
       <name>ОрганизацииКурильскихОстровов</name>
       <description>Организации, зарегистрированные на Курильских островах</description>
@@ -563,6 +570,66 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52953546-52f0-435e-bda6-e2d4e00e650f">
+    <name>ОсновнаяКатегорияЗЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная категория ЗЛ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5ab74206-a1d9-4d5a-bb8e-3fe5e554adce">
+    <name>ВременноПроживающие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временно проживающие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c4fc6af-6031-462a-abf6-35407c5af9df">
+    <name>ВременноПребывающие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временно пребывающие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

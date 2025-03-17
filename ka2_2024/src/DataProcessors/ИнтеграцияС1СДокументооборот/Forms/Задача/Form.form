@@ -3868,6 +3868,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияПиктограммСостоянияЗадач</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -3920,6 +3924,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>StdPicture.User</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -4237,6 +4245,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>StdPicture.ExecuteTask</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5218,6 +5230,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.КоллекцияВариантыВажности</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -5274,6 +5290,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>StdPicture.ExecuteTask</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -10431,7 +10451,6 @@
         <name>ПринятьКИсполнению</name>
       </handler>
     </action>
-    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -10704,7 +10723,6 @@
         <name>ОтменитьПринятиеКИсполнению</name>
       </handler>
     </action>
-    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>

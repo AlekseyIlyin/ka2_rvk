@@ -3861,6 +3861,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.КоллекцияПиктограммФайлов</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <borderColor xsi:type="core:ColorRef">
                     <color>Style.FormBackColor</color>
                   </borderColor>
@@ -5687,6 +5691,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ЭлектронныйДокументОшибкаПодписи</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -5846,10 +5854,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ТаблицаЭПСтрокаПоиска</name>
+                <name>ПодписиСтрокаПоиска</name>
                 <id>327</id>
                 <extendedTooltip>
-                  <name>ТаблицаЭПСтрокаПоискаРасширеннаяПодсказка</name>
+                  <name>ПодписиСтрокаПоискаРасширеннаяПодсказка</name>
                   <id>329</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5864,7 +5872,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ТаблицаЭПСтрокаПоискаКонтекстноеМеню</name>
+                  <name>ПодписиСтрокаПоискаКонтекстноеМеню</name>
                   <id>328</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5884,10 +5892,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ТаблицаЭПСостояниеПросмотра</name>
+                <name>ПодписиСостояниеПросмотра</name>
                 <id>330</id>
                 <extendedTooltip>
-                  <name>ТаблицаЭПСостояниеПросмотраРасширеннаяПодсказка</name>
+                  <name>ПодписиСостояниеПросмотраРасширеннаяПодсказка</name>
                   <id>332</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5902,7 +5910,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ТаблицаЭПСостояниеПросмотраКонтекстноеМеню</name>
+                  <name>ПодписиСостояниеПросмотраКонтекстноеМеню</name>
                   <id>331</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5924,10 +5932,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ТаблицаЭПУправлениеПоиском</name>
+                <name>ПодписиУправлениеПоиском</name>
                 <id>333</id>
                 <extendedTooltip>
-                  <name>ТаблицаЭПУправлениеПоискомРасширеннаяПодсказка</name>
+                  <name>ПодписиУправлениеПоискомРасширеннаяПодсказка</name>
                   <id>335</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5942,7 +5950,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ТаблицаЭПУправлениеПоискомКонтекстноеМеню</name>
+                  <name>ПодписиУправлениеПоискомКонтекстноеМеню</name>
                   <id>334</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6269,10 +6277,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ДеревоМаршрутаПодписанияСтрокаПоиска</name>
+                <name>СхемаМаршрутаПодписанияСтрокаПоиска</name>
                 <id>392</id>
                 <extendedTooltip>
-                  <name>ДеревоМаршрутаПодписанияСтрокаПоискаРасширеннаяПодсказка</name>
+                  <name>СхемаМаршрутаПодписанияСтрокаПоискаРасширеннаяПодсказка</name>
                   <id>394</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6287,7 +6295,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ДеревоМаршрутаПодписанияСтрокаПоискаКонтекстноеМеню</name>
+                  <name>СхемаМаршрутаПодписанияСтрокаПоискаКонтекстноеМеню</name>
                   <id>393</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6307,10 +6315,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ДеревоМаршрутаПодписанияСостояниеПросмотра</name>
+                <name>СхемаМаршрутаПодписанияСостояниеПросмотра</name>
                 <id>395</id>
                 <extendedTooltip>
-                  <name>ДеревоМаршрутаПодписанияСостояниеПросмотраРасширеннаяПодсказка</name>
+                  <name>СхемаМаршрутаПодписанияСостояниеПросмотраРасширеннаяПодсказка</name>
                   <id>397</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6325,7 +6333,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ДеревоМаршрутаПодписанияСостояниеПросмотраКонтекстноеМеню</name>
+                  <name>СхемаМаршрутаПодписанияСостояниеПросмотраКонтекстноеМеню</name>
                   <id>396</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6347,10 +6355,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ДеревоМаршрутаПодписанияУправлениеПоиском</name>
+                <name>СхемаМаршрутаПодписанияУправлениеПоиском</name>
                 <id>398</id>
                 <extendedTooltip>
-                  <name>ДеревоМаршрутаПодписанияУправлениеПоискомРасширеннаяПодсказка</name>
+                  <name>СхемаМаршрутаПодписанияУправлениеПоискомРасширеннаяПодсказка</name>
                   <id>400</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -6365,7 +6373,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ДеревоМаршрутаПодписанияУправлениеПоискомКонтекстноеМеню</name>
+                  <name>СхемаМаршрутаПодписанияУправлениеПоискомКонтекстноеМеню</name>
                   <id>399</id>
                   <visible>true</visible>
                   <enabled>true</enabled>

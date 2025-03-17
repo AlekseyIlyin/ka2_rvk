@@ -170,6 +170,7 @@
                 <extInfo xsi:type="form:LabelFieldExtInfo">
                   <maxWidth>36</maxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
+                  <horizontalStretch>true</horizontalStretch>
                   <hyperlink>true</hyperlink>
                 </extInfo>
               </items>
@@ -2791,6 +2792,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3395,6 +3400,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.КоллекцияПиктограммыТренда</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <visible>true</visible>

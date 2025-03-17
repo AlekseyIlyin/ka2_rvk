@@ -4006,7 +4006,7 @@
               <name>УслугиПереработчикаСтрокаПоиска</name>
               <id>596</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>УслугиПереработчикаСтрокаПоискаРасширеннаяПодсказка</name>
                 <id>598</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4021,7 +4021,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>УслугиПереработчикаСтрокаПоискаКонтекстноеМеню</name>
                 <id>597</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4044,7 +4044,7 @@
               <name>УслугиПереработчикаСостояниеПросмотра</name>
               <id>602</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>УслугиПереработчикаСостояниеПросмотраРасширеннаяПодсказка</name>
                 <id>604</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4059,7 +4059,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>УслугиПереработчикаСостояниеПросмотраКонтекстноеМеню</name>
                 <id>603</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4084,7 +4084,7 @@
               <name>УслугиПереработчикаУправлениеПоиском</name>
               <id>599</id>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>УслугиПереработчикаУправлениеПоискомРасширеннаяПодсказка</name>
                 <id>601</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4099,7 +4099,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>УслугиПереработчикаУправлениеПоискомКонтекстноеМеню</name>
                 <id>600</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5557,6 +5557,38 @@
       <value>Использовать внутреннюю переработку</value>
     </title>
     <id>44</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПараметрыПодключаемыхКоманд</name>
+    <title>
+      <key>ru</key>
+      <value>Параметры подключаемых команд</value>
+    </title>
+    <id>45</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЕстьПараллельнаяЗагрузка</name>
+    <title>
+      <key>ru</key>
+      <value>Есть параллельная загрузка</value>
+    </title>
+    <id>47</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

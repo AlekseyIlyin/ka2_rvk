@@ -6933,10 +6933,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>НачисленияSearchString</name>
+              <name>НачисленияСтрокаПоиска</name>
               <id>577</id>
               <extendedTooltip>
-                <name>НачисленияSearchStringExtendedTooltip</name>
+                <name>НачисленияСтрокаПоискаРасширеннаяПодсказка</name>
                 <id>579</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -6951,7 +6951,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>НачисленияSearchStringContextMenu</name>
+                <name>НачисленияСтрокаПоискаКонтекстноеМеню</name>
                 <id>578</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -6971,10 +6971,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>НачисленияViewStatus</name>
+              <name>НачисленияСостояниеПросмотра</name>
               <id>580</id>
               <extendedTooltip>
-                <name>НачисленияViewStatusExtendedTooltip</name>
+                <name>НачисленияViewStatusРасширеннаяПодсказка</name>
                 <id>582</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -6989,7 +6989,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>НачисленияViewStatusContextMenu</name>
+                <name>НачисленияViewStatusКонтекстноеМеню</name>
                 <id>581</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -7010,10 +7010,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>НачисленияSearchControl</name>
+              <name>НачисленияУправлениеПоиском</name>
               <id>583</id>
               <extendedTooltip>
-                <name>НачисленияSearchControlExtendedTooltip</name>
+                <name>НачисленияSearchControlРасширеннаяПодсказка</name>
                 <id>585</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -7028,7 +7028,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>НачисленияSearchControlContextMenu</name>
+                <name>НачисленияSearchControlКонтекстноеМеню</name>
                 <id>584</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -7726,10 +7726,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ПоказателиSearchString</name>
+                <name>ПоказателиСтрокаПоиска</name>
                 <id>586</id>
                 <extendedTooltip>
-                  <name>ПоказателиSearchStringExtendedTooltip</name>
+                  <name>ПоказателиСтрокаПоискаРасширеннаяПодсказка</name>
                   <id>588</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -7744,7 +7744,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ПоказателиSearchStringContextMenu</name>
+                  <name>ПоказателиSearchStringКонтекстноеМеню</name>
                   <id>587</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -7764,10 +7764,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ПоказателиViewStatus</name>
+                <name>ПоказателиСостояниеПросмотра</name>
                 <id>589</id>
                 <extendedTooltip>
-                  <name>ПоказателиViewStatusExtendedTooltip</name>
+                  <name>ПоказателиViewStatusРасширеннаяПодсказка</name>
                   <id>591</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -7782,7 +7782,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ПоказателиViewStatusContextMenu</name>
+                  <name>ПоказателиViewStatusКонтекстноеМеню</name>
                   <id>590</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -7803,10 +7803,10 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <name>ПоказателиSearchControl</name>
+                <name>ПоказателиУправлениеПоиском</name>
                 <id>592</id>
                 <extendedTooltip>
-                  <name>ПоказателиSearchControlExtendedTooltip</name>
+                  <name>ПоказателиSearchControlРасширеннаяПодсказка</name>
                   <id>594</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -7821,7 +7821,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ПоказателиSearchControlContextMenu</name>
+                  <name>ПоказателиSearchControlКонтекстноеМеню</name>
                   <id>593</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -19043,10 +19043,6 @@
     <navigationPanel>
       <cmiFragmentRecord>
         <command>CommonCommand.ИсторияИзменений</command>
-        <userVisible/>
-      </cmiFragmentRecord>
-      <cmiFragmentRecord>
-        <command>CommonCommand.ИнтеграцияС1СДокументооборот</command>
         <userVisible/>
       </cmiFragmentRecord>
       <cmiFragmentRecord>

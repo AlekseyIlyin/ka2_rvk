@@ -430,6 +430,13 @@
       <value>Ввод остатков премий клиентам</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="5fa389e6-9a43-4553-aa3a-fa358815136e">
+    <name>ВводОстатковПремийПоставщиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод остатков премий поставщиков</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="c69e735b-3d47-4c93-92f0-915832449009">
     <name>ВводОстатковПриПереходеНаИспользованиеАдресногоХраненияОстатков</name>
     <synonym>
@@ -799,7 +806,7 @@
     <name>ВозвратДенежныхСредствОтПоставщика</name>
     <synonym>
       <key>ru</key>
-      <value>Возврат ДС от поставщика</value>
+      <value>Возврат или иное поступление от поставщика</value>
     </synonym>
   </enumValues>
   <enumValues uuid="ef509232-1da3-4851-905d-57255026f072">
@@ -876,7 +883,7 @@
     <name>ВозвратОплатыКлиенту</name>
     <synonym>
       <key>ru</key>
-      <value>Возврат оплаты клиенту</value>
+      <value>Возврат или иная оплата клиенту</value>
     </synonym>
   </enumValues>
   <enumValues uuid="84ca4417-99d6-43b1-b5c8-2129589c1d6d">
@@ -1110,6 +1117,13 @@
     <synonym>
       <key>ru</key>
       <value>Выбытие арендованных ОС (забалансовый учет)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="985815df-2972-4e98-91c9-7ab8d38f1817">
+    <name>ВыбытиеРНПТМатериаловИзПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбытие РНПТ материалов из производства</value>
     </synonym>
   </enumValues>
   <enumValues uuid="d1f061a2-4b02-4bde-afba-b53034b35ae1">
@@ -2683,7 +2697,7 @@
     <name>ОприходованиеИзлишковТоваровВПользуКомитента</name>
     <synonym>
       <key>ru</key>
-      <value>Оприходование излишков товаров в пользу комитента</value>
+      <value>Оприходование излишков в пользу комитента</value>
     </synonym>
   </enumValues>
   <enumValues uuid="b0487f64-b553-4ae4-a10e-f7c942efeb6f">
@@ -2894,6 +2908,13 @@
     <synonym>
       <key>ru</key>
       <value>Отражение премии клиента (ретро-бонус)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c014b95-a185-4820-abd1-512983797eab">
+    <name>ОтражениеПремииПоставщикаРетроБонус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение премии поставщика (ретро-бонус)</value>
     </synonym>
   </enumValues>
   <enumValues uuid="4fd963af-49f2-456d-a557-a5944aca8b69">
@@ -3463,6 +3484,13 @@
       <value>Перенос расходов</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="ab1a0cb6-7756-49f2-9cdc-6ede93fbfef2">
+    <name>ПереносРНПТМатериаловНаПродукцию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос РНПТ материалов на продукцию</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="567ec167-1aa4-4e06-9fc3-f2b74e70cb64">
     <name>ПереоценкаДенежныхСредств</name>
     <synonym>
@@ -3749,7 +3777,6 @@
       <key>ru</key>
       <value>Поставка под принципала</value>
     </synonym>
-    <comment>00004303</comment>
   </enumValues>
   <enumValues uuid="ede94309-26c0-471a-9b44-a339085fc49b">
     <name>ПоступлениеАрендованныхОС</name>
@@ -5151,6 +5178,13 @@
       <value>Сторнирование расходов в упр. учете</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="3f37339d-0052-4d23-acee-ff9666577709">
+    <name>СторноИспользованияБронированияПодотчетнымЛицом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сторно использования бронирования подотчетным лицом</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="bbddfcfd-4dc3-45b0-85da-0194ea0d7223">
     <name>СторноОбесцененияНИОКР</name>
     <synonym>
@@ -5562,13 +5596,6 @@
     <synonym>
       <key>ru</key>
       <value>Штрафы при возврате бронирования подотчетного лица</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="3f37339d-0052-4d23-acee-ff9666577709">
-    <name>СторноИспользованияБронированияПодотчетнымЛицом</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сторно использования бронирования подотчетным лицом</value>
     </synonym>
   </enumValues>
   <forms uuid="dd6aaeb3-ea72-486e-8804-095bca88ff7e">

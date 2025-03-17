@@ -33,6 +33,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.ВыборЗначенияИзСпискаБЗК</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ЗначенияСтроковыхРеквизитов</name>
 		<right>
 			<name>Read</name>
@@ -81,7 +88,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Resource.Отозвана</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Resource.Отозвана</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -130,7 +137,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Resource.ДатаРегистрации</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Resource.ДатаРегистрации</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -202,7 +209,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Attribute.ИдентификаторТранзакции</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Attribute.ИдентификаторТранзакции</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -254,7 +261,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Attribute.ТекстОтвета</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Attribute.ТекстОтвета</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -575,7 +582,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Dimension.МЧД</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Dimension.МЧД</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -608,7 +615,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Attribute.ДатаВремяТранзакции</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Attribute.ДатаВремяТранзакции</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -648,7 +655,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Attribute.СтатусТранзакции</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Attribute.СтатусТранзакции</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -805,7 +812,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -816,28 +823,28 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.StandardAttribute.Active</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.StandardAttribute.LineNumber</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.StandardAttribute.LineNumber</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.StandardAttribute.Recorder</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.StandardAttribute.Recorder</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.StandardAttribute.Period</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.StandardAttribute.Period</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -913,7 +920,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Resource.ДатаПроверкиСведений</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Resource.ДатаПроверкиСведений</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1191,7 +1198,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.МашиночитаемыеДоверенностиКЭДО</name>
+		<name>Catalog.УдалитьМашиночитаемыеДоверенностиКЭДО</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -1278,13 +1285,6 @@
 	</object>
 	<object>
 		<name>CommonForm.ВыборПроверочнойПрограммы</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.ВыборСертификатовПодписей</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -1570,7 +1570,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияМЧДКЭДО.Resource.ДатаОтзыва</name>
+		<name>InformationRegister.УдалитьСостоянияМЧДКЭДО.Resource.ДатаОтзыва</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

@@ -274,6 +274,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ВниманиеКрасный</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -6071,7 +6075,7 @@
     <name>СоздатьВозвратДенежныхСредствОтПоставщика</name>
     <title>
       <key>ru</key>
-      <value>Возврат от поставщика</value>
+      <value>Возврат или иное поступление от поставщика</value>
     </title>
     <id>2</id>
     <toolTip>

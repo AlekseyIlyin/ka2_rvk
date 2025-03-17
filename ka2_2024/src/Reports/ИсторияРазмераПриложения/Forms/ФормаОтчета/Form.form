@@ -219,7 +219,7 @@
       <name>ГруппаРассчитатьРазмер</name>
       <id>23</id>
       <items xsi:type="form:Button">
-        <name>РасcчитатьРазмерПриложения</name>
+        <name>РассчитатьРазмерПриложения</name>
         <id>18</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -227,17 +227,12 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>РасcчитатьРазмерПриложенияРасширеннаяПодсказка</name>
+          <name>РассчитатьРазмерПриложенияРасширеннаяПодсказка</name>
           <id>19</id>
           <title>
             <key>ru</key>
             <value>Шаг изменения размера объекта метаданных - 0 Мб.</value>
           </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -246,7 +241,7 @@
           </extInfo>
         </extendedTooltip>
         <type>Hyperlink</type>
-        <commandName>Form.Command.РасcчитатьРазмерПриложения</commandName>
+        <commandName>Form.Command.РассчитатьРазмерПриложения</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -661,10 +656,10 @@
     </edit>
   </attributes>
   <formCommands>
-    <name>РасcчитатьРазмерПриложения</name>
+    <name>РассчитатьРазмерПриложения</name>
     <title>
       <key>ru</key>
-      <value>Расcчитать размер приложения</value>
+      <value>Рассчитать размер приложения</value>
     </title>
     <id>1</id>
     <use>
@@ -672,7 +667,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>РасcчитатьРазмерПриложения</name>
+        <name>РассчитатьРазмерПриложения</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

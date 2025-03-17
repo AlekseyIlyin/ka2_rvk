@@ -1454,6 +1454,57 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="06af6b1f-c2c2-4fcd-84f3-ba4af46a0697">
+    <name>ДоверительФЛ_НомЕРН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЕРН доверителя-физлица</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c573c145-0e97-428e-bf79-415be6d03a90">
+    <name>ЛицоБезДовФЛ_НомЕРН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЕРН лица без доверенности - физлица, действующего от имени доверителя-юрлица при передоверии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0bed7815-fba8-4318-9cdf-30e54c008961">
+    <name>ПредставительФЛ_НомЕРН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЕРН представителя-физлица</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="5ee3ef13-0c6d-4048-bf41-6f8b9acace2a">
     <producedTypes>
       <objectType typeId="a77a0716-1616-452c-85ba-e11eba40dab7" valueTypeId="e7795952-aa7f-43fb-a93e-c8983e64f9b9"/>
@@ -2069,6 +2120,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="97395cc9-d0cc-4eae-b655-f0710f701343">
+      <name>Признак40</name>
+      <synonym>
+        <key>ru</key>
+        <value>Признак40</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="35898654-b7b2-46ef-a8e2-7c1e8f3ee1e4">
       <name>ОКАТО</name>
       <synonym>
@@ -2099,20 +2164,6 @@
         <stringQualifiers>
           <length>9</length>
         </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="97395cc9-d0cc-4eae-b655-f0710f701343">
-      <name>Признак40</name>
-      <synonym>
-        <key>ru</key>
-        <value>Признак40</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -2556,6 +2607,22 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
     </attributes>
+    <attributes uuid="4211a9fa-16ef-40e5-a101-8cd9389070ec">
+      <name>ЛицоБезДовФЛ_НомЕРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ЕРН лица без доверенности - физлица при передоверии</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="4d41ad65-b8ee-45aa-802e-6abe5ec1e048">
     <producedTypes>
@@ -2913,6 +2980,22 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
     </attributes>
+    <attributes uuid="2484e5b2-4837-48cd-ab35-765ad0a87b7f">
+      <name>ПредставительФЛ_НомЕРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ном ЕРН представителя-физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="c666e7d8-518d-4ff2-a2fd-504562888bd0">
     <producedTypes>
@@ -3237,6 +3320,22 @@
         <types>String</types>
         <stringQualifiers>
           <length>7</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="a38c32fa-d7f9-4143-8f63-258e76d67f8c">
+      <name>ДоверительФЛ_НомЕРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ЕРН доверителя-физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

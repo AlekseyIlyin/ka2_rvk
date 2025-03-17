@@ -632,6 +632,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="dd3f3797-c9b6-4d01-9109-1d755401e13d">
+    <name>ДатаОбновленияСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обновления статуса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="352f36e2-51dc-445b-a085-f14a8ed2586d">
     <producedTypes>
       <objectType typeId="c4d8de38-6647-432b-a3fb-c58081ce4551" valueTypeId="9b289ab5-5800-4544-9736-b9813916bfb0"/>

@@ -23,7 +23,7 @@
         <name>ОрганизацияПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>ОрганизацияExtendedTooltip</name>
+        <name>ОрганизацияРасширеннаяПодсказка</name>
         <id>56</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -241,7 +241,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>УведомленияОткрытьВыборExtendedTooltip</name>
+        <name>УведомленияОткрытьВыборРасширеннаяПодсказка</name>
         <id>58</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -274,7 +274,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ОбновитьExtendedTooltip</name>
+          <name>ОбновитьРасширеннаяПодсказка</name>
           <id>60</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -308,7 +308,7 @@
         <value>Стандартные</value>
       </toolTip>
       <extendedTooltip>
-        <name>СтандартныеExtendedTooltip</name>
+        <name>СтандартныеРасширеннаяПодсказка</name>
         <id>59</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -341,7 +341,7 @@
         <value>Уведомления кнопки</value>
       </toolTip>
       <extendedTooltip>
-        <name>УведомленияКнопкиExtendedTooltip</name>
+        <name>УведомленияКнопкиРасширеннаяПодсказка</name>
         <id>61</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -371,7 +371,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ПредварительныйПросмотрExtendedTooltip</name>
+          <name>ПредварительныйПросмотрРасширеннаяПодсказка</name>
           <id>63</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -401,7 +401,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ПечатьСразуExtendedTooltip</name>
+          <name>ПечатьСразуРасширеннаяПодсказка</name>
           <id>64</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -436,7 +436,7 @@
         <value>Печать</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПечатьExtendedTooltip</name>
+        <name>ПечатьРасширеннаяПодсказка</name>
         <id>62</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -467,7 +467,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>УведомленияВыгрузитьExtendedTooltip</name>
+        <name>УведомленияВыгрузитьРасширеннаяПодсказка</name>
         <id>65</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -497,7 +497,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>УведомленияИзменитьФормуExtendedTooltip</name>
+        <name>УведомленияИзменитьФормуРасширеннаяПодсказка</name>
         <id>66</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -562,7 +562,7 @@
       <value>Группа команданя панель</value>
     </toolTip>
     <extendedTooltip>
-      <name>ГруппаКоманданяПанельExtendedTooltip</name>
+      <name>ГруппаКоманданяПанельРасширеннаяПодсказка</name>
       <id>57</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -608,7 +608,7 @@
           <segments>ВидыСообщений.Наименование</segments>
         </dataPath>
         <extendedTooltip>
-          <name>ВидыСообщенийНаименованиеExtendedTooltip</name>
+          <name>ВидыСообщенийНаименованиеРасширеннаяПодсказка</name>
           <id>69</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -780,7 +780,7 @@
         </extInfo>
       </searchControlAddition>
       <extendedTooltip>
-        <name>ВидыСообщенийExtendedTooltip</name>
+        <name>ВидыСообщенийРасширеннаяПодсказка</name>
         <id>68</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -866,7 +866,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ЗаявленияСтатусExtendedTooltip</name>
+          <name>ЗаявленияСтатусРасширеннаяПодсказка</name>
           <id>71</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -902,6 +902,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.СтатусыРегламентированныхОтчетов</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -954,6 +958,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ПиктограммыРеглОтчетов</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -968,7 +976,7 @@
           <segments>Уведомления.ВидУведомления</segments>
         </dataPath>
         <extendedTooltip>
-          <name>ЗаявленияВидУведомленияExtendedTooltip</name>
+          <name>ЗаявленияВидУведомленияРасширеннаяПодсказка</name>
           <id>72</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1013,7 +1021,7 @@
           <segments>Уведомления.Организация</segments>
         </dataPath>
         <extendedTooltip>
-          <name>ЗаявленияОрганизацияExtendedTooltip</name>
+          <name>ЗаявленияОрганизацияРасширеннаяПодсказка</name>
           <id>73</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1062,7 +1070,7 @@
           <segments>Уведомления.РегистрацияВИФНС</segments>
         </dataPath>
         <extendedTooltip>
-          <name>ЗаявленияРегистрацияВИФНСExtendedTooltip</name>
+          <name>ЗаявленияРегистрацияВИФНСРасширеннаяПодсказка</name>
           <id>74</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1111,7 +1119,7 @@
           <segments>Уведомления.Date</segments>
         </dataPath>
         <extendedTooltip>
-          <name>УведомленияДатаExtendedTooltip</name>
+          <name>УведомленияДатаРасширеннаяПодсказка</name>
           <id>75</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1275,7 +1283,7 @@
         </extInfo>
       </searchControlAddition>
       <extendedTooltip>
-        <name>УведомленияExtendedTooltip</name>
+        <name>УведомленияРасширеннаяПодсказка</name>
         <id>70</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1343,7 +1351,7 @@
       <value>Группа элементы</value>
     </toolTip>
     <extendedTooltip>
-      <name>ГруппаЭлементыExtendedTooltip</name>
+      <name>ГруппаЭлементыРасширеннаяПодсказка</name>
       <id>67</id>
       <visible>true</visible>
       <enabled>true</enabled>

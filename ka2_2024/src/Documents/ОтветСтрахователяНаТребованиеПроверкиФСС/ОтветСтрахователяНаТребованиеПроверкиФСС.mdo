@@ -62,6 +62,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <defaultObjectForm>Document.ОтветСтрахователяНаТребованиеПроверкиФСС.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ОтветСтрахователяНаТребованиеПроверкиФСС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ОтветСтрахователяНаТребованиеПроверкиФСС.Form.ФормаВыбора</defaultChoiceForm>
   <posting>Deny</posting>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -101,11 +102,11 @@
       <key>ru</key>
       <value>Идентификатор сообщения ответа</value>
     </synonym>
-    <comment>Идентификатор сообщения ответа, присвоенный ФСС</comment>
+    <comment>Идентификатор сообщений ответов, может содержать несколько ИД</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>36</length>
+        <length>110</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -187,7 +188,7 @@
     <name>ДатаОтправкиВФСС</name>
     <synonym>
       <key>ru</key>
-      <value>Дата отправки ВФСС</value>
+      <value>Дата отправки в СФР</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -213,6 +214,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="246568bc-9a66-4ff7-8311-4086a4163d3a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

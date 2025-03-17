@@ -16,14 +16,6 @@
       <segments>ЖурналОтчетов</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <excludedCommands>CancelSearch</excludedCommands>
-    <excludedCommands>Change</excludedCommands>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>Find</excludedCommands>
-    <excludedCommands>SetDateInterval</excludedCommands>
-    <excludedCommands>SetDeletionMark</excludedCommands>
     <items xsi:type="form:FormField">
       <name>ЖурналОтчетовНаименованиеОтчета</name>
       <id>8</id>
@@ -755,7 +747,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.ЖурналОтчетов.StandardCommand.Refresh</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -815,7 +807,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.ЖурналОтчетов.StandardCommand.OutputList</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -845,7 +837,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.ЖурналОтчетов.StandardCommand.ListSettings</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

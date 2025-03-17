@@ -66,11 +66,27 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="82b5f142-173e-446e-8700-a36666aaa0b3">
+    <name>НастройкиЗагрузкиXML2024Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2024 (кв.2)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="e6ec7013-0d7f-4595-a698-8ab03b9b3d36">
     <name>НастройкиСравнения2019Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения отчетов 2019 (кв.1)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="556ba858-3a62-476f-99b3-2d93ab0db6d9">
+    <name>НастройкиСравнения2024Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения отчетов 2024 (кв.2)</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -102,64 +118,6 @@
       <value>Титульный</value>
     </synonym>
   </templates>
-  <templates uuid="a885692c-93e3-4889-be1a-4eb06836fd7b">
-    <name>СпискиВыбора2019Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора значений</value>
-    </synonym>
-  </templates>
-  <templates uuid="408f553c-6f9f-4247-a7e3-8792a68134c3">
-    <name>СхемаВыгрузки502</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки версии 5.02</value>
-    </synonym>
-  </templates>
-  <templates uuid="a002e963-9392-470c-8a27-69d6dc5591a4">
-    <name>ФормаОтчета2019Кв1_Раздел1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 2</value>
-    </synonym>
-  </templates>
-  <templates uuid="ab0d5e4e-c156-4e29-899a-541de8b9113a">
-    <name>ФормаОтчета2019Кв1_Раздел2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 2</value>
-    </synonym>
-  </templates>
-  <templates uuid="d0a41fe8-7d72-4923-87de-59b00d5344f2">
-    <name>ФормаОтчета2019Кв1_Раздел3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 3</value>
-    </synonym>
-  </templates>
-  <templates uuid="54dde486-c1d3-4376-ab11-4c3122858426">
-    <name>ФормаОтчета2019Кв1_Титульный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Титульный лист</value>
-    </synonym>
-  </templates>
-  <templates uuid="82b5f142-173e-446e-8700-a36666aaa0b3">
-    <name>НастройкиЗагрузкиXML2024Кв2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки из файла XML 2024 (кв.2)</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="556ba858-3a62-476f-99b3-2d93ab0db6d9">
-    <name>НастройкиСравнения2024Кв2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки сравнения отчетов 2024 (кв.2)</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="94cd8287-b217-4ee0-8716-298bc2cd3603">
     <name>ПечатныйБланк2024Кв2_Раздел1</name>
     <synonym>
@@ -188,6 +146,13 @@
       <value>Титульный</value>
     </synonym>
   </templates>
+  <templates uuid="a885692c-93e3-4889-be1a-4eb06836fd7b">
+    <name>СпискиВыбора2019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора значений</value>
+    </synonym>
+  </templates>
   <templates uuid="4c9a334a-89b3-41e4-ab0b-851e12681dd8">
     <name>СпискиВыбора2024Кв2</name>
     <synonym>
@@ -195,11 +160,46 @@
       <value>Списки выбора значений</value>
     </synonym>
   </templates>
+  <templates uuid="408f553c-6f9f-4247-a7e3-8792a68134c3">
+    <name>СхемаВыгрузки502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки версии 5.02</value>
+    </synonym>
+  </templates>
   <templates uuid="389eadbf-197e-4f85-a952-eab50df8b913">
     <name>СхемаВыгрузки503</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки версии 5.03</value>
+    </synonym>
+  </templates>
+  <templates uuid="a002e963-9392-470c-8a27-69d6dc5591a4">
+    <name>ФормаОтчета2019Кв1_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="ab0d5e4e-c156-4e29-899a-541de8b9113a">
+    <name>ФормаОтчета2019Кв1_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="d0a41fe8-7d72-4923-87de-59b00d5344f2">
+    <name>ФормаОтчета2019Кв1_Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="54dde486-c1d3-4376-ab11-4c3122858426">
+    <name>ФормаОтчета2019Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
     </synonym>
   </templates>
   <templates uuid="7df1c5af-ee81-4e61-a428-3887590cda88">

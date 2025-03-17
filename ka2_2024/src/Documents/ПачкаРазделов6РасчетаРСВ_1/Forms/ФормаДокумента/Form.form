@@ -670,8 +670,6 @@
       <segments>Объект.Сотрудники</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>CopyToClipboard</excludedCommands>
     <items xsi:type="form:FormField">
       <name>СотрудникиНомерСтроки</name>
       <id>161</id>
@@ -1652,8 +1650,6 @@
     <event>FillCheckProcessingAtServer</event>
     <name>ОбработкаПроверкиЗаполненияНаСервере</name>
   </handlers>
-  <excludedCommands>Post</excludedCommands>
-  <excludedCommands>UndoPosting</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

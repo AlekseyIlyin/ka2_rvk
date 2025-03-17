@@ -3481,6 +3481,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ОстаткиТорговыеПредложения</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5617,6 +5621,10 @@
             <textColor xsi:type="core:ColorRef">
               <color>Style.НедоступныеДанныеЭДЦвет</color>
             </textColor>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>

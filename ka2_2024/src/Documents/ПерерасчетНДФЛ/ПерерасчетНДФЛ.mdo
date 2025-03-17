@@ -719,6 +719,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="7d0f4c42-624a-4644-b1b6-51d63a5e7272">
+      <name>ПримененныйВычетЛичныйНалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примененный вычет личный налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="e509129e-7d65-49b7-b45b-a19f743f4e6d">
     <producedTypes>
@@ -823,6 +837,20 @@
         <key>ru</key>
         <value>ДФ='ММММ гггг'</value>
       </editFormat>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cc53e479-4c87-40dd-9e84-6f0deb4e9c28">
+      <name>НалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>

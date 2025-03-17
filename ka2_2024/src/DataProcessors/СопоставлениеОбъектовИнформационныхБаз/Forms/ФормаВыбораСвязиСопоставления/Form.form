@@ -141,6 +141,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <visible>true</visible>
@@ -466,10 +470,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаВыбораSearchString</name>
+      <name>ТаблицаВыбораСтрокаПоиска</name>
       <id>60</id>
       <extendedTooltip>
-        <name>ТаблицаВыбораSearchStringExtendedTooltip</name>
+        <name>ТаблицаВыбораСтрокаПоискаРасширеннаяПодсказка</name>
         <id>62</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -484,7 +488,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаВыбораSearchStringContextMenu</name>
+        <name>ТаблицаВыбораСтрокаПоискаКонтекстноеМеню</name>
         <id>61</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -504,10 +508,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаВыбораViewStatus</name>
+      <name>ТаблицаВыбораСостояниеПросмотра</name>
       <id>63</id>
       <extendedTooltip>
-        <name>ТаблицаВыбораViewStatusExtendedTooltip</name>
+        <name>ТаблицаВыбораСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>65</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -522,7 +526,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаВыбораViewStatusContextMenu</name>
+        <name>ТаблицаВыбораСостояниеПросмотраКонтекстноеМеню</name>
         <id>64</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -543,10 +547,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаВыбораSearchControl</name>
+      <name>ТаблицаВыбораУправлениеПоиском</name>
       <id>66</id>
       <extendedTooltip>
-        <name>ТаблицаВыбораSearchControlExtendedTooltip</name>
+        <name>ТаблицаВыбораУправлениеПоискомРасширеннаяПодсказка</name>
         <id>68</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -561,7 +565,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаВыбораSearchControlContextMenu</name>
+        <name>ТаблицаВыбораУправлениеПоискомКонтекстноеМеню</name>
         <id>67</id>
         <visible>true</visible>
         <enabled>true</enabled>

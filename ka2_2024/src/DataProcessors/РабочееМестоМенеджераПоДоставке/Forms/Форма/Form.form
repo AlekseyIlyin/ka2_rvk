@@ -898,6 +898,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ИсполнителиДоставки</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -5380,6 +5384,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ОткрытьКарточкуПартнера</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -9894,6 +9902,21 @@
       <value>Параметры подключаемых команд</value>
     </title>
     <id>65</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЖирныйШрифт</name>
+    <title>
+      <key>ru</key>
+      <value>Жирный шрифт</value>
+    </title>
+    <id>69</id>
     <valueType/>
     <view>
       <common>true</common>

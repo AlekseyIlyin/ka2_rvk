@@ -70,10 +70,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="c9dfd08b-3c05-4c38-880f-ef06fe083e38">
-    <name>ПлатежнаяСистема</name>
+    <name>УдалитьПлатежнаяСистема</name>
     <synonym>
       <key>ru</key>
-      <value>Платежная система</value>
+      <value>Удалить платежная система</value>
     </synonym>
     <type>
       <types>EnumRef.ТипыПлатежнойСистемыККТ</types>
@@ -103,4 +103,30 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="b4812983-cc16-4637-b0f0-d0d8dfccc939">
+    <name>Магазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Магазин</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7070c65c-d52b-497c-9407-a805146736c9">
+    <name>ФормаНастройкиПодключенияСОтбором</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки подключения с отбором</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:InformationRegister>

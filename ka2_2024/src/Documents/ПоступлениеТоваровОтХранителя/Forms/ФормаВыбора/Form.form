@@ -108,12 +108,6 @@
     <defaultItem>true</defaultItem>
     <skipOnInput>false</skipOnInput>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>Post</excludedCommands>
-    <excludedCommands>SetDeletionMark</excludedCommands>
-    <excludedCommands>UndoPosting</excludedCommands>
     <items xsi:type="form:FormField">
       <name>СписокПоступленияТоваровОтХранителяНомер</name>
       <id>6</id>
@@ -1232,12 +1226,6 @@
     <event>BeforeLoadDataFromSettingsAtServer</event>
     <name>ПриЗагрузкеДанныхИзНастроекНаСервере</name>
   </handlers>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>Post</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
-  <excludedCommands>UndoPosting</excludedCommands>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>

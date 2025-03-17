@@ -2703,6 +2703,13 @@
           <segments>Объект.ПредставительЯвляетсяСотрудником</segments>
         </dataPath>
         <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>При отправке отчетов по доверенности в случае установленного флажка
+для доверителя - юридического лица используется КПП доверителя.
+Если флажок снят - КПП регистрации налогового органа.</value>
+        </toolTip>
+        <toolTipRepresentation>Button</toolTipRepresentation>
         <handlers>
           <event>OnChange</event>
           <name>ПредставительЯвляетсяСотрудникомПриИзменении</name>
@@ -5900,6 +5907,23 @@
       <value>Несколько представителей</value>
     </title>
     <id>14</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОтправкаРазрешена</name>
+    <title>
+      <key>ru</key>
+      <value>Отправка разрешена</value>
+    </title>
+    <id>9</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

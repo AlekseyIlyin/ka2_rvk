@@ -121,6 +121,7 @@
         <maxWidth>18</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
+        <choiceButton>false</choiceButton>
         <listChoiceMode>true</listChoiceMode>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
@@ -311,6 +312,34 @@
           <userVisible>
             <common>true</common>
           </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ПодключаемыеКоманды</name>
+        <id>120</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Подключаемые команды</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Подключаемые команды</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ПодключаемыеКомандыРасширеннаяПодсказка</name>
+          <id>121</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1113,7 +1142,7 @@
     </title>
     <id>5</id>
     <valueType>
-      <types>EnumRef.ТипыПодключаемогоОборудования</types>
+      <types>DefinedType.ТипыПодключаемогоОборудования</types>
     </valueType>
     <view>
       <common>true</common>

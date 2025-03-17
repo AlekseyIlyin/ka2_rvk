@@ -294,9 +294,6 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Номер</name>
       <id>19</id>
@@ -1461,21 +1458,7 @@
     <event>BeforeLoadDataFromSettingsAtServer</event>
     <name>ПередЗагрузкойДанныхИзНастроекНаСервере</name>
   </handlers>
-  <excludedCommands>CancelSearch</excludedCommands>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>DynamicListStandardSettings</excludedCommands>
-  <excludedCommands>Find</excludedCommands>
-  <excludedCommands>ListSettings</excludedCommands>
-  <excludedCommands>LoadDynamicListSettings</excludedCommands>
   <excludedCommands>No</excludedCommands>
-  <excludedCommands>OutputList</excludedCommands>
-  <excludedCommands>Refresh</excludedCommands>
-  <excludedCommands>SaveDynamicListSettings</excludedCommands>
-  <excludedCommands>SetDateInterval</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>

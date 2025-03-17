@@ -445,7 +445,8 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Сумма комиссионного вознаграждения в валюте взаиморасчетов с комитентом (долга перед комиссионером за услугу по реализации товаров)</value>
+      <value>Сумма комиссионного вознаграждения в валюте взаиморасчетов с комитентом
+(долга перед комиссионером за услугу по реализации товаров)</value>
     </toolTip>
     <markNegatives>true</markNegatives>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -1132,6 +1133,24 @@
     </synonym>
     <type>
       <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9dc7a804-f1f0-4445-8cd7-fefdf4933b0e">
+    <name>КодСпециальныхОбстоятельств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код специальных обстоятельств</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

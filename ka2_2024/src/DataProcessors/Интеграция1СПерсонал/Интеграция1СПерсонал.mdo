@@ -25,13 +25,225 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="735c3343-ea0e-4d13-b5d0-53fb9d594084">
-    <name>ИспользуетсяПриложение1СПерсонал</name>
+    <name>ПриложениеПодключено</name>
     <synonym>
       <key>ru</key>
-      <value>Используется приложение1 с персонал</value>
+      <value>Приложение подключено</value>
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="810672a9-4b0c-475a-ba2c-eda40b88f817">
+    <name>АдресПриложенияПоИмени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес приложения по имени</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d0402f4a-61cf-4b2c-a604-151fa8ec7a5c">
+    <name>АдресПриложенияПоИмениДоступен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес приложения по имени доступен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="88b1a21e-ece5-4c71-bb6b-35e4690890af">
+    <name>ПриложениеВЛокальнойСети</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение в локальной сети</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b2c787e9-8048-4e92-a47e-16ec99c2d0bb">
+    <name>ИдентификаторПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор приложения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f171faeb-d69c-415a-a21b-4d553991cd70">
+    <name>ВидКИАдресЭлектроннойПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид КИАдрес электронной почты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7622eaee-69b1-47f6-89c8-674ac83cea2f">
+    <name>ВидКИМобильныйТелефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид КИМобильный телефон</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1314af15-d5ed-4301-8088-ad320970e468">
+    <name>ЭтоАвтономноеРабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это автономное рабочее место</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fbe61a0e-5b17-419d-9c85-dc33f3e33245">
+    <name>РазделениеВключено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделение включено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f2ff45b9-7feb-4d30-ae8d-868f5cec03a4">
+    <name>РазрешенныеСимволыИмениДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные символы имени домена</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="834eae95-3c61-40df-adda-bb4d79474d0d">
+    <name>ИмяДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя домена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2e522028-8746-46e7-a2c5-ba6c82823ad6">
+    <name>ПояснениеИмяДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснение имя домена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="afcb52a2-be1d-4128-ad55-5ce1acc91806">
+    <name>ИмяПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3afb8638-26d4-47b7-823f-26e8d7a480cc">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bd18f138-fe9f-4b9d-b3f2-85bd83c5d59a">
+    <name>АбонентИПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент ИПП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="109c8aa3-30a5-4662-907b-94936ed52287">
+    <name>ИдентификаторАбонентаИПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор абонента ИПП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e24c8a7-903b-4071-a4fd-1efcc3cb80be">
+    <name>ИдентификаторЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор заявки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -494,6 +494,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.РедактироватьИС</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -1439,6 +1443,7 @@
   <excludedCommands>SetDeletionMark</excludedCommands>
   <excludedCommands>UndoPosting</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

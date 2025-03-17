@@ -405,6 +405,8 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
+    <excludedCommands>Create</excludedCommands>
+    <excludedCommands>CreateByParameter</excludedCommands>
     <items xsi:type="form:FormField">
       <name>ЕстьФайлы</name>
       <id>115</id>
@@ -462,6 +464,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.Скрепка</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -1409,7 +1415,6 @@
       <items xsi:type="form:FormGroup">
         <name>ГруппаСоздать</name>
         <id>62</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
@@ -1438,7 +1443,7 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаКомандыСписка</name>
+        <name>ГруппаКомандыДокументов</name>
         <id>163</id>
         <items xsi:type="form:Button">
           <name>СписокУстановитьПометкуУдаления</name>
@@ -1590,14 +1595,17 @@
         <userVisible>
           <common>true</common>
         </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа команды документов</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа команды документов</value>
+        </toolTip>
         <extendedTooltip>
-          <name>ГруппаКомандыСпискаРасширеннаяПодсказка</name>
+          <name>ГруппаКомандыДокументовРасширеннаяПодсказка</name>
           <id>164</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1606,6 +1614,36 @@
           </extInfo>
         </extendedTooltip>
         <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКомандСписка</name>
+        <id>259</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа команд списка</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа команд списка</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаКомандСпискаРасширеннаяПодсказка</name>
+          <id>260</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo">
+          <commandSource>Item.Список</commandSource>
+        </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаУстановитьСтатус</name>

@@ -11,24 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="4ee3f0d5-e6b3-45fd-aa31-1ed145941385">
-    <name>Форма2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заявление о заявительном порядке возмещения НДС</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="02783bf1-18e4-427b-a3b7-1c3d48981d74">
-    <name>Форма2023_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заявление о заявительном порядке возмещения НДС</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="421ef687-fbdc-429f-a29c-2b819f940749">
     <name>Форма2024_1</name>
     <synonym>
@@ -38,89 +20,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="34a03a30-8f5f-4259-9aa6-8878f33762bf">
-    <name>СпискиВыбора2022</name>
+  <templates uuid="ef3e25d4-cd29-4783-ab39-0c68639d9ab7">
+    <name>БланкиПечати</name>
     <synonym>
       <key>ru</key>
-      <value>Списки выбора</value>
+      <value>Бланки печати</value>
     </synonym>
-  </templates>
-  <templates uuid="8af928bf-c82b-4f85-9401-c9e7dd89321d">
-    <name>Титульная_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="7d29cc33-6d58-4d91-b3a1-b976de18c317">
-    <name>Возврат_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="3404644e-5523-4246-9434-00e1b5b3d2c5">
-    <name>Зачет_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="885dbade-6bb6-4d45-ae23-8aa33cd1a345">
-    <name>Печать_Титульная_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="ddef4a5f-c0df-4386-a58e-0e7bf9a6554a">
-    <name>Печать_Возврат_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="744c7618-a582-4f9e-9cb1-e5dd07492ddf">
-    <name>Печать_Зачет_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="d734bc15-6edf-46f7-a185-cea79200c292">
-    <name>СпискиВыбора2023</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора</value>
-    </synonym>
-  </templates>
-  <templates uuid="16d0b50b-308a-4a55-9d0c-1b2510f82322">
-    <name>Титульная_2023</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="640a3a85-9337-4587-baa9-6c4a24c71ab9">
-    <name>Возврат_2023</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="8a0ab3dc-d3d2-4481-a755-201042587553">
-    <name>Печать_Титульная_2023</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="1ec89583-1cf2-4873-9915-e7d66951bcf6">
-    <name>Печать_Возврат_2023</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
+    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="f5ba1148-e74f-4e3c-b908-312cf4cba822">
     <name>СпискиВыбора2024</name>

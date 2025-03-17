@@ -1703,6 +1703,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ВидыЦенВспомогательнаяЦена</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>
@@ -1822,6 +1826,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СпособыЗаданияЦен</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1962,6 +1970,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.КоллецияНазначениеВидовЦен</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -4893,6 +4905,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.КоллекцияТипыСоглашенияСКлиентом</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>

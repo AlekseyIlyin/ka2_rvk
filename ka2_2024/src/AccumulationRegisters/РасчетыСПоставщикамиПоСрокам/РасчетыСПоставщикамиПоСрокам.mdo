@@ -270,6 +270,7 @@
       <types>DocumentRef.ОтчетКомитентуОСписании</types>
       <types>DocumentRef.ОтчетПереработчика</types>
       <types>DocumentRef.ПриобретениеУслугПрочихАктивов</types>
+      <types>DocumentRef.АктПремииПоставщика</types>
       <types>DocumentRef.ВводОстатковПоФинансовымИнструментам</types>
       <types>DocumentRef.КорректировкаЗадолженности</types>
       <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
@@ -401,7 +402,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <attributes uuid="c70025fd-9c10-4b1b-b678-51b6f5218b71">
@@ -451,6 +451,20 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
+  <attributes uuid="30a79124-0424-4773-84f3-839367b76d1a">
+    <name>ТипЗаписиВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип записи взаиморасчетов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗаписейВзаиморасчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <dimensions uuid="118460ad-41d7-4749-840c-8a7458843839">
     <name>АналитикаУчетаПоПартнерам</name>
     <synonym>
@@ -483,6 +497,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
@@ -502,6 +517,7 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>

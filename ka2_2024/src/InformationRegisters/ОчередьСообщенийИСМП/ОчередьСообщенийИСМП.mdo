@@ -135,7 +135,7 @@
       <value>Станция управления заказами</value>
     </synonym>
     <type>
-      <types>CatalogRef.СтанцииУправленияЗаказамиИСМП</types>
+      <types>DefinedType.СтанцияУправленияЗаказамиИСМП</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -226,7 +226,10 @@
       <value>Идентификатор заявки</value>
     </synonym>
     <type>
-      <types>DefinedType.УникальныйИдентификаторИС</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -2494,6 +2494,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.Наборы</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormGroup">
@@ -10454,6 +10458,7 @@
                   <chooseType>true</chooseType>
                   <typeDomainEnabled>true</typeDomainEnabled>
                   <textEdit>true</textEdit>
+                  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -11293,7 +11298,7 @@
                 <headerHorizontalAlign>Left</headerHorizontalAlign>
                 <showInFooter>true</showInFooter>
                 <extInfo xsi:type="form:InputFieldExtInfo">
-                  <maxWidth>27</maxWidth>
+                  <maxWidth>30</maxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <wrap>true</wrap>
                   <dropListButton>true</dropListButton>
@@ -11643,7 +11648,7 @@
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
-                    <width>13</width>
+                    <width>14</width>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <horizontalStretch>false</horizontalStretch>
@@ -11658,7 +11663,7 @@
                   <id>940</id>
                   <title>
                     <key>ru</key>
-                    <value>от</value>
+                    <value> от</value>
                   </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -12404,7 +12409,7 @@
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
-                    <width>12</width>
+                    <width>10</width>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <wrap>true</wrap>
@@ -12490,22 +12495,29 @@
                     </userVisible>
                     <autoFill>true</autoFill>
                   </contextMenu>
-                  <type>LabelField</type>
+                  <type>InputField</type>
                   <readOnly>true</readOnly>
                   <horizontalAlign>Right</horizontalAlign>
                   <editMode>Enter</editMode>
                   <showInHeader>true</showInHeader>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:LabelFieldExtInfo">
+                  <extInfo xsi:type="form:InputFieldExtInfo">
                     <width>10</width>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
-                    <horizontalStretch>false</horizontalStretch>
+                    <wrap>true</wrap>
                     <format>
                       <key>ru</key>
                       <value>ЧН='Без НДС'</value>
                     </format>
+                    <editFormat>
+                      <key>ru</key>
+                      <value>ЧН='Без НДС'</value>
+                    </editFormat>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -17139,6 +17151,10 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>InformationRegister.ОчередьЗаказовККорректировкеСтрокМерныхТоваров.StandardCommand.OpenByValue.Заказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.ДанныеЗаказовСервисДоставки.StandardCommand.OpenByValue.ДокументОснование</command>
         <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>

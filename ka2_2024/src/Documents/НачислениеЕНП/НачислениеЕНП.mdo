@@ -251,10 +251,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="4d2a4aa7-2a4c-46d5-bc7a-aa5fd84c63fd">
-    <name>ФормаВыбораНалогов</name>
+    <name>ФормаПодбораНалогов</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора налогов</value>
+      <value>Форма подбора налогов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -289,6 +289,17 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Период</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.НачислениеЕНП.StandardAttribute.Date</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Отбор.ВидОперации</name>
+        <value xsi:type="core:StringValue">
+          <value>Начисление</value>
+        </value>
+      </choiceParameters>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

@@ -3650,6 +3650,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыПроверкиНаличияГосИС</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3706,6 +3710,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.МаркируемаяПродукцияТЧ</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -4722,6 +4730,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.СтатусыПроверкиНаличияГосИС</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -9685,6 +9697,7 @@
     <event>URLProcessing</event>
     <name>ОбработкаНавигационнойСсылки</name>
   </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>

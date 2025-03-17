@@ -20,7 +20,7 @@
       <name>НаименованиеПриИзменении</name>
     </handlers>
     <extendedTooltip>
-      <name>НаименованиеРасширеннаяПодсказка</name>
+      <name>НаименованиеExtendedTooltip</name>
       <id>21</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -45,7 +45,6 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <readOnly>true</readOnly>
     <editMode>EnterOnInput</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -73,7 +72,7 @@
       <segments>Объект.Code</segments>
     </dataPath>
     <extendedTooltip>
-      <name>КодРасширеннаяПодсказка</name>
+      <name>КодExtendedTooltip</name>
       <id>22</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -121,7 +120,7 @@
       <segments>Объект.ИмяКомпьютера</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ИмяКомпьютераРасширеннаяПодсказка</name>
+      <name>ИмяКомпьютераExtendedTooltip</name>
       <id>24</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -308,7 +307,16 @@
     </edit>
   </attributes>
   <commandInterface>
-    <navigationPanel/>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>0</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>0</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </navigationPanel>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">

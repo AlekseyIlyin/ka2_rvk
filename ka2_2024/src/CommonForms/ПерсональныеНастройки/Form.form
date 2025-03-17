@@ -1968,11 +1968,11 @@
       <name>УчетРетроБонусов</name>
       <id>172</id>
       <items xsi:type="form:Button">
-        <name>ВыключитьКонтрольОстатковРетроБонусов</name>
+        <name>ВыключитьКонтрольОстатковРетроБонусовКлиентов</name>
         <id>174</id>
         <title>
           <key>ru</key>
-          <value>Отключить контроль остатков ретро-бонусов (на время сеанса)</value>
+          <value>Отключить контроль остатков ретро-бонусов клиентов (на время сеанса)</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1980,17 +1980,12 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ВыключитьКонтрольОстатковРетроБонусовРасширеннаяПодсказка</name>
+          <name>ВыключитьКонтрольОстатковРетроБонусовКлиентовРасширеннаяПодсказка</name>
           <id>175</id>
           <title>
             <key>ru</key>
             <value>&lt;формируется программно></value>
           </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxHeight>true</autoMaxHeight>
           <extInfo xsi:type="form:LabelDecorationExtInfo">

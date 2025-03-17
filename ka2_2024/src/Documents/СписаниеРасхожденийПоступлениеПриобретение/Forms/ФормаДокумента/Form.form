@@ -2274,6 +2274,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -2369,7 +2373,7 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>РасхожденияНазначения</name>
+          <name>РасхожденияНазначение</name>
           <id>1876</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2380,13 +2384,8 @@
             <segments>Объект.Расхождения.Назначение</segments>
           </dataPath>
           <extendedTooltip>
-            <name>РасхожденияНазначенияРасширеннаяПодсказка</name>
+            <name>РасхожденияНазначениеРасширеннаяПодсказка</name>
             <id>1878</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2395,13 +2394,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>РасхожденияНазначенияКонтекстноеМеню</name>
+            <name>РасхожденияНазначениеКонтекстноеМеню</name>
             <id>1877</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>

@@ -602,8 +602,9 @@
 			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПроизводственныеКалендари</v8:Type>
 		</valueType>
 		<value xsi:type="dcscor:DesignTimeValue">Справочник.ПроизводственныеКалендари.ПустаяСсылка</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>ВариантКлассификацииЗадолженности</name>
@@ -820,7 +821,7 @@
 			<dcsat:item xsi:type="dcsat:TableRow">
 				<dcsat:tableCell>
 					<dcsat:item xsi:type="dcsat:Field">
-						<dcsat:value xsi:type="dcscor:Parameter"/>
+						<dcsat:value xsi:type="dcscor:Parameter"></dcsat:value>
 					</dcsat:item>
 					<dcsat:appearance>
 						<dcscor:item>
@@ -1020,7 +1021,6 @@
 					<dcscor:parameter>Календарь</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.ПроизводственныеКалендари.ПустаяСсылка</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>6ea525a4-e72d-4c0b-b53f-4d1f81b05b4f</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ВариантКлассификацииЗадолженности</dcscor:parameter>

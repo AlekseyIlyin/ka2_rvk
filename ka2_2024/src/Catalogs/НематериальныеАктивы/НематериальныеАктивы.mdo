@@ -332,13 +332,31 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="8847cbf4-fb6f-4cec-b1d8-fb6bb0225193">
-    <name>КодОКВЭД2</name>
+    <name>УдалитьКодОКВЭД2</name>
     <synonym>
       <key>ru</key>
       <value>Код ОКВЭД2</value>
     </synonym>
     <type>
       <types>CatalogRef.КлассификаторОКВЭД2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="90f5b4ae-8871-4d21-a64e-28708de45caa">
+    <name>КодОКВЭД2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОКВЭД2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

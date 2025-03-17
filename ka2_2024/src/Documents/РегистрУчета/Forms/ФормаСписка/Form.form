@@ -440,14 +440,7 @@
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
     <excludedCommands>CopyToClipboard</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>ListSettings</excludedCommands>
-    <excludedCommands>OutputList</excludedCommands>
-    <excludedCommands>Refresh</excludedCommands>
-    <excludedCommands>SetDateInterval</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Описание</name>
       <id>16</id>
@@ -895,16 +888,12 @@
   </handlers>
   <excludedCommands>Abort</excludedCommands>
   <excludedCommands>Cancel</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
   <excludedCommands>Ignore</excludedCommands>
   <excludedCommands>No</excludedCommands>
   <excludedCommands>OK</excludedCommands>
   <excludedCommands>RestoreValues</excludedCommands>
   <excludedCommands>Retry</excludedCommands>
   <excludedCommands>SaveValues</excludedCommands>
-  <excludedCommands>SetDateInterval</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>

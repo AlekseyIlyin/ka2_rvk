@@ -5467,6 +5467,10 @@
           <event>Selection</event>
           <name>КПоступлениюВыбор</name>
         </handlers>
+        <handlers>
+          <event>OnActivateRow</event>
+          <name>КПоступлениюПриАктивизацииСтроки</name>
+        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -8366,27 +8370,7 @@
 		КОГДА РеестрДокументов.ТипСсылки В (&amp;ИдОбъектаПоступлениеБезналичныхДС, &amp;ИдОбъектаСписаниеБезналичныхДС)
 			ТОГДА РеестрДокументов.ДатаОтраженияВУчете &lt;> ДАТАВРЕМЯ(1, 1, 1)
 		КОГДА РеестрДокументов.ТипСсылки = &amp;ИдОбъектаОперацияПоПлатежнойКарте
-			ТОГДА РеестрДокументов.Проведен
-			И ЕСТЬNULL(РасчетыПоЭквайрингу.СуммаОстаток, 0) = 0
-			И 1 В
-				(ВЫБРАТЬ ПЕРВЫЕ 1
-					1
-				ИЗ
-					РегистрНакопления.РасчетыПоЭквайрингу КАК РасчетыПоЭквайрингуДвижения
-				ГДЕ
-					РасчетыПоЭквайрингуДвижения.ЭквайринговыйТерминал = ВЫРАЗИТЬ(РеестрДокументов.Ссылка КАК
-						Документ.ОперацияПоПлатежнойКарте).ЭквайринговыйТерминал
-					И РасчетыПоЭквайрингуДвижения.НомерПлатежнойКарты = ВЫРАЗИТЬ(РеестрДокументов.Ссылка КАК
-						Документ.ОперацияПоПлатежнойКарте).НомерПлатежнойКарты
-					И РасчетыПоЭквайрингуДвижения.ДатаПлатежа = НАЧАЛОПЕРИОДА(ВЫРАЗИТЬ(РеестрДокументов.Ссылка КАК
-						Документ.ОперацияПоПлатежнойКарте).Дата, ДЕНЬ)
-					И РасчетыПоЭквайрингуДвижения.Регистратор ССЫЛКА Документ.ОтчетБанкаПоОперациямЭквайринга
-					И (РасчетыПоЭквайрингуДвижения.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
-					И ВЫРАЗИТЬ(РеестрДокументов.Ссылка КАК
-						Документ.ОперацияПоПлатежнойКарте).ХозяйственнаяОперация = ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыОтКлиента)
-					ИЛИ РасчетыПоЭквайрингуДвижения.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
-					И ВЫРАЗИТЬ(РеестрДокументов.Ссылка КАК
-						Документ.ОперацияПоПлатежнойКарте).ХозяйственнаяОперация = ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ВозвратОплатыКлиенту)))
+			ТОГДА ЛОЖЬ
 		ИНАЧЕ ИСТИНА
 	КОНЕЦ КАК ПроведеноБанком,
 	РеестрДокументов.Дополнительно КАК ОснованиеНазначение,
@@ -8447,11 +8431,6 @@
 		ПО ДанныеПоступленияБезналичныхДС.Ссылка = РеестрДокументов.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.СписаниеБезналичныхДенежныхСредств КАК ДанныеСписанияБезналичныхДС
 		ПО ДанныеСписанияБезналичныхДС.Ссылка = РеестрДокументов.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ОперацияПоПлатежнойКарте КАК ЖурналОперацияПоПлатежнойКарте
-		ПО ЖурналОперацияПоПлатежнойКарте.Ссылка = РеестрДокументов.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.РасчетыПоЭквайрингу.Остатки КАК РасчетыПоЭквайрингу
-		ПО РасчетыПоЭквайрингу.ЭквайринговыйТерминал = ЖурналОперацияПоПлатежнойКарте.ЭквайринговыйТерминал
-		И РасчетыПоЭквайрингу.ДатаПлатежа = НАЧАЛОПЕРИОДА(ЖурналОперацияПоПлатежнойКарте.Дата, ДЕНЬ)
 ГДЕ
 	РеестрДокументов.ТипСсылки В (&amp;ИдОбъектаПоступлениеБезналичныхДС, &amp;ИдОбъектаСписаниеБезналичныхДС, &amp;ИдОбъектаПКО,
 		&amp;ИдОбъектаРКО, &amp;ИдОбъектаОтчетБанкаПоОперациямЭквайринга, &amp;ИдОбъектаОперацияПоПлатежнойКарте,
@@ -8499,10 +8478,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Организация</dataPath>
         <field>Организация</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТипДенежныхСредств</dataPath>
-        <field>ТипДенежныхСредств</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Ссылка</dataPath>
@@ -8567,10 +8542,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Подразделение</dataPath>
         <field>Подразделение</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Партнер</dataPath>
-        <field>Партнер</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ТипПлатежногоДокумента</dataPath>
@@ -8653,10 +8624,6 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Договор</dataPath>
-        <field>Договор</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СуммаПоступления</dataPath>
         <field>СуммаПоступления</field>
         <title>
@@ -8667,10 +8634,6 @@
             </content>
           </localValue>
         </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДатаПлатежа</dataPath>
-        <field>ДатаПлатежа</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СуммаСписания</dataPath>
@@ -8704,18 +8667,6 @@
             <content>
               <key>ru</key>
               <value>Форма оплаты</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПроведеноБанком</dataPath>
-        <field>ПроведеноБанком</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Проведено банком</value>
             </content>
           </localValue>
         </title>
@@ -8757,12 +8708,20 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЭквайринговыйТерминал</dataPath>
-        <field>ЭквайринговыйТерминал</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИдентификаторЗаписи</dataPath>
         <field>ИдентификаторЗаписи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПроведеноБанком</dataPath>
+        <field>ПроведеноБанком</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Проведено банком</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Статус</dataPath>
@@ -8779,6 +8738,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Сумма</dataPath>
         <field>Сумма</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Договор</dataPath>
+        <field>Договор</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НомерПервичногоДокумента</dataPath>
@@ -8809,6 +8772,10 @@
         <field>НаименованиеПервичногоДокумента</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Партнер</dataPath>
+        <field>Партнер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>МестоХранения</dataPath>
         <field>МестоХранения</field>
       </fields>
@@ -8816,24 +8783,6 @@
         <dataPath>РазделительЗаписи</dataPath>
         <field>РазделительЗаписи</field>
       </fields>
-      <parameters>
-        <name>Период</name>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Период</value>
-            </content>
-          </localValue>
-        </title>
-        <valueType>
-          <types>Date</types>
-          <dateQualifiers/>
-        </valueType>
-        <values xsi:type="core:DateValue">
-          <value>0001-01-01T00:00:00</value>
-        </values>
-      </parameters>
       <parameters>
         <name>ИдОбъектаОперацияПоПлатежнойКарте</name>
         <title>
@@ -9233,6 +9182,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>НачалоПериода</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>КонецПериода</name>
@@ -9253,6 +9205,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>КонецПериода</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ПолучательПлательщикПредставление</name>
@@ -9616,6 +9571,26 @@
     <settingsSavedData xsi:type="form:DataPath">
       <segments>СписокДокументовРежимАвтообновления</segments>
     </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>НедоступныеОперацииДляЭквайринга</name>
+    <title>
+      <key>ru</key>
+      <value>Недоступные операции для эквайринга</value>
+    </title>
+    <id>43</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>СоздатьОплатуПоставщикуБезналичные</name>

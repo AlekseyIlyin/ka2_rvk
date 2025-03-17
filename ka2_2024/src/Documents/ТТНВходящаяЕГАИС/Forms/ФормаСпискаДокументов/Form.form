@@ -961,6 +961,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ВосклицательныйЗнакКрасный</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2287,6 +2291,7 @@
   <excludedCommands>UndoPosting</excludedCommands>
   <excludedCommands>Yes</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

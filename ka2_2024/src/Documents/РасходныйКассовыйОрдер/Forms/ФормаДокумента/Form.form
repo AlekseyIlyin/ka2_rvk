@@ -9655,6 +9655,46 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ФилиалыОрганизации</name>
+    <title>
+      <key>ru</key>
+      <value>Филиалы организации</value>
+    </title>
+    <id>25</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ДоступныеОперацииПоОснованию</name>
+    <title>
+      <key>ru</key>
+      <value>Доступные операции по основанию</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
   <formCommands>
     <name>ПодборПоОстаткам</name>
     <title>

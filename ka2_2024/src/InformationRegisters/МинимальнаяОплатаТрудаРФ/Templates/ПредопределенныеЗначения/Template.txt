@@ -1,9 +1,9 @@
 <Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Structure">
 	<Property name="Версия">
-		<Value xsi:type="xs:decimal">10</Value>
+		<Value xsi:type="xs:decimal">11</Value>
 	</Property>
 	<Property name="ОписаниеВерсии">
-		<Value xsi:type="xs:string">Новый размер МРОТ с 1 января 2024 года.</Value>
+		<Value xsi:type="xs:string">Новый размер МРОТ с 1 января 2025 года.</Value>
 	</Property>
 	<Property name="ПолноеИмя">
 		<Value xsi:type="xs:string">РегистрСведений.МинимальнаяОплатаТрудаРФ</Value>
@@ -140,6 +140,10 @@
 			<row>
 				<Value>2024-01-01T00:00:00</Value>
 				<Value>19242</Value>
+			</row>
+			<row>
+				<Value>2025-01-01T00:00:00</Value>
+				<Value>22440</Value>
 			</row>
 		</Value>
 	</Property>

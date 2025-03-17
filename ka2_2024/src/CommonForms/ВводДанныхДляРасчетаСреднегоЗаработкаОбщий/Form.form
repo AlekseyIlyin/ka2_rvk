@@ -2360,6 +2360,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>Начисление</name>
+      <title>
+        <key>ru</key>
+        <value>Начисление</value>
+      </title>
+      <id>15</id>
+      <valueType>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>Организация</name>
@@ -3086,6 +3103,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>Начисление</name>
+      <title>
+        <key>ru</key>
+        <value>Начисление</value>
+      </title>
+      <id>8</id>
+      <valueType>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>ВидыГодовыхПремий</name>
@@ -3433,6 +3467,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>Начисление</name>
+      <title>
+        <key>ru</key>
+        <value>Начисление</value>
+      </title>
+      <id>17</id>
+      <valueType>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>ДатаНачалаРасчетовССотрудником</name>
@@ -3514,6 +3565,136 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокРКИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок РК итог</value>
+    </title>
+    <id>43</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокСНИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок СН итог</value>
+    </title>
+    <id>44</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокИндексируемыйРКИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок индексируемый РК итог</value>
+    </title>
+    <id>45</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИндексироватьСреднийЗаработокЧастично</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокИндексируемыйСНИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок индексируемый СН итог</value>
+    </title>
+    <id>46</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИндексироватьСреднийЗаработокЧастично</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокНеиндексируемыйРКИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок неиндексируемый РК итог</value>
+    </title>
+    <id>47</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИндексироватьСреднийЗаработокЧастично</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокНеиндексируемыйСНИтог</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок неиндексируемый СН итог</value>
+    </title>
+    <id>48</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИндексироватьСреднийЗаработокЧастично</functionalOptions>
   </attributes>
   <formCommands>
     <name>OK</name>

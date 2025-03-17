@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>Календарь</name>
     <id>1</id>
@@ -61,6 +61,10 @@
       <verticalStretch>true</verticalStretch>
       <showCurrentDate>true</showCurrentDate>
       <calendarNavigation>true</calendarNavigation>
+      <border xsi:type="core:BorderDef">
+        <style>Single</style>
+        <width>1</width>
+      </border>
       <showMonthsPanel>true</showMonthsPanel>
       <widthInMonths>1</widthInMonths>
       <heightInMonths>1</heightInMonths>
@@ -165,10 +169,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокSearchString</name>
+        <name>СписокСтрокаПоиска</name>
         <id>19</id>
         <extendedTooltip>
-          <name>СписокSearchStringExtendedTooltip</name>
+          <name>СписокСтрокаПоискаРасширеннаяПодсказка</name>
           <id>21</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -183,7 +187,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокSearchStringContextMenu</name>
+          <name>СписокСтрокаПоискаКонтекстноеМеню</name>
           <id>20</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -203,10 +207,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокViewStatus</name>
+        <name>СписокСостояниеПросмотра</name>
         <id>22</id>
         <extendedTooltip>
-          <name>СписокViewStatusExtendedTooltip</name>
+          <name>СписокСостояниеПросмотраРасширеннаяПодсказка</name>
           <id>24</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -221,7 +225,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокViewStatusContextMenu</name>
+          <name>СписокСостояниеПросмотраКонтекстноеМеню</name>
           <id>23</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -242,10 +246,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокSearchControl</name>
+        <name>СписокУправлениеПоиском</name>
         <id>25</id>
         <extendedTooltip>
-          <name>СписокSearchControlExtendedTooltip</name>
+          <name>СписокУправлениеПоискомРасширеннаяПодсказка</name>
           <id>27</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -260,7 +264,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокSearchControlContextMenu</name>
+          <name>СписокУправлениеПоискомКонтекстноеМеню</name>
           <id>26</id>
           <visible>true</visible>
           <enabled>true</enabled>

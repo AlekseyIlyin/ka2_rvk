@@ -2179,6 +2179,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ВниманиеКрасный</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -6676,6 +6680,7 @@
               <key>ru</key>
               <value>Страница c НДС</value>
             </title>
+            <verticalStretch>true</verticalStretch>
             <extendedTooltip>
               <name>СтраницаСНДСРасширеннаяПодсказка</name>
               <id>739</id>
@@ -6694,6 +6699,7 @@
             <type>Page</type>
             <extInfo xsi:type="form:PageGroupExtInfo">
               <group>Vertical</group>
+              <verticalAlign>Center</verticalAlign>
               <showTitle>true</showTitle>
             </extInfo>
           </items>
@@ -6741,21 +6747,29 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>LabelField</type>
+              <type>InputField</type>
               <readOnly>true</readOnly>
               <horizontalAlign>Right</horizontalAlign>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:LabelFieldExtInfo">
+              <extInfo xsi:type="form:InputFieldExtInfo">
                 <width>10</width>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
                 <format>
                   <key>ru</key>
                   <value>ЧН='Без НДС'</value>
                 </format>
+                <editFormat>
+                  <key>ru</key>
+                  <value>ЧН='Без НДС'</value>
+                </editFormat>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -6767,6 +6781,7 @@
               <key>ru</key>
               <value>Страница без НДС</value>
             </title>
+            <verticalStretch>true</verticalStretch>
             <extendedTooltip>
               <name>СтраницаБезНДСРасширеннаяПодсказка</name>
               <id>744</id>
@@ -6785,6 +6800,7 @@
             <type>Page</type>
             <extInfo xsi:type="form:PageGroupExtInfo">
               <group>Vertical</group>
+              <verticalAlign>Center</verticalAlign>
               <showTitle>true</showTitle>
             </extInfo>
           </items>
@@ -6872,7 +6888,7 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
-                <width>9</width>
+                <width>10</width>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>
@@ -7023,8 +7039,6 @@
             <key>ru</key>
             <value>Группа страницы НДС</value>
           </toolTip>
-          <width>22</width>
-          <horizontalStretch>false</horizontalStretch>
           <extendedTooltip>
             <name>ГруппаСтраницыВсегоРасширеннаяПодсказка</name>
             <id>749</id>

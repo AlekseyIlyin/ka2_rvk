@@ -52,15 +52,15 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="a041bb44-8577-431d-979f-c4a03c55120b">
-      <name>ИдентификаторПубликации</name>
+      <name>ИдентификаторПредложения</name>
       <synonym>
         <key>ru</key>
-        <value>Идентификатор публикации</value>
+        <value>Идентификатор предложения</value>
       </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>36</length>
+          <length>255</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

@@ -3832,6 +3832,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Наборы</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
@@ -4439,6 +4443,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.СтатусыУказанияСерий</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -4749,6 +4757,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.НаборСтрелкаВлево</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -16960,7 +16972,7 @@
       <key>ru</key>
       <value>Обособленно</value>
     </title>
-    <id>71</id>
+    <id>73</id>
     <toolTip>
       <key>ru</key>
       <value>Включить обособленное обеспечение</value>
@@ -16983,7 +16995,7 @@
       <key>ru</key>
       <value>Не обособленно</value>
     </title>
-    <id>6</id>
+    <id>74</id>
     <toolTip>
       <key>ru</key>
       <value>Выключить обособленное обеспечение</value>

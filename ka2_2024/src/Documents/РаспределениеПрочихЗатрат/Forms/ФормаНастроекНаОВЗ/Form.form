@@ -2111,10 +2111,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <name>ТаблицаСтрокаПоиска</name>
+            <name>ЗначенияПоказателяСтрокаПоиска</name>
             <id>670</id>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ЗначенияПоказателяСтрокаПоискаРасширеннаяПодсказка</name>
               <id>672</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2129,7 +2129,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ЗначенияПоказателяСтрокаПоискаКонтекстноеМеню</name>
               <id>671</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2149,10 +2149,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <name>Addition</name>
+            <name>ЗначенияПоказателяСостояниеПросмотра</name>
             <id>676</id>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ЗначенияПоказателяСостояниеПросмотраРасширеннаяПодсказка</name>
               <id>678</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2167,7 +2167,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ЗначенияПоказателяСостояниеПросмотраКонтекстноеМеню</name>
               <id>677</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2189,10 +2189,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <name>ТаблицаУправлениеПоиском</name>
+            <name>ЗначенияПоказателяУправлениеПоиском</name>
             <id>673</id>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ЗначенияПоказателяУправлениеПоискомРасширеннаяПодсказка</name>
               <id>675</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2207,7 +2207,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ЗначенияПоказателяУправлениеПоискомКонтекстноеМеню</name>
               <id>674</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3853,6 +3853,32 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <items xsi:type="form:Button">
+      <name>ФормаУстановитьПометкуУдаленияДокумента</name>
+      <id>713</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаУстановитьПометкуУдаленияДокументаРасширеннаяПодсказка</name>
+        <id>714</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.УстановитьПометкуУдаленияДокумента</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
     <items xsi:type="form:FormGroup">
       <name>ФормаГлобальныеКоманды</name>
       <id>13</id>
@@ -4164,6 +4190,7 @@
   <excludedCommands>Delete</excludedCommands>
   <excludedCommands>Post</excludedCommands>
   <excludedCommands>PostAndClose</excludedCommands>
+  <excludedCommands>SetDeletionMark</excludedCommands>
   <excludedCommands>Write</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
@@ -4755,6 +4782,27 @@
     </action>
     <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УстановитьПометкуУдаленияДокумента</name>
+    <title>
+      <key>ru</key>
+      <value>Пометить на удаление / Снять пометку</value>
+    </title>
+    <id>9</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.MarkToDelete</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УстановитьПометкуУдаленияДокумента</name>
+      </handler>
+    </action>
+    <modifiesStoredData>true</modifiesStoredData>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
     <navigationPanel/>

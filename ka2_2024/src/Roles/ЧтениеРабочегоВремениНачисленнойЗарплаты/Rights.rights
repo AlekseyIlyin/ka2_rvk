@@ -4,6 +4,13 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.СтатьяФинансирования</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СведенияОНачисленияхДляРасчетаСреднегоЗаработкаОбщий</name>
 		<right>
 			<name>Read</name>
@@ -22,6 +29,59 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрНакопленияДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям", "ФизическоеЛицо", "", "", "", "")
+#Иначе
+#ПоЗначениям( "РегистрНакопления.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям","Чтение","","ГруппыФизическихЛиц","ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Attribute.Сторно</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</name>
 		<right>
 			<name>Read</name>
@@ -30,6 +90,48 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.ГоловнаяОрганизация</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.СпособУчета</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.ФизическоеЛицо</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.СпособОтраженияЗарплатыВБухучете</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.ОблагаетсяЕНВД</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.СтатьяРасходов</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -111,6 +213,27 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Resource.Сумма</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.Начисление</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ПечатнаяФормаСправкаОДоходахДетямСиротамДляНазначенияДоплаты</name>
 		<right>
 			<name>Use</name>
@@ -184,6 +307,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям.Dimension.ПорядокРасчета</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>

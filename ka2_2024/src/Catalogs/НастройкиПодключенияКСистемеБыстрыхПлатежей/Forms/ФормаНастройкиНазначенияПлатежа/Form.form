@@ -883,6 +883,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ВариантНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант настройки</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>EnumRef.ВариантыНастройкиСБП</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Сохранить</name>
     <title>

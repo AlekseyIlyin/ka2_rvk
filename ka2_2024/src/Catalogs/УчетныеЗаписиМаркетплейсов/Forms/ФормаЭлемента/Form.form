@@ -752,7 +752,6 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.ВидыЦен</segments>
     </dataPath>
-    <excludedCommands>Add</excludedCommands>
     <items xsi:type="form:FormField">
       <name>ВидыЦенНомерСтроки</name>
       <id>38</id>
@@ -1092,16 +1091,6 @@
         <segments>Объект.ДополнительныеНастройки</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
-      <excludedCommands>Add</excludedCommands>
-      <excludedCommands>Change</excludedCommands>
-      <excludedCommands>Copy</excludedCommands>
-      <excludedCommands>Delete</excludedCommands>
-      <excludedCommands>EndEdit</excludedCommands>
-      <excludedCommands>MoveDown</excludedCommands>
-      <excludedCommands>MoveUp</excludedCommands>
-      <excludedCommands>ShowRowRearrangement</excludedCommands>
-      <excludedCommands>SortListAsc</excludedCommands>
-      <excludedCommands>SortListDesc</excludedCommands>
       <items xsi:type="form:FormField">
         <name>ДополнительныеНастройкиИдентификаторНастройки</name>
         <id>111</id>
@@ -1484,7 +1473,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Copy</excludedCommands>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>

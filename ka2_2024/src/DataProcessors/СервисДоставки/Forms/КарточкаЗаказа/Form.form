@@ -94,6 +94,10 @@
           <font>Style.ШрифтВыделенныйСервисДоставки</font>
         </font>
         <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияСостояниеПредставлениеНажатие</name>
+          </handlers>
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </items>
@@ -9526,6 +9530,10 @@
                           <valuesPicture xsi:type="core:PictureRef">
                             <picture>CommonPicture.УдалитьИнформация</picture>
                           </valuesPicture>
+                          <border xsi:type="core:BorderDef">
+                            <style>Single</style>
+                            <width>1</width>
+                          </border>
                           <fileDragMode>AsFileRef</fileDragMode>
                         </extInfo>
                       </items>
@@ -11767,6 +11775,10 @@
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+                    <handlers>
+                      <event>DetailProcessing</event>
+                      <name>ПолеРасшифровкаТарифаОбработкаРасшифровки</name>
+                    </handlers>
                     <width>30</width>
                     <autoMaxWidth>true</autoMaxWidth>
                     <height>10</height>
@@ -13777,6 +13789,10 @@
                       <valuesPicture xsi:type="core:PictureRef">
                         <picture>CommonPicture.УдалитьИнформация</picture>
                       </valuesPicture>
+                      <border xsi:type="core:BorderDef">
+                        <style>Single</style>
+                        <width>1</width>
+                      </border>
                       <fileDragMode>AsFileRef</fileDragMode>
                     </extInfo>
                   </items>
@@ -14469,6 +14485,10 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+            <handlers>
+              <event>URLProcessing</event>
+              <name>ИтоговаяИнформацияОбработкаНавигационнойСсылки</name>
+            </handlers>
             <handlers>
               <event>DetailProcessing</event>
               <name>ИтоговаяИнформацияОбработкаРасшифровки</name>
@@ -22091,7 +22111,7 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
     <savedData>true</savedData>
   </attributes>
   <attributes>
@@ -22134,7 +22154,7 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
     <savedData>true</savedData>
   </attributes>
   <attributes>
@@ -22175,7 +22195,7 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
   </attributes>
   <attributes>
     <name>ФоновоеЗаданиеПолучитьДоступныеДляИзмененияРеквизиты</name>
@@ -22464,7 +22484,7 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
   </attributes>
   <attributes>
     <name>МультизаказИдентификатор</name>
@@ -22843,6 +22863,23 @@
       <stringQualifiers>
         <length>50</length>
       </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЭтоЗаполнениеКопированием</name>
+    <title>
+      <key>ru</key>
+      <value>Это заполнение копированием</value>
+    </title>
+    <id>248</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>
@@ -23581,6 +23618,64 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
+  <parameters>
+    <name>ИдентификаторЗаказа</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>РежимМастера</name>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ТипГрузоперевозки</name>
+    <valueType>
+      <types>EnumRef.ТипыГрузоперевозки</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ЭтоЗаполнениеКопированием</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ДокументыОснования</name>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ДокументОснованиеДляДобавления</name>
+    <valueType>
+      <types>DocumentRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОрганизацияБизнесСети</name>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ПараметрыЗаказа</name>
+    <valueType/>
+  </parameters>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>

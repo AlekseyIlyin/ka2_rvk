@@ -88,6 +88,39 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <items xsi:type="form:Decoration">
+      <name>РедакцияФормы</name>
+      <id>151</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>РедакцияФормыРасширеннаяПодсказка</name>
+        <id>153</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>РедакцияФормыКонтекстноеМеню</name>
+        <id>152</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -538,6 +571,7 @@
         <useAlternationRowColor>true</useAlternationRowColor>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
+        <initialTreeView>ExpandTopLevel</initialTreeView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
         <enableStartDrag>true</enableStartDrag>
@@ -609,16 +643,18 @@
             <segments>ОсновныеСтроки</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
-          <excludedCommands>CancelSearch</excludedCommands>
-          <excludedCommands>ChangeHistory</excludedCommands>
           <excludedCommands>Copy</excludedCommands>
           <excludedCommands>CopyToClipboard</excludedCommands>
           <excludedCommands>Create</excludedCommands>
           <excludedCommands>CreateFolder</excludedCommands>
           <excludedCommands>Delete</excludedCommands>
-          <excludedCommands>Find</excludedCommands>
-          <excludedCommands>FindByCurrentValue</excludedCommands>
-          <excludedCommands>SearchEverywhere</excludedCommands>
+          <excludedCommands>DynamicListStandardSettings</excludedCommands>
+          <excludedCommands>GetURL</excludedCommands>
+          <excludedCommands>LevelDown</excludedCommands>
+          <excludedCommands>LevelUp</excludedCommands>
+          <excludedCommands>LoadDynamicListSettings</excludedCommands>
+          <excludedCommands>MoveItem</excludedCommands>
+          <excludedCommands>SaveDynamicListSettings</excludedCommands>
           <items xsi:type="form:FormField">
             <name>ОсновныеСтрокиКодСтроки</name>
             <id>143</id>
@@ -766,6 +802,31 @@
           <autoCommandBar>
             <name>ОсновныеСтрокиКоманднаяПанель</name>
             <id>22</id>
+            <items xsi:type="form:Button">
+              <name>ОсновныеСтрокиСоздатьСтроку</name>
+              <id>154</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОсновныеСтрокиСоздатьСтрокуРасширеннаяПодсказка</name>
+                <id>155</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Command.СоздатьСтроку</commandName>
+              <representation>PictureAndText</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1004,22 +1065,14 @@
             <segments>ДополнительныеСтроки</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
-          <excludedCommands>CancelSearch</excludedCommands>
-          <excludedCommands>Change</excludedCommands>
-          <excludedCommands>ChangeHistory</excludedCommands>
           <excludedCommands>Copy</excludedCommands>
           <excludedCommands>CopyToClipboard</excludedCommands>
           <excludedCommands>Create</excludedCommands>
           <excludedCommands>CreateFolder</excludedCommands>
           <excludedCommands>Delete</excludedCommands>
-          <excludedCommands>Find</excludedCommands>
-          <excludedCommands>FindByCurrentValue</excludedCommands>
-          <excludedCommands>HierarchicalList</excludedCommands>
           <excludedCommands>LevelDown</excludedCommands>
           <excludedCommands>LevelUp</excludedCommands>
-          <excludedCommands>List</excludedCommands>
           <excludedCommands>MoveItem</excludedCommands>
-          <excludedCommands>SearchEverywhere</excludedCommands>
           <items xsi:type="form:FormField">
             <name>ДополнительныеСтрокиКодСтроки</name>
             <id>146</id>
@@ -1191,10 +1244,13 @@
                 </extInfo>
               </extendedTooltip>
               <commandName>Form.Command.СоздатьДопСтроку</commandName>
-              <representation>Auto</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>StdPicture.CreateListItem</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
@@ -1203,7 +1259,6 @@
               <common>true</common>
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
-            <autoFill>true</autoFill>
           </autoCommandBar>
           <searchStringAddition>
             <visible>true</visible>
@@ -1525,25 +1580,25 @@
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <displayImportance>VeryLow</displayImportance>
-    <items xsi:type="form:Button">
-      <name>ФормаСправочникНастройкиЗаполненияБухОтчетностиСгенерироватьНастройкиПоУмолчанию</name>
-      <id>108</id>
+    <items xsi:type="form:FormGroup">
+      <name>СгенерироватьНастройкиПоУмолчанию</name>
+      <id>149</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Настройка</segments>
-      </dataPath>
+      <title>
+        <key>ru</key>
+        <value>Сгенерировать настройки по умолчанию</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Сгенерировать настройки по умолчанию</value>
+      </toolTip>
       <extendedTooltip>
-        <name>ФормаСправочникНастройкиЗаполненияБухОтчетностиСгенерироватьНастройкиПоУмолчаниюРасширеннаяПодсказка</name>
-        <id>109</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <name>СгенерироватьНастройкиПоУмолчаниюРасширеннаяПодсказка</name>
+        <id>150</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -1551,13 +1606,10 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Catalog.НастройкиЗаполненияБухОтчетности.Command.СгенерироватьНастройкиПоУмолчанию</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+      <type>Popup</type>
+      <extInfo xsi:type="form:PopupGroupExtInfo">
+        <representation>Auto</representation>
+      </extInfo>
     </items>
     <visible>true</visible>
     <enabled>true</enabled>
@@ -1620,12 +1672,31 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СтруктураСтрок.Ref</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СтруктураСтрок.ФормаОтчетности</segments>
+    </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <mainTable>Catalog.СтрокиБухОтчетности</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <parameters>
+        <name>Ложь</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Ложь</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <values xsi:type="core:BooleanValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -1677,10 +1748,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ВключитьВОтчет</dataPath>
         <field>ВключитьВОтчет</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Отборы</dataPath>
-        <field>Отборы</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ФормаОтчетности</dataPath>
@@ -1935,6 +2002,26 @@
       </parameters>
     </extInfo>
   </attributes>
+  <attributes>
+    <name>РедакцияФормы</name>
+    <title>
+      <key>ru</key>
+      <value>Редакция формы</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>СоздатьДопСтроку</name>
     <title>
@@ -1944,7 +2031,7 @@
     <id>1</id>
     <toolTip>
       <key>ru</key>
-      <value>Создать доп строку</value>
+      <value>Создать дополнительную строку</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -1980,16 +2067,32 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
+  <formCommands>
+    <name>СоздатьСтроку</name>
+    <title>
+      <key>ru</key>
+      <value>Создать</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать строку</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CreateListItem</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СоздатьСтроку</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel/>
-    <commandBar>
-      <cmiFragmentRecord>
-        <command>Catalog.НастройкиЗаполненияБухОтчетности.Command.СгенерироватьНастройкиПоУмолчанию</command>
-        <type>Added</type>
-        <group>FormCommandBarImportant</group>
-        <index>0</index>
-        <userVisible/>
-      </cmiFragmentRecord>
-    </commandBar>
+    <commandBar/>
   </commandInterface>
 </form:Form>

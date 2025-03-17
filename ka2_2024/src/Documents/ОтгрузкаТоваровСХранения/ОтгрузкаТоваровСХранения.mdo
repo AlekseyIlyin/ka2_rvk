@@ -1484,6 +1484,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="add02f3a-b395-45aa-a3ba-7852249fde4a">
+    <name>КодСпециальныхОбстоятельств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код специальных обстоятельств</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="613a5245-1dd2-48c9-9714-0a396ec3f48f">
     <name>ФормаДокумента</name>
     <synonym>

@@ -261,6 +261,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияРезультатыВыполненияДействий</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -393,6 +397,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ЗамокЗащищенныйУчастник</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -597,6 +605,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>StdPicture.Document</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -2569,7 +2581,7 @@
         <id>10</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -4617,6 +4629,24 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ОсновнойПредмет</name>
+    <title>
+      <key>ru</key>
+      <value>Основной предмет</value>
+    </title>
+    <id>48</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Готово</name>
     <title>
@@ -4892,6 +4922,13 @@
   </parameters>
   <parameters>
     <name>ОсновнойПредметТип</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОсновнойПредмет</name>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

@@ -374,6 +374,10 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">ПричинаНеудовлетворения</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>cf55ae06-3af1-47f1-ac5f-57fda083257f</dcsset:userSettingID>
 				</dcsset:item>
@@ -381,6 +385,10 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Менеджер</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>ccae39e1-8ecc-4e68-8b6f-9d5c2e3ef251</dcsset:userSettingID>
 				</dcsset:item>

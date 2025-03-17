@@ -101,6 +101,16 @@
       <commands>Document.ТранспортнаяНакладная.Command.ТранспортныеНакладные</commands>
       <commands>CommonCommand.ЖурналУчетаОригиналовПервичныхДокументов</commands>
     </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>CommonCommand.ДополнительныеОбработкиСклад</commands>
+      <commands>DataProcessor.ГенерацияТопологииСклада.StandardCommand.Open</commands>
+      <commands>DataProcessor.ДиспетчированиеСборкаИДоставка.StandardCommand.Open</commands>
+      <commands>DataProcessor.МобильноеРабочееМестоКладовщика.StandardCommand.Open</commands>
+      <commands>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.Command.УчетПрослеживаемыхТоваров</commands>
+      <commands>CommonCommand.УчетРНПТВПроизводстве</commands>
+      <commands>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.StandardCommand.Open</commands>
+    </orderFragments>
   </commandsOrder>
   <subsystemsOrder>
     <subsystems>Subsystem.Склад.Subsystem.НастройкиИСправочники</subsystems>

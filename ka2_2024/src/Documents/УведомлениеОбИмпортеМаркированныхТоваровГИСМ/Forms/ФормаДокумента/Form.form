@@ -841,6 +841,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ЗаполнениеКиЗ</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -2237,6 +2241,7 @@
   </handlers>
   <excludedCommands>Write</excludedCommands>
   <excludedCommands>WriteAndClose</excludedCommands>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

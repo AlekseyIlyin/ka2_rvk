@@ -765,6 +765,10 @@
                         <valuesPicture xsi:type="core:PictureRef">
                           <picture>CommonPicture.ВариантыПравилЗаполненияРеквизитов</picture>
                         </valuesPicture>
+                        <border xsi:type="core:BorderDef">
+                          <style>Single</style>
+                          <width>1</width>
+                        </border>
                       </extInfo>
                     </items>
                     <items xsi:type="form:FormField">
@@ -2100,6 +2104,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ВариантыПравилЗаполненияРеквизитов</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -3081,7 +3089,7 @@
         <id>202</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>

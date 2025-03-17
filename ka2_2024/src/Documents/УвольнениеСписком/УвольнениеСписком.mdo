@@ -120,6 +120,7 @@
   <defaultChoiceForm>Document.УвольнениеСписком.Form.ФормаСписка</defaultChoiceForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>CalculationRegister.Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</registerRecords>
   <registerRecords>AccumulationRegister.ОценочныеОбязательства</registerRecords>
   <registerRecords>AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</registerRecords>
   <registerRecords>InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</registerRecords>
@@ -171,6 +172,7 @@
   <registerRecords>InformationRegister.УдалитьБухучетПлановыхНачислений</registerRecords>
   <registerRecords>AccumulationRegister.СведенияОДоходахНДФЛ</registerRecords>
   <registerRecords>InformationRegister.ДанныеСохраняемогоЗаработкаПриВзысканиях</registerRecords>
+  <registerRecords>AccumulationRegister.ДниЧасыОтгулов</registerRecords>
   <registerRecords>AccumulationRegister.БухучетНачисленияУдержанияПоСотрудникам</registerRecords>
   <registerRecords>AccumulationRegister.ЗарплатаКВыплате</registerRecords>
   <registerRecords>InformationRegister.ПараметрыПериодовСтажаПФР</registerRecords>
@@ -1923,6 +1925,72 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="06da7c9d-4db5-4416-9662-979d3a3e79eb">
+      <name>ДниНакопленныхОтгулов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дни накопленных отгулов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="772eb66c-bfe2-4f34-bab2-63477338f510">
+      <name>ЧасыНакопленныхОтгулов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часы накопленных отгулов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e48d037c-9633-473e-a13b-7ed34310ed66">
+      <name>ВидРасчетаКомпенсацияНеИспользованныхДнейОтдыха</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета компенсация не использованных дней отдыха</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fe944c37-eabd-4cf0-88bc-97c55a980b27">
+      <name>ВидРасчетаКомпенсацияНеИспользованныхЧасовОтдыха</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета компенсация не использованных часов отдыха</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="4bdd9bef-9b60-4998-8ad8-0dbfcb2ab62c">
     <producedTypes>
@@ -3418,6 +3486,20 @@
         <numberQualifiers>
           <precision>10</precision>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d88f0827-a0de-4519-94e6-bbdf5c98bc7f">
+      <name>ПримененныйВычетЛичныйНалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примененный вычет личный налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -7599,6 +7681,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="14920bd2-5ff7-460f-b306-666f6512f848">
+      <name>НалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="ba7421e8-bf88-4df5-9ac9-e303f7429509">
     <producedTypes>
@@ -7859,6 +7955,20 @@
       </synonym>
       <type>
         <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d1185768-e14f-4720-9e00-be1b319cbb81">
+      <name>Начисление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начисление</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -10098,6 +10208,20 @@
       </synonym>
       <type>
         <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8ff3b92b-8ee7-4e32-8313-64f0ba549d4b">
+      <name>Начисление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начисление</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

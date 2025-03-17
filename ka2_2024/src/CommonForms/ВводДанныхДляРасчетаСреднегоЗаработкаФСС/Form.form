@@ -3918,6 +3918,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>Начисление</name>
+      <title>
+        <key>ru</key>
+        <value>Начисление</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>DefinedType.ВидыНачисленийСреднегоЗаработкаФСС</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>СтатьяФинансированияПоУмолчанию</name>
@@ -4171,6 +4188,92 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокСН</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок СН</value>
+    </title>
+    <id>45</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокРК</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок РК</value>
+    </title>
+    <id>46</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокБольничныйЗаСчетРаботодателяСН</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок (больничный за счет работодателя) СН</value>
+    </title>
+    <id>47</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.РассчитыватьОтдельноСреднийЗаработокФССДляБольничногоЗаСчетРаботодателя</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>СреднийЗаработокБольничныйЗаСчетРаботодателяРК</name>
+    <title>
+      <key>ru</key>
+      <value>Средний заработок (больничный за счет работодателя) РК</value>
+    </title>
+    <id>48</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.РассчитыватьОтдельноСреднийЗаработокФССДляБольничногоЗаСчетРаботодателя</functionalOptions>
   </attributes>
   <formCommands>
     <name>OK</name>

@@ -30,6 +30,48 @@
     <excludedCommands>SortListDesc</excludedCommands>
     <toolTipRepresentation>ShowTop</toolTipRepresentation>
     <items xsi:type="form:FormField">
+      <name>СреднийЗаработокНачисление</name>
+      <id>65</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СреднийЗаработок.Начисление</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СреднийЗаработокНачислениеРасширеннаяПодсказка</name>
+        <id>67</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СреднийЗаработокНачислениеКонтекстноеМеню</name>
+        <id>66</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <autoMarkIncomplete>true</autoMarkIncomplete>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>СреднийЗаработокСуммаВсего</name>
       <id>26</id>
       <visible>true</visible>
@@ -584,6 +626,10 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
+      <event>OnStartEdit</event>
+      <name>СреднийЗаработокПриНачалеРедактирования</name>
+    </handlers>
+    <handlers>
       <event>OnChange</event>
       <name>СреднийЗаработокПриИзменении</name>
     </handlers>
@@ -1058,6 +1104,23 @@
       <id>11</id>
       <valueType>
         <types>EnumRef.УчетНачисленийВСреднемЗаработкеФСС</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Начисление</name>
+      <title>
+        <key>ru</key>
+        <value>Начисление</value>
+      </title>
+      <id>12</id>
+      <valueType>
+        <types>DefinedType.ВидыНачисленийСреднегоЗаработкаФСС</types>
       </valueType>
       <view>
         <common>true</common>

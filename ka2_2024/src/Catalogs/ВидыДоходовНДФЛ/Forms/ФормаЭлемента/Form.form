@@ -240,6 +240,51 @@
     <name>КодыПрименяемыеВНалоговойОтчетности</name>
     <id>55</id>
     <items xsi:type="form:FormField">
+      <name>КодПрименяемыйВНалоговойОтчетностиС2025Года</name>
+      <id>65</id>
+      <title>
+        <key>ru</key>
+        <value>с 2025 года</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.КодПрименяемыйВНалоговойОтчетностиС2025Года</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>КодПрименяемыйВНалоговойОтчетностиС2025ГодаРасширеннаяПодсказка</name>
+        <id>67</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>КодПрименяемыйВНалоговойОтчетностиС2025ГодаКонтекстноеМеню</name>
+        <id>66</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>КодПрименяемыйВНалоговойОтчетностиС2021Года</name>
       <id>57</id>
       <title>
@@ -435,10 +480,6 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <toolTip>
-        <key>ru</key>
-        <value>Группа представление в налоговой отчетности2010</value>
-      </toolTip>
       <extendedTooltip>
         <name>ГруппаПредставлениеВНалоговойОтчетности2010РасширеннаяПодсказка</name>
         <id>64</id>

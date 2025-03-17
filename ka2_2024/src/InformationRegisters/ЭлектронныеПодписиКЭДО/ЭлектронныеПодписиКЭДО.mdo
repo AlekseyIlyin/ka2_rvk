@@ -69,10 +69,10 @@
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="e7bd21a0-05f4-4858-87b7-c9edf180cb53">
-    <name>Отпечаток</name>
+    <name>УдалитьОтпечаток</name>
     <synonym>
       <key>ru</key>
-      <value>Отпечаток</value>
+      <value>(не используется) Отпечаток</value>
     </synonym>
     <type>
       <types>String</types>
@@ -93,10 +93,10 @@
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="6ef347f7-c737-4872-bfb9-a00683321868">
-    <name>ДатаПодписи</name>
+    <name>УдалитьДатаПодписи</name>
     <synonym>
       <key>ru</key>
-      <value>Дата подписи</value>
+      <value>(не используется) Дата подписи</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -114,13 +114,13 @@
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="e8231f1b-291b-40c2-aabf-05d4bba840dc">
-    <name>МЧД</name>
+    <name>УдалитьМЧД</name>
     <synonym>
       <key>ru</key>
-      <value>МЧД</value>
+      <value>(не используется) МЧД</value>
     </synonym>
     <type>
-      <types>CatalogRef.МашиночитаемыеДоверенностиКЭДО</types>
+      <types>CatalogRef.УдалитьМашиночитаемыеДоверенностиКЭДО</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -141,6 +141,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d76cbd1d-5272-4fb3-ae5c-042b083352ac">
+    <name>ИдентификаторПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор подписи</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>

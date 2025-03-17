@@ -1212,6 +1212,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Наборы</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -8613,6 +8617,10 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>CommonCommand.ПрисоединенныеФайлы</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.ДанныеЗаказовСервисДоставки.StandardCommand.OpenByValue.ДокументОснование</command>
         <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>

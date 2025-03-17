@@ -2498,43 +2498,6 @@
           <name>ГруппаСоставПрочихНастроек</name>
           <id>854</id>
           <items xsi:type="form:FormGroup">
-            <name>ГруппаОбменКадровойИсторией</name>
-            <id>1196</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <toolTip>
-              <key>ru</key>
-              <value>Группа обмен кадровой историей</value>
-            </toolTip>
-            <extendedTooltip>
-              <name>ГруппаОбменКадровойИсториейРасширеннаяПодсказка</name>
-              <id>1197</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>HorizontalIfPossible</group>
-              <behavior>Auto</behavior>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>Auto</currentRowUse>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormGroup">
             <name>ГруппаФильтрПоКассеККМ</name>
             <id>1059</id>
             <items xsi:type="form:FormGroup">
@@ -2965,6 +2928,95 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
+            <name>ГруппаВыгружатьАналитикуПоСкладам</name>
+            <id>893</id>
+            <items xsi:type="form:FormField">
+              <name>ВыгружатьАналитикуПоСкладам</name>
+              <id>856</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ВыгружатьАналитикуПоСкладам</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <toolTipRepresentation>Button</toolTipRepresentation>
+              <extendedTooltip>
+                <name>ВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
+                <id>858</id>
+                <title>
+                  <key>ru</key>
+                  <value>Настройка ограничивает выгрузку справочника &quot;Склады&quot; и следующих документов:
+1. Заказ на перемещение
+2. Перемещение товаров
+3. Пересчет товаров
+</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ВыгружатьАналитикуПоСкладамКонтекстноеМеню</name>
+                <id>857</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Выгружать аналитику по складам</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
+              <id>894</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
             <name>ГруппаНастройкаОтправлятьИнформОстатки</name>
             <id>998</id>
             <items xsi:type="form:FormGroup">
@@ -2979,9 +3031,10 @@
                   <common>true</common>
                 </userVisible>
                 <dataPath xsi:type="form:DataPath">
-                  <segments>ФлагФормыВыгрузкиИнформОстатков</segments>
+                  <segments>Объект.ВыгружатьИнформативныеОстатки</segments>
                 </dataPath>
                 <titleLocation>Right</titleLocation>
+                <toolTipRepresentation>Button</toolTipRepresentation>
                 <handlers>
                   <event>OnChange</event>
                   <name>ФлагОтправлятьИнформОстатки</name>
@@ -2989,15 +3042,25 @@
                 <extendedTooltip>
                   <name>ФлагОтправлятьИнформативныеОстаткиРасширеннаяПодсказка</name>
                   <id>1004</id>
+                  <title>
+                    <key>ru</key>
+                    <value>&lt;color #333333>&lt;font Almarai, Arial, sans-serif>&lt;bgcolor #ffffff>Для выгрузки информативных остатков номенклатуры, необходимо включить опцию &quot;Ведется работа через торговых представителей&quot; в настройках раздела &quot;НСИ и администрирование&quot; - &quot;&lt;/>&lt;/>&lt;/>&lt;link ОткрытьФормуНастроекПродажи>&lt;color #1c55ae>&lt;font Almarai, Arial, sans-serif>Продажи&lt;/>&lt;/>&lt;/>&lt;color #333333>&lt;font Almarai, Arial, sans-serif>&lt;bgcolor #ffffff>&quot; - &quot;Торговые представители&quot;.&lt;/>&lt;/>&lt;/>
+</value>
+                  </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
+                  <formatted>true</formatted>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <handlers>
+                      <event>URLProcessing</event>
+                      <name>ФлагОтправлятьИнформативныеОстаткиРасширеннаяПодсказкаОбработкаНавигационнойСсылки</name>
+                    </handlers>
                     <horizontalAlign>Left</horizontalAlign>
                   </extInfo>
                 </extendedTooltip>
@@ -3213,7 +3276,7 @@
               </title>
               <toolTip>
                 <key>ru</key>
-                <value>Группа отправлять виды цен номенклатуры</value>
+                <value>Группа отправлять информ. остатки по складам</value>
               </toolTip>
               <extendedTooltip>
                 <name>ГруппаОтправлятьИнформОстаткиПоСкладамРасширеннаяПодсказка</name>
@@ -3230,97 +3293,15 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <type>Page</type>
-              <extInfo xsi:type="form:PageGroupExtInfo">
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
                 <group>HorizontalIfPossible</group>
-                <showTitle>true</showTitle>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormGroup">
-              <name>ГруппаОтправлятьИнформОстаткиПоСкладу</name>
-              <id>1016</id>
-              <items xsi:type="form:FormField">
-                <name>ПолеСкладИнформОстатков</name>
-                <id>1018</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:DataPath">
-                  <segments>ФлагФормыВыгрузкиИнформОстатков</segments>
-                </dataPath>
-                <extendedTooltip>
-                  <name>ПолеСкладИнформОстатковРасширеннаяПодсказка</name>
-                  <id>1020</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>ПолеСкладИнформОстатковКонтекстноеМеню</name>
-                  <id>1019</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>InputField</type>
-                <editMode>Enter</editMode>
-                <showInHeader>true</showInHeader>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:InputFieldExtInfo">
-                  <width>55</width>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <wrap>true</wrap>
-                  <clearButton>false</clearButton>
-                  <typeDomainEnabled>true</typeDomainEnabled>
-                </extInfo>
-              </items>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <title>
-                <key>ru</key>
-                <value>Группа отправлять информ. остатки по складу</value>
-              </title>
-              <toolTip>
-                <key>ru</key>
-                <value>Группа отправлять вид цен номенклатуры</value>
-              </toolTip>
-              <extendedTooltip>
-                <name>ГруппаОтправлятьИнформОстаткиПоСкладуРасширеннаяПодсказка</name>
-                <id>1017</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>Page</type>
-              <extInfo xsi:type="form:PageGroupExtInfo">
-                <group>HorizontalIfPossible</group>
-                <showTitle>true</showTitle>
+                <behavior>Auto</behavior>
+                <representation>WeakSeparation</representation>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -3351,8 +3332,14 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <type>Pages</type>
-            <extInfo xsi:type="form:PagesGroupExtInfo">
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>HorizontalIfPossible</group>
+              <behavior>Auto</behavior>
+              <representation>WeakSeparation</representation>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
               <currentRowUse>Auto</currentRowUse>
             </extInfo>
           </items>
@@ -3367,7 +3354,7 @@
                 <id>906</id>
                 <title>
                   <key>ru</key>
-                  <value>Выгружать с отбором по видам цен номенклатуры</value>
+                  <value>Выгружать документ &quot;Установка цен номенклатуры&quot; с отбором</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -3380,7 +3367,7 @@
                 <titleLocation>Right</titleLocation>
                 <toolTip>
                   <key>ru</key>
-                  <value>Настройка используется для документа &quot;Установка цен номенклатуры&quot; для ограничения информации о ценах по видам цен. Если документ исключен из регистрации, настройка применяться не будет. необходимо учитывать при настройке отборов по видам документов.</value>
+                  <value>Настройка используется для документа &quot;Установка цен номенклатуры&quot;, для ограничения выгрузки. Данные выгружаются только по выбранным видам цен. Если отбор не выбран, документ не будет регистрироваться к обмену. </value>
                 </toolTip>
                 <toolTipRepresentation>Button</toolTipRepresentation>
                 <handlers>
@@ -3430,7 +3417,7 @@
                     <id>913</id>
                     <title>
                       <key>ru</key>
-                      <value>Выбрать виды цен</value>
+                      <value>Виды цен</value>
                     </title>
                     <visible>true</visible>
                     <enabled>true</enabled>
@@ -4089,7 +4076,7 @@
                   <id>1093</id>
                   <title>
                     <key>ru</key>
-                    <value>Настройка используется для ограничения выгрузки справочника &quot;Эквайринговые терминалы&quot;. Имеет смысл, только если установлен отбор по организациям.</value>
+                    <value>Настройка используется для ограничения выгрузки справочника &quot;Эквайринговые терминалы&quot;.</value>
                   </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -4212,6 +4199,152 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>HorizontalIfPossible</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаФильтрПоДоговорамЭквайринга</name>
+            <id>1211</id>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаВыравниваниеФильтраПоДоговорамЭквайринга</name>
+              <id>1213</id>
+              <items xsi:type="form:FormField">
+                <name>ИспользоватьОтборПоДоговорамЭквайринга</name>
+                <id>1215</id>
+                <title>
+                  <key>ru</key>
+                  <value>Отбор договоров подключения (к платежным системам)</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Объект.ИспользоватьОтборПоДоговорамЭквайринга</segments>
+                </dataPath>
+                <titleLocation>Right</titleLocation>
+                <toolTipRepresentation>Button</toolTipRepresentation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ИспользоватьОтборПоДоговорамЭквайрингаПриИзменении</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>ИспользоватьОтборПоДоговорамЭквайрингаРасширеннаяПодсказка</name>
+                  <id>1217</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Настройка используется для ограничения выгрузки справочника &quot;Договоры подключения к платежным системам&quot;. Имеет смысл, только если установлен отбор по организациям.</value>
+                  </title>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ИспользоватьОтборПоДоговорамЭквайрингаКонтекстноеМеню</name>
+                  <id>1216</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>CheckBoxField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+              </items>
+              <items xsi:type="form:Button">
+                <name>ОткрытьСписокДоговоровЭквайринга</name>
+                <id>1218</id>
+                <title>
+                  <key>ru</key>
+                  <value>Выбрать договоры подключения</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ОткрытьСписокДоговоровЭквайрингаРасширеннаяПодсказка</name>
+                  <id>1219</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Hyperlink</type>
+                <commandName>Form.Command.ОткрытьСписокОтправляемыхДоговоровЭквайринга</commandName>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа выравнивание фильтра</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа выравнивание фильтра по эквайринговым терминалам</value>
+              </toolTip>
+              <toolTipRepresentation>None</toolTipRepresentation>
+              <extendedTooltip>
+                <name>ГруппаВыравниваниеФильтраПоДоговорамЭквайрингаРасширеннаяПодсказка</name>
+                <id>1214</id>
+                <type>Label</type>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>HorizontalIfPossible</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Отбор по договорам подключения к платежным системам</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа фильтр по эквайринговым терминалам</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ГруппаФильтрПоДоговорамЭквайрингаРасширеннаяПодсказка</name>
+              <id>1212</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4553,86 +4686,6 @@
             <extendedTooltip>
               <name>ГруппаФильтрПоФизическимЛицамРасширеннаяПодсказка</name>
               <id>1079</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>Vertical</group>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>Auto</currentRowUse>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаВыгружатьАналитикуПоСкладам</name>
-            <id>893</id>
-            <items xsi:type="form:FormField">
-              <name>ВыгружатьАналитикуПоСкладам</name>
-              <id>856</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ВыгружатьАналитикуПоСкладам</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <extendedTooltip>
-                <name>ВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
-                <id>858</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ВыгружатьАналитикуПоСкладамКонтекстноеМеню</name>
-                <id>857</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-            </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Выгружать аналитику по складам</value>
-            </title>
-            <extendedTooltip>
-              <name>ГруппаВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
-              <id>894</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5800,6 +5853,62 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </items>
+          <items xsi:type="form:FormField">
+            <name>ПолеСкладПоУмолчанию</name>
+            <id>885</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.СкладПоУмолчанию</segments>
+            </dataPath>
+            <toolTip>
+              <key>ru</key>
+              <value>Используется по умолчанию при заполнении склада в документах движения ТМЦ.</value>
+            </toolTip>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ПолеСкладПоУмолчаниюРасширеннаяПодсказка</name>
+              <id>887</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПолеСкладПоУмолчаниюКонтекстноеМеню</name>
+              <id>886</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <choiceFoldersAndItems>Items</choiceFoldersAndItems>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -5886,99 +5995,6 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </items>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <title>
-            <key>ru</key>
-            <value>Группа1</value>
-          </title>
-          <extendedTooltip>
-            <name>ГруппаЭквайринговыйТерминалПоУмолчаниюРасширеннаяПодсказка</name>
-            <id>1105</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>UsualGroup</type>
-          <extInfo xsi:type="form:UsualGroupExtInfo">
-            <group>Vertical</group>
-            <behavior>Auto</behavior>
-            <showLeftMargin>true</showLeftMargin>
-            <united>true</united>
-            <throughAlign>Auto</throughAlign>
-            <currentRowUse>Auto</currentRowUse>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormGroup">
-          <name>ГруппаНастройкиПолученияПоУмолчанию</name>
-          <id>1119</id>
-          <items xsi:type="form:FormField">
-            <name>ПолеСкладПоУмолчанию</name>
-            <id>885</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.СкладПоУмолчанию</segments>
-            </dataPath>
-            <toolTip>
-              <key>ru</key>
-              <value>Используется по умолчанию при заполнении склада в документах движения ТМЦ.</value>
-            </toolTip>
-            <toolTipRepresentation>Button</toolTipRepresentation>
-            <extendedTooltip>
-              <name>ПолеСкладПоУмолчаниюРасширеннаяПодсказка</name>
-              <id>887</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ПолеСкладПоУмолчаниюКонтекстноеМеню</name>
-              <id>886</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <choiceButton>true</choiceButton>
-              <choiceFoldersAndItems>Items</choiceFoldersAndItems>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-            </extInfo>
-          </items>
           <items xsi:type="form:FormField">
             <name>ЭквайринговыйТерминалПоУмолчанию</name>
             <id>1108</id>
@@ -6038,6 +6054,43 @@
               <textEdit>true</textEdit>
             </extInfo>
           </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа1</value>
+          </title>
+          <extendedTooltip>
+            <name>ГруппаЭквайринговыйТерминалПоУмолчаниюРасширеннаяПодсказка</name>
+            <id>1105</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаНастройкиПолученияПоУмолчанию</name>
+          <id>1119</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -6534,6 +6587,10 @@
     <name>ОбработкаВыбора</name>
   </handlers>
   <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
     <event>BeforeClose</event>
     <name>ПередЗакрытием</name>
   </handlers>
@@ -6544,6 +6601,10 @@
   <handlers>
     <event>OnClose</event>
     <name>ПриЗакрытии</name>
+  </handlers>
+  <handlers>
+    <event>URLProcessing</event>
+    <name>ОбработкаНавигационнойСсылки</name>
   </handlers>
   <handlers>
     <event>FillCheckProcessingAtServer</event>
@@ -6648,24 +6709,7 @@
     </edit>
   </attributes>
   <attributes>
-    <name>СкладИнформОстатков</name>
-    <title>
-      <key>ru</key>
-      <value>Склад информ остатков</value>
-    </title>
-    <id>6</id>
-    <valueType>
-      <types>CatalogRef.Склады</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФлагФормыВыгрузкиИнформОстатков</name>
+    <name>ВедетсяРаботаЧерезТорговыхПредставителей</name>
     <title>
       <key>ru</key>
       <value>Выгружать информативные остатки</value>
@@ -7005,6 +7049,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОткрытьСписокОтправляемыхКассККМБезОтбораПоОрганизации</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьСписокОтправляемыхДоговоровЭквайринга</name>
+    <title>
+      <key>ru</key>
+      <value>Выбрать договоры подключения (к платежной системе)</value>
+    </title>
+    <id>14</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть список отправляемых договоров эквайринга</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьСписокОтправляемыхДоговоровЭквайринга</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

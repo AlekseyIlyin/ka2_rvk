@@ -123,6 +123,7 @@
   <defaultChoiceForm>Document.БольничныйЛист.Form.ФормаСписка</defaultChoiceForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>CalculationRegister.Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</registerRecords>
   <registerRecords>AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</registerRecords>
   <registerRecords>InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</registerRecords>
   <registerRecords>InformationRegister.ЗначенияПоказателейУдержаний</registerRecords>
@@ -3446,6 +3447,126 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="1cae4e68-38c1-4866-bb98-bc2e30b3e809">
+    <name>СреднийДневнойЗаработокРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний дневной заработок РК</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="44359aff-c43e-417c-8b1c-beb215923c55">
+    <name>СреднийДневнойЗаработокСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний дневной заработок СН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="497dff54-50dc-4e8c-8ab6-686cc918f18a">
+    <name>СреднийЗаработокБольничныйЗаСчетРаботодателяРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний заработок больничный за счет работодателя РК</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8453fdc0-3c18-4b27-a608-fb159ff865eb">
+    <name>СреднийЗаработокБольничныйЗаСчетРаботодателяСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний заработок больничный за счет работодателя СН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="71965d3a-261a-4d36-bb98-573d90ab58d5">
+    <name>СреднийПоДаннымОрганизацииРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний по данным организации РК</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f6d1be94-7966-42bb-90cb-b8542b07e206">
+    <name>СреднийПоДаннымОрганизацииСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний по данным организации СН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="a17b10e3-78a9-45da-abfb-28047a5ee99e">
     <name>ФормаДокумента</name>
     <synonym>
@@ -5832,6 +5953,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="fb02210f-6ee9-4784-a0ab-56820db496d6">
+      <name>Начисление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начисление</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВидыНачисленийСреднегоЗаработкаФСС</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="7e2278df-5c8d-4992-ace6-0b314334c2f2">
     <producedTypes>
@@ -6593,6 +6728,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="de3421e1-2fdf-4f42-bd4e-9bbd0218622e">
+      <name>ПримененныйВычетЛичныйНалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примененный вычет личный налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="b17b1328-2b7d-4847-b8e4-763a73e1272f">
     <producedTypes>
@@ -7118,6 +7267,20 @@
         <key>ru</key>
         <value>ДФ='ММММ гггг'</value>
       </editFormat>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cadfd55f-c936-4d22-b055-86cb0645aeb6">
+      <name>НалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
@@ -8603,6 +8766,20 @@
       </synonym>
       <type>
         <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b045afa6-96a4-4cbe-9264-49bdc48d6328">
+      <name>Начисление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начисление</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

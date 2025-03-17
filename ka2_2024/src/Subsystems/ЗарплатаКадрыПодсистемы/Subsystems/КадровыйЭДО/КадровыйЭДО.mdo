@@ -82,10 +82,9 @@
   <content>CommonModule.ЭлектроннаяПодписьКЭДОПовтИсп</content>
   <content>CommonModule.ЭлектроннаяПодписьКЭДОКлиент</content>
   <content>CommonModule.ЭлектроннаяПодписьКЭДОКлиентСервер</content>
-  <content>CommonForm.ВыборСертификатовПодписей</content>
   <content>InformationRegister.ЭлектронныеПодписиКЭДО</content>
-  <content>Catalog.МашиночитаемыеДоверенностиКЭДО</content>
-  <content>InformationRegister.СостоянияМЧДКЭДО</content>
+  <content>Catalog.УдалитьМашиночитаемыеДоверенностиКЭДО</content>
+  <content>InformationRegister.УдалитьСостоянияМЧДКЭДО</content>
   <content>Catalog.ШаблоныДокументов</content>
   <content>Report.ШаблоныДокументовКабинетСотрудника</content>
   <content>Enum.ТипыРеквизитовШаблоновДокументов</content>
@@ -94,5 +93,7 @@
   <content>FunctionalOption.ИспользоватьШаблоныДокументов</content>
   <content>Enum.ВариантыПодписанияДокументовКЭДО</content>
   <content>Report.ДокументыКЭДОСотрудников</content>
+  <content>EventSubscription.ПроверитьПометкуУдаленияВариантаШаблонаДокументов</content>
+  <content>Report.ДокументыКЭДОСОтказами</content>
   <parentSubsystem>Subsystem.ЗарплатаКадрыПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

@@ -86,6 +86,14 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>DataProcessor.ПанельАдминистрированияУТ.Command.ОписанияПроцессов</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.НаборыДополнительныхРеквизитовИСведений.Command.Метки</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>DataProcessor.АктивныеПользователи.Command.АктивныеПользователи</command>
       <visible/>
     </visibilityFragments>
@@ -376,6 +384,10 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>CommonCommand.ОбращениеВТехническуюПоддержкуФирмы1С</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>CommonForm.ОписаниеИзмененийПрограммы.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
@@ -393,14 +405,6 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>CommonCommand.НастройкиКомпонентыОбменаДаннымиСКПК</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>DataProcessor.ПанельАдминистрированияУТ.Command.ОписанияПроцессов</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>Catalog.НаборыДополнительныхРеквизитовИСведений.Command.Метки</command>
       <visible/>
     </visibilityFragments>
   </commandsVisibility>
@@ -482,6 +486,7 @@
       <commands>DataProcessor.ПомощникПереходаНаЦенообразованиеВерсии25.Command.ПерейтиНаНовоеЦенообразование</commands>
       <commands>DataProcessor.ПанельАдминистрированияУТ.Command.ОписанияПроцессов</commands>
       <commands>CommonCommand.СвязатьсяСоСпециалистом</commands>
+      <commands>Catalog.НаборыДополнительныхРеквизитовИСведений.Command.Метки</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.НачальноеЗаполнение</group>
@@ -523,6 +528,7 @@
       <commands>DataProcessor.УниверсальныйОбменДаннымиXML.Command.УниверсальныйОбменДанными</commands>
       <commands>Catalog.ВидыИнцидентов.StandardCommand.OpenList</commands>
       <commands>Catalog.КритичностьИнцидентов.StandardCommand.OpenList</commands>
+      <commands>DataProcessor.ЖурналРегистрации.Command.ЖурналДоступаКДанным</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelTools</group>
@@ -568,6 +574,7 @@
       <commands>DataProcessor.ПомощникПереходаСДругихКонфигураций.StandardCommand.Open</commands>
       <commands>CommonForm.НастройкиРегистрацииСобытийДоступаКПерсональнымДанным.StandardCommand.Open</commands>
       <commands>DataProcessor.ПомощникПереходаСДругихКонфигураций.Command.ПереносДанныхИзБП</commands>
+      <commands>CommonCommand.ОбращениеВТехническуюПоддержкуФирмы1С</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.Информация</group>
@@ -590,5 +597,6 @@
     <subsystems>Subsystem.Администрирование.Subsystem.Администрирование</subsystems>
     <subsystems>Subsystem.Администрирование.Subsystem.НастройкаРазделов</subsystems>
     <subsystems>Subsystem.Администрирование.Subsystem.НастройкаИнтеграции</subsystems>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОтложенныеЗадания</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

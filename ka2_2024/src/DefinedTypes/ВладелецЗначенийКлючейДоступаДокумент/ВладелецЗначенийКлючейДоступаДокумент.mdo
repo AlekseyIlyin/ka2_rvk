@@ -32,6 +32,7 @@
     <types>DocumentObject.ПачкаРазделов6РасчетаРСВ_1</types>
     <types>DocumentObject.АктПремииКлиенту</types>
     <types>DocumentObject.АктВыполненныхВнутреннихРабот</types>
+    <types>DocumentObject.АктПремииПоставщика</types>
     <types>DocumentObject.РеализацияУслугПрочихАктивов</types>
     <types>DocumentObject.УтверждениеТарифнойСетки</types>
     <types>DocumentObject.КнигаПокупокДляПередачиВЭлектронномВиде</types>
@@ -67,6 +68,7 @@
     <types>DocumentObject.ВыработкаНМА</types>
     <types>DocumentObject.ПланВнутреннихПотреблений</types>
     <types>DocumentObject.ДоговорРаботыУслуги</types>
+    <types>DocumentObject.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>DocumentObject.СообщениеОбменСБанками</types>
     <types>DocumentObject.ВозвратТоваровПоставщику</types>
     <types>DocumentObject.СписаниеНМА</types>
@@ -85,6 +87,7 @@
     <types>DocumentObject.УведомлениеОПоступленииМаркированныхТоваровГИСМ</types>
     <types>DocumentObject.ОплатаДнейУходаЗаДетьмиИнвалидами</types>
     <types>DocumentObject.ОрдерНаОтражениеНедостачТоваров</types>
+    <types>DocumentObject.УсловияРетроБонусовПоставщика</types>
     <types>DocumentObject.РаботаВВыходныеИПраздничныеДни</types>
     <types>DocumentObject.ВводОстатковУзловКомпонентовАмортизации</types>
     <types>DocumentObject.НазначениеРабочихМестСотрудникам</types>
@@ -94,6 +97,7 @@
     <types>DocumentObject.ПерерасчетИмущественныхНалогов</types>
     <types>DocumentObject.КорректировкаОбособленногоУчетаЗапасов</types>
     <types>DocumentObject.ЛистокСообщенияДляВоенкомата</types>
+    <types>DocumentObject.ЗаявкаОтпускКабинетСотрудника</types>
     <types>DocumentObject.ВыкупВозвратнойТарыУПоставщика</types>
     <types>DocumentObject.РеестрДанныхЭЛНЗаполняемыхРаботодателем</types>
     <types>DocumentObject.НазначениеПлановогоНачисления</types>
@@ -141,6 +145,7 @@
     <types>DocumentObject.ВозвратОСИзАренды2_4</types>
     <types>DocumentObject.ЗаявкаНаРасходованиеДенежныхСредств</types>
     <types>DocumentObject.ПодготовкаКПередачеНМА</types>
+    <types>DocumentObject.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>DocumentObject.СчетФактураКомитента</types>
     <types>DocumentObject.ПриостановлениеТрудовыхДоговоровКонтрактов</types>
     <types>DocumentObject.УсловияРетроБонусовКлиентов</types>
@@ -206,6 +211,7 @@
     <types>DocumentObject.КадровыйПеревод</types>
     <types>DocumentObject.МаркировкаТоваровИСМП</types>
     <types>DocumentObject.ОстаткиЕГАИС</types>
+    <types>DocumentObject.СписаниеРетроБонусовПоставщика</types>
     <types>DocumentObject.ЭлектронныйПутевойЛист</types>
     <types>DocumentObject.НачислениеДивидендов</types>
     <types>DocumentObject.ОтпускБезСохраненияОплаты</types>
@@ -232,6 +238,7 @@
     <types>DocumentObject.РезервыПоОплатеТруда</types>
     <types>DocumentObject.КоммерческоеПредложениеПоставщика</types>
     <types>DocumentObject.ЗаявлениеВФССОВозмещенииВыплатРодителямДетейИнвалидов</types>
+    <types>DocumentObject.ЗаявкаНалоговыеВычетыКабинетСотрудника</types>
     <types>DocumentObject.ВыгрузкаРегламентированныхОтчетов</types>
     <types>DocumentObject.ЗапросОстатковПартийЗЕРНО</types>
     <types>DocumentObject.СписаниеОС2_4</types>
@@ -244,8 +251,11 @@
     <types>DocumentObject.СводнаяСправкаНДС</types>
     <types>DocumentObject.ВедомостьНаВыплатуЗарплатыПеречислением</types>
     <types>DocumentObject.ПоступлениеОтПереработчика</types>
+    <types>DocumentObject.ПриказОБронированииРаботников</types>
     <types>DocumentObject.ОтчетОСписанииТоваровУХранителя</types>
+    <types>DocumentObject.НачислениеРетроБонусовПоставщика</types>
     <types>DocumentObject.ВводОстатковСПодотчетниками</types>
+    <types>DocumentObject.ЗаявлениеОВвозеТоваровПолученное</types>
     <types>DocumentObject.РасходныйКассовыйОрдер</types>
     <types>DocumentObject.ЗапросСтатусовВыплатыПособия</types>
     <types>DocumentObject.ИндивидуальныйГрафик</types>
@@ -260,6 +270,7 @@
     <types>DocumentObject.ИсходящаяСправкаОЗаработкеДляРасчетаПособий</types>
     <types>DocumentObject.ПеремаркировкаТоваровГИСМ</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_6_3</types>
+    <types>DocumentObject.РазрешениеНаОтгрузкуИСМП</types>
     <types>DocumentObject.РегистрацияСведенийОЗастрахованномЛицеФСС</types>
     <types>DocumentObject.ЭлектронноеПисьмоВходящее</types>
     <types>DocumentObject.ПеремещениеОС</types>
@@ -401,12 +412,14 @@
     <types>DocumentObject.ПачкаДокументовАДВ_1</types>
     <types>DocumentObject.СведенияОЗастрахованномЛицеФСС</types>
     <types>DocumentObject.РеестрДСВ_3</types>
+    <types>DocumentObject.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
     <types>DocumentObject.ЗапланированноеВзаимодействие</types>
     <types>DocumentObject.СчетФактураКомиссионеру</types>
     <types>DocumentObject.ОтветСтрахователяНаТребованиеПроверкиФСС</types>
     <types>DocumentObject.ПереводНаОплатуПоСреднемуЗаработку</types>
     <types>DocumentObject.ВводПервоначальныхСведенийДляРасчетаТранспортногоНалога</types>
     <types>DocumentObject.ОприходованиеИзлишковТоваровУХранителя</types>
+    <types>DocumentObject.ПриказОПрекращенииБронирования</types>
     <types>DocumentObject.ДепонированиеЗарплаты</types>
     <types>DocumentObject.Отгул</types>
     <types>DocumentObject.СтатусыВыплатыПособия</types>
@@ -416,9 +429,11 @@
     <types>DocumentObject.Бронирование</types>
     <types>DocumentObject.РеализацияТоваровУслуг</types>
     <types>DocumentObject.ДопЛистКнигиПокупокДляПередачиВЭлектронномВиде</types>
+    <types>DocumentObject.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
     <types>DocumentObject.ВводОстатковПрочихАктивовПассивов</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_К</types>
     <types>DocumentObject.ПогашениеСДИЗЗЕРНО</types>
+    <types>DocumentObject.ПереносРНПТМатериаловНаПродукцию</types>
     <types>DocumentObject.РазукомплектацияОС</types>
     <types>DocumentObject.Анкета</types>
     <types>DocumentObject.ДоговорАвторскогоЗаказа</types>
@@ -433,6 +448,7 @@
     <types>DocumentObject.ВосстановлениеНДСПоОбъектамНедвижимости</types>
     <types>DocumentObject.НаработкаТМЦВЭксплуатации</types>
     <types>DocumentObject.ПодготовкаКПередачеОС</types>
+    <types>DocumentObject.ЗаявкаОтпускБезОплатыКабинетСотрудника</types>
     <types>DocumentObject.СтатистикаПерсонала</types>
     <types>DocumentObject.ЗаказКлиента</types>
     <types>DocumentObject.НачислениеЗаПервуюПоловинуМесяца</types>
@@ -480,6 +496,7 @@
     <types>DocumentObject.ПереносДанных</types>
     <types>DocumentObject.ОтветНаЗапросФССДляРасчетаПособия</types>
     <types>DocumentObject.ЗаданиеТорговомуПредставителю</types>
+    <types>DocumentObject.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудника</types>
     <types>DocumentObject.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ</types>
     <types>DocumentObject.ДокументКадровогоЭДО</types>
     <types>DocumentObject.ОтказВВозмещенииВыплатРодителямДетейИнвалидов</types>
@@ -501,14 +518,19 @@
     <types>DocumentObject.ПланПродажПоКатегориям</types>
     <types>DocumentObject.СогласиеНаОбработкуПерсональныхДанных</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_6_4</types>
+    <types>DocumentObject.ЗаявкаПрежняяВерсияКабинетСотрудника</types>
     <types>DocumentObject.ЗаявкаНаВозвратТоваровОтКлиента</types>
     <types>DocumentObject.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности</types>
     <types>DocumentObject.АктПриемкиВыполненныхРаботОказанныхУслуг</types>
     <types>DocumentObject.ПараметрыНачисленияНалогаНаИмущество</types>
     <types>DocumentObject.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ</types>
+    <types>DocumentObject.ЗаявкаДСВКабинетСотрудника</types>
+    <types>DocumentObject.ОбращениеКабинетСотрудника</types>
     <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentObject.ПередачаОСВАренду2_4</types>
     <types>DocumentObject.ВедомостьПрочихДоходовПеречислением</types>
+    <types>DocumentObject.ПеремещениеМеждуМОДИСМП</types>
     <types>DocumentObject.БухучетЗарплатыСотрудников</types>
     <types>DocumentObject.МаркировкаТоваровГИСМ</types>
     <types>DocumentObject.ПеремещениеМатериаловВПроизводстве</types>
@@ -538,16 +560,19 @@
     <types>DocumentObject.ТранспортныйКонтейнерЭДО</types>
     <types>DocumentObject.СчетФактураНалоговыйАгент</types>
     <types>DocumentObject.ИзменениеПараметровОС2_4</types>
+    <types>DocumentObject.ЗаявкаСправка2НДФЛКабинетСотрудника</types>
     <types>DocumentObject.ПроизводствоБезЗаказа</types>
     <types>DocumentObject.ЗаказНаВнутреннееПотребление</types>
     <types>DocumentObject.СведенияОЗастрахованныхЛицахСЗВ_М</types>
     <types>DocumentObject.РаспределениеВозвратныхОтходов</types>
     <types>DocumentObject.ОтменаБронированияГражданПребывающихВЗапасе</types>
     <types>DocumentObject.АктОРасхожденияхПослеПриемки</types>
+    <types>DocumentObject.ЕжегодныеСтандартныеВычеты</types>
     <types>DocumentObject.ВводОстатковВнеоборотныхАктивов2_4</types>
     <types>DocumentObject.ВходящийЗапросФССДляРасчетаПособия</types>
     <types>DocumentObject.ПринятиеКУчетуОС2_4</types>
     <types>DocumentObject.ФормированиеПартийПриПроизводствеЗЕРНО</types>
+    <types>DocumentObject.ЗаявкаОтсутствиеКабинетСотрудника</types>
     <types>DocumentObject.ОжидаемоеПоступлениеДенежныхСредств</types>
     <types>DocumentObject.ВыемкаДенежныхСредствИзКассыККМ</types>
     <types>DocumentObject.ЗаявкаНаВыпускКиЗГИСМ</types>

@@ -251,6 +251,10 @@
               <extInfo xsi:type="form:ImageFieldExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <font xsi:type="core:FontRef">
                   <font>Style.ШрифтНовостей</font>
                 </font>

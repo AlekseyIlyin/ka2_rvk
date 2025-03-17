@@ -14,6 +14,7 @@
     <key>ru</key>
     <value>Данные заказов (Сервис доставки)</value>
   </synonym>
+  <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -51,28 +52,43 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
-    <value>Данные заказа (Сервис доставки)</value>
+    <value>Данные заказа на доставку</value>
   </recordPresentation>
   <extendedRecordPresentation>
     <key>ru</key>
-    <value>Данные заказа (Сервис доставки)</value>
+    <value>Данные заказа на доставку</value>
   </extendedRecordPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Данные заказов (Сервис доставки)</value>
+    <value>Данные заказов на доставку</value>
   </listPresentation>
   <extendedListPresentation>
     <key>ru</key>
-    <value>Данные заказов (Сервис доставки)</value>
+    <value>Данные заказов на доставку</value>
   </extendedListPresentation>
   <resources uuid="67c34f1c-e8db-428e-838c-7aac0d66b7b9">
-    <name>ЕстьИзмененияТоварногоСостава</name>
+    <name>УдалитьЕстьИзмененияТоварногоСостава</name>
     <synonym>
       <key>ru</key>
-      <value>Есть изменения товарного состава</value>
+      <value>Удалить есть изменения товарного состава</value>
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="10e8557f-907e-419b-aa51-52e6ca301b35">
+    <name>СостояниеОбработкиЧастичнойДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние обработки частичной доставки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОбработкиПроцедурСинхронизацииСервисДоставки</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -94,30 +110,42 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="70713a0e-cfa6-401c-94c6-28d8bee069f4">
+    <name>РекомендацииПоИсправлениюЧДКратко</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рекомендации по исправлению по частичной доставке (кратко)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <dimensions uuid="90694604-f573-4bfc-b090-3af69d15483a">
-    <name>ТипГрузоперевозки</name>
+  <attributes uuid="7a55df5a-ab35-43bf-b8a5-5adad91f3020">
+    <name>ДокументыКИсправлению</name>
     <synonym>
       <key>ru</key>
-      <value>Тип грузоперевозки</value>
+      <value>Документы к исправлению</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>ValueStorage</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </dimensions>
+  </attributes>
   <dimensions uuid="67b34b7f-8a11-486b-a033-f745cfdb21b5">
     <name>Организация</name>
     <synonym>
@@ -129,6 +157,8 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillFromFillingValue>true</fillFromFillingValue>
@@ -136,22 +166,38 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="ce4c8273-6ff6-4e0b-b636-8fc33ca147f8">
-    <name>Идентификатор</name>
+  <dimensions uuid="3c6837bb-b1f9-43c4-831e-8b63f79b0585">
+    <name>ТипГрузоперевозки</name>
     <synonym>
       <key>ru</key>
-      <value>Идентификатор</value>
+      <value>Тип грузоперевозки</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>200</length>
-      </stringQualifiers>
+      <types>EnumRef.ТипыГрузоперевозки</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="6af4274b-3f1d-42d2-812c-dc54d2787c7f">
+    <name>ИдентификаторДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор документа</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
@@ -167,10 +213,47 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <master>true</master>
+  </dimensions>
+  <dimensions uuid="ce4c8273-6ff6-4e0b-b636-8fc33ca147f8">
+    <name>УдалитьИдентификаторДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить идентификатор документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="90694604-f573-4bfc-b090-3af69d15483a">
+    <name>УдалитьТипГрузоперевозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить тип грузоперевозки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
 </mdclass:InformationRegister>

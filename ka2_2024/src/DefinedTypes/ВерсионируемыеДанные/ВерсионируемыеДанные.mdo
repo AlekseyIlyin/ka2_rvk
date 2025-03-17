@@ -65,6 +65,7 @@
     <types>CatalogRef.Номенклатура</types>
     <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
     <types>DocumentRef.ИзменениеМестРаботы</types>
+    <types>DocumentRef.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>DocumentRef.СчетФактураПолученныйАванс</types>
     <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
     <types>DocumentRef.ЧекККМВозврат</types>
@@ -73,6 +74,7 @@
     <types>DocumentRef.РассылкаКлиентам</types>
     <types>DocumentRef.ОплатаПоСреднемуЗаработкуСписком</types>
     <types>DocumentRef.КонтролируемаяСделка</types>
+    <types>DocumentRef.ПереносРНПТМатериаловНаПродукцию</types>
     <types>DocumentRef.ИнойДокументПодтвержденияНДС</types>
     <types>DocumentRef.ПараметрыНачисленияЗемельногоНалога</types>
     <types>DocumentRef.ПереносЗатратНаПерсоналМеждуСтатьями</types>
@@ -81,6 +83,7 @@
     <types>DocumentRef.СведенияОТрудовойДеятельностиРаботниковСЗВ_ТД</types>
     <types>DocumentRef.ВозвратНДФЛ</types>
     <types>DocumentRef.ОтчетКомиссионера</types>
+    <types>DocumentRef.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
     <types>CatalogRef.ВидыИнцидентов</types>
     <types>DocumentRef.ОграничениеВзысканий</types>
     <types>CatalogRef.КритичностьИнцидентов</types>
@@ -134,6 +137,7 @@
     <types>DocumentRef.НачислениеПоДоговорам</types>
     <types>CatalogRef.ВидыВыплатБывшимСотрудникам</types>
     <types>DocumentRef.ВозвратОСИзАренды2_4</types>
+    <types>DocumentRef.ЗаявкаНалоговыеВычетыКабинетСотрудника</types>
     <types>DocumentRef.КорректировкаИзлишковНедостачПоТоварнымМестам</types>
     <types>DocumentRef.ОперацияПоЯндексКассе</types>
     <types>DocumentRef.ОбесценениеВНА</types>
@@ -150,6 +154,7 @@
     <types>CatalogRef.ВидыДоговоровАвторскогоЗаказа</types>
     <types>DocumentRef.ВедомостьНаВыплатуЗарплатыРаздатчиком</types>
     <types>DocumentRef.ЧекККМКоррекции</types>
+    <types>DocumentRef.ОбращениеКабинетСотрудника</types>
     <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
     <types>DocumentRef.РегистрацияТрудовойДеятельности</types>
     <types>CatalogRef.ДоговорыМеждуОрганизациями</types>
@@ -238,6 +243,7 @@
     <types>DocumentRef.СверкаВзаиморасчетов2_5_11</types>
     <types>DocumentRef.ИнвентаризацияРасчетов</types>
     <types>DocumentRef.Совмещение</types>
+    <types>DocumentRef.ЗаявкаОтпускБезОплатыКабинетСотрудника</types>
     <types>DocumentRef.ПодготовкаКПередачеОС2_4</types>
     <types>DocumentRef.ИзменениеУсловийДоговораАренды</types>
     <types>DocumentRef.ВводПервоначальныхСведенийДляРасчетаНалогаНаИмущество</types>
@@ -248,6 +254,7 @@
     <types>DocumentRef.ИзменениеПараметровНМА</types>
     <types>DocumentRef.ОрдерНаОтражениеПорчиТоваров</types>
     <types>DocumentRef.ЗаявлениеОВвозеТоваров</types>
+    <types>DocumentRef.ЗаявлениеОВвозеТоваровПолученное</types>
     <types>DocumentRef.ЗаказНаСборку</types>
     <types>DocumentRef.РеестрСведенийНеобходимыхДляНазначенияИВыплатыПособий</types>
     <types>DocumentRef.КорректировкаРеализации</types>
@@ -266,6 +273,7 @@
     <types>DocumentRef.ДоговорАвторскогоЗаказа</types>
     <types>DocumentRef.ПриостановлениеТрудовыхДоговоровКонтрактов</types>
     <types>CatalogRef.СоглашенияСКлиентами</types>
+    <types>DocumentRef.ЗаявкаОтпускКабинетСотрудника</types>
     <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
     <types>DocumentRef.Сторно</types>
     <types>DocumentRef.ПередачаТоваровХранителю</types>
@@ -311,6 +319,7 @@
     <types>DocumentRef.КорректировкаНазначенияТоваров</types>
     <types>DocumentRef.ДоговорЗаймаСотруднику</types>
     <types>DocumentRef.ОстаткиЕГАИС</types>
+    <types>DocumentRef.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentRef.ОплатаДнейУходаЗаДетьмиИнвалидами</types>
     <types>DocumentRef.ПересортицаТоваров</types>
     <types>ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</types>
@@ -359,6 +368,7 @@
     <types>DocumentRef.ПереводКДругомуРаботодателю</types>
     <types>DocumentRef.ПеремещениеВДругоеПодразделение</types>
     <types>DocumentRef.ВыработкаНМА</types>
+    <types>DocumentRef.ЕжегодныеСтандартныеВычеты</types>
     <types>DocumentRef.КорректировкаРасчетовПоНалогам</types>
     <types>DocumentRef.ПриобретениеУслугПрочихАктивов</types>
     <types>DocumentRef.ПрекращениеСтандартныхВычетовНДФЛ</types>
@@ -409,6 +419,7 @@
     <types>DocumentRef.СнятиеСРегистрацииТранспортныхСредств</types>
     <types>DocumentRef.КорректировкаЗадолженности</types>
     <types>DocumentRef.ОприходованиеТМЦВЭксплуатации</types>
+    <types>DocumentRef.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
     <types>DocumentRef.ВыпускПродукции</types>
     <types>DocumentRef.ЗаявлениеИЗапросВПФРОЗаработке</types>
     <types>DocumentRef.НазначениеРабочихМестСотрудникам</types>
@@ -419,6 +430,7 @@
     <types>DocumentRef.ДоходВНатуральнойФорме</types>
     <types>DocumentRef.ВедомостьПрочихДоходовВБанк</types>
     <types>DocumentRef.СборкаТоваров</types>
+    <types>DocumentRef.ЗаявкаОтсутствиеКабинетСотрудника</types>
     <types>DocumentRef.ПриемкаТоваровНаХранение</types>
     <types>DocumentRef.ПараметрыНачисленияНалогаНаИмущество</types>
     <types>DocumentRef.ИнвентаризацияТМЦВЭксплуатации</types>
@@ -473,10 +485,13 @@
     <types>CatalogRef.КонтактныеЛицаПартнеров</types>
     <types>DocumentRef.ВводПервоначальныхСведенийДляРасчетаТранспортногоНалога</types>
     <types>DocumentRef.СписаниеИзЭксплуатации</types>
+    <types>DocumentRef.ПриказОПрекращенииБронирования</types>
     <types>DocumentRef.ПрекращениеПодработки</types>
     <types>CatalogRef.ФизическиеЛица</types>
     <types>ChartOfCharacteristicTypesRef.КаналыРекламныхВоздействий</types>
+    <types>DocumentRef.ПриказОБронированииРаботников</types>
     <types>CatalogRef.ДрагоценныеМатериалы</types>
+    <types>DocumentRef.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудника</types>
     <types>DocumentRef.ИсходящаяСправкаОЗаработкеДляРасчетаПособий</types>
     <types>DocumentRef.КассоваяСмена</types>
     <types>DocumentRef.ВзаимозачетЗадолженности</types>
@@ -495,6 +510,8 @@
     <types>DocumentRef.ПачкаДокументовДСВ_1</types>
     <types>DocumentRef.СправкаНДФЛ</types>
     <types>DocumentRef.СчетФактураПолученный</types>
+    <types>DocumentRef.ЗаявкаСправка2НДФЛКабинетСотрудника</types>
+    <types>DocumentRef.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>DocumentRef.УдалитьВводОстатковПрослеживаемыхИмпортныхТоваров</types>
     <types>DocumentRef.ПрочееОприходованиеТоваров</types>
     <types>CatalogRef.КассовыеКниги</types>
@@ -539,6 +556,7 @@
     <types>DocumentRef.ОтменаСовмещения</types>
     <types>DocumentRef.ПередачаМатериаловВПроизводство</types>
     <types>DocumentRef.ВводОстатковВзаиморасчетов</types>
+    <types>DocumentRef.ЗаявкаДСВКабинетСотрудника</types>
     <types>CatalogRef.ВидыСделокСКлиентами</types>
     <types>DocumentRef.ВводОстатковРасчетовПоЭквайрингу</types>
     <types>DocumentRef.ПрекращениеДоговораАренды</types>

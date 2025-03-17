@@ -77,6 +77,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.КрасныйЖелтыйСерыйТреугольник</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -479,6 +483,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.КоллекцияНастройкиОтправкиЭДО</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -1969,7 +1977,7 @@
         <userVisible/>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>Report.ДосьеКонтрагента.Command.Досье</command>
+        <command>DataProcessor.ПроверкаКонтрагента.Command.ПроверкаКонтрагента</command>
         <userVisible/>
       </cmiFragmentRecord>
     </commandBar>

@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
-    <value>Информация</value>
+    <value>Информация для техподдержки</value>
   </title>
   <items xsi:type="form:FormField">
     <name>Информация</name>
@@ -85,12 +85,46 @@
       <type>UsualButton</type>
       <commandName>Form.Command.ВыгрузитьВФайл</commandName>
       <representation>PictureAndText</representation>
+      <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <groupHorizontalAlign>Right</groupHorizontalAlign>
       <placementArea>UserCmds</placementArea>
       <picture xsi:type="core:PictureRef">
         <picture>CommonPicture.СохранитьФайлКак</picture>
+      </picture>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>СкопироватьВБуфер</name>
+      <id>10</id>
+      <title>
+        <key>ru</key>
+        <value>Скопировать</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>СкопироватьВБуферРасширеннаяПодсказка</name>
+        <id>11</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.СкопироватьВБуфер</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.СкопироватьВБуферОбмена</picture>
       </picture>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
@@ -253,6 +287,18 @@
         <name>ВыгрузитьВФайл</name>
       </handler>
     </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СкопироватьВБуфер</name>
+    <title>
+      <key>ru</key>
+      <value>Скопировать в буфер</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <parameters>

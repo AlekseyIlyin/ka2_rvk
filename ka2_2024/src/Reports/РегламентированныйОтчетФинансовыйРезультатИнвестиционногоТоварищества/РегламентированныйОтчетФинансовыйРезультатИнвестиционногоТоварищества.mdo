@@ -66,6 +66,14 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
+  <templates uuid="7fc3ab80-f5e3-434f-9dc2-22dafc333880">
+    <name>МБ_1150023_5_02000_02_tif</name>
+    <synonym>
+      <key>ru</key>
+      <value>1150023_5.02000_02.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
   <templates uuid="7e8aebdd-b518-43c5-a37a-fd571c643295">
     <name>МЧБ_2012Кв3_Раздел1</name>
     <synonym>
@@ -94,55 +102,6 @@
       <value>Титульный лист</value>
     </synonym>
   </templates>
-  <templates uuid="4cc698fd-9912-4ddb-a60a-05288f8ebab5">
-    <name>СоставПоказателей2012Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состав показателей</value>
-    </synonym>
-  </templates>
-  <templates uuid="3b53b3cd-7db6-424b-bb78-86e47640c975">
-    <name>СпискиВыбора2012Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора</value>
-    </synonym>
-  </templates>
-  <templates uuid="706a9eca-d02f-4344-8848-93737dc2c04f">
-    <name>СтруктураXML501</name>
-    <synonym>
-      <key>ru</key>
-      <value>Структура XML 5.01</value>
-    </synonym>
-  </templates>
-  <templates uuid="5c324057-6150-4c97-b28b-e2c35f262ec7">
-    <name>ФормаОтчета2012Кв3_Раздел1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="213d24a3-db9c-4f99-b809-15464cb567d2">
-    <name>ФормаОтчета2012Кв3_Раздел2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 2</value>
-    </synonym>
-  </templates>
-  <templates uuid="288cfd5e-e5a2-4140-9367-9a75f793864a">
-    <name>ФормаОтчета2012Кв3_Раздел3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Раздел 3</value>
-    </synonym>
-  </templates>
-  <templates uuid="2e7afd30-f522-44c2-a4f6-ee8467aee1f9">
-    <name>ФормаОтчета2012Кв3_Титульный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Титульный лист</value>
-    </synonym>
-  </templates>
   <templates uuid="c7975156-c100-48ab-b129-45c0d594d674">
     <name>НастройкиЗагрузкиXML2012Кв3</name>
     <synonym>
@@ -150,14 +109,6 @@
       <value>Настройки загрузки из файла XML 2012 (кв.3)</value>
     </synonym>
     <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="7fc3ab80-f5e3-434f-9dc2-22dafc333880">
-    <name>МБ_1150023_5_02000_02_tif</name>
-    <synonym>
-      <key>ru</key>
-      <value>1150023_5.02000_02.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="60f84ee8-9ec9-4a56-9cdf-89a4d6db1e43">
     <name>НастройкиЗагрузкиXML2024Кв2</name>
@@ -196,6 +147,20 @@
       <value>Титульный лист</value>
     </synonym>
   </templates>
+  <templates uuid="4cc698fd-9912-4ddb-a60a-05288f8ebab5">
+    <name>СоставПоказателей2012Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="3b53b3cd-7db6-424b-bb78-86e47640c975">
+    <name>СпискиВыбора2012Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
   <templates uuid="84b1e9df-165c-4c69-9714-b78927e84f3b">
     <name>СпискиВыбора2024Кв2</name>
     <synonym>
@@ -203,11 +168,46 @@
       <value>Списки выбора значений</value>
     </synonym>
   </templates>
+  <templates uuid="706a9eca-d02f-4344-8848-93737dc2c04f">
+    <name>СтруктураXML501</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура XML 5.01</value>
+    </synonym>
+  </templates>
   <templates uuid="f7ca90e5-0d3b-4ab1-bb01-fc335b4f5170">
     <name>СхемаВыгрузки502</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки версии 5.02</value>
+    </synonym>
+  </templates>
+  <templates uuid="5c324057-6150-4c97-b28b-e2c35f262ec7">
+    <name>ФормаОтчета2012Кв3_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="213d24a3-db9c-4f99-b809-15464cb567d2">
+    <name>ФормаОтчета2012Кв3_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="288cfd5e-e5a2-4140-9367-9a75f793864a">
+    <name>ФормаОтчета2012Кв3_Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="2e7afd30-f522-44c2-a4f6-ee8467aee1f9">
+    <name>ФормаОтчета2012Кв3_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
     </synonym>
   </templates>
   <templates uuid="b2f69825-ce34-46cd-868e-ef55ef30fc32">

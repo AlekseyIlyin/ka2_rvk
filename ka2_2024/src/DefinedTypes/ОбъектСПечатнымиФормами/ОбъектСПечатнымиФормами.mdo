@@ -9,10 +9,14 @@
     <value>Объект с печатными формами</value>
   </synonym>
   <type>
+    <types>DocumentRef.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>DocumentRef.ОплатаПоСреднемуЗаработкуСписком</types>
     <types>DocumentRef.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentRef.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
     <types>DocumentRef.ПризПодарок</types>
     <types>BusinessProcessRef.ЗаявкаСотрудникаСправкаОстаткиОтпусков</types>
+    <types>DocumentRef.ЗаявкаНалоговыеВычетыКабинетСотрудника</types>
+    <types>DocumentRef.ОбращениеКабинетСотрудника</types>
     <types>DocumentRef.КадровыйПеревод</types>
     <types>DocumentRef.ПереносОтпуска</types>
     <types>DocumentRef.РаботаСверхурочно</types>
@@ -24,11 +28,13 @@
     <types>DocumentRef.РегистрацияПереработок</types>
     <types>DocumentRef.РаботаВВыходныеИПраздничныеДни</types>
     <types>DocumentRef.Совмещение</types>
+    <types>DocumentRef.ЗаявкаОтпускБезОплатыКабинетСотрудника</types>
     <types>DocumentRef.Отпуск</types>
     <types>DocumentRef.ИзменениеКвалификационногоРазряда</types>
     <types>DocumentRef.БольничныйЛист</types>
     <types>DocumentRef.ДоговорАвторскогоЗаказа</types>
     <types>DocumentRef.ПриостановлениеТрудовыхДоговоровКонтрактов</types>
+    <types>DocumentRef.ЗаявкаОтпускКабинетСотрудника</types>
     <types>BusinessProcessRef.ЗаявкаСотрудникаСправкаСМестаРаботы</types>
     <types>DocumentRef.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности</types>
     <types>DocumentRef.ОплатаПоСреднемуЗаработку</types>
@@ -47,6 +53,8 @@
     <types>DocumentRef.ОтпускБезСохраненияОплаты</types>
     <types>DocumentRef.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖ</types>
     <types>DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentRef.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
+    <types>DocumentRef.ЗаявкаОтсутствиеКабинетСотрудника</types>
     <types>DocumentRef.ДоговорРаботыУслуги</types>
     <types>DocumentRef.КомандировкиСотрудников</types>
     <types>DocumentRef.КадровыйПереводСписком</types>
@@ -56,10 +64,13 @@
     <types>BusinessProcessRef.ЗаявкаСотрудникаИзменитьЛичныеДанные</types>
     <types>BusinessProcessRef.ЗаявкаСотрудникаОтпуск</types>
     <types>CatalogRef.ФизическиеЛица</types>
+    <types>DocumentRef.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудника</types>
     <types>DocumentRef.ИсходящаяСправкаОЗаработкеДляРасчетаПособий</types>
     <types>DocumentRef.ПриемНаРаботу</types>
     <types>DocumentRef.Командировка</types>
     <types>DocumentRef.СправкаНДФЛ</types>
+    <types>DocumentRef.ЗаявкаСправка2НДФЛКабинетСотрудника</types>
+    <types>DocumentRef.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>BusinessProcessRef.ЗаявкаСотрудникаДобровольныеСтраховыеВзносы</types>
     <types>DocumentRef.УвольнениеСписком</types>
     <types>DocumentRef.МатериальнаяПомощь</types>
@@ -67,6 +78,7 @@
     <types>DocumentRef.ДокументКадровогоЭДО</types>
     <types>DocumentRef.ОтпускаСотрудников</types>
     <types>DocumentRef.ОтменаСовмещения</types>
+    <types>DocumentRef.ЗаявкаДСВКабинетСотрудника</types>
     <types>DocumentRef.Отгул</types>
     <types>DocumentRef.СведенияОТрудовойДеятельностиРаботникаСТД_Р</types>
     <types>DocumentRef.ОтпускПоУходуЗаРебенком</types>

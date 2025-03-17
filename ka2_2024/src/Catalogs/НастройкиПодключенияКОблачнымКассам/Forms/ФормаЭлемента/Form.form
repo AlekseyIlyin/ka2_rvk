@@ -8,7 +8,7 @@
     <name>ИдентификаторИСостояние</name>
     <id>156</id>
     <items xsi:type="form:Decoration">
-      <name>ИндентификаторТекст</name>
+      <name>ИдентификаторТекст</name>
       <id>161</id>
       <title>
         <key>ru</key>
@@ -20,13 +20,8 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ИндентификаторТекстРасширеннаяПодсказка</name>
+        <name>ИдентификаторТекстРасширеннаяПодсказка</name>
         <id>163</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -35,13 +30,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ИндентификаторТекстКонтекстноеМеню</name>
+        <name>ИдентификаторТекстКонтекстноеМеню</name>
         <id>162</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>Label</type>

@@ -1672,6 +1672,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.КоллекцияРезультатыВыполненияДействий</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -1933,6 +1937,10 @@
                       <valuesPicture xsi:type="core:PictureRef">
                         <picture>CommonPicture.Скрепка</picture>
                       </valuesPicture>
+                      <border xsi:type="core:BorderDef">
+                        <style>Single</style>
+                        <width>1</width>
+                      </border>
                       <fileDragMode>AsFileRef</fileDragMode>
                     </extInfo>
                   </items>
@@ -2142,6 +2150,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.СостоянияКонтроля16ДляСписка</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -3143,7 +3155,7 @@
         <id>529</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>

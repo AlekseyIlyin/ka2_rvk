@@ -118,6 +118,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Папки</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -273,10 +277,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>ПапкиSearchString</name>
+        <name>ПапкиСтрокаПоиска</name>
         <id>65</id>
         <extendedTooltip>
-          <name>ПапкиSearchStringExtendedTooltip</name>
+          <name>ПапкиСтрокаПоискаРасширеннаяПодсказка</name>
           <id>67</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -291,7 +295,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ПапкиSearchStringContextMenu</name>
+          <name>ПапкиСтрокаПоискаКонтекстноеМеню</name>
           <id>66</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -311,10 +315,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>ПапкиViewStatus</name>
+        <name>ПапкиСостояниеПросмотра</name>
         <id>68</id>
         <extendedTooltip>
-          <name>ПапкиViewStatusExtendedTooltip</name>
+          <name>ПапкиСостояниеПросмотраРасширеннаяПодсказка</name>
           <id>70</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -329,7 +333,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ПапкиViewStatusContextMenu</name>
+          <name>ПапкиСостояниеПросмотраКонтекстноеМеню</name>
           <id>69</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -350,10 +354,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>ПапкиSearchControl</name>
+        <name>ПапкиУправлениеПоиском</name>
         <id>71</id>
         <extendedTooltip>
-          <name>ПапкиSearchControlExtendedTooltip</name>
+          <name>ПапкиУправлениеПоискомРасширеннаяПодсказка</name>
           <id>73</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -368,7 +372,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ПапкиSearchControlContextMenu</name>
+          <name>ПапкиУправлениеПоискомКонтекстноеМеню</name>
           <id>72</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -844,10 +848,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокSearchString</name>
+        <name>СписокСтрокаПоиска</name>
         <id>74</id>
         <extendedTooltip>
-          <name>СписокSearchStringExtendedTooltip</name>
+          <name>СписокСтрокаПоискаРасширеннаяПодсказка</name>
           <id>76</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -862,7 +866,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокSearchStringContextMenu</name>
+          <name>СписокСтрокаПоискаКонтекстноеМеню</name>
           <id>75</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -882,10 +886,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокViewStatus</name>
+        <name>СписокСостояниеПросмотра</name>
         <id>77</id>
         <extendedTooltip>
-          <name>СписокViewStatusExtendedTooltip</name>
+          <name>СписокСостояниеПросмотраРасширеннаяПодсказка</name>
           <id>79</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -900,7 +904,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокViewStatusContextMenu</name>
+          <name>СписокСостояниеПросмотраКонтекстноеМеню</name>
           <id>78</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -921,10 +925,10 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <name>СписокSearchControl</name>
+        <name>СписокУправлениеПоиском</name>
         <id>80</id>
         <extendedTooltip>
-          <name>СписокSearchControlExtendedTooltip</name>
+          <name>СписокУправлениеПоискомРасширеннаяПодсказка</name>
           <id>82</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -939,7 +943,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>СписокSearchControlContextMenu</name>
+          <name>СписокУправлениеПоискомКонтекстноеМеню</name>
           <id>81</id>
           <visible>true</visible>
           <enabled>true</enabled>

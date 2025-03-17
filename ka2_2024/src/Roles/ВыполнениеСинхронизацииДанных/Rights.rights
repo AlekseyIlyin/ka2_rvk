@@ -4,10 +4,32 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.РазделыУчета</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.GetIBParameters</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьИнформативныеЦены</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -29,6 +51,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.СкладПоУмолчанию</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange.Operation.SaveFileFromParts</name>
 		<right>
 			<name>Use</name>
@@ -40,6 +73,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.РегистрироватьИзменения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -57,10 +101,43 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФизическиеЛица</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ЭквайринговыеТерминалы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.Upload</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Организации</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -71,6 +148,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.КассыККМ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.FileExists</name>
 		<right>
 			<name>Use</name>
@@ -78,10 +166,32 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ПравилаОтправкиДокументов</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_2.Operation.Upload</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.СоглашенияИВидыЦен</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -96,6 +206,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ОбъектОбработан</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -124,6 +245,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоФизическимЛицам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_2.Operation.DownloadData</name>
 		<right>
 			<name>Use</name>
@@ -135,6 +267,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыЦенНоменклатуры.Attribute.ВидЦенНоменклатуры</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -230,10 +373,32 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.РежимВыгрузкиПриНеобходимости</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.НастройкиСинхронизацииДанных</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ЭквайринговыйТерминалПоУмолчанию</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -252,6 +417,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоРазделамУчета</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -291,6 +467,39 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.СкладыИнформативныхОстатков</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыДокументов.Attribute.ИмяОбъектаМетаданных</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.СчетЗатратВыпускПродукции</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ИнтерактивноеИзменениеВыгрузки</name>
 		<right>
 			<name>Use</name>
@@ -316,6 +525,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.СчетЗатратПередачаМатериаловВПроизводство</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange.Operation.DownloadData</name>
 		<right>
 			<name>Use</name>
@@ -334,6 +554,28 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьТолькоНоменклатуруСОстатками</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.КассыККМ.Attribute.КассаККМ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -358,10 +600,32 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоРазделамУчетаИДокументам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.UploadDataInt</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоЭквайринговымТерминалам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -383,6 +647,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Склады</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_1_1.Operation.GetFilePart</name>
 		<right>
 			<name>Use</name>
@@ -394,6 +669,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Склады.Attribute.Склад</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -418,10 +704,32 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ЭквайринговыеТерминалы.Attribute.ЭквайринговыйТерминал</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.СобытияОтправки</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Курьеры.Attribute.Курьер</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -460,6 +768,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыДокументов.Attribute.РазделУчета</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.RemoveExchangeNode</name>
 		<right>
 			<name>Use</name>
@@ -485,6 +804,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.РежимВыгрузкиСправочников</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -533,10 +863,65 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФильтрыНоменклатуры.Attribute.ЗначениеОтбора</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ПравилаОтправкиСправочников</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.DownloadDataInt</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.АвтоматическиЗачитыватьАвансы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВерсияФорматаОбмена</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.РазделыУчета.Attribute.Выгружать</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -547,10 +932,65 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьЦеныНоменклатуры</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.PutFileIntoStorage</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.РазделыУчета.Attribute.РазделУчета</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.РежимВыгрузкиДокументов</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.НеВыгружатьКартинки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.СоглашенияИВидыЦен.Attribute.ТипЦены</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -593,6 +1033,94 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.ExchangeDate</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.ThisNode</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.ReceivedNo</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.SentNo</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.Description</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.Code</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.GetContinuousOperationStatus</name>
 		<right>
 			<name>Use</name>
@@ -611,6 +1139,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.УправленческаяОрганизация</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.Download</name>
 		<right>
 			<name>Use</name>
@@ -622,6 +1161,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВариантНастройки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -650,6 +1200,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоКурьерам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_2.Operation.TaskStatus</name>
 		<right>
 			<name>Use</name>
@@ -671,6 +1232,28 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.СкладыИнформативныхОстатков.Attribute.Склад</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФильтрыНоменклатуры</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_2_0_1_6.Operation.PutFilePart</name>
 		<right>
 			<name>Use</name>
@@ -678,10 +1261,32 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФизическиеЛица.Attribute.ФизическоеЛицо</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.СтандартныеПодсистемы.Subsystem.ОбменДанными.Subsystem.Регистрация</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоНоменклатуре</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -714,6 +1319,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьУправленческуюОрганизацию</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -756,6 +1372,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыДокументов</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.НастройкиТранспортаСообщенийОбмена</name>
 		<right>
 			<name>Read</name>
@@ -782,6 +1409,28 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоКассамККМ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Курьеры</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -897,6 +1546,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФильтрыНоменклатуры.Attribute.ИмяРеквизита</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.Download</name>
 		<right>
 			<name>Use</name>
@@ -908,6 +1568,17 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ДатаНачалаВыгрузкиДокументов</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -933,6 +1604,28 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьИнформативныеОстатки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьДанныеМаркировки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -982,6 +1675,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ВыгружатьАналитикуПоСкладам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_1_1.Operation.TestConnection</name>
 		<right>
 			<name>Use</name>
@@ -1007,6 +1711,28 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоОрганизациям</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ИспользоватьОтборПоСкладам</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1045,6 +1771,39 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ФильтрыНоменклатуры.Attribute.ВариантСравнения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыДокументов.Attribute.Представление</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.ВидыЦенНоменклатуры</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>WebService.Exchange_3_0_2_1.Operation.GetContinuousOperationStatus</name>
 		<right>
 			<name>Use</name>
@@ -1063,6 +1822,28 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.TabularSection.Организации.Attribute.Организация</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.ПравилаСозданияДоговоровКонтрагентов</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>

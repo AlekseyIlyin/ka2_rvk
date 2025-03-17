@@ -230,4 +230,49 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="7fc0a45e-78ec-4b8e-ba63-502fdd0e7a19">
+    <name>ИспользоватьЗаявленияНаПереносОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать заявления на перенос отпуска</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b0d5bcfa-accb-4e27-a5f6-67d7bf067d01">
+    <name>ИспользоватьЗаявленияНаОтменуОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать заявления на отмену отпуска</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ca1249f5-a9a6-4bbf-a77a-0a09e11607c4">
+    <name>ПоказыватьОхрануТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать охрану труда</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
 </mdclass:InformationRegister>

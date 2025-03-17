@@ -29,8 +29,22 @@
   </standardAttributes>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="994ecf6c-34a9-4274-952e-8a44959ddd3d">
+    <name>КОплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>К оплате</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="238e807a-b6d8-401c-b115-0e10b84a16c1">
+    <name>ОтложенБезРезервирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложен без резервирования</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="b8d448b2-f4c4-4fef-bd83-69bf834a37d5">
-    <name>ТоварЗарезервирован</name>
+    <name>ОтложенСРезервированием</name>
     <synonym>
       <key>ru</key>
       <value>Отложен с резервированием</value>
@@ -41,13 +55,6 @@
     <synonym>
       <key>ru</key>
       <value>Чек пробит</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="238e807a-b6d8-401c-b115-0e10b84a16c1">
-    <name>Отложен</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отложен без резервирования</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

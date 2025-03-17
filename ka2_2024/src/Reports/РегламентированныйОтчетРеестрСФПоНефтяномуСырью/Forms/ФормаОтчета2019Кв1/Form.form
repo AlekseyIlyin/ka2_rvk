@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
-    <value>Реестр счетов-фактур по нефтяному сырью</value>
+    <value>Реестр счетов-фактур по нефтяному сырью (КНД 1115017)</value>
   </title>
   <items xsi:type="form:FormGroup">
     <name>РучнойВводСтатусовОтправки</name>
@@ -221,7 +221,7 @@
           <segments>РазделыОтчета.КолонкаРазделыОтчета</segments>
         </dataPath>
         <extendedTooltip>
-          <name>РазделыОтчетаКолонкаРазделыОтчетаExtendedTooltip</name>
+          <name>РазделыОтчетаКолонкаРазделыОтчетаРасширеннаяПодсказка</name>
           <id>127</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -393,7 +393,7 @@
         </extInfo>
       </searchControlAddition>
       <extendedTooltip>
-        <name>РазделыОтчетаExtendedTooltip</name>
+        <name>РазделыОтчетаРасширеннаяПодсказка</name>
         <id>126</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -516,7 +516,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ТабличныйДокументExtendedTooltip</name>
+          <name>ТабличныйДокументРасширеннаяПодсказка</name>
           <id>129</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -678,7 +678,7 @@
         <value>Страница отчета</value>
       </toolTip>
       <extendedTooltip>
-        <name>СтраницаОтчетаExtendedTooltip</name>
+        <name>СтраницаОтчетаРасширеннаяПодсказка</name>
         <id>128</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -715,7 +715,7 @@
       <value>Отчет</value>
     </toolTip>
     <extendedTooltip>
-      <name>ОтчетExtendedTooltip</name>
+      <name>ОтчетРасширеннаяПодсказка</name>
       <id>125</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -756,7 +756,7 @@
         <name>КомментарийПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>КомментарийExtendedTooltip</name>
+        <name>КомментарийРасширеннаяПодсказка</name>
         <id>139</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -807,7 +807,7 @@
       <value>Подвал</value>
     </toolTip>
     <extendedTooltip>
-      <name>ПодвалExtendedTooltip</name>
+      <name>ПодвалРасширеннаяПодсказка</name>
       <id>138</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -876,7 +876,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>СохранитьExtendedTooltip</name>
+          <name>СохранитьРасширеннаяПодсказка</name>
           <id>93560</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1088,7 +1088,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОбновитьExtendedTooltip</name>
+        <name>ОбновитьРасширеннаяПодсказка</name>
         <id>93590</id>
         <visible>true</visible>
         <enabled>true</enabled>

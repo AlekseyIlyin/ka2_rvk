@@ -2171,20 +2171,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="f0c71370-f726-4d8e-8263-5c5370442eb7">
-    <name>ТранспортныеКонтейнерыВАрхиве</name>
-    <synonym>
-      <key>ru</key>
-      <value>Транспортные контейнеры в архиве</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c23536a4-4984-4e41-aebd-f21d35e87569">
     <name>Мастер_НеНайденаОрганизация</name>
     <synonym>
       <key>ru</key>
       <value>Мастер не найдена организация</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f0c71370-f726-4d8e-8263-5c5370442eb7">
+    <name>ТранспортныеКонтейнерыВАрхиве</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортные контейнеры в архиве</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -2230,6 +2230,15 @@
     <synonym>
       <key>ru</key>
       <value>Предупреждение об ошибке расшифровки ЭДОК</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f5d37819-8a0d-4eb4-933c-2aec184d2ba5">
+    <name>ВыборТипаДоверенностиДляМинОбороны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор типа доверенности для мин обороны</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -3071,13 +3080,6 @@
     <synonym>
       <key>ru</key>
       <value>СФР Протокол</value>
-    </synonym>
-  </templates>
-  <templates uuid="1fc23c6b-f573-4679-85a0-6b3c96b2e177">
-    <name>СправкаОНаличииСальдо</name>
-    <synonym>
-      <key>ru</key>
-      <value>Справка о наличии сальдо</value>
     </synonym>
   </templates>
   <templates uuid="fb235fbe-a3a5-443f-99b6-463fb7ee1505">

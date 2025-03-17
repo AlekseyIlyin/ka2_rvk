@@ -1096,6 +1096,10 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.ТранспортнаяНакладная.Attribute.Организация</field>
+      </choiceParameterLinks>
       <dataHistory>Use</dataHistory>
       <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>

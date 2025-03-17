@@ -112,6 +112,7 @@
   <defaultObjectForm>Document.ОтчетОператораСистемыПлатон.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ОтчетОператораСистемыПлатон.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.ОтчетОператораСистемыПлатон.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <sequenceFilling>AutoFillOff</sequenceFilling>
   <registerRecords>AccumulationRegister.ПрочиеДоходы</registerRecords>
@@ -1103,7 +1104,7 @@
         </value>
       </choiceParameters>
       <choiceParameters>
-        <name>Отбор.ЗарегистрированоВРеестреСистемыПлатон</name>
+        <name>ЗарегистрированоВРеестреСистемыПлатон</name>
         <value xsi:type="core:BooleanValue">
           <value>true</value>
         </value>

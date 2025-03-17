@@ -24,6 +24,7 @@
   <registeredDocuments>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль</registeredDocuments>
   <registeredDocuments>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ</registeredDocuments>
   <registeredDocuments>Document.СведенияОДоходахСотрудникаДляСоцВыплат</registeredDocuments>
+  <registeredDocuments>Document.ЕжегодныеСтандартныеВычеты</registeredDocuments>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Type</name>
@@ -105,6 +106,7 @@
     <references>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль.Attribute.НалоговыйПериод</references>
     <references>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ.Attribute.НалоговыйПериод</references>
     <references>Document.СведенияОДоходахСотрудникаДляСоцВыплат.Attribute.НалоговыйПериод</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.НалоговыйПериод</references>
   </columns>
   <columns uuid="17f84628-92a7-4ef6-8345-95fcae3d4b62">
     <name>Организация</name>
@@ -125,6 +127,7 @@
     <references>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль.Attribute.Организация</references>
     <references>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ.Attribute.Организация</references>
     <references>Document.СведенияОДоходахСотрудникаДляСоцВыплат.Attribute.Организация</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Организация</references>
   </columns>
   <columns uuid="afd959d6-3487-4c59-9163-fc607a107639">
     <name>Сотрудники</name>
@@ -144,6 +147,7 @@
     <references>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль.Attribute.КраткийСоставДокумента</references>
     <references>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ.Attribute.КраткийСоставДокумента</references>
     <references>Document.СведенияОДоходахСотрудникаДляСоцВыплат.Attribute.Сотрудник</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Сотрудник</references>
   </columns>
   <columns uuid="a46a7cf1-b4c6-4581-9faa-300fe0a9ac01">
     <name>Ответственный</name>
@@ -163,6 +167,7 @@
     <references>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль.Attribute.Ответственный</references>
     <references>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ.Attribute.Ответственный</references>
     <references>Document.СведенияОДоходахСотрудникаДляСоцВыплат.Attribute.Ответственный</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Ответственный</references>
   </columns>
   <columns uuid="b316f79d-8f3f-4c0d-bcbc-74a1b1760f4d">
     <name>Комментарий</name>
@@ -182,6 +187,7 @@
     <references>Document.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыль.Attribute.Комментарий</references>
     <references>Document.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ.Attribute.Комментарий</references>
     <references>Document.СведенияОДоходахСотрудникаДляСоцВыплат.Attribute.Комментарий</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Комментарий</references>
   </columns>
   <forms uuid="2f4c9565-bb9c-4441-bcbe-48432ba5a255">
     <name>ФормаСписка</name>

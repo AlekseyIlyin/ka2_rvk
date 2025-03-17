@@ -20,7 +20,7 @@
       <name>ДляОрганизацииПриИзменении</name>
     </handlers>
     <extendedTooltip>
-      <name>ДляОрганизацииExtendedTooltip</name>
+      <name>ДляОрганизацииРасширеннаяПодсказка</name>
       <id>102</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -85,7 +85,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>НапомнитьОСобытииДеньExtendedTooltip</name>
+              <name>НапомнитьОСобытииДеньРасширеннаяПодсказка</name>
               <id>107</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -114,7 +114,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ОтменитьНапоминаниеДеньExtendedTooltip</name>
+              <name>ОтменитьНапоминаниеДеньРасширеннаяПодсказка</name>
               <id>108</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -143,7 +143,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ПерейтиКДатеДеньExtendedTooltip</name>
+              <name>ПерейтиКДатеДеньРасширеннаяПодсказка</name>
               <id>109</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -172,7 +172,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ОткрытьДеньExtendedTooltip</name>
+              <name>ОткрытьДеньРасширеннаяПодсказка</name>
               <id>110</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -206,7 +206,7 @@
             <value>Кнопки день</value>
           </toolTip>
           <extendedTooltip>
-            <name>КнопкиДеньExtendedTooltip</name>
+            <name>КнопкиДеньРасширеннаяПодсказка</name>
             <id>106</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -264,7 +264,7 @@
             </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
-              <name>КартинкаОповещениеExtendedTooltip</name>
+              <name>КартинкаОповещениеРасширеннаяПодсказка</name>
               <id>113</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -298,6 +298,10 @@
               <width>2</width>
               <autoMaxHeight>true</autoMaxHeight>
               <verticalStretch>true</verticalStretch>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -312,7 +316,7 @@
               <segments>ТаблицаСобытийКалендаря.Срок</segments>
             </dataPath>
             <extendedTooltip>
-              <name>СрокExtendedTooltip</name>
+              <name>СрокРасширеннаяПодсказка</name>
               <id>114</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -363,7 +367,7 @@
               <segments>ТаблицаСобытийКалендаря.Периодичность</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ПериодичностьExtendedTooltip</name>
+              <name>ПериодичностьРасширеннаяПодсказка</name>
               <id>115</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -414,7 +418,7 @@
               <segments>ТаблицаСобытийКалендаря.НазваниеОтчетаИлиНалога</segments>
             </dataPath>
             <extendedTooltip>
-              <name>НазваниеОтчетаИлиНалогаExtendedTooltip</name>
+              <name>НазваниеОтчетаИлиНалогаРасширеннаяПодсказка</name>
               <id>116</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -466,7 +470,7 @@
               <segments>ТаблицаСобытийКалендаря.Кто</segments>
             </dataPath>
             <extendedTooltip>
-              <name>КтоExtendedTooltip</name>
+              <name>КтоРасширеннаяПодсказка</name>
               <id>117</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -642,7 +646,7 @@
             </extInfo>
           </searchControlAddition>
           <extendedTooltip>
-            <name>ТаблицаСобытийКалендаряExtendedTooltip</name>
+            <name>ТаблицаСобытийКалендаряРасширеннаяПодсказка</name>
             <id>112</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -668,7 +672,7 @@
                 <common>true</common>
               </userVisible>
               <extendedTooltip>
-                <name>КонтекстноеМенюВывестиСписокExtendedTooltip</name>
+                <name>КонтекстноеМенюВывестиСписокРасширеннаяПодсказка</name>
                 <id>111</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -741,7 +745,7 @@
           <value>День</value>
         </toolTip>
         <extendedTooltip>
-          <name>ДеньExtendedTooltip</name>
+          <name>ДеньРасширеннаяПодсказка</name>
           <id>105</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -779,7 +783,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>НапомнитьОСобытииНеделяExtendedTooltip</name>
+              <name>НапомнитьОСобытииНеделяРасширеннаяПодсказка</name>
               <id>120</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -809,7 +813,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ОтменитьНапоминаниеНеделяExtendedTooltip</name>
+              <name>ОтменитьНапоминаниеНеделяРасширеннаяПодсказка</name>
               <id>121</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -839,7 +843,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ПерейтиКДатеНеделяExtendedTooltip</name>
+              <name>ПерейтиКДатеНеделяРасширеннаяПодсказка</name>
               <id>122</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -869,7 +873,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ОткрытьНеделяExtendedTooltip</name>
+              <name>ОткрытьНеделяРасширеннаяПодсказка</name>
               <id>123</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -904,7 +908,7 @@
             <value>Кнопки неделя</value>
           </toolTip>
           <extendedTooltip>
-            <name>КнопкиНеделяExtendedTooltip</name>
+            <name>КнопкиНеделяРасширеннаяПодсказка</name>
             <id>119</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -952,7 +956,7 @@
           <excludedCommands>SelectAll</excludedCommands>
           <excludedCommands>ShowGroups</excludedCommands>
           <extendedTooltip>
-            <name>ПолеТабличногоДокументаНеделяExtendedTooltip</name>
+            <name>ПолеТабличногоДокументаНеделяРасширеннаяПодсказка</name>
             <id>124</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1020,7 +1024,7 @@
           <value>Неделя</value>
         </toolTip>
         <extendedTooltip>
-          <name>НеделяExtendedTooltip</name>
+          <name>НеделяРасширеннаяПодсказка</name>
           <id>118</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1057,7 +1061,7 @@
         <value>Панель формы</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПанельФормыExtendedTooltip</name>
+        <name>ПанельФормыРасширеннаяПодсказка</name>
         <id>104</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1100,7 +1104,7 @@
           <name>ГодПриИзменении</name>
         </handlers>
         <extendedTooltip>
-          <name>ГодExtendedTooltip</name>
+          <name>ГодРасширеннаяПодсказка</name>
           <id>126</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1162,7 +1166,7 @@
           <name>ПолеВыбораСобытияЗаПериодПриИзменении</name>
         </handlers>
         <extendedTooltip>
-          <name>ПолеВыбораСобытияЗаПериодExtendedTooltip</name>
+          <name>ПолеВыбораСобытияЗаПериодРасширеннаяПодсказка</name>
           <id>127</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1218,7 +1222,7 @@
           <name>КалендарьСобытийПриИзменении</name>
         </handlers>
         <extendedTooltip>
-          <name>КалендарьСобытийExtendedTooltip</name>
+          <name>КалендарьСобытийРасширеннаяПодсказка</name>
           <id>128</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1258,6 +1262,10 @@
           <verticalStretch>true</verticalStretch>
           <showCurrentDate>true</showCurrentDate>
           <calendarNavigation>true</calendarNavigation>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <widthInMonths>1</widthInMonths>
           <heightInMonths>1</heightInMonths>
         </extInfo>
@@ -1281,7 +1289,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>КартинкаСдачаОтчетностиExtendedTooltip</name>
+              <name>КартинкаСдачаОтчетностиРасширеннаяПодсказка</name>
               <id>131</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1327,7 +1335,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>СдачаОтчетностиExtendedTooltip</name>
+              <name>СдачаОтчетностиРасширеннаяПодсказка</name>
               <id>132</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1371,7 +1379,7 @@
             <value>Отчет</value>
           </toolTip>
           <extendedTooltip>
-            <name>ОтчетExtendedTooltip</name>
+            <name>ОтчетРасширеннаяПодсказка</name>
             <id>130</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1409,7 +1417,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>КартинкаУплатаНалогаExtendedTooltip</name>
+              <name>КартинкаУплатаНалогаРасширеннаяПодсказка</name>
               <id>134</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1455,7 +1463,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>УплатаНалогаExtendedTooltip</name>
+              <name>УплатаНалогаРасширеннаяПодсказка</name>
               <id>135</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1499,7 +1507,7 @@
             <value>Сдача</value>
           </toolTip>
           <extendedTooltip>
-            <name>НалогExtendedTooltip</name>
+            <name>НалогРасширеннаяПодсказка</name>
             <id>133</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1537,7 +1545,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>КартинкаБлижайшееСобытиеExtendedTooltip</name>
+              <name>КартинкаБлижайшееСобытиеРасширеннаяПодсказка</name>
               <id>137</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1583,7 +1591,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>БлижайшееСобытиеExtendedTooltip</name>
+              <name>БлижайшееСобытиеРасширеннаяПодсказка</name>
               <id>138</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1627,7 +1635,7 @@
             <value>Сдача</value>
           </toolTip>
           <extendedTooltip>
-            <name>БлижайшееExtendedTooltip</name>
+            <name>БлижайшееРасширеннаяПодсказка</name>
             <id>136</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1665,7 +1673,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>КартинкаНапомнитьExtendedTooltip</name>
+              <name>КартинкаНапомнитьРасширеннаяПодсказка</name>
               <id>140</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1711,7 +1719,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>НапомнитьExtendedTooltip</name>
+              <name>НапомнитьРасширеннаяПодсказка</name>
               <id>141</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1755,7 +1763,7 @@
             <value>Сдача</value>
           </toolTip>
           <extendedTooltip>
-            <name>НапоминаниеExtendedTooltip</name>
+            <name>НапоминаниеРасширеннаяПодсказка</name>
             <id>139</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1792,7 +1800,7 @@
         </toolTip>
         <width>18</width>
         <extendedTooltip>
-          <name>ЛегендаExtendedTooltip</name>
+          <name>ЛегендаРасширеннаяПодсказка</name>
           <id>129</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1831,7 +1839,7 @@
         <value>Даты</value>
       </toolTip>
       <extendedTooltip>
-        <name>ДатыExtendedTooltip</name>
+        <name>ДатыРасширеннаяПодсказка</name>
         <id>125</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1868,7 +1876,7 @@
       <value>События</value>
     </toolTip>
     <extendedTooltip>
-      <name>СобытияExtendedTooltip</name>
+      <name>СобытияРасширеннаяПодсказка</name>
       <id>103</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1903,7 +1911,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ОбновитьExtendedTooltip</name>
+        <name>ОбновитьРасширеннаяПодсказка</name>
         <id>97</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1937,7 +1945,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>ПечататьСразуExtendedTooltip</name>
+          <name>ПечататьСразуРасширеннаяПодсказка</name>
           <id>99</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1968,7 +1976,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>ПоказатьБланкExtendedTooltip</name>
+          <name>ПоказатьБланкРасширеннаяПодсказка</name>
           <id>100</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2003,7 +2011,7 @@
         <value>Печать</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПечатьExtendedTooltip</name>
+        <name>ПечатьРасширеннаяПодсказка</name>
         <id>98</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2038,7 +2046,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ЗакрытьExtendedTooltip</name>
+        <name>ЗакрытьРасширеннаяПодсказка</name>
         <id>101</id>
         <visible>true</visible>
         <enabled>true</enabled>

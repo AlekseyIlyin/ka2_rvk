@@ -376,15 +376,13 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>50</length>
+        <length>255</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -1002,6 +1000,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="ba06de0c-da74-425c-a497-9cd8c43b9ece">
+    <name>СодержаниеЭтиловогоСпирта</name>
+    <synonym>
+      <key>ru</key>
+      <value>% алк.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3d351100-016b-4c4c-a1d3-a06853f95afb">
     <name>ФормаДокумента</name>
     <synonym>
@@ -1030,10 +1049,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="241f1f33-ce0a-4f52-8372-370a3be7f966">
-    <name>УточнениеТаможеннойДекларации</name>
+    <name>УточнениеДатаНомер</name>
     <synonym>
       <key>ru</key>
-      <value>Регистрация ДТ</value>
+      <value>Уточнение даты и номера</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -1648,6 +1667,62 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f294d2cd-6f35-4140-b270-b98b9954dc05">
+      <name>СодержаниеЭтиловогоСпирта</name>
+      <synonym>
+        <key>ru</key>
+        <value>% алк.</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2fc76e32-ab38-4b5f-a27b-741b2a5cd373">
+      <name>НомерПервичногоДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер первичного документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dc6bf589-e69d-4e9b-b2c9-7765517d8fcb">
+      <name>ДатаПервичногоДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата первичного документа</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

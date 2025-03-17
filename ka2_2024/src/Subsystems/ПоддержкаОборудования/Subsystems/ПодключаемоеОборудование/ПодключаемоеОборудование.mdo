@@ -19,15 +19,17 @@
   <content>CommonForm.КодВидаНоменклатурнойКлассификации</content>
   <content>CommonPicture.ВнешняяКомпонентаНеДоступна</content>
   <content>CommonPicture.ВнешняяКомпонентаДоступна</content>
-  <subsystems>ВесовоеОборудование</subsystems>
-  <subsystems>ДисплеиПокупателя</subsystems>
-  <subsystems>ОблачныеККТ</subsystems>
+  <content>DefinedType.ТипыПодключаемогоОборудования</content>
+  <subsystems>УстройстваВвода</subsystems>
+  <subsystems>ЧекопечатающиеУстройства</subsystems>
   <subsystems>ПлатежныеСистемы</subsystems>
+  <subsystems>ДисплеиПокупателя</subsystems>
+  <subsystems>ВесовоеОборудование</subsystems>
+  <subsystems>ТерминалыСбораДанных</subsystems>
   <subsystems>ПринтерыЭтикеток</subsystems>
   <subsystems>СчитывательRFID</subsystems>
-  <subsystems>ТерминалыСбораДанных</subsystems>
-  <subsystems>УстройстваВвода</subsystems>
   <subsystems>УстройствоРаспознавания</subsystems>
-  <subsystems>ЧекопечатающиеУстройства</subsystems>
+  <subsystems>ОблачныеККТ</subsystems>
+  <subsystems>НесертифицированноеОборудование</subsystems>
   <parentSubsystem>Subsystem.ПоддержкаОборудования</parentSubsystem>
 </mdclass:Subsystem>

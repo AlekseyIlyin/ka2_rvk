@@ -86,6 +86,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="808bff5a-e5b2-49a0-b97d-0b8eae28d859">
+    <name>ФормаОтчета2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по акцизам на табачные изделия</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="86d16d60-cafe-44e9-929b-f93c39690120">
     <name>МБ_1151074_3_00004_05_tif</name>
     <synonym>
@@ -135,6 +149,14 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
+  <templates uuid="51c8436b-5b9c-4874-9ab0-7b6d947381c7">
+    <name>МБ_1151074_5_03000_12_tif</name>
+    <synonym>
+      <key>ru</key>
+      <value>1151074_5.03000_12.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
   <templates uuid="18c65c98-a3fd-4dfb-9f1e-9de7e4029fa8">
     <name>НастройкиЗагрузкиXML2007Кв1</name>
     <synonym>
@@ -167,6 +189,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="9cb413c5-561f-4ce9-a535-d16cb3815242">
+    <name>НастройкиЗагрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2025 (кв.1)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="ca5f2d8d-9c3f-4a80-8994-f95a1b07854d">
     <name>НастройкиСравнения2018Кв3</name>
     <synonym>
@@ -188,6 +218,14 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения отчетов 2022 (кв.4)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3c0719c7-5c18-4966-a660-d22d8609fb20">
+    <name>НастройкиСравнения2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения отчетов 2025 (кв.1)</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -394,6 +432,55 @@
       <value>Титульный лист</value>
     </synonym>
   </templates>
+  <templates uuid="d17d57f8-eef8-4ba0-b3b3-f38d2f1769ab">
+    <name>ПечатныйБланк2025Кв1_Приложение1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="7be6c21e-5931-4e86-b390-238273ec75fd">
+    <name>ПечатныйБланк2025Кв1_Приложение2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="846a26ab-9896-4348-b12d-94a651012e5c">
+    <name>ПечатныйБланк2025Кв1_Приложение3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="c87337a5-9feb-45be-a93b-0c4efe336c59">
+    <name>ПечатныйБланк2025Кв1_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="03801f87-db8b-4d7d-9642-e22106403c55">
+    <name>ПечатныйБланк2025Кв1_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="d03383c0-6bd4-4bd9-b130-3e6408c60c8b">
+    <name>ПечатныйБланк2025Кв1_Раздел2_Продолжение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2 (продолжение)</value>
+    </synonym>
+  </templates>
+  <templates uuid="09625d74-85fa-469f-8a27-de392e99af66">
+    <name>ПечатныйБланк2025Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
   <templates uuid="5d63293a-6922-42c4-9f99-03bfca1962b0">
     <name>СоставПоказателей2007Кв1</name>
     <synonym>
@@ -430,6 +517,13 @@
       <value>Списки выбора</value>
     </synonym>
   </templates>
+  <templates uuid="02f84450-03f9-4de6-a10e-52fc3ba1f3ac">
+    <name>СпискиВыбора2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
   <templates uuid="82d1dd6d-39b8-4376-b9e6-3d5950dc2036">
     <name>СхемаВыгрузки501</name>
     <synonym>
@@ -442,6 +536,13 @@
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки, версия 5.02</value>
+    </synonym>
+  </templates>
+  <templates uuid="be248c12-7a22-4f61-9ccd-df96f51be7bc">
+    <name>СхемаВыгрузки503</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки, версия 5.03</value>
     </synonym>
   </templates>
   <templates uuid="461373f3-2fed-4e5b-bc4c-b25fb6b884b4">
@@ -663,6 +764,62 @@
   </templates>
   <templates uuid="96033c2c-9dbf-4d1b-99ed-38b29a48ef72">
     <name>ФормаОтчета2022Кв4_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
+  <templates uuid="914bbc73-ca12-4e5d-8878-232ac656b36b">
+    <name>ФормаОтчета2025Кв1_Приложение1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="8c8fef99-5f27-4821-a7bf-0b48d6fea8f1">
+    <name>ФормаОтчета2025Кв1_Приложение11</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 1 (продолжение)</value>
+    </synonym>
+  </templates>
+  <templates uuid="691de6be-ab05-42c0-8314-cb1be09886fb">
+    <name>ФормаОтчета2025Кв1_Приложение2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="08264a53-ac85-4ef5-a75f-db8004040ecf">
+    <name>ФормаОтчета2025Кв1_Приложение3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="502272bd-64e8-4b26-8cf3-f68ce4953784">
+    <name>ФормаОтчета2025Кв1_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="07072b2f-114d-4afc-9a92-1efa5cf7582d">
+    <name>ФормаОтчета2025Кв1_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="d5f3ff90-8c35-4384-b491-1cb40e6417e1">
+    <name>ФормаОтчета2025Кв1_Раздел21</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2 (продолжение)</value>
+    </synonym>
+  </templates>
+  <templates uuid="fed98f0d-0057-4161-8da1-5c07f5d8ae5d">
+    <name>ФормаОтчета2025Кв1_Титульный</name>
     <synonym>
       <key>ru</key>
       <value>Титульный лист</value>

@@ -4294,6 +4294,7 @@
           <segments>НастройкиОтборовПользователями</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
+        <excludedCommands>Add</excludedCommands>
         <excludedCommands>Change</excludedCommands>
         <excludedCommands>Copy</excludedCommands>
         <excludedCommands>Delete</excludedCommands>
@@ -4623,6 +4624,76 @@
         <contextMenu>
           <name>НастройкиОтборовПользователямиКонтекстноеМеню</name>
           <id>106</id>
+          <items xsi:type="form:FormGroup">
+            <name>НастройкиОтборовПользователямиКонтекстноеМенюГруппаСортировка</name>
+            <id>347</id>
+            <items xsi:type="form:Button">
+              <name>НастройкиОтборовПользователямиКонтекстноеМенюСортироватьСписокПоВозрастанию</name>
+              <id>343</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>НастройкиОтборовПользователямиКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка</name>
+                <id>344</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Item.НастройкиОтборовПользователями.StandardCommand.SortListAsc</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <items xsi:type="form:Button">
+              <name>НастройкиОтборовПользователямиКонтекстноеМенюСортироватьСписокПоУбыванию</name>
+              <id>345</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>НастройкиОтборовПользователямиКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка</name>
+                <id>346</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Item.НастройкиОтборовПользователями.StandardCommand.SortListDesc</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>НастройкиОтборовПользователямиКонтекстноеМенюГруппаСортировкаРасширеннаяПодсказка</name>
+              <id>348</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+          </items>
           <items xsi:type="form:Button">
             <name>НастройкиОтборовПользователямиКонтекстноеМенюКомандаНастройкиПользователя</name>
             <id>123</id>
@@ -4660,6 +4731,7 @@
           </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
+        <changeRowOrder>true</changeRowOrder>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <autoMaxRowsCount>true</autoMaxRowsCount>

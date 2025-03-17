@@ -63,6 +63,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>InformationRegister.НастройкиКаталогаРасширенийВОбластяхДанных</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>ScheduledJob.ОтправкаНаМодерациюСвязейТоваровЯндексМаркет</metadata>
     <use>DontUse</use>
   </content>
@@ -99,6 +103,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>Constant.ИспользоватьЛичныйКабинетСервиса</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>Constant.ПараметрыАдминистрированияИБ</metadata>
     <use>DontUse</use>
   </content>
@@ -124,6 +132,10 @@
   </content>
   <content>
     <metadata>InformationRegister.СообщенияОбменаДанными</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
+    <metadata>ScheduledJob.ОбменДаннымиС1СДокументооборотом</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -275,7 +287,15 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>InformationRegister.ПотокиВыгрузкиЗагрузкиДанных</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>InformationRegister.ПодпискиПолучателей</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
+    <metadata>Constant.ОтображатьЛичныйКабинетСервисаВПанелиРазделов</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -559,6 +579,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>ScheduledJob.ЗагрузкаСтатусовОнлайнЗаказов</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>Catalog.ОбщиеДанныеИнформационногоЦентра</metadata>
     <use>DontUse</use>
   </content>
@@ -660,6 +684,10 @@
   </content>
   <content>
     <metadata>InformationRegister.ОбработчикиОбновления</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
+    <metadata>Constant.НастройкиПараллельнойВыгрузкиЗагрузкиДанных</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -879,6 +907,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>ScheduledJob.ОбработкаОчередиЗапросовВРеестрМЧДЭДО</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>Constant.ИспользоватьМеханизмОнлайнСервисовРО</metadata>
     <use>DontUse</use>
   </content>
@@ -992,6 +1024,10 @@
   </content>
   <content>
     <metadata>Catalog.ФормыСтатистики</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
+    <metadata>ScheduledJob.ОчисткаИсторииОперацийСОборудованием</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -1191,6 +1227,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>Constant.ИспользоватьПараллельнуюВыгрузкуЗагрузкуДанных</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>ScheduledJob.ОбновлениеИндексовСПАРКРиски</metadata>
     <use>DontUse</use>
   </content>
@@ -1339,7 +1379,7 @@
     <use>DontUse</use>
   </content>
   <content>
-    <metadata>ScheduledJob.ЗагрузкаДанныхПоНаложеннымПлатежамСервисДоставки</metadata>
+    <metadata>ScheduledJob.СинхронизацияССервисомИнтеграцииСервисДоставки</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -1823,6 +1863,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>InformationRegister.ЗапланированныеЗаданияОчереди</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>ScheduledJob.КонтрольУдаленияПомеченныхОбъектов</metadata>
     <use>DontUse</use>
   </content>
@@ -1911,7 +1955,7 @@
     <use>DontUse</use>
   </content>
   <content>
-    <metadata>InformationRegister.ВерсииПоставяемыхНастроек</metadata>
+    <metadata>InformationRegister.ВерсииПоставляемыхНастроек</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -1931,7 +1975,7 @@
     <use>DontUse</use>
   </content>
   <content>
-    <metadata>ScheduledJob.ИнтеграцияС1СДокументооборотВыполнитьОбменДанными</metadata>
+    <metadata>ScheduledJob.УдалитьИнтеграцияС1СДокументооборотВыполнитьОбменДанными</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -2119,7 +2163,7 @@
     <use>DontUse</use>
   </content>
   <content>
-    <metadata>InformationRegister.ВерсииПоставяемыхНастроекОбластейДанных</metadata>
+    <metadata>InformationRegister.ВерсииПоставляемыхНастроекОбластейДанных</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -2207,6 +2251,10 @@
     <use>DontUse</use>
   </content>
   <content>
+    <metadata>ScheduledJob.ПодключениеПриложения1СПерсонал</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
     <metadata>InformationRegister.СводныеПриложенияСостояниеВыгрузки</metadata>
     <use>DontUse</use>
   </content>
@@ -2216,6 +2264,10 @@
   </content>
   <content>
     <metadata>Constant.ПарольПользователяСервисаФормированияМЧБсPDF417</metadata>
+    <use>DontUse</use>
+  </content>
+  <content>
+    <metadata>InformationRegister.ДанныеОКВЭД</metadata>
     <use>DontUse</use>
   </content>
   <content>
@@ -2383,7 +2435,7 @@
     <use>DontUse</use>
   </content>
   <content>
-    <metadata>ScheduledJob.ЗагрузкаСтатусовОперацийСБПc2b</metadata>
+    <metadata>ScheduledJob.ЗагрузкаСтатусовОперацийСБП</metadata>
     <use>DontUse</use>
   </content>
   <content>

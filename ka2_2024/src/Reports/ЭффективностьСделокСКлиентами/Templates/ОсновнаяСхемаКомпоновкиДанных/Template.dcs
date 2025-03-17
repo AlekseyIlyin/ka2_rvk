@@ -617,6 +617,10 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Партнер</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>55ce97b3-30c7-4a54-a0ab-e27a5d0d8919</dcsset:userSettingID>
 				</dcsset:item>

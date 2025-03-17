@@ -507,10 +507,6 @@
                 </value>
               </choiceList>
               <choiceList>
-                <presentation>
-                  <key>ru</key>
-                  <value>Возврат от поставщика</value>
-                </presentation>
                 <value xsi:type="core:ReferenceValue">
                   <value>Enum.ХозяйственныеОперации.EnumValue.ВозвратДенежныхСредствОтПоставщика</value>
                 </value>
@@ -9321,6 +9317,46 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ФилиалыОрганизации</name>
+    <title>
+      <key>ru</key>
+      <value>Филиалы организации</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ДоступныеОперацииПоОснованию</name>
+    <title>
+      <key>ru</key>
+      <value>Доступные операции по основанию</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>ПодборПоОстаткам</name>

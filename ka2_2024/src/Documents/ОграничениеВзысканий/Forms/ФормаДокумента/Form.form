@@ -390,8 +390,6 @@
         <segments>Объект.Удержания</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
-      <excludedCommands>Add</excludedCommands>
-      <excludedCommands>Copy</excludedCommands>
       <items xsi:type="form:FormField">
         <name>УдержанияНомерСтроки</name>
         <id>42</id>
@@ -867,7 +865,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Удержания.StandardCommand.MoveUp</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -897,7 +895,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Удержания.StandardCommand.MoveDown</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>

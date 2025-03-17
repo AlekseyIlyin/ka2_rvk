@@ -240,6 +240,17 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Период</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.УведомлениеОбИсчисленныхСуммахНалогов.StandardAttribute.Date</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Отбор.ВидОперации</name>
+        <value xsi:type="core:StringValue">
+          <value>Уведомление</value>
+        </value>
+      </choiceParameters>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -384,4 +395,18 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <templates uuid="a73fc223-41b5-4cf5-a955-4374386c9b49">
+    <name>КБК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КБК</value>
+    </synonym>
+  </templates>
+  <templates uuid="975f29b9-ae01-4d6f-8591-8cf2231cdb0f">
+    <name>КБК2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>КБК2024</value>
+    </synonym>
+  </templates>
 </mdclass:Document>

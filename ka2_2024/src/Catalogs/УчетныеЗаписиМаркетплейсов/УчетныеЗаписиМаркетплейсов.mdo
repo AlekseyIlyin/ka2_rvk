@@ -636,11 +636,37 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="b48513de-d76c-4926-97bf-33c2e70f00be">
+    <name>ЗагрузкаПросмотрЭлектронногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка просмотр электронного документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cf5eb637-f98c-49f4-9d03-cc930920a842">
+    <name>ПросмотрРасхожденийПоКодамМаркировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр расхождений по кодам маркировки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="00a9e30c-78af-4421-ab47-77d641113793">
     <name>ПростойШаблон</name>
     <synonym>
       <key>ru</key>
       <value>Простой шаблон</value>
     </synonym>
+  </templates>
+  <templates uuid="b8c7a865-c211-4a26-b02b-1fd6a444a7ae">
+    <name>РасхожденияЭлектронногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расхождения электронного документа</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
   </templates>
 </mdclass:Catalog>

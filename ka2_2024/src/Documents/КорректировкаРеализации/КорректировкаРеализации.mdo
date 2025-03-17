@@ -542,7 +542,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Ответственный за оформление документа корректировки</value>
+      <value>Пользователь, ответственный за документ (разрез аналитики)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -1562,6 +1562,10 @@
     <type>
       <types>CatalogRef.Пользователи</types>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, создавший документ (служебный реквизит)</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -1815,6 +1819,24 @@
       <types>DocumentRef.КорректировкаРеализации</types>
       <types>DocumentRef.РеализацияТоваровУслуг</types>
       <types>DocumentRef.АктВыполненныхРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="69f84605-84d5-4799-bfea-cb112dc1611a">
+    <name>КодСпециальныхОбстоятельств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код специальных обстоятельств</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

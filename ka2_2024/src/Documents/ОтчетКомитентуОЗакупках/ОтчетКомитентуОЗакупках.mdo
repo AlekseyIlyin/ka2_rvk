@@ -438,7 +438,8 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Сумма комиссионного вознаграждения в валюте взаиморасчетов с комитентом (принципалом), являющаяся задолженностью перед комиссионером за услугу по закупке товаров/работ.</value>
+      <value>Сумма комиссионного вознаграждения в валюте взаиморасчетов с комитентом (принципалом),
+являющаяся задолженностью перед комиссионером за услугу по закупке товаров/работ.</value>
     </toolTip>
     <markNegatives>true</markNegatives>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -1082,6 +1083,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f9705b54-1fae-4aef-9bf0-9cbe75f7c617">
+    <name>КодСпециальныхОбстоятельств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код специальных обстоятельств</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="bddd45dd-3e17-4c02-a250-25cc5ab839e5">
     <name>ФормаДокумента</name>
     <synonym>
@@ -1120,7 +1139,6 @@
       <key>ru</key>
       <value>К оформлению отчеты комитентам о закупках</value>
     </synonym>
-    <comment>00004303</comment>
     <help>
       <pages>
         <lang>ru</lang>

@@ -1427,6 +1427,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ДваФлажкаУТ</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2017,7 +2021,7 @@
             <id>165</id>
             <title>
               <key>ru</key>
-              <value>Заказ / Номенклатура,Характеристика,Ед. изм.,Склад</value>
+              <value>Заказ / Номенклатура, Характеристика, Ед. изм., Склад / Подразделение</value>
             </title>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2436,6 +2440,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ДваФлажкаУТ</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3372,6 +3380,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ДваФлажкаУТ</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -6476,12 +6488,13 @@
       <edit>
         <common>true</common>
       </edit>
+      <functionalOptions>FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</functionalOptions>
     </columns>
     <columns>
       <name>Склад</name>
       <title>
         <key>ru</key>
-        <value>Склад /  Подразделение</value>
+        <value>Склад / Подразделение</value>
       </title>
       <id>11</id>
       <valueType>
@@ -6494,6 +6507,8 @@
       <edit>
         <common>true</common>
       </edit>
+      <functionalOptions>FunctionalOption.ИспользоватьНесколькоСкладов</functionalOptions>
+      <functionalOptions>FunctionalOption.ИспользоватьПодразделения</functionalOptions>
     </columns>
     <columns>
       <name>Назначение</name>
@@ -6511,6 +6526,7 @@
       <edit>
         <common>true</common>
       </edit>
+      <functionalOptions>FunctionalOption.ИспользоватьОбособленноеОбеспечениеЗаказов</functionalOptions>
     </columns>
     <columns>
       <name>ЗаказНаОтгрузку</name>

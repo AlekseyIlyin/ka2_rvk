@@ -133,7 +133,7 @@
       </value>
     </choiceParameters>
     <choiceParameters>
-      <name>Отбор.ВидНалога</name>
+      <name>ВидНалога</name>
       <value xsi:type="core:ReferenceValue">
         <value>Enum.ВидыИмущественныхНалогов.EnumValue.НалогНаИмущество</value>
       </value>
@@ -690,6 +690,12 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Налог</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыИмущественныхНалогов.EnumValue.НалогНаИмущество</value>
+        </value>
+      </choiceParameters>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

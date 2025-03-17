@@ -2444,6 +2444,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.СтатусыНастроекЭлементовОтчетов</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormGroup">
@@ -2905,6 +2909,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ПривилегированныйДоступ</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <visible>true</visible>

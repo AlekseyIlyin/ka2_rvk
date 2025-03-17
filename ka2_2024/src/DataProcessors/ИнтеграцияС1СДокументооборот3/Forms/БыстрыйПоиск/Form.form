@@ -121,8 +121,10 @@
         <type>UsualButton</type>
         <commandName>Form.Command.СброситьОтбор</commandName>
         <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
+        <width>2</width>
+        <maxWidth>2</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
         <groupHorizontalAlign>Right</groupHorizontalAlign>
         <placementArea>UserCmds</placementArea>
         <representationInContextMenu>Auto</representationInContextMenu>

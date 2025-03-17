@@ -525,10 +525,68 @@
 			<empty>true</empty>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<columnsID>12afeceb-84a2-4d25-acbc-cbb9ed898d56</columnsID>
+			<formatIndex>13</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговый период, для которого определена налоговая ставка по туристическому налогу</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<v xsi:type="xs:string"/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1 – первый квартал
+2 – второй квартал
+3 – третий квартал
+4 – четвертый квартал</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<columnsID>12afeceb-84a2-4d25-acbc-cbb9ed898d56</columnsID>
+			<formatIndex>21</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>21</defaultFormatIndex>
-	<height>11</height>
-	<vgRows>11</vgRows>
+	<defaultFormatIndex>22</defaultFormatIndex>
+	<height>13</height>
+	<vgRows>13</vgRows>
 	<merge>
 		<r>5</r>
 		<c>1</c>
@@ -546,6 +604,16 @@
 	</merge>
 	<merge>
 		<r>9</r>
+		<c>3</c>
+		<h>1</h>
+	</merge>
+	<merge>
+		<r>11</r>
+		<c>1</c>
+		<h>1</h>
+	</merge>
+	<merge>
+		<r>11</r>
 		<c>3</c>
 		<h>1</h>
 	</merge>
@@ -576,9 +644,20 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>0</beginRow>
-			<endRow>10</endRow>
+			<endRow>12</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ПерНалСтав</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>11</beginRow>
+			<endRow>11</endRow>
+			<beginColumn>2</beginColumn>
+			<endColumn>2</endColumn>
+			<columnsID>12afeceb-84a2-4d25-acbc-cbb9ed898d56</columnsID>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -624,10 +703,10 @@
 		<width>692</width>
 	</format>
 	<format>
-		<width>218</width>
+		<width>338</width>
 	</format>
 	<format>
-		<width>497</width>
+		<width>377</width>
 	</format>
 	<format>
 		<height>0</height>
@@ -662,7 +741,7 @@
 			</v8:StringQualifiers>
 		</valueType>
 		<controlType>381ed624-9217-4e63-85db-c4c3cb87daae</controlType>
-		<autoMarkIncomplete>true</autoMarkIncomplete>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
 	</format>
 	<format>
 		<height>60</height>
@@ -683,6 +762,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#FFFFC0</backColor>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
@@ -693,7 +773,7 @@
 			</v8:StringQualifiers>
 		</valueType>
 		<controlType>381ed624-9217-4e63-85db-c4c3cb87daae</controlType>
-		<autoMarkIncomplete>true</autoMarkIncomplete>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
 	</format>
 	<format>
 		<font>1</font>
@@ -718,22 +798,25 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#FFFFC0</backColor>
-		<textPlacement>Wrap</textPlacement>
+		<textPlacement>Cut</textPlacement>
 		<protection>false</protection>
 		<containsValue>true</containsValue>
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
 			<v8:NumberQualifiers>
-				<v8:Digits>7</v8:Digits>
+				<v8:Digits>20</v8:Digits>
 				<v8:FractionDigits>6</v8:FractionDigits>
 				<v8:AllowedSign>Any</v8:AllowedSign>
 			</v8:NumberQualifiers>
 		</valueType>
 		<controlType>381ed624-9217-4e63-85db-c4c3cb87daae</controlType>
-		<autoMarkIncomplete>true</autoMarkIncomplete>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
 	</format>
 	<format>
 		<height>102</height>
+	</format>
+	<format>
+		<height>228</height>
 	</format>
 	<format>
 		<width>72</width>

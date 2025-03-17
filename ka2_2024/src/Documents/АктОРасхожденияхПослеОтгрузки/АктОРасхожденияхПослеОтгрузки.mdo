@@ -112,6 +112,7 @@
   <defaultListForm>Document.АктОРасхожденияхПослеОтгрузки.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.АктОРасхожденияхПослеОтгрузки.Form.ФормаВыбора</defaultChoiceForm>
   <auxiliaryObjectForm>Document.АктОРасхожденияхПослеОтгрузки.Form.ФормаДокументаСамообслуживание</auxiliaryObjectForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <registerRecords>AccumulationRegister.ТоварыКОтгрузке</registerRecords>
   <registerRecords>AccumulationRegister.ДвиженияСерийТоваров</registerRecords>
@@ -2081,7 +2082,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Вид операции корректировки реализации</value>
+      <value>Вид операции акта о расхождениях</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

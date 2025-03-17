@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
   <title>
     <key>ru</key>
     <value>Пул кодов маркировки СУЗ</value>
@@ -683,28 +683,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>СписокКоличество</name>
-      <id>122</id>
-      <title>
-        <key>ru</key>
-        <value>Количество</value>
-      </title>
+      <name>СписокКНанесению</name>
+      <id>141</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Количество</segments>
+        <segments>Список.КНанесению</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СписокКоличествоРасширеннаяПодсказка</name>
-        <id>124</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <name>СписокКНанесениюРасширеннаяПодсказка</name>
+        <id>143</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -713,13 +704,48 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>СписокКоличествоКонтекстноеМеню</name>
-        <id>123</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <name>СписокКНанесениюКонтекстноеМеню</name>
+        <id>142</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокКПечати</name>
+      <id>138</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.КПечати</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СписокКПечатиРасширеннаяПодсказка</name>
+        <id>140</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокКПечатиКонтекстноеМеню</name>
+        <id>139</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -1057,6 +1083,7 @@
     <name>ПриСозданииНаСервере</name>
   </handlers>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
@@ -1157,6 +1184,17 @@
 	ПулКодовМаркировкиСУЗ.Характеристика КАК Характеристика,
 	ПулКодовМаркировкиСУЗ.ВидПродукции КАК ВидПродукции,
 	КОЛИЧЕСТВО(ПулКодовМаркировкиСУЗ.КодМаркировки) КАК Количество,
+	СУММА(ВЫБОР
+		КОГДА ПулКодовМаркировкиСУЗ.ДатаПечатиУниверсальная = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КПечати,
+	КОЛИЧЕСТВО(ПулКодовМаркировкиСУЗ.КодМаркировки) -
+	СУММА(ВЫБОР
+		КОГДА ПулКодовМаркировкиСУЗ.ДатаПечатиУниверсальная = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ) КАК КНанесению,
 	ВЫБОР
 		КОГДА МИНИМУМ(ПулКодовМаркировкиСУЗ.ДатаПечатиУниверсальная) = ДАТАВРЕМЯ(1, 1, 1)
 			ТОГДА ИСТИНА
@@ -1191,6 +1229,114 @@
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Организация</dataPath>
+        <field>Организация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Статус</dataPath>
+        <field>Статус</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДокументОснование</dataPath>
+        <field>ДокументОснование</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Документ основание</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Номенклатура</dataPath>
+        <field>Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Характеристика</dataPath>
+        <field>Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидПродукции</dataPath>
+        <field>ВидПродукции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Количество</dataPath>
+        <field>Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КПечати</dataPath>
+        <field>КПечати</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>К печати</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьНеагрегированные</dataPath>
+        <field>ЕстьНеагрегированные</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть неагрегированные</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособВводаВОборот</dataPath>
+        <field>СпособВводаВОборот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Шаблон</dataPath>
+        <field>Шаблон</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьНераспечатанные</dataPath>
+        <field>ЕстьНераспечатанные</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть нераспечатанные</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КНанесению</dataPath>
+        <field>КНанесению</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>К нанесению</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>НезаполненныеЗначенияОснования</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Незаполненные значения основания</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>f1cf7d51-3aa5-4388-a242-69b86cfa2bc9</types>
+        </valueType>
+        <useRestriction>true</useRestriction>
+        <valueListAllowed>true</valueListAllowed>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>

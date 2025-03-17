@@ -583,16 +583,13 @@
         <picture xsi:type="core:PictureRef">
           <picture>CommonPicture.Внимание32</picture>
         </picture>
+        <pictureSize>Proportionally</pictureSize>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
     <items xsi:type="form:Decoration">
       <name>ДекорацияПредупреждение</name>
       <id>54</id>
-      <title>
-        <key>ru</key>
-        <value>Предупреждение! Важно для счетов-фактур и корректировок приобретения и реализации. Документ будет регистрироваться к обмену только в случае регистрации документа-основания. Учитывайте это при установке отборов!</value>
-      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>

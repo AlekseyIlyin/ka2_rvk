@@ -3168,6 +3168,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.СостоянияДокументовБЭД</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -7040,6 +7044,10 @@
                         <valuesPicture xsi:type="core:PictureRef">
                           <picture>CommonPicture.КоллекцияПиктограммФайлов</picture>
                         </valuesPicture>
+                        <border xsi:type="core:BorderDef">
+                          <style>Single</style>
+                          <width>1</width>
+                        </border>
                         <borderColor xsi:type="core:ColorRef">
                           <color>Style.FormBackColor</color>
                         </borderColor>
@@ -8712,6 +8720,10 @@
                           <valuesPicture xsi:type="core:PictureRef">
                             <picture>CommonPicture.ЭлектронныйДокументОшибкаПодписи</picture>
                           </valuesPicture>
+                          <border xsi:type="core:BorderDef">
+                            <style>Single</style>
+                            <width>1</width>
+                          </border>
                           <fileDragMode>AsFileRef</fileDragMode>
                         </extInfo>
                       </items>

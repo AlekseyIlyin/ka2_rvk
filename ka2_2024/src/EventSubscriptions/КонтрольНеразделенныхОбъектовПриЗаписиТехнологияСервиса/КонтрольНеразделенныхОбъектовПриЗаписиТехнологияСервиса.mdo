@@ -11,6 +11,7 @@
     <types>ConstantValueManager.АдресСервисаЦентраИдей</types>
     <types>ConstantValueManager.КонечнаяТочкаМенеджераСервиса</types>
     <types>ConstantValueManager.ОкончаниеИнтервалаВремениПриоритетаОбработкиДанных</types>
+    <types>ConstantValueManager.НастройкиПараллельнойВыгрузкиЗагрузкиДанных</types>
     <types>ConstantValueManager.ЛогироватьЗапускиЗаданийОчереди</types>
     <types>CatalogObject.СообщенияСистемы</types>
     <types>ConstantValueManager.РазмерБлокаПередачиФайла</types>
@@ -29,6 +30,7 @@
     <types>ConstantValueManager.КаталогОбменаФайламиВМоделиСервисаLinux</types>
     <types>ConstantValueManager.ПрефиксСервисаДляНовостей</types>
     <types>CatalogObject.ПоставщикиУслугСервиса</types>
+    <types>ConstantValueManager.ОтображатьЛичныйКабинетСервисаВПанелиРазделов</types>
     <types>ConstantValueManager.ИспользоватьЭлектроннуюПодписьВМоделиСервиса</types>
     <types>ConstantValueManager.АдресКриптосервиса</types>
     <types>ConstantValueManager.ИспользованиеКаталогаРасширенийВМоделиСервиса</types>
@@ -62,7 +64,9 @@
     <types>ExchangePlanObject.ОбменСообщениями</types>
     <types>ConstantValueManager.МаксимальноеКоличествоИсполняющихФоновыхЗаданий</types>
     <types>ConstantValueManager.МаксимальнаяДлительностьВыполненияИсполняющегоФоновогоЗадания</types>
+    <types>ConstantValueManager.ИспользоватьПараллельнуюВыгрузкуЗагрузкуДанных</types>
     <types>ConstantValueManager.АдресПрограммногоИнтерфейсаСлужбыПоддержки</types>
+    <types>ConstantValueManager.ИспользоватьЛичныйКабинетСервиса</types>
   </source>
   <event>OnWrite</event>
   <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>

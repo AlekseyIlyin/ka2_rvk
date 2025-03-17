@@ -99,15 +99,49 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Отпечаток</name>
-      <id>28</id>
+      <name>ИдентификаторПодписи</name>
+      <id>34</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Отпечаток</segments>
+        <segments>Список.ИдентификаторПодписи</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ИдентификаторПодписиРасширеннаяПодсказка</name>
+        <id>36</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИдентификаторПодписиКонтекстноеМеню</name>
+        <id>35</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Отпечаток</name>
+      <id>28</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.УдалитьОтпечаток</segments>
       </dataPath>
       <extendedTooltip>
         <name>ОтпечатокРасширеннаяПодсказка</name>
@@ -149,11 +183,9 @@
       <id>31</id>
       <visible>true</visible>
       <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
+      <userVisible/>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.ДатаПодписи</segments>
+        <segments>Список.УдалитьДатаПодписи</segments>
       </dataPath>
       <extendedTooltip>
         <name>ДатаПодписиРасширеннаяПодсказка</name>
@@ -195,11 +227,9 @@
       <id>22</id>
       <visible>true</visible>
       <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
+      <userVisible/>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.МЧД</segments>
+        <segments>Список.УдалитьМЧД</segments>
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>

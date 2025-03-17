@@ -42,11 +42,11 @@
       <value>Завершено</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="42e06a54-48ea-4bd8-9e11-4f9f3beff8fe">
-    <name>ЗавершеноСПредупреждением</name>
+  <enumValues uuid="60a24c1d-a2e0-457c-b812-c84da38f2c71">
+    <name>ЗавершеноСОжиданием</name>
     <synonym>
       <key>ru</key>
-      <value>Завершено с предупреждением</value>
+      <value>Завершено с ожиданием</value>
     </synonym>
   </enumValues>
   <enumValues uuid="35364d4c-b683-4e1d-ad02-303e55284efb">
@@ -70,11 +70,25 @@
       <value>Завершено с ошибкой таймаута</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="60a24c1d-a2e0-457c-b812-c84da38f2c71">
-    <name>ЗавершеноСОжиданием</name>
+  <enumValues uuid="42e06a54-48ea-4bd8-9e11-4f9f3beff8fe">
+    <name>ЗавершеноСПредупреждением</name>
     <synonym>
       <key>ru</key>
-      <value>Завершено с ожиданием</value>
+      <value>Завершено с предупреждением</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7c37f23f-123d-4d31-b6bd-2cc7978a2718">
+    <name>ОжидаетсяПодтверждениеОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидается подтверждение отгрузки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a4882cac-fe9e-4268-a777-de73d2163fe6">
+    <name>ОжидаетсяАннулированиеПодтвержденияОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидается аннулирование подтверждения отгрузки</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

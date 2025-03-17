@@ -93,15 +93,7 @@
       <segments>Список</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
     <excludedCommands>CopyToClipboard</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>ListSettings</excludedCommands>
-    <excludedCommands>OutputList</excludedCommands>
-    <excludedCommands>Post</excludedCommands>
-    <excludedCommands>SetDeletionMark</excludedCommands>
-    <excludedCommands>UndoPosting</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Дата</name>
       <id>4</id>
@@ -1000,24 +992,7 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>CancelSearch</excludedCommands>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
   <excludedCommands>CustomizeForm</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>DynamicListStandardSettings</excludedCommands>
-  <excludedCommands>Find</excludedCommands>
-  <excludedCommands>FindByCurrentValue</excludedCommands>
-  <excludedCommands>ListSettings</excludedCommands>
-  <excludedCommands>LoadDynamicListSettings</excludedCommands>
-  <excludedCommands>OutputList</excludedCommands>
-  <excludedCommands>Post</excludedCommands>
-  <excludedCommands>Refresh</excludedCommands>
-  <excludedCommands>SaveDynamicListSettings</excludedCommands>
-  <excludedCommands>SetDateInterval</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
-  <excludedCommands>UndoPosting</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>

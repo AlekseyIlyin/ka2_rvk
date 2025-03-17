@@ -3401,7 +3401,7 @@
                   <id>3631</id>
                   <title>
                     <key>ru</key>
-                    <value>- Акты о расхождениях после приемки по возвратам</value>
+                    <value>- Акты о расхождениях после возврата</value>
                   </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -3440,54 +3440,11 @@
                   </extInfo>
                 </items>
                 <items xsi:type="form:Decoration">
-                  <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителя</name>
-                  <id>3636</id>
-                  <title>
-                    <key>ru</key>
-                    <value>- Акты о расхождениях после приемки по поступлениям товаров от хранителя</value>
-                  </title>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <extendedTooltip>
-                    <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителяРасширеннаяПодсказка</name>
-                    <id>3638</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителяКонтекстноеМеню</name>
-                    <id>3637</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>Label</type>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:Decoration">
                   <name>АктыРасхожденийПослеПриемкиПоПриемкамТоваровНаХранение</name>
                   <id>3641</id>
                   <title>
                     <key>ru</key>
-                    <value>- Акты о расхождениях после приемки по приемкам товаров на хранение</value>
+                    <value>- Акты о расхождениях после приемки товаров на хранение</value>
                   </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -3526,11 +3483,11 @@
                   </extInfo>
                 </items>
                 <items xsi:type="form:Decoration">
-                  <name>АктыОРасхожденияхПослеПриемки</name>
+                  <name>АктыОРасхожденияхПослеПриемкиПоПоступлениям</name>
                   <id>3651</id>
                   <title>
                     <key>ru</key>
-                    <value>- Акты о расхождениях после поступления товаров от поставщика</value>
+                    <value>- Акты о расхождениях после поступления</value>
                   </title>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -3538,8 +3495,41 @@
                     <common>true</common>
                   </userVisible>
                   <extendedTooltip>
-                    <name>АктыОРасхожденияхПослеПриемкиРасширеннаяПодсказка</name>
+                    <name>АктыОРасхожденияхПослеПриемкиПоПоступлениямРасширеннаяПодсказка</name>
                     <id>3653</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>АктыОРасхожденияхПослеПриемкиПоПоступлениямКонтекстноеМеню</name>
+                    <id>3652</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>Label</type>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:Decoration">
+                  <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителя</name>
+                  <id>3636</id>
+                  <title>
+                    <key>ru</key>
+                    <value>- Акты о расхождениях после поступления товаров от хранителя</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителяРасширеннаяПодсказка</name>
+                    <id>3638</id>
                     <visible>true</visible>
                     <enabled>true</enabled>
                     <userVisible>
@@ -3553,8 +3543,8 @@
                     </extInfo>
                   </extendedTooltip>
                   <contextMenu>
-                    <name>АктыОРасхожденияхПослеПриемкиКонтекстноеМеню</name>
-                    <id>3652</id>
+                    <name>АктыРасхожденийПослеПриемкиПоПоступлениямТоваровОтХранителяКонтекстноеМеню</name>
+                    <id>3637</id>
                     <visible>true</visible>
                     <enabled>true</enabled>
                     <userVisible>
@@ -5089,6 +5079,564 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаРетроБонусы</name>
+    <id>3663</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаИспользоватьРетроБонусыПоставщиков</name>
+      <id>3665</id>
+      <items xsi:type="form:FormField">
+        <name>ИспользоватьРетроБонусыПоставщиков</name>
+        <id>3667</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.ИспользоватьРетроБонусыПоставщиков</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ИспользоватьРетроБонусыПоставщиковПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ИспользоватьРетроБонусыПоставщиковРасширеннаяПодсказка</name>
+          <id>3669</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИспользоватьРетроБонусыПоставщиковКонтекстноеМеню</name>
+          <id>3668</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEdit>
+          <key>ru</key>
+          <value>Отключать возможность использования ретро-бонусов клиентов после начала работы с системой не рекомендуется</value>
+        </warningOnEdit>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаИспользоватьРетроБонусыПоставщиковПредупреждениеВключение</name>
+        <id>3670</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияИспользоватьРетроБонусыПоставщиковПредупреждениеВключение</name>
+          <id>3672</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация использовать ретро бонусы поставщиков предупреждение включение</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияИспользоватьРетроБонусыПоставщиковПредупреждениеВключениеРасширеннаяПодсказка</name>
+            <id>3674</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияИспользоватьРетроБонусыПоставщиковПредупреждениеВключениеКонтекстноеМеню</name>
+            <id>3673</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаПредупреждениеИспользоватьРетроБонусыПоставщиковВключение</name>
+          <id>3675</id>
+          <items xsi:type="form:Decoration">
+            <name>КомментарийИспользоватьРетроБонусыПоставщиковПредупреждениеВключение</name>
+            <id>3677</id>
+            <title>
+              <key>ru</key>
+              <value>Для возможности ведения ретро-бонусов поставщиков необходимо включить опции:</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КомментарийИспользоватьРетроБонусыПоставщиковПредупреждениеВключениеРасширеннаяПодсказка</name>
+              <id>3679</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>КомментарийИспользоватьРетроБонусыПоставщиковПредупреждениеВключениеКонтекстноеМеню</name>
+              <id>3678</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>КомментарийИспользоватьРетроБонусыПоставщиковНезависимыеПартнеры</name>
+            <id>3680</id>
+            <title>
+              <key>ru</key>
+              <value>— &quot;Независимо вести партнеров и контрагентов&quot; (Раздел &quot;CRM и маркетинг&quot; - &quot;Настройки CRM&quot;)</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КомментарийИспользоватьРетроБонусыПоставщиковНезависимыеПартнерыРасширеннаяПодсказка</name>
+              <id>3682</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>КомментарийИспользоватьРетроБонусыПоставщиковНезависимыеПартнерыКонтекстноеМеню</name>
+              <id>3681</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа комментарий использовать ретро-бонусы клиентов поставщиков вести партнеров и контрагентов</value>
+          </title>
+          <extendedTooltip>
+            <name>ГруппаПредупреждениеИспользоватьРетроБонусыПоставщиковВключениеРасширеннаяПодсказка</name>
+            <id>3676</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа использовать ретро-бонусы поставщиков предупреждение (включение)</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаИспользоватьРетроБонусыПоставщиковПредупреждениеВключениеРасширеннаяПодсказка</name>
+          <id>3671</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа Использовать ретро-бонусы поставщиков</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаИспользоватьРетроБонусыПоставщиковРасширеннаяПодсказка</name>
+        <id>3666</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</name>
+      <id>3696</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</name>
+        <id>3698</id>
+        <title>
+          <key>ru</key>
+          <value>Декорация использовать согласование списаний ретро бонусов поставщиков</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияИспользоватьСогласованиеСписанийРетроБонусовПоставщиковРасширеннаяПодсказка</name>
+          <id>3701</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияИспользоватьСогласованиеСписанийРетроБонусовПоставщиковКонтекстноеМеню</name>
+          <id>3700</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <width>1</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>1</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаИспользоватьСогласованиеСписанийРетроБонусовПоставщиковЭлемент</name>
+        <id>3699</id>
+        <items xsi:type="form:FormField">
+          <name>ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</name>
+          <id>3690</id>
+          <title>
+            <key>ru</key>
+            <value>Согласование списаний ретро-бонусов поставщиков</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>НаборКонстант.ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ИспользоватьСогласованиеСписанийРетроБонусовПоставщиковРасширеннаяПодсказка</name>
+            <id>3692</id>
+            <title>
+              <key>ru</key>
+              <value>Более детальный процесс отражения списания начисленных ретро-бонусов поставщиков.</value>
+            </title>
+            <type>Label</type>
+            <maxWidth>40</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИспользоватьСогласованиеСписанийРетроБонусовПоставщиковКонтекстноеМеню</name>
+            <id>3691</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <warningOnEdit>
+            <key>ru</key>
+            <value>Отключать возможность использования статусов списаний ретро-бонусов клиентов после начала работы с системой не рекомендуется</value>
+          </warningOnEdit>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа использовать согласования списаний ретро-бонусов поставщиков элемент</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаИспользоватьСогласованиеСписанийРетроБонусовПоставщиковЭлементРасширеннаяПодсказка</name>
+          <id>3702</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Использовать согласование списаний ретро-бонусов поставщиков</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаИспользоватьСогласованиеСписанийРетроБонусовПоставщиковРасширеннаяПодсказка</name>
+        <id>3697</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаНастройкаПредставленияРетроБонусов</name>
+      <id>3683</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияНастройкаПредставленияРетроБонусов</name>
+        <id>3685</id>
+        <title>
+          <key>ru</key>
+          <value>Декорация настройка представления ретро-бонусов</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияНастройкаПредставленияРетроБонусовРасширеннаяПодсказка</name>
+          <id>3687</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияНастройкаПредставленияРетроБонусовКонтекстноеМеню</name>
+          <id>3686</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <width>1</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>1</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВыводитьПолныеНаименованияРетроБонусовПоставщиков</name>
+        <id>3688</id>
+        <items xsi:type="form:FormField">
+          <name>ВыводитьПолныеНаименованияРетроБонусовПоставщиков</name>
+          <id>3693</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>НаборКонстант.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ВыводитьПолныеНаименованияРетроБонусовПоставщиковПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ВыводитьПолныеНаименованияРетроБонусовПоставщиковРасширеннаяПодсказка</name>
+            <id>3695</id>
+            <title>
+              <key>ru</key>
+              <value>Если флаг выключен в системе формируются сокращённые представления документов, при включенном флаге система будет формировать полное наименование.
+Допускается изменение настройки в любой момент времени.
+Примеры:
+Условия РБ поставщика -> Условия ретро-бонуса поставщика
+Корректировка условий РБ поставщика -> Корректировка условий ретро-бонуса поставщика</value>
+            </title>
+            <type>Label</type>
+            <maxWidth>75</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ВыводитьПолныеНаименованияРетроБонусовПоставщиковКонтекстноеМеню</name>
+            <id>3694</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа использовать согласования списаний ретро-бонусов клиентов элемент</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаВыводитьПолныеНаименованияРетроБонусовПоставщиковРасширеннаяПодсказка</name>
+          <id>3689</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа настройки представления ретро-бонусов</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаНастройкаПредставленияРетроБонусовРасширеннаяПодсказка</name>
+        <id>3684</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Ретро-бонусы</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаРетроБонусыРасширеннаяПодсказка</name>
+      <id>3664</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <controlRepresentation>Picture</controlRepresentation>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -5131,6 +5679,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</segments>
+    </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.ИспользованиеЭтаповОплатыВЗакупках</segments>
     </notDefaultUseAlwaysAttributes>
@@ -5175,6 +5726,9 @@
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.ИспользоватьПартионныйУчет</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ИспользоватьПартнеровИКонтрагентов</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.ИспользоватьПроизводство</segments>

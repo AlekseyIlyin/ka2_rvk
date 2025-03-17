@@ -184,6 +184,7 @@
       </contextMenu>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
+      <height>1</height>
       <autoMaxHeight>true</autoMaxHeight>
       <textColor xsi:type="core:ColorRef">
         <color>Style.ПоясняющийТекст</color>
@@ -278,55 +279,10 @@
       <type>Label</type>
       <autoMaxHeight>true</autoMaxHeight>
       <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </items>
-    <items xsi:type="form:Decoration">
-      <name>ОбновитьСостояниеОпции</name>
-      <id>485</id>
-      <title>
-        <key>ru</key>
-        <value>Обновить состояние</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ОбновитьСостояниеОпцииРасширеннаяПодсказка</name>
-        <id>487</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ОбновитьСостояниеОпцииКонтекстноеМеню</name>
-        <id>486</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
         <handlers>
-          <event>Click</event>
-          <name>ОбновитьСостояниеОпцииНажатие</name>
+          <event>URLProcessing</event>
+          <name>ДекорацияСостояниеОпцияКурьерикаОбработкаНавигационнойСсылки</name>
         </handlers>
-        <hyperlink>true</hyperlink>
         <horizontalAlign>Left</horizontalAlign>
       </extInfo>
     </items>
@@ -690,6 +646,10 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>Clearing</event>
+          <name>ОтборКурьерОчистка</name>
+        </handlers>
         <maxWidth>20</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
@@ -755,20 +715,20 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
           <handlers>
+            <event>Clearing</event>
+            <name>ОтборНомерЗаказаОчистка</name>
+          </handlers>
+          <handlers>
             <event>TextEditEnd</event>
             <name>ОтборНомерЗаказаОкончаниеВводаТекста</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <clearButton>true</clearButton>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <inputHint>
-            <key>ru</key>
-            <value>Номер заказа 1С:Доставка</value>
-          </inputHint>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -821,7 +781,7 @@
             <event>Clearing</event>
             <name>ОтборДокументОснованиеОчистка</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <dropListButton>false</dropListButton>
@@ -890,7 +850,7 @@
             <event>ChoiceProcessing</event>
             <name>ОтборОтправительОбработкаВыбора</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <dropListButton>true</dropListButton>
@@ -964,7 +924,7 @@
             <event>ChoiceProcessing</event>
             <name>ОтборОткудаОбработкаВыбора</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <dropListButton>true</dropListButton>
@@ -1038,7 +998,7 @@
             <event>ChoiceProcessing</event>
             <name>ОтборПолучательОбработкаВыбора</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <dropListButton>true</dropListButton>
@@ -1112,7 +1072,7 @@
             <event>ChoiceProcessing</event>
             <name>ОтборКудаОбработкаВыбора</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <dropListButton>true</dropListButton>
@@ -1120,73 +1080,6 @@
           <clearButton>true</clearButton>
           <openButton>false</openButton>
           <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <inputHint>
-            <key>ru</key>
-            <value>Все</value>
-          </inputHint>
-        </extInfo>
-      </items>
-      <items xsi:type="form:FormField">
-        <name>ОтборГрузоперевозчик</name>
-        <id>218</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>ОтборГрузоперевозчикНаименование</segments>
-        </dataPath>
-        <extendedTooltip>
-          <name>ОтборГрузоперевозчикРасширеннаяПодсказка</name>
-          <id>220</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ОтборГрузоперевозчикКонтекстноеМеню</name>
-          <id>219</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <handlers>
-            <event>Opening</event>
-            <name>ОтборГрузоперевозчикОткрытие</name>
-          </handlers>
-          <handlers>
-            <event>Clearing</event>
-            <name>ОтборГрузоперевозчикОчистка</name>
-          </handlers>
-          <handlers>
-            <event>ChoiceProcessing</event>
-            <name>ОтборГрузоперевозчикОбработкаВыбора</name>
-          </handlers>
-          <maxWidth>30</maxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <dropListButton>true</dropListButton>
-          <clearButton>true</clearButton>
-          <openButton>false</openButton>
-          <quickChoice>true</quickChoice>
           <typeDomainEnabled>true</typeDomainEnabled>
           <inputHint>
             <key>ru</key>
@@ -1249,7 +1142,7 @@
             <event>ChoiceProcessing</event>
             <name>ОтборСтатусОплатыОбработкаВыбора</name>
           </handlers>
-          <maxWidth>30</maxWidth>
+          <maxWidth>31</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <dropListButton>true</dropListButton>
           <clearButton>true</clearButton>
@@ -1316,8 +1209,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1375,8 +1267,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1504,8 +1395,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1563,8 +1453,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1692,8 +1581,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1751,8 +1639,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
-            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>10</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <chooseType>true</chooseType>
@@ -1885,7 +1772,7 @@
               <event>ChoiceProcessing</event>
               <name>ОтборНаложенныйПлатежОбработкаВыбора</name>
             </handlers>
-            <maxWidth>30</maxWidth>
+            <maxWidth>31</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <dropListButton>true</dropListButton>
             <clearButton>true</clearButton>
@@ -1954,7 +1841,7 @@
               <event>ChoiceProcessing</event>
               <name>ОтборНаложенныйПлатежПолученОбработкаВыбора</name>
             </handlers>
-            <maxWidth>30</maxWidth>
+            <maxWidth>31</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <dropListButton>true</dropListButton>
             <clearButton>true</clearButton>
@@ -2123,146 +2010,17 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ГруппаОжиданияЗагрузкиСпискаСостояний</name>
-      <id>304</id>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияПустая</name>
-        <id>306</id>
-        <title>
-          <key>ru</key>
-          <value>Декорация пустая</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ДекорацияПустаяРасширеннаяПодсказка</name>
-          <id>308</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ДекорацияПустаяКонтекстноеМеню</name>
-          <id>307</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <maxWidth>1</maxWidth>
-        <maxHeight>1</maxHeight>
-        <horizontalStretch>false</horizontalStretch>
-        <verticalStretch>false</verticalStretch>
-        <extInfo xsi:type="form:PictureDecorationExtInfo">
-          <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.Пустая</picture>
-          </picture>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияОжиданиеЗагрузкиСпискаСостояний</name>
-        <id>301</id>
-        <title>
-          <key>ru</key>
-          <value>Декорация ожидание загрузки списка состояний</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ДекорацияОжиданиеЗагрузкиСпискаСостоянийРасширеннаяПодсказка</name>
-          <id>303</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ДекорацияОжиданиеЗагрузкиСпискаСостоянийКонтекстноеМеню</name>
-          <id>302</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <groupVerticalAlign>Bottom</groupVerticalAlign>
-        <extInfo xsi:type="form:PictureDecorationExtInfo">
-          <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.СинхронизацияДанныхДлительнаяОперация</picture>
-          </picture>
-        </extInfo>
-      </items>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <title>
-        <key>ru</key>
-        <value>Группа ожидания загрузки списка состояний</value>
-      </title>
-      <groupVerticalAlign>Top</groupVerticalAlign>
-      <extendedTooltip>
-        <name>ГруппаОжиданияЗагрузкиСпискаСостоянийРасширеннаяПодсказка</name>
-        <id>305</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualGroup</type>
-      <extInfo xsi:type="form:UsualGroupExtInfo">
-        <group>Vertical</group>
-        <showLeftMargin>true</showLeftMargin>
-        <united>true</united>
-        <throughAlign>Auto</throughAlign>
-        <currentRowUse>Auto</currentRowUse>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormGroup">
       <name>ГруппаНастройки</name>
       <id>324</id>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаТребуетсяПовторнаяОтправка</name>
-        <id>511</id>
+        <name>ГруппаТребуютсяДействияПользователя</name>
+        <id>542</id>
         <items xsi:type="form:Decoration">
-          <name>ДекорацияКартинкаТребуетсяПовторнаяОтправка</name>
+          <name>ДекорацияКартинкаТребуютсяДействияПользователя</name>
           <id>513</id>
           <title>
             <key>ru</key>
-            <value>Декорация картинка требуется повторная отправка</value>
+            <value>Декорация картинка требуются действия пользователя</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2270,13 +2028,8 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ДекорацияКартинкаТребуетсяПовторнаяОтправкаРасширеннаяПодсказка</name>
+            <name>ДекорацияКартинкаТребуютсяДействияПользователяРасширеннаяПодсказка</name>
             <id>515</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2285,13 +2038,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДекорацияКартинкаТребуетсяПовторнаяОтправкаКонтекстноеМеню</name>
+            <name>ДекорацияКартинкаТребуютсяДействияПользователяКонтекстноеМеню</name>
             <id>514</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <autoMaxWidth>true</autoMaxWidth>
@@ -2301,6 +2049,40 @@
               <picture>CommonPicture.ПредупреждениеБЭД</picture>
             </picture>
             <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияНадписьТребуютсяДействияПользователя</name>
+          <id>544</id>
+          <title>
+            <key>ru</key>
+            <value>Требуется:</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияНадписьТребуютсяДействияПользователяРасширеннаяПодсказка</name>
+            <id>546</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияНадписьТребуютсяДействияПользователяКонтекстноеМеню</name>
+            <id>545</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </items>
         <items xsi:type="form:Decoration">
@@ -2352,26 +2134,52 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияТребуетсяОбработкаЧастичнойДоставки</name>
+          <id>539</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияТребуетсяОбработкаЧастичнойДоставкиРасширеннаяПодсказка</name>
+            <id>541</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияТребуетсяОбработкаЧастичнойДоставкиКонтекстноеМеню</name>
+            <id>540</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияТребуетсяОбработкаЧастичнойДоставкиНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа требуется повторная отправка</value>
+          <value>Требуются действия пользователя</value>
         </title>
-        <toolTip>
-          <key>ru</key>
-          <value>Группа требуется повторная отправка</value>
-        </toolTip>
         <extendedTooltip>
-          <name>ГруппаТребуетсяПовторнаяОтправкаРасширеннаяПодсказка</name>
-          <id>512</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>ГруппаТребуютсяДействияПользователяРасширеннаяПодсказка</name>
+          <id>543</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2675,6 +2483,56 @@
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
+          <name>Скопировать</name>
+          <id>535</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СкопироватьРасширеннаяПодсказка</name>
+            <id>536</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.Скопировать</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>Шаблоны</name>
+          <id>547</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ШаблоныРасширеннаяПодсказка</name>
+            <id>548</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.Шаблоны</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
           <name>Отправить</name>
           <id>440</id>
           <visible>true</visible>
@@ -2906,10 +2764,6 @@
             <key>ru</key>
             <value>Печать</value>
           </title>
-          <toolTip>
-            <key>ru</key>
-            <value>Печать</value>
-          </toolTip>
           <extendedTooltip>
             <name>ПодменюПечатьРасширеннаяПодсказка</name>
             <id>525</id>
@@ -3982,6 +3836,7 @@
         </contextMenu>
         <type>InputField</type>
         <editMode>EnterOnInput</editMode>
+        <cellHyperlink>true</cellHyperlink>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
@@ -3993,6 +3848,9 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.ЦветГиперссылкиБЭД</color>
+          </textColor>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -4156,6 +4014,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>StdPicture.AppearanceCheckBox</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>
@@ -4397,6 +4259,7 @@
         </contextMenu>
         <type>InputField</type>
         <editMode>EnterOnInput</editMode>
+        <cellHyperlink>true</cellHyperlink>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
@@ -4407,6 +4270,9 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.ЦветГиперссылкиБЭД</color>
+          </textColor>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -4513,7 +4379,7 @@
         <name>СписокГруппаОснование</name>
         <id>519</id>
         <items xsi:type="form:FormField">
-          <name>СписокТребуетсяПовторнаяОтправка</name>
+          <name>СписокТребуетсяСинхронизация</name>
           <id>516</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -4521,17 +4387,12 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Список.ТребуетсяПовторнаяОтправка</segments>
+            <segments>Список.ТребуетсяСинхронизация</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
           <extendedTooltip>
-            <name>СписокТребуетсяПовторнаяОтправкаРасширеннаяПодсказка</name>
+            <name>СписокТребуетсяСинхронизацияРасширеннаяПодсказка</name>
             <id>518</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4540,13 +4401,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>СписокТребуетсяПовторнаяОтправкаКонтекстноеМеню</name>
+            <name>СписокТребуетсяСинхронизацияКонтекстноеМеню</name>
             <id>517</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>PictureField</type>
@@ -4561,6 +4417,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПредупреждениеБЭД</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>
@@ -4624,10 +4484,6 @@
           <key>ru</key>
           <value>Список группа основание</value>
         </title>
-        <toolTip>
-          <key>ru</key>
-          <value>Список группа основание</value>
-        </toolTip>
         <extendedTooltip>
           <name>СписокГруппаОснованиеРасширеннаяПодсказка</name>
           <id>520</id>
@@ -5773,7 +5629,6 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <changeRowOrder>true</changeRowOrder>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <autoMaxRowsCount>true</autoMaxRowsCount>
@@ -6066,10 +5921,6 @@
       <key>ru</key>
       <value>Группа подвал</value>
     </title>
-    <toolTip>
-      <key>ru</key>
-      <value>Группа подвал</value>
-    </toolTip>
     <extendedTooltip>
       <name>ГруппаПодвалРасширеннаяПодсказка</name>
       <id>507</id>
@@ -7138,7 +6989,7 @@
       <edit>
         <common>true</common>
       </edit>
-      <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+      <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
     </columns>
     <columns>
       <name>СуммаНаложенногоПлатежа</name>
@@ -7160,7 +7011,7 @@
       <edit>
         <common>true</common>
       </edit>
-      <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+      <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
     </columns>
     <columns>
       <name>ЭтоМультизаказ</name>
@@ -7393,10 +7244,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ТребуетсяПовторнаяОтправка</name>
+      <name>ТребуетсяСинхронизация</name>
       <title>
         <key>ru</key>
-        <value>Требуется повторная отправка</value>
+        <value>Требуется синхронизация</value>
       </title>
       <id>52</id>
       <valueType>
@@ -7720,21 +7571,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьЗаказыНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить заказы на доставку</value>
-    </title>
-    <id>30</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>Страницы</name>
     <title>
       <key>ru</key>
@@ -7822,36 +7658,6 @@
     </columns>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьСостояния</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получения заказов</value>
-    </title>
-    <id>33</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьГрузоперевозчиков</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить грузоперевозчиков</value>
-    </title>
-    <id>34</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ОтборПолучательАдресЗначение</name>
     <title>
       <key>ru</key>
@@ -7880,21 +7686,6 @@
       <types>String</types>
       <stringQualifiers/>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеОтменитьЗаказНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание отменить заказ на доставку</value>
-    </title>
-    <id>37</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -8166,7 +7957,8 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
   </attributes>
   <attributes>
     <name>ОтборНаложенныйПлатежНаименование</name>
@@ -8181,22 +7973,8 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеВыполнитьЗагрузкуДанныхПоНаложеннымПлатежам</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание выполнить загрузку данных по наложенным платежам</value>
-    </title>
-    <id>56</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
   </attributes>
   <attributes>
     <name>ПоказыватьТолькоМультизаказы</name>
@@ -8225,21 +8003,6 @@
     <valueType>
       <types>Boolean</types>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеОтменитьМультизаказНаДоставку</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание отменить мультизаказ на доставку</value>
-    </title>
-    <id>59</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -8461,36 +8224,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьПунктыВыдачиКлиента</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить пункты выдачи клиента</value>
-    </title>
-    <id>67</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьСостояниеОпцииКурьерика</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить состояние опции Курьерика</value>
-    </title>
-    <id>39</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ОпцияДоступнаКурьерика</name>
     <title>
       <key>ru</key>
@@ -8621,10 +8354,7 @@
     </edit>
     <extInfo xsi:type="form:ValueListExtInfo">
       <itemValueType>
-        <types>String</types>
-        <stringQualifiers>
-          <length>200</length>
-        </stringQualifiers>
+        <types>UUID</types>
       </itemValueType>
     </extInfo>
   </attributes>
@@ -8658,21 +8388,6 @@
         <length>200</length>
       </stringQualifiers>
     </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьСписокКурьеров</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить список курьеров</value>
-    </title>
-    <id>47</id>
-    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -8718,6 +8433,75 @@
       <common>true</common>
     </edit>
     <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ФоновоеЗаданиеМенеджерДлительныхОпераций</name>
+    <title>
+      <key>ru</key>
+      <value>Фоновое задание менеджер длительных операций</value>
+    </title>
+    <id>78</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДоступенТестовыйПериод</name>
+    <title>
+      <key>ru</key>
+      <value>Доступен тестовый период</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СписокЗаказовТребуетсяОбработкаЧастичнойДоставки</name>
+    <title>
+      <key>ru</key>
+      <value>Список заказов требуется обработка частичной доставки</value>
+    </title>
+    <id>79</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>UUID</types>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>Кэш</name>
+    <title>
+      <key>ru</key>
+      <value>Кэш</value>
+    </title>
+    <id>80</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>Обновить</name>
@@ -9032,7 +8816,7 @@
       <common>true</common>
     </use>
     <picture xsi:type="core:PictureRef">
-      <picture>CommonPicture.НастройкаБЭД</picture>
+      <picture>CommonPicture.ЛоготипСервисДоставки</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
@@ -9183,7 +8967,8 @@
         <name>КомандаЗагрузитьНаложенныеПлатежи</name>
       </handler>
     </action>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -9201,7 +8986,8 @@
         <name>ПерейтиКСпискуПлатежныхДокументов</name>
       </handler>
     </action>
-    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервисДоставки</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1СКурьер</functionalOptions>
+    <functionalOptions>FunctionalOption.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</functionalOptions>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -9315,14 +9101,106 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
+  <formCommands>
+    <name>Скопировать</name>
+    <title>
+      <key>ru</key>
+      <value>Скопировать</value>
+    </title>
+    <id>29</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать новый элемент копированием текущего</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <shortcut>F9</shortcut>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CloneListItem</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Скопировать</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Шаблоны</name>
+    <title>
+      <key>ru</key>
+      <value>Шаблоны</value>
+    </title>
+    <id>31</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.RestoreValues</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Шаблоны</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <parameters>
     <name>ТипГрузоперевозки</name>
     <valueType>
       <types>Number</types>
       <numberQualifiers>
-        <precision>1</precision>
+        <precision>3</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОрганизацияБизнесСети</name>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Отправитель</name>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Получатель</name>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>РежимВыбора</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОбработкаВыбора</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ДокументОснование</name>
+    <valueType>
+      <types>DocumentRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОрганизацияБизнесСетиСсылка</name>
+    <valueType>
+      <types>CatalogRef</types>
     </valueType>
   </parameters>
   <commandInterface>

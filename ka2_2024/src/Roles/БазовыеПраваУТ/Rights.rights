@@ -11,6 +11,13 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.Полный</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ПоискОбъектовПоШтрихкоду</name>
 		<right>
 			<name>Use</name>
@@ -1119,6 +1126,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ПорядокЗачетаОплатНакладных</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьМногооборотнуюТару</name>
 		<right>
 			<name>Read</name>
@@ -1261,7 +1279,7 @@
 		</right>
 	</object>
 	<object>
-		<name>SessionParameter.ПроводитьБезКонтроляОстатковРетроБонусов</name>
+		<name>SessionParameter.ПроводитьБезКонтроляОстатковРетроБонусовКлиентов</name>
 		<right>
 			<name>Get</name>
 			<value>true</value>
@@ -4333,7 +4351,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ПечататьОтдельныйСлипЧекЕГАИС</name>
+		<name>Constant.УдалитьПечататьОтдельныйСлипЧекЕГАИС</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -4504,6 +4522,13 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4969,6 +4994,17 @@
 	</object>
 	<object>
 		<name>Constant.ИспользоватьПланированиеПродажПоКатегориям</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.УдалитьТипыЗаписейВзаиморасчетовЗаполнены</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -5891,6 +5927,13 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.ОбменУправлениеПредприятиемЗарплатаИУправлениеПерсоналом25</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -7592,6 +7635,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.АдресГрузополучателяБратьИзАдресаДоставки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.РедактироватьАдресаДоставкиТолькоВДиалоге</name>
 		<right>
 			<name>Read</name>
@@ -7833,17 +7887,6 @@
 	</object>
 	<object>
 		<name>CommonForm.ДокументыПоДоговору</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Constant.ЗачетОплатПоДатеПлатежа</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>

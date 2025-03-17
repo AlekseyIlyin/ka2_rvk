@@ -2340,7 +2340,6 @@
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
         <enableStartDrag>true</enableStartDrag>
-        <enableDrag>true</enableDrag>
         <rowPictureDataPath xsi:type="form:DataPath">
           <segments>ДеревоЦен.ИндексКартинки</segments>
         </rowPictureDataPath>
@@ -4021,6 +4020,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ВыбранныеЦеныИзменены</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ЗаполнятьАвтоматическиЦеныХарактеристикПоНоменклатуре</name>

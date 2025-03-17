@@ -743,6 +743,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ЭлектронныйДокументОшибкаПодписи</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -898,10 +902,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ТаблицаЭПСтрокаПоиска</name>
+              <name>ПодписиСтрокаПоиска</name>
               <id>327</id>
               <extendedTooltip>
-                <name>ТаблицаЭПСтрокаПоискаРасширеннаяПодсказка</name>
+                <name>ПодписиСтрокаПоискаРасширеннаяПодсказка</name>
                 <id>329</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -916,7 +920,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ТаблицаЭПСтрокаПоискаКонтекстноеМеню</name>
+                <name>ПодписиСтрокаПоискаКонтекстноеМеню</name>
                 <id>328</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -936,10 +940,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ТаблицаЭПСостояниеПросмотра</name>
+              <name>ПодписиСостояниеПросмотра</name>
               <id>330</id>
               <extendedTooltip>
-                <name>ТаблицаЭПСостояниеПросмотраРасширеннаяПодсказка</name>
+                <name>ПодписиСостояниеПросмотраРасширеннаяПодсказка</name>
                 <id>332</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -954,7 +958,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ТаблицаЭПСостояниеПросмотраКонтекстноеМеню</name>
+                <name>ПодписиСостояниеПросмотраКонтекстноеМеню</name>
                 <id>331</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -976,10 +980,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ТаблицаЭПУправлениеПоиском</name>
+              <name>ПодписиУправлениеПоиском</name>
               <id>333</id>
               <extendedTooltip>
-                <name>ТаблицаЭПУправлениеПоискомРасширеннаяПодсказка</name>
+                <name>ПодписиУправлениеПоискомРасширеннаяПодсказка</name>
                 <id>335</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -994,7 +998,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ТаблицаЭПУправлениеПоискомКонтекстноеМеню</name>
+                <name>ПодписиУправлениеПоискомКонтекстноеМеню</name>
                 <id>334</id>
                 <visible>true</visible>
                 <enabled>true</enabled>

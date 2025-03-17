@@ -12,12 +12,28 @@
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>Report.СервисДоставкиРеестрЗаказов.Form.ФормаОтчета</defaultForm>
   <mainDataCompositionSchema>Report.СервисДоставкиРеестрЗаказов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.СервисДоставкиРеестрЗаказов.Form.ФормаНастроек</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
   <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <forms uuid="1d8676a6-df99-4fff-890e-2b7f98f42b69">
     <name>ФормаОтчета</name>
     <synonym>
       <key>ru</key>
       <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="38fe764b-4300-46f6-9535-d8d88710fb2a">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

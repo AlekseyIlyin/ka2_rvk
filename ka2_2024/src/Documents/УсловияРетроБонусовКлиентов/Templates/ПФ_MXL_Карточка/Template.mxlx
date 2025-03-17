@@ -304,7 +304,7 @@
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -358,7 +358,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>19</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -370,7 +370,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -421,10 +421,10 @@
 	<rowsItem>
 		<index>6</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>22</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -444,10 +444,10 @@
 	<rowsItem>
 		<index>7</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
-					<f>23</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -467,24 +467,24 @@
 	<rowsItem>
 		<index>8</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса не требуется выполнение условий по целевым показателям продаж.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Не используется") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Не используется") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Не используется") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Не используется") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -492,24 +492,24 @@
 	<rowsItem>
 		<index>9</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса требуется выполнить план закупки по количеству позиций акционных товаров.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Количество") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Количество") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Количество") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Количество") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -517,24 +517,24 @@
 	<rowsItem>
 		<index>10</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса требуется выполнить план закупки по количеству позиций акционных товаров. Бонус начисляется при одновременном выполнении плана по всем товарам.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Количество (совокупно)") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Количество (совокупно)") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Количество (совокупно)") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Количество (совокупно)") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -542,24 +542,24 @@
 	<rowsItem>
 		<index>11</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса требуется выполнить план по закупке всех товаров в пакете. Бонус начисляется за каждый купленный полный пакет.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Пакетное предложение") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Пакетное предложение") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Пакетное предложение") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Пакетное предложение") И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -567,17 +567,17 @@
 	<rowsItem>
 		<index>12</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>25</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса требуется выполнить план по сумме закупки товаров из акционного перечня равный [СуммаПлан] [Валюта]. Плановая сумма может быть уточнена в разрезе выбранных участников.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Сумма") 
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Сумма") 
 И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
@@ -585,7 +585,7 @@
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж)) = НРег("Сумма") 
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров)) = НРег("Сумма") 
 И ВидРетроБонуса.БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
@@ -594,7 +594,7 @@
 	<rowsItem>
 		<index>13</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>24</f>
@@ -619,10 +619,10 @@
 	<rowsItem>
 		<index>14</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -632,7 +632,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется")  </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется")  </detailParameter>
 				</c>
 			</c>
 			<c>
@@ -642,7 +642,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется")  </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется")  </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -650,10 +650,10 @@
 	<rowsItem>
 		<index>15</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
-					<f>26</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -679,10 +679,10 @@
 	<rowsItem>
 		<index>16</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>27</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -692,7 +692,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется") </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется") </detailParameter>
 				</c>
 			</c>
 			<c>
@@ -702,7 +702,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется") </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется") </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -710,7 +710,7 @@
 	<rowsItem>
 		<index>17</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>27</f>
@@ -739,10 +739,10 @@
 	<rowsItem>
 		<index>18</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>27</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -752,7 +752,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя") 
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется") </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется") </detailParameter>
 				</c>
 			</c>
 			<c>
@@ -762,7 +762,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя") 
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется") </detailParameter>
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется") </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -770,7 +770,7 @@
 	<rowsItem>
 		<index>19</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>27</f>
@@ -799,14 +799,14 @@
 	<rowsItem>
 		<index>20</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте управленческого учета [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")] в [Валюта] (процент может быть уточнен при указании товарного наполнения).</v8:content>
+							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте управленческого учета [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")] в [Валюта].</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ЗначениеЗаполнено(БонусПроцент)
@@ -828,14 +828,14 @@
 	<rowsItem>
 		<index>21</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте регламентированного учета организации [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")] в [Валюта] (процент может быть уточнен при указании товарного наполнения).</v8:content>
+							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте регламентированного учета организации [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")] в [Валюта].</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ЗначениеЗаполнено(БонусПроцент)
@@ -857,14 +857,14 @@
 	<rowsItem>
 		<index>22</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте взаиморасчетов [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")] (процент может быть уточнен при указании товарного наполнения).</v8:content>
+							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в валюте взаиморасчетов [?(ВидРетроБонуса.УчитыватьНДС = Истина, "с учетом НДС", "без учета НДС")].</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ЗначениеЗаполнено(БонусПроцент)
@@ -886,14 +886,14 @@
 	<rowsItem>
 		<index>23</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в базовых ценах в валюте [Валюта] (процент может быть уточнен при указании товарного наполнения).</v8:content>
+							<v8:content>Бонус будет рассчитан по правилу: [БонусПроцент]% от выручки в базовых ценах в валюте [Валюта].</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ЗначениеЗаполнено(БонусПроцент)
@@ -915,7 +915,7 @@
 	<rowsItem>
 		<index>24</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>28</f>
@@ -944,7 +944,7 @@
 	<rowsItem>
 		<index>25</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>29</f>
@@ -973,7 +973,7 @@
 	<rowsItem>
 		<index>26</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>29</f>
@@ -1002,7 +1002,7 @@
 	<rowsItem>
 		<index>27</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>29</f>
@@ -1031,7 +1031,7 @@
 	<rowsItem>
 		<index>28</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>28</f>
@@ -1056,10 +1056,10 @@
 	<rowsItem>
 		<index>29</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1068,7 +1068,7 @@
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) 
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) 
 </detailParameter>
 				</c>
 			</c>
@@ -1078,7 +1078,7 @@
 					<f>14</f>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) 
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) 
 </detailParameter>
 				</c>
 			</c>
@@ -1087,10 +1087,10 @@
 	<rowsItem>
 		<index>30</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>27</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1099,7 +1099,7 @@
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")  
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) </detailParameter>
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) </detailParameter>
 				</c>
 			</c>
 			<c>
@@ -1108,7 +1108,7 @@
 					<f>14</f>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")  
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) </detailParameter>
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -1116,10 +1116,10 @@
 	<rowsItem>
 		<index>31</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>27</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1128,7 +1128,7 @@
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) </detailParameter>
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) </detailParameter>
 				</c>
 			</c>
 			<c>
@@ -1137,7 +1137,7 @@
 					<f>14</f>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
 И (БезРасчета = Истина  
-Или НРег(Строка(ВидРетроБонуса.ПоказательПродаж))= НРег("Не используется")) </detailParameter>
+Или НРег(Строка(ВидРетроБонуса.ПоказательТоваров))= НРег("Не используется")) </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -1145,7 +1145,7 @@
 	<rowsItem>
 		<index>32</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>24</f>
@@ -1172,7 +1172,7 @@
 	<rowsItem>
 		<index>33</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>27</f>
@@ -1197,7 +1197,7 @@
 	<rowsItem>
 		<index>34</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>24</f>
@@ -1222,10 +1222,10 @@
 	<rowsItem>
 		<index>35</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>24</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1234,16 +1234,16 @@
 НРег(Строка(ВидРетроБонуса.ПорядокРаспределения)))].</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Количество (совокупно)")</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется")
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Количество (совокупно)")</detailParameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>14</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Не используется")
-И НРег(Строка(ВидРетроБонуса.ПоказательПродаж))&lt;&gt; НРег("Количество (совокупно)")</detailParameter>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Не используется")
+И НРег(Строка(ВидРетроБонуса.ПоказательТоваров))&lt;&gt; НРег("Количество (совокупно)")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -1251,7 +1251,7 @@
 	<rowsItem>
 		<index>36</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>28</f>
@@ -1276,7 +1276,7 @@
 	<rowsItem>
 		<index>37</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>30</f>
@@ -1322,7 +1322,7 @@
 	<rowsItem>
 		<index>38</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
 					<f>37</f>
@@ -1349,7 +1349,7 @@
 	<rowsItem>
 		<index>39</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
 					<f>37</f>
@@ -1376,7 +1376,7 @@
 	<rowsItem>
 		<index>40</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
 					<f>37</f>
@@ -1758,10 +1758,10 @@
 	<rowsItem>
 		<index>45</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1778,7 +1778,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1794,7 +1794,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты.НомерСтроки) &lt;= 10
@@ -1804,7 +1804,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1820,7 +1820,7 @@
 			</c>
 			<c>
 				<c>
-					<f>57</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1836,7 +1836,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1855,10 +1855,10 @@
 	<rowsItem>
 		<index>46</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1875,7 +1875,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1891,7 +1891,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И Контрагенты.Отменено = Ложь
@@ -1901,7 +1901,7 @@
 			</c>
 			<c>
 				<c>
-					<f>61</f>
+					<f>58</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1917,7 +1917,7 @@
 			</c>
 			<c>
 				<c>
-					<f>62</f>
+					<f>59</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1933,7 +1933,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1949,7 +1949,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1968,10 +1968,10 @@
 	<rowsItem>
 		<index>47</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1987,7 +1987,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>65</f>
+					<f>62</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2002,7 +2002,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты.НомерСтроки) &lt;= 10
@@ -2011,7 +2011,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2026,7 +2026,7 @@
 			</c>
 			<c>
 				<c>
-					<f>57</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2041,7 +2041,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2059,10 +2059,10 @@
 	<rowsItem>
 		<index>48</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2079,7 +2079,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>66</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2095,7 +2095,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И Контрагенты.Отменено = Ложь
@@ -2105,7 +2105,7 @@
 			</c>
 			<c>
 				<c>
-					<f>67</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2121,7 +2121,7 @@
 			</c>
 			<c>
 				<c>
-					<f>62</f>
+					<f>59</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2137,7 +2137,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2153,7 +2153,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2172,10 +2172,10 @@
 	<rowsItem>
 		<index>49</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2192,7 +2192,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2208,7 +2208,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения.НомерСтроки) &lt;= 10
@@ -2218,7 +2218,7 @@
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>66</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2234,7 +2234,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2250,7 +2250,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2279,10 +2279,10 @@
 	<rowsItem>
 		<index>50</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2300,7 +2300,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2317,7 +2317,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И ДоговорыСоглашения.Отменено = Ложь
@@ -2328,7 +2328,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2345,7 +2345,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2362,7 +2362,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2379,7 +2379,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2399,10 +2399,10 @@
 	<rowsItem>
 		<index>51</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2417,7 +2417,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2431,7 +2431,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения.НомерСтроки) &lt;= 10 </detailParameter>
@@ -2439,7 +2439,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2453,7 +2453,7 @@
 			</c>
 			<c>
 				<c>
-					<f>71</f>
+					<f>45</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2467,7 +2467,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2492,10 +2492,10 @@
 	<rowsItem>
 		<index>52</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2511,7 +2511,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2526,7 +2526,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И НРег(Строка(ОтборУчастников)) &lt;&gt; НРег("Все")
 И ДоговорыСоглашения.Отменено = Ложь
@@ -2535,7 +2535,7 @@
 			</c>
 			<c>
 				<c>
-					<f>61</f>
+					<f>58</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2550,7 +2550,7 @@
 			</c>
 			<c>
 				<c>
-					<f>72</f>
+					<f>68</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2566,7 +2566,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2581,7 +2581,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2602,7 +2602,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2620,7 +2620,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2639,7 +2639,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2658,7 +2658,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2677,7 +2677,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>74</f>
+					<f>69</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2695,7 +2695,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>75</f>
+					<f>37</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2716,7 +2716,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>75</f>
+					<f>37</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2733,10 +2733,10 @@
 	<rowsItem>
 		<index>60</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>76</f>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2750,7 +2750,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Номенклатура")
 И НРег(Строка(ОтборТоваров)) &lt;&gt; НРег("Все") 
 И УправлениеПечатью_КоличествоСтрок(Товары) &lt;= 10</detailParameter>
@@ -2758,7 +2758,7 @@
 			</c>
 			<c>
 				<c>
-					<f>77</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2772,7 +2772,7 @@
 			</c>
 			<c>
 				<c>
-					<f>78</f>
+					<f>72</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2786,7 +2786,7 @@
 			</c>
 			<c>
 				<c>
-					<f>79</f>
+					<f>73</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2800,7 +2800,7 @@
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>74</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2814,7 +2814,7 @@
 			</c>
 			<c>
 				<c>
-					<f>81</f>
+					<f>75</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2831,10 +2831,10 @@
 	<rowsItem>
 		<index>61</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>82</f>
+					<f>76</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2849,7 +2849,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Номенклатура")
 И НРег(Строка(ОтборТоваров)) &lt;&gt; НРег("Все")
 И Товары.Отменено = Ложь
@@ -2858,7 +2858,7 @@
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>77</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2873,7 +2873,7 @@
 			</c>
 			<c>
 				<c>
-					<f>84</f>
+					<f>78</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2888,7 +2888,7 @@
 			</c>
 			<c>
 				<c>
-					<f>85</f>
+					<f>79</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2903,7 +2903,7 @@
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>80</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2918,7 +2918,7 @@
 			</c>
 			<c>
 				<c>
-					<f>87</f>
+					<f>81</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2933,7 +2933,7 @@
 			</c>
 			<c>
 				<c>
-					<f>88</f>
+					<f>82</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2954,7 +2954,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>89</f>
+					<f>83</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2968,7 +2968,7 @@
 			</c>
 			<c>
 				<c>
-					<f>90</f>
+					<f>84</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Сегменты номенклатуры")
 И НРег(Строка(ОтборТоваров)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &lt;= 10</detailParameter>
@@ -3035,7 +3035,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>91</f>
+					<f>85</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3101,7 +3101,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3120,7 +3120,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3135,45 +3135,53 @@
 	<rowsItem>
 		<index>66</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>92</f>
+					<f>86</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>93</f>
+					<f>17</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>87</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>88</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>89</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -3181,7 +3189,7 @@
 	<rowsItem>
 		<index>67</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
 					<f>92</f>
@@ -3195,7 +3203,7 @@
 			</c>
 			<c>
 				<c>
-					<f>93</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3211,27 +3219,32 @@
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>88</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>89</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -3239,7 +3252,7 @@
 	<rowsItem>
 		<index>68</index>
 		<row>
-			<formatIndex>95</formatIndex>
+			<formatIndex>93</formatIndex>
 			<c>
 				<c>
 					<f>92</f>
@@ -3254,7 +3267,7 @@
 			</c>
 			<c>
 				<c>
-					<f>93</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3272,31 +3285,34 @@
 			</c>
 			<c>
 				<c>
-					<f>96</f>
+					<f>94</f>
 					<detailParameter>ЗначениеЗаполнено(Комментарий)</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>95</f>
 					<detailParameter>ЗначениеЗаполнено(Комментарий)</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>ЗначениеЗаполнено(Комментарий)</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>ЗначениеЗаполнено(Комментарий)</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>ЗначениеЗаполнено(Комментарий)</detailParameter>
 				</c>
 			</c>
@@ -3305,45 +3321,53 @@
 	<rowsItem>
 		<index>69</index>
 		<row>
-			<formatIndex>95</formatIndex>
+			<formatIndex>93</formatIndex>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -3351,7 +3375,23 @@
 	<rowsItem>
 		<index>70</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
@@ -3362,49 +3402,40 @@
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
-И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
-И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
@@ -3414,49 +3445,67 @@
 	<rowsItem>
 		<index>71</index>
 		<row>
-			<formatIndex>95</formatIndex>
+			<formatIndex>93</formatIndex>
 			<c>
 				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>35</f>
+					<f>96</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>96</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>90</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>91</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10</detailParameter>
 				</c>
@@ -3505,10 +3554,10 @@
 	<rowsItem>
 		<index>74</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3523,7 +3572,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3538,7 +3587,7 @@
 			<c>
 				<i>4</i>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3552,7 +3601,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3566,7 +3615,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3583,10 +3632,10 @@
 	<rowsItem>
 		<index>75</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3612,7 +3661,7 @@
 			</c>
 			<c>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3628,7 +3677,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По договорам")
 И ДоговорыСоглашения.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10
@@ -3638,7 +3687,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3670,7 +3719,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3686,7 +3735,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3705,7 +3754,23 @@
 	<rowsItem>
 		<index>76</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
@@ -3716,49 +3781,40 @@
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
-И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
-И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
@@ -3768,49 +3824,67 @@
 	<rowsItem>
 		<index>77</index>
 		<row>
-			<formatIndex>95</formatIndex>
+			<formatIndex>93</formatIndex>
 			<c>
 				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>35</f>
+					<f>96</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>96</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>96</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>90</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>91</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
+И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10 </detailParameter>
 				</c>
@@ -3859,10 +3933,10 @@
 	<rowsItem>
 		<index>80</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3877,7 +3951,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3892,7 +3966,7 @@
 			<c>
 				<i>4</i>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3920,7 +3994,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3945,10 +4019,10 @@
 	<rowsItem>
 		<index>81</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3974,7 +4048,7 @@
 			</c>
 			<c>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3990,7 +4064,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>53</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("По соглашениям")
 И ДоговорыСоглашения.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(ДоговорыСоглашения) &gt; 10
@@ -4000,7 +4074,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4032,7 +4106,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4048,7 +4122,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4067,7 +4141,23 @@
 	<rowsItem>
 		<index>82</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
+И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
+И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
@@ -4078,49 +4168,40 @@
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
-И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
-И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
@@ -4130,59 +4211,67 @@
 	<rowsItem>
 		<index>83</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
+И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl/>
+					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
+И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
-И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
-					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
-И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Контрагенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
@@ -4251,45 +4340,53 @@
 	<rowsItem>
 		<index>87</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>106</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>107</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>88</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>89</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -4297,10 +4394,10 @@
 	<rowsItem>
 		<index>88</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4315,7 +4412,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>54</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4330,7 +4427,7 @@
 			<c>
 				<i>4</i>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4344,7 +4441,7 @@
 			</c>
 			<c>
 				<c>
-					<f>57</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4358,7 +4455,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4375,10 +4472,10 @@
 	<rowsItem>
 		<index>89</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4393,7 +4490,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>60</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4436,7 +4533,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4450,7 +4547,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4467,10 +4564,10 @@
 	<rowsItem>
 		<index>90</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
 					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
@@ -4478,49 +4575,56 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
@@ -4530,59 +4634,67 @@
 	<rowsItem>
 		<index>91</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Клиенты")
 И УправлениеПечатью_КоличествоСтрок(Контрагенты) &gt; 10</detailParameter>
 				</c>
@@ -4651,45 +4763,53 @@
 	<rowsItem>
 		<index>95</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>109</f>
+					<tl/>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>111</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>32</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>106</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>89</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -4697,10 +4817,10 @@
 	<rowsItem>
 		<index>96</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>112</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4714,7 +4834,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>113</f>
+					<f>62</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4728,7 +4848,7 @@
 			<c>
 				<i>4</i>
 				<c>
-					<f>56</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4741,7 +4861,7 @@
 			</c>
 			<c>
 				<c>
-					<f>57</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4754,7 +4874,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4770,10 +4890,10 @@
 	<rowsItem>
 		<index>97</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>59</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4789,7 +4909,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>66</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4805,7 +4925,7 @@
 			<c>
 				<i>4</i>
 				<c>
-					<f>67</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4835,7 +4955,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4850,7 +4970,7 @@
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>110</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4868,53 +4988,60 @@
 	<rowsItem>
 		<index>98</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
 			<c>
 				<c>
-					<f>115</f>
+					<f>98</f>
 					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>117</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -4923,52 +5050,60 @@
 	<rowsItem>
 		<index>99</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>115</f>
+					<f>98</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>117</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -5033,45 +5168,53 @@
 	<rowsItem>
 		<index>103</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>118</f>
+					<f>111</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>112</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -5079,10 +5222,10 @@
 	<rowsItem>
 		<index>104</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>120</f>
+					<f>45</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5098,7 +5241,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>121</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5113,7 +5256,7 @@
 			</c>
 			<c>
 				<c>
-					<f>122</f>
+					<f>47</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5137,7 +5280,8 @@
 			</c>
 			<c>
 				<c>
-					<f>123</f>
+					<f>49</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
 
@@ -5146,7 +5290,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
 
@@ -5155,7 +5300,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
 
@@ -5167,10 +5313,10 @@
 	<rowsItem>
 		<index>105</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>124</f>
+					<f>44</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5186,7 +5332,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>125</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5201,7 +5347,7 @@
 			</c>
 			<c>
 				<c>
-					<f>126</f>
+					<f>113</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5216,7 +5362,7 @@
 			</c>
 			<c>
 				<c>
-					<f>127</f>
+					<f>114</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5231,7 +5377,8 @@
 			</c>
 			<c>
 				<c>
-					<f>123</f>
+					<f>49</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И ИННКонтрагентов.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
@@ -5240,7 +5387,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И ИННКонтрагентов.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
@@ -5249,7 +5397,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("ИНН")
 И ИННКонтрагентов.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(ИННКонтрагентов) &gt; 10
@@ -5261,53 +5410,60 @@
 	<rowsItem>
 		<index>106</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
 					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -5316,52 +5472,60 @@
 	<rowsItem>
 		<index>107</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -5426,45 +5590,53 @@
 	<rowsItem>
 		<index>111</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>109</f>
+					<tl/>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>41</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>128</f>
+					<f>43</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>109</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -5472,10 +5644,10 @@
 	<rowsItem>
 		<index>112</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>53</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5505,7 +5677,8 @@
 			</c>
 			<c>
 				<c>
-					<f>128</f>
+					<f>41</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
 </detailParameter>
@@ -5513,7 +5686,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
 </detailParameter>
@@ -5521,7 +5695,8 @@
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
 </detailParameter>
@@ -5529,7 +5704,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
 </detailParameter>
@@ -5537,7 +5713,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
 </detailParameter>
@@ -5548,10 +5725,10 @@
 	<rowsItem>
 		<index>113</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>124</f>
+					<f>44</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5567,7 +5744,8 @@
 			<c>
 				<i>3</i>
 				<c>
-					<f>128</f>
+					<f>41</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И СегментыПартнеров.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
@@ -5576,7 +5754,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И СегментыПартнеров.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
@@ -5585,7 +5764,8 @@
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И СегментыПартнеров.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
@@ -5594,7 +5774,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И СегментыПартнеров.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
@@ -5603,7 +5784,8 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставУчастников)) = НРег("Сегменты клиентов")
 И СегментыПартнеров.Отменено = Ложь
 И УправлениеПечатью_КоличествоСтрок(СегментыПартнеров) &gt; 10
@@ -5615,7 +5797,7 @@
 	<rowsItem>
 		<index>114</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>20</formatIndex>
 			<c>
 				<c>
 					<f>30</f>
@@ -5661,53 +5843,60 @@
 	<rowsItem>
 		<index>115</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
 			<c>
 				<c>
-					<f>30</f>
+					<f>115</f>
 					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>99</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>100</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -5716,52 +5905,60 @@
 	<rowsItem>
 		<index>116</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
+			<c>
+				<c>
+					<f>98</f>
+					<tl/>
+					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl/>
+					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
+				</c>
+			</c>
 			<c>
 				<c>
 					<f>100</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>88</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>89</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>90</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>35</f>
-					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
-					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>36</f>
+					<f>91</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -5826,45 +6023,53 @@
 	<rowsItem>
 		<index>120</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>129</f>
+					<f>116</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>130</f>
+					<f>117</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>131</f>
+					<f>118</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>131</f>
+					<f>118</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -5872,10 +6077,10 @@
 	<rowsItem>
 		<index>121</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>132</f>
+					<f>119</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5889,7 +6094,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Номенклатура")
 И НРег(Строка(ОтборТоваров)) &lt;&gt; НРег("Все")
 И УправлениеПечатью_КоличествоСтрок(Товары) &gt; 10  </detailParameter>
@@ -5897,7 +6102,7 @@
 			</c>
 			<c>
 				<c>
-					<f>133</f>
+					<f>120</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5911,7 +6116,7 @@
 			</c>
 			<c>
 				<c>
-					<f>134</f>
+					<f>121</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5925,7 +6130,7 @@
 			</c>
 			<c>
 				<c>
-					<f>135</f>
+					<f>122</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5939,7 +6144,7 @@
 			</c>
 			<c>
 				<c>
-					<f>136</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5953,7 +6158,7 @@
 			</c>
 			<c>
 				<c>
-					<f>137</f>
+					<f>123</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5970,10 +6175,10 @@
 	<rowsItem>
 		<index>122</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>138</f>
+					<f>124</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5988,7 +6193,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Номенклатура")
 И НРег(Строка(ОтборТоваров)) &lt;&gt; НРег("Все")
 И Товары.Отменено = Ложь
@@ -5997,7 +6202,7 @@
 			</c>
 			<c>
 				<c>
-					<f>139</f>
+					<f>125</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6012,7 +6217,7 @@
 			</c>
 			<c>
 				<c>
-					<f>140</f>
+					<f>126</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6027,7 +6232,7 @@
 			</c>
 			<c>
 				<c>
-					<f>141</f>
+					<f>127</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6042,7 +6247,7 @@
 			</c>
 			<c>
 				<c>
-					<f>142</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6057,7 +6262,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6072,7 +6277,7 @@
 			</c>
 			<c>
 				<c>
-					<f>143</f>
+					<f>128</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6090,53 +6295,60 @@
 	<rowsItem>
 		<index>123</index>
 		<row>
-			<formatIndex>99</formatIndex>
+			<formatIndex>97</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
 					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -6145,53 +6357,60 @@
 	<rowsItem>
 		<index>124</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>100</f>
+					<f>98</f>
 					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>43</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 					<detailParameter>УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10</detailParameter>
 				</c>
 			</c>
@@ -6256,16 +6475,18 @@
 	<rowsItem>
 		<index>128</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<i>3</i>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
@@ -6276,12 +6497,14 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>42</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -6292,7 +6515,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>89</f>
+					<f>83</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6305,7 +6528,7 @@
 			</c>
 			<c>
 				<c>
-					<f>90</f>
+					<f>84</f>
 					<detailParameter>НРег(Строка(ВидРетроБонуса.СоставТоваров)) = НРег("Сегменты номенклатуры")
 И УправлениеПечатью_КоличествоСтрок(СегментыТоваров) &gt; 10 </detailParameter>
 				</c>
@@ -6365,7 +6588,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>91</f>
+					<f>85</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -6428,51 +6651,59 @@
 	<rowsItem>
 		<index>131</index>
 		<row>
-			<formatIndex>21</formatIndex>
+			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>144</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>123</f>
+					<f>49</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>96</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>145</defaultFormatIndex>
+	<defaultFormatIndex>129</defaultFormatIndex>
 	<height>132</height>
 	<vgRows>132</vgRows>
 	<merge>
@@ -8255,7 +8486,7 @@
 		<verticalAlignment>Bottom</verticalAlignment>
 		<backColor>style:ReportHeaderBackColor</backColor>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8308,72 +8539,6 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-		<protection>true</protection>
-		<textOrientation>0</textOrientation>
-		<detailsUse>Cell</detailsUse>
-		<bySelectedColumns>false</bySelectedColumns>
-		<markNegatives>false</markNegatives>
-		<format/>
-		<hyperLink>false</hyperLink>
-		<autoMarkIncomplete>false</autoMarkIncomplete>
-		<markIncomplete>false</markIncomplete>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<editFormat/>
-		<columnSizeChange>Normal</columnSizeChange>
-		<mask/>
-		<pictureSizeMode>Proportionally</pictureSizeMode>
-		<picHorizontalAlignment>Auto</picHorizontalAlignment>
-		<picVerticalAlignment>Bottom</picVerticalAlignment>
-		<textPosition>Auto</textPosition>
-		<leftMargin>0</leftMargin>
-		<topMargin>0</topMargin>
-		<rightMargin>0</rightMargin>
-		<bottomMargin>0</bottomMargin>
-	</format>
-	<format>
-		<font>0</font>
-		<border>0</border>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>96</width>
-		<horizontalAlignment>Auto</horizontalAlignment>
-		<verticalAlignment>Bottom</verticalAlignment>
-		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-		<protection>true</protection>
-		<textOrientation>0</textOrientation>
-		<detailsUse>Cell</detailsUse>
-		<bySelectedColumns>false</bySelectedColumns>
-		<markNegatives>false</markNegatives>
-		<format/>
-		<hyperLink>false</hyperLink>
-		<autoMarkIncomplete>false</autoMarkIncomplete>
-		<markIncomplete>false</markIncomplete>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<editFormat/>
-		<columnSizeChange>Normal</columnSizeChange>
-		<mask/>
-		<pictureSizeMode>Proportionally</pictureSizeMode>
-		<picHorizontalAlignment>Auto</picHorizontalAlignment>
-		<picVerticalAlignment>Bottom</picVerticalAlignment>
-		<textPosition>Auto</textPosition>
-		<leftMargin>0</leftMargin>
-		<topMargin>0</topMargin>
-		<rightMargin>0</rightMargin>
-		<bottomMargin>0</bottomMargin>
-	</format>
-	<format>
-		<font>0</font>
-		<border>0</border>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>96</width>
-		<horizontalAlignment>Auto</horizontalAlignment>
-		<verticalAlignment>Bottom</verticalAlignment>
-		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
@@ -8400,10 +8565,10 @@
 		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
-		<font>1</font>
+		<font>0</font>
 		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>774</width>
+		<width>96</width>
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
@@ -8466,15 +8631,41 @@
 		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
-		<font>0</font>
-	</format>
-	<format>
 		<font>1</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>774</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
 		<backColor>style:ReportGroup1BackColor</backColor>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
 	</format>
 	<format>
 		<font>0</font>
@@ -8485,16 +8676,74 @@
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>789</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>789</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>789</width>
-		<horizontalAlignment>Left</horizontalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
@@ -8504,6 +8753,39 @@
 		<width>813</width>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>720</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -8570,10 +8852,37 @@
 	</format>
 	<format>
 		<font>1</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>496</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
 		<backColor>style:ReportGroup1BackColor</backColor>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -8583,7 +8892,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8753,7 +9062,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8819,7 +9128,7 @@
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8921,7 +9230,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8954,7 +9263,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -8978,20 +9287,6 @@
 		<topMargin>0</topMargin>
 		<rightMargin>0</rightMargin>
 		<bottomMargin>0</bottomMargin>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>86</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>118</width>
-		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>0</font>
@@ -9002,16 +9297,66 @@
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>82</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -9019,39 +9364,131 @@
 		<borderColor>#666666</borderColor>
 		<width>101</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>86</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>118</width>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>125</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>78</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9059,7 +9496,32 @@
 		<borderColor>#666666</borderColor>
 		<width>115</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9067,30 +9529,131 @@
 		<borderColor>#666666</borderColor>
 		<width>103</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>73</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>73</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9098,34 +9661,104 @@
 		<borderColor>#666666</borderColor>
 		<width>138</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<leftBorder>1</leftBorder>
 		<topBorder>1</topBorder>
+		<rightBorder>0</rightBorder>
 		<bottomBorder>1</bottomBorder>
 		<borderColor>#666666</borderColor>
 		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<leftBorder>1</leftBorder>
 		<topBorder>1</topBorder>
+		<rightBorder>0</rightBorder>
 		<bottomBorder>1</bottomBorder>
 		<borderColor>#666666</borderColor>
 		<width>125</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9133,19 +9766,9 @@
 		<borderColor>#666666</borderColor>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<border>0</border>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>789</width>
-		<horizontalAlignment>Auto</horizontalAlignment>
-		<verticalAlignment>Bottom</verticalAlignment>
-		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
 		<detailsUse>Cell</detailsUse>
@@ -9178,41 +9801,7 @@
 		<verticalAlignment>Bottom</verticalAlignment>
 		<backColor>style:ReportGroup1BackColor</backColor>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-		<protection>true</protection>
-		<textOrientation>0</textOrientation>
-		<detailsUse>Cell</detailsUse>
-		<bySelectedColumns>false</bySelectedColumns>
-		<markNegatives>false</markNegatives>
-		<format/>
-		<hyperLink>false</hyperLink>
-		<autoMarkIncomplete>false</autoMarkIncomplete>
-		<markIncomplete>false</markIncomplete>
-		<indent>0</indent>
-		<autoIndent>0</autoIndent>
-		<editFormat/>
-		<columnSizeChange>Normal</columnSizeChange>
-		<mask/>
-		<pictureSizeMode>Proportionally</pictureSizeMode>
-		<picHorizontalAlignment>Auto</picHorizontalAlignment>
-		<picVerticalAlignment>Bottom</picVerticalAlignment>
-		<textPosition>Auto</textPosition>
-		<leftMargin>0</leftMargin>
-		<topMargin>0</topMargin>
-		<rightMargin>0</rightMargin>
-		<bottomMargin>0</bottomMargin>
-	</format>
-	<format>
-		<font>1</font>
-		<border>0</border>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>496</width>
-		<horizontalAlignment>Auto</horizontalAlignment>
-		<verticalAlignment>Bottom</verticalAlignment>
-		<backColor>style:ReportGroup1BackColor</backColor>
-		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -9242,37 +9831,165 @@
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>289</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>131</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>130</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>109</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -9280,45 +9997,197 @@
 		<borderColor>#999999</borderColor>
 		<width>103</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>289</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>131</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>130</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>109</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#999999</borderColor>
 		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9326,7 +10195,32 @@
 		<borderColor>#999999</borderColor>
 		<width>103</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9334,7 +10228,32 @@
 		<borderColor>#999999</borderColor>
 		<width>82</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -9344,7 +10263,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -9408,24 +10327,237 @@
 	</format>
 	<format>
 		<font>1</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>128</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
+		<width>114</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>96</width>
+		<width>118</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>92</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>116</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>101</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>1</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>128</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
-		<width>114</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
+		<height>0</height>
 		<width>0</width>
 	</format>
 	<format>
@@ -9437,17 +10569,139 @@
 		<width>92</width>
 	</format>
 	<format>
+		<font>0</font>
+		<border>0</border>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<height>0</height>
 		<width>4</width>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>86</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>96</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>114</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -9458,7 +10712,7 @@
 		<verticalAlignment>Bottom</verticalAlignment>
 		<backColor>style:ReportHeaderBackColor</backColor>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -9491,7 +10745,7 @@
 		<horizontalAlignment>Auto</horizontalAlignment>
 		<verticalAlignment>Bottom</verticalAlignment>
 		<pattern>WithoutPattern</pattern>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<protection>true</protection>
 		<textOrientation>0</textOrientation>
@@ -9521,16 +10775,66 @@
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>113</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>80</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9539,61 +10843,163 @@
 		<width>80</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>73</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>59</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>150</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>70</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>127</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>86</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>73</width>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9601,86 +11007,98 @@
 		<borderColor>#666666</borderColor>
 		<width>131</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>86</width>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>70</width>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>98</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>91</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>118</width>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>98</width>
-		<horizontalAlignment>Center</horizontalAlignment>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<width>70</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>118</width>
-		<textPlacement>Auto</textPlacement>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9688,8 +11106,32 @@
 		<borderColor>#666666</borderColor>
 		<width>98</width>
 		<horizontalAlignment>Left</horizontalAlignment>
-		<textPlacement>Auto</textPlacement>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9697,69 +11139,296 @@
 		<borderColor>#666666</borderColor>
 		<width>91</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<borderColor>style:ReportHeaderBackColor</borderColor>
+		<width>128</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
-		<borderColor>style:ReportHeaderBackColor</borderColor>
-		<width>66</width>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>289</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>302</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
+		<border>0</border>
 		<borderColor>style:ReportHeaderBackColor</borderColor>
 		<width>131</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Auto</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>289</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>131</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>130</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>109</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>101</width>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>1</font>
@@ -9767,44 +11436,164 @@
 		<borderColor>#666666</borderColor>
 		<width>103</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>289</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>131</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>130</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
 		<border>1</border>
 		<borderColor>#666666</borderColor>
 		<width>109</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<border>1</border>
-		<borderColor>#666666</borderColor>
-		<width>101</width>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<font>0</font>
@@ -9812,11 +11601,32 @@
 		<borderColor>#666666</borderColor>
 		<width>82</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>0</font>
-		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
 	</format>
 	<format>
 		<width>72</width>

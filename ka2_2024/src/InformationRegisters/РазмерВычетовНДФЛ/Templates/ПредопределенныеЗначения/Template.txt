@@ -1,6 +1,6 @@
 <Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Structure">
 	<Property name="Версия">
-		<Value xsi:type="xs:decimal">3</Value>
+		<Value xsi:type="xs:decimal">4</Value>
 	</Property>
 	<Property name="ОписаниеВерсии">
 		<Value xsi:type="xs:string"/>
@@ -613,6 +613,12 @@
 				<Value>ПредопределенноеЗначение:Справочник.ВидыВычетовНДФЛ.Код113</Value>
 				<Value>24000</Value>
 				<Value>450000</Value>
+			</row>
+			<row>
+				<Value>2025-01-01T00:00:00</Value>
+				<Value>ПредопределенноеЗначение:Справочник.ВидыВычетовНДФЛ.Код150</Value>
+				<Value>18000</Value>
+				<Value>0</Value>
 			</row>
 		</Value>
 	</Property>

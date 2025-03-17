@@ -1590,7 +1590,7 @@
   <content>Role.ДобавлениеИзменениеВводаОстатковВзаиморасчетовПоАренде</content>
   <content>Role.ЧтениеВводаОстатковВзаиморасчетовПоАренде</content>
   <content>FunctionalOption.ПрименятьСписаниеСтоимостиМалоценныхТМЦНаРасходы</content>
-  <content>Role.ОтключитьКонтрольПередачиПродукцииИзКладовой</content>
+  <content>Role.РазрешитьОформлениеВыпускаЗаднимЧислом</content>
   <content>Role.ОтключитьКонтрольПередачиПродукцииПереработчиком</content>
   <content>CommonModule.ОбесценениеВНАЛокализация</content>
   <content>Enum.ВариантыПроводокПоОбесценениюВНА</content>
@@ -1716,7 +1716,6 @@
   <content>CommonPicture.ОперациюНеобходимоПовторить</content>
   <content>CommonPicture.ОперацияВыполненаСОшибками</content>
   <content>CommonPicture.ОперацияПропущена</content>
-  <content>CommonModule.ЕдиныйНалоговыйСчетПовтИсп</content>
   <content>StyleItem.ГруппаОперацийФонГруппы</content>
   <content>InformationRegister.СтавкиДисконтированияРезервов</content>
   <content>InformationRegister.СрокиДисконтированияРезервовПредстоящихРасходов</content>
@@ -1793,8 +1792,6 @@
   <content>CommonModule.ФактическиеДанныеБюджетированияСервер</content>
   <content>InformationRegister.ЗаданияКОтражениюВБюджетировании</content>
   <content>ScheduledJob.ОтражениеДокументовВБюджетировании</content>
-  <content>CommonModule.ФинансовыйУчетПоДаннымБалансовыхРегистров</content>
-  <content>CommonModule.ФинансовыйУчетПоДаннымБалансовыхРегистровЛокализация</content>
   <content>CommonModule.ИсточникиДанныхЛокализация</content>
   <content>AccumulationRegister.ФактическиеДанныеБюджетирования</content>
   <content>Role.ЧтениеЗаданийКОтражениюВБюджетировании</content>
@@ -1851,6 +1848,16 @@
   <content>EventSubscription.ОпределитьНеобходимостьКонтроляЛимитовПередЗаписьюДокумента</content>
   <content>InformationRegister.НастройкиИсключенийПроверкиДокументов</content>
   <content>Role.ДобавлениеИзменениеНастройкиИсключенийПроверкиДокументов</content>
+  <content>AccumulationRegister.РНПТМатериаловВПроизводстве</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию</content>
+  <content>Role.ЧтениеПереносаРНПТМатериаловНаПродукцию</content>
+  <content>Role.ДобавлениеИзменениеПереносаРНПТМатериаловНаПродукцию</content>
+  <content>Role.ЧтениеРНПТМатериаловВПроизводстве</content>
+  <content>Report.ВедомостьПрослеживаемыхМатериаловВПроизводстве</content>
+  <content>CommonCommand.УчетРНПТВПроизводстве</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства</content>
+  <content>Role.ДобавлениеИзменениеВыбытияРНПТМатериаловИзПроизводства</content>
+  <content>Role.ЧтениеВыбытияРНПТМатериаловИзПроизводства</content>
   <content>InformationRegister.КэшНастроекЛимитовПоДаннымБюджетирования</content>
   <content>Constant.УдалитьИспользуетсяОбменСЗарплатаИУправлениеПерсоналом</content>
   <content>FunctionalOption.ИспользуетсяОбменСЗарплатаИУправлениеПерсоналом</content>
@@ -1861,5 +1868,17 @@
   <content>CommonModule.УчетАрендованныхОССлужебный</content>
   <content>Role.ДобавлениеИзменениеВидовРезервовИОценочныхОбязательств</content>
   <content>Role.ЧтениеВидовРезервовИОценочныхОбязательств</content>
+  <content>Enum.ТипыДействийЭкземпляровБюджетов</content>
+  <content>Document.ЗаявлениеОВвозеТоваровПолученное</content>
+  <content>Catalog.ЗаявлениеОВвозеТоваровПолученноеПрисоединенныеФайлы</content>
+  <content>Role.ДобавлениеИзменениеЗаявленийОВвозеТоваровОтПокупателей</content>
+  <content>Role.ЧтениеЗаявленийОВвозеТоваровОтПокупателей</content>
+  <content>CommonModule.УчетОфшоров</content>
+  <content>CommonTemplate.ПереченьОфшоров</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводствеКлиент</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводстве</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводствеВызовСервера</content>
+  <content>Role.ПросмотрОтчетаВедомостьПрослеживаемыхМатериаловВПроизводстве</content>
+  <content>CommonModule.ЗаполнениеБухгалтерскойОтчетности2025Основная</content>
   <parentSubsystem>Subsystem.СлужебныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

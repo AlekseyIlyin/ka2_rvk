@@ -475,6 +475,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ФлажокБЭД</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -534,6 +538,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ФлажокБЭД</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -680,22 +688,17 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>АссортиментИсточникаИдентификаторПубликации</name>
+      <name>АссортиментИсточникаИдентификаторПредложения</name>
       <id>530</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible/>
       <dataPath xsi:type="form:DataPath">
-        <segments>АссортиментИсточника.ИдентификаторПубликации</segments>
+        <segments>АссортиментИсточника.ИдентификаторПредложения</segments>
       </dataPath>
       <extendedTooltip>
-        <name>АссортиментИсточникаИдентификаторПубликацииРасширеннаяПодсказка</name>
+        <name>АссортиментИсточникаИдентификаторПредложенияРасширеннаяПодсказка</name>
         <id>532</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -704,13 +707,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>АссортиментИсточникаИдентификаторПубликацииКонтекстноеМеню</name>
+        <name>АссортиментИсточникаИдентификаторПредложенияКонтекстноеМеню</name>
         <id>531</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -821,6 +819,10 @@
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -1860,6 +1862,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.КоллекцияСтатусовОбъектовТорговыхПлощадок</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <borderColor xsi:type="core:ColorRef">
           <color>Style.FormBackColor</color>
         </borderColor>
@@ -2009,16 +2015,7 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>АссортиментИсточника.ПозицияНеЗагружена</segments>
-    </notDefaultUseAlwaysAttributes>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>АссортиментИсточника.ПометкаСнята</segments>
-    </notDefaultUseAlwaysAttributes>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>АссортиментИсточника.ПометкаУстановлена</segments>
-    </notDefaultUseAlwaysAttributes>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>АссортиментИсточника.ИдентификаторПубликации</segments>
+      <segments>АссортиментИсточника.ИдентификаторПредложения</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>АссортиментИсточника.Пометка</segments>
@@ -2027,19 +2024,18 @@
       <queryText>ВЫБРАТЬ
 	ВЫБОР
 		КОГДА &amp;ЭтоУстановкаПометокДляВсехПозиций
-				И НЕ СтатусыПубликацииИсточника.ИдентификаторПубликации В (&amp;ИдентификаторыПубликацииИсключенные)
+				И НЕ СтатусыПубликацииИсточника.ИдентификаторПредложения В (&amp;ИдентификаторыПредложенийИсключенные)
 			ТОГДА ИСТИНА
-		КОГДА СтатусыПубликацииИсточника.ИдентификаторПубликации В (&amp;ИдентификаторыПубликацииВыбранные)
+		КОГДА СтатусыПубликацииИсточника.ИдентификаторПредложения В (&amp;ИдентификаторыПредложенийВыбранные)
 			ТОГДА ИСТИНА
 		ИНАЧЕ ЛОЖЬ
 	КОНЕЦ КАК Пометка,
-	СтатусыПубликацииПриемника.ИдентификаторПубликации ЕСТЬ NULL КАК ЗначениеФлагаПометкаУстановлена,
+	СтатусыПубликацииПриемника.ИдентификаторПредложения ЕСТЬ NULL КАК ЗначениеФлагаПометкаУстановлена,
 	ЛОЖЬ КАК ЗначениеФлагаПометкаСнята,
 	СтатусыПубликацииИсточника.УчетнаяЗапись КАК УчетнаяЗапись,
 	СтатусыПубликацииИсточника.Номенклатура КАК Номенклатура,
 	СтатусыПубликацииИсточника.Характеристика КАК Характеристика,
 	СтатусыПубликацииИсточника.Упаковка КАК Упаковка,
-	СтатусыПубликацииИсточника.ИдентификаторПубликации КАК ИдентификаторПубликации,
 	СтатусыПубликацииИсточника.ИдентификаторПредложения КАК ИдентификаторПредложения,
 	СтатусыПубликацииИсточника.Статус КАК Статус,
 	СтатусыПубликацииИсточника.ПредставлениеТовара КАК ПредставлениеТовара,
@@ -2052,7 +2048,7 @@
 	СтатусыПубликацииИсточника.ТоварнаяКатегория КАК ТоварнаяКатегория,
 	СтатусыПубликацииИсточника.ГиперссылкаНаРекомендованныеТовар КАК ГиперссылкаНаРекомендованныеТовары,
 	ВЫБОР
-		КОГДА СтатусыПубликацииПриемника.ИдентификаторПубликации ЕСТЬ NULL
+		КОГДА СтатусыПубликацииПриемника.ИдентификаторПредложения ЕСТЬ NULL
 			ТОГДА СтатусыПубликацииИсточника.МаркерСтатуса
 		ИНАЧЕ 7
 	КОНЕЦ КАК МаркерСтатуса,
@@ -2074,10 +2070,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Выбран</dataPath>
         <field>Выбран</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ГиперссылкаНаРекомендованныеТовар</dataPath>
-        <field>ГиперссылкаНаРекомендованныеТовар</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЗначениеФлагаПометкаСнята</dataPath>
@@ -2126,10 +2118,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ДатаУстановкиЦены</dataPath>
         <field>ДатаУстановкиЦены</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторПубликации</dataPath>
-        <field>ИдентификаторПубликации</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>УчетнаяЗапись</dataPath>
@@ -2215,50 +2203,14 @@
         <dataPath>ЕстьИдентификаторПлощадки</dataPath>
         <field>ЕстьИдентификаторПлощадки</field>
       </fields>
-      <parameters>
-        <name>ИдентификаторыПубликацииВыбранные</name>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Идентификаторы публикации выбранные</value>
-            </content>
-          </localValue>
-        </title>
-        <valueType>
-          <types>String</types>
-          <stringQualifiers>
-            <length>36</length>
-          </stringQualifiers>
-        </valueType>
-        <values xsi:type="core:StringValue">
-          <value></value>
-        </values>
-        <useRestriction>true</useRestriction>
-        <valueListAllowed>true</valueListAllowed>
-      </parameters>
-      <parameters>
-        <name>ИдентификаторыПубликацииИсключенные</name>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Идентификаторы публикации исключенные</value>
-            </content>
-          </localValue>
-        </title>
-        <valueType>
-          <types>String</types>
-          <stringQualifiers>
-            <length>36</length>
-          </stringQualifiers>
-        </valueType>
-        <values xsi:type="core:StringValue">
-          <value></value>
-        </values>
-        <useRestriction>true</useRestriction>
-        <valueListAllowed>true</valueListAllowed>
-      </parameters>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НоменклатураПартнера</dataPath>
+        <field>НоменклатураПартнера</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьИдентификаторПубликации</dataPath>
+        <field>УдалитьИдентификаторПубликации</field>
+      </fields>
       <parameters>
         <name>УчетнаяЗаписьИсточника</name>
         <title>
@@ -2274,6 +2226,7 @@
         </valueType>
         <values xsi:type="core:UndefinedValue"/>
         <useRestriction>true</useRestriction>
+        <availableAsField>false</availableAsField>
       </parameters>
       <parameters>
         <name>УчетнаяЗаписьПриемника</name>
@@ -2290,6 +2243,7 @@
         </valueType>
         <values xsi:type="core:UndefinedValue"/>
         <useRestriction>true</useRestriction>
+        <availableAsField>false</availableAsField>
       </parameters>
       <parameters>
         <name>ЭтоУстановкаПометокДляВсехПозиций</name>
@@ -2306,6 +2260,53 @@
         </valueType>
         <values xsi:type="core:BooleanValue"/>
         <useRestriction>true</useRestriction>
+        <availableAsField>false</availableAsField>
+      </parameters>
+      <parameters>
+        <name>ИдентификаторыПредложенийВыбранные</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Идентификаторы предложений выбранные</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+        <useRestriction>true</useRestriction>
+        <valueListAllowed>true</valueListAllowed>
+        <availableAsField>false</availableAsField>
+      </parameters>
+      <parameters>
+        <name>ИдентификаторыПредложенийИсключенные</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Идентификаторы предложений исключенные</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+        <useRestriction>true</useRestriction>
+        <valueListAllowed>true</valueListAllowed>
+        <availableAsField>false</availableAsField>
       </parameters>
     </extInfo>
   </attributes>
@@ -2400,10 +2401,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ИдентификаторыПубликацииВыбранные</name>
+    <name>ИдентификаторыПредложенийВыбранные</name>
     <title>
       <key>ru</key>
-      <value>Идентификаторы публикации выбранные</value>
+      <value>Идентификаторы предложений выбранные</value>
     </title>
     <id>6</id>
     <valueType>
@@ -2425,10 +2426,10 @@
     </extInfo>
   </attributes>
   <attributes>
-    <name>ИдентификаторыПубликацииИсключенные</name>
+    <name>ИдентификаторыПредложенийИсключенные</name>
     <title>
       <key>ru</key>
-      <value>Идентификаторы публикации исключенные</value>
+      <value>Идентификаторы предложений исключенные</value>
     </title>
     <id>7</id>
     <valueType>

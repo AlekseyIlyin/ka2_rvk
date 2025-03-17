@@ -1282,6 +1282,51 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="c6067d6c-5619-47c1-8c68-358753cc5a1e">
+      <name>ВладелецОГРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ОГРН владельца</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="da01957a-8a77-4efa-97aa-32862b2a0e3a">
+      <name>ВладелецИННЮЛ</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН юридического лица владельца</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="614d145e-7d4a-4b48-b5c1-9bd2c8cbd340">
+      <name>ВладелецИНН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН физического лица владельца</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="0082bae0-5d91-471e-8d77-470f4fb5f376">
     <producedTypes>

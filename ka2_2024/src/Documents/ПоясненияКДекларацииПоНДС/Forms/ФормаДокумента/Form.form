@@ -1969,10 +1969,6 @@
           <segments>Объект.КнигаПокупок</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>КнигаПокупокНомерСтроки</name>
           <id>496</id>
@@ -4178,7 +4174,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПокупок.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4208,7 +4204,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПокупок.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4517,10 +4513,6 @@
           <segments>Объект.КнигаПокупокДл</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>КнигаПокупокДлНомерСтроки</name>
           <id>174</id>
@@ -6701,7 +6693,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПокупокДл.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6731,7 +6723,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПокупокДл.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7039,11 +7031,6 @@
           <segments>Объект.КнигаПродаж</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>КнигаПродажНомерСтроки</name>
           <id>198</id>
@@ -9954,7 +9941,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПродаж.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -9984,7 +9971,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПродаж.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -10292,11 +10279,6 @@
           <segments>Объект.КнигаПродажДл</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>CopyToClipboard</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>КнигаПродажДлНомерСтроки</name>
           <id>222</id>
@@ -13197,7 +13179,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПродаж.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -13227,7 +13209,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.КнигаПродаж.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -13535,10 +13517,6 @@
           <segments>Объект.ЖурналУчетаВыставленныхСчетовФактур</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ЖурналУчетаВыставленныхСчетовФактурНомерСтроки</name>
           <id>246</id>
@@ -14612,7 +14590,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ЖурналУчетаВыставленныхСчетовФактур.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -14642,7 +14620,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ЖурналУчетаВыставленныхСчетовФактур.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -14950,11 +14928,6 @@
           <segments>Объект.ЖурналУчетаПолученныхСчетовФактур</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ЖурналУчетаПолученныхСчетовФактурНомерСтроки</name>
           <id>270</id>
@@ -17262,7 +17235,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ЖурналУчетаПолученныхСчетовФактур.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -17292,7 +17265,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ЖурналУчетаПолученныхСчетовФактур.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -17599,10 +17572,6 @@
           <segments>Объект.ВыставленныеСчетаФактурыНеплательщиковНДС</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>SelectAll</excludedCommands>
-        <excludedCommands>ShowMultipleSelection</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ВыставленныеСчетаФактурыНеплательщиковНДСНомерСтроки</name>
           <id>294</id>
@@ -19065,7 +19034,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ВыставленныеСчетаФактурыНеплательщиковНДС.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -19095,7 +19064,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ВыставленныеСчетаФактурыНеплательщиковНДС.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -19402,8 +19371,6 @@
           <segments>Объект.НетКнигаПрод</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
         <items xsi:type="form:FormField">
           <name>НетКнигаПродНомерСтроки</name>
           <id>1325</id>
@@ -21440,7 +21407,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.НетКнигаПрод.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -21470,7 +21437,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.НетКнигаПрод.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -21835,8 +21802,6 @@
           <segments>Объект.СведКС</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СведКСНомерСтроки</name>
           <id>1294</id>
@@ -22281,7 +22246,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СведКС.StandardCommand.Find</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -22311,7 +22276,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СведКС.StandardCommand.CancelSearch</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -23039,7 +23004,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Write</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -23100,7 +23065,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.StandardCommand.Reread</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>

@@ -214,6 +214,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ЭтоБизКубБРО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.ОткрытьФорму1СОтчетностьНаОтчетах</name>
 		<right>
 			<name>View</name>
@@ -1642,6 +1657,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ОтключитьИнтеграциюСУчетнымиСистемами</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>SessionParameter.ТекущиеУчетныеЗаписиНалогоплательщика</name>
 		<right>
 			<name>Get</name>
@@ -2450,6 +2480,61 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.МашиночитаемыеДоверенностиОбмена</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрСведенийМашиночитаемыеДоверенностиОбмена", "Организация", "", "", "", "")
+#Иначе
+// ОсновноеУсловиеЧтение
+// Можно читать если есть доступ к (по или)
+// Организации
+#ПоЗначениям("РегистрСведений.МашиночитаемыеДоверенностиОбмена", "Чтение", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрСведенийМашиночитаемыеДоверенностиОбмена", "Организация", "", "", "", "")
+#Иначе
+// ОсновноеУсловиеЗапись
+// Можно изменять если есть доступ к (по или)
+// Организации
+#ПоЗначениям("РегистрСведений.МашиночитаемыеДоверенностиОбмена", "Изменение", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

@@ -655,6 +655,10 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -1231,29 +1235,131 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </items>
-        <items xsi:type="form:Decoration">
-          <name>ДекорацияНадписьВозможныеДействияПриОшибке</name>
-          <id>166</id>
-          <title>
-            <key>ru</key>
-            <value>Возможны следующие действия:
- - Если вы хотите повторить процесс возврата оплаты, нажмите кнопку &quot;Повторить попытку&quot;.
- - Если вы хотите подтвердить вручную, что возврат оплаты произведен, нажмите кнопку &quot;Платеж прошел&quot;.
- - Если вы хотите отменить операцию возврата оплаты, нажмите кнопку &quot;Отмена&quot;. </value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>ДекорацияНадписьВозможныеДействияПриОшибкеРасширеннаяПодсказка</name>
-            <id>168</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаВозможныеНадписиПриОшибке</name>
+          <id>181</id>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияНадписьПриОшибкеПовторитьОперацию</name>
+            <id>183</id>
+            <title>
+              <key>ru</key>
+              <value>Возможны следующие действия:
+ - Если вы хотите повторить процесс возврата оплаты, нажмите кнопку &quot;Повторить попытку&quot;.</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияНадписьПриОшибкеПовторитьОперациюРасширеннаяПодсказка</name>
+              <id>185</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияНадписьПриОшибкеПовторитьОперациюКонтекстноеМеню</name>
+              <id>184</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <verticalStretch>false</verticalStretch>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияНадписьПриОшибкеПодтвердитьОплату</name>
+            <id>186</id>
+            <title>
+              <key>ru</key>
+              <value> - Если вы хотите подтвердить вручную, что возврат оплаты произведен, нажмите кнопку &quot;Платеж прошел&quot;.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияНадписьПриОшибкеПодтвердитьОплатуРасширеннаяПодсказка</name>
+              <id>188</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияНадписьПриОшибкеПодтвердитьОплатуКонтекстноеМеню</name>
+              <id>187</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <verticalStretch>false</verticalStretch>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияНадписьПриОшибкеОтменитьОперацию</name>
+            <id>189</id>
+            <title>
+              <key>ru</key>
+              <value> - Если вы хотите отменить операцию возврата оплаты, нажмите кнопку &quot;Отмена&quot;. </value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияНадписьПриОшибкеОтменитьОперациюРасширеннаяПодсказка</name>
+              <id>191</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияНадписьПриОшибкеОтменитьОперациюКонтекстноеМеню</name>
+              <id>190</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <verticalStretch>false</verticalStretch>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа возможные надписи при ошибке</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа возможные надписи при ошибке</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаВозможныеНадписиПриОшибкеРасширеннаяПодсказка</name>
+            <id>182</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1261,21 +1367,15 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <contextMenu>
-            <name>ДекорацияНадписьВозможныеДействияПриОшибкеКонтекстноеМеню</name>
-            <id>167</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <verticalSpacing>None</verticalSpacing>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
           </extInfo>
         </items>
         <visible>true</visible>
@@ -1345,6 +1445,7 @@
       <type>Page</type>
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
+        <verticalSpacing>None</verticalSpacing>
         <showTitle>true</showTitle>
       </extInfo>
     </items>

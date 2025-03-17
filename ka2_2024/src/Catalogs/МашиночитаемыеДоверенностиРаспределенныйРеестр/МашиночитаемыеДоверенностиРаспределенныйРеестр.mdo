@@ -2134,6 +2134,19 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
     </attributes>
+    <attributes uuid="f1bd87b8-83c2-4b41-b0fb-5f547f34f118">
+      <name>Признак40</name>
+      <synonym>
+        <key>ru</key>
+        <value>Признак40</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
     <attributes uuid="e673f430-4e4c-4f76-9576-79065488a793">
       <name>ОКАТО</name>
       <synonym>
@@ -2163,19 +2176,6 @@
         <stringQualifiers>
           <length>9</length>
         </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="f1bd87b8-83c2-4b41-b0fb-5f547f34f118">
-      <name>Признак40</name>
-      <synonym>
-        <key>ru</key>
-        <value>Признак40</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -2375,6 +2375,227 @@
       <synonym>
         <key>ru</key>
         <value>Код подразделения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>7</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="976db9f8-b8a5-4933-826b-b606c9c7a22e">
+    <producedTypes>
+      <objectType typeId="3a17ee03-90a6-4feb-b10a-70ed9edd937e" valueTypeId="894eb72a-7fc6-4263-9903-d1177d0ec665"/>
+      <rowType typeId="94e5881a-6605-44b7-b1bc-73da8eeb61ac" valueTypeId="be04ccaa-5c07-410b-8bfc-a87680964f6c"/>
+    </producedTypes>
+    <name>ЛицаБезДовФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лица без доверенности - физические лица</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="26d27e5b-4016-4a47-b00e-a63466448d9a">
+      <name>ЛицоБезДовФЛ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Лицо без доверенности - физическое лицо</value>
+      </synonym>
+      <type>
+        <types>DefinedType.КонтрагентФизлицоИлиСтрокаБРО</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="3b955db9-9576-4b96-a268-b1e77deeb3ec">
+      <name>ЛицоБезДовФЛ_ИНН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <mask>999999999999</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="a166a7ca-de7e-45ac-8cf4-45a672e2e203">
+      <name>ЛицоБезДовФЛ_ОГРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ОГРНИП лица без доверенности</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <mask>999999999999999</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="cf7d3564-a5cd-41ce-a36c-1ea7876578f1">
+      <name>ЛицоБезДовФЛ_СНИЛС</name>
+      <synonym>
+        <key>ru</key>
+        <value>СНИЛС лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <mask>999-999-999 99</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="7596976c-b013-4237-a039-c489f109141d">
+      <name>ЛицоБезДовФЛ_Гражданство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Гражданство лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтраныМира</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="fe51ab3d-b9a2-4d46-8aa8-51649feedc8d">
+      <name>ЛицоБезДовФЛ_Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="747038ed-5a56-4453-a34b-fc934fc0f9c5">
+      <name>ЛицоБезДовФЛ_ДатаРождения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата рождения лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="a9bbf700-73b2-40d0-b301-f95f636d1615">
+      <name>ЛицоБезДовФЛ_ВидДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид документа лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыДокументовФизическихЛиц</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="57e27527-8863-4a5a-95ad-d35dcf44bcec">
+      <name>ЛицоБезДовФЛ_СерДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серия документа лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="c8671ec7-2fe7-4069-97d7-a13ff4f556ea">
+      <name>ЛицоБезДовФЛ_НомДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер документа лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="1b699fa0-79e1-4cac-82b2-4d22aab1beb0">
+      <name>ЛицоБезДовФЛ_ДатаДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата выдачи документа лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="a2b9498f-34bf-4a1e-8b75-01671ed33992">
+      <name>ЛицоБезДовФЛ_ВыдДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование органа, выдавшего документ лица без доверенности - физлица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="9a1bb0d4-658e-4ee9-9ba0-f1c55c7bd589">
+      <name>ЛицоБезДовФЛ_КодВыдДок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код подразделения лица без доверенности - физлица</value>
       </synonym>
       <type>
         <types>String</types>
@@ -2738,227 +2959,6 @@
       </synonym>
       <type>
         <types>UUID</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="976db9f8-b8a5-4933-826b-b606c9c7a22e">
-    <producedTypes>
-      <objectType typeId="3a17ee03-90a6-4feb-b10a-70ed9edd937e" valueTypeId="894eb72a-7fc6-4263-9903-d1177d0ec665"/>
-      <rowType typeId="94e5881a-6605-44b7-b1bc-73da8eeb61ac" valueTypeId="be04ccaa-5c07-410b-8bfc-a87680964f6c"/>
-    </producedTypes>
-    <name>ЛицаБезДовФЛ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Лица без доверенности - физические лица</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="26d27e5b-4016-4a47-b00e-a63466448d9a">
-      <name>ЛицоБезДовФЛ</name>
-      <synonym>
-        <key>ru</key>
-        <value>Лицо без доверенности - физическое лицо</value>
-      </synonym>
-      <type>
-        <types>DefinedType.КонтрагентФизлицоИлиСтрокаБРО</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="3b955db9-9576-4b96-a268-b1e77deeb3ec">
-      <name>ЛицоБезДовФЛ_ИНН</name>
-      <synonym>
-        <key>ru</key>
-        <value>ИНН лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>12</length>
-        </stringQualifiers>
-      </type>
-      <mask>999999999999</mask>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="a166a7ca-de7e-45ac-8cf4-45a672e2e203">
-      <name>ЛицоБезДовФЛ_ОГРН</name>
-      <synonym>
-        <key>ru</key>
-        <value>ОГРНИП лица без доверенности</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>15</length>
-        </stringQualifiers>
-      </type>
-      <mask>999999999999999</mask>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="cf7d3564-a5cd-41ce-a36c-1ea7876578f1">
-      <name>ЛицоБезДовФЛ_СНИЛС</name>
-      <synonym>
-        <key>ru</key>
-        <value>СНИЛС лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>14</length>
-        </stringQualifiers>
-      </type>
-      <mask>999-999-999 99</mask>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="7596976c-b013-4237-a039-c489f109141d">
-      <name>ЛицоБезДовФЛ_Гражданство</name>
-      <synonym>
-        <key>ru</key>
-        <value>Гражданство лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.СтраныМира</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="fe51ab3d-b9a2-4d46-8aa8-51649feedc8d">
-      <name>ЛицоБезДовФЛ_Должность</name>
-      <synonym>
-        <key>ru</key>
-        <value>Должность лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>50</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="747038ed-5a56-4453-a34b-fc934fc0f9c5">
-      <name>ЛицоБезДовФЛ_ДатаРождения</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дата рождения лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="a9bbf700-73b2-40d0-b301-f95f636d1615">
-      <name>ЛицоБезДовФЛ_ВидДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид документа лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ВидыДокументовФизическихЛиц</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="57e27527-8863-4a5a-95ad-d35dcf44bcec">
-      <name>ЛицоБезДовФЛ_СерДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Серия документа лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>14</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="c8671ec7-2fe7-4069-97d7-a13ff4f556ea">
-      <name>ЛицоБезДовФЛ_НомДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Номер документа лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>14</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="1b699fa0-79e1-4cac-82b2-4d22aab1beb0">
-      <name>ЛицоБезДовФЛ_ДатаДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дата выдачи документа лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="a2b9498f-34bf-4a1e-8b75-01671ed33992">
-      <name>ЛицоБезДовФЛ_ВыдДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Наименование органа, выдавшего документ лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>255</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="9a1bb0d4-658e-4ee9-9ba0-f1c55c7bd589">
-      <name>ЛицоБезДовФЛ_КодВыдДок</name>
-      <synonym>
-        <key>ru</key>
-        <value>Код подразделения лица без доверенности - физлица</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>7</length>
-        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -3733,6 +3733,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="347eb75f-c137-43f7-a14f-8455414c015d">
+    <name>ФормаПредставителяФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма представителя ФЛ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="e35e098e-704f-4b25-b894-a8004efd2649">
     <name>ФормаПараметровОтправки</name>
     <synonym>
@@ -3769,15 +3778,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="75ecb5d4-5705-4564-9950-862b327eb2fe">
-    <name>ФормаЗагрузки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма загрузки</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="913b76d8-20f7-4c11-9ab3-8d0639dfe307">
     <name>ФормаВыбораМЧД</name>
     <synonym>
@@ -3805,11 +3805,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="347eb75f-c137-43f7-a14f-8455414c015d">
-    <name>ФормаПредставителяФЛ</name>
+  <forms uuid="75ecb5d4-5705-4564-9950-862b327eb2fe">
+    <name>ФормаЗагрузки</name>
     <synonym>
       <key>ru</key>
-      <value>Форма представителя ФЛ</value>
+      <value>Форма загрузки</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -2105,13 +2105,7 @@
         <segments>ДинСписокПроизводителяИмпортера</segments>
       </dataPath>
       <titleLocation>Top</titleLocation>
-      <excludedCommands>Change</excludedCommands>
       <excludedCommands>CopyToClipboard</excludedCommands>
-      <excludedCommands>DynamicListStandardSettings</excludedCommands>
-      <excludedCommands>LoadDynamicListSettings</excludedCommands>
-      <excludedCommands>OutputList</excludedCommands>
-      <excludedCommands>Refresh</excludedCommands>
-      <excludedCommands>SaveDynamicListSettings</excludedCommands>
       <items xsi:type="form:FormField">
         <name>ПроизводительИмпортер</name>
         <id>182</id>
@@ -2348,7 +2342,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПроизводителей.StandardCommand.FindByCurrentValue</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2379,7 +2373,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПроизводителей.StandardCommand.Find</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2410,7 +2404,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПроизводителей.StandardCommand.CancelSearch</commandName>
+          <commandName>0</commandName>
           <representation>Picture</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2472,7 +2466,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПроизводителей.StandardCommand.ListSettings</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2876,13 +2870,7 @@
         <segments>ДинСписокПоставщика</segments>
       </dataPath>
       <titleLocation>Top</titleLocation>
-      <excludedCommands>Change</excludedCommands>
       <excludedCommands>CopyToClipboard</excludedCommands>
-      <excludedCommands>DynamicListStandardSettings</excludedCommands>
-      <excludedCommands>LoadDynamicListSettings</excludedCommands>
-      <excludedCommands>OutputList</excludedCommands>
-      <excludedCommands>Refresh</excludedCommands>
-      <excludedCommands>SaveDynamicListSettings</excludedCommands>
       <items xsi:type="form:FormField">
         <name>ПоставщикНаименование</name>
         <id>229</id>
@@ -3398,7 +3386,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПоставщиков.StandardCommand.FindByCurrentValue</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -3429,7 +3417,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПоставщиков.StandardCommand.Find</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -3460,7 +3448,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПоставщиков.StandardCommand.CancelSearch</commandName>
+          <commandName>0</commandName>
           <representation>Picture</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -3522,7 +3510,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Item.ТаблицаПоставщиков.StandardCommand.ListSettings</commandName>
+          <commandName>0</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>

@@ -48,7 +48,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ФормаВключитьОтключитьРегламентноеЗаданиеExtendedTooltip</name>
+        <name>ФормаВключитьОтключитьРегламентноеЗаданиеРасширеннаяПодсказка</name>
         <id>14</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -130,7 +130,7 @@
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>ИспользоватьРегламентноеЗаданиеExtendedTooltip</name>
+        <name>ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка</name>
         <id>17</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -167,6 +167,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>StdPicture.ScheduledJob</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -186,7 +190,7 @@
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
-        <name>НаименованиеExtendedTooltip</name>
+        <name>НаименованиеРасширеннаяПодсказка</name>
         <id>18</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -396,7 +400,7 @@
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>СписокExtendedTooltip</name>
+      <name>СписокРасширеннаяПодсказка</name>
       <id>16</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -422,7 +426,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗаданиеExtendedTooltip</name>
+          <name>СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗаданиеРасширеннаяПодсказка</name>
           <id>15</id>
           <visible>true</visible>
           <enabled>true</enabled>

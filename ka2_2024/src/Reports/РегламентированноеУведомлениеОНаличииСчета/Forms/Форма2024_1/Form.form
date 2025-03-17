@@ -1465,39 +1465,43 @@
       <type>Popup</type>
       <extInfo xsi:type="form:PopupGroupExtInfo"/>
     </items>
-    <items xsi:type="form:FormGroup">
-      <name>Печать</name>
-      <id>16</id>
-      <items xsi:type="form:Button">
-        <name>ФормаПечатьБРО</name>
-        <id>126</id>
+    <items xsi:type="form:Button">
+      <name>ФормаПечатьБРО</name>
+      <id>126</id>
+      <title>
+        <key>ru</key>
+        <value>Печать</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПечатьБРОРасширеннаяПодсказка</name>
+        <id>127</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
-        <extendedTooltip>
-          <name>ФормаПечатьБРОРасширеннаяПодсказка</name>
-          <id>127</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.ПечатьБРО</commandName>
-        <representation>Auto</representation>
+        <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ПечатьБРО</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Печать</name>
+      <id>16</id>
       <items xsi:type="form:Button">
         <name>ФормаПоказатьСДвухмернымШтрихкодомPDF417</name>
         <id>34</id>

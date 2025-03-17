@@ -13081,6 +13081,9 @@
       <segments>СписокНоменклатураПартнера.Характеристика</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокНоменклатураПартнера.ХарактеристикиИспользуются</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокНоменклатураПартнера.ЭтоГруппа</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
@@ -13117,6 +13120,7 @@
 	КОНЕЦ КАК Упаковка,
 	СправочникНоменклатураКонтрагентов.Артикул КАК Артикул,
 	СправочникНоменклатураКонтрагентов.Номенклатура.СтавкаНДС КАК СтавкаНДС,
+	ЛОЖЬ КАК ХарактеристикиИспользуются,
 	ЛОЖЬ КАК ЭтоТовар,
 	ЛОЖЬ КАК ЭтоУслуга,
 	0 КАК Цена,
@@ -13144,124 +13148,12 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Идентификатор</dataPath>
-        <field>Идентификатор</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторНоменклатуры</dataPath>
-        <field>ИдентификаторНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторХарактеристики</dataPath>
-        <field>ИдентификаторХарактеристики</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторУпаковки</dataPath>
-        <field>ИдентификаторУпаковки</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВладелецНоменклатуры</dataPath>
-        <field>ВладелецНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеНоменклатуры</dataPath>
-        <field>НаименованиеНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеХарактеристики</dataPath>
-        <field>НаименованиеХарактеристики</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеУпаковки</dataPath>
-        <field>НаименованиеУпаковки</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеБазовойЕдиницыИзмерения</dataPath>
-        <field>НаименованиеБазовойЕдиницыИзмерения</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КодОКЕИБазовойЕдиницыИзмерения</dataPath>
-        <field>КодОКЕИБазовойЕдиницыИзмерения</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КоличествоБазовойЕдиницыИзмерения</dataPath>
-        <field>КоличествоБазовойЕдиницыИзмерения</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КоличествоУпаковок</dataPath>
-        <field>КоличествоУпаковок</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторНоменклатурыСервиса</dataPath>
-        <field>ИдентификаторНоменклатурыСервиса</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИдентификаторХарактеристикиСервиса</dataPath>
-        <field>ИдентификаторХарактеристикиСервиса</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИспользоватьХарактеристики</dataPath>
-        <field>ИспользоватьХарактеристики</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СтавкаНДС</dataPath>
         <field>СтавкаНДС</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Недействителен</dataPath>
-        <field>Недействителен</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Штрихкод</dataPath>
-        <field>Штрихкод</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДругиеШтрихкодыНоменклатурыСтрокой</dataPath>
-        <field>ДругиеШтрихкодыНоменклатурыСтрокой</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НаименованиеПолное</dataPath>
         <field>НаименованиеПолное</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТипНоменклатурыФНС</dataPath>
-        <field>ТипНоменклатурыФНС</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КодНоменклатуры</dataPath>
-        <field>КодНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КодПоКТРУ</dataPath>
-        <field>КодПоКТРУ</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КодТНВЭД</dataPath>
-        <field>КодТНВЭД</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>СтранаПроисхожденияКод</dataPath>
-        <field>СтранаПроисхожденияКод</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПрослеживаемыйТовар</dataPath>
-        <field>ПрослеживаемыйТовар</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МаркируемыйТовар</dataPath>
-        <field>МаркируемыйТовар</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ХешПравилаПоиска</dataPath>
-        <field>ХешПравилаПоиска</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДругиеШтрихкодыНоменклатуры</dataPath>
-        <field>ДругиеШтрихкодыНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИмяПредопределенныхДанных</dataPath>
-        <field>ИмяПредопределенныхДанных</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИндексКартинки</dataPath>
@@ -13410,6 +13302,134 @@
             </content>
           </localValue>
         </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ХарактеристикиИспользуются</dataPath>
+        <field>ХарактеристикиИспользуются</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Характеристики используются</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Идентификатор</dataPath>
+        <field>Идентификатор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторНоменклатуры</dataPath>
+        <field>ИдентификаторНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторХарактеристики</dataPath>
+        <field>ИдентификаторХарактеристики</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторУпаковки</dataPath>
+        <field>ИдентификаторУпаковки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВладелецНоменклатуры</dataPath>
+        <field>ВладелецНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеНоменклатуры</dataPath>
+        <field>НаименованиеНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеХарактеристики</dataPath>
+        <field>НаименованиеХарактеристики</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеУпаковки</dataPath>
+        <field>НаименованиеУпаковки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеБазовойЕдиницыИзмерения</dataPath>
+        <field>НаименованиеБазовойЕдиницыИзмерения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодОКЕИБазовойЕдиницыИзмерения</dataPath>
+        <field>КодОКЕИБазовойЕдиницыИзмерения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоБазовойЕдиницыИзмерения</dataPath>
+        <field>КоличествоБазовойЕдиницыИзмерения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоУпаковок</dataPath>
+        <field>КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторНоменклатурыСервиса</dataPath>
+        <field>ИдентификаторНоменклатурыСервиса</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторХарактеристикиСервиса</dataPath>
+        <field>ИдентификаторХарактеристикиСервиса</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьХарактеристики</dataPath>
+        <field>ИспользоватьХарактеристики</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Недействителен</dataPath>
+        <field>Недействителен</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Штрихкод</dataPath>
+        <field>Штрихкод</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДругиеШтрихкодыНоменклатурыСтрокой</dataPath>
+        <field>ДругиеШтрихкодыНоменклатурыСтрокой</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипНоменклатурыФНС</dataPath>
+        <field>ТипНоменклатурыФНС</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодНоменклатуры</dataPath>
+        <field>КодНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодПоКТРУ</dataPath>
+        <field>КодПоКТРУ</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодТНВЭД</dataPath>
+        <field>КодТНВЭД</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтранаПроисхожденияКод</dataPath>
+        <field>СтранаПроисхожденияКод</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПрослеживаемыйТовар</dataPath>
+        <field>ПрослеживаемыйТовар</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаркируемыйТовар</dataPath>
+        <field>МаркируемыйТовар</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ХешПравилаПоиска</dataPath>
+        <field>ХешПравилаПоиска</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДругиеШтрихкодыНоменклатуры</dataPath>
+        <field>ДругиеШтрихкодыНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование1</dataPath>
+        <field>Наименование1</field>
       </fields>
     </extInfo>
   </attributes>

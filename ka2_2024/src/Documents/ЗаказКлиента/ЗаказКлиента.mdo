@@ -436,7 +436,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Ответственный за заказ</value>
+      <value>Пользователь, ответственный за документ (разрез аналитики)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -1206,6 +1206,10 @@
       <types>CatalogRef.ВнешниеПользователи</types>
       <types>CatalogRef.Пользователи</types>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, создавший документ (служебный реквизит)</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

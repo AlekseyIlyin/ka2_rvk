@@ -847,6 +847,42 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>ЗаявлениеОВвозеТоваровОтПокупателя</name>
+      <id>163</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ЗаявлениеОВвозеТоваровОтПокупателя</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ЗаявлениеОВвозеТоваровОтПокупателяРасширеннаяПодсказка</name>
+        <id>165</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЗаявлениеОВвозеТоваровОтПокупателяКонтекстноеМеню</name>
+        <id>164</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>СписокСостояние</name>
       <id>40</id>
       <visible>true</visible>
@@ -1964,13 +2000,12 @@
       <queryText>ВЫБРАТЬ
 	НДССостояниеРеализации0Переопределяемый.Регистратор КАК Регистратор,
 	НДССостояниеРеализации0Переопределяемый.Период КАК Период,
-	НДССостояниеРеализации0Переопределяемый.НомерСтроки КАК НомерСтроки,
-	НДССостояниеРеализации0Переопределяемый.Активность КАК Активность,
 	НДССостояниеРеализации0Переопределяемый.Организация КАК Организация,
 	НДССостояниеРеализации0Переопределяемый.ДокументРеализации КАК ДокументРеализации,
 	НДССостояниеРеализации0Переопределяемый.ДатаРеализации КАК ДатаРеализации,
 	НДССостояниеРеализации0Переопределяемый.Контрагент КАК Контрагент,
 	NULL КАК ТаможеннаяДекларация,
+	NULL КАК ЗаявлениеОВвозеТоваровОтПокупателя,
 	NULL КАК СопроводительныеДокументы,
 	НДССостояниеРеализации0Переопределяемый.Состояние КАК Состояние,
 	НДССостояниеРеализации0Переопределяемый.СтавкаНДС КАК СтавкаНДС,
@@ -2007,10 +2042,6 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НомерСтроки</dataPath>
-        <field>НомерСтроки</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Организация</dataPath>
         <field>Организация</field>
       </fields>
@@ -2037,10 +2068,6 @@
             </content>
           </localValue>
         </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Активность</dataPath>
-        <field>Активность</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ДатаРеализации</dataPath>
@@ -2077,6 +2104,26 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Ссылка</dataPath>
         <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗаявлениеОВвозеТоваровОтПокупателя</dataPath>
+        <field>ЗаявлениеОВвозеТоваровОтПокупателя</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Заявление о ввозе товаров от покупателя</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСтроки</dataPath>
+        <field>НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Активность</dataPath>
+        <field>Активность</field>
       </fields>
       <parameters>
         <name>Период</name>

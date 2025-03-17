@@ -545,6 +545,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияПиктограммФайлов</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -691,6 +695,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ПодписанЗашифрованСостоянияДО24</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2843,6 +2851,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияВидовСторон</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -7741,6 +7753,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.СтатусПроверкиЭП</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -11866,10 +11882,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ОбъектИд</name>
+      <name>ОбъектID</name>
       <title>
         <key>ru</key>
-        <value>Объект ид</value>
+        <value>Объект ID</value>
       </title>
       <id>5</id>
       <valueType>
@@ -11956,10 +11972,10 @@
       </edit>
     </columns>
     <columns>
-      <name>УстановившийПодписьИд</name>
+      <name>УстановившийПодписьID</name>
       <title>
         <key>ru</key>
-        <value>Установивший подпись ид</value>
+        <value>Установивший подпись ID</value>
       </title>
       <id>18</id>
       <valueType>
@@ -12018,6 +12034,24 @@
       <id>21</id>
       <valueType>
         <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаПроверкиПодписи</name>
+      <title>
+        <key>ru</key>
+        <value>Дата проверки подписи</value>
+      </title>
+      <id>187</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers/>
       </valueType>
       <view>
         <common>true</common>

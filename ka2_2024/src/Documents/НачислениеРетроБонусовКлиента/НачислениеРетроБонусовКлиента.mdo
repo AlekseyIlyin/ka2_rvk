@@ -81,6 +81,11 @@
     <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
   </characteristics>
   <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
@@ -159,6 +164,7 @@
         <value>Enum.СтатусыДокументовРетроБонусов.EnumValue.Согласован</value>
       </value>
     </choiceParameters>
+    <quickChoice>DontUse</quickChoice>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

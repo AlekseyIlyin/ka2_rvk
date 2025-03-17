@@ -7406,6 +7406,21 @@
 		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 	</parameter>
+	<parameter>
+		<name>ИсключатьТЗРиРБП</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исключить ТЗР и РБП (включены в себестоимость)</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>ДоходыИРасходыПоПредприятию</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -7430,24 +7445,6 @@
 				<dcsset:userSettingID>d462b0a3-cd11-4a45-b4e8-7888ac081097</dcsset:userSettingID>
 			</dcsset:selection>
 			<dcsset:filter>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">Раздел</dcsset:left>
-					<dcsset:comparisonType>NotInList</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">ТЗР</dcsset:right>
-					<dcsset:right xsi:type="xs:string">РБП</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Производственные затраты</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Внеоборотные активы</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Не распределять</dcsset:right>
-					<dcsset:right xsi:type="xs:string">На себестоимость продаж</dcsset:right>
-					<dcsset:right xsi:type="xs:string">ОВЗ</dcsset:right>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исключить ТЗР и РБП (включены в себестоимость)</v8:content>
-						</v8:item>
-					</dcsset:presentation>
-					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
@@ -7550,6 +7547,11 @@
 					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>d2c96654-8a9a-4102-99e3-598c56cf5104</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИсключатьТЗРиРБП</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -8204,24 +8206,6 @@
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">Раздел</dcsset:left>
-					<dcsset:comparisonType>NotInList</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">ТЗР</dcsset:right>
-					<dcsset:right xsi:type="xs:string">РБП</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Производственные затраты</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Внеоборотные активы</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Не распределять</dcsset:right>
-					<dcsset:right xsi:type="xs:string">На себестоимость продаж</dcsset:right>
-					<dcsset:right xsi:type="xs:string">ОВЗ</dcsset:right>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исключить ТЗР и РБП (включены в себестоимость)</v8:content>
-						</v8:item>
-					</dcsset:presentation>
-					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
@@ -8333,6 +8317,11 @@
 					<dcscor:value xsi:type="xs:decimal">4</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>32c82b21-ed0c-475a-a9a3-e172ca8713ba</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИсключатьТЗРиРБП</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -9089,6 +9078,10 @@
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>fd8cac72-3d07-4abb-8372-ee8c6638d7be</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИсключатьТЗРиРБП</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -9392,6 +9385,10 @@
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>fd8cac72-3d07-4abb-8372-ee8c6638d7be</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИсключатьТЗРиРБП</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -9636,24 +9633,6 @@
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">Раздел</dcsset:left>
-					<dcsset:comparisonType>NotInList</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">ТЗР</dcsset:right>
-					<dcsset:right xsi:type="xs:string">РБП</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Производственные затраты</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Внеоборотные активы</dcsset:right>
-					<dcsset:right xsi:type="xs:string">Не распределять</dcsset:right>
-					<dcsset:right xsi:type="xs:string">На себестоимость продаж</dcsset:right>
-					<dcsset:right xsi:type="xs:string">ОВЗ</dcsset:right>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исключить ТЗР и РБП (включены в себестоимость)</v8:content>
-						</v8:item>
-					</dcsset:presentation>
-					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
 					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
@@ -9755,6 +9734,11 @@
 					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>d2c96654-8a9a-4102-99e3-598c56cf5104</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ИсключатьТЗРиРБП</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>

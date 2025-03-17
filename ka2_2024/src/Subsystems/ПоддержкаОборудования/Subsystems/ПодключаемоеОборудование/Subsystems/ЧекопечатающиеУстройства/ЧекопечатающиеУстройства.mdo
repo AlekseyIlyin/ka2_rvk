@@ -24,9 +24,7 @@
   <content>Enum.СтатусыКассовойСмены</content>
   <content>DefinedType.КассаБПО</content>
   <content>CommonCommand.УправлениеФискальнымУстройством</content>
-  <content>CommonTemplate.ДрайверFITККТ54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверMSTARККТ54ФЗ_ru</content>
-  <content>CommonTemplate.ДрайверNEWTONККТ54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверВерсияТK1Ф54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверДримкасККТ54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверИскраККТ54ФЗ_ru</content>
@@ -70,17 +68,21 @@
   <content>Constant.СрокХраненияФискальныхОпераций</content>
   <content>CommonModule.ОборудованиеЧекопечатающиеУстройства</content>
   <content>ScheduledJob.ОчисткаИсторииФискальныхОпераций</content>
-  <content>CommonTemplate.ДрайверШтрихМККТ54ФЗ4ФФД12NG_ru</content>
+  <content>CommonTemplate.ДрайверПОСЦентрККТ54ФЗ4ФФД12NG_ru</content>
   <content>CommonTemplate.ДрайверRightScanУстройствоПечати_ru</content>
   <content>CommonTemplate.ДрайверRightScanККТ54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверАЗУРККТ54ФЗФФД12_ru</content>
   <content>CommonTemplate.ДрайверВерсияТККТ54ФЗ_ru</content>
   <content>CommonTemplate.ДрайверНЕВА54ФЗ4ФФД12_ru</content>
-  <subsystems>АвтономнаяККТ</subsystems>
-  <subsystems>КассоваяСмена</subsystems>
-  <subsystems>Маркировка</subsystems>
-  <subsystems>РаспределеннаяФискализация</subsystems>
-  <subsystems>РассылкаЭлектронныхЧеков</subsystems>
+  <content>CommonTemplate.ДрайверMitsu54ФЗ4ФФД12_ru</content>
+  <content>CommonTemplate.ДрайверАТОЛККТ54ФЗ10XФФД12X_ru</content>
+  <content>CommonTemplate.ДрайверДримкасККТ54ФЗ44_ru</content>
+  <content>CommonTemplate.ДрайверПОСЦентрККТ54ФЗ4ФФД12_ru</content>
   <subsystems>ФорматноЛогическийКонтроль</subsystems>
+  <subsystems>РассылкаЭлектронныхЧеков</subsystems>
+  <subsystems>КассоваяСмена</subsystems>
+  <subsystems>РаспределеннаяФискализация</subsystems>
+  <subsystems>АвтономнаяККТ</subsystems>
+  <subsystems>Маркировка</subsystems>
   <parentSubsystem>Subsystem.ПоддержкаОборудования.Subsystem.ПодключаемоеОборудование</parentSubsystem>
 </mdclass:Subsystem>

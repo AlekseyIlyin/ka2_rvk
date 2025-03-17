@@ -73,6 +73,11 @@
     <multipleValuesOrderField>-1</multipleValuesOrderField>
   </characteristics>
   <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
@@ -855,12 +860,12 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
       <choiceParameterLinks>
-        <name>Отбор.ОтражатьВРеглУчете</name>
+        <name>ОтражатьВРеглУчете</name>
         <changeMode>DontChange</changeMode>
         <field>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.ОтражатьВРеглУчете</field>
       </choiceParameterLinks>
       <choiceParameterLinks>
-        <name>Отбор.ОтражатьВУпрУчете</name>
+        <name>ОтражатьВУпрУчете</name>
         <changeMode>DontChange</changeMode>
         <field>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.ОтражатьВУпрУчете</field>
       </choiceParameterLinks>
@@ -923,12 +928,12 @@
         <field>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.Организация</field>
       </choiceParameterLinks>
       <choiceParameterLinks>
-        <name>Отбор.ОтражатьВРеглУчете</name>
+        <name>ОтражатьВРеглУчете</name>
         <changeMode>DontChange</changeMode>
         <field>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.ОтражатьВРеглУчете</field>
       </choiceParameterLinks>
       <choiceParameterLinks>
-        <name>Отбор.ОтражатьВУпрУчете</name>
+        <name>ОтражатьВУпрУчете</name>
         <changeMode>DontChange</changeMode>
         <field>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.ОтражатьВУпрУчете</field>
       </choiceParameterLinks>

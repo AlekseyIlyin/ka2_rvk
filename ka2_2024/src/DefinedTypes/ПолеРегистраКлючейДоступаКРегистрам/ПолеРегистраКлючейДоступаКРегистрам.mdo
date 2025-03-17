@@ -27,6 +27,7 @@
     <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
     <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
     <types>DocumentRef.ПоступлениеУслугПоАренде</types>
+    <types>DocumentRef.ПереносРНПТМатериаловНаПродукцию</types>
     <types>DocumentRef.ИнойДокументПодтвержденияНДС</types>
     <types>CatalogRef.СкладскиеЯчейки</types>
     <types>CatalogRef.УчетныеЗаписиМаркетплейсов</types>
@@ -105,12 +106,14 @@
     <types>DocumentRef.ВводОстатковНДСПредъявленного</types>
     <types>CatalogRef.ПодразделенияОрганизаций</types>
     <types>DocumentRef.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности</types>
+    <types>CatalogRef.НоменклатураКонтрагентов</types>
     <types>DocumentRef.ЗаявкиНаЛьготныйКредит</types>
     <types>DocumentRef.ПередачаСырьяПереработчику</types>
     <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
     <types>DocumentRef.ИсполнительныйЛист</types>
     <types>DocumentRef.ВозобновлениеТрудовыхДоговоровКонтрактов</types>
     <types>CatalogRef.МашиночитаемыеДоверенностиОрганизаций</types>
+    <types>DocumentRef.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentRef.ВходящийДокументСЭДОФСС</types>
     <types>DocumentRef.ВводОстатковРасходовПриУСН</types>
     <types>DocumentRef.СведенияОДоходахСотрудникаДляСоцВыплат</types>
@@ -140,6 +143,7 @@
     <types>DocumentRef.ПоясненияКДекларацииПоНДС</types>
     <types>DocumentRef.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖ</types>
     <types>DocumentRef.ОтчетОРозничныхВозвратах</types>
+    <types>CatalogRef.НастройкиПодключенияКОнлайнЗаказам</types>
     <types>DocumentRef.РегламентированныйОтчет</types>
     <types>DocumentRef.ЗаявлениеНаФормированиеСправкиОРасчетах</types>
     <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
@@ -195,6 +199,7 @@
     <types>DocumentRef.ВводОстатковРасчетовПоЭквайрингу</types>
     <types>DocumentRef.ПрекращениеДоговораАренды</types>
     <types>DocumentRef.СведенияОТрудовойДеятельностиРаботникаСТД_Р</types>
+    <types>DocumentRef.УсловияРетроБонусовПоставщика</types>
     <types>DocumentRef.СчетФактураПолученныйНалоговыйАгент</types>
     <types>DocumentRef.ВводОстатковСПодотчетниками</types>
     <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>

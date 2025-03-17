@@ -20,7 +20,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ОписаниеРазделаРасширеннаяПодсказка</name>
+        <name>ОписаниеРазделаExtendedTooltip</name>
         <id>2508</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -60,7 +60,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ДекорацияЗаголовкаРасширеннаяПодсказка</name>
+        <name>ДекорацияЗаголовкаExtendedTooltip</name>
         <id>2511</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -100,7 +100,7 @@
       <value>Заголовок</value>
     </title>
     <extendedTooltip>
-      <name>ГруппаЗаголовокРасширеннаяПодсказка</name>
+      <name>ГруппаЗаголовокExtendedTooltip</name>
       <id>2505</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -140,7 +140,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ОткрытьРабочиеМестаРасширеннаяПодсказка</name>
+            <name>ОткрытьРабочиеМестаExtendedTooltip</name>
             <id>2272</id>
             <title>
               <key>ru</key>
@@ -339,7 +339,7 @@
       <value>Рабочие места</value>
     </title>
     <extendedTooltip>
-      <name>ГруппаРабочиеМестаРасширеннаяПодсказка</name>
+      <name>ГруппаРабочиеМестаExtendedTooltip</name>
       <id>2270</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -385,7 +385,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ОткрытьПодключаемоеОборудованиеРасширеннаяПодсказка</name>
+            <name>ОткрытьПодключаемоеОборудованиеExtendedTooltip</name>
             <id>2268</id>
             <title>
               <key>ru</key>
@@ -1086,7 +1086,7 @@
       <value>Подключаемое оборудование</value>
     </title>
     <extendedTooltip>
-      <name>ГруппаУправлениеПодключаемымОборудованиемРасширеннаяПодсказка</name>
+      <name>ГруппаУправлениеПодключаемымОборудованиемExtendedTooltip</name>
       <id>2263</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -3074,6 +3074,310 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаОперацииСПодключаемымОборудованием</name>
+    <id>2593</id>
+    <items xsi:type="form:FormField">
+      <name>ЛогированиеОперацийСОборудованием</name>
+      <id>2610</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ЛогированиеОперацийСОборудованием</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ЛогированиеОперацийСОборудованиемПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ЛогированиеОперацийСОборудованиемРасширеннаяПодсказка</name>
+        <id>2612</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЛогированиеОперацийСОборудованиемКонтекстноеМеню</name>
+        <id>2611</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаЛогированиеОперацийПодключаемогоОборудованияОткрытие</name>
+      <id>2595</id>
+      <items xsi:type="form:FormGroup">
+        <name>Группа12</name>
+        <id>2597</id>
+        <items xsi:type="form:Button">
+          <name>ОткрытьОперацииСОборудованием</name>
+          <id>2599</id>
+          <title>
+            <key>ru</key>
+            <value>Операции с оборудованием</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьОперацииСОборудованиемРасширеннаяПодсказка</name>
+            <id>2600</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.ОткрытьОперацииСОборудованием</commandName>
+          <representation>Auto</representation>
+          <width>21</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>None</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ОчиститьОперацииСОборудованием</name>
+          <id>2601</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОчиститьОперацииСОборудованиемРасширеннаяПодсказка</name>
+            <id>2602</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.Очистить</commandName>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <groupHorizontalAlign>Right</groupHorizontalAlign>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <width>40</width>
+        <extendedTooltip>
+          <name>Группа12РасширеннаяПодсказка</name>
+          <id>2598</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>Группа13</name>
+        <id>2603</id>
+        <items xsi:type="form:FormField">
+          <name>СрокХраненияОперацийСОборудованием</name>
+          <id>2605</id>
+          <title>
+            <key>ru</key>
+            <value>Срок хранения</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СрокХраненияОперацийСОборудованием</segments>
+          </dataPath>
+          <toolTipRepresentation>None</toolTipRepresentation>
+          <handlers>
+            <event>OnChange</event>
+            <name>СрокХраненияОперацийПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>СрокХраненияОперацийСОборудованиемРасширеннаяПодсказка</name>
+            <id>2607</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <hyperlink>true</hyperlink>
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СрокХраненияОперацийСОборудованиемКонтекстноеМеню</name>
+            <id>2606</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>23</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <width>40</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>Группа13РасширеннаяПодсказка</name>
+          <id>2604</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ОчисткаИсторииОперацийСОборудованием</name>
+        <id>2608</id>
+        <title>
+          <key>ru</key>
+          <value>Настроить расписание очистки</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОчисткаИсторииОперацийСОборудованиемРасширеннаяПодсказка</name>
+          <id>2609</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.НастроитьРасписаниеОчисткиОперацийСОборудованием</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <shape>Oval</shape>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа логирование операций подключаемого оборудования открытие</value>
+      </toolTip>
+      <width>45</width>
+      <extendedTooltip>
+        <name>ГруппаЛогированиеОперацийПодключаемогоОборудованияОткрытиеРасширеннаяПодсказка</name>
+        <id>2596</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <verticalSpacing>Half</verticalSpacing>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Операции с подключаемым оборудованием</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаОперацииСПодключаемымОборудованиемРасширеннаяПодсказка</name>
+      <id>2594</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <verticalSpacing>OneAndHalf</verticalSpacing>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <controlRepresentation>Picture</controlRepresentation>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -3305,7 +3609,7 @@
     </title>
     <id>12</id>
     <valueType>
-      <types>EnumRef.ПериодХраненияИсторииПлатежныхОпераций</types>
+      <types>EnumRef.ПериодХраненияИсторииОпераций</types>
     </valueType>
     <view>
       <common>true</common>
@@ -3322,7 +3626,7 @@
     </title>
     <id>13</id>
     <valueType>
-      <types>EnumRef.ПериодХраненияИсторииПлатежныхОпераций</types>
+      <types>EnumRef.ПериодХраненияИсторииОпераций</types>
     </valueType>
     <view>
       <common>true</common>
@@ -3339,7 +3643,7 @@
     </title>
     <id>14</id>
     <valueType>
-      <types>EnumRef.ПериодХраненияИсторииПлатежныхОпераций</types>
+      <types>EnumRef.ПериодХраненияИсторииОпераций</types>
     </valueType>
     <view>
       <common>true</common>
@@ -3356,7 +3660,7 @@
     </title>
     <id>15</id>
     <valueType>
-      <types>EnumRef.ПериодХраненияИсторииПлатежныхОпераций</types>
+      <types>EnumRef.ПериодХраненияИсторииОпераций</types>
     </valueType>
     <view>
       <common>true</common>
@@ -3389,6 +3693,55 @@
       <value>Используется протокол RDPв БПО</value>
     </title>
     <id>17</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СрокХраненияОперацийСОборудованием</name>
+    <title>
+      <key>ru</key>
+      <value>Срок хранения операций с оборудованием</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>EnumRef.ПериодХраненияИсторииОпераций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>РасписаниеОчисткиОперацийСОборудованием</name>
+    <title>
+      <key>ru</key>
+      <value>Расписание очистки операций с оборудованием</value>
+    </title>
+    <id>19</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЛогированиеОперацийСОборудованием</name>
+    <title>
+      <key>ru</key>
+      <value>Запись операций с подключаемым оборудованием</value>
+    </title>
+    <id>20</id>
     <valueType>
       <types>Boolean</types>
     </valueType>
@@ -3767,6 +4120,48 @@
     <toolTip>
       <key>ru</key>
       <value>Изменить расписание очистки фискальных операций</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастроитьРасписаниеОчисткиОпераций</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьОперацииСОборудованием</name>
+    <title>
+      <key>ru</key>
+      <value>Операции с оборудованием</value>
+    </title>
+    <id>16</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть фискальные операции</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВыполнитьКоманду</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>НастроитьРасписаниеОчисткиОперацийСОборудованием</name>
+    <title>
+      <key>ru</key>
+      <value>Настроить расписание очистки операций с оборудованием</value>
+    </title>
+    <id>17</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настроить расписание очистки операций с оборудованием</value>
     </toolTip>
     <use>
       <common>true</common>

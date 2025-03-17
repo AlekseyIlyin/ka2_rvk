@@ -125,10 +125,10 @@
     </items>
     <items xsi:type="form:FormGroup">
       <name>ГруппаОснованиеСоставителя</name>
-      <id>154</id>
+      <id>176</id>
       <items xsi:type="form:FormField">
         <name>ОснованиеСоставителяНаименование</name>
-        <id>156</id>
+        <id>178</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -139,7 +139,7 @@
         </dataPath>
         <extendedTooltip>
           <name>ОснованиеСоставителяНаименованиеРасширеннаяПодсказка</name>
-          <id>158</id>
+          <id>180</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -154,7 +154,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>ОснованиеСоставителяНаименованиеКонтекстноеМеню</name>
-          <id>157</id>
+          <id>179</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -178,10 +178,10 @@
       </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаНомерДатаОснования</name>
-        <id>159</id>
+        <id>181</id>
         <items xsi:type="form:FormField">
           <name>ОснованиеСоставителяДата</name>
-          <id>161</id>
+          <id>183</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -192,7 +192,7 @@
           </dataPath>
           <extendedTooltip>
             <name>ОснованиеСоставителяДатаРасширеннаяПодсказка</name>
-            <id>163</id>
+            <id>185</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -207,7 +207,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ОснованиеСоставителяДатаКонтекстноеМеню</name>
-            <id>162</id>
+            <id>184</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -231,7 +231,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>ОснованиеСоставителяНомер</name>
-          <id>164</id>
+          <id>186</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -242,7 +242,7 @@
           </dataPath>
           <extendedTooltip>
             <name>ОснованиеСоставителяНомерРасширеннаяПодсказка</name>
-            <id>166</id>
+            <id>188</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -257,7 +257,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ОснованиеСоставителяНомерКонтекстноеМеню</name>
-            <id>165</id>
+            <id>187</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -290,7 +290,7 @@
         </title>
         <extendedTooltip>
           <name>ГруппаНомерДатаОснованияРасширеннаяПодсказка</name>
-          <id>160</id>
+          <id>182</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -324,7 +324,7 @@
       </title>
       <extendedTooltip>
         <name>ГруппаОснованиеСоставителяРасширеннаяПодсказка</name>
-        <id>155</id>
+        <id>177</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -3809,12 +3809,63 @@
     </edit>
   </attributes>
   <attributes>
+    <name>ЕстьРасхождения</name>
+    <title>
+      <key>ru</key>
+      <value>Есть расхождения</value>
+    </title>
+    <id>46</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЭтоАктСверкиВзаиморасчетов</name>
+    <title>
+      <key>ru</key>
+      <value>Это акт сверки взаиморасчетов</value>
+    </title>
+    <id>47</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПолноеСогласиеСДаннымиОтправителя</name>
+    <title>
+      <key>ru</key>
+      <value>Полное согласие с данными отправителя</value>
+    </title>
+    <id>48</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
     <name>ОснованиеСоставителяДата</name>
     <title>
       <key>ru</key>
       <value>Дата основания</value>
     </title>
-    <id>45</id>
+    <id>49</id>
     <valueType>
       <types>Date</types>
       <dateQualifiers>
@@ -3834,7 +3885,7 @@
       <key>ru</key>
       <value>Наименование основания</value>
     </title>
-    <id>46</id>
+    <id>50</id>
     <valueType>
       <types>String</types>
       <stringQualifiers>
@@ -3854,7 +3905,7 @@
       <key>ru</key>
       <value>Номер основания</value>
     </title>
-    <id>47</id>
+    <id>51</id>
     <valueType>
       <types>String</types>
       <stringQualifiers>
@@ -3874,7 +3925,7 @@
       <key>ru</key>
       <value>Это УПД 5.02</value>
     </title>
-    <id>48</id>
+    <id>52</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

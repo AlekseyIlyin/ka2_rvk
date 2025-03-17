@@ -311,7 +311,10 @@
 	ПВХ.АктивПассив,
 	ПВХ.РеквизитДопУпорядочивания
 ИЗ
-	ПланВидовХарактеристик.СтатьиАктивовПассивов КАК ПВХ</queryText>
+	ПланВидовХарактеристик.СтатьиАктивовПассивов КАК ПВХ
+ГДЕ
+	ПВХ.АктивПассив &lt;> ЗНАЧЕНИЕ(Перечисление.ВидыСтатейУправленческогоБаланса.ПустаяСсылка)
+	ИЛИ ПВХ.ИсточникДанных = &amp;ДвиженияПоПрочимАктивамПассивам</queryText>
       <mainTable>ChartOfCharacteristicTypes.СтатьиАктивовПассивов</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -319,72 +322,16 @@
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Субконто2</dataPath>
-        <field>Субконто2</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВыводитьОборот</dataPath>
-        <field>ВыводитьОборот</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Код</dataPath>
-        <field>Код</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Субконто3</dataPath>
-        <field>Субконто3</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПредставлениеДебетаСтатьи</dataPath>
-        <field>ПредставлениеДебетаСтатьи</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Ссылка</dataPath>
         <field>Ссылка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>БезАналитики</dataPath>
-        <field>БезАналитики</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>РеквизитДопУпорядочивания</dataPath>
         <field>РеквизитДопУпорядочивания</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПредставлениеКредитаСтатьи</dataPath>
-        <field>ПредставлениеКредитаСтатьи</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЭтоГруппа</dataPath>
         <field>ЭтоГруппа</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>СчетУчета</dataPath>
-        <field>СчетУчета</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Субконто1</dataPath>
-        <field>Субконто1</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеЯзык1</dataPath>
-        <field>НаименованиеЯзык1</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеЯзык2</dataPath>
-        <field>НаименованиеЯзык2</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ДополнительныеРеквизиты</dataPath>
-        <field>ДополнительныеРеквизиты</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НастройкиМеждународногоУчета</dataPath>
-        <field>НастройкиМеждународногоУчета</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИмяПредопределенныхДанных</dataPath>
-        <field>ИмяПредопределенныхДанных</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ВерсияДанных</dataPath>
@@ -418,6 +365,141 @@
         <dataPath>АктивПассив</dataPath>
         <field>АктивПассив</field>
       </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Код</dataPath>
+        <field>Код</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыводитьОборот</dataPath>
+        <field>ВыводитьОборот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеДебетаСтатьи</dataPath>
+        <field>ПредставлениеДебетаСтатьи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеКредитаСтатьи</dataPath>
+        <field>ПредставлениеКредитаСтатьи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>БезАналитики</dataPath>
+        <field>БезАналитики</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СчетУчета</dataPath>
+        <field>СчетУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Субконто1</dataPath>
+        <field>Субконто1</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Субконто2</dataPath>
+        <field>Субконто2</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Субконто3</dataPath>
+        <field>Субконто3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяИсточникаДанныхБюджетов</dataPath>
+        <field>ИмяИсточникаДанныхБюджетов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Вид</dataPath>
+        <field>Вид</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыделениеДолгосрочныхАктивовОбязательств</dataPath>
+        <field>ВыделениеДолгосрочныхАктивовОбязательств</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НесобственныеПодконтрольныеЦенности</dataPath>
+        <field>НесобственныеПодконтрольныеЦенности</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникДанных</dataPath>
+        <field>ИсточникДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтборДанных</dataPath>
+        <field>ОтборДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникОбъектовНастройки</dataPath>
+        <field>ИсточникОбъектовНастройки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтборОбъектовНастройки</dataPath>
+        <field>ОтборОбъектовНастройки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникМестУчета</dataPath>
+        <field>ИсточникМестУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СвязиФункциональныхОпций</dataPath>
+        <field>СвязиФункциональныхОпций</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СчетаУчетаВНастройкахПроводок</dataPath>
+        <field>СчетаУчетаВНастройкахПроводок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты</dataPath>
+        <field>ДополнительныеРеквизиты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НастройкиМеждународногоУчета</dataPath>
+        <field>НастройкиМеждународногоУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФункциональныеОпции</dataPath>
+        <field>ФункциональныеОпции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РесурсыУпр</dataPath>
+        <field>РесурсыУпр</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РесурсыРегл</dataPath>
+        <field>РесурсыРегл</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РесурсыВал</dataPath>
+        <field>РесурсыВал</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РесурсыКоличество</dataPath>
+        <field>РесурсыКоличество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПутиКДаннымСубконто</dataPath>
+        <field>ПутиКДаннымСубконто</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <parameters>
+        <name>ДвиженияПоПрочимАктивамПассивам</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Движения по прочим активам пассивам</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>150</length>
+          </stringQualifiers>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <commandInterface>

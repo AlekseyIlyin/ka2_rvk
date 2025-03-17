@@ -289,6 +289,20 @@
         <value>0</value>
       </code>
     </items>
+    <items id="bc986661-4245-4889-b521-62a34944da3b">
+      <name>ДрайверКлеверенсСканерШтрихкода</name>
+      <description>CLEVERENCE:Драйвер ТСД для мобильной платформы 1С</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
+    <items id="df2d0be7-3337-4e84-a1bd-b4cd10dd6ee8">
+      <name>ДрайверКлеверенсТерминалыСбораДанных</name>
+      <description>CLEVERENCE:Терминалы сбора данных</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
     <items id="a84c59ce-c2a6-412b-9992-e693f21a27a1">
       <name>ДрайверERFIDСчитывательRFID</name>
       <description>ERFID:Считыватель RFID</description>
@@ -341,6 +355,13 @@
     <items id="fba1c1d1-7cda-4db0-b24e-6e3c32329615">
       <name>ДрайверMERTECHСканерШтрихкода</name>
       <description>MERTECH:Сканер штрихкода ТСД</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
+    <items id="49048e4b-aec4-46cd-b971-c03981d09e9a">
+      <name>ДрайверMitsu54ФЗ4ФФД12</name>
+      <description>Mitsu:ККТ с передачей данных в ОФД (ФФД 1.2)</description>
       <code xsi:type="core:NumberValue">
         <value>0</value>
       </code>
@@ -429,6 +450,13 @@
         <value>0</value>
       </code>
     </items>
+    <items id="2d66d929-47ec-4669-8b8a-29a78c92a334">
+      <name>ДрайверTACTILIONЭквайринговыеТерминалы</name>
+      <description>TACTILION:Эквайринговые терминалы</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
     <items id="b4ea214d-a176-47d7-81bb-dcdd390486be">
       <name>ДрайверTRPOSЭквайринговыеТерминалы</name>
       <description>TRPOS:Эквайринговые терминалы</description>
@@ -509,6 +537,13 @@
     <items id="9ad973fe-4af3-44ac-8029-20c9ff57e301">
       <name>ДрайверАтолККТ54ФЗ9X</name>
       <description>АТОЛ:ККТ с передачей данных в ОФД (54-ФЗ) 9.x</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
+    <items id="6c1a3b02-3e48-4501-9f85-d7b6aea4b9c8">
+      <name>ДрайверАТОЛККТ54ФЗ10XФФД12X</name>
+      <description>АТОЛ:ККТ с передачей данных в ОФД 10.x (ФФД 1.2) УСН НДС</description>
       <code xsi:type="core:NumberValue">
         <value>0</value>
       </code>
@@ -667,6 +702,13 @@
         <value>0</value>
       </code>
     </items>
+    <items id="d0f633bf-dcc9-4f21-89ab-618d528faacf">
+      <name>ДрайверДримкасККТ54ФЗ44</name>
+      <description>Дримкас:ККТ с передачей данных в ОФД (ФФД 1.2) УСН НДС</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
     <items id="078f45d3-56b2-4aea-8b31-a7c78d225313">
       <name>ДрайверДримкасККТ54ФЗ</name>
       <description>Дримкас:ККТ с передачей данных в ОФД Вики Принт (ФФД 1.2)</description>
@@ -779,23 +821,9 @@
         <value>0</value>
       </code>
     </items>
-    <items id="bc986661-4245-4889-b521-62a34944da3b">
-      <name>ДрайверКлеверенсСканерШтрихкода</name>
-      <description>Клеверенс:Драйвер ТСД для мобильной платформы 1С</description>
-      <code xsi:type="core:NumberValue">
-        <value>0</value>
-      </code>
-    </items>
     <items id="f451d03b-4e0d-47b3-9f82-e53ccbf6addc">
       <name>ДрайверКлеверенсСчитывателиRFID</name>
       <description>Клеверенс:Считыватели RFID</description>
-      <code xsi:type="core:NumberValue">
-        <value>0</value>
-      </code>
-    </items>
-    <items id="df2d0be7-3337-4e84-a1bd-b4cd10dd6ee8">
-      <name>ДрайверКлеверенсТерминалыСбораДанных</name>
-      <description>Клеверенс:Терминалы сбора данных</description>
       <code xsi:type="core:NumberValue">
         <value>0</value>
       </code>
@@ -886,7 +914,7 @@
     </items>
     <items id="37f6a198-4922-4207-b293-952d4de996f2">
       <name>ДрайверНЕВА54ФЗ4ФФД12</name>
-      <description>НЕВА:ККТ с передачей данных в ОФД (ФФД 1.2)</description>
+      <description>НЕВА:ККТ с передачей данных в ОФД (ФФД 1.2) УСН НДС</description>
       <code xsi:type="core:NumberValue">
         <value>0</value>
       </code>
@@ -908,6 +936,20 @@
     <items id="cf2fc20a-c0c8-4b1b-9641-00308a436ad7">
       <name>ДрайверПБФЭквайринговыеТерминалы</name>
       <description>ПБФ:Эквайринговые терминалы</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
+    <items id="0adfad25-f800-4257-8986-e33336bc2b0f">
+      <name>ДрайверПОСЦентрККТ54ФЗ4ФФД12NG</name>
+      <description>ПОСЦентр:ККТ с передачей данных в ОФД (ФФД 1.2) NG УСН НДС</description>
+      <code xsi:type="core:NumberValue">
+        <value>0</value>
+      </code>
+    </items>
+    <items id="7723bc3f-4788-4e9c-8065-6f5e91e8da1b">
+      <name>ДрайверПОСЦентрККТ54ФЗ4ФФД12</name>
+      <description>ПОСЦентр:ККТ с передачей данных в ОФД (ФФД 1.2) УСН НДС</description>
       <code xsi:type="core:NumberValue">
         <value>0</value>
       </code>
@@ -1143,13 +1185,6 @@
         <value>0</value>
       </code>
     </items>
-    <items id="0adfad25-f800-4257-8986-e33336bc2b0f">
-      <name>ДрайверШтрихМККТ54ФЗ4ФФД12NG</name>
-      <description>ШТРИХ-М:ККТ с передачей данных в ОФД (ФФД 1.2) NG</description>
-      <code xsi:type="core:NumberValue">
-        <value>0</value>
-      </code>
-    </items>
     <items id="ee684526-6160-4e81-897a-a74180071fa9">
       <name>ДрайверШтрихМПлатежныйТерминалYarus</name>
       <description>ШТРИХ-М:Платежный терминал Yarus</description>
@@ -1220,7 +1255,7 @@
       <value>Тип оборудования</value>
     </synonym>
     <type>
-      <types>EnumRef.ТипыПодключаемогоОборудования</types>
+      <types>DefinedType.ТипыПодключаемогоОборудования</types>
     </type>
     <toolTip>
       <key>ru</key>

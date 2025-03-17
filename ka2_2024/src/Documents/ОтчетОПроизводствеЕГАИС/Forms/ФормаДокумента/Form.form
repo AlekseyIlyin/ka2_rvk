@@ -1197,6 +1197,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.МаркируемаяПродукцияТЧ</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -3500,6 +3504,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.МаркируемаяПродукцияТЧ</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -6773,6 +6781,7 @@
   <excludedCommands>Post</excludedCommands>
   <excludedCommands>PostAndClose</excludedCommands>
   <excludedCommands>Write</excludedCommands>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

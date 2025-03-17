@@ -123,6 +123,7 @@
   <defaultListForm>Document.ПризПодарок.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.ПризПодарок.Form.ФормаСписка</defaultChoiceForm>
   <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ДанныеДляРасчетаСреднегоЗаработкаФССПоНачислениям</registerRecords>
   <registerRecords>AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</registerRecords>
   <registerRecords>AccumulationRegister.ДополнениеРасчетнойБазыУдержаний</registerRecords>
   <registerRecords>AccumulationRegister.ВзаиморасчетыССотрудниками</registerRecords>
@@ -1891,6 +1892,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="0dd28320-3749-4f9b-bf32-a104d1207a9a">
+      <name>ПримененныйВычетЛичныйНалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примененный вычет личный налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="ec0e5925-fa2e-452c-a964-599948dc2592">
     <producedTypes>
@@ -1993,6 +2008,20 @@
         <key>ru</key>
         <value>ДФ='ММММ гггг'</value>
       </editFormat>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8ea23d7a-c798-49e6-a3ea-43700a19dcf9">
+      <name>НалоговаяБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </synonym>
+      <type>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>

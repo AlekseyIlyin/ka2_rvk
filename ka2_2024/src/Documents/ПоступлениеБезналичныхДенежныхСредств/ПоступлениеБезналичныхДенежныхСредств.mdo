@@ -1247,6 +1247,10 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <choiceParameterLinks>
+      <name>Отбор.БанковскийСчет</name>
+      <field>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.БанковскийСчет</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
       <name>Отбор.Контрагент</name>
       <field>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.Контрагент</field>
     </choiceParameterLinks>

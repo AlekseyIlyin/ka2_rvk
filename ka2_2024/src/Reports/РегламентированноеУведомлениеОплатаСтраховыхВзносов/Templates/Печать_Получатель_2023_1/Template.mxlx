@@ -3652,7 +3652,7 @@
 			<c>
 				<i>5</i>
 				<c>
-					<f>72</f>
+					<f>77</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3662,7 +3662,16 @@
 				</c>
 			</c>
 			<c>
-				<i>8</i>
+				<c>
+					<f>78</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>79</f>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>72</f>
 					<tl>
@@ -3691,8 +3700,13 @@
 		<index>39</index>
 		<row>
 			<columnsID>a56c6b7a-ece3-4333-b49b-ad06e2eb3503</columnsID>
-			<formatIndex>77</formatIndex>
-			<empty>true</empty>
+			<formatIndex>80</formatIndex>
+			<c>
+				<i>6</i>
+				<c>
+					<f>81</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -3703,13 +3717,13 @@
 			<c>
 				<i>3</i>
 				<c>
-					<f>78</f>
+					<f>82</f>
 				</c>
 			</c>
 			<c>
 				<i>6</i>
 				<c>
-					<f>78</f>
+					<f>82</f>
 				</c>
 			</c>
 		</row>
@@ -3717,14 +3731,14 @@
 	<rowsItem>
 		<index>41</index>
 		<row>
-			<formatIndex>79</formatIndex>
+			<formatIndex>83</formatIndex>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>101</id>
-		<formatIndex>80</formatIndex>
+		<formatIndex>84</formatIndex>
 		<beginRow>1</beginRow>
 		<beginRowOffset>0</beginRowOffset>
 		<endRow>1</endRow>
@@ -3741,7 +3755,7 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>102</id>
-		<formatIndex>80</formatIndex>
+		<formatIndex>84</formatIndex>
 		<beginRow>1</beginRow>
 		<beginRowOffset>0</beginRowOffset>
 		<endRow>6</endRow>
@@ -3758,7 +3772,7 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>103</id>
-		<formatIndex>81</formatIndex>
+		<formatIndex>85</formatIndex>
 		<beginRow>1</beginRow>
 		<beginRowOffset>0</beginRowOffset>
 		<endRow>3</endRow>
@@ -3775,7 +3789,7 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>104</id>
-		<formatIndex>81</formatIndex>
+		<formatIndex>85</formatIndex>
 		<beginRow>1</beginRow>
 		<beginRowOffset>0</beginRowOffset>
 		<endRow>3</endRow>
@@ -3792,7 +3806,7 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>105</id>
-		<formatIndex>81</formatIndex>
+		<formatIndex>85</formatIndex>
 		<beginRow>37</beginRow>
 		<beginRowOffset>0</beginRowOffset>
 		<endRow>41</endRow>
@@ -3809,7 +3823,7 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>106</id>
-		<formatIndex>81</formatIndex>
+		<formatIndex>85</formatIndex>
 		<beginRow>35</beginRow>
 		<beginRowOffset>33</beginRowOffset>
 		<endRow>39</endRow>
@@ -3824,7 +3838,7 @@
 		<pictureIndex>6</pictureIndex>
 	</drawing>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>82</defaultFormatIndex>
+	<defaultFormatIndex>86</defaultFormatIndex>
 	<height>42</height>
 	<vgRows>42</vgRows>
 	<merge>
@@ -4021,8 +4035,8 @@
 	</merge>
 	<merge>
 		<r>38</r>
-		<c>5</c>
-		<w>2</w>
+		<c>6</c>
+		<h>1</h>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ДатаДокПолучатель_1</name>
@@ -5576,6 +5590,17 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ТекстовоеПредставлениеДатыПодписи</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>38</beginRow>
+			<endRow>39</endRow>
+			<beginColumn>6</beginColumn>
+			<endColumn>6</endColumn>
+			<columnsID>a56c6b7a-ece3-4333-b49b-ad06e2eb3503</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>ФамилияПолучатель_1</name>
 		<area>
 			<type>Rectangle</type>
@@ -6012,6 +6037,7 @@
 	<font faceName="Courier New" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="5" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="7" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>8</width>
 	</format>
@@ -6322,7 +6348,33 @@
 		<height>8</height>
 	</format>
 	<format>
+		<font>6</font>
+		<leftBorder>0</leftBorder>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Cut</textPlacement>
+	</format>
+	<format>
+		<font>7</font>
+		<height>37</height>
+		<width>184</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Cut</textPlacement>
+	</format>
+	<format>
+		<font>6</font>
+		<rightBorder>0</rightBorder>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Cut</textPlacement>
+	</format>
+	<format>
 		<height>13</height>
+	</format>
+	<format>
+		<height>13</height>
+		<width>184</width>
 	</format>
 	<format>
 		<topBorder>2</topBorder>

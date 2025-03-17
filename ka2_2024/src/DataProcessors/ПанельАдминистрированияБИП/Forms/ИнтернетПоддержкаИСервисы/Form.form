@@ -364,7 +364,7 @@
           <id>1737</id>
           <items xsi:type="form:Button">
             <name>ТехническаяИнформация</name>
-            <id>2101</id>
+            <id>2103</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -372,7 +372,7 @@
             </userVisible>
             <extendedTooltip>
               <name>ТехническаяИнформацияРасширеннаяПодсказка</name>
-              <id>2102</id>
+              <id>2104</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3105,6 +3105,33 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
       </items>
+      <items xsi:type="form:Button">
+        <name>ДосьеКонтрагента</name>
+        <id>2120</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДосьеКонтрагентаРасширеннаяПодсказка</name>
+          <id>2121</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ДосьеКонтрагента</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -3173,6 +3200,37 @@
         <autoMaxHeight>true</autoMaxHeight>
         <placementArea>UserCmds</placementArea>
         <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияПроверкаКонтрагентовОтступ</name>
+        <id>2122</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияПроверкаКонтрагентовОтступРасширеннаяПодсказка</name>
+          <id>2124</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияПроверкаКонтрагентовОтступКонтекстноеМеню</name>
+          <id>2123</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>3</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -5380,6 +5438,50 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаСистемаБыстрыхПлатежейПраво</name>
       <id>1986</id>
+      <items xsi:type="form:Decoration">
+        <name>НастройкаОтображенияКоманд</name>
+        <id>2105</id>
+        <title>
+          <key>ru</key>
+          <value>Настройка отображения команд</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <toolTip>
+          <key>ru</key>
+          <value>Настройка отображения команды формирования платежной ссылки в оптовых документах.</value>
+        </toolTip>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <extendedTooltip>
+          <name>НастройкаОтображенияКомандРасширеннаяПодсказка</name>
+          <id>2107</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>НастройкаОтображенияКомандКонтекстноеМеню</name>
+          <id>2106</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>НастройкаОтображенияКомандНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаДлительностьОперации</name>
         <id>1943</id>
@@ -5394,6 +5496,7 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ДлительностьОперацииПлатежнойСистемы</segments>
           </dataPath>
+          <titleLocation>Top</titleLocation>
           <toolTip>
             <key>ru</key>
             <value>Длительность ожидания подтверждения
@@ -5503,7 +5606,7 @@
       </extendedTooltip>
       <type>UsualGroup</type>
       <extInfo xsi:type="form:UsualGroupExtInfo">
-        <group>AlwaysHorizontal</group>
+        <group>Vertical</group>
         <showLeftMargin>true</showLeftMargin>
         <united>true</united>
         <throughAlign>Auto</throughAlign>
@@ -5767,7 +5870,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>ОнлайнОплаты</segments>
+          <segments>ИспользоватьОнлайнОплаты</segments>
         </dataPath>
         <titleLocation>Right</titleLocation>
         <toolTip>
@@ -6202,6 +6305,196 @@
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
       <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаОнлайнЗаказы</name>
+    <id>2108</id>
+    <items xsi:type="form:FormGroup">
+      <name>ОнлайнЗаказыЛево</name>
+      <id>2110</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНастройкиСтраниц</name>
+        <id>2112</id>
+        <items xsi:type="form:Button">
+          <name>ОткрытьНастройкиСтраницОнлайнЗаказов</name>
+          <id>2114</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьНастройкиСтраницОнлайнЗаказовРасширеннаяПодсказка</name>
+            <id>2115</id>
+            <title>
+              <key>ru</key>
+              <value>Настройки страниц для выставления онлайн-заказов и получения информации об оплатах.</value>
+            </title>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.ОткрытьНастройкиСтраницОнлайнЗаказов</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ГруппаНастройкиСтраницРасширеннаяПодсказка</name>
+          <id>2113</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНастройкиШаблоновСообщенийОнлайнЗаказов</name>
+        <id>2116</id>
+        <items xsi:type="form:Button">
+          <name>ОткрытьШаблоныСообщенийОнлайнЗаказов</name>
+          <id>2118</id>
+          <title>
+            <key>ru</key>
+            <value>Шаблоны сообщений</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьШаблоныСообщенийОнлайнЗаказовРасширеннаяПодсказка</name>
+            <id>2119</id>
+            <title>
+              <key>ru</key>
+              <value>Шаблоны необходимы для отправки писем и SMS со ссылками по онлайн-заказам.</value>
+            </title>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.ОткрытьШаблоныСообщенийОнлайнЗаказов</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа настройки шаблонов сообщений онлайн-заказов</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаНастройкиШаблоновСообщенийОнлайнЗаказовРасширеннаяПодсказка</name>
+          <id>2117</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ОнлайнЗаказыЛевоРасширеннаяПодсказка</name>
+        <id>2111</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Онлайн-заказы</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаОнлайнЗаказыРасширеннаяПодсказка</name>
+      <id>2109</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>AlwaysHorizontal</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <controlRepresentation>Picture</controlRepresentation>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
       <showTitle>true</showTitle>
       <throughAlign>Auto</throughAlign>
       <currentRowUse>Auto</currentRowUse>
@@ -6857,11 +7150,7 @@
     </title>
     <id>24</id>
     <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>
@@ -7019,10 +7308,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ОнлайнОплаты</name>
+    <name>ИспользоватьОнлайнОплаты</name>
     <title>
       <key>ru</key>
-      <value>Онлайн оплаты</value>
+      <value>Использовать онлайн оплаты</value>
     </title>
     <id>7</id>
     <valueType>
@@ -7839,6 +8128,69 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ТехническаяИнформация</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьНастройкиСтраницОнлайнЗаказов</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки страниц</value>
+    </title>
+    <id>28</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть настройки страниц онлайн-заказов</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьНастройкиСтраницОнлайнЗаказов</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьШаблоныСообщенийОнлайнЗаказов</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть шаблоны сообщений онлайн-заказов</value>
+    </title>
+    <id>29</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть шаблоны сообщений онлайн-заказов</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьШаблоныСообщенийОнлайнЗаказов</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ДосьеКонтрагента</name>
+    <title>
+      <key>ru</key>
+      <value>Досье контрагента</value>
+    </title>
+    <id>30</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Информация о контрагенте из ЕГРЮЛ (ЕГРИП), ФНС, Росстата, Единого реестра проверок и др.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДосьеКонтрагента</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

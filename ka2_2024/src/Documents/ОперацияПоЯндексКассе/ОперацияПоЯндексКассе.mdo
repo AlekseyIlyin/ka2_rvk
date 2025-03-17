@@ -100,6 +100,7 @@
   <defaultObjectForm>Document.ОперацияПоЯндексКассе.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ОперацияПоЯндексКассе.Form.ФормаСпискаДокументов</defaultListForm>
   <defaultChoiceForm>Document.ОперацияПоЯндексКассе.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <registerRecords>InformationRegister.ИсправленияДокументов</registerRecords>
   <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
@@ -154,6 +155,10 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.БанковскийСчет</name>
+      <field>Document.ОперацияПоЯндексКассе.Attribute.БанковскийСчет</field>
+    </choiceParameterLinks>
     <choiceParameterLinks>
       <name>Отбор.Организация</name>
       <field>Document.ОперацияПоЯндексКассе.Attribute.Организация</field>

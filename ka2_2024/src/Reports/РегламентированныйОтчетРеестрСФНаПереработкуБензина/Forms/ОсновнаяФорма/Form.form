@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
-    <value>Реестр счетов-фактур на переработку бензина</value>
+    <value>Реестр счетов-фактур на переработку бензина (КНД 1115012)</value>
   </title>
   <items xsi:type="form:FormGroup">
     <name>ГруппаПолей</name>
@@ -67,7 +67,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ОрганизацияExtendedTooltip</name>
+          <name>ОрганизацияРасширеннаяПодсказка</name>
           <id>19</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -118,7 +118,7 @@
         <value>Группа организация</value>
       </toolTip>
       <extendedTooltip>
-        <name>ГруппаОрганизацияExtendedTooltip</name>
+        <name>ГруппаОрганизацияРасширеннаяПодсказка</name>
         <id>18</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -198,7 +198,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>УстановитьПредыдущийПериодExtendedTooltip</name>
+          <name>УстановитьПредыдущийПериодРасширеннаяПодсказка</name>
           <id>21</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -282,7 +282,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>УстановитьСледующийПериодExtendedTooltip</name>
+          <name>УстановитьСледующийПериодРасширеннаяПодсказка</name>
           <id>23</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -466,7 +466,7 @@
           </dataPath>
           <titleLocation>None</titleLocation>
           <extendedTooltip>
-            <name>ОписаниеНормативДокExtendedTooltip</name>
+            <name>ОписаниеНормативДокРасширеннаяПодсказка</name>
             <id>25</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -610,7 +610,7 @@
       </toolTip>
       <verticalStretch>false</verticalStretch>
       <extendedTooltip>
-        <name>ГруппаФормаExtendedTooltip</name>
+        <name>ГруппаФормаРасширеннаяПодсказка</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -683,7 +683,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОткрытьФормуОтчетаExtendedTooltip</name>
+        <name>ОткрытьФормуОтчетаРасширеннаяПодсказка</name>
         <id>16</id>
         <visible>true</visible>
         <enabled>true</enabled>

@@ -6,33 +6,75 @@
     <items xsi:type="form:FormGroup">
       <name>СтраницаОсновное</name>
       <id>483</id>
-      <items xsi:type="form:FormField">
-        <name>ВидКоррекции</name>
-        <id>469</id>
-        <visible>true</visible>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ВидКоррекции</segments>
-        </dataPath>
-        <titleLocation>None</titleLocation>
-        <toolTip>
-          <key>ru</key>
-          <value>Вид коррекции</value>
-        </toolTip>
-        <handlers>
-          <event>OnChange</event>
-          <name>ВидКоррекцииПриИзменении</name>
-        </handlers>
-        <extendedTooltip>
-          <name>ВидКоррекцииРасширеннаяПодсказка</name>
-          <id>471</id>
+      <items xsi:type="form:FormGroup">
+        <name>Группа2</name>
+        <id>602</id>
+        <items xsi:type="form:FormField">
+          <name>ВидКоррекции</name>
+          <id>604</id>
+          <title>
+            <key>ru</key>
+            <value>Вид коррекции</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ВидКоррекции</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ВидКоррекцииПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ВидКоррекцииРасширеннаяПодсказка</name>
+            <id>606</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ВидКоррекцииКонтекстноеМеню</name>
+            <id>605</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <radioButtonsType>Tumbler</radioButtonsType>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа2</value>
+        </title>
+        <extendedTooltip>
+          <name>Группа2РасширеннаяПодсказка</name>
+          <id>603</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -40,41 +82,14 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>ВидКоррекцииКонтекстноеМеню</name>
-          <id>470</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>RadioButtonField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-          <radioButtonsType>Tumbler</radioButtonsType>
-          <choiceList>
-            <presentation>
-              <key>ru</key>
-              <value>Исправление ошибки</value>
-            </presentation>
-            <value xsi:type="core:NumberValue">
-              <value>0</value>
-            </value>
-          </choiceList>
-          <choiceList>
-            <presentation>
-              <key>ru</key>
-              <value>Неприменение ККТ</value>
-            </presentation>
-            <value xsi:type="core:NumberValue">
-              <value>1</value>
-            </value>
-          </choiceList>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -1107,6 +1122,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Наборы</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1404,6 +1423,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2468,6 +2491,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3950,7 +3977,7 @@
                 <textEdit>true</textEdit>
                 <choiceList>
                   <value xsi:type="core:ReferenceValue">
-                    <value>Enum.СтатусыЧековККМ.EnumValue.ТоварЗарезервирован</value>
+                    <value>Enum.СтатусыЧековККМ.EnumValue.ОтложенСРезервированием</value>
                   </value>
                 </choiceList>
                 <choiceList>
@@ -3969,7 +3996,7 @@
                     <value>Чек не пробит</value>
                   </presentation>
                   <value xsi:type="core:ReferenceValue">
-                    <value>Enum.СтатусыЧековККМ.EnumValue.Отложен</value>
+                    <value>Enum.СтатусыЧековККМ.EnumValue.ОтложенБезРезервирования</value>
                   </value>
                 </choiceList>
                 <choiceList>

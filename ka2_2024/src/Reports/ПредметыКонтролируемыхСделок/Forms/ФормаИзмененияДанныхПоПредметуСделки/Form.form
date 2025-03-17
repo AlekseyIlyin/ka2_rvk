@@ -288,6 +288,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>КодОКВЭД2</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>КодОКВЭД2ПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>КодОКВЭД2РасширеннаяПодсказка</name>
           <id>57</id>
@@ -319,10 +323,19 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <width>10</width>
+          <handlers>
+            <event>AutoComplete</event>
+            <name>КодОКВЭД2АвтоПодбор</name>
+          </handlers>
+          <handlers>
+            <event>StartChoice</event>
+            <name>КодОКВЭД2НачалоВыбора</name>
+          </handlers>
+          <width>19</width>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -337,7 +350,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>КодОКВЭД2.Description</segments>
+          <segments>НаименованиеОКВЭД2</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
@@ -1037,7 +1050,10 @@
     </title>
     <id>1</id>
     <valueType>
-      <types>CatalogRef.КлассификаторОКВЭД2</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
     </valueType>
     <view>
       <common>true</common>
@@ -1066,6 +1082,26 @@
     </edit>
     <functionalOptions>FunctionalOption.ИспользоватьУведомленияОКонтролируемыхСделках</functionalOptions>
     <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>НаименованиеОКВЭД2</name>
+    <title>
+      <key>ru</key>
+      <value>Наименование ОКВЭД2</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>Записать</name>

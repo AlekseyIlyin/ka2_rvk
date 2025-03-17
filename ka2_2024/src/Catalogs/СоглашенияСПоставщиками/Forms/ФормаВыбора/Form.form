@@ -1120,7 +1120,7 @@
 	Справочник.СоглашенияСПоставщиками КАК СправочникСоглашенияСПоставщиками
 ГДЕ
 	НЕ СправочникСоглашенияСПоставщиками.ПометкаУдаления
-	И СправочникСоглашенияСПоставщиками.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыСоглашенийСПоставщиками.Действует)
+	И (&amp;РазрешитьВыборНедействующих ИЛИ СправочникСоглашенияСПоставщиками.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыСоглашенийСПоставщиками.Действует))
 </queryText>
       <mainTable>Catalog.СоглашенияСПоставщиками</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
@@ -1483,6 +1483,22 @@
         </values>
         <useRestriction>true</useRestriction>
       </parameters>
+      <parameters>
+        <name>РазрешитьВыборНедействующих</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Разрешить выбор недействующих</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -1595,6 +1611,12 @@
       <types>CatalogRef.Партнеры</types>
     </valueType>
     <keyParameter>true</keyParameter>
+  </parameters>
+  <parameters>
+    <name>РазрешитьВыборНедействующих</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
   </parameters>
   <commandInterface>
     <navigationPanel/>

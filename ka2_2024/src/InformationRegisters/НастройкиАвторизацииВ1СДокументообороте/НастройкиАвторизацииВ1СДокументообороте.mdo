@@ -12,7 +12,7 @@
   <name>НастройкиАвторизацииВ1СДокументообороте</name>
   <synonym>
     <key>ru</key>
-    <value>Настройки авторизации в 1С;Документообороте</value>
+    <value>Настройки авторизации в 1С:Документообороте</value>
   </synonym>
   <editType>InDialog</editType>
   <standardAttributes>
@@ -141,7 +141,7 @@
       <value>Пользователь</value>
     </synonym>
     <type>
-      <types>CatalogRef.Пользователи</types>
+      <types>DefinedType.Пользователь</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

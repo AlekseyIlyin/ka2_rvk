@@ -45,6 +45,29 @@
     </synonym>
     <comment>АПК:58</comment>
   </enumValues>
+  <enumValues uuid="d237014c-8d8b-4bc3-9fb4-fcf1da723111">
+    <name>ДовольствиеСВОвДенежнойФорме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Довольствие, связанное с участием в СВО, в денежной форме</value>
+    </synonym>
+    <comment>АПК:58</comment>
+  </enumValues>
+  <enumValues uuid="073b300f-c6a9-42c1-b31b-ad1e6170b46d">
+    <name>РайонныеСеверныеНадбавки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Районные, северные надбавки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="510d0080-89a5-407e-8f4d-5adf65ef2881">
+    <name>РайонныеСеверныеНадбавкиАУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Районные, северные надбавки при АУСН</value>
+    </synonym>
+    <comment>АПК:58</comment>
+  </enumValues>
   <enumValues uuid="b273a5ad-df81-46aa-bd89-d7422267d072">
     <name>ДоходВНатуральнойФормеОтТрудовойДеятельности</name>
     <synonym>
@@ -53,11 +76,11 @@
     </synonym>
     <comment>АПК:58</comment>
   </enumValues>
-  <enumValues uuid="3163597e-0e44-4c9f-bb8f-640090f2cd2b">
-    <name>ПрочиеНатуральныеДоходы</name>
+  <enumValues uuid="10042024-001d-46d3-989f-985ba2a2318a">
+    <name>ДовольствиеСВОвНатуральнойФорме</name>
     <synonym>
       <key>ru</key>
-      <value>Натуральный доход (основная налоговая база)</value>
+      <value>Довольствие, связанное с участием в СВО, в натуральной форме</value>
     </synonym>
     <comment>АПК:58</comment>
   </enumValues>
@@ -66,6 +89,14 @@
     <synonym>
       <key>ru</key>
       <value>Прочие денежные доходы от трудовой деятельности (основная налоговая база)</value>
+    </synonym>
+    <comment>АПК:58</comment>
+  </enumValues>
+  <enumValues uuid="3163597e-0e44-4c9f-bb8f-640090f2cd2b">
+    <name>ПрочиеНатуральныеДоходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Натуральный доход (основная налоговая база)</value>
     </synonym>
     <comment>АПК:58</comment>
   </enumValues>
@@ -221,37 +252,6 @@
     <synonym>
       <key>ru</key>
       <value>Прочие доходы при АУСН (основная налоговая база)</value>
-    </synonym>
-    <comment>АПК:58</comment>
-  </enumValues>
-  <enumValues uuid="d237014c-8d8b-4bc3-9fb4-fcf1da723111">
-    <name>ДовольствиеСВОвДенежнойФорме</name>
-    <synonym>
-      <key>ru</key>
-      <value>Довольствие, связанное с участием в СВО, в денежной форме</value>
-    </synonym>
-    <comment>АПК:58</comment>
-  </enumValues>
-  <enumValues uuid="10042024-001d-46d3-989f-985ba2a2318a">
-    <name>ДовольствиеСВОвНатуральнойФорме</name>
-    <synonym>
-      <key>ru</key>
-      <value>Довольствие, связанное с участием в СВО, в натуральной форме</value>
-    </synonym>
-    <comment>АПК:58</comment>
-  </enumValues>
-  <enumValues uuid="073b300f-c6a9-42c1-b31b-ad1e6170b46d">
-    <name>РайонныеСеверныеНадбавки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Районные, северные надбавки</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="510d0080-89a5-407e-8f4d-5adf65ef2881">
-    <name>РайонныеСеверныеНадбавкиАУСН</name>
-    <synonym>
-      <key>ru</key>
-      <value>Районные, северные надбавки при АУСН</value>
     </synonym>
     <comment>АПК:58</comment>
   </enumValues>

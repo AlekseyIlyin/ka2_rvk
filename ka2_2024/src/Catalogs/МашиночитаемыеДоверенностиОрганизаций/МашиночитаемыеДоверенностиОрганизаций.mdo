@@ -1479,6 +1479,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="56a717d7-06fd-4025-b822-44085f252796">
+    <name>ОписаниеОшибкиРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки регистрации в реестре</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="37d27fda-e96a-4b8f-9bce-6be95f1595a0">
     <producedTypes>
       <objectType typeId="46427e37-8a70-4d97-8582-42938727ef5a" valueTypeId="7fa70e0c-00e9-4736-878f-f5feacbd589d"/>

@@ -66,8 +66,16 @@
 					</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -109,6 +117,12 @@
 			<valueType>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Валюты</v8:Type>
 			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">18</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ДанныеКонтрагентаСуммаНашДолг</dataPath>
@@ -130,8 +144,16 @@
 					</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -169,7 +191,11 @@
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -193,8 +219,16 @@
 					</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -207,6 +241,29 @@
 					<v8:content>Долг контрагента (расхождения)</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>РасхожденияНашДолг</dataPath>
@@ -217,79 +274,71 @@
 					<v8:content>Наш долг (расхождения)</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+		<query>// В отчет выводится список всех проведенных документов сверки за указанный период
+// и строки с расхождениями по каждому документу сверки если есть.
+// В группировке первого уровня по организации в колонках "Наш долг", "Долг контрагента" по данным организации и контрагента
+// выводится конечное сальдо по текущей организации (сальдо расчитывается в выражении ресурса на закладке Ресурсы).
+// В группировке второго уровня по документу сверки в колонках "Наш долг", "Долг контрагента" по данным организации и контрагента
+// выводится конечное сальдо по текущему документу. 
+// Это конечное сальдо должно совпадать с тем, что выводится в печатной форме акта сверки этого документа.
+// В группировке третьего уровня по расчетному документу в колонках "Наш долг", "Долг контрагента" 
+// выводятся суммы для конкретного расчетного документа по которому в табличной части документа сверки указано расхождение.
+// В группировке по расчетному документу выводятся только строки с расхождениями.
+// Если нет расхождений, то колонка "Наш долг" по данным организации равняется колонке "Наш долг" по данным контрагента.
+// Для колонки "Долг контрагента" тоже самое.
+
+// Документ.СверкаВзаиморасчетов2_4
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	ШапкаДокумента.Ссылка КАК СверкаВзаиморасчетов,
+	ТаблицаДокумента.ТипРасчетов КАК ТипРасчетов,
 	ШапкаДокумента.Организация КАК Организация,
 	ШапкаДокумента.Контрагент КАК Контрагент,
+	ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами КАК ЭтоРасчетыСКлиентами,
 	ТаблицаДокумента.Партнер КАК Партнер,
 	ТаблицаДокумента.ОбъектРасчетов.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
 	ТаблицаДокумента.ОбъектРасчетов КАК ОбъектРасчетов,
 	ТаблицаДокумента.РасчетныйДокумент КАК РасчетныйДокумент,
 	ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
-		ТОГДА ВЫБОР КОГДА ТаблицаДокумента.СуммаДолгКонтрагент &lt; ТаблицаДокумента.СуммаАвансКонтрагент
-				ТОГДА ТаблицаДокумента.СуммаАвансКонтрагент - ТаблицаДокумента.СуммаДолгКонтрагент
-				ИНАЧЕ 0
-			КОНЕЦ
-		ИНАЧЕ ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &lt; ТаблицаДокумента.СуммаАванс
-				ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
-				ИНАЧЕ 0
-			КОНЕЦ
-	КОНЕЦ КАК ДанныеКонтрагентаСуммаДолгПартнера,
+		ТОГДА ТаблицаДокумента.СуммаДолгКонтрагент
+		ИНАЧЕ ТаблицаДокумента.СуммаДолг
+	КОНЕЦ КАК СуммаДолгКонтрагент,
 	ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
-		ТОГДА ВЫБОР КОГДА ТаблицаДокумента.СуммаДолгКонтрагент &gt; ТаблицаДокумента.СуммаАвансКонтрагент
-				ТОГДА ТаблицаДокумента.СуммаДолгКонтрагент - ТаблицаДокумента.СуммаАвансКонтрагент
-				ИНАЧЕ 0
-			КОНЕЦ
-		ИНАЧЕ ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &gt; ТаблицаДокумента.СуммаАванс
-				ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
-				ИНАЧЕ 0
-			КОНЕЦ
-	КОНЕЦ КАК ДанныеКонтрагентаСуммаНашДолг,
-
-	ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &gt; ТаблицаДокумента.СуммаАванс
-		ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
-		ИНАЧЕ 0
-	КОНЕЦ КАК ДанныеОрганизацииСуммаДолгПартнера,
-	ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &lt; ТаблицаДокумента.СуммаАванс
-		ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
-		ИНАЧЕ 0
-	КОНЕЦ КАК ДанныеОрганизацииСуммаНашДолг,
+		ТОГДА ТаблицаДокумента.СуммаАвансКонтрагент
+		ИНАЧЕ ТаблицаДокумента.СуммаАванс
+	КОНЕЦ КАК СуммаАвансКонтрагент,
 	
-	ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
-		ТОГДА ВЫБОР КОГДА ТаблицаДокумента.СуммаДолгКонтрагент &lt; ТаблицаДокумента.СуммаАвансКонтрагент
-				ТОГДА ТаблицаДокумента.СуммаАвансКонтрагент - ТаблицаДокумента.СуммаДолгКонтрагент
-				ИНАЧЕ 0
-			КОНЕЦ
-		ИНАЧЕ ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &lt; ТаблицаДокумента.СуммаАванс
-				ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
-				ИНАЧЕ 0
-			КОНЕЦ
-	КОНЕЦ - ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &lt; ТаблицаДокумента.СуммаАванс
-		ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
-		ИНАЧЕ 0
-	КОНЕЦ КАК РасхожденияДолгПартнера,
-	
-	-(ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
-		ТОГДА ВЫБОР КОГДА ТаблицаДокумента.СуммаДолгКонтрагент &gt; ТаблицаДокумента.СуммаАвансКонтрагент
-				ТОГДА ТаблицаДокумента.СуммаДолгКонтрагент - ТаблицаДокумента.СуммаАвансКонтрагент
-				ИНАЧЕ 0
-			КОНЕЦ
-		ИНАЧЕ ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &gt; ТаблицаДокумента.СуммаАванс
-				ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
-				ИНАЧЕ 0
-			КОНЕЦ
-	КОНЕЦ - ВЫБОР КОГДА ТаблицаДокумента.СуммаДолг &gt; ТаблицаДокумента.СуммаАванс
-		ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
-		ИНАЧЕ 0
-	КОНЕЦ) КАК РасхожденияНашДолг
-ПОМЕСТИТЬ втДанные
+	ТаблицаДокумента.СуммаДолг КАК СуммаДолг,
+	ТаблицаДокумента.СуммаАванс КАК СуммаАванс
+ПОМЕСТИТЬ втДетальныеЗаписиРасчеты
 ИЗ
 	Документ.СверкаВзаиморасчетов2_4 КАК ШапкаДокумента
 	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СверкаВзаиморасчетов2_4.ДетальныеЗаписиРасчеты КАК ТаблицаДокумента
 		ПО ШапкаДокумента.Ссылка = ТаблицаДокумента.Ссылка
-
 ГДЕ
 	ШапкаДокумента.Проведен
 	И НЕ (ИСТИНА В (
@@ -316,25 +365,234 @@
 		)
 	)
 }
+;
 
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
+// Начальное сальдо Документ.СверкаВзаиморасчетов2_4
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	ШапкаДокумента.Ссылка КАК СверкаВзаиморасчетов,
+	ТаблицаДокумента.ТипРасчетов КАК ТипРасчетов,
 	ШапкаДокумента.Организация КАК Организация,
 	ШапкаДокумента.Контрагент КАК Контрагент,
 	ТаблицаДокумента.Партнер КАК Партнер,
-	//ТаблицаДокумента.ОбъектРасчетов.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	НЕОПРЕДЕЛЕНО КАК ВалютаВзаиморасчетов,
+	НЕОПРЕДЕЛЕНО КАК ОбъектРасчетов,
+	НЕОПРЕДЕЛЕНО КАК РасчетныйДокумент,
+	
+	//по данным контрагента
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &gt; 0
+			ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдо)
+		КОГДА НЕ ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &lt; 0
+			ТОГДА -СУММА(ТаблицаДокумента.НачальноеСальдо)
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаДолгПартнера,
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &lt; 0
+			ТОГДА -СУММА(ТаблицаДокумента.НачальноеСальдо)
+		КОГДА НЕ ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &gt; 0
+			ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдо)
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаНашДолг,
+	
+	//по данным организации
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &gt; 0
+			ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдо)
+		КОГДА НЕ ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &lt; 0
+			ТОГДА -СУММА(ТаблицаДокумента.НачальноеСальдо)
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаДолгПартнера,
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &lt; 0
+			ТОГДА -СУММА(ТаблицаДокумента.НачальноеСальдо)
+		КОГДА НЕ ТаблицаДокумента.ТипРасчетов = &amp;РасчетыСКлиентами И СУММА(ТаблицаДокумента.НачальноеСальдо) &gt; 0
+			ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдо)
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаНашДолг,
+	
+	//расхождения
+	0 КАК РасхожденияДолгПартнера,
+	0 КАК РасхожденияНашДолг
+ПОМЕСТИТЬ втДанныеДокументовСверки
+ИЗ
+	Документ.СверкаВзаиморасчетов2_4 КАК ШапкаДокумента
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СверкаВзаиморасчетов2_4.ГруппировкиРасчеты КАК ТаблицаДокумента
+		ПО ШапкаДокумента.Ссылка = ТаблицаДокумента.Ссылка
+ГДЕ
+	ШапкаДокумента.Проведен
+	И НЕ (ИСТИНА В (
+			ВЫБРАТЬ ПЕРВЫЕ 1
+				ИСТИНА
+			ИЗ
+				Документ.СверкаВзаиморасчетов2_4.ДанныеКонтрагента КАК ДанныеКонтрагента
+			ГДЕ
+				ШапкаДокумента.Ссылка = ДанныеКонтрагента.Ссылка
+		)
+	)
+СГРУППИРОВАТЬ ПО
+	ШапкаДокумента.Ссылка,
+	ТаблицаДокумента.ТипРасчетов,
+	ШапкаДокумента.Организация,
+	ШапкаДокумента.Контрагент,
+	ТаблицаДокумента.Партнер
+{ГДЕ
+	ШапкаДокумента.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+}
+{ГДЕ
+	НЕ (ИСТИНА В (
+			ВЫБРАТЬ ПЕРВЫЕ 1
+				ИСТИНА
+			ИЗ
+				Документ.СверкаВзаиморасчетов2_4.ГруппировкиФинансовыеИнструменты КАК ФинИнструменты
+			ГДЕ
+				ШапкаДокумента.Ссылка = ФинИнструменты.Ссылка
+				И ФинИнструменты.ТипРасчетов В (&amp;ЗапрещенныеТипыРасчетов)
+		)
+	)
+}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+// Обороты Документ.СверкаВзаиморасчетов2_4
+ВЫБРАТЬ
+	ТаблицаДокумента.СверкаВзаиморасчетов КАК СверкаВзаиморасчетов,
+	ТаблицаДокумента.ТипРасчетов КАК ТипРасчетов,
+	ТаблицаДокумента.Организация КАК Организация,
+	ТаблицаДокумента.Контрагент КАК Контрагент,
+	ТаблицаДокумента.Партнер КАК Партнер,
+	ТаблицаДокумента.ОбъектРасчетов.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	ТаблицаДокумента.ОбъектРасчетов КАК ОбъектРасчетов,
+	ТаблицаДокумента.РасчетныйДокумент КАК РасчетныйДокумент,
+	
+	//по данным контрагента
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаДолгКонтрагент &gt; ТаблицаДокумента.СуммаАвансКонтрагент
+			ТОГДА ТаблицаДокумента.СуммаДолгКонтрагент - ТаблицаДокумента.СуммаАвансКонтрагент
+		КОГДА НЕ ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаДолгКонтрагент &lt; ТаблицаДокумента.СуммаАвансКонтрагент
+			ТОГДА ТаблицаДокумента.СуммаАвансКонтрагент - ТаблицаДокумента.СуммаДолгКонтрагент
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаДолгПартнера,
+	ВЫБОР
+		КОГДА ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаАвансКонтрагент &gt; ТаблицаДокумента.СуммаДолгКонтрагент
+			ТОГДА ТаблицаДокумента.СуммаАвансКонтрагент - ТаблицаДокумента.СуммаДолгКонтрагент
+		КОГДА НЕ ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаАвансКонтрагент &lt; ТаблицаДокумента.СуммаДолгКонтрагент
+			ТОГДА ТаблицаДокумента.СуммаДолгКонтрагент - ТаблицаДокумента.СуммаАвансКонтрагент
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаНашДолг,
+	
+	//по данным организации
+	ВЫБОР 
+		КОГДА ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаДолг &gt; ТаблицаДокумента.СуммаАванс
+			ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
+		КОГДА НЕ ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаДолг &lt; ТаблицаДокумента.СуммаАванс
+			ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
+		ИНАЧЕ 
+			0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаДолгПартнера,
+	ВЫБОР 
+		КОГДА ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаАванс &gt; ТаблицаДокумента.СуммаДолг
+			ТОГДА ТаблицаДокумента.СуммаАванс - ТаблицаДокумента.СуммаДолг
+		КОГДА НЕ ТаблицаДокумента.ЭтоРасчетыСКлиентами И ТаблицаДокумента.СуммаАванс &lt; ТаблицаДокумента.СуммаДолг
+			ТОГДА ТаблицаДокумента.СуммаДолг - ТаблицаДокумента.СуммаАванс
+		ИНАЧЕ
+			0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаНашДолг,
+	
+	//расхождения
+	ТаблицаДокумента.СуммаДолгКонтрагент - ТаблицаДокумента.СуммаДолг КАК РасхожденияДолгПартнера,
+	-(ТаблицаДокумента.СуммаАвансКонтрагент - ТаблицаДокумента.СуммаАванс) КАК РасхожденияНашДолг
+ИЗ
+	втДетальныеЗаписиРасчеты КАК ТаблицаДокумента
+
+ОБЪЕДИНИТЬ ВСЕ
+
+//Начальное сальдо Документ.СверкаВзаиморасчетов2_5_11
+ВЫБРАТЬ
+	ШапкаДокумента.Ссылка КАК СверкаВзаиморасчетов,
+	ТаблицаДокумента.ТипРасчетов КАК ТипРасчетов,
+	ШапкаДокумента.Организация КАК Организация,
+	ШапкаДокумента.Контрагент КАК Контрагент,
+	ТаблицаДокумента.Партнер КАК Партнер,
+	НЕОПРЕДЕЛЕНО КАК ВалютаВзаиморасчетов,
+	НЕОПРЕДЕЛЕНО КАК ОбъектРасчетов,
+	НЕОПРЕДЕЛЕНО КАК РасчетныйДокумент,
+	
+	//по данным контрагента
+	ВЫБОР КОГДА СУММА(ТаблицаДокумента.НачальноеСальдоДт) &gt; СУММА(ТаблицаДокумента.НачальноеСальдоКт)
+		ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдоДт) - СУММА(ТаблицаДокумента.НачальноеСальдоКт)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаДолгПартнера,
+	ВЫБОР КОГДА СУММА(ТаблицаДокумента.НачальноеСальдоКт) &gt; СУММА(ТаблицаДокумента.НачальноеСальдоДт)
+		ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдоКт) - СУММА(ТаблицаДокумента.НачальноеСальдоДт)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДанныеКонтрагентаСуммаНашДолг,
+	
+	//по данным организации
+	ВЫБОР КОГДА СУММА(ТаблицаДокумента.НачальноеСальдоДт) &gt; СУММА(ТаблицаДокумента.НачальноеСальдоКт)
+		ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдоДт) - СУММА(ТаблицаДокумента.НачальноеСальдоКт)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаДолгПартнера,
+	ВЫБОР КОГДА СУММА(ТаблицаДокумента.НачальноеСальдоКт) &gt; СУММА(ТаблицаДокумента.НачальноеСальдоДт)
+		ТОГДА СУММА(ТаблицаДокумента.НачальноеСальдоКт) - СУММА(ТаблицаДокумента.НачальноеСальдоДт)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДанныеОрганизацииСуммаНашДолг,
+	
+	//расхождения
+	0 КАК РасхожденияДолгПартнера,
+	0 КАК РасхожденияНашДолг
+ИЗ
+	Документ.СверкаВзаиморасчетов2_5_11 КАК ШапкаДокумента
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СверкаВзаиморасчетов2_5_11.ИтоговыеЗаписи КАК ТаблицаДокумента
+		ПО ШапкаДокумента.Ссылка = ТаблицаДокумента.Ссылка
+ГДЕ
+	ШапкаДокумента.Проведен
+СГРУППИРОВАТЬ ПО
+	ШапкаДокумента.Ссылка,
+	ТаблицаДокумента.ТипРасчетов,
+	ШапкаДокумента.Организация,
+	ШапкаДокумента.Контрагент,
+	ТаблицаДокумента.Партнер
+{ГДЕ
+	ШапкаДокумента.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+}
+{ГДЕ
+	НЕ (ИСТИНА В (
+			ВЫБРАТЬ ПЕРВЫЕ 1
+				ИСТИНА
+			ИЗ
+				Документ.СверкаВзаиморасчетов2_5_11.ДетальныеЗаписи КАК ФинИнструменты
+			ГДЕ
+				ШапкаДокумента.Ссылка = ФинИнструменты.Ссылка
+				И ФинИнструменты.ТипРасчетов В (&amp;ЗапрещенныеТипыРасчетов)
+		)
+	)
+}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+// Обороты Документ.СверкаВзаиморасчетов2_5_11
+ВЫБРАТЬ
+	ШапкаДокумента.Ссылка КАК СверкаВзаиморасчетов,
+	ТаблицаДокумента.ТипРасчетов КАК ТипРасчетов,
+	ШапкаДокумента.Организация КАК Организация,
+	ШапкаДокумента.Контрагент КАК Контрагент,
+	ТаблицаДокумента.Партнер КАК Партнер,
 	ВЫБОР КОГДА ШапкаДокумента.РежимСверкиИтоговВзаиморасчетов = &amp;ПоОбъектаРасчетов
 		ТОГДА ТаблицаДокумента.ОбъектРасчетов.ВалютаВзаиморасчетов
 		ИНАЧЕ ТаблицаДокумента.Договор.ВалютаВзаиморасчетов
 	КОНЕЦ КАК ВалютаВзаиморасчетов,
-	//ТаблицаДокумента.ОбъектРасчетов КАК ОбъектРасчетов,
 	ВЫБОР КОГДА ШапкаДокумента.РежимСверкиИтоговВзаиморасчетов = &amp;ПоОбъектаРасчетов
 		ТОГДА ТаблицаДокумента.ОбъектРасчетов
 		ИНАЧЕ ТаблицаДокумента.Договор
 	КОНЕЦ КАК ОбъектРасчетов,
 	ТаблицаДокумента.РасчетныйДокумент КАК РасчетныйДокумент,
+	
+	//по данным контрагента
 	ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
 		ТОГДА
 			ТаблицаДокумента.СуммаДебетКонтрагент
@@ -348,9 +606,11 @@
 			ТаблицаДокумента.СуммаКредит
 	КОНЕЦ КАК ДанныеКонтрагентаСуммаНашДолг,
 	
+	//по данным организации
 	ТаблицаДокумента.СуммаДебет КАК ДанныеОрганизацииСуммаДолгПартнера,
 	ТаблицаДокумента.СуммаКредит КАК ДанныеОрганизацииСуммаНашДолг,
 	
+	//расхождения
 	ВЫБОР КОГДА ШапкаДокумента.ЕстьРасхождения
 		ТОГДА
 			ТаблицаДокумента.СуммаДебетКонтрагент
@@ -388,37 +648,35 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ДанныеОтчета.СверкаВзаиморасчетов КАК СверкаВзаиморасчетов,
-	ДанныеОтчета.Организация КАК Организация,
-	ДанныеОтчета.Контрагент КАК Контрагент,
-	ДанныеОтчета.Партнер КАК Партнер,
-	ДанныеОтчета.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
-	ДанныеОтчета.ОбъектРасчетов КАК ОбъектРасчетов,
-	ДанныеОтчета.РасчетныйДокумент КАК РасчетныйДокумент,
+	ДанныеДокументовСверки.СверкаВзаиморасчетов КАК СверкаВзаиморасчетов,
+	ДанныеДокументовСверки.Организация КАК Организация,
+	ДанныеДокументовСверки.Контрагент КАК Контрагент,
+	ДанныеДокументовСверки.Партнер КАК Партнер,
+	ДанныеДокументовСверки.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	ДанныеДокументовСверки.ОбъектРасчетов КАК ОбъектРасчетов,
+	ДанныеДокументовСверки.РасчетныйДокумент КАК РасчетныйДокумент,
 	
-	СУММА(ДанныеОтчета.ДанныеКонтрагентаСуммаДолгПартнера) КАК ДанныеКонтрагентаСуммаДолгПартнера,
-	СУММА(ДанныеОтчета.ДанныеКонтрагентаСуммаНашДолг) КАК ДанныеКонтрагентаСуммаНашДолг,
+	СУММА(ДанныеДокументовСверки.ДанныеКонтрагентаСуммаДолгПартнера) КАК ДанныеКонтрагентаСуммаДолгПартнера,
+	СУММА(ДанныеДокументовСверки.ДанныеКонтрагентаСуммаНашДолг) КАК ДанныеКонтрагентаСуммаНашДолг,
 
-	СУММА(ДанныеОтчета.ДанныеОрганизацииСуммаДолгПартнера) КАК ДанныеОрганизацииСуммаДолгПартнера,
-	СУММА(ДанныеОтчета.ДанныеОрганизацииСуммаНашДолг) КАК ДанныеОрганизацииСуммаНашДолг,
+	СУММА(ДанныеДокументовСверки.ДанныеОрганизацииСуммаДолгПартнера) КАК ДанныеОрганизацииСуммаДолгПартнера,
+	СУММА(ДанныеДокументовСверки.ДанныеОрганизацииСуммаНашДолг) КАК ДанныеОрганизацииСуммаНашДолг,
 	
-	СУММА(ДанныеОтчета.РасхожденияДолгПартнера) КАК РасхожденияДолгПартнера,
-	СУММА(ДанныеОтчета.РасхожденияНашДолг) КАК РасхожденияНашДолг
+	СУММА(ДанныеДокументовСверки.РасхожденияДолгПартнера) КАК РасхожденияДолгПартнера,
+	СУММА(ДанныеДокументовСверки.РасхожденияНашДолг) КАК РасхожденияНашДолг
 ИЗ
-	втДанные КАК ДанныеОтчета
+	втДанныеДокументовСверки КАК ДанныеДокументовСверки
 	
 СГРУППИРОВАТЬ ПО
-	ДанныеОтчета.СверкаВзаиморасчетов,
-	ДанныеОтчета.Организация,
-	ДанныеОтчета.Контрагент,
-	ДанныеОтчета.Партнер,
-	ДанныеОтчета.ВалютаВзаиморасчетов,
-	ДанныеОтчета.ОбъектРасчетов,
-	ДанныеОтчета.РасчетныйДокумент
+	ДанныеДокументовСверки.СверкаВзаиморасчетов,
+	ДанныеДокументовСверки.Организация,
+	ДанныеДокументовСверки.Контрагент,
+	ДанныеДокументовСверки.Партнер,
+	ДанныеДокументовСверки.ВалютаВзаиморасчетов,
+	ДанныеДокументовСверки.ОбъектРасчетов,
+	ДанныеДокументовСверки.РасчетныйДокумент
 	
-ИМЕЮЩИЕ
-	СУММА(ДанныеОтчета.РасхожденияДолгПартнера) &lt;&gt; 0
-	ИЛИ СУММА(ДанныеОтчета.РасхожденияНашДолг) &lt;&gt; 0</query>
+</query>
 	</dataSet>
 	<totalField>
 		<dataPath>ДанныеКонтрагентаСуммаДолгПартнера</dataPath>
@@ -444,22 +702,42 @@
 		<dataPath>РасхожденияНашДолг</dataPath>
 		<expression>Сумма(РасхожденияНашДолг)</expression>
 	</totalField>
-	<parameter>
-		<name>СверкиВзаиморасчетов</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Сверки взаиморасчетов</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.СверкаВзаиморасчетов2_5_11</v8:Type>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.СверкаВзаиморасчетов2_4</v8:Type>
-		</valueType>
-		<value xsi:type="dcscor:DesignTimeValue">Документ.СверкаВзаиморасчетов2_4.ПустаяСсылка</value>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
+	<totalField>
+		<dataPath>ДанныеКонтрагентаСуммаДолгПартнера</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(ДанныеКонтрагентаСуммаДолгПартнера) &gt; Сумма(ДанныеКонтрагентаСуммаНашДолг)
+	ТОГДА Сумма(ДанныеКонтрагентаСуммаДолгПартнера)-Сумма(ДанныеКонтрагентаСуммаНашДолг)
+	ИНАЧЕ 0
+КОНЕЦ</expression>
+		<group>Организация</group>
+		<group>СверкаВзаиморасчетов</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДанныеКонтрагентаСуммаНашДолг</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(ДанныеКонтрагентаСуммаНашДолг) &gt; Сумма(ДанныеКонтрагентаСуммаДолгПартнера)
+	ТОГДА Сумма(ДанныеКонтрагентаСуммаНашДолг) - Сумма(ДанныеКонтрагентаСуммаДолгПартнера)
+	ИНАЧЕ 0
+КОНЕЦ</expression>
+		<group>Организация</group>
+		<group>СверкаВзаиморасчетов</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДанныеОрганизацииСуммаДолгПартнера</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(ДанныеОрганизацииСуммаДолгПартнера) &gt; Сумма(ДанныеОрганизацииСуммаНашДолг)
+	ТОГДА Сумма(ДанныеОрганизацииСуммаДолгПартнера)-Сумма(ДанныеОрганизацииСуммаНашДолг)
+	ИНАЧЕ 0
+КОНЕЦ</expression>
+		<group>Организация</group>
+		<group>СверкаВзаиморасчетов</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДанныеОрганизацииСуммаНашДолг</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(ДанныеОрганизацииСуммаНашДолг) &gt; Сумма(ДанныеОрганизацииСуммаДолгПартнера)
+	ТОГДА Сумма(ДанныеОрганизацииСуммаНашДолг) - Сумма(ДанныеОрганизацииСуммаДолгПартнера)
+	ИНАЧЕ 0
+КОНЕЦ</expression>
+		<group>Организация</group>
+		<group>СверкаВзаиморасчетов</group>
+	</totalField>
 	<parameter>
 		<name>ЗапрещенныеТипыРасчетов</name>
 		<title xsi:type="v8:LocalStringType">
@@ -547,6 +825,236 @@
 		<value xsi:type="dcscor:DesignTimeValue">Перечисление.РежимСверкиИтоговВзаиморасчетов.ПоОбъектамРасчетов</value>
 		<useRestriction>true</useRestriction>
 	</parameter>
+	<parameter>
+		<name>РасчетыСКлиентами</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расчеты с клиентами</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ТипыРасчетовСПартнерами</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыРасчетовСПартнерами.РасчетыСКлиентом</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РасхожденияНашДолг</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РасхожденияНашДолг</dcsat:name>
+			<dcsat:expression>РасхожденияНашДолг</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДанныеКонтрагентаСуммаДолгПартнера</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДанныеКонтрагентаСуммаДолгПартнера</dcsat:name>
+			<dcsat:expression>ДанныеКонтрагентаСуммаДолгПартнера</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДанныеКонтрагентаСуммаНашДолг</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДанныеКонтрагентаСуммаНашДолг</dcsat:name>
+			<dcsat:expression>Представление(ДанныеКонтрагентаСуммаНашДолг)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет5</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДанныеОрганизацииСуммаДолгПартнера</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДанныеОрганизацииСуммаДолгПартнера</dcsat:name>
+			<dcsat:expression>Представление(ДанныеОрганизацииСуммаДолгПартнера)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет6</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ДанныеОрганизацииСуммаНашДолг</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ДанныеОрганизацииСуммаНашДолг</dcsat:name>
+			<dcsat:expression>Представление(ДанныеОрганизацииСуммаНашДолг)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет7</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РасхожденияДолгПартнера</dcsat:value>
+						<dcsat:appearance>
+							<dcscor:item>
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+							</dcscor:item>
+						</dcsat:appearance>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РасхожденияДолгПартнера</dcsat:name>
+			<dcsat:expression>РасхожденияДолгПартнера</dcsat:expression>
+		</parameter>
+	</template>
+	<fieldTemplate>
+		<field>ДанныеКонтрагентаСуммаДолгПартнера</field>
+		<template>Макет3</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>ДанныеКонтрагентаСуммаНашДолг</field>
+		<template>Макет4</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>ДанныеОрганизацииСуммаДолгПартнера</field>
+		<template>Макет5</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>ДанныеОрганизацииСуммаНашДолг</field>
+		<template>Макет6</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>РасхожденияДолгПартнера</field>
+		<template>Макет7</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>РасхожденияНашДолг</field>
+		<template>Макет2</template>
+	</fieldTemplate>
 	<settingsVariant>
 		<dcsset:name>СверкаВзаиморасчетов</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -568,9 +1076,6 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОбъектРасчетов</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВалютаВзаиморасчетов</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
 					<dcsset:lwsTitle>
@@ -823,7 +1328,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>ОбъектРасчетов</dcsset:field>
+								<dcsset:field>РасчетныйДокумент</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -837,6 +1342,21 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>OrGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияНашДолг</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияДолгПартнера</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
@@ -1123,13 +1643,28 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>ОбъектРасчетов</dcsset:field>
+								<dcsset:field>РасчетныйДокумент</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>OrGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияДолгПартнера</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияНашДолг</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
@@ -1168,9 +1703,6 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОбъектРасчетов</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВалютаВзаиморасчетов</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
 					<dcsset:lwsTitle>
@@ -1415,7 +1947,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>ОбъектРасчетов</dcsset:field>
+								<dcsset:field>РасчетныйДокумент</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -1429,6 +1961,21 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>OrGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияНашДолг</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияДолгПартнера</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
@@ -1707,13 +2254,28 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>ОбъектРасчетов</dcsset:field>
+								<dcsset:field>РасчетныйДокумент</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>OrGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияДолгПартнера</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">РасхожденияНашДолг</dcsset:left>
+									<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>

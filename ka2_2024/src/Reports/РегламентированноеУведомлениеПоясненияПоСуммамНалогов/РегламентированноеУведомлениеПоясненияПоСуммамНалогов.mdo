@@ -11,15 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="cac42890-ef0f-4649-9f13-9d5a02169433">
-    <name>Форма2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пояснения в связи с сообщением об исчисленных суммах налога</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="baeec220-b0e3-4b4c-8fb9-eaa75e482624">
     <name>Форма2023_1</name>
     <synonym>
@@ -38,12 +29,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="e5b8cd91-3b3d-4ffd-a344-c0b55d2a8784">
-    <name>СхемаВыгрузкиФорма2022_1</name>
+  <templates uuid="6e20136c-f15f-4433-8bcc-9824b6775fab">
+    <name>Макеты2022</name>
     <synonym>
       <key>ru</key>
-      <value>схема выгрузки</value>
+      <value>Макеты2022</value>
     </synonym>
+    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="4e95c831-4aba-4f72-bee4-d0d39a1f90bb">
     <name>Печать_Форма2023_1_Титульная</name>
@@ -99,14 +91,6 @@
     <synonym>
       <key>ru</key>
       <value>шаблон печати</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="6e20136c-f15f-4433-8bcc-9824b6775fab">
-    <name>Макеты2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Макеты2022</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>

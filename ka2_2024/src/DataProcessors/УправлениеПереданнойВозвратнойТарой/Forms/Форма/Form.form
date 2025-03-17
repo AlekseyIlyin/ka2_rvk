@@ -1127,10 +1127,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПереданнаяТараSearchString</name>
+          <name>ПереданнаяТараСтрокаПоиска</name>
           <id>353</id>
           <extendedTooltip>
-            <name>ПереданнаяТараSearchStringExtendedTooltip</name>
+            <name>ПереданнаяТараСтрокаПоискаРасширеннаяПодсказка</name>
             <id>355</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1145,7 +1145,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПереданнаяТараSearchStringContextMenu</name>
+            <name>ПереданнаяТараСтрокаПоискаКонтекстноеМеню</name>
             <id>354</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1165,10 +1165,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПереданнаяТараViewStatus</name>
+          <name>ПереданнаяТараСостояниеПросмотра</name>
           <id>356</id>
           <extendedTooltip>
-            <name>ПереданнаяТараViewStatusExtendedTooltip</name>
+            <name>ПереданнаяТараСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>358</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1183,7 +1183,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПереданнаяТараViewStatusContextMenu</name>
+            <name>ПереданнаяТараСостояниеПросмотраКонтекстноеМеню</name>
             <id>357</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1205,10 +1205,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПереданнаяТараSearchControl</name>
+          <name>ПереданнаяТараУправлениеПоиском</name>
           <id>359</id>
           <extendedTooltip>
-            <name>ПереданнаяТараSearchControlExtendedTooltip</name>
+            <name>ПереданнаяТараУправлениеПоискомРасширеннаяПодсказка</name>
             <id>361</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1223,7 +1223,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПереданнаяТараSearchControlContextMenu</name>
+            <name>ПереданнаяТараУправлениеПоискомКонтекстноеМеню</name>
             <id>360</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2402,10 +2402,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВозвратаТарыSearchString</name>
+          <name>ДокументыВозвратаТарыСтрокаПоиска</name>
           <id>362</id>
           <extendedTooltip>
-            <name>ДокументыВозвратаТарыSearchStringExtendedTooltip</name>
+            <name>ДокументыВозвратаТарыСтрокаПоискаРасширеннаяПодсказка</name>
             <id>364</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2420,7 +2420,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВозвратаТарыSearchStringContextMenu</name>
+            <name>ДокументыВозвратаТарыСтрокаПоискаКонтекстноеМеню</name>
             <id>363</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2440,10 +2440,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВозвратаТарыViewStatus</name>
+          <name>ДокументыВозвратаТарыСостояниеПросмотра</name>
           <id>365</id>
           <extendedTooltip>
-            <name>ДокументыВозвратаТарыViewStatusExtendedTooltip</name>
+            <name>ДокументыВозвратаТарыСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>367</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2458,7 +2458,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВозвратаТарыViewStatusContextMenu</name>
+            <name>ДокументыВозвратаТарыСостояниеПросмотраКонтекстноеМеню</name>
             <id>366</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2480,10 +2480,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВозвратаТарыSearchControl</name>
+          <name>ДокументыВозвратаТарыУправлениеПоиском</name>
           <id>368</id>
           <extendedTooltip>
-            <name>ДокументыВозвратаТарыSearchControlExtendedTooltip</name>
+            <name>ДокументыВозвратаТарыУправлениеПоискомРасширеннаяПодсказка</name>
             <id>370</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2498,7 +2498,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВозвратаТарыSearchControlContextMenu</name>
+            <name>ДокументыВозвратаТарыУправлениеПоискомКонтекстноеМеню</name>
             <id>369</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2682,6 +2682,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ВниманиеКрасный</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3804,10 +3808,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВыкупаТарыSearchString</name>
+          <name>ДокументыВыкупаТарыСтрокаПоиска</name>
           <id>371</id>
           <extendedTooltip>
-            <name>ДокументыВыкупаТарыSearchStringExtendedTooltip</name>
+            <name>ДокументыВыкупаТарыСтрокаПоискаРасширеннаяПодсказка</name>
             <id>373</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -3822,7 +3826,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВыкупаТарыSearchStringContextMenu</name>
+            <name>ДокументыВыкупаТарыСтрокаПоискаКонтекстноеМеню</name>
             <id>372</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -3842,10 +3846,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВыкупаТарыViewStatus</name>
+          <name>ДокументыВыкупаТарыСостояниеПросмотра</name>
           <id>374</id>
           <extendedTooltip>
-            <name>ДокументыВыкупаТарыViewStatusExtendedTooltip</name>
+            <name>ДокументыВыкупаТарыСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>376</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -3860,7 +3864,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВыкупаТарыViewStatusContextMenu</name>
+            <name>ДокументыВыкупаТарыСостояниеПросмотраКонтекстноеМеню</name>
             <id>375</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -3882,10 +3886,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДокументыВыкупаТарыSearchControl</name>
+          <name>ДокументыВыкупаТарыУправлениеПоиском</name>
           <id>377</id>
           <extendedTooltip>
-            <name>ДокументыВыкупаТарыSearchControlExtendedTooltip</name>
+            <name>ДокументыВыкупаТарыУправлениеПоискомРасширеннаяПодсказка</name>
             <id>379</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -3900,7 +3904,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДокументыВыкупаТарыSearchControlContextMenu</name>
+            <name>ДокументыВыкупаТарыУправлениеПоискомКонтекстноеМеню</name>
             <id>378</id>
             <visible>true</visible>
             <enabled>true</enabled>

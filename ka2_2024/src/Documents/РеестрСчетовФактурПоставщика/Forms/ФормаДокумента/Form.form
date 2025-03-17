@@ -215,8 +215,6 @@
       <segments>Объект.СчетаФактуры</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Change</excludedCommands>
-    <excludedCommands>EndEdit</excludedCommands>
     <items xsi:type="form:FormField">
       <name>СчетаФактурыНомерСтроки</name>
       <id>35</id>
@@ -1514,9 +1512,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Write</excludedCommands>
-  <excludedCommands>WriteAndClose</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

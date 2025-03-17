@@ -4724,6 +4724,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ВидыНавигацииПоВзаимодействиямОтДопРеквизитовСведений</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -5380,6 +5384,10 @@
                     <autoMaxHeight>true</autoMaxHeight>
                     <horizontalStretch>true</horizontalStretch>
                     <verticalStretch>true</verticalStretch>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -6280,6 +6288,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.КоллекцияДеревоАнкеты</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -7043,6 +7055,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.Взаимодействия</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -7101,6 +7117,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияВариантыВажности</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -7348,6 +7368,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Скрепка</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -10367,7 +10391,7 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ЗначениеУстановленноеПослеЗаполненияПанелиНавигации</name>
+    <name>ТекущееЗначениеПанелиНавигации</name>
     <id>41</id>
     <valueType/>
     <view>

@@ -133,6 +133,7 @@
   <defaultObjectForm>Document.АвансовыйОтчет.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.АвансовыйОтчет.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.АвансовыйОтчет.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <sequenceFilling>AutoFillOff</sequenceFilling>
   <registerRecords>AccumulationRegister.ДвиженияПоНДС</registerRecords>
@@ -169,6 +170,7 @@
   <registerRecords>AccumulationRegister.ДвиженияДенежныеСредстваДоходыРасходы</registerRecords>
   <registerRecords>AccumulationRegister.КнигаУчетаДоходовИРасходов</registerRecords>
   <registerRecords>AccumulationRegister.ВыручкаИСебестоимостьПродаж</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияКонтрагентКонтрагент</registerRecords>
   <registerRecords>AccumulationRegister.НДСЗаписиКнигиПокупок</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

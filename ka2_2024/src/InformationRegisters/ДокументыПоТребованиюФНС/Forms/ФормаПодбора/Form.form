@@ -319,7 +319,7 @@
             <name>ДатаКонцаПериодаОтчетаПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>ДатаКонцаПериодаОтчетаExtendedTooltip</name>
+            <name>ДатаКонцаПериодаОтчетаРасширеннаяПодсказка</name>
             <id>115</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -368,7 +368,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ВыбратьПроизвольныйПериодExtendedTooltip</name>
+            <name>ВыбратьПроизвольныйПериодРасширеннаяПодсказка</name>
             <id>117</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1114,6 +1114,10 @@
               <y>6</y>
             </transparentPixel>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
         </extInfo>
       </items>
       <visible>true</visible>
@@ -1887,7 +1891,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ПеренестиВДокументExtendedTooltip</name>
+          <name>ПеренестиВДокументРасширеннаяПодсказка</name>
           <id>272</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2258,6 +2262,10 @@
                 <y>11</y>
               </transparentPixel>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <visible>true</visible>

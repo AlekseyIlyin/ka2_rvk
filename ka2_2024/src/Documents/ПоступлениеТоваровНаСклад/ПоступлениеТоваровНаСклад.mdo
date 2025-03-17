@@ -410,7 +410,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Ответственный за приобретение</value>
+      <value>Пользователь, ответственный за документ (разрез аналитики)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -443,7 +443,7 @@
     <name>НалогообложениеНДС</name>
     <synonym>
       <key>ru</key>
-      <value>Налогообложение НДС</value>
+      <value>Налогообложение</value>
     </synonym>
     <type>
       <types>EnumRef.ТипыНалогообложенияНДС</types>
@@ -635,6 +635,10 @@
     <type>
       <types>CatalogRef.Пользователи</types>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, создавший документ (служебный реквизит)</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

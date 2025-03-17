@@ -390,6 +390,99 @@
             <textEdit>true</textEdit>
           </extInfo>
         </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаПорядокВыплаты</name>
+          <id>473</id>
+          <items xsi:type="form:FormField">
+            <name>ПериодВыплаты</name>
+            <id>470</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ПериодВыплаты</segments>
+            </dataPath>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПериодВыплатыПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ПериодВыплатыРасширеннаяПодсказка</name>
+              <id>472</id>
+              <title>
+                <key>ru</key>
+                <value>Выплата за счет резерва может осуществляться либо в конце расчетного года,
+за который формировался резерв, либо в следующем календарном году. </value>
+              </title>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПериодВыплатыКонтекстноеМеню</name>
+              <id>471</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <radioButtonsType>Tumbler</radioButtonsType>
+              <itemWidth>8</itemWidth>
+              <equalElementsWidth>true</equalElementsWidth>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>2024 г.</value>
+                </presentation>
+                <value xsi:type="core:NumberValue">
+                  <value>1</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>2025 г.</value>
+                </presentation>
+                <value xsi:type="core:NumberValue">
+                  <value>0</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ГруппаПорядокВыплатыРасширеннаяПодсказка</name>
+            <id>474</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>HorizontalIfPossible</group>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -500,6 +593,41 @@
         <items xsi:type="form:FormGroup">
           <name>ГруппаБухгалтерскийУчет</name>
           <id>193</id>
+          <items xsi:type="form:FormField">
+            <name>ФормироватьРезервБУ</name>
+            <id>504</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ФормироватьРезервБУ</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <extendedTooltip>
+              <name>ФормироватьРезервБУРасширеннаяПодсказка</name>
+              <id>506</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ФормироватьРезервБУКонтекстноеМеню</name>
+              <id>505</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
           <items xsi:type="form:FormGroup">
             <name>ГруппаРезервыБУ</name>
             <id>74</id>
@@ -556,6 +684,7 @@
                 <headerHorizontalAlign>Left</headerHorizontalAlign>
                 <showInFooter>true</showInFooter>
                 <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>2</columnsCount>
                   <choiceList>
                     <presentation>
                       <key>ru</key>
@@ -653,32 +782,155 @@
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
-                <name>ГруппаПараметрыРасчетаСтраницыБУ</name>
+                <name>ГруппаПараметрыРасчетаМетодаБУ</name>
                 <id>96</id>
                 <items xsi:type="form:FormGroup">
-                  <name>ГруппаНормативныйМетодБУ</name>
-                  <id>100</id>
+                  <name>ГруппаПараметрыРасчетаМетодаСтраницыБУ</name>
+                  <id>495</id>
                   <items xsi:type="form:FormGroup">
-                    <name>ГруппаНормативОтчисленийВРезерБУ</name>
-                    <id>388</id>
-                    <items xsi:type="form:FormField">
-                      <name>НормативОтчисленийВРезервБУ</name>
-                      <id>22</id>
+                    <name>ГруппаПараметрыРасчетаНормативногоМетодаСтраницаБУ</name>
+                    <id>497</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ГруппаНормативныйМетодБУ</name>
+                      <id>100</id>
+                      <items xsi:type="form:FormGroup">
+                        <name>ГруппаНормативОтчисленийВРезерБУ</name>
+                        <id>388</id>
+                        <items xsi:type="form:FormField">
+                          <name>НормативОтчисленийВРезервБУ</name>
+                          <id>22</id>
+                          <title>
+                            <key>ru</key>
+                            <value>Ежемесячный процент отчислений</value>
+                          </title>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <dataPath xsi:type="form:DataPath">
+                            <segments>Объект.НормативОтчисленийВРезервБУ</segments>
+                          </dataPath>
+                          <handlers>
+                            <event>OnChange</event>
+                            <name>НормативОтчисленийВРезервБУПриИзменении</name>
+                          </handlers>
+                          <extendedTooltip>
+                            <name>НормативОтчисленийВРезервБУРасширеннаяПодсказка</name>
+                            <id>24</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <type>Label</type>
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <extInfo xsi:type="form:LabelDecorationExtInfo">
+                              <horizontalAlign>Left</horizontalAlign>
+                            </extInfo>
+                          </extendedTooltip>
+                          <contextMenu>
+                            <name>НормативОтчисленийВРезервБУКонтекстноеМеню</name>
+                            <id>23</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <autoFill>true</autoFill>
+                          </contextMenu>
+                          <type>InputField</type>
+                          <editMode>Enter</editMode>
+                          <showInHeader>true</showInHeader>
+                          <headerHorizontalAlign>Left</headerHorizontalAlign>
+                          <showInFooter>true</showInFooter>
+                          <extInfo xsi:type="form:InputFieldExtInfo">
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <wrap>true</wrap>
+                            <chooseType>true</chooseType>
+                            <typeDomainEnabled>true</typeDomainEnabled>
+                            <textEdit>true</textEdit>
+                          </extInfo>
+                        </items>
+                        <items xsi:type="form:Button">
+                          <name>РасчетнаяБазаБУ</name>
+                          <id>390</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <extendedTooltip>
+                            <name>РасчетнаяБазаБУРасширеннаяПодсказка</name>
+                            <id>391</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <type>Label</type>
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <extInfo xsi:type="form:LabelDecorationExtInfo">
+                              <horizontalAlign>Left</horizontalAlign>
+                            </extInfo>
+                          </extendedTooltip>
+                          <type>Hyperlink</type>
+                          <commandName>Form.Command.РасчетнаяБаза</commandName>
+                          <representation>Auto</representation>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <placementArea>UserCmds</placementArea>
+                          <representationInContextMenu>Auto</representationInContextMenu>
+                        </items>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <title>
+                          <key>ru</key>
+                          <value>Норматив отчислений в резерв БУ</value>
+                        </title>
+                        <extendedTooltip>
+                          <name>ГруппаНормативОтчисленийВРезерБУРасширеннаяПодсказка</name>
+                          <id>389</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <type>UsualGroup</type>
+                        <extInfo xsi:type="form:UsualGroupExtInfo">
+                          <group>AlwaysHorizontal</group>
+                          <showLeftMargin>true</showLeftMargin>
+                          <united>true</united>
+                          <throughAlign>Auto</throughAlign>
+                          <currentRowUse>Auto</currentRowUse>
+                        </extInfo>
+                      </items>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
                       <title>
                         <key>ru</key>
-                        <value>Ежемесячный процент отчислений</value>
+                        <value>Группа нормативный метод БУ</value>
                       </title>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <dataPath xsi:type="form:DataPath">
-                        <segments>Объект.НормативОтчисленийВРезерв</segments>
-                      </dataPath>
+                      <height>1</height>
                       <extendedTooltip>
-                        <name>НормативОтчисленийВРезервБУРасширеннаяПодсказка</name>
-                        <id>24</id>
+                        <name>ГруппаНормативныйМетодБУРасширеннаяПодсказка</name>
+                        <id>101</id>
                         <visible>true</visible>
                         <enabled>true</enabled>
                         <userVisible>
@@ -691,60 +943,14 @@
                           <horizontalAlign>Left</horizontalAlign>
                         </extInfo>
                       </extendedTooltip>
-                      <contextMenu>
-                        <name>НормативОтчисленийВРезервБУКонтекстноеМеню</name>
-                        <id>23</id>
-                        <visible>true</visible>
-                        <enabled>true</enabled>
-                        <userVisible>
-                          <common>true</common>
-                        </userVisible>
-                        <autoFill>true</autoFill>
-                      </contextMenu>
-                      <type>InputField</type>
-                      <editMode>Enter</editMode>
-                      <showInHeader>true</showInHeader>
-                      <headerHorizontalAlign>Left</headerHorizontalAlign>
-                      <showInFooter>true</showInFooter>
-                      <extInfo xsi:type="form:InputFieldExtInfo">
-                        <autoMaxWidth>true</autoMaxWidth>
-                        <autoMaxHeight>true</autoMaxHeight>
-                        <wrap>true</wrap>
-                        <chooseType>true</chooseType>
-                        <typeDomainEnabled>true</typeDomainEnabled>
-                        <textEdit>true</textEdit>
+                      <type>UsualGroup</type>
+                      <extInfo xsi:type="form:UsualGroupExtInfo">
+                        <group>Vertical</group>
+                        <showLeftMargin>true</showLeftMargin>
+                        <united>true</united>
+                        <throughAlign>Auto</throughAlign>
+                        <currentRowUse>Auto</currentRowUse>
                       </extInfo>
-                    </items>
-                    <items xsi:type="form:Button">
-                      <name>РасчетнаяБазаБУ</name>
-                      <id>390</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <extendedTooltip>
-                        <name>РасчетнаяБазаБУРасширеннаяПодсказка</name>
-                        <id>391</id>
-                        <visible>true</visible>
-                        <enabled>true</enabled>
-                        <userVisible>
-                          <common>true</common>
-                        </userVisible>
-                        <type>Label</type>
-                        <autoMaxWidth>true</autoMaxWidth>
-                        <autoMaxHeight>true</autoMaxHeight>
-                        <extInfo xsi:type="form:LabelDecorationExtInfo">
-                          <horizontalAlign>Left</horizontalAlign>
-                        </extInfo>
-                      </extendedTooltip>
-                      <type>Hyperlink</type>
-                      <commandName>Form.Command.РасчетнаяБаза</commandName>
-                      <representation>Auto</representation>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <placementArea>UserCmds</placementArea>
-                      <representationInContextMenu>Auto</representationInContextMenu>
                     </items>
                     <visible>true</visible>
                     <enabled>true</enabled>
@@ -753,16 +959,359 @@
                     </userVisible>
                     <title>
                       <key>ru</key>
-                      <value>Норматив отчислений в резерв БУ</value>
+                      <value>Группа параметры расчета нормативного метода страница БУ</value>
                     </title>
                     <extendedTooltip>
-                      <name>ГруппаНормативОтчисленийВРезерБУРасширеннаяПодсказка</name>
-                      <id>389</id>
+                      <name>ГруппаПараметрыРасчетаНормативногоМетодаСтраницаБУРасширеннаяПодсказка</name>
+                      <id>498</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>Page</type>
+                    <extInfo xsi:type="form:PageGroupExtInfo">
+                      <group>Vertical</group>
+                      <verticalAlign>Center</verticalAlign>
+                    </extInfo>
+                  </items>
+                  <items xsi:type="form:FormGroup">
+                    <name>ГруппаПараметрыРасчетаМетодаОбязательствСтраницаБУ</name>
+                    <id>499</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ГруппаМетодМетодОбязательствБУ</name>
+                      <id>488</id>
+                      <items xsi:type="form:FormField">
+                        <name>ОпределятьИзлишкиЕжемесячноБУ</name>
+                        <id>490</id>
+                        <title>
+                          <key>ru</key>
+                          <value>Переоценивать ежемесячно</value>
+                        </title>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <dataPath xsi:type="form:DataPath">
+                          <segments>Объект.ОпределятьИзлишкиЕжемесячноБУ</segments>
+                        </dataPath>
+                        <titleLocation>Right</titleLocation>
+                        <toolTipRepresentation>Button</toolTipRepresentation>
+                        <handlers>
+                          <event>OnChange</event>
+                          <name>ОпределятьИзлишкиЕжемесячноБУПриИзменении</name>
+                        </handlers>
+                        <extendedTooltip>
+                          <name>ОпределятьИзлишкиЕжемесячноБУРасширеннаяПодсказка</name>
+                          <id>492</id>
+                          <title>
+                            <key>ru</key>
+                            <value>При определении величины обязательства каждого месяца, если суммы накопленного обязательства оказалась больше, чем получено по результатам расчета, излишне начисленные обязательства списываются.</value>
+                          </title>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ОпределятьИзлишкиЕжемесячноБУКонтекстноеМеню</name>
+                          <id>491</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>CheckBoxField</type>
+                        <groupVerticalAlign>Center</groupVerticalAlign>
+                        <editMode>Enter</editMode>
+                        <showInHeader>true</showInHeader>
+                        <headerHorizontalAlign>Left</headerHorizontalAlign>
+                        <showInFooter>true</showInFooter>
+                        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                      </items>
+                      <items xsi:type="form:Decoration">
+                        <name>ДекорацияОпределятьИзлишкиЕжемесячноБУ</name>
+                        <id>501</id>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <extendedTooltip>
+                          <name>ДекорацияОпределятьИзлишкиЕжемесячноБУРасширеннаяПодсказка</name>
+                          <id>503</id>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ДекорацияОпределятьИзлишкиЕжемесячноБУКонтекстноеМеню</name>
+                          <id>502</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <height>1</height>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </items>
                       <visible>true</visible>
                       <enabled>true</enabled>
                       <userVisible>
                         <common>true</common>
                       </userVisible>
+                      <title>
+                        <key>ru</key>
+                        <value>Группа метод обязаттельств БУ</value>
+                      </title>
+                      <height>1</height>
+                      <groupVerticalAlign>Center</groupVerticalAlign>
+                      <extendedTooltip>
+                        <name>ГруппаМетодМетодОбязательствБУРасширеннаяПодсказка</name>
+                        <id>489</id>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </extendedTooltip>
+                      <type>UsualGroup</type>
+                      <extInfo xsi:type="form:UsualGroupExtInfo">
+                        <group>AlwaysHorizontal</group>
+                        <verticalAlign>Center</verticalAlign>
+                        <behavior>Auto</behavior>
+                        <showLeftMargin>true</showLeftMargin>
+                        <united>true</united>
+                        <throughAlign>Auto</throughAlign>
+                        <currentRowUse>Auto</currentRowUse>
+                      </extInfo>
+                    </items>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <title>
+                      <key>ru</key>
+                      <value>Группа параметры расчета метода обязательств страница БУ</value>
+                    </title>
+                    <extendedTooltip>
+                      <name>ГруппаПараметрыРасчетаМетодаОбязательствСтраницаБУРасширеннаяПодсказка</name>
+                      <id>500</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>Page</type>
+                    <extInfo xsi:type="form:PageGroupExtInfo">
+                      <group>Vertical</group>
+                      <verticalAlign>Center</verticalAlign>
+                    </extInfo>
+                  </items>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <title>
+                    <key>ru</key>
+                    <value>Группа параметры расчета метода страницы БУ</value>
+                  </title>
+                  <extendedTooltip>
+                    <name>ГруппаПараметрыРасчетаМетодаСтраницыБУРасширеннаяПодсказка</name>
+                    <id>496</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>Pages</type>
+                  <extInfo xsi:type="form:PagesGroupExtInfo">
+                    <currentRowUse>Auto</currentRowUse>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormGroup">
+                  <name>ГруппаПараметрыНормативныйМетодБУ</name>
+                  <id>493</id>
+                  <items xsi:type="form:FormField">
+                    <name>ОграничиватьНачислениеПредельнойСуммойБУ</name>
+                    <id>485</id>
+                    <title>
+                      <key>ru</key>
+                      <value>Ограничивать начисление предельной суммой</value>
+                    </title>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <dataPath xsi:type="form:DataPath">
+                      <segments>Объект.ОграничиватьНачислениеПредельнойСуммойБУ</segments>
+                    </dataPath>
+                    <titleLocation>Right</titleLocation>
+                    <handlers>
+                      <event>OnChange</event>
+                      <name>ОграничиватьНачислениеПредельнойСуммойБУПриИзменении</name>
+                    </handlers>
+                    <extendedTooltip>
+                      <name>ОграничиватьНачислениеПредельнойСуммойБУРасширеннаяПодсказка</name>
+                      <id>487</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <contextMenu>
+                      <name>ОграничиватьНачислениеПредельнойСуммойБУКонтекстноеМеню</name>
+                      <id>486</id>
+                      <autoFill>true</autoFill>
+                    </contextMenu>
+                    <type>CheckBoxField</type>
+                    <editMode>Enter</editMode>
+                    <showInHeader>true</showInHeader>
+                    <headerHorizontalAlign>Left</headerHorizontalAlign>
+                    <showInFooter>true</showInFooter>
+                    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                  </items>
+                  <items xsi:type="form:FormGroup">
+                    <name>ГруппаПредельнаяСуммаБУ</name>
+                    <id>475</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ГруппаПредельнаяСуммаРазмерБУ</name>
+                      <id>477</id>
+                      <items xsi:type="form:Decoration">
+                        <name>ДекорацияПредельнаяСуммаБУ</name>
+                        <id>479</id>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <extendedTooltip>
+                          <name>ДекорацияПредельнаяСуммаБУРасширеннаяПодсказка</name>
+                          <id>481</id>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ДекорацияПредельнаяСуммаБУКонтекстноеМеню</name>
+                          <id>480</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </items>
+                      <items xsi:type="form:FormField">
+                        <name>ПредельнаяВеличинаОтчисленийВРезервБУ</name>
+                        <id>482</id>
+                        <title>
+                          <key>ru</key>
+                          <value>Предельная сумма отчислений в резерв</value>
+                        </title>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <dataPath xsi:type="form:DataPath">
+                          <segments>Объект.ПредельнаяВеличинаОтчисленийВРезервБУ</segments>
+                        </dataPath>
+                        <handlers>
+                          <event>OnChange</event>
+                          <name>ПредельнаяВеличинаОтчисленийВРезервБУПриИзменении</name>
+                        </handlers>
+                        <extendedTooltip>
+                          <name>ПредельнаяВеличинаОтчисленийВРезервБУРасширеннаяПодсказка</name>
+                          <id>484</id>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ПредельнаяВеличинаОтчисленийВРезервБУКонтекстноеМеню</name>
+                          <id>483</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>InputField</type>
+                        <editMode>Enter</editMode>
+                        <showInHeader>true</showInHeader>
+                        <headerHorizontalAlign>Left</headerHorizontalAlign>
+                        <showInFooter>true</showInFooter>
+                        <extInfo xsi:type="form:InputFieldExtInfo">
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <wrap>true</wrap>
+                          <chooseType>true</chooseType>
+                          <typeDomainEnabled>true</typeDomainEnabled>
+                          <textEdit>true</textEdit>
+                        </extInfo>
+                      </items>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <title>
+                        <key>ru</key>
+                        <value>Размер предельной суммы БУ</value>
+                      </title>
+                      <extendedTooltip>
+                        <name>ГруппаПредельнаяСуммаРазмерБУРасширеннаяПодсказка</name>
+                        <id>478</id>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </extendedTooltip>
+                      <type>UsualGroup</type>
+                      <extInfo xsi:type="form:UsualGroupExtInfo">
+                        <group>AlwaysHorizontal</group>
+                        <showLeftMargin>true</showLeftMargin>
+                        <united>true</united>
+                        <throughAlign>Auto</throughAlign>
+                        <currentRowUse>Auto</currentRowUse>
+                      </extInfo>
+                    </items>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <title>
+                      <key>ru</key>
+                      <value>Группа предельная сумма БУ</value>
+                    </title>
+                    <extendedTooltip>
+                      <name>ГруппаПредельнаяСуммаБУРасширеннаяПодсказка</name>
+                      <id>476</id>
                       <type>Label</type>
                       <autoMaxWidth>true</autoMaxWidth>
                       <autoMaxHeight>true</autoMaxHeight>
@@ -772,7 +1321,7 @@
                     </extendedTooltip>
                     <type>UsualGroup</type>
                     <extInfo xsi:type="form:UsualGroupExtInfo">
-                      <group>AlwaysHorizontal</group>
+                      <group>Vertical</group>
                       <showLeftMargin>true</showLeftMargin>
                       <united>true</united>
                       <throughAlign>Auto</throughAlign>
@@ -786,16 +1335,11 @@
                   </userVisible>
                   <title>
                     <key>ru</key>
-                    <value>Группа нормативный метод БУ</value>
+                    <value>Группа параметры нормативный метод БУ</value>
                   </title>
                   <extendedTooltip>
-                    <name>ГруппаНормативныйМетодБУРасширеннаяПодсказка</name>
-                    <id>101</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
+                    <name>ГруппаПараметрыНормативныйМетодБУРасширеннаяПодсказка</name>
+                    <id>494</id>
                     <type>Label</type>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -805,7 +1349,8 @@
                   </extendedTooltip>
                   <type>UsualGroup</type>
                   <extInfo xsi:type="form:UsualGroupExtInfo">
-                    <group>Vertical</group>
+                    <group>HorizontalIfPossible</group>
+                    <behavior>Auto</behavior>
                     <showLeftMargin>true</showLeftMargin>
                     <united>true</united>
                     <throughAlign>Auto</throughAlign>
@@ -822,13 +1367,8 @@
                   <value>Параметры расчета страницы БУ</value>
                 </title>
                 <extendedTooltip>
-                  <name>ГруппаПараметрыРасчетаСтраницыБУРасширеннаяПодсказка</name>
+                  <name>ГруппаПараметрыРасчетаМетодаБУРасширеннаяПодсказка</name>
                   <id>97</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -945,6 +1485,58 @@
         <items xsi:type="form:FormGroup">
           <name>ГруппаНалоговыйУчет</name>
           <id>195</id>
+          <items xsi:type="form:FormField">
+            <name>ФормироватьРезервНУ</name>
+            <id>16</id>
+            <title>
+              <key>ru</key>
+              <value>Формировать резерв</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ФормироватьРезервНУ</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ФормироватьРезервНУПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ФормироватьРезервНУРасширеннаяПодсказка</name>
+              <id>18</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ФормироватьРезервНУКонтекстноеМеню</name>
+              <id>17</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
           <items xsi:type="form:FormGroup">
             <name>ГруппаРезервыНУ</name>
             <id>78</id>
@@ -952,28 +1544,23 @@
               <name>ГруппаПорядокРасчетаРезервовНУ</name>
               <id>176</id>
               <items xsi:type="form:FormField">
-                <name>ФормироватьРезервНУ</name>
-                <id>16</id>
-                <title>
-                  <key>ru</key>
-                  <value>Формировать резерв</value>
-                </title>
+                <name>МетодНачисленияРезерваНУ</name>
+                <id>423</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
                   <common>true</common>
                 </userVisible>
                 <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.ФормироватьРезервНУ</segments>
+                  <segments>МетодНачисленияРезерваНУ</segments>
                 </dataPath>
-                <titleLocation>Right</titleLocation>
                 <handlers>
                   <event>OnChange</event>
-                  <name>ФормироватьРезервНУПриИзменении</name>
+                  <name>МетодНачисленияРезерваНУПриИзменении</name>
                 </handlers>
                 <extendedTooltip>
-                  <name>ФормироватьРезервНУРасширеннаяПодсказка</name>
-                  <id>18</id>
+                  <name>МетодНачисленияРезерваНУРасширеннаяПодсказка</name>
+                  <id>425</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -987,8 +1574,8 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ФормироватьРезервНУКонтекстноеМеню</name>
-                  <id>17</id>
+                  <name>МетодНачисленияРезерваНУКонтекстноеМеню</name>
+                  <id>424</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -996,113 +1583,31 @@
                   </userVisible>
                   <autoFill>true</autoFill>
                 </contextMenu>
-                <type>CheckBoxField</type>
+                <type>RadioButtonField</type>
                 <editMode>Enter</editMode>
                 <showInHeader>true</showInHeader>
                 <headerHorizontalAlign>Left</headerHorizontalAlign>
                 <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-              </items>
-              <items xsi:type="form:FormGroup">
-                <name>ГруппаМетодНачисленияРезерваНУ</name>
-                <id>357</id>
-                <items xsi:type="form:FormField">
-                  <name>МетодНачисленияРезерваНУ</name>
-                  <id>423</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:DataPath">
-                    <segments>МетодНачисленияРезерваНУ</segments>
-                  </dataPath>
-                  <handlers>
-                    <event>OnChange</event>
-                    <name>МетодНачисленияРезерваНУПриИзменении</name>
-                  </handlers>
-                  <extendedTooltip>
-                    <name>МетодНачисленияРезерваНУРасширеннаяПодсказка</name>
-                    <id>425</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>МетодНачисленияРезерваНУКонтекстноеМеню</name>
-                    <id>424</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>RadioButtonField</type>
-                  <editMode>Enter</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-                    <choiceList>
-                      <presentation>
-                        <key>ru</key>
-                        <value>Нормативный</value>
-                      </presentation>
-                      <value xsi:type="core:NumberValue">
-                        <value>0</value>
-                      </value>
-                    </choiceList>
-                    <choiceList>
-                      <presentation>
-                        <key>ru</key>
-                        <value>По настройкам бухгалтерского учета</value>
-                      </presentation>
-                      <value xsi:type="core:NumberValue">
-                        <value>1</value>
-                      </value>
-                    </choiceList>
-                  </extInfo>
-                </items>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <title>
-                  <key>ru</key>
-                  <value>Группа метод начисления резерва НУ</value>
-                </title>
-                <extendedTooltip>
-                  <name>ГруппаМетодНачисленияРезерваНУРасширеннаяПодсказка</name>
-                  <id>358</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <type>UsualGroup</type>
-                <extInfo xsi:type="form:UsualGroupExtInfo">
-                  <group>HorizontalIfPossible</group>
-                  <showLeftMargin>true</showLeftMargin>
-                  <united>true</united>
-                  <throughAlign>Auto</throughAlign>
-                  <currentRowUse>Auto</currentRowUse>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>2</columnsCount>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>Нормативный</value>
+                    </presentation>
+                    <value xsi:type="core:NumberValue">
+                      <value>0</value>
+                    </value>
+                  </choiceList>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>По настройкам бухгалтерского учета</value>
+                    </presentation>
+                    <value xsi:type="core:NumberValue">
+                      <value>1</value>
+                    </value>
+                  </choiceList>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -1142,7 +1647,7 @@
               <name>ГруппаПараметрыРасчетаРезервовНУ</name>
               <id>89</id>
               <items xsi:type="form:Decoration">
-                <name>ДекорацияГруппаПорядокРасчетаРезервовНУОтступ</name>
+                <name>ДекорацияПараметрыРасчетаРезервовОтступНУ</name>
                 <id>93</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1150,13 +1655,8 @@
                   <common>true</common>
                 </userVisible>
                 <extendedTooltip>
-                  <name>ДекорацияГруппаПорядокРасчетаРезервовНУОтступРасширеннаяПодсказка</name>
+                  <name>ДекорацияПараметрыРасчетаРезервовОтступНУРасширеннаяПодсказка</name>
                   <id>95</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -1165,13 +1665,8 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ДекорацияГруппаПорядокРасчетаРезервовНУОтступКонтекстноеМеню</name>
+                  <name>ДекорацияПараметрыРасчетаРезервовОтступНУКонтекстноеМеню</name>
                   <id>94</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
                   <autoFill>true</autoFill>
                 </contextMenu>
                 <type>Label</type>
@@ -1182,32 +1677,150 @@
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
-                <name>ГруппаПараметрыРасчетаСтраницыНУ</name>
-                <id>184</id>
+                <name>ГруппаПараметрыРасчетаМетодаНУ</name>
+                <id>530</id>
                 <items xsi:type="form:FormGroup">
-                  <name>ГруппаНормативныйМетодНУ</name>
-                  <id>91</id>
+                  <name>ГруппаПараметрыРасчетаМетодаСтраницыНУ</name>
+                  <id>507</id>
                   <items xsi:type="form:FormGroup">
-                    <name>ГруппаНормативОтчисленийВРезерНУ</name>
-                    <id>384</id>
-                    <items xsi:type="form:FormField">
-                      <name>НормативОтчисленийВРезервНУ</name>
-                      <id>25</id>
+                    <name>ГруппаПараметрыРасчетаНормативногоМетодаСтраницаНУ</name>
+                    <id>509</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ГруппаНормативныйМетодНУ</name>
+                      <id>91</id>
+                      <items xsi:type="form:FormGroup">
+                        <name>ГруппаНормативОтчисленийВРезерНУ</name>
+                        <id>384</id>
+                        <items xsi:type="form:FormField">
+                          <name>НормативОтчисленийВРезервНУ</name>
+                          <id>25</id>
+                          <title>
+                            <key>ru</key>
+                            <value>Ежемесячный процент отчислений</value>
+                          </title>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <dataPath xsi:type="form:DataPath">
+                            <segments>Объект.НормативОтчисленийВРезервНУ</segments>
+                          </dataPath>
+                          <extendedTooltip>
+                            <name>НормативОтчисленийВРезервНУРасширеннаяПодсказка</name>
+                            <id>27</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <type>Label</type>
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <extInfo xsi:type="form:LabelDecorationExtInfo">
+                              <horizontalAlign>Left</horizontalAlign>
+                            </extInfo>
+                          </extendedTooltip>
+                          <contextMenu>
+                            <name>НормативОтчисленийВРезервНУКонтекстноеМеню</name>
+                            <id>26</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <autoFill>true</autoFill>
+                          </contextMenu>
+                          <type>InputField</type>
+                          <editMode>Enter</editMode>
+                          <showInHeader>true</showInHeader>
+                          <headerHorizontalAlign>Left</headerHorizontalAlign>
+                          <showInFooter>true</showInFooter>
+                          <extInfo xsi:type="form:InputFieldExtInfo">
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <wrap>true</wrap>
+                            <chooseType>true</chooseType>
+                            <typeDomainEnabled>true</typeDomainEnabled>
+                            <textEdit>true</textEdit>
+                          </extInfo>
+                        </items>
+                        <items xsi:type="form:Button">
+                          <name>РасчетнаяБазаНУ</name>
+                          <id>386</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <extendedTooltip>
+                            <name>РасчетнаяБазаНУРасширеннаяПодсказка</name>
+                            <id>387</id>
+                            <visible>true</visible>
+                            <enabled>true</enabled>
+                            <userVisible>
+                              <common>true</common>
+                            </userVisible>
+                            <type>Label</type>
+                            <autoMaxWidth>true</autoMaxWidth>
+                            <autoMaxHeight>true</autoMaxHeight>
+                            <extInfo xsi:type="form:LabelDecorationExtInfo">
+                              <horizontalAlign>Left</horizontalAlign>
+                            </extInfo>
+                          </extendedTooltip>
+                          <type>Hyperlink</type>
+                          <commandName>Form.Command.РасчетнаяБаза</commandName>
+                          <representation>Auto</representation>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <placementArea>UserCmds</placementArea>
+                          <representationInContextMenu>Auto</representationInContextMenu>
+                        </items>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <title>
+                          <key>ru</key>
+                          <value>Норматив отчислений в резерв НУ</value>
+                        </title>
+                        <extendedTooltip>
+                          <name>ГруппаНормативОтчисленийВРезерНУРасширеннаяПодсказка</name>
+                          <id>385</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <type>UsualGroup</type>
+                        <extInfo xsi:type="form:UsualGroupExtInfo">
+                          <group>AlwaysHorizontal</group>
+                          <showLeftMargin>true</showLeftMargin>
+                          <united>true</united>
+                          <throughAlign>Auto</throughAlign>
+                          <currentRowUse>Auto</currentRowUse>
+                        </extInfo>
+                      </items>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
                       <title>
                         <key>ru</key>
-                        <value>Ежемесячный процент отчислений</value>
+                        <value>Группа нормативный метод НУ</value>
                       </title>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <dataPath xsi:type="form:DataPath">
-                        <segments>Объект.НормативОтчисленийВРезерв</segments>
-                      </dataPath>
                       <extendedTooltip>
-                        <name>НормативОтчисленийВРезервНУРасширеннаяПодсказка</name>
-                        <id>27</id>
+                        <name>ГруппаНормативныйМетодНУРасширеннаяПодсказка</name>
+                        <id>92</id>
                         <visible>true</visible>
                         <enabled>true</enabled>
                         <userVisible>
@@ -1220,60 +1833,14 @@
                           <horizontalAlign>Left</horizontalAlign>
                         </extInfo>
                       </extendedTooltip>
-                      <contextMenu>
-                        <name>НормативОтчисленийВРезервНУКонтекстноеМеню</name>
-                        <id>26</id>
-                        <visible>true</visible>
-                        <enabled>true</enabled>
-                        <userVisible>
-                          <common>true</common>
-                        </userVisible>
-                        <autoFill>true</autoFill>
-                      </contextMenu>
-                      <type>InputField</type>
-                      <editMode>Enter</editMode>
-                      <showInHeader>true</showInHeader>
-                      <headerHorizontalAlign>Left</headerHorizontalAlign>
-                      <showInFooter>true</showInFooter>
-                      <extInfo xsi:type="form:InputFieldExtInfo">
-                        <autoMaxWidth>true</autoMaxWidth>
-                        <autoMaxHeight>true</autoMaxHeight>
-                        <wrap>true</wrap>
-                        <chooseType>true</chooseType>
-                        <typeDomainEnabled>true</typeDomainEnabled>
-                        <textEdit>true</textEdit>
+                      <type>UsualGroup</type>
+                      <extInfo xsi:type="form:UsualGroupExtInfo">
+                        <group>Vertical</group>
+                        <showLeftMargin>true</showLeftMargin>
+                        <united>true</united>
+                        <throughAlign>Auto</throughAlign>
+                        <currentRowUse>Auto</currentRowUse>
                       </extInfo>
-                    </items>
-                    <items xsi:type="form:Button">
-                      <name>РасчетнаяБазаНУ</name>
-                      <id>386</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <extendedTooltip>
-                        <name>РасчетнаяБазаНУРасширеннаяПодсказка</name>
-                        <id>387</id>
-                        <visible>true</visible>
-                        <enabled>true</enabled>
-                        <userVisible>
-                          <common>true</common>
-                        </userVisible>
-                        <type>Label</type>
-                        <autoMaxWidth>true</autoMaxWidth>
-                        <autoMaxHeight>true</autoMaxHeight>
-                        <extInfo xsi:type="form:LabelDecorationExtInfo">
-                          <horizontalAlign>Left</horizontalAlign>
-                        </extInfo>
-                      </extendedTooltip>
-                      <type>Hyperlink</type>
-                      <commandName>Form.Command.РасчетнаяБаза</commandName>
-                      <representation>Auto</representation>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <placementArea>UserCmds</placementArea>
-                      <representationInContextMenu>Auto</representationInContextMenu>
                     </items>
                     <visible>true</visible>
                     <enabled>true</enabled>
@@ -1282,16 +1849,11 @@
                     </userVisible>
                     <title>
                       <key>ru</key>
-                      <value>Норматив отчислений в резерв НУ</value>
+                      <value>Группа параметры расчета нормативного метода страница НУ</value>
                     </title>
                     <extendedTooltip>
-                      <name>ГруппаНормативОтчисленийВРезерНУРасширеннаяПодсказка</name>
-                      <id>385</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
+                      <name>ГруппаПараметрыРасчетаНормативногоМетодаСтраницаНУРасширеннаяПодсказка</name>
+                      <id>510</id>
                       <type>Label</type>
                       <autoMaxWidth>true</autoMaxWidth>
                       <autoMaxHeight>true</autoMaxHeight>
@@ -1299,15 +1861,182 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <type>UsualGroup</type>
-                    <extInfo xsi:type="form:UsualGroupExtInfo">
-                      <group>AlwaysHorizontal</group>
-                      <showLeftMargin>true</showLeftMargin>
-                      <united>true</united>
-                      <throughAlign>Auto</throughAlign>
-                      <currentRowUse>Auto</currentRowUse>
+                    <type>Page</type>
+                    <extInfo xsi:type="form:PageGroupExtInfo">
+                      <group>Vertical</group>
+                      <verticalAlign>Center</verticalAlign>
                     </extInfo>
                   </items>
+                  <items xsi:type="form:FormGroup">
+                    <name>ГруппаПараметрыРасчетаМетодаОбязательствСтраницаНУ</name>
+                    <id>520</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ГруппаМетодМетодОбязательствНУ</name>
+                      <id>522</id>
+                      <items xsi:type="form:FormField">
+                        <name>ОпределятьИзлишкиЕжемесячноНУ</name>
+                        <id>524</id>
+                        <title>
+                          <key>ru</key>
+                          <value>Переоценивать ежемесячно</value>
+                        </title>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <dataPath xsi:type="form:DataPath">
+                          <segments>Объект.ОпределятьИзлишкиЕжемесячноНУ</segments>
+                        </dataPath>
+                        <titleLocation>Right</titleLocation>
+                        <toolTipRepresentation>Button</toolTipRepresentation>
+                        <handlers>
+                          <event>OnChange</event>
+                          <name>ОпределятьИзлишкиЕжемесячноБУПриИзменении</name>
+                        </handlers>
+                        <extendedTooltip>
+                          <name>ОпределятьИзлишкиЕжемесячноНУРасширеннаяПодсказка</name>
+                          <id>526</id>
+                          <title>
+                            <key>ru</key>
+                            <value>При определении величины обязательства каждого месяца, если суммы накопленного обязательства оказалась больше, чем получено по результатам расчета, излишне начисленные обязательства списываются.</value>
+                          </title>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ОпределятьИзлишкиЕжемесячноНУКонтекстноеМеню</name>
+                          <id>525</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>CheckBoxField</type>
+                        <readOnly>true</readOnly>
+                        <groupVerticalAlign>Center</groupVerticalAlign>
+                        <editMode>Enter</editMode>
+                        <showInHeader>true</showInHeader>
+                        <headerHorizontalAlign>Left</headerHorizontalAlign>
+                        <showInFooter>true</showInFooter>
+                        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+                      </items>
+                      <items xsi:type="form:Decoration">
+                        <name>ДекорацияОпределятьИзлишкиЕжемесячноНУ</name>
+                        <id>527</id>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <extendedTooltip>
+                          <name>ДекорацияОпределятьИзлишкиЕжемесячноНУРасширеннаяПодсказка</name>
+                          <id>529</id>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ДекорацияОпределятьИзлишкиЕжемесячноНУКонтекстноеМеню</name>
+                          <id>528</id>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <height>1</height>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </items>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <title>
+                        <key>ru</key>
+                        <value>Группа метод обязаттельств НУ</value>
+                      </title>
+                      <height>1</height>
+                      <groupVerticalAlign>Center</groupVerticalAlign>
+                      <extendedTooltip>
+                        <name>ГруппаМетодМетодОбязательствНУРасширеннаяПодсказка</name>
+                        <id>523</id>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </extendedTooltip>
+                      <type>UsualGroup</type>
+                      <extInfo xsi:type="form:UsualGroupExtInfo">
+                        <group>AlwaysHorizontal</group>
+                        <verticalAlign>Center</verticalAlign>
+                        <behavior>Auto</behavior>
+                        <showLeftMargin>true</showLeftMargin>
+                        <united>true</united>
+                        <throughAlign>Auto</throughAlign>
+                        <currentRowUse>Auto</currentRowUse>
+                      </extInfo>
+                    </items>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <title>
+                      <key>ru</key>
+                      <value>Группа параметры расчета метода обязательств страница НУ</value>
+                    </title>
+                    <extendedTooltip>
+                      <name>ГруппаПараметрыРасчетаМетодаОбязательствСтраницаНУРасширеннаяПодсказка</name>
+                      <id>521</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>Page</type>
+                    <extInfo xsi:type="form:PageGroupExtInfo">
+                      <group>Vertical</group>
+                      <verticalAlign>Center</verticalAlign>
+                    </extInfo>
+                  </items>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <title>
+                    <key>ru</key>
+                    <value>Группа параметры расчета метода страницы НУ</value>
+                  </title>
+                  <extendedTooltip>
+                    <name>ГруппаПараметрыРасчетаМетодаСтраницыНУРасширеннаяПодсказка</name>
+                    <id>508</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>Pages</type>
+                  <extInfo xsi:type="form:PagesGroupExtInfo">
+                    <currentRowUse>Auto</currentRowUse>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormGroup">
+                  <name>ГруппаПараметрыНормативныйМетодНУ</name>
+                  <id>532</id>
                   <items xsi:type="form:FormField">
                     <name>ОграничиватьНачислениеПредельнойСуммойНУ</name>
                     <id>160</id>
@@ -1467,7 +2196,7 @@
                       </userVisible>
                       <title>
                         <key>ru</key>
-                        <value>Рамзер предельной суммы НУ</value>
+                        <value>Размер предельной суммы НУ</value>
                       </title>
                       <extendedTooltip>
                         <name>ГруппаПредельнаяСуммаРазмерНУРасширеннаяПодсказка</name>
@@ -1533,16 +2262,11 @@
                   </userVisible>
                   <title>
                     <key>ru</key>
-                    <value>Группа нормативный метод НУ</value>
+                    <value>Группа параметры нормативный метод БУ</value>
                   </title>
                   <extendedTooltip>
-                    <name>ГруппаНормативныйМетодНУРасширеннаяПодсказка</name>
-                    <id>92</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
+                    <name>ГруппаПараметрыНормативныйМетодНУРасширеннаяПодсказка</name>
+                    <id>533</id>
                     <type>Label</type>
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
@@ -1552,7 +2276,8 @@
                   </extendedTooltip>
                   <type>UsualGroup</type>
                   <extInfo xsi:type="form:UsualGroupExtInfo">
-                    <group>Vertical</group>
+                    <group>HorizontalIfPossible</group>
+                    <behavior>Auto</behavior>
                     <showLeftMargin>true</showLeftMargin>
                     <united>true</united>
                     <throughAlign>Auto</throughAlign>
@@ -1566,16 +2291,11 @@
                 </userVisible>
                 <title>
                   <key>ru</key>
-                  <value>Группа параметры расчета страницы НУ</value>
+                  <value>Группа параметры расчета метода НУ</value>
                 </title>
                 <extendedTooltip>
-                  <name>ГруппаПараметрыРасчетаСтраницыНУРасширеннаяПодсказка</name>
-                  <id>185</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
+                  <name>ГруппаПараметрыРасчетаМетодаНУРасширеннаяПодсказка</name>
+                  <id>531</id>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
@@ -1586,7 +2306,7 @@
                 <type>UsualGroup</type>
                 <extInfo xsi:type="form:UsualGroupExtInfo">
                   <group>Vertical</group>
-                  <representation>WeakSeparation</representation>
+                  <behavior>Auto</behavior>
                   <showLeftMargin>true</showLeftMargin>
                   <united>true</united>
                   <throughAlign>Auto</throughAlign>
@@ -2208,6 +2928,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.Формула</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -2262,6 +2986,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.РедактироватьПоказатели</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -3231,6 +3959,43 @@
     <id>2</id>
     <valueType>
       <types>CatalogRef.НастройкиРасчетаРезервовПоОплатеТруда</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПериодВыплаты</name>
+    <title>
+      <key>ru</key>
+      <value>Период выплаты</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ФормироватьРезервБУ</name>
+    <title>
+      <key>ru</key>
+      <value>Формировать резерв</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

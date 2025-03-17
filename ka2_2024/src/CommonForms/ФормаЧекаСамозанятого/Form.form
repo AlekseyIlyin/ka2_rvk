@@ -252,6 +252,10 @@
       <textColor xsi:type="core:ColorRef">
         <color>Style.ТекстЗапрещеннойЯчейкиЦвет</color>
       </textColor>
+      <border xsi:type="core:BorderDef">
+        <style>Single</style>
+        <width>1</width>
+      </border>
       <fileDragMode>AsFileRef</fileDragMode>
     </extInfo>
   </items>

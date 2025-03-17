@@ -24,10 +24,12 @@
     <types>ConstantValueManager.ИспользоватьКоммерческиеПредложенияКлиентам</types>
     <types>ConstantValueManager.ИспользоватьУправлениеПроизводством2_2</types>
     <types>ConstantValueManager.ИспользоватьУпаковкиНоменклатурыДляЦенообразования</types>
+    <types>ConstantValueManager.ПредопределенныеШаблоныСообщенийОнлайнЗаказов</types>
     <types>ConstantValueManager.ИспользоватьСогласованиеЗаказовКлиентов</types>
     <types>ConstantValueManager.ИспользоватьABCXYZКлассификациюПартнеровПоВыручке</types>
     <types>ConstantValueManager.УчетТМЦВЭксплуатацииWE</types>
     <types>ConstantValueManager.ИспользоватьДемонстрационныеСценарии</types>
+    <types>ConstantValueManager.ПорядокЗачетаОплатНакладных</types>
     <types>ConstantValueManager.ИспользоватьЗапросыКоммерческихПредложенийОтКлиента</types>
     <types>ConstantValueManager.ВестиОтдельнуюНумерациюСчетовФактурНаАвансы</types>
     <types>ConstantValueManager.ИспользоватьЛимитыРасходаДенежныхСредствПоОрганизациям</types>
@@ -73,6 +75,7 @@
     <types>ConstantValueManager.ИспользоватьНоменклатуруПартнеров</types>
     <types>ConstantValueManager.ИспользованиеЭтаповОплатыВПродажах</types>
     <types>ConstantValueManager.ФормироватьВидыЗапасовПоСделкам</types>
+    <types>ConstantValueManager.УчитыватьОплачиваемоеНерабочееВремяИСуммыВСреднемЗаработке</types>
     <types>ConstantValueManager.ИспользоватьЕжедневныеОтчеты1СДокументооборота</types>
     <types>ConstantValueManager.ИспользоватьИндивидуальныеПравилаПересчетаТарифныхСтавокСотрудников</types>
     <types>ConstantValueManager.ИспользоватьABCXYZКлассификациюПартнеровПоВаловойПрибыли</types>
@@ -96,6 +99,7 @@
     <types>ConstantValueManager.ИспользоватьЗаполнениеРаздела7ДекларацииПоНДС</types>
     <types>ConstantValueManager.ИсточникСуммыДляПересчетаВВалютуФинОтчетности</types>
     <types>ConstantValueManager.ИспользоватьДатуНачалаЗадач</types>
+    <types>ConstantValueManager.ВерсияДанныхДатЗапретаИзмененияБЗК</types>
     <types>ConstantValueManager.НастройкиОбменаЗЕРНО</types>
     <types>ConstantValueManager.ДатаНачалаПечатиЕдиногоАвансовогоОтчета</types>
     <types>ConstantValueManager.ИспользоватьСтатусыЗаказовПоставщикам</types>
@@ -109,7 +113,6 @@
     <types>ConstantValueManager.ВыделятьНерабочиеДниОтдельнымВидомВремени</types>
     <types>ConstantValueManager.ИспользоватьРасширенныеВозможностиЗаказаКлиента</types>
     <types>ConstantValueManager.ИзменятьЗаданияЗаднимЧислом</types>
-    <types>ConstantValueManager.РассчитыватьДокументыПриРедактировании</types>
     <types>ConstantValueManager.ЗапретитьПоступлениеТоваровБезНомеровГТД</types>
     <types>ConstantValueManager.ИспользоватьРучныеСкидкиВЗакупках</types>
     <types>ConstantValueManager.ИспользуетсяИнтеграцияЕНС</types>
@@ -181,7 +184,6 @@
     <types>ConstantValueManager.ИспользоватьПараметрыНазначенияСпецификаций</types>
     <types>ConstantValueManager.ИспользоватьПроизводствоНаСтороне</types>
     <types>ConstantValueManager.ИспользоватьЗаказыХотяБыОдногоВида</types>
-    <types>ConstantValueManager.СервисКабинетСотрудникаВЛокальнойСети</types>
     <types>ConstantValueManager.ИспользоватьДатыЗапретаИзменения</types>
     <types>ConstantValueManager.ИспользоватьПланированиеЗакупок</types>
     <types>ConstantValueManager.ИспользоватьМногооборотнуюТару</types>
@@ -218,6 +220,7 @@
     <types>ConstantValueManager.ИспользоватьИнтеграциюСЯндексМаркет</types>
     <types>ConstantValueManager.ФормироватьФинансовыйРезультат</types>
     <types>ConstantValueManager.ИспользоватьРасчетЗарплатыИСтатьиФинансированияЗарплата</types>
+    <types>ConstantValueManager.НастройкиОбменаНСПК</types>
     <types>ConstantValueManager.СведенияОбОперацияхСЦелевымиСредствами</types>
     <types>ConstantValueManager.ИспользоватьСоглашенияСКлиентами</types>
     <types>ConstantValueManager.ВариантОбособленияТоваровВСборке</types>
@@ -267,6 +270,7 @@
     <types>ConstantValueManager.ИспользоватьКомандуНапоминаний</types>
     <types>ConstantValueManager.ИспользоватьПродажиНаЭкспортСырьевыхТоваровУслуг</types>
     <types>ConstantValueManager.ИспользоватьСчетаНаОплатуКлиентам</types>
+    <types>ConstantValueManager.ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</types>
     <types>ConstantValueManager.НастройкиОбменаСАТУРН</types>
     <types>ConstantValueManager.АктуализироватьФактБюджетированияПриФормированииОтчетов</types>
     <types>ConstantValueManager.ВыбиратьВариантВыводаСкидокПриПечатиДокументовПродажи</types>
@@ -319,6 +323,7 @@
     <types>ConstantValueManager.ИспользоватьПоступлениеПоНесколькимЗаказам</types>
     <types>ConstantValueManager.ИспользоватьДатуИВремяВСрокахЗадач</types>
     <types>ConstantValueManager.ИспользоватьПередачиТоваровМеждуОрганизациями</types>
+    <types>ConstantValueManager.ВестиРасчетыСБюджетомПоНДФЛ</types>
     <types>ConstantValueManager.ПериодXYZКлассификацииНоменклатуры</types>
     <types>ConstantValueManager.ДатаНачалаПримененияПриказа126н</types>
     <types>ConstantValueManager.ИспользоватьВнешнихПользователей</types>
@@ -335,7 +340,6 @@
     <types>ConstantValueManager.ДатаНачалаВеденияУчетаТрудозатратПоСотрудникам</types>
     <types>ConstantValueManager.ИспользоватьУзлыОбъектовЭксплуатации</types>
     <types>ConstantValueManager.ИспользоватьРеестрДоверенностейФНСЭДО</types>
-    <types>ConstantValueManager.ИспользоватьСборГрафиковОтпусков</types>
     <types>ConstantValueManager.ИспользоватьПродажиНаЭкспортНесырьевыхТоваров</types>
     <types>ConstantValueManager.МаксимальныйРазмерФайлаОбластиДанных</types>
     <types>ConstantValueManager.ИспользуетсяТолькоУправлениеПроизводством22</types>
@@ -352,6 +356,7 @@
     <types>ConstantValueManager.ВидимостьДатыНачалаПеречисленияЗарплатыЧерезПереводыВПути</types>
     <types>ConstantValueManager.РегистрационныйНомерПрограммы</types>
     <types>ConstantValueManager.ИспользоватьСогласованиеЗаказовПоставщикам</types>
+    <types>ConstantValueManager.ИспользоватьКЭДО</types>
     <types>ConstantValueManager.ИспользоватьРолиКонтактныхЛицПартнеров</types>
     <types>ConstantValueManager.ИспользоватьРазделыТаможеннойДекларацииИмпорт</types>
     <types>ConstantValueManager.ИспользоватьВнеоборотныеАктивы2_2</types>
@@ -377,6 +382,7 @@
     <types>ConstantValueManager.ИспользоватьЭлектронноеАктированиеВЕИС</types>
     <types>ConstantValueManager.КонтролироватьОстаткиАвансов</types>
     <types>ConstantValueManager.ЕдиницаИзмеренияДлины</types>
+    <types>ConstantValueManager.АдресГрузополучателяБратьИзАдресаДоставки</types>
     <types>ConstantValueManager.ИспользоватьУправленческуюЗарплату</types>
     <types>ConstantValueManager.ИспользоватьСервисСклоненияMorpher</types>
     <types>ConstantValueManager.ЛокализацияРФ</types>
@@ -419,6 +425,7 @@
     <types>ConstantValueManager.СписокРасширенийФайловOpenDocument</types>
     <types>ConstantValueManager.ИспользоватьРолиПартнеровИКонтактныхЛицВСделкахИПроектах</types>
     <types>ConstantValueManager.ИспользоватьКомиссиюПриПродажахБазовая</types>
+    <types>ConstantValueManager.ДатаОбработкиКадровыхДанныхФСС</types>
     <types>ConstantValueManager.ВыводитьСерииВПечатныхФормах</types>
     <types>ConstantValueManager.ИспользоватьОбесценениеВНА</types>
     <types>ConstantValueManager.ВалютыУпрИРеглУчетаСовпадают</types>
@@ -438,11 +445,13 @@
     <types>ConstantValueManager.ВидЦеныСтоимостиПрослеживаемыхТоваров</types>
     <types>ConstantValueManager.ИспользоватьЛимитыРасходаДенежныхСредствБюджетирования</types>
     <types>ConstantValueManager.ИспользоватьЗаказыПоставщикамИЗаявкиНаРасходованиеДС</types>
+    <types>ConstantValueManager.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</types>
     <types>ConstantValueManager.ПериодичностьВводаСезонныхКоэффициентов</types>
     <types>ConstantValueManager.ИспользоватьПередачуНаОтветственноеХранениеСПравомПродажи</types>
     <types>ConstantValueManager.ПараметрыТестированияУниверсальногоОбменаСБанками</types>
     <types>ConstantValueManager.ВестиУчетЗернаИПродуктовПереработкиЗЕРНО</types>
     <types>ConstantValueManager.ИспользоватьГруппыФинансовогоУчета</types>
+    <types>ConstantValueManager.СпособФормированияИнтервальныхРегистров</types>
     <types>ConstantValueManager.УчитыватьСебестоимостьТоваровПоНазначениям</types>
     <types>ConstantValueManager.ИспользоватьЗаказыНаСборку</types>
     <types>ConstantValueManager.НеЗакрыватьЗаказыПереработчикамБезПолнойОтработки2_5</types>
@@ -451,6 +460,7 @@
     <types>ConstantValueManager.НеДетализироватьЗаданияТорговымПредставителямПоНоменклатуре</types>
     <types>ConstantValueManager.ВидМаксимальноДопустимыхЦенЗакупки</types>
     <types>ConstantValueManager.ИспользоватьМеждународныйФинансовыйУчет</types>
+    <types>ConstantValueManager.ЛетДоУничтоженияПерсональныхДанныхСотрудников</types>
     <types>ConstantValueManager.НеИспользоватьПроверкуЗаданийЗакрытияМесяцаВОтчетахРегл</types>
     <types>ConstantValueManager.ИспользоватьСогласованиеСписанийРетроБонусовКлиентов</types>
     <types>ConstantValueManager.ГруппаДоступаПартнераПриАвтоматическомСоздании</types>
@@ -471,6 +481,7 @@
     <types>ConstantValueManager.ИспользоватьОтветственноеХранениеСобственнымиОрганизациями</types>
     <types>ConstantValueManager.ИспользоватьГруппыПользователей</types>
     <types>ConstantValueManager.ИспользоватьФайловоеХранилище1СДокументооборота</types>
+    <types>ConstantValueManager.ИспользоватьРетроБонусыПоставщиков</types>
     <types>ConstantValueManager.ИспользоватьУпрощеннуюСхемуОплатыВЗакупках</types>
     <types>ConstantValueManager.ИспользоватьУправлениеПроизводством</types>
     <types>ConstantValueManager.КонтролироватьОстаткиНомеровГТДПриЗакупкеУПоставщикаПоСхемеТоварыВПути</types>
@@ -505,6 +516,7 @@
     <types>ConstantValueManager.ИспользуетсяПередачаВПереработку24и25</types>
     <types>ConstantValueManager.СписокРасширенийТекстовыхФайлов</types>
     <types>ConstantValueManager.ПеремещатьТоварыДругихОрганизаций</types>
+    <types>ConstantValueManager.ИспользоватьАвтоматическуюОтправкуСотрудниковБронированияКомандировок</types>
     <types>ConstantValueManager.ИспользоватьДоговорыМеждуОрганизациями</types>
     <types>ConstantValueManager.ИспользоватьПервичныйСпрос</types>
     <types>ConstantValueManager.ИспользоватьСезонныеКоэффициенты</types>
@@ -518,8 +530,8 @@
     <types>ConstantValueManager.ИспользоватьНачислениеЗарплаты</types>
     <types>ConstantValueManager.ОтображатьВнеоборотныеАктивы2_2</types>
     <types>ConstantValueManager.ИспользоватьДоверенностиНаПолучениеТМЦ</types>
-    <types>ConstantValueManager.ЗачетОплатПоДатеПлатежа</types>
-    <types>ConstantValueManager.ПечататьОтдельныйСлипЧекЕГАИС</types>
+    <types>ConstantValueManager.УдалитьЗачетОплатПоДатеПлатежа</types>
+    <types>ConstantValueManager.УдалитьПечататьОтдельныйСлипЧекЕГАИС</types>
     <types>ConstantValueManager.ШаблонЭтикеткиДляДоставки</types>
     <types>ConstantValueManager.КоличествоПериодовXYZКлассификацииПартнеров</types>
     <types>ConstantValueManager.НеЗакрыватьЗаказыПоставщикамБезПолнойОплаты</types>
@@ -544,6 +556,7 @@
     <types>ConstantValueManager.КлючСопоставленияПользователей1СДокументооборот</types>
     <types>ConstantValueManager.ИспользоватьУчетПрочихАктивовПассивов</types>
     <types>ConstantValueManager.ИспользоватьВнешниеХозяйственныеОперацииЗарплатаКадры</types>
+    <types>ConstantValueManager.ИспользоватьОбщийПериодОтпускаВДокументах</types>
     <types>ConstantValueManager.ОсновнаяСтрана</types>
     <types>ConstantValueManager.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</types>
     <types>ConstantValueManager.ИспользоватьСтатусыВнутреннихПотреблений</types>
@@ -553,6 +566,7 @@
     <types>ConstantValueManager.ИспользоватьИндивидуальныеСоглашенияСКлиентами</types>
     <types>ConstantValueManager.ИспользоватьПризнакРассмотрено</types>
     <types>ConstantValueManager.ДатаНачалаРегистрацииЗакупокПоЕГАИС</types>
+    <types>ConstantValueManager.ВыводитьПолныеНаименованияРетроБонусовКлиентов</types>
     <types>ConstantValueManager.РазрешенныеНеаккредитованныеУЦ</types>
     <types>ConstantValueManager.ЗаполненыДвиженияАктивовПассивов</types>
     <types>ConstantValueManager.ИспользоватьНесколькоКасс</types>
@@ -614,9 +628,11 @@
     <types>ConstantValueManager.ИспользоватьВнутреннееСогласованиеСоглашенийСКлиентами</types>
     <types>ConstantValueManager.ИспользованиеЭтаповОплатыВЗакупках</types>
     <types>ConstantValueManager.ИспользоватьПоследниеПодписиДокументов</types>
+    <types>ConstantValueManager.ЭтоБизКубБРО</types>
     <types>ConstantValueManager.ИдентификаторКорневойПапкиФайлов1СДокументооборот</types>
     <types>ConstantValueManager.ИспользоватьДоговорыКредитовИДепозитов</types>
     <types>ConstantValueManager.ДатаНачалаУчетаНДСПоНаправлениямДеятельности</types>
+    <types>ConstantValueManager.ВедетсяУчетСогласийНаПрисоединениеККЭДО</types>
     <types>ConstantValueManager.ЕдиницаИзмеренияКоличестваШтук</types>
     <types>ConstantValueManager.НеИспользоватьНесколькоСкладов</types>
     <types>ConstantValueManager.ИспользоватьУправлениеПеремещениемОбособленныхТоваров</types>
@@ -670,6 +686,7 @@
     <types>ConstantValueManager.ИспользоватьАктыРасхожденийПослеОтгрузки</types>
     <types>ConstantValueManager.УчетнаяЗаписьДляВосстановленияПароля</types>
     <types>ConstantValueManager.ХранитьОперацииВРесурсныхСпецификациях</types>
+    <types>ConstantValueManager.ОтключитьИнтеграциюСУчетнымиСистемами</types>
     <types>ConstantValueManager.ИспользоватьНесколькоПроизводственныхКалендарей</types>
     <types>ConstantValueManager.НеИспользоватьМногострановойУчет</types>
     <types>ConstantValueManager.ИспользоватьГруппыДоступаВидовСтатейИПоказателейБюджетов</types>

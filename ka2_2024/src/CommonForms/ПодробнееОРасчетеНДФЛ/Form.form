@@ -2024,6 +2024,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>НалоговаяБаза</name>
+      <title>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>Организация</name>
@@ -2751,6 +2768,23 @@
       </edit>
       <functionalOptions>FunctionalOption.ВыполнятьРасчетНДФЛПоПрогрессивнойШкале</functionalOptions>
     </columns>
+    <columns>
+      <name>ПримененныйВычетЛичныйНалоговаяБаза</name>
+      <title>
+        <key>ru</key>
+        <value>Примененный вычет личный налоговая база</value>
+      </title>
+      <id>37</id>
+      <valueType>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>Налог</name>
@@ -2953,6 +2987,23 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>НалоговаяБаза</name>
+      <title>
+        <key>ru</key>
+        <value>Налоговая база</value>
+      </title>
+      <id>9</id>
+      <valueType>
+        <types>EnumRef.КатегорииДоходовНДФЛ</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>ДокументСсылка</name>
@@ -3069,6 +3120,26 @@
       <common>true</common>
     </edit>
     <functionalOptions>FunctionalOption.ВыполнятьРасчетНДФЛПоПрогрессивнойШкале</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ДатаПолученияДохода</name>
+    <title>
+      <key>ru</key>
+      <value>Дата получения дохода</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>ОК</name>

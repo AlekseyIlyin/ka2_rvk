@@ -1288,6 +1288,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ПодписанЗашифрованСостоянияДО24</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -2690,187 +2694,29 @@
             <name>СтраницаПревью</name>
             <id>334</id>
             <items xsi:type="form:FormGroup">
-              <name>ГруппаПредпросмотрУрезан</name>
-              <id>253</id>
-              <items xsi:type="form:Decoration">
-                <name>ДекорацияИконкаУрезан</name>
-                <id>255</id>
-                <title>
-                  <key>ru</key>
-                  <value>Декорация иконка урезан</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ДекорацияИконкаУрезанРасширеннаяПодсказка</name>
-                  <id>257</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>ДекорацияИконкаУрезанКонтекстноеМеню</name>
-                  <id>256</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <width>2</width>
-                <autoMaxWidth>true</autoMaxWidth>
-                <height>1</height>
-                <autoMaxHeight>true</autoMaxHeight>
-                <horizontalStretch>false</horizontalStretch>
-                <verticalStretch>false</verticalStretch>
-                <extInfo xsi:type="form:PictureDecorationExtInfo">
-                  <picture xsi:type="core:PictureRef">
-                    <picture>CommonPicture.Предупреждение</picture>
-                  </picture>
-                  <fileDragMode>AsFileRef</fileDragMode>
-                </extInfo>
-              </items>
-              <items xsi:type="form:Decoration">
-                <name>ДекорацияПредпросмотрУрезан</name>
-                <id>258</id>
-                <title>
-                  <key>ru</key>
-                  <value>Файл показан в сокращенном виде, т.к. содержит большой текст. Откройте файл для просмотра чтобы увидеть полностью.</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ДекорацияПредпросмотрУрезанРасширеннаяПодсказка</name>
-                  <id>260</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>ДекорацияПредпросмотрУрезанКонтекстноеМеню</name>
-                  <id>259</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>Label</type>
-                <autoMaxHeight>true</autoMaxHeight>
-                <textColor xsi:type="core:ColorRef">
-                  <color>Style.FormTextColor</color>
-                </textColor>
-                <font xsi:type="core:FontDef">
-                  <height>8.0</height>
-                  <bold>true</bold>
-                </font>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </items>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <title>
-                <key>ru</key>
-                <value>Группа предпросмотр урезан</value>
-              </title>
-              <extendedTooltip>
-                <name>ГруппаПредпросмотрУрезанРасширеннаяПодсказка</name>
-                <id>254</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualGroup</type>
-              <extInfo xsi:type="form:UsualGroupExtInfo">
-                <group>AlwaysHorizontal</group>
-                <showLeftMargin>true</showLeftMargin>
-                <united>true</united>
-                <backColor xsi:type="core:ColorRef">
-                  <color>Style.FieldAlternativeBackColor</color>
-                </backColor>
-                <throughAlign>Auto</throughAlign>
-                <currentRowUse>Auto</currentRowUse>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormField">
-              <name>ПредставлениеHTML</name>
-              <id>261</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ПредставлениеHTML</segments>
-              </dataPath>
-              <titleLocation>None</titleLocation>
-              <extendedTooltip>
-                <name>ПредставлениеHTMLРасширеннаяПодсказка</name>
-                <id>263</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ПредставлениеHTMLКонтекстноеМеню</name>
-                <id>262</id>
+              <name>ГруппаПредпросмотрСтраницы</name>
+              <id>336</id>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаHTML</name>
+                <id>338</id>
                 <items xsi:type="form:FormGroup">
-                  <name>ПредставлениеHTMLКонтекстноеМенюГруппаОбновить</name>
-                  <id>266</id>
-                  <items xsi:type="form:Button">
-                    <name>ПредставлениеHTMLКонтекстноеМенюОбновитьПредпросмотр</name>
-                    <id>264</id>
+                  <name>ГруппаПредпросмотрУрезан</name>
+                  <id>253</id>
+                  <items xsi:type="form:Decoration">
+                    <name>ДекорацияИконкаУрезан</name>
+                    <id>255</id>
+                    <title>
+                      <key>ru</key>
+                      <value>Декорация иконка урезан</value>
+                    </title>
                     <visible>true</visible>
                     <enabled>true</enabled>
                     <userVisible>
                       <common>true</common>
                     </userVisible>
                     <extendedTooltip>
-                      <name>ПредставлениеHTMLКонтекстноеМенюОбновитьПредпросмотрРасширеннаяПодсказка</name>
-                      <id>265</id>
+                      <name>ДекорацияИконкаУрезанРасширеннаяПодсказка</name>
+                      <id>257</id>
                       <visible>true</visible>
                       <enabled>true</enabled>
                       <userVisible>
@@ -2883,21 +2729,90 @@
                         <horizontalAlign>Left</horizontalAlign>
                       </extInfo>
                     </extendedTooltip>
-                    <commandName>Form.Command.ОбновитьПредпросмотр</commandName>
-                    <representation>Auto</representation>
+                    <contextMenu>
+                      <name>ДекорацияИконкаУрезанКонтекстноеМеню</name>
+                      <id>256</id>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <autoFill>true</autoFill>
+                    </contextMenu>
+                    <width>2</width>
                     <autoMaxWidth>true</autoMaxWidth>
+                    <height>1</height>
                     <autoMaxHeight>true</autoMaxHeight>
-                    <placementArea>UserCmds</placementArea>
-                    <representationInContextMenu>Auto</representationInContextMenu>
+                    <horizontalStretch>false</horizontalStretch>
+                    <verticalStretch>false</verticalStretch>
+                    <extInfo xsi:type="form:PictureDecorationExtInfo">
+                      <picture xsi:type="core:PictureRef">
+                        <picture>CommonPicture.Предупреждение</picture>
+                      </picture>
+                      <fileDragMode>AsFileRef</fileDragMode>
+                    </extInfo>
                   </items>
-                  <visible>true</visible>
+                  <items xsi:type="form:Decoration">
+                    <name>ДекорацияПредпросмотрУрезан</name>
+                    <id>258</id>
+                    <title>
+                      <key>ru</key>
+                      <value>Файл показан в сокращенном виде, т.к. содержит большой текст. Откройте файл для просмотра чтобы увидеть полностью.</value>
+                    </title>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДекорацияПредпросмотрУрезанРасширеннаяПодсказка</name>
+                      <id>260</id>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <contextMenu>
+                      <name>ДекорацияПредпросмотрУрезанКонтекстноеМеню</name>
+                      <id>259</id>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <autoFill>true</autoFill>
+                    </contextMenu>
+                    <type>Label</type>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <textColor xsi:type="core:ColorRef">
+                      <color>Style.FormTextColor</color>
+                    </textColor>
+                    <font xsi:type="core:FontDef">
+                      <height>8.0</height>
+                      <bold>true</bold>
+                    </font>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </items>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
+                  <title>
+                    <key>ru</key>
+                    <value>Группа предпросмотр урезан</value>
+                  </title>
                   <extendedTooltip>
-                    <name>ПредставлениеHTMLКонтекстноеМенюГруппаОбновитьРасширеннаяПодсказка</name>
-                    <id>267</id>
+                    <name>ГруппаПредпросмотрУрезанРасширеннаяПодсказка</name>
+                    <id>254</id>
                     <visible>true</visible>
                     <enabled>true</enabled>
                     <userVisible>
@@ -2910,34 +2825,346 @@
                       <horizontalAlign>Left</horizontalAlign>
                     </extInfo>
                   </extendedTooltip>
-                  <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+                  <type>UsualGroup</type>
+                  <extInfo xsi:type="form:UsualGroupExtInfo">
+                    <group>AlwaysHorizontal</group>
+                    <showLeftMargin>true</showLeftMargin>
+                    <united>true</united>
+                    <backColor xsi:type="core:ColorRef">
+                      <color>Style.FieldAlternativeBackColor</color>
+                    </backColor>
+                    <throughAlign>Auto</throughAlign>
+                    <currentRowUse>Auto</currentRowUse>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ПредставлениеHTML</name>
+                  <id>261</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>ПредставлениеHTML</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>ПредставлениеHTMLРасширеннаяПодсказка</name>
+                    <id>263</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПредставлениеHTMLКонтекстноеМеню</name>
+                    <id>262</id>
+                    <items xsi:type="form:FormGroup">
+                      <name>ПредставлениеHTMLКонтекстноеМенюГруппаОбновить</name>
+                      <id>266</id>
+                      <items xsi:type="form:Button">
+                        <name>ПредставлениеHTMLКонтекстноеМенюОбновитьПредпросмотр</name>
+                        <id>264</id>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <extendedTooltip>
+                          <name>ПредставлениеHTMLКонтекстноеМенюОбновитьПредпросмотрРасширеннаяПодсказка</name>
+                          <id>265</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <commandName>Form.Command.ОбновитьПредпросмотр</commandName>
+                        <representation>Auto</representation>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <placementArea>UserCmds</placementArea>
+                        <representationInContextMenu>Auto</representationInContextMenu>
+                      </items>
+                      <visible>true</visible>
+                      <enabled>true</enabled>
+                      <userVisible>
+                        <common>true</common>
+                      </userVisible>
+                      <extendedTooltip>
+                        <name>ПредставлениеHTMLКонтекстноеМенюГруппаОбновитьРасширеннаяПодсказка</name>
+                        <id>267</id>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <type>Label</type>
+                        <autoMaxWidth>true</autoMaxWidth>
+                        <autoMaxHeight>true</autoMaxHeight>
+                        <extInfo xsi:type="form:LabelDecorationExtInfo">
+                          <horizontalAlign>Left</horizontalAlign>
+                        </extInfo>
+                      </extendedTooltip>
+                      <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+                    </items>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>HTMLDocumentField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:HtmlFieldExtInfo">
+                    <handlers>
+                      <event>OnClick</event>
+                      <name>ПредставлениеHTMLПриНажатии</name>
+                    </handlers>
+                    <width>30</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <height>10</height>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <horizontalStretch>true</horizontalStretch>
+                    <verticalStretch>true</verticalStretch>
+                    <borderColor xsi:type="core:ColorRef">
+                      <color>Style.BorderColor</color>
+                    </borderColor>
+                  </extInfo>
                 </items>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>HTMLDocumentField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:HtmlFieldExtInfo">
-                <handlers>
-                  <event>OnClick</event>
-                  <name>ПредставлениеHTMLПриНажатии</name>
-                </handlers>
-                <width>30</width>
+                <title>
+                  <key>ru</key>
+                  <value>Группа HTML</value>
+                </title>
+                <extendedTooltip>
+                  <name>ГруппаHTMLРасширеннаяПодсказка</name>
+                  <id>339</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Page</type>
+                <extInfo xsi:type="form:PageGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаPDF</name>
+                <id>357</id>
+                <items xsi:type="form:FormGroup">
+                  <name>ГруппаОбзорФайлаКоманды</name>
+                  <id>359</id>
+                  <items xsi:type="form:Button">
+                    <name>ДокументPDFУвеличить</name>
+                    <id>361</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДокументPDFУвеличитьРасширеннаяПодсказка</name>
+                      <id>362</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>UsualButton</type>
+                    <commandName>Form.Command.ДокументPDFУвеличить</commandName>
+                    <representation>Auto</representation>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <placementArea>UserCmds</placementArea>
+                    <representationInContextMenu>Auto</representationInContextMenu>
+                    <shapeRepresentation>None</shapeRepresentation>
+                  </items>
+                  <items xsi:type="form:Button">
+                    <name>ДокументPDFУменьшить</name>
+                    <id>363</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДокументPDFУменьшитьРасширеннаяПодсказка</name>
+                      <id>364</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>UsualButton</type>
+                    <commandName>Form.Command.ДокументPDFУменьшить</commandName>
+                    <representation>Auto</representation>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <placementArea>UserCmds</placementArea>
+                    <representationInContextMenu>Auto</representationInContextMenu>
+                    <shapeRepresentation>None</shapeRepresentation>
+                  </items>
+                  <items xsi:type="form:Button">
+                    <name>ДокументPDFПоворотЛево</name>
+                    <id>365</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДокументPDFПоворотЛевоРасширеннаяПодсказка</name>
+                      <id>366</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>UsualButton</type>
+                    <commandName>Form.Command.ДокументPDFПоворотЛево</commandName>
+                    <representation>Auto</representation>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <placementArea>UserCmds</placementArea>
+                    <representationInContextMenu>Auto</representationInContextMenu>
+                    <shapeRepresentation>None</shapeRepresentation>
+                  </items>
+                  <items xsi:type="form:Button">
+                    <name>ДокументPDFПоворотПраво</name>
+                    <id>367</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <extendedTooltip>
+                      <name>ДокументPDFПоворотПравоРасширеннаяПодсказка</name>
+                      <id>368</id>
+                      <type>Label</type>
+                      <autoMaxWidth>true</autoMaxWidth>
+                      <autoMaxHeight>true</autoMaxHeight>
+                      <extInfo xsi:type="form:LabelDecorationExtInfo">
+                        <horizontalAlign>Left</horizontalAlign>
+                      </extInfo>
+                    </extendedTooltip>
+                    <type>UsualButton</type>
+                    <commandName>Form.Command.ДокументPDFПоворотПраво</commandName>
+                    <representation>Auto</representation>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <placementArea>UserCmds</placementArea>
+                    <representationInContextMenu>Auto</representationInContextMenu>
+                    <shapeRepresentation>None</shapeRepresentation>
+                  </items>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <title>
+                    <key>ru</key>
+                    <value>Группа обзор файла команды</value>
+                  </title>
+                  <extendedTooltip>
+                    <name>ГруппаОбзорФайлаКомандыРасширеннаяПодсказка</name>
+                    <id>360</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>UsualGroup</type>
+                  <extInfo xsi:type="form:UsualGroupExtInfo">
+                    <group>AlwaysHorizontal</group>
+                    <behavior>Auto</behavior>
+                    <showLeftMargin>true</showLeftMargin>
+                    <united>true</united>
+                    <throughAlign>Auto</throughAlign>
+                    <currentRowUse>Auto</currentRowUse>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа PDF</value>
+                </title>
+                <extendedTooltip>
+                  <name>ГруппаPDFРасширеннаяПодсказка</name>
+                  <id>358</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Page</type>
+                <extInfo xsi:type="form:PageGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа предпросмотр страницы</value>
+              </title>
+              <extendedTooltip>
+                <name>ГруппаПредпросмотрСтраницыРасширеннаяПодсказка</name>
+                <id>337</id>
+                <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
-                <height>10</height>
                 <autoMaxHeight>true</autoMaxHeight>
-                <horizontalStretch>true</horizontalStretch>
-                <verticalStretch>true</verticalStretch>
-                <borderColor xsi:type="core:ColorRef">
-                  <color>Style.BorderColor</color>
-                </borderColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Pages</type>
+              <extInfo xsi:type="form:PagesGroupExtInfo">
+                <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -3234,7 +3461,7 @@
         <id>89</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -3601,6 +3828,10 @@
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
   </handlers>
   <width>96</width>
   <saveWindowSettings>true</saveWindowSettings>
@@ -4067,10 +4298,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ОбъектИд</name>
+      <name>ОбъектID</name>
       <title>
         <key>ru</key>
-        <value>Объект ид</value>
+        <value>Объект ID</value>
       </title>
       <id>5</id>
       <valueType>
@@ -4157,10 +4388,10 @@
       </edit>
     </columns>
     <columns>
-      <name>УстановившийПодписьИд</name>
+      <name>УстановившийПодписьID</name>
       <title>
         <key>ru</key>
-        <value>Установивший подпись ид</value>
+        <value>Установивший подпись ID</value>
       </title>
       <id>18</id>
       <valueType>
@@ -4219,6 +4450,24 @@
       <id>21</id>
       <valueType>
         <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДатаПроверкиПодписи</name>
+      <title>
+        <key>ru</key>
+        <value>Дата проверки подписи</value>
+      </title>
+      <id>38</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers/>
       </valueType>
       <view>
         <common>true</common>
@@ -4726,6 +4975,24 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>ПолноеИмяФайлаПредпросмотра</name>
+      <title>
+        <key>ru</key>
+        <value>Полное имя временного файла предпросмотра</value>
+      </title>
+      <id>37</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>ИспользоватьРолиФайлов</name>
@@ -5015,6 +5282,46 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ПоказыватьPDFСредствами1С</name>
+    <title>
+      <key>ru</key>
+      <value>Показывать PDF средствами 1С</value>
+    </title>
+    <id>35</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВременныеФайлыПредпросмотра</name>
+    <title>
+      <key>ru</key>
+      <value>Временные файлы предпросмотра</value>
+    </title>
+    <id>36</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </itemValueType>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>ДобавитьСДиска</name>
@@ -5493,6 +5800,90 @@
         <name>ПеренестиФайлыИСвДОКоманда</name>
       </handler>
     </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ДокументPDFПоворотЛево</name>
+    <title>
+      <key>ru</key>
+      <value>Повернуть по часовой стрелке</value>
+    </title>
+    <id>22</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.RotateClockwise</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДокументPDFПоворотЛево</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ДокументPDFПоворотПраво</name>
+    <title>
+      <key>ru</key>
+      <value>Повернуть против часовой стрелки</value>
+    </title>
+    <id>23</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.RotateCounterclockwise</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДокументPDFПоворотПраво</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ДокументPDFУвеличить</name>
+    <title>
+      <key>ru</key>
+      <value>Увеличить</value>
+    </title>
+    <id>24</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ZoomIn</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДокументPDFУвеличить</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ДокументPDFУменьшить</name>
+    <title>
+      <key>ru</key>
+      <value>Уменьшить</value>
+    </title>
+    <id>25</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ZoomOut</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДокументPDFУменьшить</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

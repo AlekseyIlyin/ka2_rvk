@@ -11,34 +11,11 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="d2f407d6-3928-4640-b9f8-bb569c03c13d">
-    <name>Форма2015_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма ТС-1</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="81693283-ea28-4b11-bfae-67a6237aef1c">
     <name>Форма2020_1</name>
     <synonym>
       <key>ru</key>
       <value>Форма ТС-1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="5c969223-9b7b-4e95-ae3b-fe0981dead5b">
-    <name>ФормаВыбораОтправленных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора отправленных</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -52,41 +29,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="2d9afa20-74e3-406d-b5cd-80300a151edd">
-    <name>Форма2015_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2015 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="1b21ced9-c1e6-47cb-aed5-420794b86fb3">
-    <name>ПараметрыФорма2015_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры форма2015 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="3814e4bf-d2f7-43ff-86dc-0ba8ff29c541">
-    <name>СхемаВыгрузкиФорма2015_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки форма2015 1</value>
-    </synonym>
-  </templates>
   <templates uuid="0c069afe-309f-4530-be4f-61b3d95e5953">
     <name>Печать_MXL_Форма2015_1</name>
     <synonym>
       <key>ru</key>
       <value>Форма ТС-1</value>
     </synonym>
-  </templates>
-  <templates uuid="fa9881be-6c07-4441-a8e9-5be010405fcc">
-    <name>TIFF_2015_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>1110050_5.01000_01.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="f4982a85-bffa-43dd-b74f-4c3d28bb2780">
     <name>Печать_Форма2020_1_Титульная</name>
@@ -135,14 +83,14 @@
     <name>Титульная_2020</name>
     <synonym>
       <key>ru</key>
-      <value>Форма ТС-1</value>
+      <value>экранная форома</value>
     </synonym>
   </templates>
   <templates uuid="9ac7654d-813d-4af8-a010-75e29cabf52a">
     <name>ОбТоргСбор_2020</name>
     <synonym>
       <key>ru</key>
-      <value>Форма ТС-1</value>
+      <value>экранная форома</value>
     </synonym>
   </templates>
 </mdclass:Report>

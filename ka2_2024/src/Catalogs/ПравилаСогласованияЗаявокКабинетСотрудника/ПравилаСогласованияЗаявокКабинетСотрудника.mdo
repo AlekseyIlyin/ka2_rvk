@@ -180,6 +180,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e2ca288b-b426-480f-8b4a-08cfdadfa248">
+    <name>ШаблонДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="50651487-5d08-41e3-8278-32ee1741a76d">
     <producedTypes>
       <objectType typeId="2fd93d68-958b-4580-9954-aa5171c9c824" valueTypeId="b5997cfb-3381-4e69-99f4-cacb16d29702"/>

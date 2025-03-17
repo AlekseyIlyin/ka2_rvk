@@ -319,6 +319,76 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="c02ab877-c578-4d41-8ddf-abfee5a07035">
+    <name>КлючКассыНСПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ кассы НСПК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f4e10c3-b609-4467-a640-c7521998bc4b">
+    <name>ИдентификаторНСПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор НСПК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>18</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2adb849-5082-4cfc-8f27-4ad79ce64358">
+    <name>ПротоколОбменаНСПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол обмена НСПК</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПротоколОбменаФЭСНСПК</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7333a0d1-50e2-4554-ba4c-69b040c55007">
+    <name>РеквизитыПодключенияНСПКОбработаны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты подключения НСПК обработаны</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="813f268d-c513-4443-a134-a2081834ad09">
     <producedTypes>
       <objectType typeId="0016bb33-de2c-4f96-a8b6-21609b0e34b0" valueTypeId="6e51fd4d-4eb4-4e51-a107-f0fbe0149f82"/>

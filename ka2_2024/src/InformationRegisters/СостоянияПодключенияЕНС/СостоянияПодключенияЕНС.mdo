@@ -97,13 +97,28 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="45ac4733-2bf4-4547-a1c6-918956b8d7b8">
-    <name>СпособАвторизации</name>
+    <name>УдалитьСпособАвторизации</name>
     <synonym>
       <key>ru</key>
-      <value>Способ авторизации</value>
+      <value>(не используется) Способ авторизации</value>
     </synonym>
     <type>
       <types>EnumRef.СпособыАвторизацииКСервисуЕНС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f899258e-59f0-44e9-b78b-c67ad674487b">
+    <name>ИспользоватьСервисДанныхЕНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Быстрая загрузка с сервера 1С</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

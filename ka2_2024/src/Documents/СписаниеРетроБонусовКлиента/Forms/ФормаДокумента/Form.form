@@ -1141,7 +1141,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Валюта</name>
+      <name>ВалютаДокумента</name>
       <id>105</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1149,17 +1149,12 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Валюта</segments>
+        <segments>ВалютаДокумента</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>ВалютаРасширеннаяПодсказка</name>
+        <name>ВалютаДокументаРасширеннаяПодсказка</name>
         <id>107</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -1168,13 +1163,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВалютаКонтекстноеМеню</name>
+        <name>ВалютаДокументаКонтекстноеМеню</name>
         <id>106</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -1737,6 +1727,10 @@
     <name>ПриОткрытии</name>
   </handlers>
   <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -1839,6 +1833,40 @@
     <id>5</id>
     <valueType>
       <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>МожноЗакрытьФормуСФайлами</name>
+    <title>
+      <key>ru</key>
+      <value>Можно закрыть форму с файлами</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВалютаДокумента</name>
+    <title>
+      <key>ru</key>
+      <value>Валюта документа</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>CatalogRef.Валюты</types>
     </valueType>
     <view>
       <common>true</common>
@@ -1967,7 +1995,12 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
-    <navigationPanel/>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>CommonCommand.ПрисоединенныеФайлы</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </navigationPanel>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">

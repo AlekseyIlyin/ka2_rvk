@@ -238,7 +238,7 @@
     <id>7</id>
     <title>
       <key>ru</key>
-      <value>Тип статьи</value>
+      <value>Вид статьи</value>
     </title>
     <visible>true</visible>
     <enabled>true</enabled>
@@ -361,9 +361,9 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
         <choiceButton>false</choiceButton>
         <clearButton>false</clearButton>
         <listChoiceMode>true</listChoiceMode>
@@ -473,22 +473,108 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
-  <items xsi:type="form:Button">
-    <name>НастроитьСчетаУчета</name>
-    <id>80</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <extendedTooltip>
-      <name>НастроитьСчетаУчетаРасширеннаяПодсказка</name>
-      <id>81</id>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаНастройкаСчетовУчета</name>
+    <id>88</id>
+    <items xsi:type="form:FormField">
+      <name>СчетаУчетаВНастройкахПроводок</name>
+      <id>85</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СчетаУчетаВНастройкахПроводок</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>УказаниеСчетовУчетаВНастройкахПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>СчетаУчетаВНастройкахПроводокРасширеннаяПодсказка</name>
+        <id>87</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СчетаУчетаВНастройкахПроводокКонтекстноеМеню</name>
+        <id>86</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Указываются в документах</value>
+          </presentation>
+          <value xsi:type="core:NumberValue">
+            <value>0</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Указываются в настройках проводок</value>
+          </presentation>
+          <value xsi:type="core:NumberValue">
+            <value>1</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>НастроитьСчетаУчета</name>
+      <id>80</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>НастроитьСчетаУчетаРасширеннаяПодсказка</name>
+        <id>81</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Hyperlink</type>
+      <commandName>Form.Command.НастроитьСчетаУчета</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа настройка счетов учета статьи</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаНастройкаСчетовУчетаРасширеннаяПодсказка</name>
+      <id>89</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -496,13 +582,14 @@
         <horizontalAlign>Left</horizontalAlign>
       </extInfo>
     </extendedTooltip>
-    <type>Hyperlink</type>
-    <commandName>Form.Command.НастроитьСчетаУчета</commandName>
-    <representation>Auto</representation>
-    <autoMaxWidth>true</autoMaxWidth>
-    <autoMaxHeight>true</autoMaxHeight>
-    <placementArea>UserCmds</placementArea>
-    <representationInContextMenu>Auto</representationInContextMenu>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>DontUse</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
     <name>ГруппаПредставлениеОборота</name>
@@ -978,22 +1065,53 @@
       <value>Аналитика</value>
     </title>
     <id>6</id>
-    <valueType/>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
     <view>
       <common>true</common>
     </view>
     <edit>
       <common>true</common>
     </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>TypeDescription</types>
+      </itemValueType>
+    </extInfo>
   </attributes>
   <attributes>
-    <name>СтатьиСНастройкамиПоОбъектам</name>
+    <name>СчетаУчетаВНастройкахПроводок</name>
     <title>
       <key>ru</key>
-      <value>Статьи с настройками по объектам</value>
+      <value>Счета международного учета</value>
     </title>
-    <id>7</id>
-    <valueType/>
+    <id>8</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ЭтоПользовательскаяСтатья</name>
+    <title>
+      <key>ru</key>
+      <value>Это пользовательская статья</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
     <view>
       <common>true</common>
     </view>

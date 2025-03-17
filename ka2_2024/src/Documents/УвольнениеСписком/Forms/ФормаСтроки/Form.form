@@ -2695,26 +2695,268 @@
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
-        <items xsi:type="form:FormField">
-          <name>НадписьОстаткиОтгулов</name>
-          <id>1536</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>НадписьОстаткиОтгулов</segments>
-          </dataPath>
-          <titleLocation>None</titleLocation>
-          <extendedTooltip>
-            <name>НадписьОстаткиОтгуловРасширеннаяПодсказка</name>
-            <id>1538</id>
+        <items xsi:type="form:FormGroup">
+          <name>КомпенсацияОтгуловГруппа</name>
+          <id>2077</id>
+          <items xsi:type="form:FormGroup">
+            <name>КомпенсацияОтгуловДниГруппа</name>
+            <id>2091</id>
+            <items xsi:type="form:FormField">
+              <name>ДниНакопленныхОтгулов</name>
+              <id>2079</id>
+              <title>
+                <key>ru</key>
+                <value>Дни</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ДниНакопленныхОтгулов</segments>
+              </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>ДниНакопленныхОтгуловПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ДниНакопленныхОтгуловРасширеннаяПодсказка</name>
+                <id>2081</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДниНакопленныхОтгуловКонтекстноеМеню</name>
+                <id>2080</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ВидРасчетаКомпенсацияНеИспользованныхДнейОтдыха</name>
+              <id>2085</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ВидРасчетаКомпенсацияНеИспользованныхДнейОтдыха</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>ВидРасчетаКомпенсацияНеИспользованныхДнейОтдыхаРасширеннаяПодсказка</name>
+                <id>2087</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ВидРасчетаКомпенсацияНеИспользованныхДнейОтдыхаКонтекстноеМеню</name>
+                <id>2086</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Компенсация отгулов дни группа</value>
+            </title>
+            <extendedTooltip>
+              <name>КомпенсацияОтгуловДниГруппаРасширеннаяПодсказка</name>
+              <id>2092</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>КомпенсацияОтгуловЧасыГруппа</name>
+            <id>2093</id>
+            <items xsi:type="form:FormField">
+              <name>ЧасыНакопленныхОтгулов</name>
+              <id>2082</id>
+              <title>
+                <key>ru</key>
+                <value>Часы</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ЧасыНакопленныхОтгулов</segments>
+              </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>ЧасыНакопленныхОтгуловПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ЧасыНакопленныхОтгуловРасширеннаяПодсказка</name>
+                <id>2084</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ЧасыНакопленныхОтгуловКонтекстноеМеню</name>
+                <id>2083</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ВидРасчетаКомпенсацияНеИспользованныхЧасовОтдыха</name>
+              <id>2088</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ВидРасчетаКомпенсацияНеИспользованныхЧасовОтдыха</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>ВидРасчетаКомпенсацияНеИспользованныхЧасовОтдыхаРасширеннаяПодсказка</name>
+                <id>2090</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ВидРасчетаКомпенсацияНеИспользованныхЧасовОтдыхаКонтекстноеМеню</name>
+                <id>2089</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Компенсация отгулов часы группа</value>
+            </title>
+            <extendedTooltip>
+              <name>КомпенсацияОтгуловЧасыГруппаРасширеннаяПодсказка</name>
+              <id>2094</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Компенсация отгулов</value>
+          </title>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <extendedTooltip>
+            <name>КомпенсацияОтгуловГруппаРасширеннаяПодсказка</name>
+            <id>2078</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2722,24 +2964,15 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <contextMenu>
-            <name>НадписьОстаткиОтгуловКонтекстноеМеню</name>
-            <id>1537</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>DontUse</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -11164,6 +11397,10 @@
               <items xsi:type="form:FormField">
                 <name>НДФЛНалогСПревышения</name>
                 <id>1996</id>
+                <title>
+                  <key>ru</key>
+                  <value>Налог с превышения</value>
+                </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
@@ -11209,6 +11446,217 @@
                   <chooseType>true</chooseType>
                   <typeDomainEnabled>true</typeDomainEnabled>
                   <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаКолонокНалогПоПрогрессивнымСтавкам</name>
+                <id>2046</id>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛНалогСПревышенияПоСтавке15</name>
+                  <id>2051</id>
+                  <title>
+                    <key>ru</key>
+                    <value>15%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.НалогСПревышения</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛНалогСПревышенияПоСтавке15РасширеннаяПодсказка</name>
+                    <id>2053</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛНалогСПревышенияПоСтавке15КонтекстноеМеню</name>
+                    <id>2052</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛНалогСПревышенияПоСтавке18</name>
+                  <id>2054</id>
+                  <title>
+                    <key>ru</key>
+                    <value>18%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.НалогСПревышенияПоСтавке18</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛНалогСПревышенияПоСтавке18РасширеннаяПодсказка</name>
+                    <id>2056</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛНалогСПревышенияПоСтавке18КонтекстноеМеню</name>
+                    <id>2055</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛНалогСПревышенияПоСтавке20</name>
+                  <id>2057</id>
+                  <title>
+                    <key>ru</key>
+                    <value>20%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.НалогСПревышенияПоСтавке20</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛНалогСПревышенияПоСтавке20РасширеннаяПодсказка</name>
+                    <id>2059</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛНалогСПревышенияПоСтавке20КонтекстноеМеню</name>
+                    <id>2058</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛНалогСПревышенияПоСтавке22</name>
+                  <id>2060</id>
+                  <title>
+                    <key>ru</key>
+                    <value>22%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.НалогСПревышенияПоСтавке22</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛНалогСПревышенияПоСтавке22РасширеннаяПодсказка</name>
+                    <id>2062</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛНалогСПревышенияПоСтавке22КонтекстноеМеню</name>
+                    <id>2061</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Налог по прогр. ставкам</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Налог по прогрессивным ставкам</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаКолонокНалогПоПрогрессивнымСтавкамРасширеннаяПодсказка</name>
+                  <id>2047</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>ColumnGroup</type>
+                <extInfo xsi:type="form:ColumnGroupExtInfo">
+                  <showTitle>true</showTitle>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -11262,11 +11710,13 @@
               <items xsi:type="form:FormField">
                 <name>НДФЛЗачтеноАвансовыхПлатежейСПревышения</name>
                 <id>1999</id>
+                <title>
+                  <key>ru</key>
+                  <value>Зачтено авансов (в счет превышения)</value>
+                </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
+                <userVisible/>
                 <dataPath xsi:type="form:DataPath">
                   <segments>Объект.НДФЛ.ЗачтеноАвансовыхПлатежейСПревышения</segments>
                 </dataPath>
@@ -11307,6 +11757,209 @@
                   <chooseType>true</chooseType>
                   <typeDomainEnabled>true</typeDomainEnabled>
                   <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаКолонокЗачтеноАвансовВСчетСуммПоПрогрессивнымСтавкам</name>
+                <id>2063</id>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке15</name>
+                  <id>2065</id>
+                  <title>
+                    <key>ru</key>
+                    <value>15%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible/>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.ЗачтеноАвансовыхПлатежейСПревышения</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке15РасширеннаяПодсказка</name>
+                    <id>2067</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке15КонтекстноеМеню</name>
+                    <id>2066</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке18</name>
+                  <id>2068</id>
+                  <title>
+                    <key>ru</key>
+                    <value>18%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible/>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.ЗачтеноАвансовыхПлатежейСПревышенияПоСтавке18</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке18РасширеннаяПодсказка</name>
+                    <id>2070</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке18КонтекстноеМеню</name>
+                    <id>2069</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке20</name>
+                  <id>2071</id>
+                  <title>
+                    <key>ru</key>
+                    <value>20%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible/>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.ЗачтеноАвансовыхПлатежейСПревышенияПоСтавке20</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке20РасширеннаяПодсказка</name>
+                    <id>2073</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке20КонтекстноеМеню</name>
+                    <id>2072</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке22</name>
+                  <id>2074</id>
+                  <title>
+                    <key>ru</key>
+                    <value>22%</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible/>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.НДФЛ.ЗачтеноАвансовыхПлатежейСПревышенияПоСтавке22</segments>
+                  </dataPath>
+                  <extendedTooltip>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке22РасширеннаяПодсказка</name>
+                    <id>2076</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>НДФЛЗачтеноАвансовыхПлатежейСПревышенияПоСтавке22КонтекстноеМеню</name>
+                    <id>2075</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>EnterOnInput</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Зачтено авансов в счет сумм по прогр. ставкам</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Зачтено авансов в счет сумм по прогрессивным ставкам</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаКолонокЗачтеноАвансовВСчетСуммПоПрогрессивнымСтавкамРасширеннаяПодсказка</name>
+                  <id>2064</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>ColumnGroup</type>
+                <extInfo xsi:type="form:ColumnGroupExtInfo">
+                  <showTitle>true</showTitle>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">

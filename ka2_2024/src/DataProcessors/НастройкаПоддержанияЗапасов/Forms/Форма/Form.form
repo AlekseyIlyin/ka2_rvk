@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
   <items xsi:type="form:FormGroup">
     <name>ГруппаПоддержаниеЗапасов</name>
     <id>518</id>
@@ -3141,10 +3141,10 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>СписокПоддерживаемыхЗапасов.РежимРекомендаций</segments>
+      <segments>СписокПоддерживаемыхЗапасов.Group</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>СписокПоддерживаемыхЗапасов.Group</segments>
+      <segments>СписокПоддерживаемыхЗапасов.ВариантОбеспечиваемогоПериода</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокПоддерживаемыхЗапасов.Номенклатура</segments>
@@ -3192,6 +3192,7 @@
 	СпрСпособ.Ссылка КАК СпособОбеспечения,
 	СпрСпособ.СрокИсполненияЗаказа КАК СрокПоставки,
 	СпрСпособ.ОбеспечиваемыйПериод КАК ОбеспечиваемыйПериод,
+	СпрСпособ.ВариантОбеспечиваемогоПериода КАК ВариантОбеспечиваемогоПериода,
 	СпрСпособ.ИсточникОбеспеченияПотребностей КАК ИсточникОбеспечения,
 	СпрСпособ.ТипОбеспечения КАК ТипОбеспечения,
 	СпрНоменклатура.СхемаОбеспечения КАК СхемаОбеспечения,
@@ -3225,6 +3226,7 @@
 	Рекомендация,
 	СрокПоставки,
 	ОбеспечиваемыйПериод,
+	ВариантОбеспечиваемогоПериода,
 	ИсточникОбеспечения.*}
 ИЗ
 	РегистрСведений.ТоварныеОграничения КАК ТоварныеОграниченияПереопределяемый
@@ -3301,6 +3303,7 @@
 	СпрСпособ.Ссылка.* КАК СпособОбеспечения,
 	СпрСпособ.СрокИсполненияЗаказа КАК СрокПоставки,
 	СпрСпособ.ОбеспечиваемыйПериод КАК ОбеспечиваемыйПериод,
+	СпрСпособ.ВариантОбеспечиваемогоПериода КАК ВариантОбеспечиваемогоПериода,
 	СпрСпособ.ИсточникОбеспеченияПотребностей.* КАК ИсточникОбеспечения,
 	СпрСпособ.ТипОбеспечения.* КАК ТипОбеспечения,
 	СпрНоменклатура.СхемаОбеспечения.* КАК СхемаОбеспечения,
@@ -3311,6 +3314,610 @@
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ГруппировкаТоварныхОграничений</dataPath>
+        <field>ГруппировкаТоварныхОграничений</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Группировка товарных ограничений</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Номенклатура</dataPath>
+        <field>Номенклатура</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Номенклатура</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Характеристика</dataPath>
+        <field>Характеристика</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Характеристика</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕдиницаИзмерения</dataPath>
+        <field>ЕдиницаИзмерения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Единица измерения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Склад</dataPath>
+        <field>Склад</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Склад</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПоддержаниеЗапаса</dataPath>
+        <field>ПоддержаниеЗапаса</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Поддержание запаса</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МинимальныйЗапас</dataPath>
+        <field>МинимальныйЗапас</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Минимальный запас</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальныйЗапас</dataPath>
+        <field>МаксимальныйЗапас</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Максимальный запас</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтраховойЗапас</dataPath>
+        <field>СтраховойЗапас</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Страховой запас</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НормаПотребления</dataPath>
+        <field>НормаПотребления</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Норма потребления</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеЗаказов</dataPath>
+        <field>ОбеспечениеЗаказов</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Обеспечение заказов</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СреднедневноеПотребление</dataPath>
+        <field>СреднедневноеПотребление</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Среднедневное потребление</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтклонениеПотребления</dataPath>
+        <field>ОтклонениеПотребления</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Отклонение потребления</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Рекомендация</dataPath>
+        <field>Рекомендация</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Рекомендация</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СрокПоставки</dataPath>
+        <field>СрокПоставки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Срок поставки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечиваемыйПериод</dataPath>
+        <field>ОбеспечиваемыйПериод</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Обеспечиваемый период</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникОбеспечения</dataPath>
+        <field>ИсточникОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Источник обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтраховоеКоличествоЗапаса</dataPath>
+        <field>СтраховоеКоличествоЗапаса</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Страховое количество запаса</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МинимальноеКоличествоЗапаса</dataPath>
+        <field>МинимальноеКоличествоЗапаса</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Минимальное количество запаса</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальноеКоличествоЗапаса</dataPath>
+        <field>МаксимальноеКоличествоЗапаса</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Максимальное количество запаса</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МетодОбеспеченияПотребностей</dataPath>
+        <field>МетодОбеспеченияПотребностей</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Метод обеспечения потребностей</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УпаковкаЗаказа</dataPath>
+        <field>УпаковкаЗаказа</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Упаковка заказа</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеЗаказовПриПоддержанииЗапаса</dataPath>
+        <field>ОбеспечениеЗаказовПриПоддержанииЗапаса</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Обеспечение заказов при поддержании запаса</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СреднееОтклонениеПотребления</dataPath>
+        <field>СреднееОтклонениеПотребления</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Среднее отклонение потребления</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РеквизитДопУпорядочивания</dataPath>
+        <field>РеквизитДопУпорядочивания</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Порядок применения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаРасчетаРекомендаций</dataPath>
+        <field>ДатаРасчетаРекомендаций</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Дата расчета рекомендаций</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭтоДействующийПараметр</dataPath>
+        <field>ЭтоДействующийПараметр</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Это действующий параметр</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьРекомендацияПоИзменению</dataPath>
+        <field>ЕстьРекомендацияПоИзменению</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть рекомендация по изменению</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособОбеспечения</dataPath>
+        <field>СпособОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Способ обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипОбеспечения</dataPath>
+        <field>ТипОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СхемаОбеспечения</dataPath>
+        <field>СхемаОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Схема обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФорматМагазина</dataPath>
+        <field>ФорматМагазина</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Формат магазина</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ХарактеристикиИспользуются</dataPath>
+        <field>ХарактеристикиИспользуются</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Характеристики используются</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭтоГруппа</dataPath>
+        <field>ЭтоГруппа</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Это группа</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Картинка</dataPath>
+        <field>Картинка</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Картинка</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭтоРежимРекомендаций</dataPath>
+        <field>ЭтоРежимРекомендаций</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Это режим рекомендаций</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПолеИстина</dataPath>
+        <field>ПолеИстина</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Поле истина</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантОбеспечиваемогоПериода</dataPath>
+        <field>ВариантОбеспечиваемогоПериода</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Вариант обеспечиваемого периода</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>РежимПросмотра</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Режим просмотра</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ДокументИзмененияАссортимента</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Документ изменения ассортимента</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>DocumentRef.ИзменениеАссортимента</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ФорматМагазина</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Формат магазина</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.ФорматыМагазинов</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>Период</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Период</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers/>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+      </parameters>
+      <parameters>
+        <name>ТоварнаяКатегория</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Товарная категория</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.ТоварныеКатегории</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>РекомендацияНеПоддерживать</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Рекомендация не поддерживать</value>
+            </content>
+          </localValue>
+        </title>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>РежимРекомендаций</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Режим рекомендаций</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ЭтоРежимРекомендаций</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Это режим рекомендаций</value>
+            </content>
+          </localValue>
+        </title>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>РекомендацияПоддерживать</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Рекомендация поддерживать</value>
+            </content>
+          </localValue>
+        </title>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>РежимОтображения</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Режим отображения</value>
+            </content>
+          </localValue>
+        </title>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>

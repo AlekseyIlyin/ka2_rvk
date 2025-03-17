@@ -159,9 +159,7 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>DocumentJournal.ПриемыПереводыУвольнения.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>DocumentJournal.ЗаймыСотрудникам.StandardCommand.OpenList</command>
@@ -271,6 +269,14 @@
       <command>Document.ПрогулНеявкаСписком.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ИзменениеАванса.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
@@ -292,6 +298,7 @@
       <commands>Document.КомпенсацияЗаЗадержкуЗарплаты.StandardCommand.OpenList</commands>
       <commands>Document.СторнированиеНачислений.StandardCommand.OpenList</commands>
       <commands>Catalog.Файлы.Command.Файлы</commands>
+      <commands>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>ActionsPanelTools</group>
@@ -383,6 +390,7 @@
       <commands>Catalog.ГрафикиРаботыСотрудников.StandardCommand.OpenList</commands>
       <commands>Document.КомпенсацияЗаЗадержкуЗарплаты.StandardCommand.OpenList</commands>
       <commands>Document.СторнированиеНачислений.StandardCommand.OpenList</commands>
+      <commands>Document.НачальнаяЗадолженностьПоЗарплате.StandardCommand.OpenList</commands>
       <commands>Catalog.Файлы.Command.Файлы</commands>
     </orderFragments>
     <orderFragments>

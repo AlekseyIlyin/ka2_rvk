@@ -97,6 +97,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.НачислениеРеверсивногоНДС.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.НачислениеРеверсивногоНДС.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <registerRecords>AccumulationRegister.ДвиженияПоНДС</registerRecords>
   <registerRecords>InformationRegister.ИсправленияДокументов</registerRecords>
@@ -116,7 +117,7 @@
     <name>ДокументОснование</name>
     <synonym>
       <key>ru</key>
-      <value>Документ основание</value>
+      <value>Документ-основание</value>
     </synonym>
     <type>
       <types>DocumentRef.ПриобретениеТоваровУслуг</types>
@@ -244,7 +245,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Пользователь, оформивший документ  и ответственный за его обработку.</value>
+      <value>Пользователь, оформивший документ и ответственный за его обработку.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

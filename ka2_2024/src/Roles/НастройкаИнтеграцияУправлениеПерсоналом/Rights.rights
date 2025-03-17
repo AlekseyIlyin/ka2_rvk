@@ -4,44 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Constant.ИспользоватьИнтеграциюСПриложением1СПерсонал</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИзмененияДляОбмена1СПерсонал</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.РазмерыПорцийОбменаУправлениеПерсоналом</name>
 		<right>
 			<name>Read</name>
@@ -92,18 +54,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.Интеграция1СПерсонал</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВыгружаемыеОбъектыКабинетСотрудника</name>
+		<name>InformationRegister.СобытияОбменаУправлениеПерсоналом</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -114,7 +65,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ИспользуетсяПриложение1СПерсонал</name>
+		<name>Constant.РегистрироватьВЖурналеСобытийЗапросы</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -127,15 +78,8 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>InformationRegister.СобытияОбменаУправлениеПерсоналом</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -150,6 +94,10 @@
 		<name>InformationRegister.ТекущиеРуководителиКабинетСотрудника</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -168,28 +116,13 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ИзмененияДляОбменаКабинетСотрудника</name>
+		<name>InformationRegister.ИдентификаторыОрганизацийКабинетСотрудника</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ИдентификаторыОрганизацийКабинетСотрудника</name>
-		<right>
-			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -314,17 +247,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВыгружаемыеОбъекты1СПерсонал</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ИнтеграцияУправлениеПерсоналом</name>
 		<right>
 			<name>Use</name>
@@ -336,37 +258,11 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.НастройкиПодключения1СПерсонал</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.БудущиеСобытияУправлениеПерсоналом</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Интеграция1СПерсонал.Command.Интеграция1СПерсоналКоманда</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

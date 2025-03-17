@@ -2417,6 +2417,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.Внимание16</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -5754,6 +5758,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Внимание16</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -11880,6 +11888,10 @@
                     <autoMaxHeight>true</autoMaxHeight>
                     <horizontalStretch>true</horizontalStretch>
                     <verticalStretch>true</verticalStretch>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                     <fileDragMode>AsFileRef</fileDragMode>
                   </extInfo>
                 </items>
@@ -26116,6 +26128,23 @@
       <numberQualifiers>
         <precision>4</precision>
       </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЭтапЕстьПараллельнаяЗагрузка</name>
+    <title>
+      <key>ru</key>
+      <value>Есть параллельная загрузка</value>
+    </title>
+    <id>198</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

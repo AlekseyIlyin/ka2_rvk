@@ -17,14 +17,7 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Тип</left>
 			<comparisonType>Equal</comparisonType>
-			<right xmlns:d4p1="http://v8.1c.ru/8.2/data/types" xsi:type="v8:Type">d4p1:Undefined</right>
-			<userSettingID>ccb8b4a9-1280-4ee2-9d63-1c234ecbc02b</userSettingID>
-		</item>
-		<item xsi:type="FilterItemComparison">
-			<use>false</use>
-			<left xsi:type="dcscor:Field">Вид</left>
-			<comparisonType>Equal</comparisonType>
-			<userSettingID>c34d6365-f9eb-43bb-97f6-0ec0c5fe71e5</userSettingID>
+			<userSettingID>e4bb6e50-dc9b-476f-93b5-a4a30c941831</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
@@ -38,6 +31,12 @@
 			<comparisonType>Equal</comparisonType>
 			<right xsi:type="xs:boolean">false</right>
 			<userSettingID>bf8c3d1d-d161-4e5b-a3f5-cd11f777a2df</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Вид</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>621fb2bc-8216-48c4-b191-fe23659a46bf</userSettingID>
 		</item>
 		<viewMode>Normal</viewMode>
 		<userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</userSettingID>

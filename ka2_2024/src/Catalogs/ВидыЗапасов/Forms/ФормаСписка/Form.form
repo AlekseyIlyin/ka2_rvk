@@ -54,8 +54,6 @@
     <defaultItem>true</defaultItem>
     <skipOnInput>false</skipOnInput>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
     <items xsi:type="form:FormField">
       <name>Ссылка</name>
       <id>49</id>
@@ -418,8 +416,6 @@
       </dataPath>
       <skipOnInput>false</skipOnInput>
       <titleLocation>None</titleLocation>
-      <excludedCommands>Copy</excludedCommands>
-      <excludedCommands>Create</excludedCommands>
       <items xsi:type="form:FormField">
         <name>СписокИнтеркампаниСсылка</name>
         <id>51</id>
@@ -968,8 +964,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Create</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

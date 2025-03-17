@@ -2092,6 +2092,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4768,23 +4772,6 @@
     <id>20</id>
     <valueType>
       <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>Договор</name>
-    <title>
-      <key>ru</key>
-      <value>Договор</value>
-    </title>
-    <id>21</id>
-    <valueType>
-      <types>CatalogRef.ДоговорыКонтрагентов</types>
     </valueType>
     <view>
       <common>true</common>

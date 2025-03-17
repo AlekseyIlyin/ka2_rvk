@@ -205,6 +205,10 @@
             <segments>РасположениеФайла</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>РасположениеФайлаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>РасположениеФайлаРасширеннаяПодсказка</name>
             <id>182</id>
@@ -461,7 +465,7 @@
         <id>243</id>
         <title>
           <key>ru</key>
-          <value>Для работы с приложением необходима операционная система Microsoft Windows.</value>
+          <value>Для работы с приложением необходима операционная система Microsoft Windows или Linux.</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -678,6 +682,23 @@
   <attributes>
     <name>ОтображатьКнопкуЗапуска</name>
     <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЭтоWindowsКлиент</name>
+    <title>
+      <key>ru</key>
+      <value>Это windows клиент</value>
+    </title>
+    <id>6</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

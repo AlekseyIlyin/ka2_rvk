@@ -172,6 +172,15 @@
 			</title>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
 				</dcscor:item>
@@ -441,16 +450,6 @@
 			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ПоказательПродаж</dataPath>
-			<field>ПоказательПродаж</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Показатель продаж</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ДетализацияРасчетаУчастников</dataPath>
 			<field>ДетализацияРасчетаУчастников</field>
 			<title xsi:type="v8:LocalStringType">
@@ -606,12 +605,22 @@
 				</dcscor:item>
 			</appearance>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТоваров</dataPath>
+			<field>ПоказательТоваров</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель товаров</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ДАТАВРЕМЯ(1, 1, 1) КАК Период,
 	ДАТАВРЕМЯ(1, 1, 1) КАК ПериодРасчета,
 	УсловияРетроБонусовКлиентов.ДокументУсловий КАК УсловиеРетроБонуса,
-	ЗНАЧЕНИЕ(Перечисление.ЦелевыеПоказателиПродажРетроБонусов.ПустаяСсылка) КАК ПоказательПродаж,
+	ЗНАЧЕНИЕ(Перечисление.ЦелевыеПоказателиРетроБонусовПоТоварам.ПустаяСсылка) КАК ПоказательТоваров,
 	ЗНАЧЕНИЕ(Перечисление.ДетализацияРасчетаУчастниковРетроБонусов.ПустаяСсылка) КАК ДетализацияРасчетаУчастников,
 	ЗНАЧЕНИЕ(Перечисление.ПериодичностиРетроБонусов.ПустаяСсылка) КАК ПериодичностьНачислений,
 	ЗНАЧЕНИЕ(Перечисление.ПериодичностиРетроБонусов.ПустаяСсылка) КАК ПериодичностьУсловий,
@@ -643,7 +652,7 @@
 	УсловиеРетроБонуса.*,
 	Период,
 	ПериодРасчета,
-	ПоказательПродаж,
+	ПоказательТоваров,
 	ДетализацияРасчетаУчастников,
 	ПериодичностьНачислений,
 	ПериодичностьУсловий,

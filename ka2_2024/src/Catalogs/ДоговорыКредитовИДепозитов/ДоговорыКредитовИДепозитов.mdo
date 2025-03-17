@@ -1051,6 +1051,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="5cf00b91-46fb-415c-8488-3b8f8e55a4bf">
+    <name>ВидДоходаИностранногоКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дохода иностранного контрагента</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыДоходовИностранныхОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="c9bea111-fad3-41d8-855b-2c217aec4f1d">
     <producedTypes>
       <objectType typeId="dbe841fc-1e6b-4230-9b0f-8c769b9a0b98" valueTypeId="0e02468b-b073-4166-85b9-443857490dc2"/>

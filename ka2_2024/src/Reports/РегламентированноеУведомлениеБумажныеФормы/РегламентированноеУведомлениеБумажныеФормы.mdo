@@ -34,8 +34,8 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="8ce0d26d-f9e9-4abe-a1ca-f9b43f425f5f">
-    <name>ОсвобождениеОтНДСПриЕСХН_501</name>
+  <forms uuid="e25141de-81b6-42a9-a083-e6bf91fb5042">
+    <name>ОсвобождениеОтНДСПриЕСХН_502</name>
     <synonym>
       <key>ru</key>
       <value>Уведомление об освобождении от уплаты НДС при ЕСХН</value>
@@ -45,6 +45,15 @@
   </forms>
   <forms uuid="d94e5985-2040-46fd-8be2-920770e50b95">
     <name>ОсвобождениеОтУплатыНДС_501</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об освобождении от уплаты НДС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5cfe0843-9f87-429f-abeb-48ef36e82eb0">
+    <name>ОсвобождениеОтУплатыНДС_502</name>
     <synonym>
       <key>ru</key>
       <value>Уведомление об освобождении от уплаты НДС</value>
@@ -178,6 +187,27 @@
       <value>Экранная форма</value>
     </synonym>
   </templates>
+  <templates uuid="ffbc7847-e08d-413f-8b20-2c52548630de">
+    <name>Форма_ЗачетЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="e81871a6-119f-431f-9069-e7031352be50">
+    <name>Форма_ВозвратЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="46c49814-148c-4597-8e74-1185eb12f02f">
+    <name>Форма_СверкаЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экранная форма</value>
+    </synonym>
+  </templates>
   <templates uuid="b89ea0de-4779-47a1-a4f7-a6136e39f705">
     <name>Печать_MXL_Форма_ОсвобождениеОтУплатыНДС</name>
     <synonym>
@@ -304,15 +334,78 @@
       <value>печатный бланк</value>
     </synonym>
   </templates>
+  <templates uuid="ad31a130-c57d-4ce9-94de-dae1c10733bb">
+    <name>Печать_MXL_ЗачетЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="742edad7-32a7-49d3-99b5-27c61f6f1ac4">
+    <name>Печать_MXL_ВозвратЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="56825759-af50-410d-8553-27dfd54e77c7">
+    <name>Печать_MXL_СверкаЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="0bcce664-d65c-447a-8d4c-a7c8b1cd9ab5">
+    <name>Печать_ОсвобождениеОтУплатыНДС_501</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="968ee85a-aa14-4eb1-aa3b-7dc99a4439e3">
+    <name>Печать_Титульная_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="bda42181-88e9-410f-8cad-bebafebb2ab5">
+    <name>Печать_СовВыр3Месяца_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="2459d62e-a8c1-4c32-b558-b0ccbf5eb68e">
+    <name>Печать_Выр12Месяцев_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b26c028-d15e-44b5-b0f8-9c9f3dd7a75a">
+    <name>Печать_Титульная_ОсвобождениеОтНДСПриЕСХН_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
   <templates uuid="da2624c1-f323-4bcf-925a-bca5e04d0a66">
-    <name>СхемаВыгрузки_ОсвобождениеОтУплатыНДС</name>
+    <name>СхемаВыгрузки_ОсвобождениеОтУплатыНДС501</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки</value>
     </synonym>
   </templates>
-  <templates uuid="6f8bf6b2-aae3-41db-84a9-cc90678b57d6">
-    <name>СхемаВыгрузки_ОсвобождениеОтНДСПриЕСХН</name>
+  <templates uuid="20b2fe34-bc5e-4957-8813-8c18f072807a">
+    <name>СхемаВыгрузки_ОсвобождениеОтУплатыНДС502</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
+  <templates uuid="e3c2b0bd-40af-4c4d-a8a5-6be14b2bc75e">
+    <name>СхемаВыгрузки_ОсвобождениеОтНДСПриЕСХН502</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки</value>
@@ -325,8 +418,8 @@
       <value>Списки выбора</value>
     </synonym>
   </templates>
-  <templates uuid="64a9cddd-754f-43ee-8e26-6d02e5745b49">
-    <name>Титульная_ОсвобождениеОтНДСПриЕСХН_501</name>
+  <templates uuid="dc844d9a-0f7c-4878-8fd5-d70c5975df09">
+    <name>Титульная_ОсвобождениеОтНДСПриЕСХН_502</name>
     <synonym>
       <key>ru</key>
       <value>экранная форма</value>
@@ -339,11 +432,48 @@
       <value>экранная форма</value>
     </synonym>
   </templates>
+  <templates uuid="6135d9eb-5663-4c73-ba93-317481840df5">
+    <name>Титульная_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="27e867e5-d05d-4cfb-bedc-86098a94ddf4">
+    <name>СовВыр3Месяца_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="9cb2d83a-7150-4f4c-8216-e56c1e008adc">
+    <name>Выр12Месяцев_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
   <templates uuid="95a01238-2ed6-4831-86d2-f82c42b44173">
     <name>Титульная_ОсвобождениеОтУплатыНДС_БП3</name>
     <synonym>
       <key>ru</key>
       <value>Экранная форма</value>
     </synonym>
+  </templates>
+  <templates uuid="1f8d98d8-1e04-4642-a096-00110ca47acd">
+    <name>TIFF_ОсвобождениеОтНДСПриЕСХН_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>1150105_5.02000_01.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="d380dd88-05e7-425f-9942-ec8970d450d4">
+    <name>TIFF_ОсвобождениеОтУплатыНДС_502</name>
+    <synonym>
+      <key>ru</key>
+      <value>1150104_5.02000_01.tif</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
   </templates>
 </mdclass:Report>

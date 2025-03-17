@@ -126,7 +126,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Пользователь, оформивший документ  и ответственный за его обработку.</value>
+      <value>Пользователь, оформивший документ и ответственный за его обработку.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -471,6 +471,26 @@
         <changeMode>DontChange</changeMode>
         <field>Document.КорректировкаПоОрдеруНаТовары.TabularSection.Товары.Attribute.Номенклатура</field>
       </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Помещение</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.КорректировкаПоОрдеруНаТовары.Attribute.Помещение</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Склад</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.КорректировкаПоОрдеруНаТовары.Attribute.Склад</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>ПоказыватьМерныеЕдиницыИзмерения</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <choiceParameters>
+        <name>ПоказыватьТоварныеМеста</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

@@ -777,54 +777,6 @@
                       <typeDomainEnabled>true</typeDomainEnabled>
                     </extInfo>
                   </items>
-                  <items xsi:type="form:Decoration">
-                    <name>ДекорацияПодсказкаПриВыполненииОбработчиковОбновления</name>
-                    <id>340</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <toolTip>
-                      <key>ru</key>
-                      <value>Внимание! Необходимо вручную контролировать
-корректность указания способа расчета, так как 
-выполняются обработчики обновления.</value>
-                    </toolTip>
-                    <extendedTooltip>
-                      <name>ДекорацияПодсказкаПриВыполненииОбработчиковОбновленияРасширеннаяПодсказка</name>
-                      <id>342</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <type>Label</type>
-                      <autoMaxWidth>true</autoMaxWidth>
-                      <autoMaxHeight>true</autoMaxHeight>
-                      <extInfo xsi:type="form:LabelDecorationExtInfo">
-                        <horizontalAlign>Left</horizontalAlign>
-                      </extInfo>
-                    </extendedTooltip>
-                    <contextMenu>
-                      <name>ДекорацияПодсказкаПриВыполненииОбработчиковОбновленияКонтекстноеМеню</name>
-                      <id>341</id>
-                      <visible>true</visible>
-                      <enabled>true</enabled>
-                      <userVisible>
-                        <common>true</common>
-                      </userVisible>
-                      <autoFill>true</autoFill>
-                    </contextMenu>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:PictureDecorationExtInfo">
-                      <picture xsi:type="core:PictureRef">
-                        <picture>CommonPicture.ВопросСПредупреждением</picture>
-                      </picture>
-                      <zoomable>true</zoomable>
-                    </extInfo>
-                  </items>
                   <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
@@ -1466,6 +1418,7 @@
                     <autoMaxHeight>true</autoMaxHeight>
                     <wrap>true</wrap>
                     <dropListButton>true</dropListButton>
+                    <listChoiceMode>true</listChoiceMode>
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                   </extInfo>
@@ -4864,23 +4817,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВзаиморасчетыОбновлены</name>
-    <title>
-      <key>ru</key>
-      <value>Взаиморасчеты обновлены</value>
-    </title>
-    <id>30</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>СуммаПредоплаты</name>
     <title>
       <key>ru</key>
@@ -4974,6 +4910,23 @@
     <id>83</id>
     <valueType>
       <types>DocumentRef.ОперацияПоПлатежнойКарте</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЗаблокированОФД</name>
+    <title>
+      <key>ru</key>
+      <value>Заблокирован ОФД</value>
+    </title>
+    <id>84</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

@@ -89,6 +89,7 @@
     <multipleValuesKeyField>-1</multipleValuesKeyField>
     <multipleValuesOrderField>-1</multipleValuesOrderField>
   </characteristics>
+  <basedOn>Document.ЭкземплярБюджета</basedOn>
   <createOnInput>Use</createOnInput>
   <help>
     <pages>
@@ -492,6 +493,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="9d665c31-43f1-4232-8593-da31b07a3043">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыДействийЭкземпляровБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Действие с документом</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыДействийЭкземпляровБюджетов.EnumValue.ВводЭкземпляраБюджета</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="d5e0f4cd-b04d-474a-9315-e6079c28db2e">
     <name>ФормаДокумента</name>
     <synonym>
@@ -557,6 +580,24 @@
     <synonym>
       <key>ru</key>
       <value>Ввод строки с аналитикой</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="408fb838-cd1e-41a7-85ac-397d23583d20">
+    <name>ФормаПодбораСтатейБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора статей бюджетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="135c277b-9bba-4a1b-a4ba-e8dd3e350ae6">
+    <name>КорректировкиИсправленияБюджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировки и исправления бюджета</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -1277,6 +1318,14 @@
     <synonym>
       <key>ru</key>
       <value>Схема компоновки данных аналитической записки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="34b43932-787f-4907-b347-e1f4c5f5e70a">
+    <name>СхемаКомпоновкиДанныхКорректировокПоСтатьямБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных корректировок по статьям бюджетов</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

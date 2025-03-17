@@ -51,6 +51,10 @@
 	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetPrintedFormsResponse" base="d2p1:DMILResponse">
 		<property name="objects" type="d2p1:DMILMetadataObject" upperBound="-1"/>
 	</objectType>
+	<objectType name="DMILLink">
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="ownerObject" type="d3p1:ExternalObjectID"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="linkedObject" type="d3p1:DMILObjectID"/>
+	</objectType>
 	<objectType name="DMILMetadataAttribute">
 		<property name="name" type="xs:string"/>
 		<property name="synonym" type="xs:string"/>
@@ -89,6 +93,8 @@
 		<property name="commandPresentation" type="xs:string" lowerBound="0"/>
 		<property name="printManager" type="xs:string"/>
 	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesRequest" base="d2p1:DMILRequest"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesResponse" base="d2p1:DMILResponse"/>
 	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILRelatedIntegrationRulesExistenceRequest" base="d2p1:DMILRequest">
 		<property name="relatedDataLoadingRule" type="d2p1:id"/>
 	</objectType>
@@ -97,11 +103,17 @@
 	</objectType>
 	<objectType name="DMILRequest" abstract="true">
 		<property name="versionNumber" type="xs:string" lowerBound="0"/>
+		<property name="nodeID" type="xs:string" lowerBound="0"/>
+		<property name="messageData" type="xs:base64Binary" lowerBound="0"/>
+		<property name="DMXMLSchema" type="xs:string" lowerBound="0"/>
 	</objectType>
 	<objectType name="DMILResponse" abstract="true"/>
-	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesRequest" base="d2p1:DMILRequest">
-		<property name="messageData" type="xs:base64Binary"/>
-		<property name="DMXMLSchema" type="xs:string"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILSynchronizeUsersRequest" base="d2p1:DMILRequest"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILSynchronizeUsersResponse" base="d2p1:DMILResponse">
+		<property name="links" type="d2p1:DMILLink" lowerBound="0" upperBound="-1"/>
 	</objectType>
-	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesResponse" base="d2p1:DMILResponse"/>
+	<objectType name="ExternalObjectID">
+		<property name="id" type="xs:string"/>
+		<property name="type" type="xs:string"/>
+	</objectType>
 </package>

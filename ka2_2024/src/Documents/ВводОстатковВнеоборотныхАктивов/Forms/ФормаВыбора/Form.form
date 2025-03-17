@@ -691,24 +691,23 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ТипОперации</name>
+      <name>ХозяйственнаяОперация</name>
       <id>18</id>
+      <title>
+        <key>ru</key>
+        <value>Операция</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.ТипОперации</segments>
+        <segments>Список.ХозяйственнаяОперация</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ТипОперацииРасширеннаяПодсказка</name>
+        <name>ХозяйственнаяОперацияРасширеннаяПодсказка</name>
         <id>43</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -717,13 +716,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТипОперацииКонтекстноеМеню</name>
+        <name>ХозяйственнаяОперацияКонтекстноеМеню</name>
         <id>19</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>

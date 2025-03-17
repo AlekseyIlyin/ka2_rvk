@@ -60,12 +60,12 @@
         <id>17</id>
         <title>
           <key>ru</key>
-          <value>&lt;b>Система быстрых платежей (СБП)&lt;/> - это сервис Банка России, с помощью которого ваши покупатели могут оплачивать товары или услуги через свои мобильные банковские приложения.
+          <value>&lt;b>Система быстрых платежей (СБП)&lt;/> - это сервис Банка России, с помощью которого можно принимать оплаты от физических лиц, а также выполнять переводы юридическим лицам и индивидуальным предпринимателям.
 
 Почему Система быстрых платежей - это выгодно и удобно для бизнеса:
- - низкие комиссии по сравнению с эквайрингом;
+ - низкие комиссии по сравнению с эквайрингом при приеме оплат;
  - деньги на ваш счет зачисляются за несколько секунд;
- - не нужно приобретать эквайринговый терминал;
+ - не нужно приобретать эквайринговый терминал при приеме оплат;
  - сервис работает без выходных и праздников.
 
 &lt;link open:sbpDescription>Подробнее о сервисе&lt;/>&lt;link action:sbp>.&lt;/></value>
@@ -140,6 +140,199 @@
       <type>Page</type>
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>AlwaysHorizontal</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаВариантыНастройки</name>
+      <id>190</id>
+      <items xsi:type="form:Decoration">
+        <name>НадписьВыборСценарияОплаты</name>
+        <id>195</id>
+        <title>
+          <key>ru</key>
+          <value>Выберите сценарий приема оплат через Систему быстрых платежей:</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>НадписьВыборСценарияОплатыРасширеннаяПодсказка</name>
+          <id>197</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>НадписьВыборСценарияОплатыКонтекстноеМеню</name>
+          <id>196</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВыборВарианта</name>
+        <id>198</id>
+        <items xsi:type="form:FormField">
+          <name>ВариантНастройкиb2b</name>
+          <id>200</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ВариантНастройки</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <toolTip>
+            <key>ru</key>
+            <value>Прием оплат по платежной ссылке, с помощью которой ваши клиенты могут оплачивать товары или услуги в системе дистанционного обслуживания банка.</value>
+          </toolTip>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ВариантНастройкиb2bРасширеннаяПодсказка</name>
+            <id>202</id>
+            <type>Label</type>
+            <width>53</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ВариантНастройкиb2bКонтекстноеМеню</name>
+            <id>201</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Прием оплаты от юридических лиц и индивидуальных предпринимателей (b2b)</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ВариантыНастройкиСБП.EnumValue.b2b</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ВариантНастройкиc2b</name>
+          <id>192</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ВариантНастройки</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <toolTip>
+            <key>ru</key>
+            <value>Прием оплат по QR-коду или платежной ссылке, с помощью которой ваши покупатели могут оплачивать товары или услуги через свои мобильные банковские приложения.</value>
+          </toolTip>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ВариантНастройкиc2bРасширеннаяПодсказка</name>
+            <id>194</id>
+            <type>Label</type>
+            <maxWidth>53</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ВариантНастройкиc2bКонтекстноеМеню</name>
+            <id>193</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <columnsCount>1</columnsCount>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Прием оплаты от физических лиц (c2b)</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ВариантыНастройкиСБП.EnumValue.c2b</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа выбор варианта</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаВыборВариантаРасширеннаяПодсказка</name>
+          <id>199</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа варианты настройки</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаВариантыНастройкиРасширеннаяПодсказка</name>
+        <id>191</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
         <showTitle>true</showTitle>
       </extInfo>
     </items>
@@ -409,7 +602,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>УчастникиСБП</segments>
+          <segments>УчастникиСБППредставление</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <excludedCommands>Add</excludedCommands>
@@ -432,24 +625,19 @@
         <excludedCommands>SortListAsc</excludedCommands>
         <excludedCommands>SortListDesc</excludedCommands>
         <items xsi:type="form:FormField">
-          <name>УчастникиСБПБанк</name>
-          <id>54</id>
+          <name>УчастникиСБПУчастник</name>
+          <id>203</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>УчастникиСБП.Участник</segments>
+            <segments>УчастникиСБППредставление.Участник</segments>
           </dataPath>
           <extendedTooltip>
-            <name>УчастникиСБПБанкРасширеннаяПодсказка</name>
-            <id>56</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>УчастникиСБПУчастникРасширеннаяПодсказка</name>
+            <id>205</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -458,13 +646,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>УчастникиСБПБанкКонтекстноеМеню</name>
-            <id>55</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>УчастникиСБПУчастникКонтекстноеМеню</name>
+            <id>204</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -1276,7 +1459,7 @@
         <name>ГруппаШаблоныПисем</name>
         <id>127</id>
         <items xsi:type="form:FormField">
-          <name>СоздатьШаблоныПисемАвтоматически</name>
+          <name>СоздатьШаблоныПисем</name>
           <id>129</id>
           <title>
             <key>ru</key>
@@ -1288,26 +1471,21 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>СоздатьШаблоныПисемАвтоматически</segments>
+            <segments>СоздатьШаблоныПисем</segments>
           </dataPath>
           <titleLocation>Right</titleLocation>
           <toolTipRepresentation>None</toolTipRepresentation>
           <handlers>
             <event>OnChange</event>
-            <name>СоздатьШаблоныПисемАвтоматическиПриИзменении</name>
+            <name>СоздатьШаблоныПисемПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>СоздатьШаблоныПисемАвтоматическиРасширеннаяПодсказка</name>
+            <name>СоздатьШаблоныПисемРасширеннаяПодсказка</name>
             <id>131</id>
             <title>
               <key>ru</key>
               <value>   Шаблоны позволяют выставлять счета на оплату через ЮKassa по эл. почте</value>
             </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <formatted>true</formatted>
             <type>Label</type>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1316,13 +1494,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>СоздатьШаблоныПисемАвтоматическиКонтекстноеМеню</name>
+            <name>СоздатьШаблоныПисемКонтекстноеМеню</name>
             <id>130</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>CheckBoxField</type>
@@ -1488,7 +1661,7 @@
         <name>ГруппаШаблоныSMS</name>
         <id>139</id>
         <items xsi:type="form:FormField">
-          <name>СоздатьШаблоныSMSАвтоматически</name>
+          <name>СоздатьШаблоныSMS</name>
           <id>141</id>
           <title>
             <key>ru</key>
@@ -1500,21 +1673,16 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>СоздатьШаблоныSMSАвтоматически</segments>
+            <segments>СоздатьШаблоныSMS</segments>
           </dataPath>
           <titleLocation>Right</titleLocation>
           <handlers>
             <event>OnChange</event>
-            <name>СоздатьШаблоныSMSАвтоматическиПриИзменении</name>
+            <name>СоздатьШаблоныSMSПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>СоздатьШаблоныSMSАвтоматическиРасширеннаяПодсказка</name>
+            <name>СоздатьШаблоныSMSРасширеннаяПодсказка</name>
             <id>143</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1523,13 +1691,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>СоздатьШаблоныSMSАвтоматическиКонтекстноеМеню</name>
+            <name>СоздатьШаблоныSMSКонтекстноеМеню</name>
             <id>142</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>CheckBoxField</type>
@@ -2658,10 +2821,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>УчастникиСБП</name>
+    <name>УчастникиСБПСервис</name>
     <title>
       <key>ru</key>
-      <value>Участники СБП</value>
+      <value>Участники СБП сервис</value>
     </title>
     <id>4</id>
     <valueType>
@@ -2692,10 +2855,10 @@
       </edit>
     </columns>
     <columns>
-      <name>АдресЛичногоКабинета</name>
+      <name>АдресЛичногоКабинетаc2b</name>
       <title>
         <key>ru</key>
-        <value>Адрес личного кабинета</value>
+        <value>Адрес личного кабинета (c2b)</value>
       </title>
       <id>2</id>
       <valueType>
@@ -2710,10 +2873,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ТекстПредупреждения</name>
+      <name>ТекстПредупрежденияc2b</name>
       <title>
         <key>ru</key>
-        <value>Текст предупреждения</value>
+        <value>Текст предупреждения (c2b)</value>
       </title>
       <id>3</id>
       <valueType>
@@ -2780,10 +2943,10 @@
       </edit>
     </columns>
     <columns>
-      <name>АдресСтраницыЗаявки</name>
+      <name>АдресСтраницыЗаявкиc2b</name>
       <title>
         <key>ru</key>
-        <value>Адрес страницы заявки</value>
+        <value>Адрес страницы заявки (c2b)</value>
       </title>
       <id>7</id>
       <valueType>
@@ -2798,10 +2961,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ПорядокОтображения</name>
+      <name>ПорядокОтображенияc2b</name>
       <title>
         <key>ru</key>
-        <value>Порядок отображения</value>
+        <value>Порядок отображения (c2b)</value>
       </title>
       <id>8</id>
       <valueType>
@@ -2809,6 +2972,114 @@
         <numberQualifiers>
           <precision>10</precision>
         </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>c2b</name>
+      <title>
+        <key>ru</key>
+        <value>C2b</value>
+      </title>
+      <id>9</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>b2b</name>
+      <title>
+        <key>ru</key>
+        <value>B2b</value>
+      </title>
+      <id>10</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ПорядокОтображенияb2b</name>
+      <title>
+        <key>ru</key>
+        <value>Порядок отображения (b2b)</value>
+      </title>
+      <id>11</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>АдресСтраницыЗаявкиb2b</name>
+      <title>
+        <key>ru</key>
+        <value>Адрес страницы заявки (b2b)</value>
+      </title>
+      <id>12</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ТекстПредупрежденияb2b</name>
+      <title>
+        <key>ru</key>
+        <value>Текст предупреждения (b2b)</value>
+      </title>
+      <id>13</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>АдресЛичногоКабинетаb2b</name>
+      <title>
+        <key>ru</key>
+        <value>Адрес личного кабинетаb2b</value>
+      </title>
+      <id>14</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
       </valueType>
       <view>
         <common>true</common>
@@ -2972,7 +3243,7 @@
     </edit>
   </attributes>
   <attributes>
-    <name>СоздатьШаблоныSMSАвтоматически</name>
+    <name>СоздатьШаблоныSMS</name>
     <title>
       <key>ru</key>
       <value>Создать шаблоны писем автоматически</value>
@@ -2989,10 +3260,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>СоздатьШаблоныПисемАвтоматически</name>
+    <name>СоздатьШаблоныПисем</name>
     <title>
       <key>ru</key>
-      <value>Создать шаблоны писем автоматически</value>
+      <value>Создать шаблоны писем</value>
     </title>
     <id>16</id>
     <valueType>
@@ -3006,10 +3277,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ОткрыватьСтраницуШаблоныСообщений</name>
+    <name>ДоступныШаблоныСообщений</name>
     <title>
       <key>ru</key>
-      <value>Открывать страницу шаблоны сообщений</value>
+      <value>Доступны шаблоны сообщений</value>
     </title>
     <id>17</id>
     <valueType>
@@ -3023,10 +3294,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВсеШаблоныСозданыSMS</name>
+    <name>ШаблоныSMSСозданы</name>
     <title>
       <key>ru</key>
-      <value>Все шаблоны созданы SMS</value>
+      <value>Шаблоны SMSСозданы</value>
     </title>
     <id>18</id>
     <valueType>
@@ -3040,10 +3311,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВсеШаблоныСозданыПисьма</name>
+    <name>ШаблоныПисемСозданы</name>
     <title>
       <key>ru</key>
-      <value>Все шаблоны созданы письма</value>
+      <value>Шаблоны писем созданы</value>
     </title>
     <id>19</id>
     <valueType>
@@ -3258,6 +3529,145 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ВариантНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант настройки</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>EnumRef.ВариантыНастройкиСБП</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДоступенВыборВариантаНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Доступен выбор варианта настройки</value>
+    </title>
+    <id>31</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОснованиеПлатежа</name>
+    <title>
+      <key>ru</key>
+      <value>Основание платежа</value>
+    </title>
+    <id>32</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>УчастникиСБППредставление</name>
+    <title>
+      <key>ru</key>
+      <value>Участники СБП представление</value>
+    </title>
+    <id>34</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Участник</name>
+      <title>
+        <key>ru</key>
+        <value>Участник</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ИдентификаторУчастника</name>
+      <title>
+        <key>ru</key>
+        <value>Идентификатор участника</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ПорядокОтображения</name>
+      <title>
+        <key>ru</key>
+        <value>Порядок отображения</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>ТекущийВариантНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант настройки</value>
+    </title>
+    <id>33</id>
+    <valueType>
+      <types>EnumRef.ВариантыНастройкиСБП</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Далее</name>
     <title>
@@ -3364,6 +3774,27 @@
   </parameters>
   <parameters>
     <name>РежимРаботы</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ВариантНастройки</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>БИК</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ОтборУчастников</name>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

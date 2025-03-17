@@ -23,7 +23,6 @@
   <content>CommonForm.ФормаМножественногоВыбораИСМП</content>
   <content>CommonForm.ФормаУточненияПодобраннойПродукцииИСМП</content>
   <content>CommonModule.ЗаполнениеОбъектовПоСтатистикеИСМП</content>
-  <content>CommonModule.ИнтеграцияЕГАИСИСМП</content>
   <content>CommonModule.ИнтеграцияЕГАИСИСМПКлиент</content>
   <content>CommonModule.ИнтеграцияИСМП</content>
   <content>CommonModule.ИнтеграцияИСМПВЕТИС</content>
@@ -340,7 +339,6 @@
   <content>CommonModule.ОбщегоНазначенияИСМПВызовСервера</content>
   <content>CommonModule.ОбщегоНазначенияИСМПСлужебный</content>
   <content>CommonModule.ШтрихкодированиеОбщегоНазначенияИСМПКлиент</content>
-  <content>DefinedType.ТипРасхожденияИСМП</content>
   <content>CommonForm.НастройкиСканированияКодовМаркировки</content>
   <content>CommonForm.НастройкиКонтроляКодовМаркировки</content>
   <content>Document.ОтчетИСМП</content>
@@ -384,6 +382,7 @@
   <content>CommonPicture.ПроверкаНаличияРадиоэлектроннаяПродукцияИСМП</content>
   <content>CommonPicture.ПроверкаНаличияРастительныеМаслаИСМП</content>
   <content>CommonPicture.ПроверкаНаличияТитановаяМеталлопродукцияИСМП</content>
+  <content>InformationRegister.НастройкиПодключенияЛокальныхМодулейИСМП</content>
   <content>CommonPicture.СканированиеКодаМаркировкиБакалеиИСМП</content>
   <content>CommonPicture.СканированиеКодаМаркировкиКабельнойПродукцииИСМП</content>
   <content>CommonPicture.СканированиеКодаМаркировкиМоторныхМаселИСМП</content>
@@ -402,5 +401,23 @@
   <content>CommonPicture.ПроверкаНаличияПиротехникиИСМП</content>
   <content>CommonPicture.ПроверкаНаличияСтроительныхМатериаловИСМП</content>
   <content>CommonPicture.ПроверкаНаличияПечатнойПродукцииИСМП</content>
+  <content>CommonModule.ОбменДаннымиИСМПКлиентСервер</content>
+  <content>CommonModule.ОбменДаннымиИСМПКлиент</content>
+  <content>CommonModule.ОбменДаннымиИСМП</content>
+  <content>CommonModule.ОбменДаннымиИСМПВызовСервера</content>
+  <content>CommonModule.ПротоколОбменаИСМП</content>
+  <content>CommonModule.ОбщегоНазначенияИСМПВебКлиент</content>
+  <content>CommonModule.ИнтерфейсИСМПОбщегоНазначенияВебКлиент</content>
+  <content>CommonModule.ШтрихкодированиеОбщегоНазначенияИСМП</content>
+  <content>Enum.СтатусыОбработкиПеремещенийМеждуМОДИСМП</content>
+  <content>Document.ПеремещениеМеждуМОДИСМП</content>
+  <content>CommonForm.ФормаОшибкиАвторизацииРазрешительногоРежима</content>
+  <content>Role.ДобавлениеИзменениеПеремещенийМеждуМОДИСМП</content>
+  <content>Role.ЧтениеПеремещенийМеждуМОДИСМП</content>
+  <content>InformationRegister.УточнениеКодовФИАСПоМОДамИСМП</content>
+  <content>Document.РазрешениеНаОтгрузкуИСМП</content>
+  <content>Role.ЧтениеРазрешенийНаОтгрузкуИСМП</content>
+  <content>Role.ДобавлениеИзменениеРазрешенийНаОтгрузкуИСМП</content>
+  <content>Enum.СтатусыОбработкиРазрешенийНаОтгрузкуИСМП</content>
   <parentSubsystem>Subsystem.ГосИС.Subsystem.ИСМП</parentSubsystem>
 </mdclass:Subsystem>

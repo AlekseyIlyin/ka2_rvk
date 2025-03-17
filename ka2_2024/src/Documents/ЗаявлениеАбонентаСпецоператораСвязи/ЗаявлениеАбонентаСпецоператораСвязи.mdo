@@ -2314,15 +2314,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="7b0b7306-38f2-4452-b407-39d8fdc0ab11">
-    <name>ВыборСертификатаНаТокене</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор сертификата</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="5fe08013-d084-4cc3-8b8a-296795e04736">
     <name>СравнениеРеквизитовЗаявленияПоЕГРЮЛ</name>
     <synonym>
@@ -2364,6 +2355,15 @@
     <synonym>
       <key>ru</key>
       <value>Подтверждение больше не показывать</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b0b7306-38f2-4452-b407-39d8fdc0ab11">
+    <name>ВыборСертификатаНаТокене</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор сертификата</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

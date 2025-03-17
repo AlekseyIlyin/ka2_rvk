@@ -1155,6 +1155,36 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="3e864684-a438-4f0f-b276-707c4b7e8836">
+    <name>ИзменитьФотографию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить фотографию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4172e23-8ecb-4b9e-bc6b-60342c9c4c84">
+    <name>ФотографияИзменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фотография изменена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="884b68b2-c95a-4bb6-910b-6f7092624e72">
     <producedTypes>
       <objectType typeId="3b2a1a86-bc7c-410e-b99b-1ef00db682d9" valueTypeId="0ad4f84e-48c6-456d-ba9d-5c57ebe7fc21"/>

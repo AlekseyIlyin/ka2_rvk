@@ -1688,6 +1688,10 @@
           <autoMaxHeight>true</autoMaxHeight>
           <font xsi:type="core:FontRef">
             <font>Style.УвеличенныйПолужирныйШрифтБЭД</font>
+            <bold>false</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
           </font>
           <groupHorizontalAlign>Left</groupHorizontalAlign>
           <extInfo xsi:type="form:LabelDecorationExtInfo">
@@ -1779,6 +1783,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
+          <readOnly>true</readOnly>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>

@@ -209,6 +209,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ДваФлажка</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -349,6 +353,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ДваФлажка</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -489,6 +497,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ДваФлажка</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -924,6 +936,7 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
+	ВидыНоменклатуры.Наименование КАК Наименование,
 	ВидыНоменклатуры.Ссылка КАК ВидНоменклатуры,
 	ВидыНоменклатуры.ЭтоГруппа,
 	ВидыНоменклатуры.ИспользоватьХарактеристики КАК ИспользоватьХарактеристики,

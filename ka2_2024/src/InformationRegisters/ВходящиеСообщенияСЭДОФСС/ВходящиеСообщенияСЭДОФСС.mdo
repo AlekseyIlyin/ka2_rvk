@@ -168,6 +168,46 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="eff74a45-bd38-4d33-8147-669ab26c914f">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="578f49f6-dfbf-43f7-a577-802bf5f87959">
+    <name>КПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>КПП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
   <attributes uuid="8d95203d-b6c8-4a7d-854c-5ccbcb300e35">
     <name>Новое</name>
     <synonym>
@@ -179,6 +219,23 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="76cac861-a4cb-4f94-8fb2-9a0fadf952fc">
+    <name>ОбменЧерезОператора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен через оператора</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -259,105 +316,17 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="efdf9873-5918-4b43-b0ce-eac94f99a089">
-    <name>Тип</name>
+  <attributes uuid="d5dda7c8-1483-4009-ae4b-a8057ac690e3">
+    <name>РегистрационныйНомерСФР</name>
     <synonym>
       <key>ru</key>
-      <value>Тип</value>
+      <value>Рег. номер СФР</value>
     </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>11</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="53b47fce-8756-41f9-a135-1da5ddf32f3b">
-    <name>ТребуетсяПодтверждение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Требуется подтверждение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="6e16d9f7-f802-4444-9091-39ec8265f51e">
-    <name>СрокДействия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Срок действия</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="d199a377-730e-48cf-bd35-3ed8cc70fdc2">
-    <name>ТипВзаимодействия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип взаимодействия</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>11</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="eff74a45-bd38-4d33-8147-669ab26c914f">
-    <name>ИНН</name>
-    <synonym>
-      <key>ru</key>
-      <value>ИНН</value>
-    </synonym>
+    <comment>Значение реквизита regNumSfr</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>12</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
-  <attributes uuid="578f49f6-dfbf-43f7-a577-802bf5f87959">
-    <name>КПП</name>
-    <synonym>
-      <key>ru</key>
-      <value>КПП</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>9</length>
+        <length>10</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -388,14 +357,35 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="76cac861-a4cb-4f94-8fb2-9a0fadf952fc">
-    <name>ОбменЧерезОператора</name>
+  <attributes uuid="6e16d9f7-f802-4444-9091-39ec8265f51e">
+    <name>СрокДействия</name>
     <synonym>
       <key>ru</key>
-      <value>Обмен через оператора</value>
+      <value>Срок действия</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="efdf9873-5918-4b43-b0ce-eac94f99a089">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -404,26 +394,38 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="d5dda7c8-1483-4009-ae4b-a8057ac690e3">
-    <name>РегистрационныйНомерСФР</name>
+  <attributes uuid="d199a377-730e-48cf-bd35-3ed8cc70fdc2">
+    <name>ТипВзаимодействия</name>
     <synonym>
       <key>ru</key>
-      <value>Рег. номер СФР</value>
+      <value>Тип взаимодействия</value>
     </synonym>
-    <comment>Значение реквизита regNumSfr</comment>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="53b47fce-8756-41f9-a135-1da5ddf32f3b">
+    <name>ТребуетсяПодтверждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется подтверждение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="bb90d15e-eda0-442b-8666-19be66552735">
     <name>ИдентификаторЗапроса</name>

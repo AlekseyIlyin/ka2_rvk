@@ -156,6 +156,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.СоответствиеПользователейУзлам1СДокументооборота</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.ИнтеграцияС1СДокументооборотЗадачиМне</name>
 		<right>
 			<name>View</name>
@@ -380,6 +387,17 @@
 		<name>DataProcessor.ИнтеграцияС1СДокументооборот.Command.ВопросыВыполнения</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ИнтеграцияС1СДокументооборотУзел</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -723,6 +741,13 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДанныеУзлов1СДокументооборота</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>

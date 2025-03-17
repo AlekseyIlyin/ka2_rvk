@@ -1513,6 +1513,11 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ТипНоменклатуры</name>
+      <changeMode>DontChange</changeMode>
+      <field>Catalog.ВидыНоменклатуры.Attribute.ТипНоменклатуры</field>
+    </choiceParameterLinks>
     <fillValue xsi:type="core:ReferenceValue">
       <value>Enum.ОсобенностиУчетаНоменклатуры.EnumValue.БезОсобенностейУчета</value>
     </fillValue>
@@ -1738,7 +1743,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="1a318935-7a48-4b1a-ba63-21d022ff36b7">
-    <name>КодОКВЭД2</name>
+    <name>УдалитьКодОКВЭД2</name>
     <synonym>
       <key>ru</key>
       <value>ОКВЭД2</value>
@@ -2011,6 +2016,24 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="233136d0-c86b-4783-999d-87416fd44cc6">
+    <name>КодОКВЭД2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКВЭД2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

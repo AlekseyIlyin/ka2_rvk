@@ -24,7 +24,7 @@
         <segments>Список.Код</segments>
       </dataPath>
       <extendedTooltip>
-        <name>КодExtendedTooltip</name>
+        <name>КодРасширеннаяПодсказка</name>
         <id>126</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -114,6 +114,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ТипыСертификатовБРО</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -174,6 +178,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>StdPicture.GroupConversation</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -188,7 +196,7 @@
         <segments>Список.Наименование</segments>
       </dataPath>
       <extendedTooltip>
-        <name>НаименованиеExtendedTooltip</name>
+        <name>НаименованиеРасширеннаяПодсказка</name>
         <id>127</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -235,7 +243,7 @@
         <segments>Список.АдресЭлектроннойПочты</segments>
       </dataPath>
       <extendedTooltip>
-        <name>АдресЭлектроннойПочтыExtendedTooltip</name>
+        <name>АдресЭлектроннойПочтыРасширеннаяПодсказка</name>
         <id>128</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -525,7 +533,7 @@
         <value>Признак документооборота без посредничества оператора электронного документооборота</value>
       </toolTip>
       <extendedTooltip>
-        <name>ОбменНапрямуюExtendedTooltip</name>
+        <name>ОбменНапрямуюРасширеннаяПодсказка</name>
         <id>129</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -573,7 +581,7 @@
         <value>Предназначена для документооборота с ФНС</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПредназначенаДляДокументооборотаСФНСExtendedTooltip</name>
+        <name>ПредназначенаДляДокументооборотаСФНСРасширеннаяПодсказка</name>
         <id>130</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -624,7 +632,7 @@
         <value>Предназначена для документооборота с Росстатом</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПредназначенаДляДокументооборотаСФСГСExtendedTooltip</name>
+        <name>ПредназначенаДляДокументооборотаСФСГСРасширеннаяПодсказка</name>
         <id>132</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -675,7 +683,7 @@
         <value>Предназначена для документооборота с ПФР</value>
       </toolTip>
       <extendedTooltip>
-        <name>ПредназначенаДляДокументооборотаСПФРExtendedTooltip</name>
+        <name>ПредназначенаДляДокументооборотаСПФРРасширеннаяПодсказка</name>
         <id>131</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -766,7 +774,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаВыбратьExtendedTooltip</name>
+          <name>СписокКнопкаВыбратьРасширеннаяПодсказка</name>
           <id>110</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -803,7 +811,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКнопкаРучнаяНастройкаExtendedTooltip</name>
+            <name>СписокКнопкаРучнаяНастройкаРасширеннаяПодсказка</name>
             <id>112</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -832,7 +840,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКнопкаДобавитьТакскомExtendedTooltip</name>
+            <name>СписокКнопкаДобавитьТакскомРасширеннаяПодсказка</name>
             <id>113</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -862,7 +870,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокВосстановлениеУчетнойЗаписиExtendedTooltip</name>
+            <name>СписокВосстановлениеУчетнойЗаписиРасширеннаяПодсказка</name>
             <id>114</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -896,7 +904,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокСоздатьЗаявлениеМастерExtendedTooltip</name>
+            <name>СписокСоздатьЗаявлениеМастерРасширеннаяПодсказка</name>
             <id>117</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -931,7 +939,7 @@
           <value>Подменю создать</value>
         </toolTip>
         <extendedTooltip>
-          <name>ПодменюСоздатьExtendedTooltip</name>
+          <name>ПодменюСоздатьРасширеннаяПодсказка</name>
           <id>111</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -962,7 +970,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаСкопироватьExtendedTooltip</name>
+          <name>СписокКнопкаСкопироватьРасширеннаяПодсказка</name>
           <id>118</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -992,7 +1000,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаИзменитьExtendedTooltip</name>
+          <name>СписокКнопкаИзменитьРасширеннаяПодсказка</name>
           <id>119</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1022,7 +1030,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаУстановитьПометкуУдаленияExtendedTooltip</name>
+          <name>СписокКнопкаУстановитьПометкуУдаленияРасширеннаяПодсказка</name>
           <id>120</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1052,7 +1060,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаНайтиExtendedTooltip</name>
+          <name>СписокКнопкаНайтиРасширеннаяПодсказка</name>
           <id>121</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1082,7 +1090,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопкаОтменитьПоискExtendedTooltip</name>
+          <name>СписокКнопкаОтменитьПоискРасширеннаяПодсказка</name>
           <id>122</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1116,7 +1124,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКнопка1ExtendedTooltip</name>
+          <name>СписокКнопка1РасширеннаяПодсказка</name>
           <id>123</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1333,7 +1341,7 @@
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>СписокExtendedTooltip</name>
+      <name>СписокРасширеннаяПодсказка</name>
       <id>124</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1359,7 +1367,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СписокКонтекстноеМенюОбновитьExtendedTooltip</name>
+          <name>СписокКонтекстноеМенюОбновитьРасширеннаяПодсказка</name>
           <id>109</id>
           <visible>true</visible>
           <enabled>true</enabled>

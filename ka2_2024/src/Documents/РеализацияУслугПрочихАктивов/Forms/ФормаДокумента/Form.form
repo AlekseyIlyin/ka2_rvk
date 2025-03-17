@@ -5486,6 +5486,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>Объект.Подразделение</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПодразделениеПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ПодразделениеРасширеннаяПодсказка</name>
               <id>257</id>
@@ -6395,21 +6399,29 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
-              <type>LabelField</type>
+              <type>InputField</type>
               <readOnly>true</readOnly>
               <horizontalAlign>Right</horizontalAlign>
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:LabelFieldExtInfo">
+              <extInfo xsi:type="form:InputFieldExtInfo">
                 <width>10</width>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
                 <format>
                   <key>ru</key>
                   <value>ЧН='Без НДС'</value>
                 </format>
+                <editFormat>
+                  <key>ru</key>
+                  <value>ЧН='Без НДС'</value>
+                </editFormat>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -8098,6 +8110,26 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>СписокЗаявленийОтПокупателя</name>
+    <title>
+      <key>ru</key>
+      <value>Список заявлений о ввозе товаров, полученных от покупателя из ЕАЭС</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
   <formCommands>
     <name>РазбитьСтроку</name>
     <title>
@@ -8456,6 +8488,10 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>Document.ПоступлениеБезналичныхДенежныхСредств.StandardCommand.CreateBasedOn</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Document.ЗаявлениеОВвозеТоваровПолученное.StandardCommand.CreateBasedOn</command>
         <userVisible/>
       </cmiFragmentRecord>
     </commandBar>

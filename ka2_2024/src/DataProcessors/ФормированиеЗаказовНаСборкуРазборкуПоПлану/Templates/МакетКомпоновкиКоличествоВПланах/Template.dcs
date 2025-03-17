@@ -121,18 +121,6 @@
 			<dataPath>Назначение</dataPath>
 			<field>Назначение</field>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ИнтервалПотребностиОт</dataPath>
-			<field>ИнтервалПотребностиОт</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЗаданИнтервалПотребности</dataPath>
-			<field>ЗаданИнтервалПотребности</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ИнтервалПотребностиДо</dataPath>
-			<field>ИнтервалПотребностиДо</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	НоменклатураСегмента.Номенклатура КАК Номенклатура,

@@ -430,6 +430,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -608,10 +612,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаНовоеSearchString</name>
+      <name>ТаблицаНовоеСтрокаПоиска</name>
       <id>1501</id>
       <extendedTooltip>
-        <name>ТаблицаНовоеSearchStringExtendedTooltip</name>
+        <name>ТаблицаНовоеСтрокаПоискаРасширеннаяПодсказка</name>
         <id>1503</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -626,7 +630,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаНовоеSearchStringContextMenu</name>
+        <name>ТаблицаНовоеСтрокаПоискаКонтекстноеМеню</name>
         <id>1502</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -646,10 +650,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаНовоеViewStatus</name>
+      <name>ТаблицаНовоеСостояниеПросмотра</name>
       <id>1504</id>
       <extendedTooltip>
-        <name>ТаблицаНовоеViewStatusExtendedTooltip</name>
+        <name>ТаблицаНовоеСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>1506</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -664,7 +668,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаНовоеViewStatusContextMenu</name>
+        <name>ТаблицаНовоеСостояниеПросмотраКонтекстноеМеню</name>
         <id>1505</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -685,10 +689,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ТаблицаНовоеSearchControl</name>
+      <name>ТаблицаНовоеУправлениеПоиском</name>
       <id>1507</id>
       <extendedTooltip>
-        <name>ТаблицаНовоеSearchControlExtendedTooltip</name>
+        <name>ТаблицаНовоеУправлениеПоискомРасширеннаяПодсказка</name>
         <id>1509</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -703,7 +707,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТаблицаНовоеSearchControlContextMenu</name>
+        <name>ТаблицаНовоеУправлениеПоискомКонтекстноеМеню</name>
         <id>1508</id>
         <visible>true</visible>
         <enabled>true</enabled>

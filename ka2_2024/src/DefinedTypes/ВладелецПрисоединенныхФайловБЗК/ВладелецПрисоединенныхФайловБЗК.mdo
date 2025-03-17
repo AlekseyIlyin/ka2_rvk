@@ -25,10 +25,12 @@
     <types>DocumentRef.ПогашениеЗадолженностиПоВзысканиям</types>
     <types>CatalogRef.Номенклатура</types>
     <types>DocumentRef.ИзменениеМестРаботы</types>
+    <types>DocumentRef.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>DocumentRef.ОплатаПоСреднемуЗаработкуСписком</types>
     <types>DocumentRef.ПереносЗатратНаПерсоналМеждуСтатьями</types>
     <types>DocumentRef.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
     <types>DocumentRef.ВозвратНДФЛ</types>
+    <types>DocumentRef.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
     <types>DocumentRef.ОграничениеВзысканий</types>
     <types>DocumentRef.БухучетЗарплатыСотрудников</types>
     <types>DocumentRef.УдержаниеВСчетРасчетовПоПрочимОперациям</types>
@@ -39,8 +41,10 @@
     <types>DocumentRef.УтверждениеШтатногоРасписания</types>
     <types>DocumentRef.ЗапросСтатусовВыплатыПособия</types>
     <types>DocumentRef.НачислениеПоДоговорам</types>
+    <types>DocumentRef.ЗаявкаНалоговыеВычетыКабинетСотрудника</types>
     <types>CatalogRef.КомплектыОтчетностиПерсУчета</types>
     <types>DocumentRef.ВедомостьНаВыплатуЗарплатыРаздатчиком</types>
+    <types>DocumentRef.ОбращениеКабинетСотрудника</types>
     <types>DocumentRef.РегистрацияТрудовойДеятельности</types>
     <types>DocumentRef.ПерерасчетСтраховыхВзносов</types>
     <types>DocumentRef.ВыплатаБывшимСотрудникам</types>
@@ -68,6 +72,7 @@
     <types>DocumentRef.РаботаВВыходныеИПраздничныеДни</types>
     <types>DocumentRef.СверкаСДокументамиВоинскогоУчета</types>
     <types>DocumentRef.Совмещение</types>
+    <types>DocumentRef.ЗаявкаОтпускБезОплатыКабинетСотрудника</types>
     <types>DocumentRef.ОперацияУчетаПоСтраховымВзносам</types>
     <types>DocumentRef.Отпуск</types>
     <types>DocumentRef.РеестрСведенийНеобходимыхДляНазначенияИВыплатыПособий</types>
@@ -79,6 +84,7 @@
     <types>DocumentRef.БольничныйЛист</types>
     <types>DocumentRef.ДоговорАвторскогоЗаказа</types>
     <types>DocumentRef.ПриостановлениеТрудовыхДоговоровКонтрактов</types>
+    <types>DocumentRef.ЗаявкаОтпускКабинетСотрудника</types>
     <types>DocumentRef.СогласиеНаУведомлениеОбЭЛН</types>
     <types>DocumentRef.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ</types>
     <types>DocumentRef.ЗапросВФССОПроверкеРаботодателя</types>
@@ -115,6 +121,7 @@
     <types>CatalogRef.ЗаявлениеОНазначенииПенсии</types>
     <types>DocumentRef.ПереводКДругомуРаботодателю</types>
     <types>DocumentRef.ПеремещениеВДругоеПодразделение</types>
+    <types>DocumentRef.ЕжегодныеСтандартныеВычеты</types>
     <types>DocumentRef.ПрекращениеСтандартныхВычетовНДФЛ</types>
     <types>DocumentRef.НачислениеЗаПервуюПоловинуМесяца</types>
     <types>CatalogRef.СправкиФизическихЛиц</types>
@@ -130,10 +137,12 @@
     <types>DocumentRef.НесоответствиеСведенийОЗастрахованномЛицеСЭДО</types>
     <types>DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком</types>
     <types>DocumentRef.ПрогулНеявка</types>
+    <types>DocumentRef.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
     <types>DocumentRef.ЗаявлениеИЗапросВПФРОЗаработке</types>
     <types>DocumentRef.НазначениеРабочихМестСотрудникам</types>
     <types>DocumentRef.ДоходВНатуральнойФорме</types>
     <types>DocumentRef.ВедомостьПрочихДоходовВБанк</types>
+    <types>DocumentRef.ЗаявкаОтсутствиеКабинетСотрудника</types>
     <types>DocumentRef.ДоговорРаботыУслуги</types>
     <types>DocumentRef.ПриказНаДоплатуДоСреднегоЗаработка</types>
     <types>DocumentRef.ОтказВВозмещенииВыплатРодителямДетейИнвалидов</types>
@@ -144,13 +153,18 @@
     <types>DocumentRef.УведомлениеОПрекращенииОтпускаПоУходуЗаРебенком</types>
     <types>DocumentRef.ПрогулНеявкаСписком</types>
     <types>DocumentRef.ЗаявкаНаЗакрытиеЛицевыхСчетовСотрудников</types>
+    <types>DocumentRef.ПриказОПрекращенииБронирования</types>
     <types>DocumentRef.ПрекращениеПодработки</types>
     <types>CatalogRef.ФизическиеЛица</types>
+    <types>DocumentRef.ПриказОБронированииРаботников</types>
+    <types>DocumentRef.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудника</types>
     <types>DocumentRef.ИсходящаяСправкаОЗаработкеДляРасчетаПособий</types>
     <types>DocumentRef.ПриемНаРаботу</types>
     <types>DocumentRef.Командировка</types>
     <types>DocumentRef.ПостоянноеУдержаниеВПользуТретьихЛиц</types>
     <types>DocumentRef.СправкаНДФЛ</types>
+    <types>DocumentRef.ЗаявкаСправка2НДФЛКабинетСотрудника</types>
+    <types>DocumentRef.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>DocumentRef.ВходящийЗапросФССДляРасчетаПособия</types>
     <types>DocumentRef.УвольнениеСписком</types>
     <types>DocumentRef.МатериальнаяПомощь</types>
@@ -166,6 +180,7 @@
     <types>DocumentRef.ЗаявлениеСотрудникаНаВыплатуПособия</types>
     <types>DocumentRef.ОтменаСовмещения</types>
     <types>DocumentRef.СреднийЗаработокСЭДО</types>
+    <types>DocumentRef.ЗаявкаДСВКабинетСотрудника</types>
     <types>DocumentRef.Отгул</types>
     <types>DocumentRef.СведенияОТрудовойДеятельностиРаботникаСТД_Р</types>
     <types>DocumentRef.ОтпускПоУходуЗаРебенком</types>

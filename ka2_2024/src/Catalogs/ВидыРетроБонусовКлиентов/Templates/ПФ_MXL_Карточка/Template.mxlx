@@ -222,17 +222,17 @@
 	<rowsItem>
 		<index>9</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса не требуется выполнение условий по целевым показателям продаж.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) = НРег("Не используется") И БезРасчета = Ложь  </detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) = НРег("Не используется") И БезРасчета = Ложь</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -240,17 +240,17 @@
 	<rowsItem>
 		<index>10</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Для начисления ретро-бонуса требуется выполнить план закупки по количеству позиций акционных товаров.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) = НРег("Количество")</detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) = НРег("Количество")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -258,10 +258,10 @@
 	<rowsItem>
 		<index>11</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -269,7 +269,7 @@
 Бонус начисляется при одновременном выполнении плана по всем товарам.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) = НРег("Количество (совокупно)")</detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) = НРег("Количество (совокупно)")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -277,10 +277,10 @@
 	<rowsItem>
 		<index>12</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -288,7 +288,7 @@
 Бонус начисляется за каждый купленный полный пакет.</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) = НРег("Пакетное предложение")</detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) = НРег("Пакетное предложение")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -296,10 +296,10 @@
 	<rowsItem>
 		<index>13</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -307,7 +307,7 @@
 Плановая сумма указывается в документе "Условие ретро-бонуса".</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) = НРег("Сумма")</detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) = НРег("Сумма")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -334,10 +334,10 @@
 	<rowsItem>
 		<index>15</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -347,7 +347,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ПоказательПродаж))&lt;&gt; НРег("Не используется")  </detailParameter>
+И НРег(Строка(ПоказательТоваров))&lt;&gt; НРег("Не используется")  </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -358,7 +358,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -375,10 +375,10 @@
 	<rowsItem>
 		<index>17</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -388,7 +388,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ПоказательПродаж))&lt;&gt; НРег("Не используется")  
+И НРег(Строка(ПоказательТоваров))&lt;&gt; НРег("Не используется")  
  </detailParameter>
 				</c>
 			</c>
@@ -400,7 +400,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -417,10 +417,10 @@
 	<rowsItem>
 		<index>19</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -430,7 +430,7 @@
 					<detailParameter>БезРасчета = Ложь 
 И НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
 И НРег(Строка(ПериодичностьУсловий))&lt;&gt; НРег("Неделя")
-И НРег(Строка(ПоказательПродаж))&lt;&gt; НРег("Не используется")   </detailParameter>
+И НРег(Строка(ПоказательТоваров))&lt;&gt; НРег("Не используется")   </detailParameter>
 				</c>
 			</c>
 		</row>
@@ -441,7 +441,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -480,7 +480,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -499,7 +499,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -534,10 +534,10 @@
 	<rowsItem>
 		<index>25</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -545,7 +545,7 @@
 						</v8:item>
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По клиенту")
-И (БезРасчета = Истина Или НРег(Строка(ПоказательПродаж))= НРег("Не используется"))</detailParameter>
+И (БезРасчета = Истина Или НРег(Строка(ПоказательТоваров))= НРег("Не используется"))</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -553,10 +553,10 @@
 	<rowsItem>
 		<index>26</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -564,7 +564,7 @@
 						</v8:item>
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту")
-И (БезРасчета = Истина Или НРег(Строка(ПоказательПродаж))= НРег("Не используется"))</detailParameter>
+И (БезРасчета = Истина Или НРег(Строка(ПоказательТоваров))= НРег("Не используется"))</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -572,10 +572,10 @@
 	<rowsItem>
 		<index>27</index>
 		<row>
-			<formatIndex>8</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -583,7 +583,7 @@
 						</v8:item>
 					</tl>
 					<detailParameter>НРег(Строка(ДетализацияРасчетаУчастников)) = НРег("По контрагенту и клиенту")
-И (БезРасчета = Истина Или НРег(Строка(ПоказательПродаж))= НРег("Не используется"))</detailParameter>
+И (БезРасчета = Истина Или НРег(Строка(ПоказательТоваров))= НРег("Не используется"))</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -613,7 +613,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -646,10 +646,10 @@
 	<rowsItem>
 		<index>31</index>
 		<row>
-			<formatIndex>13</formatIndex>
+			<formatIndex>11</formatIndex>
 			<c>
 				<c>
-					<f>14</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -658,8 +658,8 @@
 НРег(Строка(ПорядокРаспределения)))].</v8:content>
 						</v8:item>
 					</tl>
-					<detailParameter>НРег(Строка(ПоказательПродаж)) &lt;&gt; НРег("Не используется")
-И НРег(Строка(ПоказательПродаж)) &lt;&gt; НРег("Количество (совокупно)")</detailParameter>
+					<detailParameter>НРег(Строка(ПоказательТоваров)) &lt;&gt; НРег("Не используется")
+И НРег(Строка(ПоказательТоваров)) &lt;&gt; НРег("Количество (совокупно)")</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -670,7 +670,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -690,7 +690,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -710,7 +710,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -729,7 +729,7 @@
 		<row>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -746,7 +746,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -764,7 +764,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -784,7 +784,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -821,7 +821,7 @@
 		<row>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 				</c>
 			</c>
 			<c>
@@ -837,7 +837,7 @@
 			<formatIndex>8</formatIndex>
 			<c>
 				<c>
-					<f>18</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -854,7 +854,7 @@
 		<row>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -867,7 +867,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>19</defaultFormatIndex>
+	<defaultFormatIndex>20</defaultFormatIndex>
 	<height>43</height>
 	<vgRows>43</vgRows>
 	<merge>
@@ -1486,20 +1486,6 @@
 		<fillType>Template</fillType>
 	</format>
 	<format>
-		<font>1</font>
-		<borderColor>#444444</borderColor>
-		<width>813</width>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
-		<font>1</font>
-		<borderColor>#444444</borderColor>
-		<width>720</width>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Template</fillType>
-	</format>
-	<format>
 		<font>2</font>
 		<height>0</height>
 	</format>
@@ -1535,6 +1521,53 @@
 		<topMargin>0</topMargin>
 		<rightMargin>0</rightMargin>
 		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>1</font>
+		<borderColor>#444444</borderColor>
+		<width>813</width>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>3</font>
+		<border>0</border>
+		<borderColor>#444444</borderColor>
+		<width>720</width>
+		<horizontalAlignment>Auto</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<pattern>WithoutPattern</pattern>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+		<textOrientation>0</textOrientation>
+		<detailsUse>Cell</detailsUse>
+		<bySelectedColumns>false</bySelectedColumns>
+		<markNegatives>false</markNegatives>
+		<format/>
+		<hyperLink>false</hyperLink>
+		<autoMarkIncomplete>false</autoMarkIncomplete>
+		<markIncomplete>false</markIncomplete>
+		<indent>0</indent>
+		<autoIndent>0</autoIndent>
+		<editFormat/>
+		<columnSizeChange>Normal</columnSizeChange>
+		<mask/>
+		<pictureSizeMode>Proportionally</pictureSizeMode>
+		<picHorizontalAlignment>Auto</picHorizontalAlignment>
+		<picVerticalAlignment>Bottom</picVerticalAlignment>
+		<textPosition>Auto</textPosition>
+		<leftMargin>0</leftMargin>
+		<topMargin>0</topMargin>
+		<rightMargin>0</rightMargin>
+		<bottomMargin>0</bottomMargin>
+	</format>
+	<format>
+		<font>1</font>
+		<borderColor>#444444</borderColor>
+		<width>720</width>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>0</font>

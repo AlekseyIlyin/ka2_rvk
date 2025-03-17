@@ -3194,10 +3194,8 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
-                <width>40</width>
-                <autoMaxWidth>true</autoMaxWidth>
+                <maxWidth>30</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
-                <horizontalStretch>false</horizontalStretch>
                 <wrap>true</wrap>
                 <listChoiceMode>true</listChoiceMode>
                 <chooseType>true</chooseType>
@@ -4136,6 +4134,7 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
               <throughAlign>Auto</throughAlign>
@@ -4336,6 +4335,7 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
               <throughAlign>Auto</throughAlign>
@@ -5125,7 +5125,7 @@
           </userVisible>
           <title>
             <key>ru</key>
-            <value>Порядок расчетов</value>
+            <value>Взаиморасчеты</value>
           </title>
           <extendedTooltip>
             <name>ГруппаПорядокРасчетовПоДоговоруРасширеннаяПодсказка</name>
@@ -5337,6 +5337,7 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
               <throughAlign>Auto</throughAlign>
@@ -5417,6 +5418,7 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
             <showTitle>true</showTitle>
@@ -6350,6 +6352,121 @@
       <items xsi:type="form:FormGroup">
         <name>ГруппаРасчетыПравая</name>
         <id>734</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаПорядокЗачетаОплатНакладных</name>
+          <id>2101</id>
+          <items xsi:type="form:FormField">
+            <name>ПорядокЗачетаОплатНакладных</name>
+            <id>2119</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ПорядокЗачетаОплатНакладных</segments>
+            </dataPath>
+            <titleLocation>Left</titleLocation>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПорядокЗачетаДокументовПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ПорядокЗачетаОплатНакладныхРасширеннаяПодсказка</name>
+              <id>2121</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <groupHorizontalAlign>Left</groupHorizontalAlign>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПорядокЗачетаОплатНакладныхКонтекстноеМеню</name>
+              <id>2120</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <groupHorizontalAlign>Left</groupHorizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <maxWidth>30</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <listChoiceMode>true</listChoiceMode>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>В соответствии с общей настройкой</value>
+                </presentation>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ПорядкиЗачетаОплатНакладных.EmptyRef</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>По дате и виду документа</value>
+                </presentation>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеВидуДокумента</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>По дате и времени документа</value>
+                </presentation>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеВремениДокумента</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>По плановой дате погашения</value>
+                </presentation>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеПлановогоПогашения</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <groupHorizontalAlign>Left</groupHorizontalAlign>
+          <extendedTooltip>
+            <name>ГруппаПорядокЗачетаОплатНакладныхРасширеннаяПодсказка</name>
+            <id>2102</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <horizontalAlign>Left</horizontalAlign>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
         <items xsi:type="form:FormGroup">
           <name>ГруппаОформлениеДокументовРаздельнойЗакупки</name>
           <id>736</id>
@@ -7617,6 +7734,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Объект.ВидДоходаИностранногоКонтрагента</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ВидДоходаИностранногоКонтрагентаПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ВидДоходаИностранногоКонтрагентаРасширеннаяПодсказка</name>
           <id>2081</id>
@@ -7648,12 +7769,53 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>34</width>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ПояснениеКВидуДохода</name>
+        <id>2106</id>
+        <title>
+          <key>ru</key>
+          <value>Коды 41 и 42 применяются в отчетности с 2025 года.
+В отчетах до 2025 года они отразятся под кодом 39 - «Иные доходы, подлежащие обложению налогом»</value>
+        </title>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>ПояснениеКВидуДоходаРасширеннаяПодсказка</name>
+          <id>2108</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПояснениеКВидуДоходаКонтекстноеМеню</name>
+          <id>2107</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <width>65</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <maxWidth>31</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ПоясняющийТекст</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -9367,6 +9529,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПодписанЗашифрованСостояния</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -13202,6 +13368,10 @@
                 <key>ru</key>
                 <value>Выберите файл для предварительного просмотра</value>
               </nonselectedPictureText>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <visible>true</visible>

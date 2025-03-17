@@ -212,10 +212,6 @@
           </dataPath>
           <skipOnInput>false</skipOnInput>
           <titleLocation>None</titleLocation>
-          <excludedCommands>CancelSearch</excludedCommands>
-          <excludedCommands>Change</excludedCommands>
-          <excludedCommands>Find</excludedCommands>
-          <excludedCommands>FindByCurrentValue</excludedCommands>
           <items xsi:type="form:FormField">
             <name>Представление</name>
             <id>4</id>
@@ -2350,9 +2346,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Change</excludedCommands>
-  <excludedCommands>Find</excludedCommands>
-  <excludedCommands>FindByCurrentValue</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

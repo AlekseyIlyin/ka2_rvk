@@ -1529,25 +1529,21 @@
           <userSettingsGroup>ГруппаПользовательскихНастроек</userSettingsGroup>
         </extInfo>
       </items>
-      <items xsi:type="form:Button">
-        <name>ОткрытьМашиночитаемыеДоверенности</name>
-        <id>476</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияОткрытьМашиночитаемыеДоверенности</name>
+        <id>490</id>
         <title>
           <key>ru</key>
-          <value>Машиночитаемые доверенности</value>
+          <value>Открыть машиночитаемые доверенности</value>
         </title>
+        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ОткрытьМашиночитаемыеДоверенностиРасширеннаяПодсказка</name>
-          <id>477</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>ДекорацияОткрытьМашиночитаемыеДоверенностиРасширеннаяПодсказка</name>
+          <id>492</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1555,13 +1551,21 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>Hyperlink</type>
-        <commandName>Form.Command.ОткрытьМашиночитаемыеДоверенности</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
+        <contextMenu>
+          <name>ДекорацияОткрытьМашиночитаемыеДоверенностиКонтекстноеМеню</name>
+          <id>491</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
         <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <horizontalStretch>true</horizontalStretch>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>URLProcessing</event>
+            <name>ДекорацияОткрытьМашиночитаемыеДоверенностиОбработкаНавигационнойСсылки</name>
+          </handlers>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаЛегенда</name>
@@ -2848,6 +2852,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>StdPicture.Change</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>
@@ -3557,7 +3565,7 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Путь к приложению</value>
+          <value>Путь к приложению, если установлено по нестандартному пути</value>
         </title>
         <extendedTooltip>
           <name>ГруппаПрограммыLinuxПутьКПрограммеРасширеннаяПодсказка</name>
@@ -5274,27 +5282,6 @@
       </handler>
     </action>
     <representation>TextPicture</representation>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОткрытьМашиночитаемыеДоверенности</name>
-    <title>
-      <key>ru</key>
-      <value>Машиночитаемые доверенности</value>
-    </title>
-    <id>12</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Открыть машиночитаемые доверенности</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОткрытьМашиночитаемыеДоверенности</name>
-      </handler>
-    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <parameters>

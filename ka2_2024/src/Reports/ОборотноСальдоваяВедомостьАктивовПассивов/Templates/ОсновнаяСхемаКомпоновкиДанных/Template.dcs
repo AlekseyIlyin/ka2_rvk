@@ -448,6 +448,78 @@
 УПОРЯДОЧИТЬ ПО
 	Порядок</query>
 	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ИерархияСтатей</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статья</dataPath>
+			<field>Статья</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статей</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтатьиАктивовПассивов.Ссылка КАК Статья,
+	СтатьиАктивовПассивов.Родитель КАК Родитель
+ИЗ
+	ПланВидовХарактеристик.СтатьиАктивовПассивов КАК СтатьиАктивовПассивов
+ГДЕ
+	СтатьиАктивовПассивов.Ссылка В (&amp;СписокСтатей)
+	И СтатьиАктивовПассивов.Родитель &lt;&gt; ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.ПустаяСсылка)</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ИерархияСтатей</sourceDataSet>
+		<destinationDataSet>ИерархияСтатей</destinationDataSet>
+		<sourceExpression>Родитель</sourceExpression>
+		<destinationExpression>Статья</destinationExpression>
+		<parameter>СписокСтатей</parameter>
+		<parameterListAllowed>false</parameterListAllowed>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>ОборотныеСредства</sourceDataSet>
+		<destinationDataSet>ИерархияСтатей</destinationDataSet>
+		<sourceExpression>Статья</sourceExpression>
+		<destinationExpression>Статья</destinationExpression>
+		<parameter>СписокСтатей</parameter>
+		<parameterListAllowed>false</parameterListAllowed>
+	</dataSetLink>
 	<totalField>
 		<dataPath>СуммаНачальныйОстаток</dataPath>
 		<expression>Сумма(СуммаНачальныйОстаток)</expression>
@@ -642,6 +714,21 @@
 		<expression>Константы.БазоваяВалютаПоУмолчанию.Получить()</expression>
 		<availableAsField>false</availableAsField>
 		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>СписокСтатей</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список статей</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>ОСВАктивовПассивов</dcsset:name>

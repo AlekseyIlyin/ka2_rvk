@@ -6255,7 +6255,7 @@
 		<sourceExpression>Счет</sourceExpression>
 		<destinationExpression>Счет</destinationExpression>
 		<parameter>Ссылки</parameter>
-		<parameterListAllowed>true</parameterListAllowed>
+		<parameterListAllowed>false</parameterListAllowed>
 	</dataSetLink>
 	<dataSetLink>
 		<sourceDataSet>СчетИерархия</sourceDataSet>
@@ -6263,7 +6263,7 @@
 		<sourceExpression>Родитель</sourceExpression>
 		<destinationExpression>Счет</destinationExpression>
 		<parameter>Ссылки</parameter>
-		<parameterListAllowed>true</parameterListAllowed>
+		<parameterListAllowed>false</parameterListAllowed>
 	</dataSetLink>
 	<dataSetLink>
 		<sourceDataSet>ОстаткиИОборотыПоКорсчетам</sourceDataSet>

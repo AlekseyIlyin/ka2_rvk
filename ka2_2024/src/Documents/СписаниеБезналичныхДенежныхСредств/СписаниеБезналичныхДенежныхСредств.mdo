@@ -169,6 +169,7 @@
   <defaultObjectForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <sequenceFilling>AutoFillOff</sequenceFilling>
   <registerRecords>AccumulationRegister.ДенежныеСредстваУПодотчетныхЛиц</registerRecords>
@@ -1201,6 +1202,7 @@
       <types>DocumentRef.ПоступлениеУслугПоАренде</types>
       <types>DocumentRef.ЗаказПоставщику</types>
       <types>DocumentRef.РаспоряжениеНаПеремещениеДенежныхСредств</types>
+      <types>DocumentRef.АктПремииКлиенту</types>
       <types>DocumentRef.ОперацияПоЯндексКассе</types>
       <types>DocumentRef.ВыкупПринятыхНаХранениеТоваров</types>
       <types>DocumentRef.ЗаказПереработчику</types>
@@ -1580,6 +1582,17 @@
       <name>Организация</name>
       <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</field>
     </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Период</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.StandardAttribute.Date</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВидОперации</name>
+      <value xsi:type="core:StringValue">
+        <value>Оплата</value>
+      </value>
+    </choiceParameters>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -2084,6 +2097,10 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.БанковскийСчет</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.БанковскийСчет</field>
+    </choiceParameterLinks>
     <choiceParameterLinks>
       <name>Отбор.Контрагент</name>
       <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Контрагент</field>

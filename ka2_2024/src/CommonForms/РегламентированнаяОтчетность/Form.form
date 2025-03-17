@@ -1583,6 +1583,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2572,6 +2576,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПиктограммыРеглОтчетов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2990,6 +2998,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -4509,6 +4521,10 @@
           <name>ОтчетыПередУдалением</name>
         </handlers>
         <handlers>
+          <event>OnActivateRow</event>
+          <name>ОтчетыПриАктивизацииСтроки</name>
+        </handlers>
+        <handlers>
           <event>Drag</event>
           <name>ОтчетыПеретаскивание</name>
         </handlers>
@@ -5876,6 +5892,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПиктограммыРеглОтчетов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -6088,6 +6108,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -8675,6 +8699,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПиктограммыОтчетов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -8878,6 +8906,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -10659,6 +10691,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПиктограммыОтчетов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -11085,6 +11121,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -14628,6 +14668,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ПиктограммыОтчетов</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -14913,6 +14957,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -16340,6 +16388,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -16390,6 +16442,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Пламя</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -16666,6 +16722,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -16718,6 +16778,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.Пламя</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                   <fileDragMode>AsFileRef</fileDragMode>
                 </extInfo>
               </items>
@@ -18620,6 +18684,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -20409,6 +20477,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.ПризнакНаличияКритическойОшибки</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -25625,14 +25697,16 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>Отчеты.СостояниеСдачиОтчетности</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Отчеты.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	РегистрСведенийЖурналОтчетовСтатусы.Ссылка КАК РегламентированныйОтчет,
 	РегистрСведенийЖурналОтчетовСтатусы.ДатаНачала КАК ДатаНачала,
 	РегистрСведенийЖурналОтчетовСтатусы.ДатаОкончания КАК ДатаОкончания,
 	РегистрСведенийЖурналОтчетовСтатусы.ФинансовыйПериод КАК ФинансовыйПериод,
-	(10000000 + РАЗНОСТЬДАТ(ДАТАВРЕМЯ(1, 1, 1), РегистрСведенийЖурналОтчетовСтатусы.ДатаОкончания, ДЕНЬ)) * 10000000
-		+ РАЗНОСТЬДАТ(РегистрСведенийЖурналОтчетовСтатусы.ДатаНачала, ДАТАВРЕМЯ(3999, 12, 31, 23, 59, 59), ДЕНЬ) КАК ФинансовыйПериодПорядок,
+	(10000000 + РАЗНОСТЬДАТ(ДАТАВРЕМЯ(1, 1, 1), РегистрСведенийЖурналОтчетовСтатусы.ДатаОкончания, ДЕНЬ)) * 10000000 + РАЗНОСТЬДАТ(РегистрСведенийЖурналОтчетовСтатусы.ДатаНачала, ДАТАВРЕМЯ(3999, 12, 31, 23, 59, 59), ДЕНЬ) КАК ФинансовыйПериодПорядок,
 	РегистрСведенийЖурналОтчетовСтатусы.ВариантОтчета КАК ВариантОтчета,
 	РегистрСведенийЖурналОтчетовСтатусы.Организация КАК Организация,
 	РегистрСведенийЖурналОтчетовСтатусы.ВидКонтролирующегоОргана КАК ВидКонтролирующегоОргана,
@@ -25652,7 +25726,8 @@
 				ИЛИ РегистрСведенийЖурналОтчетовСтатусы.СостояниеСдачиОтчетности = ЗНАЧЕНИЕ(Перечисление.СостояниеСдачиОтчетности.ПустаяСсылка)
 			ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
 		ИНАЧЕ РегистрСведенийЖурналОтчетовСтатусы.ДатаОтправки
-	КОНЕЦ КАК ДатаОтправки
+	КОНЕЦ КАК ДатаОтправки,
+	РегистрСведенийЖурналОтчетовСтатусы.Ссылка КАК Ссылка
 ИЗ
 	РегистрСведений.ЖурналОтчетовСтатусы КАК РегистрСведенийЖурналОтчетовСтатусы
 ГДЕ
@@ -25662,6 +25737,138 @@
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФинансовыйПериодПорядок</dataPath>
+        <field>ФинансовыйПериодПорядок</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Финансовый период порядок</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Комментарий</dataPath>
+        <field>Комментарий</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Комментарий</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФинансовыйПериод</dataPath>
+        <field>ФинансовыйПериод</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачала</dataPath>
+        <field>ДатаНачала</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Статус</dataPath>
+        <field>Статус</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеКонтролирующегоОргана</dataPath>
+        <field>ПредставлениеКонтролирующегоОргана</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Скрыт</dataPath>
+        <field>Скрыт</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеОтчета</dataPath>
+        <field>НаименованиеОтчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РегламентированныйОтчет</dataPath>
+        <field>РегламентированныйОтчет</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Регламентированный отчет</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаОкончания</dataPath>
+        <field>ДатаОкончания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НеОтправляетсяВКонтролирующийОрган</dataPath>
+        <field>НеОтправляетсяВКонтролирующийОрган</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантОтчета</dataPath>
+        <field>ВариантОтчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Организация</dataPath>
+        <field>Организация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидКонтролирующегоОргана</dataPath>
+        <field>ВидКонтролирующегоОргана</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодКонтролирующегоОргана</dataPath>
+        <field>КодКонтролирующегоОргана</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеГосОргана</dataPath>
+        <field>ПредставлениеГосОргана</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Представление гос органа</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИндексКартинки</dataPath>
+        <field>ИндексКартинки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СостояниеСдачиОтчетности</dataPath>
+        <field>СостояниеСдачиОтчетности</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьКритическиеОшибкиОтправки</dataPath>
+        <field>ЕстьКритическиеОшибкиОтправки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Непрочтенное</dataPath>
+        <field>Непрочтенное</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаОтправки</dataPath>
+        <field>ДатаОтправки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Дата отправки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
     </extInfo>
   </attributes>
   <attributes>
@@ -26560,6 +26767,9 @@
       <segments>Входящие.ПодтвердитьДо</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Входящие.ПодтверждениеОтправилОператор</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>Входящие.ПодтверждениеПросрочено</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
@@ -26598,6 +26808,7 @@
 		ИНАЧЕ ЕСТЬNULL(СвойстваОтветовНаТребованияФСС.ДатаОтветаИзмененная, ДАТАВРЕМЯ(1, 1, 1))
 	КОНЕЦ КАК ДатаОтветаИзмененная,
 	ЕСТЬNULL(СвойстваОтветовНаТребования.ДатаОтвета, ЕСТЬNULL(ВходящийДокументСЭДОФСС.ДатаОтправкиОтветаНаЗапрос, ДАТАВРЕМЯ(1, 1, 1))) КАК ДатаОтвета,
+	ЕСТЬNULL(СвойстваОтветовНаТребования.ПодтверждениеОтправилОператор, Ложь) КАК ПодтверждениеОтправилОператор,
 	ЕСТЬNULL(СвойстваОтветовНаТребования.ДнейДоОтвета, ВЫБОР
 			КОГДА НЕ ВходящийДокументСЭДОФСС.Ссылка ЕСТЬ NULL
 				ТОГДА 10
@@ -27057,6 +27268,18 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СтраницаЖурнала</dataPath>
         <field>СтраницаЖурнала</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПодтверждениеОтправилОператор</dataPath>
+        <field>ПодтверждениеОтправилОператор</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Подтверждение отправил оператор</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
     </extInfo>
   </attributes>

@@ -696,7 +696,7 @@
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	&amp;СтрокаАктивыМинусПассивы КАК АктивыМинусПассивы,
 	ЗНАЧЕНИЕ(Перечисление.ВидыСтатейУправленческогоБаланса.Актив) КАК ТипПоказателя,
-	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.ТоварыНаОптовыхСкладах) КАК Показатель,
+	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.УпрБалансТоварыНаОптовыхСкладах) КАК Показатель,
 		
 	УчетСебестоимости.Организация КАК Организация,
 	&amp;ВалютаУправленческогоУчета КАК Валюта,
@@ -733,7 +733,7 @@
 ВЫБРАТЬ
 	&amp;СтрокаАктивыМинусПассивы КАК АктивыМинусПассивы,
 	ЗНАЧЕНИЕ(Перечисление.ВидыСтатейУправленческогоБаланса.Актив) КАК ТипПоказателя,
-	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.ТоварыНаОптовыхСкладах) КАК Показатель,
+	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.УпрБалансТоварыНаОптовыхСкладах) КАК Показатель,
 		
 	ПрочиеРасходы.Организация КАК Организация,
 	&amp;ВалютаУправленческогоУчета КАК Валюта,
@@ -770,7 +770,7 @@
 ВЫБРАТЬ
 	&amp;СтрокаАктивыМинусПассивы КАК АктивыМинусПассивы,
 	ЗНАЧЕНИЕ(Перечисление.ВидыСтатейУправленческогоБаланса.Актив) КАК ТипПоказателя,
-	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.ТоварыНаОптовыхСкладах) КАК Показатель,
+	ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.УпрБалансТоварыНаОптовыхСкладах) КАК Показатель,
 		
 	ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка) КАК Организация,
 	&amp;ВалютаУправленческогоУчета КАК Валюта,
@@ -802,6 +802,78 @@
 ИЗ
 	РегистрНакопления.РасчетыСКлиентамиПоСрокам КАК РасчетыСКлиентамиПоСрокам</query>
 	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ИерархияПоказателей</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статей</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтатьиАктивовПассивов.Ссылка КАК Показатель,
+	СтатьиАктивовПассивов.Родитель КАК Родитель
+ИЗ
+	ПланВидовХарактеристик.СтатьиАктивовПассивов КАК СтатьиАктивовПассивов
+ГДЕ
+	СтатьиАктивовПассивов.Ссылка В (&amp;СписокПоказателей)
+	И СтатьиАктивовПассивов.Родитель &lt;&gt; ЗНАЧЕНИЕ(ПланВидовХарактеристик.СтатьиАктивовПассивов.ПустаяСсылка)</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ИерархияПоказателей</sourceDataSet>
+		<destinationDataSet>ИерархияПоказателей</destinationDataSet>
+		<sourceExpression>Родитель</sourceExpression>
+		<destinationExpression>Показатель</destinationExpression>
+		<parameter>СписокПоказателей</parameter>
+		<parameterListAllowed>false</parameterListAllowed>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>ОборотныеСредства</sourceDataSet>
+		<destinationDataSet>ИерархияПоказателей</destinationDataSet>
+		<sourceExpression>Показатель</sourceExpression>
+		<destinationExpression>Показатель</destinationExpression>
+		<parameter>СписокПоказателей</parameter>
+		<parameterListAllowed>false</parameterListAllowed>
+	</dataSetLink>
 	<calculatedField>
 		<dataPath>ДинамическийПериод</dataPath>
 		<expression>ДАТАВРЕМЯ(1,1,1)</expression>
@@ -1197,6 +1269,20 @@
 		<expression>Константы.БазоваяВалютаПоУмолчанию.Получить()</expression>
 		<availableAsField>false</availableAsField>
 		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>СписокПоказателей</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список показателей</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
 	</parameter>
 	<template>
 		<name>Макет1</name>
@@ -3213,9 +3299,6 @@
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 				<dcsset:userSettingID>7cb2cecf-9f8a-43cd-8590-a673f8f866c9</dcsset:userSettingID>
 			</dcsset:order>
-			<dcsset:conditionalAppearance>
-				<dcsset:viewMode>Normal</dcsset:viewMode>
-			</dcsset:conditionalAppearance>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">

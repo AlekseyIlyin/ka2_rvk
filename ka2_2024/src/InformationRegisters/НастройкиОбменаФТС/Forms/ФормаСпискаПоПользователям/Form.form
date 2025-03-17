@@ -215,7 +215,7 @@
         <id>161</id>
         <title>
           <key>ru</key>
-          <value>Доверенность или номер доверенности</value>
+          <value>Доверенность или ее номер</value>
         </title>
         <enabled>true</enabled>
         <userVisible>
@@ -945,7 +945,7 @@
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>СписокExtendedTooltip</name>
+      <name>СписокРасширеннаяПодсказка</name>
       <id>8</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1298,11 +1298,11 @@
       <name>Доверенность</name>
       <title>
         <key>ru</key>
-        <value>Доверенность или номер доверенности</value>
+        <value>Доверенность или ее номер</value>
       </title>
       <id>11</id>
       <valueType>
-        <types>CatalogRef.МашиночитаемыеДоверенностиРаспределенныйРеестр</types>
+        <types>CatalogRef.МашиночитаемыеДоверенности</types>
         <types>String</types>
         <stringQualifiers/>
       </valueType>
@@ -1674,7 +1674,7 @@
     </title>
     <id>13</id>
     <valueType>
-      <types>CatalogRef.МашиночитаемыеДоверенностиРаспределенныйРеестр</types>
+      <types>CatalogRef.МашиночитаемыеДоверенности</types>
       <types>String</types>
       <stringQualifiers/>
     </valueType>

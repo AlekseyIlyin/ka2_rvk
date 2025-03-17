@@ -2469,6 +2469,10 @@
           <name>ДоначисленияИПерерасчетыВыбор</name>
         </handlers>
         <handlers>
+          <event>BeforeDeleteRow</event>
+          <name>ДоначисленияИПерерасчетыПередУдалением</name>
+        </handlers>
+        <handlers>
           <event>BeforeEditEnd</event>
           <name>ДоначисленияИПерерасчетыПередОкончаниемРедактирования</name>
         </handlers>

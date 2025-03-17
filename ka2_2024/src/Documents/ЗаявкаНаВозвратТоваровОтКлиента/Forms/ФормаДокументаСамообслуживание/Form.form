@@ -55,7 +55,6 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <hyperlink>true</hyperlink>
           </extInfo>
@@ -1188,6 +1187,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1404,7 +1407,7 @@
           </items>
           <items xsi:type="form:FormField">
             <name>ВозвращаемыеТоварыНоменклатураЕдиницаИзмерения</name>
-            <id>94</id>
+            <id>232</id>
             <title>
               <key>ru</key>
               <value>Ед. изм.</value>
@@ -1419,7 +1422,7 @@
             </dataPath>
             <extendedTooltip>
               <name>ВозвращаемыеТоварыНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка</name>
-              <id>184</id>
+              <id>234</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1434,7 +1437,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ВозвращаемыеТоварыНоменклатураЕдиницаИзмеренияКонтекстноеМеню</name>
-              <id>95</id>
+              <id>233</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1442,15 +1445,19 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>LabelField</type>
-            <editMode>EnterOnInput</editMode>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:LabelFieldExtInfo">
+            <extInfo xsi:type="form:InputFieldExtInfo">
               <width>8</width>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2564,6 +2571,8 @@
             <type>LabelField</type>
             <readOnly>true</readOnly>
             <horizontalAlign>Right</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+            <groupVerticalAlign>Center</groupVerticalAlign>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2587,6 +2596,7 @@
             <key>ru</key>
             <value>Страница без НДС</value>
           </title>
+          <verticalStretch>true</verticalStretch>
           <extendedTooltip>
             <name>СтраницаБезНДСВозвращаемыеТоварыРасширеннаяПодсказка</name>
             <id>205</id>
@@ -2605,6 +2615,7 @@
           <type>Page</type>
           <extInfo xsi:type="form:PageGroupExtInfo">
             <group>Vertical</group>
+            <verticalAlign>Center</verticalAlign>
             <showTitle>true</showTitle>
           </extInfo>
         </items>
@@ -2617,6 +2628,7 @@
           <key>ru</key>
           <value>Группа страницы НДС</value>
         </title>
+        <groupVerticalAlign>Bottom</groupVerticalAlign>
         <extendedTooltip>
           <name>ГруппаСтраницыНДСВозвращаемыеТоварыРасширеннаяПодсказка</name>
           <id>202</id>

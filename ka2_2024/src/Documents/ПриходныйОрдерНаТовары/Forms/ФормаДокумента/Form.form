@@ -1656,6 +1656,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ВУпаковочныйЛист</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2579,6 +2583,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4824,6 +4832,10 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЦветТекстаНевыбраннойКартинки</color>
                 </textColor>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <font xsi:type="core:FontRef">
                   <font>System.DefaultGUIFont</font>
                   <height>12.0</height>

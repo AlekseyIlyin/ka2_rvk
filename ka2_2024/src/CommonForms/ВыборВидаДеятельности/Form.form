@@ -234,6 +234,10 @@
             <height>2</height>
             <autoMaxHeight>true</autoMaxHeight>
             <zoomable>true</zoomable>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">

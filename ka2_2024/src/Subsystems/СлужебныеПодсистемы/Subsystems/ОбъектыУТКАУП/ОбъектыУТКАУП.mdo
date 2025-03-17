@@ -3022,7 +3022,7 @@
   <content>Constant.ИспользоватьОтчетДвиженияЗаказов</content>
   <content>FunctionalOption.ФормироватьУправленческийБаланс</content>
   <content>Catalog.СчетФактураКомитентаПрисоединенныеФайлы</content>
-  <content>CommonModule.ЗаполнениеОбъектовПоСтатистикеПовтИсп</content>
+  <content>CommonModule.ЗаполнениеОбъектовПоСтатистикеСлужебный</content>
   <content>CommonCommand.ОтчетВыручкаИСебестоимостьПродажДинамикаПанельДействий</content>
   <content>Report.ВедомостьРасчетовСКлиентами</content>
   <content>CommonModule.ЗаполнениеОбъектовПоСтатистике</content>
@@ -3589,7 +3589,7 @@
   <content>AccumulationRegister.РасчетыСПоставщикамиПланПоставок</content>
   <content>Constant.НоваяАрхитектураВзаиморасчетов</content>
   <content>Constant.НеНоваяАрхитектураВзаиморасчетов</content>
-  <content>Constant.ЗачетОплатПоДатеПлатежа</content>
+  <content>Constant.ПорядокЗачетаОплатНакладных</content>
   <content>Constant.ИспользоватьОтчетВедомостьРасчетовМеждуОрганизациями</content>
   <content>Document.КорректировкаЗадолженностиПоФинансовымИнструментам</content>
   <content>Report.ВедомостьРасчетовПоФинансовымИнструментам</content>
@@ -4226,7 +4226,6 @@
   <content>CommonPicture.ПроверкаСрокаГодности</content>
   <content>CommonPicture.ПроверкаЦены</content>
   <content>CommonPicture.Рамка</content>
-  <content>CommonPicture.РамкаБелая6</content>
   <content>CommonPicture.РамкаМеню</content>
   <content>CommonPicture.РамкаМенюБелая</content>
   <content>CommonPicture.РамкаМенюСерая</content>
@@ -4959,7 +4958,7 @@
   <content>Role.ЧтениеГосударственныхКонтрактов</content>
   <content>FunctionalOption.ПечататьБумажныйЧек</content>
   <content>FunctionalOption.ПечататьОтдельныйСлипЧекЭквайринговойОперации</content>
-  <content>FunctionalOption.ПечататьОтдельныйСлипЧекЕГАИС</content>
+  <content>FunctionalOption.УдалитьПечататьОтдельныйСлипЧекЕГАИС</content>
   <content>Role.ЧтениеНоменклатурыКонтрагентовБЭД</content>
   <content>Role.ДобавлениеИзменениеНоменклатурыКонтрагентовБЭД</content>
   <content>FunctionalOption.ИспользоватьАналогиМатериалов</content>
@@ -4985,7 +4984,7 @@
   <content>Role.ЧтениеЛогистическихПараметров</content>
   <content>Role.ИспользованиеОбработкиЗапросКоличестваИСерий</content>
   <content>Constant.ПечататьБумажныйЧек</content>
-  <content>Constant.ПечататьОтдельныйСлипЧекЕГАИС</content>
+  <content>Constant.УдалитьПечататьОтдельныйСлипЧекЕГАИС</content>
   <content>Constant.ПечататьОтдельныйСлипЧекЭквайринговойОперации</content>
   <content>Report.ОплатыКлиентовПоСрокам</content>
   <content>Report.ОплатыПоставщикамПоСрокам</content>
@@ -5036,7 +5035,7 @@
   <content>CommonTemplate.ПФ_MXL_УниверсальныйПередаточныйДокумент2023Кв4Прослеж</content>
   <content>CommonCommand.ОбработкаПрайсЛистБазовая</content>
   <content>InformationRegister.КоличествоЗаписейРегистраторовРасчетов</content>
-  <content>Enum.СтатусыОрганизаций</content>
+  <content>Enum.СтатусыОрганизацийПодразделений</content>
   <content>CommonModule.ОрганизацииЛокализацияПовтИсп</content>
   <content>CommonModule.ОрганизацииПовтИсп</content>
   <content>InformationRegister.ЗапущенныеФоновыеЗаданияЭтаповЗакрытияМесяца</content>
@@ -5117,7 +5116,7 @@
   <content>CommonModule.РетроБонусыКлиентСервер</content>
   <content>CommonModule.РетроБонусыСервер</content>
   <content>Document.СписаниеРетроБонусовКлиента</content>
-  <content>Enum.БазыРасчетаПродажРетроБонусов</content>
+  <content>Enum.БазыРасчетаРетроБонусов</content>
   <content>Enum.ДетализацияРасчетаУчастниковРетроБонусов</content>
   <content>Enum.ПериодичностиРетроБонусов</content>
   <content>Enum.ПорядкиРаспределенияРетроБонусов</content>
@@ -5126,7 +5125,7 @@
   <content>Enum.СоставыУчастниковРетроБонусов</content>
   <content>Enum.СтатусыВидовРетроБонусов</content>
   <content>Enum.СтатусыДокументовРетроБонусов</content>
-  <content>Enum.ЦелевыеПоказателиПродажРетроБонусов</content>
+  <content>Enum.ЦелевыеПоказателиРетроБонусовПоТоварам</content>
   <content>Document.НачислениеРетроБонусовКлиента</content>
   <content>Catalog.УсловияРетроБонусовКлиентовПрисоединенныеФайлы</content>
   <content>Constant.ИспользоватьРетроБонусыКлиентов</content>
@@ -5175,8 +5174,8 @@
   <content>Role.ЧтениеАктПремииКлиенту</content>
   <content>Role.ДобавлениеИзменениеАктПремииКлиенту</content>
   <content>Role.ИспользованиеОбработкиГрупповоеНачислениеРетроБонусовКлиентов</content>
-  <content>SessionParameter.ПроводитьБезКонтроляОстатковРетроБонусов</content>
-  <content>Role.РазрешитьОтключениеКонтроляРетроБонусовНаВремяСеанса</content>
+  <content>SessionParameter.ПроводитьБезКонтроляОстатковРетроБонусовКлиентов</content>
+  <content>Role.РазрешитьОтключениеКонтроляРетроБонусовКлиентовНаВремяСеанса</content>
   <content>Enum.СпособыОпределенияСебестоимостиТоваров</content>
   <content>InformationRegister.КрупнейшийНалогоплательщикИсторияРегистрацийВНалоговомОргане</content>
   <content>CommonModule.КлиентБанкСервер</content>
@@ -5218,9 +5217,16 @@
   <content>CommonCommand.ЗагрузитьДокументПоСсылке</content>
   <content>DataProcessor.ПанельАдминистрированияБСД</content>
   <content>StyleItem.ЖирныйШрифт</content>
+  <content>FunctionalOption.ИспользоватьРетроБонусыПоставщиков</content>
+  <content>Constant.ИспользоватьРетроБонусыПоставщиков</content>
+  <content>Catalog.ВидыРетроБонусовПоставщиков</content>
+  <content>Document.УсловияРетроБонусовПоставщика</content>
+  <content>InformationRegister.РетроБонусыПоставщиковУсловия</content>
+  <content>Catalog.УсловияРетроБонусовПоставщикаПрисоединенныеФайлы</content>
   <content>Role.ЧтениеРегистровБПО</content>
   <content>CommonPicture.Минус</content>
   <content>Role.ЧтениеСторно</content>
+  <content>Constant.АдресГрузополучателяБратьИзАдресаДоставки</content>
   <content>CommonModule.ИнцидентыСервер</content>
   <content>CommonModule.ИнцидентыКлиент</content>
   <content>StyleItem.ШрифтНаклонныйУП</content>
@@ -5229,6 +5235,22 @@
   <content>CommonModule.РаботаСЖурналамиДокументов</content>
   <content>CommonModule.РаботаСЖурналамиДокументовВызовСервера</content>
   <content>CommonModule.РаботаСЖурналамиДокументовКлиент</content>
+  <content>Role.ЧтениеУсловийРетроБонусовПоставщиков</content>
+  <content>Role.ЧтениеВидовРетроБонусовПоставщиков</content>
+  <content>Role.РазделЗакупкиРетроБонусыПоставщиков</content>
+  <content>Role.ДобавлениеИзменениеВидовРетроБонусовПоставщиков</content>
+  <content>Role.ПравоСогласованияУсловийРетроБонусовПоставщиков</content>
+  <content>Document.НачислениеРетроБонусовПоставщика</content>
+  <content>Role.ДобавлениеИзменениеУсловийРетроБонусовПоставщиков</content>
+  <content>Document.АктПремииПоставщика</content>
+  <content>CommonModule.АктПремииПоставщикаЛокализация</content>
+  <content>Role.ЧтениеАктПремииПоставщика</content>
+  <content>Role.ДобавлениеИзменениеАктПремииПоставщика</content>
+  <content>Catalog.НачислениеРетроБонусовПоставщикаПрисоединенныеФайлы</content>
+  <content>Role.ЧтениеНачисленийРетроБонусовПоставщиков</content>
+  <content>CommonModule.СервисПрогнозированияПовтИсп</content>
+  <content>Enum.ЗаданияУниверсальнойОчереди</content>
+  <content>InformationRegister.УниверсальнаяОчередьОперативныхЗаданий</content>
   <content>InformationRegister.РетроБонусыКлиентовДоговорыСоглашения</content>
   <content>InformationRegister.НастройкиУчетаНДСПриУСН</content>
   <content>CommonTemplate.Драйвер1СДисплейПокупателя_en</content>
@@ -5243,8 +5265,21 @@
   <content>CommonTemplate.ПФ_MXL_УниверсальныйКорректировочныйДокумент1096Прослеж</content>
   <content>CommonTemplate.ПФ_MXL_УниверсальныйПередаточныйДокумент1096</content>
   <content>CommonTemplate.ПФ_MXL_УниверсальныйПередаточныйДокумент1096Прослеж</content>
+  <content>CommonTemplate.КнигаПродаж1448</content>
+  <content>CommonModule.ЕдиныйНалоговыйСчетПовтИсп</content>
   <content>Report.ДействующиеРетроБонусыПоДоговору</content>
   <content>Report.ДействующиеРетроБонусыПоСоглашению</content>
+  <content>Role.ЧтениеСписанийРетроБонусовПоставщиков</content>
+  <content>Role.ДобавлениеИзменениеСписанийРетроБонусовПоставщиков</content>
+  <content>Document.СписаниеРетроБонусовПоставщика</content>
+  <content>FunctionalOption.ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</content>
+  <content>Constant.ИспользоватьСогласованиеСписанийРетроБонусовПоставщиков</content>
+  <content>Report.ВедомостьПоРетроБонусамПоставщиков</content>
+  <content>Report.СоставСегментовРетроБонусовПоставщиков</content>
+  <content>Constant.ВыводитьПолныеНаименованияРетроБонусовКлиентов</content>
+  <content>Constant.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</content>
+  <content>FunctionalOption.ВыводитьПолныеНаименованияРетроБонусовПоставщиков</content>
+  <content>FunctionalOption.ВыводитьПолныеНаименованияРетроБонусовКлиентов</content>
   <content>CommonPicture.ОбновлениеДанныхСТорговойПлощадки</content>
   <content>Enum.СтатусыЗаказовТорговыхПлощадок</content>
   <content>InformationRegister.ДополнительныеСведенияПоТоварамЗаказовТорговыхПлощадок</content>
@@ -5254,6 +5289,54 @@
   <content>ScheduledJob.ПолучениеЭтикетокДляЗаказовТорговойПлощадки</content>
   <content>Catalog.ВидыНалоговВзносов</content>
   <content>CommonModule.ВидыНалоговВзносовЛокализация</content>
+  <content>Role.ПросмотрОтчетаВедомостьПоРетроБонусамПоставщиков</content>
+  <content>Report.РасчетРетроБонусовПоставщиков</content>
+  <content>Role.ПросмотрОтчетаРасчетРетроБонусовПоставщиков</content>
+  <content>Catalog.СписаниеРетроБонусовПоставщикаПрисоединенныеФайлы</content>
+  <content>Report.ОтчетСервисПрогнозированияВыгружаемыеДанные</content>
+  <content>InformationRegister.ИмпортируемыеТоварыТорговыхПлощадок</content>
   <content>Catalog.ПеремещениеТоваровПрисоединенныеФайлы</content>
+  <content>Role.ДобавлениеИзменениеНачисленийРетроБонусовПоставщиков</content>
+  <content>CommonModule.РетроБонусыРасчет</content>
+  <content>Catalog.СписаниеРетроБонусовКлиентаПрисоединенныеФайлы</content>
+  <content>Catalog.АктПремииПоставщикаПрисоединенныеФайлы</content>
+  <content>AccumulationRegister.РетроБонусыПоставщиков</content>
+  <content>CommonModule.УниверсальнаяОчередьОперативныхЗаданий</content>
+  <content>CommonTemplate.ДрайверFITККТ54ФЗ_ru</content>
+  <content>CommonTemplate.ДрайверNEWTONККТ54ФЗ_ru</content>
+  <content>StyleItem.ЖирныйПодчеркнутыйШрифт</content>
+  <content>CommonPicture.Маг1СБиблиотекаЛоготип</content>
+  <content>CommonPicture.Маг1СБиблиотекаЛоготипПрозрачныйФон</content>
+  <content>InformationRegister.ЗавершенныеУсловияРетроБонусовПоставщиков</content>
+  <content>InformationRegister.ЗавершенныеУсловияРетроБонусовПоставщиковИстория</content>
+  <content>InformationRegister.РетроБонусыПоставщиковСегментыТоваров</content>
+  <content>InformationRegister.РетроБонусыПоставщиковИНН</content>
+  <content>InformationRegister.РетроБонусыПоставщиковКонтрагенты</content>
+  <content>InformationRegister.РетроБонусыПоставщиковПоставщики</content>
+  <content>InformationRegister.РетроБонусыПоставщиковСклады</content>
+  <content>InformationRegister.РетроБонусыПоставщиковТовары</content>
+  <content>CommonPicture.СервисПрогнозированияПродажПромо</content>
+  <content>CommonPicture.ВниманиеКрасный32</content>
+  <content>Enum.ВидыСтатейАктивовПассивов</content>
+  <content>CommonModule.ФинансовыйУчетПоДаннымБалансовыхРегистров</content>
+  <content>CommonModule.ФинансовыйУчетПоДаннымБалансовыхРегистровЛокализация</content>
+  <content>DataProcessor.УправлениеПродажамиНаWB</content>
+  <content>CommonPicture.КрасныйПлюс</content>
+  <content>CommonPicture.ЛоготипWildberries</content>
+  <content>CommonPicture.ЛоготипЯндексМаркет2</content>
+  <content>Constant.НастройкиОбменаНСПК</content>
+  <content>Enum.ВариантыОбеспечиваемогоПериода</content>
+  <content>Enum.ВариантыЗагрузкиОтчетаБанкаПоСБП</content>
+  <content>Report.ДействующиеРетроБонусыПоставщиков</content>
+  <content>Enum.ТипыРетроБонусовПоставщиков</content>
+  <content>DataProcessor.Помощь</content>
+  <content>CommonPicture.ПанельПомощь</content>
+  <content>Enum.ТипыЗаписейВзаиморасчетов</content>
+  <content>Enum.ОперацииВзаиморасчетов</content>
+  <content>Constant.УдалитьТипыЗаписейВзаиморасчетовЗаполнены</content>
+  <content>CommonModule.ДоходыИРасходыВызовСервера</content>
+  <content>Enum.ПорядкиЗачетаОплатНакладных</content>
+  <content>Constant.УдалитьЗачетОплатПоДатеПлатежа</content>
+  <content>StyleItem.ПодчеркнутыйШрифт</content>
   <parentSubsystem>Subsystem.СлужебныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

@@ -792,6 +792,10 @@
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
             <handlers>
+              <event>AutoComplete</event>
+              <name>КодОКВЭД2АвтоПодбор</name>
+            </handlers>
+            <handlers>
               <event>StartChoice</event>
               <name>КодОКВЭД2НачалоВыбора</name>
             </handlers>

@@ -1104,6 +1104,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:LabelFieldExtInfo">
+              <width>8</width>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
             </extInfo>
@@ -2153,6 +2154,23 @@
         <id>3</id>
         <valueType>
           <types>EnumRef.ТипыНоменклатуры</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ТипИзмеряемойВеличины</name>
+        <title>
+          <key>ru</key>
+          <value>Тип измеряемой величины</value>
+        </title>
+        <id>5</id>
+        <valueType>
+          <types>EnumRef.ТипыИзмеряемыхВеличин</types>
         </valueType>
         <view>
           <common>true</common>

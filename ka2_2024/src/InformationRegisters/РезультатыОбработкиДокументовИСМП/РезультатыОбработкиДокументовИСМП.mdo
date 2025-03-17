@@ -324,6 +324,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="ee237706-b245-4cb6-ad20-3eb7fbf2d59b">
+    <name>УдалитьИдентификаторПредварительнойОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>(Не актуально) Удалить идентификатор предварительной отгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <dimensions uuid="dbaee68d-d6e4-42ad-a530-eec7f33c6f71">
     <name>Документ</name>
     <synonym>

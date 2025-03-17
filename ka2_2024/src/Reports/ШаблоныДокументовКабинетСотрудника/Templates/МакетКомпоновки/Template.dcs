@@ -87,7 +87,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ДанныеСотрудника.Должность</v8:content>
+					<v8:content>Данные сотрудника.Должность</v8:content>
 				</v8:item>
 			</title>
 			<useRestriction>
@@ -130,6 +130,7 @@
 			</attributeUseRestriction>
 			<valueType>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтруктураПредприятия</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ПодразделенияОрганизаций</v8:Type>
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
@@ -321,7 +322,6 @@
 				<order>true</order>
 			</useRestriction>
 			<attributeUseRestriction>
-				<field>true</field>
 				<condition>true</condition>
 				<group>true</group>
 				<order>true</order>
@@ -371,6 +371,7 @@
 				<order>true</order>
 			</useRestriction>
 			<attributeUseRestriction>
+				<field>true</field>
 				<condition>true</condition>
 				<group>true</group>
 				<order>true</order>
@@ -666,7 +667,6 @@
 				<order>true</order>
 			</useRestriction>
 			<attributeUseRestriction>
-				<field>true</field>
 				<condition>true</condition>
 				<group>true</group>
 				<order>true</order>
@@ -829,7 +829,6 @@
 				<order>true</order>
 			</useRestriction>
 			<attributeUseRestriction>
-				<field>true</field>
 				<condition>true</condition>
 				<group>true</group>
 				<order>true</order>
@@ -914,10 +913,17 @@
 				<group>true</group>
 				<order>true</order>
 			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель</dataPath>
-			<field>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель</field>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководитель</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -944,7 +950,7 @@
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя</dataPath>
-			<field>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя</field>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителя</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -969,609 +975,1466 @@
 				</v8:StringQualifiers>
 			</valueType>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ТабельныйНомер</dataPath>
+			<field>ДанныеСотрудникаТабельныйНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Табельный номер</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ</dataPath>
+			<field>ДанныеСотрудникаДокумент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.Страна</dataPath>
+			<field>ДанныеСотрудникаДокументСтрана</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Страна</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.ВидУдостоверенияЛичности</dataPath>
+			<field>ДанныеСотрудникаДокументВидУдостоверенияЛичности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Вид удостоверения личности</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.Серия</dataPath>
+			<field>ДанныеСотрудникаДокументСерия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Серия</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.Номер</dataPath>
+			<field>ДанныеСотрудникаДокументНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Номер</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.ДатаВыдачи</dataPath>
+			<field>ДанныеСотрудникаДокументДатаВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Дата выдачи</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.ВыдавшийОрган</dataPath>
+			<field>ДанныеСотрудникаДокументВыдавшийОрган</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Выдавший орган</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Документ.КодВыдавшегоОргана</dataPath>
+			<field>ДанныеСотрудникаДокументКодВыдавшегоОргана</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Документ.Код выдавшего органа</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.Руководитель.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияРуководительРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Руководитель.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.Руководитель.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияРуководительДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Руководитель.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.Руководитель.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияРуководительВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Руководитель.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.Руководитель.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияРуководительТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Руководитель.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.Руководитель.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияРуководительПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Руководитель.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияДолжностьРуководителяРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Должность руководителя.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияДолжностьРуководителяДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Должность руководителя.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияДолжностьРуководителяВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Должность руководителя.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияДолжностьРуководителяТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Должность руководителя.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаОрганизацияДолжностьРуководителяПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Организация.Должность руководителя.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.Руководитель.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРуководительРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Руководитель.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРуководительДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Руководитель.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРуководительВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Руководитель.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРуководительТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Руководитель.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеРуководительПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Руководитель.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьРуководителяРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьРуководителяДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьРуководителяВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьРуководителяТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьРуководителяПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаФИОФИОПолныеРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.ФИО.ФИОПолные.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаФИОФИОПолныеДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.ФИО.ФИОПолные.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаФИОФИОПолныеВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.ФИО.ФИОПолные.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаФИОФИОПолныеТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.ФИО.ФИОПолные.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаФИОФИОПолныеПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.ФИО.ФИОПолные.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Должность.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаДолжностьРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Должность.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Должность.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаДолжностьДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Должность.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Должность.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаДолжностьВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Должность.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Должность.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаДолжностьТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Должность.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Должность.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаДолжностьПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Должность.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководительРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководительДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководительВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководительТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеВышестоящийРуководительПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.РодительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителяРодительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Родительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ДательныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителяДательныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Дательный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ВинительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителяВинительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Винительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ТворительныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителяТворительныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Творительный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ПредложныйПадеж</dataPath>
+			<field>ДанныеСотрудникаПодразделениеДолжностьВышестоящегоРуководителяПредложныйПадеж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Предложный падеж</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
-		<objectName/>
+		<objectName>ДанныеСервиса</objectName>
 	</dataSet>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.Руководитель.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Организация.Руководитель, 2, РуководительОрганизации.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Руководитель.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.Руководитель.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Организация.Руководитель, 3, РуководительОрганизации.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Руководитель.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.Руководитель.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Организация.Руководитель, 4, РуководительОрганизации.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Руководитель.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.Руководитель.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Организация.Руководитель, 5, РуководительОрганизации.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Руководитель.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.Руководитель.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Организация.Руководитель, 6, РуководительОрганизации.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Руководитель.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Организация.ДолжностьРуководителя, 2)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Должность руководителя.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Организация.ДолжностьРуководителя, 3)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Должность руководителя.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Организация.ДолжностьРуководителя, 4)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Должность руководителя.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Организация.ДолжностьРуководителя, 5)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Должность руководителя.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Организация.ДолжностьРуководителя.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Организация.ДолжностьРуководителя, 6)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Организация.Должность руководителя.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.Руководитель.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.Руководитель, 2, РуководительПодразделения.Пол) </expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Руководитель.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.Руководитель, 3, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Руководитель.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.Руководитель, 4, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Руководитель.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.Руководитель, 5, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Руководитель.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.Руководитель.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.Руководитель, 6, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Руководитель.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 2)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 3)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 4)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 5)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьРуководителя.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 6)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность руководителя.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.ФИО.ФИОПолные, 2, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.ФИО.ФИО полные.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.ФИО.ФИОПолные, 3, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.ФИО.ФИО полные.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.ФИО.ФИОПолные, 4, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.ФИО.ФИО полные.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.ФИО.ФИОПолные, 5, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.ФИО.ФИО полные.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.ФИО.ФИОПолные.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.ФИО.ФИОПолные, 6, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.ФИО.ФИО полные.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Должность.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 2)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Должность.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Должность.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 3)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Должность.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Должность.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 4)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Должность.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Должность.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 5)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Должность.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Должность.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьРуководителя, 6)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Должность.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.ВышестоящийРуководитель, 2, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.ВышестоящийРуководитель, 3, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.ВышестоящийРуководитель, 4, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.ВышестоящийРуководитель, 5, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ВышестоящийРуководитель.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненныеФИО(ДанныеСотрудника.Подразделение.ВышестоящийРуководитель, 6, РуководительПодразделения.Пол)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Вышестоящий руководитель.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.РодительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя, 2)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Родительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ДательныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя, 3)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Дательный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ВинительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя, 4)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Винительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ТворительныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя, 5)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Творительный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя.ПредложныйПадеж</dataPath>
-		<expression>ЗарплатакадрыОтчеты.ПросклоненноеПредставление(ДанныеСотрудника.Подразделение.ДолжностьВышестоящегоРуководителя, 6)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Данные сотрудника.Подразделение.Должность вышестоящего руководителя.Предложный падеж</v8:content>
-			</v8:item>
-		</title>
-		<useRestriction>
-			<condition>true</condition>
-			<group>true</group>
-			<order>true</order>
-		</useRestriction>
-	</calculatedField>
 	<settingsVariant>
 		<dcsset:name>ПоУмолчанию</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">

@@ -45,21 +45,22 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <autoMaxWidth>true</autoMaxWidth>
+      <height>2</height>
       <autoMaxHeight>true</autoMaxHeight>
       <groupHorizontalAlign>Left</groupHorizontalAlign>
       <extInfo xsi:type="form:PictureDecorationExtInfo">
         <picture xsi:type="core:PictureRef">
-          <picture>CommonPicture.ЛоготипЯндексID</picture>
+          <picture>CommonPicture.ЛоготипЯндексМаркет</picture>
         </picture>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
     <items xsi:type="form:Button">
-      <name>ДобавитьАккаунт</name>
+      <name>ДобавитьКабинет</name>
       <id>27</id>
       <title>
         <key>ru</key>
-        <value>Добавить аккаунт</value>
+        <value>Добавить кабинет</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -67,13 +68,8 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ДобавитьАккаунтРасширеннаяПодсказка</name>
+        <name>ДобавитьКабинетРасширеннаяПодсказка</name>
         <id>28</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -82,18 +78,19 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.ДобавитьАккаунт</commandName>
+      <commandName>Form.Command.ДобавитьКабинет</commandName>
       <representation>PictureAndText</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <height>2</height>
       <autoMaxHeight>true</autoMaxHeight>
       <groupHorizontalAlign>Right</groupHorizontalAlign>
+      <groupVerticalAlign>Center</groupVerticalAlign>
       <placementArea>UserCmds</placementArea>
       <textColor xsi:type="core:ColorRef">
         <color>Style.ButtonTextColor</color>
       </textColor>
       <borderColor xsi:type="core:ColorRef">
-        <color>Style.ButtonTextColor</color>
+        <color>Style.ButtonBorderColor</color>
       </borderColor>
       <font xsi:type="core:FontRef">
         <font>Style.ВажнаяНадписьШрифт</font>
@@ -135,11 +132,10 @@
       <autoMaxWidth>true</autoMaxWidth>
       <height>2</height>
       <autoMaxHeight>true</autoMaxHeight>
+      <groupVerticalAlign>Center</groupVerticalAlign>
       <placementArea>UserCmds</placementArea>
-      <borderColor xsi:type="core:ColorDef">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+      <borderColor xsi:type="core:ColorRef">
+        <color>Style.FormBackColor</color>
       </borderColor>
       <picture xsi:type="core:PictureRef">
         <picture>StdPicture.FormHelp</picture>
@@ -297,7 +293,7 @@
                 <id>69</id>
                 <title>
                   <key>ru</key>
-                  <value>Показывает текущий статус подключения</value>
+                  <value>Ввод и редактирование авторизационных данных кабинета.</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -317,9 +313,6 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <font xsi:type="core:FontRef">
-                <font>Style.ВажнаяНадписьШрифт</font>
-              </font>
               <picture xsi:type="core:PictureRef">
                 <picture>CommonPicture.ВажностьНовостиВажная</picture>
               </picture>
@@ -344,7 +337,7 @@
                 <id>71</id>
                 <title>
                   <key>ru</key>
-                  <value>Будут получены новые данные о магазинах, зарегистрированных в аккаунте пользователя.</value>
+                  <value>Будут получены новые данные о магазинах, зарегистрированных в кабинете.</value>
                 </title>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -364,16 +357,12 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <font xsi:type="core:FontRef">
-                <font>Style.ВажнаяНадписьШрифт</font>
-              </font>
               <representationInContextMenu>Auto</representationInContextMenu>
               <shapeRepresentation>None</shapeRepresentation>
             </items>
             <items xsi:type="form:Button">
               <name>УдалитьАккаунт</name>
               <id>120</id>
-              <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -403,9 +392,6 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <font xsi:type="core:FontRef">
-                <font>Style.ВажнаяНадписьШрифт</font>
-              </font>
               <representationInContextMenu>Auto</representationInContextMenu>
               <shapeRepresentation>None</shapeRepresentation>
             </items>
@@ -414,6 +400,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа командная панель аккаунт</value>
+            </title>
             <extendedTooltip>
               <name>ГруппаКоманднаяПанельАккаунтРасширеннаяПодсказка</name>
               <id>110</id>
@@ -435,7 +425,6 @@
               <horizontalSpacing>Double</horizontalSpacing>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
-              <showTitle>true</showTitle>
               <throughAlign>Auto</throughAlign>
               <currentRowUse>Auto</currentRowUse>
             </extInfo>
@@ -628,12 +617,6 @@
                     <autoMaxWidth>true</autoMaxWidth>
                     <maxWidth>75</maxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
-                    <font xsi:type="core:FontRef">
-                      <font>Style.ВажнаяНадписьШрифт</font>
-                      <italic>false</italic>
-                      <underline>false</underline>
-                      <strikeout>false</strikeout>
-                    </font>
                   </extInfo>
                 </items>
                 <items xsi:type="form:Decoration">
@@ -829,9 +812,6 @@
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
-                  <font xsi:type="core:FontRef">
-                    <font>Style.ШрифтКомандИГиперссылок</font>
-                  </font>
                   <representationInContextMenu>Auto</representationInContextMenu>
                   <shape>Usual</shape>
                 </items>
@@ -869,13 +849,6 @@
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
-                  <font xsi:type="core:FontRef">
-                    <font>Style.ШрифтКомандИГиперссылок</font>
-                    <bold>false</bold>
-                    <italic>false</italic>
-                    <underline>false</underline>
-                    <strikeout>false</strikeout>
-                  </font>
                   <representationInContextMenu>Auto</representationInContextMenu>
                   <shape>Usual</shape>
                 </items>
@@ -1250,10 +1223,10 @@
       </edit>
     </columns>
     <columns>
-      <name>ИдентификаторАккаунта</name>
+      <name>ИдентификаторКабинета</name>
       <title>
         <key>ru</key>
-        <value>Идентификатор аккаунта</value>
+        <value>Идентификатор кабинета</value>
       </title>
       <id>1</id>
       <valueType>
@@ -1400,7 +1373,7 @@
     <id>4</id>
     <toolTip>
       <key>ru</key>
-      <value>Показывает текущий статус подключения</value>
+      <value>Ввод и редактирование авторизационных данных кабинета.</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -1413,22 +1386,22 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ДобавитьАккаунт</name>
+    <name>ДобавитьКабинет</name>
     <title>
       <key>ru</key>
-      <value>Добавить аккаунт</value>
+      <value>Добавить кабинет</value>
     </title>
     <id>5</id>
     <toolTip>
       <key>ru</key>
-      <value>Добавить аккаунт</value>
+      <value>Добавить кабинет</value>
     </toolTip>
     <use>
       <common>true</common>
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>ДобавитьАккаунт</name>
+        <name>ДобавитьКабинет</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
@@ -1442,7 +1415,7 @@
     <id>6</id>
     <toolTip>
       <key>ru</key>
-      <value>Будут получены новые данные о магазинах, зарегистрированных в аккаунте пользователя</value>
+      <value>Будут получены новые данные о магазинах, зарегистрированных в кабинете.</value>
     </toolTip>
     <use>
       <common>true</common>

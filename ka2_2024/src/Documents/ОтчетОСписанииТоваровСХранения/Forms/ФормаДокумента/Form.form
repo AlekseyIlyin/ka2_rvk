@@ -901,7 +901,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>28</maxWidth>
+              <maxWidth>33</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <listChoiceMode>true</listChoiceMode>
               <chooseType>true</chooseType>
@@ -959,7 +959,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>28</maxWidth>
+              <maxWidth>33</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -1017,7 +1017,7 @@
                 <event>Creating</event>
                 <name>ДоговорСоздание</name>
               </handlers>
-              <maxWidth>28</maxWidth>
+              <maxWidth>33</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
@@ -1130,7 +1130,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>Label</type>
-          <width>12</width>
+          <width>10</width>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <extInfo xsi:type="form:LabelDecorationExtInfo">
@@ -1261,7 +1261,7 @@
           </contextMenu>
           <formatted>true</formatted>
           <type>Label</type>
-          <width>12</width>
+          <width>10</width>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <extInfo xsi:type="form:LabelDecorationExtInfo">
@@ -1410,7 +1410,7 @@
           <key>ru</key>
           <value>Оплата</value>
         </title>
-        <width>86</width>
+        <width>84</width>
         <horizontalStretch>false</horizontalStretch>
         <extendedTooltip>
           <name>ГруппаОплатаРасширеннаяПодсказка</name>
@@ -1657,7 +1657,7 @@
                 <event>TextEditEnd</event>
                 <name>АналитикаРасходовОкончаниеВводаТекста</name>
               </handlers>
-              <maxWidth>28</maxWidth>
+              <maxWidth>29</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <dropListButton>false</dropListButton>
@@ -1709,7 +1709,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>28</maxWidth>
+              <maxWidth>29</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <dropListButton>false</dropListButton>
@@ -2455,6 +2455,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.СтатусыУказанияСерий</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">

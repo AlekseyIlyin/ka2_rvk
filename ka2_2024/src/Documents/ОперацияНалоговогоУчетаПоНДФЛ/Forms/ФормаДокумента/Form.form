@@ -1625,6 +1625,36 @@
                 <value>Enum.КатегорииДоходовНДФЛ.EnumValue.ПрочиеДоходыПоСтавкеПункта11Статьи224НКРФ</value>
               </value>
             </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.ОплатаТрудаАУСН</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.ДовольствиеСВОвДенежнойФорме</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.РайонныеСеверныеНадбавки</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.РайонныеСеверныеНадбавкиАУСН</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.ДовольствиеСВОвНатуральнойФорме</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.КатегорииДоходовНДФЛ.EnumValue.ПрочиеДоходыАУСН</value>
+              </value>
+            </choiceList>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2710,6 +2740,47 @@
           <extInfo xsi:type="form:LabelFieldExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ПредоставленныеВычетыНалоговаяБаза</name>
+          <id>370</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ПредоставленныеВычеты.НалоговаяБаза</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ПредоставленныеВычетыНалоговаяБазаРасширеннаяПодсказка</name>
+            <id>372</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПредоставленныеВычетыНалоговаяБазаКонтекстноеМеню</name>
+            <id>371</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <extendedEditMultipleValues>true</extendedEditMultipleValues>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">

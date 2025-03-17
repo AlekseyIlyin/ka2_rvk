@@ -15,6 +15,7 @@
   <registeredDocuments>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ</registeredDocuments>
   <registeredDocuments>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ</registeredDocuments>
   <registeredDocuments>Document.ПрекращениеСтандартныхВычетовНДФЛ</registeredDocuments>
+  <registeredDocuments>Document.ЕжегодныеСтандартныеВычеты</registeredDocuments>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Type</name>
@@ -80,6 +81,7 @@
     <references>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ.Attribute.Сотрудник</references>
     <references>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ.Attribute.Сотрудник</references>
     <references>Document.ПрекращениеСтандартныхВычетовНДФЛ.Attribute.Сотрудник</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Сотрудник</references>
   </columns>
   <columns uuid="8b5f3a17-bcf8-4ed3-a153-10d7a8cdb9f8">
     <name>Организация</name>
@@ -91,6 +93,7 @@
     <references>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ.Attribute.Организация</references>
     <references>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ.Attribute.Организация</references>
     <references>Document.ПрекращениеСтандартныхВычетовНДФЛ.Attribute.Организация</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Организация</references>
   </columns>
   <columns uuid="dc32a5f0-1ba6-4ef2-8ede-7086dd3c97a1">
     <name>ПрименяютсяС</name>
@@ -101,6 +104,7 @@
     <references>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ.Attribute.ПрименятьВычетыС</references>
     <references>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ.Attribute.Месяц</references>
     <references>Document.ПрекращениеСтандартныхВычетовНДФЛ.Attribute.Месяц</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.ПрименятьВычетыС</references>
   </columns>
   <columns uuid="f2cc4b45-5508-4398-a1ae-78563bcd16ef">
     <name>Ответственный</name>
@@ -111,6 +115,7 @@
     <references>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ.Attribute.Ответственный</references>
     <references>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ.Attribute.Ответственный</references>
     <references>Document.ПрекращениеСтандартныхВычетовНДФЛ.Attribute.Ответственный</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Ответственный</references>
   </columns>
   <columns uuid="db834779-4205-4a69-9d9f-b01e374f4d05">
     <name>Комментарий</name>
@@ -121,6 +126,7 @@
     <references>Document.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ.Attribute.Комментарий</references>
     <references>Document.ЗаявлениеНаПредоставлениеСтандартныхВычетовПоНДФЛ.Attribute.Комментарий</references>
     <references>Document.ПрекращениеСтандартныхВычетовНДФЛ.Attribute.Комментарий</references>
+    <references>Document.ЕжегодныеСтандартныеВычеты.Attribute.Комментарий</references>
   </columns>
   <forms uuid="c8e5a3c8-f59e-499b-8da7-3becf7b886cc">
     <name>ФормаСписка</name>

@@ -124,6 +124,10 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -173,10 +177,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>НастройкиОтображенияОбъектовСтрокаПоиска</name>
       <id>23</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>НастройкиОтображенияОбъектовСтрокаПоискаРасширеннаяПодсказка</name>
         <id>25</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -191,7 +195,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>НастройкиОтображенияОбъектовСтрокаПоискаКонтекстноеМеню</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -211,10 +215,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>НастройкиОтображенияОбъектовСостояниеПросмотра</name>
       <id>29</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>НастройкиОтображенияОбъектовСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>31</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -229,7 +233,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>НастройкиОтображенияОбъектовСостояниеПросмотраКонтекстноеМеню</name>
         <id>30</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -250,10 +254,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>НастройкиОтображенияОбъектовУправлениеПоиском</name>
       <id>26</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>НастройкиОтображенияОбъектовУправлениеПоискомРасширеннаяПодсказка</name>
         <id>28</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -268,7 +272,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>НастройкиОтображенияОбъектовУправлениеПоискомКонтекстноеМеню</name>
         <id>27</id>
         <visible>true</visible>
         <enabled>true</enabled>

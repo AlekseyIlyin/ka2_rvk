@@ -11,6 +11,11 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ГрупповоеНачислениеРетроБонусовКлиентов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <attributes uuid="6acefc3f-230a-4ece-841d-619450c7d732">
     <name>ДокументУсловий</name>
     <synonym>
@@ -43,6 +48,7 @@
       <name>Отбор.Исправление</name>
       <value xsi:type="core:BooleanValue"/>
     </choiceParameters>
+    <quickChoice>DontUse</quickChoice>
   </attributes>
   <attributes uuid="c4f2ed9b-8a67-4d24-8f6e-25fe024e2c19">
     <name>Организация</name>

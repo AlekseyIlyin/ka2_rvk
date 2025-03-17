@@ -907,8 +907,13 @@
       </choiceParameters>
       <choiceParameters>
         <name>Отбор.ТипОС</name>
-        <value xsi:type="core:ReferenceValue">
-          <value>Enum.ТипыОС.EnumValue.КапитальноеВложение</value>
+        <value xsi:type="core:FixedArrayValue">
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыОС.EnumValue.ОбъектЭксплуатации</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыОС.EnumValue.КапитальноеВложение</value>
+          </values>
         </value>
       </choiceParameters>
       <dataHistory>Use</dataHistory>

@@ -561,7 +561,7 @@
     <fillChecking>ShowError</fillChecking>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ПорядокРасчетов.EnumValue.ПоНакладным</value>
+      <value>Enum.ПорядокРасчетов.EnumValue.ПоДоговорамКонтрагентов</value>
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -1113,9 +1113,14 @@
       <field>Catalog.ДоговорыКонтрагентов.Attribute.Организация</field>
     </choiceParameterLinks>
     <choiceParameterLinks>
-      <name>Дата</name>
+      <name>КонецПериода</name>
       <changeMode>DontChange</changeMode>
       <field>Catalog.ДоговорыКонтрагентов.Attribute.ДатаОкончанияДействия</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>НачалоПериода</name>
+      <changeMode>DontChange</changeMode>
+      <field>Catalog.ДоговорыКонтрагентов.Attribute.ДатаНачалаДействия</field>
     </choiceParameterLinks>
     <choiceParameters>
       <name>ИсключатьДробныеСтавки</name>
@@ -2123,6 +2128,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64f4f666-7324-4b74-ae31-779426bea172">
+    <name>ПорядокЗачетаОплатНакладных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок зачета оплат и накладных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиЗачетаОплатНакладных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

@@ -375,7 +375,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>4.02</v8:content>
+							<v8:content>4.03</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -893,7 +893,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>&amp;ФамилияОтпр</v8:content>
+							<v8:content>&amp;ФамилияПодп</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -993,7 +993,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>&amp;ИмяОтпр</v8:content>
+							<v8:content>&amp;ИмяПодп</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1093,7 +1093,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>&amp;ОтчествоОтпр</v8:content>
+							<v8:content>&amp;ОтчествоПодп</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2534,7 +2534,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>500</v8:content>
+							<v8:content>5000</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3807,7 +3807,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>555</v8:content>
+							<v8:content>2000</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3818,7 +3818,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>О</v8:content>
+							<v8:content>Н</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4031,7 +4031,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>7</v8:content>
+							<v8:content>20</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4183,6 +4183,121 @@
 	<rowsItem>
 		<index>40</index>
 		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПерНалСтав</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СвНалСтав</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПерНалСтав</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>А</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>T</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Н</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>10</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговый период, для которого определена налоговая ставка по туристическому налогу</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>41</index>
+		<row>
 			<formatIndex>18</formatIndex>
 			<c>
 				<c>
@@ -4271,7 +4386,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>41</index>
+		<index>42</index>
 		<row>
 			<c>
 				<c>
@@ -4339,7 +4454,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>555</v8:content>
+							<v8:content>2000</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4374,7 +4489,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>42</index>
+		<index>43</index>
 		<row>
 			<c>
 				<c>
@@ -4489,7 +4604,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>43</index>
+		<index>44</index>
 		<row>
 			<c>
 				<c>
@@ -4557,7 +4672,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>555</v8:content>
+							<v8:content>2000</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4592,7 +4707,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>44</index>
+		<index>45</index>
 		<row>
 			<formatIndex>18</formatIndex>
 			<c>
@@ -4682,7 +4797,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>45</index>
+		<index>46</index>
 		<row>
 			<c>
 				<c>
@@ -4750,7 +4865,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>255</v8:content>
+							<v8:content>2000</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4785,7 +4900,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>46</index>
+		<index>47</index>
 		<row>
 			<c>
 				<c>
@@ -4900,7 +5015,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>47</index>
+		<index>48</index>
 		<row>
 			<c>
 				<c>
@@ -5003,7 +5118,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>48</index>
+		<index>49</index>
 		<row>
 			<formatIndex>18</formatIndex>
 			<c>
@@ -5091,7 +5206,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>49</index>
+		<index>50</index>
 		<row>
 			<c>
 				<c>
@@ -5200,7 +5315,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>50</index>
+		<index>51</index>
 		<row>
 			<formatIndex>18</formatIndex>
 			<c>
@@ -5288,7 +5403,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>51</index>
+		<index>52</index>
 		<row>
 			<c>
 				<c>
@@ -5397,7 +5512,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>52</index>
+		<index>53</index>
 		<row>
 			<formatIndex>18</formatIndex>
 			<c>
@@ -5485,7 +5600,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>53</index>
+		<index>54</index>
 		<row>
 			<c>
 				<c>
@@ -5594,7 +5709,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>54</index>
+		<index>55</index>
 		<row>
 			<formatIndex>18</formatIndex>
 			<c>
@@ -5682,7 +5797,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>55</index>
+		<index>56</index>
 		<row>
 			<c>
 				<c>
@@ -5797,7 +5912,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>56</index>
+		<index>57</index>
 		<row>
 			<c>
 				<c>
@@ -5907,9 +6022,9 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>20</defaultFormatIndex>
-	<height>57</height>
+	<height>58</height>
 	<vgLevels>2</vgLevels>
-	<vgRows>57</vgRows>
+	<vgRows>58</vgRows>
 	<vg>
 		<b>7</b>
 		<e>10</e>
@@ -5928,7 +6043,7 @@
 	</vg>
 	<vg>
 		<b>20</b>
-		<e>56</e>
+		<e>57</e>
 		<t>
 			<v8:item>
 				<v8:lang>#</v8:lang>
@@ -5942,28 +6057,28 @@
 	</vg>
 	<vg>
 		<b>36</b>
-		<e>39</e>
+		<e>40</e>
 	</vg>
 	<vg>
-		<b>41</b>
-		<e>43</e>
+		<b>42</b>
+		<e>44</e>
 	</vg>
 	<vg>
-		<b>45</b>
-		<e>47</e>
+		<b>46</b>
+		<e>48</e>
 	</vg>
 	<vg>
-		<b>49</b>
+		<b>50</b>
 	</vg>
 	<vg>
-		<b>51</b>
+		<b>52</b>
 	</vg>
 	<vg>
-		<b>53</b>
+		<b>54</b>
 	</vg>
 	<vg>
-		<b>55</b>
-		<e>56</e>
+		<b>56</b>
+		<e>57</e>
 	</vg>
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>

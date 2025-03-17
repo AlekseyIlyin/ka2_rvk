@@ -900,6 +900,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Наборы</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1091,33 +1095,6 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
-            <choiceParameters>
-              <name>Отбор.ТипНоменклатуры</name>
-              <value xsi:type="form:FormChoiceListDesTimeValue">
-                <value xsi:type="core:FixedArrayValue">
-                  <values xsi:type="form:FormChoiceListDesTimeValue">
-                    <value xsi:type="core:ReferenceValue">
-                      <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
-                    </value>
-                  </values>
-                  <values xsi:type="form:FormChoiceListDesTimeValue">
-                    <value xsi:type="core:ReferenceValue">
-                      <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
-                    </value>
-                  </values>
-                  <values xsi:type="form:FormChoiceListDesTimeValue">
-                    <value xsi:type="core:ReferenceValue">
-                      <value>Enum.ТипыНоменклатуры.EnumValue.Услуга</value>
-                    </value>
-                  </values>
-                  <values xsi:type="form:FormChoiceListDesTimeValue">
-                    <value xsi:type="core:ReferenceValue">
-                      <value>Enum.ТипыНоменклатуры.EnumValue.Работа</value>
-                    </value>
-                  </values>
-                </value>
-              </value>
-            </choiceParameters>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -1360,19 +1337,15 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>InputField</type>
+            <type>LabelField</type>
             <editMode>EnterOnInput</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
+            <extInfo xsi:type="form:LabelFieldExtInfo">
               <width>8</width>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -3622,6 +3595,23 @@
       <value>Выгружена только не маркируемая продукция</value>
     </title>
     <id>46</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВсеТипыНоменклатуры</name>
+    <title>
+      <key>ru</key>
+      <value>Все типы номенклатуры</value>
+    </title>
+    <id>47</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

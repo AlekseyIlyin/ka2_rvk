@@ -110,6 +110,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.АрхивАнкета</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -317,10 +321,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ОтвеченныеАнкетыSearchString</name>
+      <name>ОтвеченныеАнкетыСтрокаПоиска</name>
       <id>23</id>
       <extendedTooltip>
-        <name>ОтвеченныеАнкетыSearchStringExtendedTooltip</name>
+        <name>ОтвеченныеАнкетыСтрокаПоискаРасширеннаяПодсказка</name>
         <id>25</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -335,7 +339,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ОтвеченныеАнкетыSearchStringContextMenu</name>
+        <name>ОтвеченныеАнкетыСтрокаПоискаКонтекстноеМеню</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -355,10 +359,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ОтвеченныеАнкетыViewStatus</name>
+      <name>ОтвеченныеАнкетыСостояниеПросмотра</name>
       <id>26</id>
       <extendedTooltip>
-        <name>ОтвеченныеАнкетыViewStatusExtendedTooltip</name>
+        <name>ОтвеченныеАнкетыСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>28</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -373,7 +377,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ОтвеченныеАнкетыViewStatusContextMenu</name>
+        <name>ОтвеченныеАнкетыСостояниеПросмотраКонтекстноеМеню</name>
         <id>27</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -394,10 +398,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ОтвеченныеАнкетыSearchControl</name>
+      <name>ОтвеченныеАнкетыУправлениеПоиском</name>
       <id>29</id>
       <extendedTooltip>
-        <name>ОтвеченныеАнкетыSearchControlExtendedTooltip</name>
+        <name>ОтвеченныеАнкетыУправлениеПоискомРасширеннаяПодсказка</name>
         <id>31</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -412,7 +416,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ОтвеченныеАнкетыSearchControlContextMenu</name>
+        <name>ОтвеченныеАнкетыУправлениеПоискомКонтекстноеМеню</name>
         <id>30</id>
         <visible>true</visible>
         <enabled>true</enabled>

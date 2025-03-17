@@ -44,6 +44,33 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="44499e94-41e6-487c-8613-16dae4b0ab61">
+    <name>ФормаОтчета2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет суммы экологического сбора по товарам, упаковке, произведенным на территории РФ или ввезенным из государств ЕАЭС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f3b51fd4-78bf-491a-8a17-4400795ebf8c">
+    <name>ФормаОтчета2025Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет суммы экологического сбора по товарам, упаковке, произведенным на территории РФ или ввезенным из государств ЕАЭС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="20d22ee0-9d39-48db-9af6-7ba4c9bb892f">
+    <name>ФормаОтчета2025Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет суммы экологического сбора по товарам, упаковке, произведенным на территории РФ или ввезенным из государств ЕАЭС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="51cd527f-0970-4de7-975d-624f7623dfcb">
     <name>Списки2016Кв1</name>
     <synonym>
@@ -108,5 +135,148 @@
       <value>Настройки загрузки из файла XML 2016 (кв.1)</value>
     </synonym>
     <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a28d3fe6-dae9-4611-b263-f8aa51b075d7">
+    <name>Списки2025</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="45acdbc3-1349-44dd-ab7c-0875a85fb50b">
+    <name>ФормаОтчета2025Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="0ea12e5f-d793-4aeb-8361-e281cd0da699">
+    <name>ФормаОтчета2025Кв1_ТовУпакНеИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="1fa0f851-df0a-4830-9e6d-ee3e7c2607bc">
+    <name>ФормаОтчета2025Кв1_ТовУпакИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="8b6838bd-6bfe-4109-b198-fbd2f033dfdd">
+    <name>ФормаОтчета2025Кв1_Упаковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="3fd31a4c-52b3-421f-96c5-293a20cbfd57">
+    <name>ФормаОтчета2025Кв1_Итоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="cc88d2b7-fa34-498a-81b7-d447766d7e63">
+    <name>СоставПоказателей2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+    <comment>Состав показателей Расчета</comment>
+  </templates>
+  <templates uuid="f80eae9c-8915-44f5-a62b-0d5b132f3ef5">
+    <name>ФормаОтчета2025Кв1_ПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="168ae99d-5fa7-42f1-b8e8-5643d33a637d">
+    <name>ФормаОтчета2025Кв2_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="a2a26af4-d2df-4a7e-95fe-f01d1b516f0b">
+    <name>ФормаОтчета2025Кв2_ТовУпакНеИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="949705cf-0c87-4af2-9958-19fc982c3698">
+    <name>ФормаОтчета2025Кв2_ТовУпакИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="ecc32931-f3f4-431a-a395-b48d1870e642">
+    <name>ФормаОтчета2025Кв2_Итоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="fd3d3065-58ef-4585-8326-72d34ccd0f7f">
+    <name>СоставПоказателей2025Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+    <comment>Состав показателей Расчета</comment>
+  </templates>
+  <templates uuid="b38cfe8e-05a9-4542-acc0-ca4092d7e230">
+    <name>ФормаОтчета2025Кв2_ПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="a82b0e20-286d-4c2c-a9dc-38421a62713b">
+    <name>ФормаОтчета2025Кв3_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="5bb10061-8029-4943-9c10-088491b50e1f">
+    <name>ФормаОтчета2025Кв3_ТовУпакНеИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="5adfdf35-0ce7-47be-b9a2-27f74d15de02">
+    <name>ФормаОтчета2025Кв3_ТовУпакИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="4d129587-1d56-4ff8-86a9-a68dacf1914d">
+    <name>ФормаОтчета2025Кв3_Итоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>экранная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="ad16baf8-5d6e-4559-8c59-db516a83c116">
+    <name>СоставПоказателей2025Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+    <comment>Состав показателей Расчета</comment>
+  </templates>
+  <templates uuid="c024a4cc-1aa8-4e58-b100-0020d90abeb7">
+    <name>ФормаОтчета2025Кв3_ПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
   </templates>
 </mdclass:Report>

@@ -10,6 +10,7 @@
     <key>ru</key>
     <value>Ставки НДС</value>
   </synonym>
+  <useStandardCommands>true</useStandardCommands>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Order</name>
@@ -27,15 +28,7 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <quickChoice>true</quickChoice>
-  <choiceMode>QuickChoice</choiceMode>
-  <listPresentation>
-    <key>ru</key>
-    <value>Ставки НДС</value>
-  </listPresentation>
-  <explanation>
-    <key>ru</key>
-    <value>Список ставок налога на добавленную стоимость.</value>
-  </explanation>
+  <choiceMode>BothWays</choiceMode>
   <enumValues uuid="f7282de9-868a-4c34-bb04-0bff90bc616e">
     <name>НДС18</name>
     <synonym>

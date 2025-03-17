@@ -1552,7 +1552,7 @@
           </items>
           <items xsi:type="form:FormField">
             <name>ОтключитьАвтоматическоеДовериеПолнымПолномочиям</name>
-            <id>2433</id>
+            <id>2589</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1588,7 +1588,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ОтключитьАвтоматическоеДовериеПолнымПолномочиямКонтекстноеМеню</name>
-              <id>2434</id>
+              <id>2590</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6232,208 +6232,370 @@
       <name>ГруппаНастройкиБизнесСетьСервисДоставки</name>
       <id>2197</id>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисы</name>
-        <id>2271</id>
-        <items xsi:type="form:FormGroup">
-          <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыГоризонтальная</name>
-          <id>2297</id>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаНастройкиБизнесСетьСервисДоставки1СДоставка</name>
-            <id>2273</id>
-            <items xsi:type="form:FormField">
-              <name>Константа_ИспользоватьСервис1СДоставка</name>
-              <id>2275</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Константа_ИспользоватьСервис1СДоставка</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <handlers>
-                <event>OnChange</event>
-                <name>ИспользоватьСервис1СДоставкаПриИзменении</name>
-              </handlers>
-              <extendedTooltip>
-                <name>Константа_ИспользоватьСервис1СДоставкаРасширеннаяПодсказка</name>
-                <id>2277</id>
-                <title>
-                  <key>ru</key>
-                  <value>Позволяет оформлять заказы на доставку для сборных грузов, подбирать тарифы, отслеживать статусы заказов и распечатывать документы и ярлыки перевозчика.</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>Константа_ИспользоватьСервис1СДоставкаКонтекстноеМеню</name>
-                <id>2276</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-            </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Группа настройки бизнес сеть сервис доставки1 с доставка</value>
-            </title>
-            <width>43</width>
-            <extendedTooltip>
-              <name>ГруппаНастройкиБизнесСетьСервисДоставки1СДоставкаРасширеннаяПодсказка</name>
-              <id>2274</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>Vertical</group>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>Auto</currentRowUse>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаНастройкиБизнесСетьСервисДоставки1СКурьер</name>
-            <id>2278</id>
-            <items xsi:type="form:FormField">
-              <name>Константа_ИспользоватьСервис1СКурьер</name>
-              <id>2280</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Константа_ИспользоватьСервис1СКурьер</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <handlers>
-                <event>OnChange</event>
-                <name>ИспользоватьСервис1СДоставкаПриИзменении</name>
-              </handlers>
-              <extendedTooltip>
-                <name>Константа_ИспользоватьСервис1СКурьерРасширеннаяПодсказка</name>
-                <id>2282</id>
-                <title>
-                  <key>ru</key>
-                  <value>Позволяет оформлять заказы на курьерскую доставку в личных кабинетах курьерских служб, подбирать тарифы и распечатывать документы курьерской службы.</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>Константа_ИспользоватьСервис1СКурьерКонтекстноеМеню</name>
-                <id>2281</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-            </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Группа настройки бизнес сеть сервис доставки1 с доставка</value>
-            </title>
-            <width>43</width>
-            <extendedTooltip>
-              <name>ГруппаНастройкиБизнесСетьСервисДоставки1СКурьерРасширеннаяПодсказка</name>
-              <id>2279</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>Vertical</group>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>Auto</currentRowUse>
-            </extInfo>
-          </items>
+        <name>ГруппаСписокСервисовДоставки</name>
+        <id>2433</id>
+        <items xsi:type="form:Table">
+          <name>СервисыДоставки</name>
+          <id>2569</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
-          <title>
-            <key>ru</key>
-            <value>Группа настройки бизнес сеть сервис доставки сервисы горизонтальная</value>
-          </title>
-          <extendedTooltip>
-            <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыГоризонтальнаяРасширеннаяПодсказка</name>
-            <id>2298</id>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СервисыДоставки</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <excludedCommands>Add</excludedCommands>
+          <excludedCommands>CancelSearch</excludedCommands>
+          <excludedCommands>Change</excludedCommands>
+          <excludedCommands>Copy</excludedCommands>
+          <excludedCommands>CopyToClipboard</excludedCommands>
+          <excludedCommands>Delete</excludedCommands>
+          <excludedCommands>EndEdit</excludedCommands>
+          <excludedCommands>Find</excludedCommands>
+          <excludedCommands>FindByCurrentValue</excludedCommands>
+          <excludedCommands>MoveDown</excludedCommands>
+          <excludedCommands>MoveUp</excludedCommands>
+          <excludedCommands>OutputList</excludedCommands>
+          <excludedCommands>SearchEverywhere</excludedCommands>
+          <excludedCommands>SearchHistory</excludedCommands>
+          <excludedCommands>SelectAll</excludedCommands>
+          <excludedCommands>ShowMultipleSelection</excludedCommands>
+          <excludedCommands>ShowRowRearrangement</excludedCommands>
+          <excludedCommands>SortListAsc</excludedCommands>
+          <excludedCommands>SortListDesc</excludedCommands>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаКолонокСервисДоставки</name>
+            <id>2509</id>
+            <items xsi:type="form:FormField">
+              <name>СервисыДоставкиИспользоватьСервисДоставки</name>
+              <id>2520</id>
+              <title>
+                <key>ru</key>
+                <value> </value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>СервисыДоставки.ИспользоватьСервисДоставки</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>СервисыДоставкиИспользоватьСервисДоставкиРасширеннаяПодсказка</name>
+                <id>2522</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>СервисыДоставкиИспользоватьСервисДоставкиКонтекстноеМеню</name>
+                <id>2521</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>EnterOnInput</editMode>
+              <fixingInTable>Left</fixingInTable>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>СервисыДоставкиПодсказка</name>
+              <id>2529</id>
+              <title>
+                <key>ru</key>
+                <value>Подсказка</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>СервисыДоставки.Подсказка</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>СервисыДоставкиПодсказкаРасширеннаяПодсказка</name>
+                <id>2531</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>СервисыДоставкиПодсказкаКонтекстноеМеню</name>
+                <id>2530</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>PictureField</type>
+              <horizontalAlign>Right</horizontalAlign>
+              <editMode>Enter</editMode>
+              <fixingInTable>Left</fixingInTable>
+              <cellHyperlink>true</cellHyperlink>
+              <headerHorizontalAlign>Center</headerHorizontalAlign>
+              <extInfo xsi:type="form:ImageFieldExtInfo">
+                <width>2</width>
+                <maxWidth>2</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <verticalStretch>true</verticalStretch>
+                <valuesPicture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ИнформацияБЭД</picture>
+                </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
+                <fileDragMode>AsFileRef</fileDragMode>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>СервисыДоставкиСервисДоставки</name>
+              <id>2526</id>
+              <title>
+                <key>ru</key>
+                <value>Сервис доставки</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>СервисыДоставки.СервисДоставки</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>СервисыДоставкиСервисДоставкиРасширеннаяПодсказка</name>
+                <id>2528</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>СервисыДоставкиСервисДоставкиКонтекстноеМеню</name>
+                <id>2527</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <readOnly>true</readOnly>
+              <editMode>EnterOnInput</editMode>
+              <cellHyperlink>true</cellHyperlink>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>30</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <maxWidth>30</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>true</horizontalStretch>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.ЦветГиперссылкиСервисДоставки</color>
+                </textColor>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Сервис доставки</value>
+            </title>
+            <width>35</width>
+            <horizontalStretch>false</horizontalStretch>
+            <extendedTooltip>
+              <name>ГруппаКолонокСервисДоставкиРасширеннаяПодсказка</name>
+              <id>2510</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>ColumnGroup</type>
+            <extInfo xsi:type="form:ColumnGroupExtInfo">
+              <showTitle>true</showTitle>
+              <showInHeader>true</showInHeader>
+              <fixingInTable>Left</fixingInTable>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СервисыДоставкиИспользоватьНаложенныеПлатежи</name>
+            <id>2523</id>
+            <title>
+              <key>ru</key>
+              <value>Наложенные платежи</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СервисыДоставки.ИспользоватьНаложенныеПлатежи</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СервисыДоставкиИспользоватьНаложенныеПлатежиРасширеннаяПодсказка</name>
+              <id>2525</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СервисыДоставкиИспользоватьНаложенныеПлатежиКонтекстноеМеню</name>
+              <id>2524</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СервисыДоставкиИспользоватьЧастичнуюДоставку</name>
+            <id>2586</id>
+            <title>
+              <key>ru</key>
+              <value>Частичная доставка</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СервисыДоставки.ИспользоватьЧастичнуюДоставку</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СервисыДоставкиИспользоватьЧастичнуюДоставкуРасширеннаяПодсказка</name>
+              <id>2588</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СервисыДоставкиИспользоватьЧастичнуюДоставкуКонтекстноеМеню</name>
+              <id>2587</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <autoCommandBar>
+            <name>СервисыДоставкиКоманднаяПанель</name>
+            <id>2570</id>
+            <horizontalAlign>Left</horizontalAlign>
+          </autoCommandBar>
+          <handlers>
+            <event>Selection</event>
+            <name>СервисыДоставкиВыбор</name>
+          </handlers>
+          <handlers>
+            <event>OnChange</event>
+            <name>СервисыДоставкиПриИзменении</name>
+          </handlers>
+          <searchStringAddition>
+            <name>СервисыДоставкиСтрокаПоиска</name>
+            <id>2573</id>
+            <extendedTooltip>
+              <name>СервисыДоставкиСтрокаПоискаРасширеннаяПодсказка</name>
+              <id>2575</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СервисыДоставкиСтрокаПоискаКонтекстноеМеню</name>
+              <id>2574</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <source>СервисыДоставки</source>
+            <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+            </extInfo>
+          </searchStringAddition>
+          <viewStatusAddition>
+            <name>СервисыДоставкиСостояниеПросмотра</name>
+            <id>2579</id>
+            <extendedTooltip>
+              <name>СервисыДоставкиСостояниеПросмотраРасширеннаяПодсказка</name>
+              <id>2581</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СервисыДоставкиСостояниеПросмотраКонтекстноеМеню</name>
+              <id>2580</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>ViewStatusAddition</type>
+            <source>СервисыДоставки</source>
+            <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+            </extInfo>
+          </viewStatusAddition>
+          <searchControlAddition>
+            <name>СервисыДоставкиУправлениеПоиском</name>
+            <id>2576</id>
+            <extendedTooltip>
+              <name>СервисыДоставкиУправлениеПоискомРасширеннаяПодсказка</name>
+              <id>2578</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СервисыДоставкиУправлениеПоискомКонтекстноеМеню</name>
+              <id>2577</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>SearchControlAddition</type>
+            <source>СервисыДоставки</source>
+            <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+            </extInfo>
+          </searchControlAddition>
+          <extendedTooltip>
+            <name>СервисыДоставкиРасширеннаяПодсказка</name>
+            <id>2572</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6441,158 +6603,82 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <type>UsualGroup</type>
-          <extInfo xsi:type="form:UsualGroupExtInfo">
-            <group>AlwaysHorizontal</group>
-            <showLeftMargin>true</showLeftMargin>
-            <united>true</united>
-            <throughAlign>Auto</throughAlign>
-            <currentRowUse>Auto</currentRowUse>
-          </extInfo>
+          <contextMenu>
+            <name>СервисыДоставкиКонтекстноеМеню</name>
+            <id>2571</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <changeRowSet>true</changeRowSet>
+          <changeRowOrder>true</changeRowOrder>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <heightControlVariant>ByContent</heightControlVariant>
+          <autoMaxRowsCount>true</autoMaxRowsCount>
+          <selectionMode>MultiRow</selectionMode>
+          <header>true</header>
+          <headerHeight>1</headerHeight>
+          <footerHeight>1</footerHeight>
+          <horizontalScrollBar>AutoUse</horizontalScrollBar>
+          <verticalScrollBar>AutoUse</verticalScrollBar>
+          <horizontalLines>true</horizontalLines>
+          <verticalLines>true</verticalLines>
+          <searchOnInput>Auto</searchOnInput>
+          <initialListView>Auto</initialListView>
+          <horizontalStretch>true</horizontalStretch>
+          <verticalStretch>true</verticalStretch>
+          <fileDragMode>AsFileRef</fileDragMode>
+          <rowFilter xsi:type="core:UndefinedValue"/>
         </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа список сервисов доставки</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа список сервисов доставки</value>
+        </toolTip>
+        <width>86</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаСписокСервисовДоставкиРасширеннаяПодсказка</name>
+          <id>2434</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыГоризонтальная</name>
+        <id>2297</id>
         <items xsi:type="form:FormGroup">
-          <name>ГруппаНаложенныхПлатежей</name>
-          <id>2299</id>
+          <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыЛево</name>
+          <id>2582</id>
           <items xsi:type="form:FormGroup">
-            <name>ГруппаИспользованияНаложенныхПлатежей</name>
-            <id>2301</id>
-            <items xsi:type="form:FormField">
-              <name>Константа_ИспользоватьНаложенныеПлатежиСервисДоставки</name>
-              <id>2294</id>
-              <title>
-                <key>ru</key>
-                <value>Использовать наложенные платежи</value>
-              </title>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Константа_ИспользоватьНаложенныеПлатежиСервисДоставки</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <handlers>
-                <event>OnChange</event>
-                <name>Константа_ИспользоватьНаложенныеПлатежиСервисДоставкиПриИзменении</name>
-              </handlers>
-              <extendedTooltip>
-                <name>Константа_ИспользоватьНаложенныеПлатежиСервисДоставкиРасширеннаяПодсказка</name>
-                <id>2296</id>
-                <title>
-                  <key>ru</key>
-                  <value>Позволяет вести учет наложенных платежей</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>Константа_ИспользоватьНаложенныеПлатежиСервисДоставкиКонтекстноеМеню</name>
-                <id>2295</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-            </items>
-            <items xsi:type="form:Button">
-              <name>НастроитьСозданиеПлатежныхДокументов</name>
-              <id>2303</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>НастроитьСозданиеПлатежныхДокументовРасширеннаяПодсказка</name>
-                <id>2304</id>
-                <title>
-                  <key>ru</key>
-                  <value>Позволяет указать параметры, которые будут использоваться при создании платежных документов для регистрации приема наложенных платежей.</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>Hyperlink</type>
-              <commandName>Form.Command.НастроитьСозданиеПлатежныхДокументов</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Группа использования наложенных платежей</value>
-            </title>
-            <width>43</width>
-            <extendedTooltip>
-              <name>ГруппаИспользованияНаложенныхПлатежейРасширеннаяПодсказка</name>
-              <id>2302</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>Vertical</group>
-              <representation>WeakSeparation</representation>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>Auto</currentRowUse>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаПолучениеАвтоматическогоНаложенныхПлатежей</name>
+            <name>ГруппаИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставки</name>
             <id>2283</id>
             <items xsi:type="form:FormField">
-              <name>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежей</name>
+              <name>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставки</name>
               <id>2285</id>
               <title>
                 <key>ru</key>
-                <value>Загружать наложенные платежи автоматически</value>
+                <value>Автоматическое обновление данных</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6600,26 +6686,21 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежей</segments>
+                <segments>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставки</segments>
               </dataPath>
               <titleLocation>Right</titleLocation>
               <toolTip>
                 <key>ru</key>
-                <value>Данные по наложенным платежам будут загружаться автоматически по расписанию</value>
+                <value>Данные по наложенным платежам и частичной доставке будут загружаться автоматически по расписанию</value>
               </toolTip>
               <toolTipRepresentation>ShowBottom</toolTipRepresentation>
               <handlers>
                 <event>OnChange</event>
-                <name>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежейПриИзменении</name>
+                <name>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставкиПриИзменении</name>
               </handlers>
               <extendedTooltip>
-                <name>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежейРасширеннаяПодсказка</name>
+                <name>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставкиРасширеннаяПодсказка</name>
                 <id>2287</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -6628,13 +6709,8 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежейКонтекстноеМеню</name>
+                <name>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставкиКонтекстноеМеню</name>
                 <id>2286</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>CheckBoxField</type>
@@ -6651,17 +6727,12 @@
             </userVisible>
             <title>
               <key>ru</key>
-              <value>Группа получение автоматического наложенных платежей</value>
+              <value>Группа использовать автоматическое обновление данных сервис доставки</value>
             </title>
             <width>43</width>
             <extendedTooltip>
-              <name>ГруппаПолучениеАвтоматическогоНаложенныхПлатежейРасширеннаяПодсказка</name>
+              <name>ГруппаИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставкиРасширеннаяПодсказка</name>
               <id>2284</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6671,7 +6742,7 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>Vertical</group>
+              <group>AlwaysHorizontal</group>
               <representation>WeakSeparation</representation>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
@@ -6684,14 +6755,14 @@
           <userVisible>
             <common>true</common>
           </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа настройки бизнес сеть сервис доставки сервисы лево</value>
+          </title>
+          <width>43</width>
           <extendedTooltip>
-            <name>ГруппаНаложенныхПлатежейРасширеннаяПодсказка</name>
-            <id>2300</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыЛевоРасширеннаяПодсказка</name>
+            <id>2583</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6701,7 +6772,8 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
-            <group>AlwaysHorizontal</group>
+            <group>Vertical</group>
+            <behavior>Auto</behavior>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
             <throughAlign>Auto</throughAlign>
@@ -6709,31 +6781,22 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
-          <name>ГруппаНастройкиБизнесСетьСервисДоставки1СКурьерика</name>
-          <id>2395</id>
-          <items xsi:type="form:FormField">
-            <name>Константа_ИспользоватьСервис1СКурьерика</name>
-            <id>2413</id>
+          <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыПраво</name>
+          <id>2584</id>
+          <items xsi:type="form:Button">
+            <name>НастроитьСозданиеПлатежныхДокументов</name>
+            <id>2303</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Константа_ИспользоватьСервис1СКурьерика</segments>
-            </dataPath>
-            <titleLocation>Right</titleLocation>
-            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-            <handlers>
-              <event>OnChange</event>
-              <name>Константа_ИспользоватьСервис1СКурьерикаПриИзменении</name>
-            </handlers>
             <extendedTooltip>
-              <name>Константа_ИспользоватьСервис1СКурьерикаРасширеннаяПодсказка</name>
-              <id>2416</id>
+              <name>НастроитьСозданиеПлатежныхДокументовРасширеннаяПодсказка</name>
+              <id>2304</id>
               <title>
                 <key>ru</key>
-                <value>Позволяет оформлять заказы на доставку для сборных грузов, подбирать тарифы, отслеживать статусы заказов и распечатывать документы и ярлыки перевозчика.</value>
+                <value>Позволяет указать параметры, которые будут использоваться при создании платежных документов для регистрации приема наложенных платежей.</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6747,124 +6810,14 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <contextMenu>
-              <name>Константа_ИспользоватьСервис1СКурьерикаКонтекстноеМеню</name>
-              <id>2397</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:Decoration">
-            <name>ДекорацияНастройкиПодключенияКурьерика</name>
-            <id>2414</id>
-            <title>
-              <key>ru</key>
-              <value>Подключиться к сервису 1С-Курьерика</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>ДекорацияНастройкиПодключенияКурьерикаРасширеннаяПодсказка</name>
-              <id>2391</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ДекорацияНастройкиПодключенияКурьерикаКонтекстноеМеню</name>
-              <id>2417</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>Label</type>
+            <type>Hyperlink</type>
+            <commandName>Form.Command.НастроитьСозданиеПлатежныхДокументов</commandName>
+            <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <handlers>
-                <event>Click</event>
-                <name>ДекорацияНастройкиПодключенияКурьерикаНажатие</name>
-              </handlers>
-              <hyperlink>true</hyperlink>
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>Константа_РазрешитьВводАдресовДоставкиВСвободнойФорме</name>
-            <id>2415</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Константа_РазрешитьВводАдресовДоставкиВСвободнойФорме</segments>
-            </dataPath>
-            <titleLocation>Right</titleLocation>
+            <placementArea>UserCmds</placementArea>
             <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-            <handlers>
-              <event>OnChange</event>
-              <name>Константа_РазрешитьВводАдресовДоставкиВСвободнойФормеПриИзменении</name>
-            </handlers>
-            <extendedTooltip>
-              <name>Константа_РазрешитьВводАдресовДоставкиВСвободнойФормеРасширеннаяПодсказка</name>
-              <id>2394</id>
-              <title>
-                <key>ru</key>
-                <value>Позволяет вводить адреса доставки в свободной форме.</value>
-              </title>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>Константа_РазрешитьВводАдресовДоставкиВСвободнойФормеКонтекстноеМеню</name>
-              <id>2418</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <representationInContextMenu>Auto</representationInContextMenu>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -6873,16 +6826,12 @@
           </userVisible>
           <title>
             <key>ru</key>
-            <value>Сервис доставки 1С:Курьерика</value>
+            <value>Группа настройки бизнес сеть сервис доставки сервисы право</value>
           </title>
+          <width>43</width>
           <extendedTooltip>
-            <name>ГруппаНастройкиБизнесСетьСервисДоставки1СКурьерикаРасширеннаяПодсказка</name>
-            <id>2396</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыПравоРасширеннаяПодсказка</name>
+            <id>2585</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6907,11 +6856,11 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа настройки бизнес сеть сервис доставки сервисы</value>
+          <value>Группа настройки бизнес сеть сервис доставки сервисы горизонтальная</value>
         </title>
         <extendedTooltip>
-          <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыРасширеннаяПодсказка</name>
-          <id>2272</id>
+          <name>ГруппаНастройкиБизнесСетьСервисДоставкиСервисыГоризонтальнаяРасширеннаяПодсказка</name>
+          <id>2298</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -6926,8 +6875,7 @@
         </extendedTooltip>
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>Vertical</group>
-          <representation>NormalSeparation</representation>
+          <group>AlwaysHorizontal</group>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
           <throughAlign>Auto</throughAlign>
@@ -8299,23 +8247,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>Константа_ИспользоватьСервис1СДоставка</name>
-    <title>
-      <key>ru</key>
-      <value>Сервис 1С:Доставка</value>
-    </title>
-    <id>14</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>Константа_ИспользоватьВнутренниеДокументыЭДО</name>
     <title>
       <key>ru</key>
@@ -8402,23 +8333,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>Константа_ИспользоватьСервис1СКурьер</name>
-    <title>
-      <key>ru</key>
-      <value>Сервис 1С:Курьер</value>
-    </title>
-    <id>9</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>Константа_ИспользоватьЭлектронноеАктированиеВЕИС</name>
     <title>
       <key>ru</key>
@@ -8487,7 +8401,11 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ИспользоватьАвтоматическоеПолучениеНаложенныхПлатежей</name>
+    <name>ИспользоватьАвтоматическоеОбновлениеДанныхСервисДоставки</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать автоматическое обновление данных сервис доставки</value>
+    </title>
     <id>35</id>
     <valueType>
       <types>Boolean</types>
@@ -8507,23 +8425,6 @@
     </title>
     <id>36</id>
     <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>Константа_ИспользоватьНаложенныеПлатежиСервисДоставки</name>
-    <title>
-      <key>ru</key>
-      <value>Загрузка наложенных платежей</value>
-    </title>
-    <id>37</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
     <view>
       <common>true</common>
     </view>
@@ -8572,40 +8473,6 @@
       <value>Использовать обезличенные сертификаты</value>
     </title>
     <id>44</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>Константа_ИспользоватьСервис1СКурьерика</name>
-    <title>
-      <key>ru</key>
-      <value>Сервис 1С-Курьерика</value>
-    </title>
-    <id>47</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>Константа_РазрешитьВводАдресовДоставкиВСвободнойФорме</name>
-    <title>
-      <key>ru</key>
-      <value>Разрешить ввод адресов доставки в свободной форме</value>
-    </title>
-    <id>46</id>
     <valueType>
       <types>Boolean</types>
     </valueType>
@@ -8717,6 +8584,132 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>СервисыДоставки</name>
+    <title>
+      <key>ru</key>
+      <value>Сервисы доставки</value>
+    </title>
+    <id>52</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>СервисДоставки</name>
+      <title>
+        <key>ru</key>
+        <value>Сервис доставки</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ИспользоватьСервисДоставки</name>
+      <title>
+        <key>ru</key>
+        <value>Использовать сервис доставки</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ИспользоватьНаложенныеПлатежи</name>
+      <title>
+        <key>ru</key>
+        <value>Наложенные платежи</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Подсказка</name>
+      <title>
+        <key>ru</key>
+        <value>Подсказка</value>
+      </title>
+      <id>53</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ТипГрузоперевозки</name>
+      <title>
+        <key>ru</key>
+        <value>Тип грузоперевозки</value>
+      </title>
+      <id>54</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ИспользоватьЧастичнуюДоставку</name>
+      <title>
+        <key>ru</key>
+        <value>Использовать частичную доставку</value>
+      </title>
+      <id>55</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <formCommands>
     <name>ОткрытьНастройкиПрофилейЭДО</name>

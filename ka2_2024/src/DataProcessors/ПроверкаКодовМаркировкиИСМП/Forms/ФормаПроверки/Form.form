@@ -420,6 +420,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.УпаковкиПоВидамПродукцииИСМП</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -2043,56 +2047,6 @@
               </extInfo>
             </items>
             <items xsi:type="form:Decoration">
-              <name>ДекорацияАгент</name>
-              <id>415</id>
-              <title>
-                <key>ru</key>
-                <value>Агент</value>
-              </title>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <extendedTooltip>
-                <name>ДекорацияАгентРасширеннаяПодсказка</name>
-                <id>417</id>
-                <title>
-                  <key>ru</key>
-                  <value>-</value>
-                </title>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <formatted>true</formatted>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ДекорацияАгентКонтекстноеМеню</name>
-                <id>416</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </items>
-            <items xsi:type="form:Decoration">
               <name>ДекорацияВходитВУпаковку</name>
               <id>204</id>
               <title>
@@ -3429,6 +3383,7 @@
     <name>ОбработкаНавигационнойСсылки</name>
   </handlers>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>

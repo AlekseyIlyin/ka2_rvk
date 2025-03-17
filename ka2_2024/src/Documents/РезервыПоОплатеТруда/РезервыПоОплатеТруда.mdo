@@ -671,6 +671,29 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="2576878c-dee1-413c-b696-1aba166765eb">
+      <name>НормативОтчисленийВРезервНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норматив (НУ)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Норматив</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="6ce42dfb-175b-46e9-bff6-8692920809cd">
       <name>ФиксСтрока</name>
       <synonym>
@@ -1120,6 +1143,42 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="4c5223e5-dd36-4990-ab52-6567ded50d96">
+      <name>ПериодРасчетаСреднегоЗаработкаНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период расчета среднего заработка начало</value>
+      </synonym>
+      <comment>Дата начала расчетного периода</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bb3eb12f-8134-448a-90f1-7f71b07a0670">
+      <name>ПериодРасчетаСреднегоЗаработкаОкончание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период расчета среднего заработка окончание</value>
+      </synonym>
+      <comment>Дата окончания расчетного периода</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="82666979-e6d1-4763-982e-363d2e777f33">
     <producedTypes>
@@ -1409,11 +1468,57 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="176d91f1-a85d-4d7b-802d-7f3b1f7e314e">
+      <name>НормативОтчисленийВРезервСтраховыеВзносыНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норматив (страховые взносы, НУ)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Норматив (страховые взносы)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="248e78cb-1a5a-458c-93ea-b29aa60177b5">
       <name>НормативОтчисленийВРезервФССНесчастныеСлучаи</name>
       <synonym>
         <key>ru</key>
         <value>Норматив (ФСС НС и ПЗ)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Норматив (ФСС НС и ПЗ)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="39d4699b-fdf8-49c9-935d-49865f1962bb">
+      <name>НормативОтчисленийВРезервФССНесчастныеСлучаиНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норматив (ФСС НС и ПЗ, НУ)</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -1965,6 +2070,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <choiceParameterLinks>
         <name>Отбор.НачалоПериодаПримененияОтбора</name>
         <field>Document.РезервыПоОплатеТруда.Attribute.МесяцНачисления</field>

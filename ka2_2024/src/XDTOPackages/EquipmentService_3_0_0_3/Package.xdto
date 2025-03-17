@@ -30,6 +30,8 @@
 		<enumeration xsi:type="xs:string">10</enumeration>
 		<enumeration xsi:type="xs:string">0</enumeration>
 		<enumeration xsi:type="xs:string">none</enumeration>
+		<enumeration xsi:type="xs:string">5</enumeration>
+		<enumeration xsi:type="xs:string">7</enumeration>
 	</valueType>
 	<valueType xmlns:d2p1="http://www.1c.ru/EquipmentService/3.0.0.3" name="ShiftState" base="d2p1:IntegerType" variety="Atomic">
 		<enumeration xsi:type="xs:string">1</enumeration>
@@ -55,6 +57,9 @@
 		<enumeration xsi:type="xs:string">17</enumeration>
 		<enumeration xsi:type="xs:string">18</enumeration>
 		<enumeration xsi:type="xs:string">19</enumeration>
+		<enumeration xsi:type="xs:string">20</enumeration>
+		<enumeration xsi:type="xs:string">21</enumeration>
+		<enumeration xsi:type="xs:string">22</enumeration>
 	</valueType>
 	<valueType name="BooleanType" base="xs:boolean" variety="Atomic"/>
 	<objectType name="ExportData">

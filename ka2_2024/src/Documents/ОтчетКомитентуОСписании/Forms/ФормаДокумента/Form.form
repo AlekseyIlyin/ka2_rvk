@@ -3441,7 +3441,8 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>10</maxWidth>
+              <width>10</width>
+              <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <format>
@@ -3501,7 +3502,6 @@
             <dataPath xsi:type="form:DataPath">
               <segments>Объект.Товары.TotalСуммаНДС</segments>
             </dataPath>
-            <titleHeight>1</titleHeight>
             <extendedTooltip>
               <name>ПолеБезНДСРасширеннаяПодсказка</name>
               <id>291</id>
@@ -3527,7 +3527,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>LabelField</type>
+            <type>InputField</type>
             <readOnly>true</readOnly>
             <horizontalAlign>Right</horizontalAlign>
             <groupVerticalAlign>Center</groupVerticalAlign>
@@ -3535,13 +3535,22 @@
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:LabelFieldExtInfo">
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
               <maxWidth>10</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
               <format>
                 <key>ru</key>
                 <value>ЧН='Без НДС'</value>
               </format>
+              <editFormat>
+                <key>ru</key>
+                <value>ЧН='Без НДС'</value>
+              </editFormat>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <visible>true</visible>

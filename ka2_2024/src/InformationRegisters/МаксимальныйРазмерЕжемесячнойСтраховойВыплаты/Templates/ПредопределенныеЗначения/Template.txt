@@ -1,9 +1,9 @@
 <Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Structure">
 	<Property name="Версия">
-		<Value xsi:type="xs:decimal">9</Value>
+		<Value xsi:type="xs:decimal">11</Value>
 	</Property>
 	<Property name="ОписаниеВерсии">
-		<Value xsi:type="xs:string">В соответствии со статьей 12 Федерального закона от 24.07.1998 № 125-ФЗ проиндексирован размер выплаты с 1 февраля 2024 года.</Value>
+		<Value xsi:type="xs:string">В соответствии со статьей 12 Федерального закона от 24.07.1998 № 125-ФЗ проиндексирован размер выплаты с 1 февраля 2025 года.</Value>
 	</Property>
 	<Property name="ПолноеИмя">
 		<Value xsi:type="xs:string">РегистрСведений.МаксимальныйРазмерЕжемесячнойСтраховойВыплаты</Value>
@@ -84,6 +84,10 @@
 			<row>
 				<Value>2024-02-01T00:00:00</Value>
 				<Value>108784.04</Value>
+			</row>
+			<row>
+				<Value>2025-02-01T00:00:00</Value>
+				<Value>119118.52</Value>
 			</row>
 		</Value>
 	</Property>

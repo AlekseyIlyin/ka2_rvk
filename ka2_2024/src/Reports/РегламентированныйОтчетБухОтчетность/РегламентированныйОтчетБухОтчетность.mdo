@@ -99,7 +99,7 @@
     <name>ОсновнаяФорма</name>
     <synonym>
       <key>ru</key>
-      <value>Бухгалтерская отчетность (с 2011 года)</value>
+      <value>Бухгалтерская отчетность</value>
     </synonym>
     <help>
       <pages>
@@ -113,7 +113,7 @@
     <name>ФормаОтчета2011Кв1</name>
     <synonym>
       <key>ru</key>
-      <value>Бухгалтерская отчетность (с 2011 года)</value>
+      <value>Бухгалтерская отчетность</value>
     </synonym>
     <help>
       <pages>
@@ -127,7 +127,7 @@
     <name>ФормаОтчета2011Кв3</name>
     <synonym>
       <key>ru</key>
-      <value>Бухгалтерская отчетность (с 2011 года)</value>
+      <value>Бухгалтерская отчетность</value>
     </synonym>
     <help>
       <pages>
@@ -141,7 +141,7 @@
     <name>ФормаОтчета2011Кв4</name>
     <synonym>
       <key>ru</key>
-      <value>Бухгалтерская отчетность (с 2011 года)</value>
+      <value>Бухгалтерская отчетность</value>
     </synonym>
     <help>
       <pages>
@@ -155,7 +155,21 @@
     <name>ФормаОтчета2019Кв1</name>
     <synonym>
       <key>ru</key>
-      <value>Бухгалтерская отчетность (с 2011 года)</value>
+      <value>Бухгалтерская отчетность</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e81ca183-e12b-4703-92ca-44c70aa822b0">
+    <name>ФормаОтчета2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерская отчетность (с 2025 года)</value>
     </synonym>
     <help>
       <pages>
@@ -787,6 +801,111 @@
     <synonym>
       <key>ru</key>
       <value>Расчет стоимости чистых активов</value>
+    </synonym>
+  </templates>
+  <templates uuid="ecc6e8c8-a732-4eab-95d1-72a75ff7f793">
+    <name>ФормаОтчета2025Кв1_Баланс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="7ef5200d-154b-4304-83aa-b3f889a0ec62">
+    <name>ФормаОтчета2025Кв1_БалансНКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="19b8359e-f396-45a3-b398-e559a88f1da6">
+    <name>ФормаОтчета2025Кв1_ОФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о финансовых результатах (с 2025 г)</value>
+    </synonym>
+  </templates>
+  <templates uuid="82d34c14-6aac-45fa-b8e1-00a8dcaf723c">
+    <name>ФормаОтчета2025Кв1_ОЦИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о целевом использовании средств (c 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="7f03bfcd-6a25-4d5f-8d28-e2a2bedaaa58">
+    <name>ФормаОтчета2025Кв1_ОИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет об изменениях капитала (с 2015 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="63c167e6-671b-4f4e-bde8-68fe68c736ca">
+    <name>ФормаОтчета2025Кв1_ОДДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств (с 2015 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="43de488d-14e2-4c29-bf41-1adf652478c9">
+    <name>ФормаОтчета2025Кв1_Пояснения3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 3 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="da6909a5-5714-4493-b93a-634a78c524d1">
+    <name>ФормаОтчета2025Кв1_Пояснения4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 4 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="0aceebb3-eb98-4cea-844c-4766b33da3aa">
+    <name>ФормаОтчета2025Кв1_Пояснения5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 5 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="b709b381-d3b8-4226-ae9e-924a0072545f">
+    <name>ФормаОтчета2025Кв1_Пояснения6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 6 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="85c6c70b-8a57-4068-af90-4c19d4e03489">
+    <name>ФормаОтчета2025Кв1_Пояснения7</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 7 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="8c2dad22-1008-4d55-b682-a85805734d8d">
+    <name>ФормаОтчета2025Кв1_Пояснения8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 8 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="81da352c-66ec-4aae-953e-cf85b4ad3557">
+    <name>ФормаОтчета2025Кв1_Пояснения9</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 9 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="9b9a9d64-96eb-4513-ae0b-55e5d604a861">
+    <name>ФормаОтчета2025Кв1_Пояснения10</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 10 (с 2025 г.)</value>
+    </synonym>
+  </templates>
+  <templates uuid="3c8b7939-b481-4404-904d-07f54c06b418">
+    <name>ФормаОтчета2025Кв1_Пояснения11</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснения к бухгалтерскому балансу и отчету о финансовых результатах. Раздел 11 (с 2025 г.)</value>
     </synonym>
   </templates>
 </mdclass:Report>

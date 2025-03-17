@@ -9,6 +9,7 @@
     <value>Владелец значений ключей доступа объект</value>
   </synonym>
   <type>
+    <types>CatalogObject.ЗаявкаОтпускБезОплатыКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.СправкиФизическихЛицПрисоединенныеФайлы</types>
     <types>CatalogObject.СообщениеSMSПрисоединенныеФайлы</types>
     <types>CatalogObject.ТранспортныйКонтейнерЭДОПрисоединенныеФайлы</types>
@@ -20,6 +21,7 @@
     <types>CatalogObject.ДанныеОКорректировкеСведенийЗастрахованныхЛицСЗВ_КОРРПрисоединенныеФайлы</types>
     <types>CatalogObject.ИсполнительныйЛистПрисоединенныеФайлы</types>
     <types>CatalogObject.ФизическиеЛицаПрисоединенныеФайлы</types>
+    <types>CatalogObject.НачислениеРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.БронированиеГражданПребывающихВЗапасеПрисоединенныеФайлы</types>
     <types>CatalogObject.РегистрацияЦенНоменклатурыПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ОтчетОСписанииТоваровУХранителяПрисоединенныеФайлы</types>
@@ -27,6 +29,7 @@
     <types>BusinessProcessObject.ЗаявкаСотрудникаОтсутствиеПоБолезни</types>
     <types>CatalogObject.ПроизводствоБезЗаказаПрисоединенныеФайлы</types>
     <types>CatalogObject.НачислениеРеверсивногоНДСПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаОтпускКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.СправкиПоНДФЛДляРасчетаПоНалогуНаПрибыльПрисоединенныеФайлы</types>
     <types>CatalogObject.ИндексацияЗаработкаПрисоединенныеФайлы</types>
     <types>CatalogObject.ШаблоныСообщенийПрисоединенныеФайлы</types>
@@ -61,6 +64,7 @@
     <types>CatalogObject.МакетыПенсионныхДел</types>
     <types>CatalogObject.ДоговорРаботыУслугиПрисоединенныеФайлы</types>
     <types>CatalogObject.БанковскиеСчетаКонтрагентов</types>
+    <types>CatalogObject.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗапросВФССОПроверкеРаботодателяПрисоединенныеФайлы</types>
     <types>CatalogObject.РассылкаКлиентамПрисоединенныеФайлы</types>
     <types>CatalogObject.ОжидаемоеПоступлениеДенежныхСредствПрисоединенныеФайлы</types>
@@ -98,6 +102,7 @@
     <types>CatalogObject.УстановкаЦенНоменклатурыПрисоединенныеФайлы</types>
     <types>CatalogObject.КонтактныеЛицаПартнеров</types>
     <types>CatalogObject.ИзменениеПлановыхНачисленийПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаДСВКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.АктВыполненныхВнутреннихРаботПрисоединенныеФайлы</types>
     <types>CatalogObject.СправкиФизическихЛиц</types>
     <types>CatalogObject.ПланОстатковПрисоединенныеФайлы</types>
@@ -124,6 +129,7 @@
     <types>CatalogObject.УведомлениеОСтатусеВыплатыПособияПрисоединенныеФайлы</types>
     <types>CatalogObject.ПрекращениеПодработкиПрисоединенныеФайлы</types>
     <types>CatalogObject.ПереносДанныхПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОбращениеКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>BusinessProcessObject.ЗаявкаСотрудникаОтсутствие</types>
     <types>CatalogObject.ВзаимозачетЗадолженностиПрисоединенныеФайлы</types>
     <types>CatalogObject.ИнвентаризацияРасчетовПрисоединенныеФайлы</types>
@@ -136,6 +142,7 @@
     <types>CatalogObject.ПрогулНеявкаПрисоединенныеФайлы</types>
     <types>CatalogObject.АвансовыйОтчетПрисоединенныеФайлы</types>
     <types>CatalogObject.ВнутреннееПотреблениеПрисоединенныеФайлы</types>
+    <types>CatalogObject.УсловияРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>BusinessProcessObject.СогласованиеПродажи</types>
     <types>CatalogObject.ЭкземплярБюджетаПрисоединенныеФайлы</types>
     <types>CatalogObject.ВстречаПрисоединенныеФайлы</types>
@@ -150,6 +157,7 @@
     <types>CatalogObject.ВыплатаБывшимСотрудникамПрисоединенныеФайлы</types>
     <types>CatalogObject.ОбластиХранения</types>
     <types>CatalogObject.Претензии</types>
+    <types>CatalogObject.ЗаявкаУчебныйОтпускКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.УвольнениеПрисоединенныеФайлы</types>
     <types>CatalogObject.ВыкупВозвратнойТарыУПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ТранзакцииОбменаСБанками</types>
@@ -173,6 +181,7 @@
     <types>CatalogObject.ОтчетКомитентуОЗакупкахПрисоединенныеФайлы</types>
     <types>CatalogObject.СделкиСКлиентамиПрисоединенныеФайлы</types>
     <types>CatalogObject.Проекты</types>
+    <types>CatalogObject.СписаниеРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.КорректировкаРеализацииПрисоединенныеФайлы</types>
     <types>CatalogObject.ДоговорыМеждуОрганизациями</types>
     <types>CatalogObject.ОтменаБронированияГражданПребывающихВЗапасеПрисоединенныеФайлы</types>
@@ -202,6 +211,7 @@
     <types>BusinessProcessObject.СогласованиеЗаявкиНаВозвратТоваровОтКлиента</types>
     <types>CatalogObject.ИзменениеАвансаПрисоединенныеФайлы</types>
     <types>CatalogObject.ТаможеннаяДекларацияИмпортПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаОтсутствиеКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ПрекращениеПлановогоНачисленияПрисоединенныеФайлы</types>
     <types>CatalogObject.КоммерческоеПредложениеКлиентуПрисоединенныеФайлы</types>
     <types>CatalogObject.ДоговорыКонтрагентов</types>
@@ -236,15 +246,18 @@
     <types>CatalogObject.ЗаказПереработчикуПрисоединенныеФайлы</types>
     <types>CatalogObject.ПогашениеЗадолженностиПоВзысканиямПрисоединенныеФайлы</types>
     <types>CatalogObject.СкладскиеПомещения</types>
+    <types>BusinessProcessObject.ИсполнениеЗаявкиСотрудника</types>
     <types>BusinessProcessObject.ЗаявкаСотрудникаИзменитьЛичныеДанные</types>
     <types>CatalogObject.ПравилаОбработкиЭлектроннойПочты</types>
     <types>CatalogObject.СведенияОЗастрахованномЛицеФССПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПриказОПрекращенииБронированияПрисоединенныеФайлы</types>
     <types>CatalogObject.АктВыполненныхРаботПрисоединенныеФайлы</types>
     <types>CatalogObject.Номенклатура</types>
     <types>CatalogObject.НастройкиРасчетаРезервовПоОплатеТруда</types>
     <types>CatalogObject.ШтатноеРасписание</types>
     <types>CatalogObject.ПретензииПрисоединенныеФайлы</types>
     <types>CatalogObject.МатериальнаяПомощьПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЕжегодныеСтандартныеВычетыПрисоединенныеФайлы</types>
     <types>CatalogObject.РазовоеНачислениеПрисоединенныеФайлы</types>
     <types>CatalogObject.ВидыРасчетовРезервовПоОплатеТруда</types>
     <types>CatalogObject.ДоговорыАрендыПрисоединенныеФайлы</types>
@@ -267,6 +280,7 @@
     <types>CatalogObject.ОтчетКомиссионераПрисоединенныеФайлы</types>
     <types>CatalogObject.ОтказВВозмещенииВыплатРодителямДетейИнвалидовПрисоединенныеФайлы</types>
     <types>CatalogObject.СчетФактураПолученныйАвансПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПриказОБронированииРаботниковПрисоединенныеФайлы</types>
     <types>CatalogObject.КассовыеКниги</types>
     <types>CatalogObject.ВозмещениеБольничныхВЧастиФБПрисоединенныеФайлы</types>
     <types>CatalogObject.ДокументКадровогоЭДОПрисоединенныеФайлы</types>
@@ -296,6 +310,7 @@
     <types>CatalogObject.ВводНачальныхОстатковОтпусковПрисоединенныеФайлы</types>
     <types>CatalogObject.КлючиАналитикиУчетаНоменклатуры</types>
     <types>CatalogObject.ПередачаМатериаловВПроизводствоПрисоединенныеФайлы</types>
+    <types>CatalogObject.НастройкиПодключенияКОнлайнЗаказам</types>
     <types>CatalogObject.ЗаявкаНаКомандировкуПрисоединенныеФайлы</types>
     <types>CatalogObject.МобильныеПриложенияРаспознаванияДокументов</types>
     <types>CatalogObject.СписаниеБезналичныхДенежныхСредствПрисоединенныеФайлы</types>
@@ -304,6 +319,7 @@
     <types>CatalogObject.СчетФактураВыданныйПрисоединенныеФайлы</types>
     <types>CatalogObject.АктОРасхожденияхПослеПриемкиПрисоединенныеФайлы</types>
     <types>CatalogObject.ВозвратНДФЛПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаСправкаСМестаРаботыКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ТабельУчетаРабочегоВремениПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗаявкаНаОткрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы</types>
     <types>CatalogObject.РеестрДанныхЭЛНЗаполняемыхРаботодателемПрисоединенныеФайлы</types>
@@ -329,6 +345,7 @@
     <types>CatalogObject.ДоговорАвторскогоЗаказаПрисоединенныеФайлы</types>
     <types>BusinessProcessObject.УдалитьЗаявкаКабинетСотрудника</types>
     <types>CatalogObject.РегистрацияПрочихДоходовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ВедомостьНаВыплатуЗарплатыВКассуПрисоединенныеФайлы</types>
     <types>CatalogObject.ВидыНоменклатурыПрисоединенныеФайлы</types>
     <types>CatalogObject.ВозобновлениеТрудовыхДоговоровКонтрактовПрисоединенныеФайлы</types>
@@ -374,8 +391,10 @@
     <types>CatalogObject.ОтправкиРегистрацияЮЛ</types>
     <types>CatalogObject.ИзменениеШтатногоРасписанияПрисоединенныеФайлы</types>
     <types>CatalogObject.ПрочиеДоходыРасходыПрисоединенныеФайлы</types>
+    <types>CatalogObject.СписаниеРетроБонусовКлиентаПрисоединенныеФайлы</types>
     <types>CatalogObject.ИсходящееСообщениеОСтраховомСлучаеФССПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаСправка2НДФЛКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ДоговорыКредитовИДепозитов</types>
     <types>CatalogObject.УчетныеЗаписиDSS</types>
     <types>CatalogObject.ЗапросСреднегоЗаработкаСЭДОПрисоединенныеФайлы</types>
@@ -384,6 +403,7 @@
     <types>CatalogObject.ДоговорыМеждуОрганизациямиПрисоединенныеФайлы</types>
     <types>CatalogObject.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</types>
     <types>CatalogObject.ПравилаФинОтчетности</types>
+    <types>CatalogObject.АктПремииПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ВариантыОтчетов</types>
     <types>CatalogObject.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
     <types>CatalogObject.ПеремещениеТоваровПрисоединенныеФайлы</types>
@@ -440,7 +460,9 @@
     <types>CatalogObject.ВедомостьНаВыплатуЗарплатыРаздатчикомПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗаказПоставщикуПрисоединенныеФайлы</types>
     <types>CatalogObject.ПланПродажПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаКомпенсацияОтпускаКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.НоменклатураКонтрагентов</types>
+    <types>CatalogObject.ЗаявкаНалоговыеВычетыКабинетСотрудникаПрисоединенныеФайлы</types>
     <types>CatalogObject.ПравилаФормированияРезервовПодОбесценениеЗапасов</types>
     <types>CatalogObject.Контрагенты</types>
     <types>CatalogObject.МашиночитаемыеДоверенностиФСС</types>

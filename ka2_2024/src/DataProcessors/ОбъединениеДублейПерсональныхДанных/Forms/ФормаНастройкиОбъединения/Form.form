@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
     <value>Настройка объединения</value>
@@ -90,6 +90,10 @@
               <autoMaxHeight>true</autoMaxHeight>
               <horizontalStretch>true</horizontalStretch>
               <verticalStretch>true</verticalStretch>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -196,10 +200,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДеревоСравненияSearchString</name>
+          <name>ДеревоСравненияСтрокаПоиска</name>
           <id>41</id>
           <extendedTooltip>
-            <name>ДеревоСравненияSearchStringExtendedTooltip</name>
+            <name>ДеревоСравненияСтрокаПоискаРасширеннаяПодсказка</name>
             <id>43</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -214,7 +218,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДеревоСравненияSearchStringContextMenu</name>
+            <name>ДеревоСравненияСтрокаПоискаКонтекстноеМеню</name>
             <id>42</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -234,10 +238,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДеревоСравненияViewStatus</name>
+          <name>ДеревоСравненияСостояниеПросмотра</name>
           <id>44</id>
           <extendedTooltip>
-            <name>ДеревоСравненияViewStatusExtendedTooltip</name>
+            <name>ДеревоСравненияСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>46</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -252,7 +256,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДеревоСравненияViewStatusContextMenu</name>
+            <name>ДеревоСравненияСостояниеПросмотраКонтекстноеМеню</name>
             <id>45</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -273,10 +277,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ДеревоСравненияSearchControl</name>
+          <name>ДеревоСравненияУправлениеПоиском</name>
           <id>47</id>
           <extendedTooltip>
-            <name>ДеревоСравненияSearchControlExtendedTooltip</name>
+            <name>ДеревоСравненияУправлениеПоискомРасширеннаяПодсказка</name>
             <id>49</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -291,7 +295,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ДеревоСравненияSearchControlContextMenu</name>
+            <name>ДеревоСравненияУправлениеПоискомКонтекстноеМеню</name>
             <id>48</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -469,6 +473,10 @@
               <autoMaxHeight>true</autoMaxHeight>
               <horizontalStretch>true</horizontalStretch>
               <verticalStretch>true</verticalStretch>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -624,10 +632,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>РезультатSearchString</name>
+          <name>РезультатСтрокаПоиска</name>
           <id>50</id>
           <extendedTooltip>
-            <name>РезультатSearchStringExtendedTooltip</name>
+            <name>РезультатСтрокаПоискаРасширеннаяПодсказка</name>
             <id>52</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -642,7 +650,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>РезультатSearchStringContextMenu</name>
+            <name>РезультатСтрокаПоискаКонтекстноеМеню</name>
             <id>51</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -662,10 +670,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>РезультатViewStatus</name>
+          <name>РезультатСостояниеПросмотра</name>
           <id>53</id>
           <extendedTooltip>
-            <name>РезультатViewStatusExtendedTooltip</name>
+            <name>РезультатСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>55</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -680,7 +688,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>РезультатViewStatusContextMenu</name>
+            <name>РезультатСостояниеПросмотраКонтекстноеМеню</name>
             <id>54</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -701,10 +709,10 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>РезультатSearchControl</name>
+          <name>РезультатУправлениеПоиском</name>
           <id>56</id>
           <extendedTooltip>
-            <name>РезультатSearchControlExtendedTooltip</name>
+            <name>РезультатУправлениеПоискомРасширеннаяПодсказка</name>
             <id>58</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -719,7 +727,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>РезультатSearchControlContextMenu</name>
+            <name>РезультатУправлениеПоискомКонтекстноеМеню</name>
             <id>57</id>
             <visible>true</visible>
             <enabled>true</enabled>

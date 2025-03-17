@@ -58,12 +58,14 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.ПанельОбменВЕТИС.StandardCommand.Open</command>
+      <command>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.StandardCommand.Open</command>
-      <visible/>
+      <command>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.Command.УчетПрослеживаемыхТоваров</command>
+      <visible>
+        <common>true</common>
+      </visible>
     </visibilityFragments>
     <visibilityFragments>
       <command>DataProcessor.ЭлектронныеПеревозочныеДокументы.StandardCommand.Open</command>
@@ -86,6 +88,7 @@
       <commands>CommonCommand.ПанельОтчетовЗакупки</commands>
       <commands>CommonCommand.ФункциональнаяМодельЗакупки</commands>
       <commands>CommonCommand.СостояниеОбеспеченияЗаказов</commands>
+      <commands>DataProcessor.ЭлектронныеПеревозочныеДокументы.Command.ЭлектронныеПеревозочныеДокументы</commands>
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelSeeAlso</group>
@@ -96,8 +99,9 @@
       <group>ActionsPanelTools</group>
       <commands>CommonCommand.ДополнительныеОбработкиЗакупки</commands>
       <commands>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.StandardCommand.Open</commands>
-      <commands>DataProcessor.ПанельОбменВЕТИС.StandardCommand.Open</commands>
       <commands>DataProcessor.ПанельАдминистрированияУчетПрослеживаемыхТоваров.Command.УчетПрослеживаемыхТоваров</commands>
+      <commands>CommonCommand.ЗагрузитьДокументПоСсылке</commands>
+      <commands>DataProcessor.ЭлектронныеПеревозочныеДокументы.StandardCommand.Open</commands>
     </orderFragments>
   </commandsOrder>
   <subsystemsOrder>
@@ -109,5 +113,6 @@
     <subsystems>Subsystem.Закупки.Subsystem.МногооборотнаяТара</subsystems>
     <subsystems>Subsystem.Закупки.Subsystem.Запасы</subsystems>
     <subsystems>Subsystem.Закупки.Subsystem.РаботаСПоставщиками</subsystems>
+    <subsystems>Subsystem.Закупки.Subsystem.РетроБонусыПоставщиков</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

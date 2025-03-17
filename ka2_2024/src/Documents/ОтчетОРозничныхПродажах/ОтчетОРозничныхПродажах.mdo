@@ -93,6 +93,7 @@
   <defaultObjectForm>Document.ОтчетОРозничныхПродажах.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ОтчетОРозничныхПродажах.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.ОтчетОРозничныхПродажах.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <sequenceFilling>AutoFillOff</sequenceFilling>
   <registerRecords>AccumulationRegister.ДвиженияПоНДС</registerRecords>
@@ -757,7 +758,7 @@
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Необходимо выбрать номенклатуру с видом Товар.</value>
+        <value>Наименование номенклатурной позиции.</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

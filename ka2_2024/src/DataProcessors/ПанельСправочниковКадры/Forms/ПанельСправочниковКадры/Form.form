@@ -1715,7 +1715,7 @@
     <name>ГруппаКадровыйЭДО</name>
     <id>225</id>
     <items xsi:type="form:Button">
-      <name>ГиперссылкаМашиночитаемыеДоверенностиКЭДО</name>
+      <name>ГиперссылкаМашиночитаемыеДоверенности</name>
       <id>229</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1723,17 +1723,12 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ГиперссылкаМашиночитаемыеДоверенностиКЭДОРасширеннаяПодсказка</name>
+        <name>ГиперссылкаМашиночитаемыеДоверенностиРасширеннаяПодсказка</name>
         <id>230</id>
         <title>
           <key>ru</key>
           <value>Машиночитаемые доверенности для подписания печатных форм КЭДО.</value>
         </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -1742,7 +1737,7 @@
         </extInfo>
       </extendedTooltip>
       <type>Hyperlink</type>
-      <commandName>Form.Command.СправочникМашиночитаемыеДоверенностиКЭДО</commandName>
+      <commandName>Form.Command.СправочникМашиночитаемыеДоверенности</commandName>
       <representation>Auto</representation>
       <width>40</width>
       <autoMaxWidth>true</autoMaxWidth>
@@ -2361,7 +2356,7 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>СправочникМашиночитаемыеДоверенностиКЭДО</name>
+    <name>СправочникМашиночитаемыеДоверенности</name>
     <title>
       <key>ru</key>
       <value>Машиночитаемые доверенности</value>
@@ -2372,7 +2367,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>СправочникМашиночитаемыеДоверенностиКЭДО</name>
+        <name>СправочникМашиночитаемыеДоверенности</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

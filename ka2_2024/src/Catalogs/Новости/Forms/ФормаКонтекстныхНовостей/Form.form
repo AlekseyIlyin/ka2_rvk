@@ -200,6 +200,10 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <extInfo xsi:type="form:ImageFieldExtInfo">
             <width>1</width>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
             <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>

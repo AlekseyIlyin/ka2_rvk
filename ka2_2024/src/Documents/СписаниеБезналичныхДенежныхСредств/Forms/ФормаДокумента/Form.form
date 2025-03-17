@@ -15973,6 +15973,83 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ВидыНалоговСНастройкойСчетов</name>
+    <title>
+      <key>ru</key>
+      <value>Виды налогов с настройкой счетов</value>
+    </title>
+    <id>103</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ФилиалыОрганизации</name>
+    <title>
+      <key>ru</key>
+      <value>Филиалы организации</value>
+    </title>
+    <id>105</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ЭтоПодборЗаявок</name>
+    <title>
+      <key>ru</key>
+      <value>Это подбор заявок</value>
+    </title>
+    <id>104</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДоступныеОперацииПоОснованию</name>
+    <title>
+      <key>ru</key>
+      <value>Доступные операции по основанию</value>
+    </title>
+    <id>110</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
   <formCommands>
     <name>ПодборПоОстаткам</name>
     <title>

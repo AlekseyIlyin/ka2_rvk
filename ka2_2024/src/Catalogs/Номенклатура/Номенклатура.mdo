@@ -853,15 +853,11 @@
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers>
-        <length>1024</length>
-      </stringQualifiers>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -1609,7 +1605,7 @@
     <name>КодТНВЭД</name>
     <synonym>
       <key>ru</key>
-      <value>Код ТНВЭД</value>
+      <value>ТН ВЭД</value>
     </synonym>
     <type>
       <types>CatalogRef.КлассификаторТНВЭД</types>
@@ -1951,7 +1947,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="d35f8795-2621-4c70-9085-d0395e68e3b1">
-    <name>КодОКВЭД2</name>
+    <name>УдалитьКодОКВЭД2</name>
     <synonym>
       <key>ru</key>
       <value>Код ОКВЭД2</value>
@@ -2069,6 +2065,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="0cb593b4-6f26-4752-a94c-9f3c2c8289f5">
+    <name>ПереноситьРНПТМатериала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переносить РНПТ материала</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="59c128f9-339a-4b6c-b4af-d009ad62ba83">
     <name>КодТРУ</name>
     <synonym>
@@ -2097,6 +2108,24 @@
       <types>String</types>
       <stringQualifiers>
         <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="91c7cba1-5909-4c9b-b5a5-436592d77c7d">
+    <name>КодОКВЭД2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОКВЭД2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>

@@ -22,11 +22,13 @@
     <types>DocumentObject.РазовоеНачисление</types>
     <types>DocumentObject.ВыплатаБывшимСотрудникам</types>
     <types>DocumentObject.ДоговорРаботыУслуги</types>
+    <types>DocumentObject.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>DocumentObject.ПачкаДокументовСПВ_1</types>
     <types>DocumentObject.ОплатаДнейУходаЗаДетьмиИнвалидами</types>
     <types>DocumentObject.РаботаВВыходныеИПраздничныеДни</types>
     <types>DocumentObject.НазначениеРабочихМестСотрудникам</types>
     <types>DocumentObject.ПачкаДокументовДСВ_1</types>
+    <types>DocumentObject.ЗаявкаОтпускКабинетСотрудника</types>
     <types>DocumentObject.НазначениеПлановогоНачисления</types>
     <types>DocumentObject.РаспределениеОсновногоЗаработка</types>
     <types>DocumentObject.ПеремещениеМеждуТерриториями</types>
@@ -40,6 +42,7 @@
     <types>DocumentObject.ВозвратИзОтпускаПоУходуЗаРебенком</types>
     <types>DocumentObject.ОписьЗаявленийСотрудниковНаВыплатуПособий</types>
     <types>DocumentObject.ИзменениеКвалификационногоРазряда</types>
+    <types>DocumentObject.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>DocumentObject.ПриостановлениеТрудовыхДоговоровКонтрактов</types>
     <types>DocumentObject.СведенияДляИсчисленияДоплатыКПенсииСЗВ_ДСО</types>
     <types>DocumentObject.ПереводКДругомуРаботодателю</types>
@@ -69,9 +72,11 @@
     <types>DocumentObject.УвольнениеСписком</types>
     <types>DocumentObject.РезервыПоОплатеТруда</types>
     <types>DocumentObject.ЗаявлениеВФССОВозмещенииВыплатРодителямДетейИнвалидов</types>
+    <types>DocumentObject.ЗаявкаНалоговыеВычетыКабинетСотрудника</types>
     <types>DocumentObject.ТабельУчетаРабочегоВремени</types>
     <types>DocumentObject.ВедомостьНаВыплатуЗарплатыРаздатчиком</types>
     <types>DocumentObject.ВедомостьНаВыплатуЗарплатыПеречислением</types>
+    <types>DocumentObject.ПриказОБронированииРаботников</types>
     <types>DocumentObject.ЗапросСтатусовВыплатыПособия</types>
     <types>DocumentObject.ИндивидуальныйГрафик</types>
     <types>DocumentObject.ГрафикОтпусков</types>
@@ -127,13 +132,17 @@
     <types>DocumentObject.ПачкаДокументовАДВ_1</types>
     <types>DocumentObject.СведенияОЗастрахованномЛицеФСС</types>
     <types>DocumentObject.РеестрДСВ_3</types>
+    <types>DocumentObject.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
     <types>DocumentObject.ПереводНаОплатуПоСреднемуЗаработку</types>
+    <types>DocumentObject.ПриказОПрекращенииБронирования</types>
     <types>DocumentObject.Отгул</types>
     <types>DocumentObject.СтатусыВыплатыПособия</types>
+    <types>DocumentObject.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_К</types>
     <types>DocumentObject.ДоговорАвторскогоЗаказа</types>
     <types>DocumentObject.ПрекращениеПодработки</types>
     <types>DocumentObject.УдержаниеПрофсоюзныхВзносов</types>
+    <types>DocumentObject.ЗаявкаОтпускБезОплатыКабинетСотрудника</types>
     <types>DocumentObject.НачислениеЗаПервуюПоловинуМесяца</types>
     <types>DocumentObject.ПогашениеЗадолженностиПоВзысканиям</types>
     <types>DocumentObject.Отпуск</types>
@@ -150,15 +159,19 @@
     <types>DocumentObject.ПриемНаРаботу</types>
     <types>DocumentObject.ИзменениеПлановыхНачислений</types>
     <types>DocumentObject.ОтветНаЗапросФССДляРасчетаПособия</types>
+    <types>DocumentObject.ЗаявкаИзменениеЛичныхДанныхКабинетСотрудника</types>
     <types>DocumentObject.ДокументКадровогоЭДО</types>
     <types>DocumentObject.ОтказВВозмещенииВыплатРодителямДетейИнвалидов</types>
     <types>DocumentObject.УдержаниеДобровольныхВзносовВНПФ</types>
     <types>DocumentObject.ПрогулНеявка</types>
     <types>DocumentObject.Увольнение</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_6_4</types>
+    <types>DocumentObject.ЗаявкаПрежняяВерсияКабинетСотрудника</types>
     <types>DocumentObject.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности</types>
     <types>DocumentObject.АктПриемкиВыполненныхРаботОказанныхУслуг</types>
     <types>DocumentObject.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ</types>
+    <types>DocumentObject.ЗаявкаДСВКабинетСотрудника</types>
+    <types>DocumentObject.ОбращениеКабинетСотрудника</types>
     <types>DocumentObject.ВедомостьПрочихДоходовПеречислением</types>
     <types>DocumentObject.БухучетЗарплатыСотрудников</types>
     <types>DocumentObject.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖ</types>
@@ -167,9 +180,12 @@
     <types>DocumentObject.ВводНачальныхОстатковОтпусков</types>
     <types>DocumentObject.ЗаявлениеОПодтвержденииПраваНаЗачетАвансовПоНДФЛ</types>
     <types>DocumentObject.ОтзывСогласияНаУведомлениеОбЭЛН</types>
+    <types>DocumentObject.ЗаявкаСправка2НДФЛКабинетСотрудника</types>
     <types>DocumentObject.СведенияОЗастрахованныхЛицахСЗВ_М</types>
     <types>DocumentObject.ОтменаБронированияГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.ЕжегодныеСтандартныеВычеты</types>
     <types>DocumentObject.ВходящийЗапросФССДляРасчетаПособия</types>
+    <types>DocumentObject.ЗаявкаОтсутствиеКабинетСотрудника</types>
     <types>DocumentObject.ВозвратНДФЛ</types>
     <types>DocumentObject.УведомлениеОбИзмененииРасчетаПособия</types>
     <types>DocumentObject.НачислениеПоДоговорам</types>

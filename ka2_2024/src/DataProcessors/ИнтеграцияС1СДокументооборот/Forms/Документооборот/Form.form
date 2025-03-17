@@ -650,6 +650,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.КоллекцияВариантыВажности</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -753,6 +757,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.РезультатыВыполненияПроцессовИЗадачКоллекция</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
@@ -809,6 +817,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.КоллекцияБизнесПроцессыИЗадачи</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -1561,6 +1573,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ПодписанЭП</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
@@ -1614,6 +1630,10 @@
                     <valuesPicture xsi:type="core:PictureRef">
                       <picture>CommonPicture.КоллекцияПиктограммФайлов</picture>
                     </valuesPicture>
+                    <border xsi:type="core:BorderDef">
+                      <style>Single</style>
+                      <width>1</width>
+                    </border>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -2973,6 +2993,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.СтатусПроверкиЭП</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -5421,7 +5445,7 @@
         <id>529</id>
         <title>
           <key>ru</key>
-          <value>Настроить доступ.</value>
+          <value>Настроить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -6683,10 +6707,10 @@
         </edit>
       </columns>
       <columns>
-        <name>УстановившийПодписьИд</name>
+        <name>УстановившийПодписьID</name>
         <title>
           <key>ru</key>
-          <value>Установивший подпись ид</value>
+          <value>Установивший подпись ID</value>
         </title>
         <id>13</id>
         <valueType>
@@ -6709,6 +6733,151 @@
         <id>14</id>
         <valueType>
           <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ДатаПодписиИКомментарий</name>
+        <title>
+          <key>ru</key>
+          <value>Дата и комментарий</value>
+        </title>
+        <id>52</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ДатаПроверкиПодписи</name>
+        <title>
+          <key>ru</key>
+          <value>Дата проверки подписи</value>
+        </title>
+        <id>53</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Зашифрован</name>
+        <title>
+          <key>ru</key>
+          <value>Зашифрован</value>
+        </title>
+        <id>54</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>КомуВыданСертификатИСтатус</name>
+        <title>
+          <key>ru</key>
+          <value>Автор и статус</value>
+        </title>
+        <id>55</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>НомерСтроки</name>
+        <title>
+          <key>ru</key>
+          <value>Номер строки</value>
+        </title>
+        <id>56</id>
+        <valueType>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>10</precision>
+          </numberQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОбъектID</name>
+        <title>
+          <key>ru</key>
+          <value>Объект ID</value>
+        </title>
+        <id>57</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОбъектИмя</name>
+        <title>
+          <key>ru</key>
+          <value>Объект имя</value>
+        </title>
+        <id>58</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОбъектТип</name>
+        <title>
+          <key>ru</key>
+          <value>Объект тип</value>
+        </title>
+        <id>59</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
         </valueType>
         <view>
           <common>true</common>

@@ -158,6 +158,13 @@
       <value>Списки2022кв1</value>
     </synonym>
   </templates>
+  <templates uuid="3812be13-0c2d-49a2-bace-8f50205db79f">
+    <name>Списки2024кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2024кв1</value>
+    </synonym>
+  </templates>
   <templates uuid="28dc7e7f-9d27-45b3-b7e5-a937319e24fe">
     <name>АтрибВыгрузкиXML2019Кв1</name>
     <synonym>
@@ -190,6 +197,14 @@
     </synonym>
     <comment>Дополнительные атрибуты для выгрузки в XML</comment>
   </templates>
+  <templates uuid="74e78c51-37c0-4566-86c6-9609c1be0927">
+    <name>АтрибВыгрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атриб выгрузки XML2024 кв1</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
   <templates uuid="6c2eb2f1-2915-4e68-91c5-b3b3686807f1">
     <name>СхемаВыгрузкиXML2019Кв1</name>
     <synonym>
@@ -216,6 +231,13 @@
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки XML2022 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="13855b41-e007-46ca-86f3-f03b2eb68d35">
+    <name>СхемаВыгрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2024 кв1</value>
     </synonym>
   </templates>
   <templates uuid="a4ba4006-19e1-4bb7-8ded-6d4d525a2ee6">
@@ -281,19 +303,26 @@
       <value>Форма отчета2022 кв1 форма отчета</value>
     </synonym>
   </templates>
-  <templates uuid="4dbea579-3629-4350-aa48-fb11b1a8087f">
-    <name>ШаблонРосстата2024Кв1</name>
+  <templates uuid="3b675758-cc33-4d66-9a46-d9428772b9e2">
+    <name>ФормаОтчета2024Кв1_ФормаОтчета</name>
     <synonym>
       <key>ru</key>
-      <value>Шаблон росстата2024 кв1</value>
+      <value>Форма отчета2024 кв1 форма отчета</value>
     </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="ba4c352e-e541-425a-93ed-dc7b92bca513">
     <name>ШаблонРосстата2022Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Шаблон росстата2022 кв1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="4dbea579-3629-4350-aa48-fb11b1a8087f">
+    <name>ШаблонРосстата2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон росстата2024 кв1</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -337,6 +366,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="5a7a29d5-922f-4b02-94a7-cea62acf6137">
+    <name>НастройкиЗагрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки XML2024 кв1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="74dc4eb8-96c8-4548-9ace-394c61c9765c">
     <name>НастройкиСравнения2019Кв1</name>
     <synonym>
@@ -366,43 +403,6 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения2022 кв1</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="3812be13-0c2d-49a2-bace-8f50205db79f">
-    <name>Списки2024кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки2024кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="74e78c51-37c0-4566-86c6-9609c1be0927">
-    <name>АтрибВыгрузкиXML2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Атриб выгрузки XML2024 кв1</value>
-    </synonym>
-    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
-  </templates>
-  <templates uuid="13855b41-e007-46ca-86f3-f03b2eb68d35">
-    <name>СхемаВыгрузкиXML2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки XML2024 кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="3b675758-cc33-4d66-9a46-d9428772b9e2">
-    <name>ФормаОтчета2024Кв1_ФормаОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма отчета2024 кв1 форма отчета</value>
-    </synonym>
-  </templates>
-  <templates uuid="5a7a29d5-922f-4b02-94a7-cea62acf6137">
-    <name>НастройкиЗагрузкиXML2024Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки XML2024 кв1</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

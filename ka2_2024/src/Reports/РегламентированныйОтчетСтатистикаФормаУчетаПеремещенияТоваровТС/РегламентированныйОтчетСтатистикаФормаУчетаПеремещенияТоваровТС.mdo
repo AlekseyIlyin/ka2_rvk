@@ -164,7 +164,7 @@
     <name>ФормаАналогЛК</name>
     <synonym>
       <key>ru</key>
-      <value>Статистическая форма учета перемещения товаров в формате 5.22.0</value>
+      <value>Статистическая форма учета перемещения товаров в формате </value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -222,15 +222,22 @@
       <value>Схема выгрузки (для заявления о ввозе товаров)</value>
     </synonym>
   </templates>
-  <templates uuid="3688ec63-295e-4464-b6d0-9351e08977bd">
-    <name>СхемаВыгрузкиXMLЛК_5_20_0</name>
+  <templates uuid="db21daab-64be-40c7-b087-d425fdaea0ce">
+    <name>СхемаВыгрузкиXMLЛК_5_21_0</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки</value>
     </synonym>
   </templates>
-  <templates uuid="db21daab-64be-40c7-b087-d425fdaea0ce">
-    <name>СхемаВыгрузкиXMLЛК_5_21_0</name>
+  <templates uuid="94608500-e74d-462d-bae6-8e23e40693c3">
+    <name>СхемаВыгрузкиXMLЛК_5_22_0</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки</value>
+    </synonym>
+  </templates>
+  <templates uuid="3688ec63-295e-4464-b6d0-9351e08977bd">
+    <name>СхемаВыгрузкиXMLЛК_5_24_0</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки</value>
@@ -298,13 +305,6 @@
     <synonym>
       <key>ru</key>
       <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="94608500-e74d-462d-bae6-8e23e40693c3">
-    <name>СхемаВыгрузкиXMLЛК_5_22_0</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки</value>
     </synonym>
   </templates>
 </mdclass:Report>

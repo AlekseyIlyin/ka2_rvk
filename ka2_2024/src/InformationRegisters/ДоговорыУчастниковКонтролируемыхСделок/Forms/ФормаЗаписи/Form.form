@@ -65,6 +65,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Запись.Контрагент</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>КонтрагентПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>КонтрагентРасширеннаяПодсказка</name>
         <id>42</id>

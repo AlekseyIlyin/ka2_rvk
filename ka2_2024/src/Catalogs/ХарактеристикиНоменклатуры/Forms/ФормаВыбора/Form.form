@@ -1011,7 +1011,9 @@
 		Истина
 	ИНАЧЕ
 		Ложь
-	КОНЕЦ}</queryText>
+	КОНЕЦ,
+	ВариантыКомплектацииНоменклатуры.СодержитУслуги,
+	ВариантыКомплектацииНоменклатуры.СодержитТовары}</queryText>
       <mainTable>Catalog.ХарактеристикиНоменклатуры</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -1023,14 +1025,6 @@
         <field>Владелец</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КиЗГИСМGTIN</dataPath>
-        <field>КиЗГИСМGTIN</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВидНоменклатуры</dataPath>
-        <field>ВидНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПометкаУдаления</dataPath>
         <field>ПометкаУдаления</field>
       </fields>
@@ -1039,28 +1033,12 @@
         <field>ДополнительныеРеквизиты</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ХарактеристикаНоменклатурыДляЦенообразования</dataPath>
-        <field>ХарактеристикаНоменклатурыДляЦенообразования</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Ссылка</dataPath>
         <field>Ссылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеЯзык1</dataPath>
-        <field>НаименованиеЯзык1</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Контрагент</dataPath>
         <field>Контрагент</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>НаименованиеЯзык2</dataPath>
-        <field>НаименованиеЯзык2</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Представления</dataPath>
-        <field>Представления</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НаименованиеПолное</dataPath>
@@ -1101,6 +1079,38 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИмяПредопределенныхДанных</dataPath>
         <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СодержитУслуги</dataPath>
+        <field>СодержитУслуги</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СодержитТовары</dataPath>
+        <field>СодержитТовары</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КиЗГИСМGTIN</dataPath>
+        <field>КиЗГИСМGTIN</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидНоменклатуры</dataPath>
+        <field>ВидНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ХарактеристикаНоменклатурыДляЦенообразования</dataPath>
+        <field>ХарактеристикаНоменклатурыДляЦенообразования</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Представления</dataPath>
+        <field>Представления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеЯзык1</dataPath>
+        <field>НаименованиеЯзык1</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеЯзык2</dataPath>
+        <field>НаименованиеЯзык2</field>
       </fields>
       <parameters>
         <name>ВариантыРасчетаЦеныНабора</name>

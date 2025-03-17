@@ -177,6 +177,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.ВниманиеКрасный</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3617,6 +3621,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.Приоритеты</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -4871,7 +4879,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>ЗаказыКОплате.Тип</segments>
+            <segments>ЗаказыКОплате.ТипОбъектаОплаты</segments>
           </dataPath>
           <extendedTooltip>
             <name>ЗаказыКОплатеТипРасширеннаяПодсказка</name>
@@ -7801,7 +7809,7 @@
     <name>СоздатьВозвратОплатыКлиенту</name>
     <title>
       <key>ru</key>
-      <value>Возврат оплаты клиенту</value>
+      <value>Возврат или иная оплата клиенту</value>
     </title>
     <id>1</id>
     <toolTip>

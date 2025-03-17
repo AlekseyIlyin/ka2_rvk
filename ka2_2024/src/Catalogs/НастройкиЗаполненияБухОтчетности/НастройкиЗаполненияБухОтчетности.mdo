@@ -127,6 +127,26 @@
   <defaultObjectForm>Catalog.НастройкиЗаполненияБухОтчетности.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.НастройкиЗаполненияБухОтчетности.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.НастройкиЗаполненияБухОтчетности.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="fa10d8ae-a9a0-4391-9bdd-9973b1c02d58">
+    <name>РедакцияФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редакция формы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="a4104659-8e54-498e-a4ce-82ab6bd25a67">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -240,23 +260,88 @@
       <value>Пояснения8</value>
     </synonym>
   </templates>
+  <templates uuid="46336383-d2d1-463b-b25b-b148ac1fd20c">
+    <name>ФормаОтчета2025Кв1_Баланс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Баланс</value>
+    </synonym>
+  </templates>
+  <templates uuid="f5de0e93-8da2-48ca-bdfd-e1593936049d">
+    <name>ФормаОтчета2025Кв1_ОФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 ОФР</value>
+    </synonym>
+  </templates>
+  <templates uuid="7274ab21-46c6-48ee-8d93-0c49fa86d42a">
+    <name>ФормаОтчета2025Кв1_ОИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 ОИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="6e891b05-4fee-47ab-8b8c-ad31cf7c0812">
+    <name>ФормаОтчета2025Кв1_ОДДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 ОДДС</value>
+    </synonym>
+  </templates>
+  <templates uuid="80bad866-4084-41a8-a79f-70a701498579">
+    <name>ФормаОтчета2025Кв1_Пояснения3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="6b1c751c-3273-47b6-8dc5-f9ce6f1cb48d">
+    <name>ФормаОтчета2025Кв1_Пояснения4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 4</value>
+    </synonym>
+  </templates>
+  <templates uuid="5a098a00-fca6-47d9-94c4-aad45f145429">
+    <name>ФормаОтчета2025Кв1_Пояснения6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 6</value>
+    </synonym>
+  </templates>
+  <templates uuid="e96e1590-6658-479d-8761-78386cf366b4">
+    <name>ФормаОтчета2025Кв1_Пояснения7</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 7</value>
+    </synonym>
+  </templates>
+  <templates uuid="ad189c4d-a561-420c-b385-99080a3f668b">
+    <name>ФормаОтчета2025Кв1_Пояснения8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 8</value>
+    </synonym>
+  </templates>
+  <templates uuid="2baa87d1-1c57-44b9-9c08-ce24fe5a5705">
+    <name>ФормаОтчета2025Кв1_Пояснения9</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв.1 Пояснения 9</value>
+    </synonym>
+  </templates>
+  <templates uuid="8e6abc64-014f-49c1-b688-d482ffbb9686">
+    <name>ФормаОтчета2025Кв1_Пояснения10</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2025 кв.1 Пояснения 10</value>
+    </synonym>
+  </templates>
   <commands uuid="a066bd5a-65ac-4b2b-9a36-dc9762096adc">
     <name>ОткрытьРабочееМестоНастройки</name>
     <synonym>
       <key>ru</key>
       <value>Открыть рабочее место настройки</value>
-    </synonym>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>CatalogRef.НастройкиЗаполненияБухОтчетности</types>
-    </commandParameterType>
-    <representation>Auto</representation>
-  </commands>
-  <commands uuid="33309fd1-8611-49fa-8b38-45731e6299e9">
-    <name>СгенерироватьНастройкиПоУмолчанию</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сгенерировать настройки по умолчанию</value>
     </synonym>
     <group>FormCommandBarImportant</group>
     <commandParameterType>

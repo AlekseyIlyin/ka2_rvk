@@ -4519,6 +4519,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>StdPicture.Change</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
               <fileDragMode>AsFileRef</fileDragMode>
             </extInfo>
           </items>
@@ -5409,6 +5413,19 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>ВариантОбеспечиваемогоПериода</name>
+      <id>48</id>
+      <valueType>
+        <types>EnumRef.ВариантыОбеспечиваемогоПериода</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>СписокСкладов</name>
@@ -5426,6 +5443,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокСкладов.ВариантОбеспечиваемогоПериода</segments>
+    </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокСкладов.ЕстьНастройкаДляСклада</segments>
     </notDefaultUseAlwaysAttributes>
@@ -5454,6 +5474,8 @@
 	ЕСТЬNULL(СпрСпособы.ИсточникОбеспеченияПотребностей, НЕОПРЕДЕЛЕНО) КАК ИсточникОбеспечения,
 	ЕСТЬNULL(СпрСпособы.СрокИсполненияЗаказа, 0)            КАК СрокПоставки,
 	ЕСТЬNULL(СпрСпособы.ОбеспечиваемыйПериод, 0)            КАК ОбеспечиваемыйПериод,
+	ЕСТЬNULL(СпрСпособы.ВариантОбеспечиваемогоПериода, ЗНАЧЕНИЕ(Перечисление.ВариантыОбеспечиваемогоПериода.ПустаяСсылка)) КАК ВариантОбеспечиваемогоПериода,
+	
 	ЕСТЬNULL(СпрСпособы.ТипОбеспечения, ЗНАЧЕНИЕ(Перечисление.ТипыОбеспечения.ПустаяСсылка)) КАК ТипОбеспечения,
 	
 	ЕстьNULL(ТаблицаУпаковки.УпаковкаЗаказа, ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)) КАК УпаковкаЗаказа,
@@ -5499,6 +5521,486 @@
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭтоГруппа</dataPath>
+        <field>ЭтоГруппа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Склад</dataPath>
+        <field>Склад</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Склад</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособОбеспечения</dataPath>
+        <field>СпособОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Способ обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФорматМагазина</dataPath>
+        <field>ФорматМагазина</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Формат магазина</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникОбеспечения</dataPath>
+        <field>ИсточникОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Источник обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СрокПоставки</dataPath>
+        <field>СрокПоставки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Срок поставки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечиваемыйПериод</dataPath>
+        <field>ОбеспечиваемыйПериод</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Обеспечиваемый период</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипОбеспечения</dataPath>
+        <field>ТипОбеспечения</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УпаковкаЗаказа</dataPath>
+        <field>УпаковкаЗаказа</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Упаковка заказа</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьФормат</dataPath>
+        <field>ЕстьФормат</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть формат</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьТовар</dataPath>
+        <field>ЕстьТовар</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть товар</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьНастройкаДляТовара</dataPath>
+        <field>ЕстьНастройкаДляТовара</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть настройка для товара</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьНастройкаДляСклада</dataPath>
+        <field>ЕстьНастройкаДляСклада</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть настройка для склада</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьНастройкаДляФормата</dataPath>
+        <field>ЕстьНастройкаДляФормата</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть настройка для формата</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыборГруппы</dataPath>
+        <field>ВыборГруппы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьАдресноеХранение</dataPath>
+        <field>ИспользоватьАдресноеХранение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьАдресноеХранениеСправочно</dataPath>
+        <field>ИспользоватьАдресноеХранениеСправочно</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьОрдернуюСхемуПриОтгрузке</dataPath>
+        <field>ИспользоватьОрдернуюСхемуПриОтгрузке</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьОрдернуюСхемуПриОтраженииИзлишковНедостач</dataPath>
+        <field>ИспользоватьОрдернуюСхемуПриОтраженииИзлишковНедостач</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьОрдернуюСхемуПриПоступлении</dataPath>
+        <field>ИспользоватьОрдернуюСхемуПриПоступлении</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьСерииНоменклатуры</dataPath>
+        <field>ИспользоватьСерииНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьСкладскиеПомещения</dataPath>
+        <field>ИспользоватьСкладскиеПомещения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Календарь</dataPath>
+        <field>Календарь</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтролироватьОперативныеОстатки</dataPath>
+        <field>КонтролироватьОперативныеОстатки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НастройкаАдресногоХранения</dataPath>
+        <field>НастройкаАдресногоХранения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Подразделение</dataPath>
+        <field>Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>БизнесРегион</dataPath>
+        <field>БизнесРегион</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РозничныйВидЦены</dataPath>
+        <field>РозничныйВидЦены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТекущаяДолжностьОтветственного</dataPath>
+        <field>ТекущаяДолжностьОтветственного</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТекущийОтветственный</dataPath>
+        <field>ТекущийОтветственный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипСклада</dataPath>
+        <field>ТипСклада</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УровеньОбслуживания</dataPath>
+        <field>УровеньОбслуживания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УчетныйВидЦены</dataPath>
+        <field>УчетныйВидЦены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НачинатьОтгрузкуПослеФормированияЗаданияНаПеревозку</dataPath>
+        <field>НачинатьОтгрузкуПослеФормированияЗаданияНаПеревозку</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользованиеРабочихУчастков</dataPath>
+        <field>ИспользованиеРабочихУчастков</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсточникИнформацииОЦенахДляПечати</dataPath>
+        <field>ИсточникИнформацииОЦенахДляПечати</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьСтатусыРасходныхОрдеров</dataPath>
+        <field>ИспользоватьСтатусыРасходныхОрдеров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьСтатусыПриходныхОрдеров</dataPath>
+        <field>ИспользоватьСтатусыПриходныхОрдеров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользоватьСтатусыПересчетовТоваров</dataPath>
+        <field>ИспользоватьСтатусыПересчетовТоваров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаОрдернойСхемыПриОтгрузке</dataPath>
+        <field>ДатаНачалаОрдернойСхемыПриОтгрузке</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаОрдернойСхемыПриПоступлении</dataPath>
+        <field>ДатаНачалаОрдернойСхемыПриПоступлении</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаОрдернойСхемыПриОтраженииИзлишковНедостач</dataPath>
+        <field>ДатаНачалаОрдернойСхемыПриОтраженииИзлишковНедостач</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаИспользованияСкладскихПомещений</dataPath>
+        <field>ДатаНачалаИспользованияСкладскихПомещений</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаАдресногоХраненияОстатков</dataPath>
+        <field>ДатаНачалаАдресногоХраненияОстатков</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УчитыватьСебестоимостьПоСериям</dataPath>
+        <field>УчитыватьСебестоимостьПоСериям</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтролироватьСвободныеОстатки</dataPath>
+        <field>КонтролироватьСвободныеОстатки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СкладОтветственногоХранения</dataPath>
+        <field>СкладОтветственногоХранения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидПоклажедержателя</dataPath>
+        <field>ВидПоклажедержателя</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Поклажедержатель</dataPath>
+        <field>Поклажедержатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СрокОтветственногоХранения</dataPath>
+        <field>СрокОтветственногоХранения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтветственноеХранениеДоВостребования</dataPath>
+        <field>ОтветственноеХранениеДоВостребования</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОсобыеОтметки</dataPath>
+        <field>ОсобыеОтметки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УсловияХраненияТоваров</dataPath>
+        <field>УсловияХраненияТоваров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЦеховаяКладовая</dataPath>
+        <field>ЦеховаяКладовая</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВМагазинеПоддерживаетсяСборкаЗаказов</dataPath>
+        <field>ВМагазинеПоддерживаетсяСборкаЗаказов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВМагазинеПоддерживаетсяДоставкаСвоимиКурьерами</dataPath>
+        <field>ВМагазинеПоддерживаетсяДоставкаСвоимиКурьерами</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособСозданияРеализацииПриСборкеЗаказов</dataPath>
+        <field>СпособСозданияРеализацииПриСборкеЗаказов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособФискализацииПриДоставке</dataPath>
+        <field>СпособФискализацииПриДоставке</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СборкаИДоставкаВыполняетсяОднимСотрудником</dataPath>
+        <field>СборкаИДоставкаВыполняетсяОднимСотрудником</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КурьерыМогутНазначатьСебеЗаказы</dataPath>
+        <field>КурьерыМогутНазначатьСебеЗаказы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СборщикиМогутНазначатьСебеЗаказы</dataPath>
+        <field>СборщикиМогутНазначатьСебеЗаказы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НормативныйСрокДоставкиЗаказов</dataPath>
+        <field>НормативныйСрокДоставкиЗаказов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КурьерыИспользуютЭквайринговыеТерминалы</dataPath>
+        <field>КурьерыИспользуютЭквайринговыеТерминалы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КурьерыИспользуютАвтономныеККТ</dataPath>
+        <field>КурьерыИспользуютАвтономныеККТ</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаСборкиЗаказов</dataPath>
+        <field>ДатаНачалаСборкиЗаказов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаДоставкиСвоимиКурьерами</dataPath>
+        <field>ДатаНачалаДоставкиСвоимиКурьерами</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ГруппировкаТоваров</dataPath>
+        <field>ГруппировкаТоваров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИндивидуальныйВидЦены</dataPath>
+        <field>ИндивидуальныйВидЦены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтактнаяИнформация</dataPath>
+        <field>КонтактнаяИнформация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты</dataPath>
+        <field>ДополнительныеРеквизиты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Родитель</dataPath>
+        <field>Родитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантОбеспечиваемогоПериода</dataPath>
+        <field>ВариантОбеспечиваемогоПериода</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Вариант обеспечиваемого периода</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>Период</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Период</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers/>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+      </parameters>
+      <parameters>
+        <name>Номенклатура</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Номенклатура</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.Номенклатура</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>СхемаОбеспечения</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Схема обеспечения</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.СхемыОбеспечения</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>Характеристика</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Характеристика</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -5632,6 +6134,9 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокСпособовОбеспеченияСклада.ВариантОбеспечиваемогоПериода</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокСпособовОбеспеченияСклада.Номенклатура</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
@@ -5666,6 +6171,7 @@
 	СпрСпособ.ТипОбеспечения КАК ТипОбеспечения,
 	СпрСпособ.СрокИсполненияЗаказа КАК СрокПоставки,
 	СпрСпособ.ОбеспечиваемыйПериод КАК ОбеспечиваемыйПериод,
+	СпрСпособ.ВариантОбеспечиваемогоПериода КАК ВариантОбеспечиваемогоПериода,
 	
 	НЕ ТаблицаВариантыОбеспеченияТоварами.СпособОбеспеченияПотребностей ЕСТЬ NULL КАК ЭтоИндивидуальнаяНастройка,
 	ВЫБОР
@@ -5687,7 +6193,7 @@
 		
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК СпрХарактеристикиНоменклатурыОбщиеСДругимВидомНоменклатуры
 		ПО СпрНоменклатура.ИспользованиеХарактеристик = ЗНАЧЕНИЕ(Перечисление.ВариантыИспользованияХарактеристикНоменклатуры.ОбщиеСДругимВидомНоменклатуры)
-			И СпрХарактеристикиНоменклатурыОбщиеДляВида.Владелец = СпрНоменклатура.ВладелецХарактеристик
+			И СпрХарактеристикиНоменклатурыОбщиеСДругимВидомНоменклатуры.Владелец = СпрНоменклатура.ВладелецХарактеристик
 		
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ВариантыОбеспеченияТоварами КАК ТаблицаВариантыОбеспеченияТоварами
 		ПО (ТаблицаВариантыОбеспеченияТоварами.Номенклатура = СпрНоменклатура.Ссылка)
@@ -5871,6 +6377,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Склад</dataPath>
         <field>Склад</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантОбеспечиваемогоПериода</dataPath>
+        <field>ВариантОбеспечиваемогоПериода</field>
       </fields>
       <parameters>
         <name>ТолькоОбеспечиваемаяНоменклатура</name>

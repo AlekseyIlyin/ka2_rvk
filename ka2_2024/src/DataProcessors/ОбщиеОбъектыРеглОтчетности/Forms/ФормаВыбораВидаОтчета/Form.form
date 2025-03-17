@@ -16,16 +16,6 @@
       <segments>СправочникСписок</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <excludedCommands>Change</excludedCommands>
-    <excludedCommands>Choose</excludedCommands>
-    <excludedCommands>Copy</excludedCommands>
-    <excludedCommands>Create</excludedCommands>
-    <excludedCommands>CreateFolder</excludedCommands>
-    <excludedCommands>Delete</excludedCommands>
-    <excludedCommands>LevelDown</excludedCommands>
-    <excludedCommands>LevelUp</excludedCommands>
-    <excludedCommands>MoveItem</excludedCommands>
-    <excludedCommands>SetDeletionMark</excludedCommands>
     <items xsi:type="form:FormField">
       <name>СправочникСписокНаименование</name>
       <id>4</id>
@@ -191,7 +181,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.СправочникСписок.StandardCommand.Find</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -221,7 +211,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Item.СправочникСписок.StandardCommand.CancelSearch</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

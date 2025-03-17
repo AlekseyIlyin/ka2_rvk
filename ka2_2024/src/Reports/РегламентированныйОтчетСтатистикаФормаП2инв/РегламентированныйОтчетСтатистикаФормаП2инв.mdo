@@ -165,6 +165,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="e37c64d2-a828-4125-93ba-01544378b1be">
+    <name>ФормаОтчета2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма П-2 (инвест)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="0922c1e7-5736-4097-9f0e-614b9cd2575a">
     <name>Списки2013кв1</name>
     <synonym>
@@ -226,6 +240,13 @@
     <synonym>
       <key>ru</key>
       <value>Списки2023 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="215f6317-760d-4e3b-ada4-d31695ef670d">
+    <name>Списки2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2024 кв1</value>
     </synonym>
   </templates>
   <templates uuid="b362bec5-f2af-4553-9718-2acf70f567ed">
@@ -292,6 +313,14 @@
     </synonym>
     <comment>Дополнительные атрибуты для выгрузки в XML</comment>
   </templates>
+  <templates uuid="fb505526-92af-45b0-ae47-108d19c76db5">
+    <name>АтрибВыгрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атриб выгрузки XML2024 кв1</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
   <templates uuid="05474f34-2e15-4287-9f21-56d09d9a0160">
     <name>СхемаВыгрузкиXML2015Кв1</name>
     <synonym>
@@ -346,6 +375,13 @@
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки XML2023 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="cf4f2f53-ca95-4e2d-8a43-fa603d9db740">
+    <name>СхемаВыгрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2024 кв1</value>
     </synonym>
   </templates>
   <templates uuid="c4fdfddb-f306-4137-aa64-958084c98c94">
@@ -418,6 +454,13 @@
       <value>Форма отчета2023 кв1 форма отчета</value>
     </synonym>
   </templates>
+  <templates uuid="dfe39a2c-709f-4054-a8d3-66125dc12a7c">
+    <name>ФормаОтчета2024Кв1_ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв1 форма отчета</value>
+    </synonym>
+  </templates>
   <templates uuid="99f31aab-9442-4dae-aecf-a88450490e27">
     <name>СоставПоказателей2013Кв1</name>
     <synonym>
@@ -481,19 +524,26 @@
       <value>Состав показателей2023 кв1</value>
     </synonym>
   </templates>
-  <templates uuid="58c1e2d7-757e-4523-bcc1-adf848e701de">
-    <name>ШаблонРосстата2022Кв1</name>
+  <templates uuid="fa1adfd5-f4af-48ad-a9b9-d3db38ebdebc">
+    <name>СоставПоказателей2024Кв1</name>
     <synonym>
       <key>ru</key>
-      <value>Шаблон росстата2022 кв1</value>
+      <value>Состав показателей2024 кв1</value>
     </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="e21aee1a-50f3-4ace-acdd-af1f4b935231">
     <name>ШаблонРосстата2023Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Шаблон росстата2023 кв1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="58c1e2d7-757e-4523-bcc1-adf848e701de">
+    <name>ШаблонРосстата2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон росстата2024 кв1</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -553,6 +603,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="8b7c3c4b-2aab-4df1-9e59-08800f30628a">
+    <name>НастройкиЗагрузкиXML2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки XML2024 кв1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="6e717580-cc24-4c92-9470-db322cbf1311">
     <name>НастройкиСравнения2019Кв1</name>
     <synonym>
@@ -582,6 +640,14 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения2023 кв1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2846fed1-ef09-4e75-b69c-ef93cb1c0486">
+    <name>НастройкиСравнения2024Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения2024 кв1</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

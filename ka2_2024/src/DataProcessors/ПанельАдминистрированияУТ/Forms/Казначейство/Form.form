@@ -4393,7 +4393,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>РежимРаспределенияВзаиморасчетов</segments>
+              <segments>РежимРаспределенияВзаиморасчетовОнлайн</segments>
             </dataPath>
             <titleLocation>Top</titleLocation>
             <toolTipRepresentation>ShowBottom</toolTipRepresentation>
@@ -5013,8 +5013,43 @@
       <items xsi:type="form:FormGroup">
         <name>ГруппаНоваяАрхитектураРасчетовПраво</name>
         <id>2567</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияПорядокЗачетаДокументов</name>
+          <id>2746</id>
+          <title>
+            <key>ru</key>
+            <value>Порядок зачета оплат и накладных
+</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияПорядокЗачетаДокументовРасширеннаяПодсказка</name>
+            <id>2748</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияПорядокЗачетаДокументовКонтекстноеМеню</name>
+            <id>2747</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
         <items xsi:type="form:FormField">
-          <name>ЗачетОплатПоДатеПлатежа</name>
+          <name>ПорядокЗачетаОплатНакладных</name>
           <id>2569</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -5022,27 +5057,17 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>ЗачетОплатПоДатеПлатежа</segments>
+            <segments>ПорядокЗачетаОплатНакладных</segments>
           </dataPath>
-          <titleLocation>Top</titleLocation>
+          <titleLocation>None</titleLocation>
           <toolTipRepresentation>ShowBottom</toolTipRepresentation>
           <handlers>
             <event>OnChange</event>
             <name>ПорядокЗачетаДокументовПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>ЗачетОплатПоДатеПлатежаРасширеннаяПодсказка</name>
+            <name>ПорядокЗачетаОплатНакладныхРасширеннаяПодсказка</name>
             <id>2571</id>
-            <title>
-              <key>ru</key>
-              <value>По дате документа - постоплаты будут сначала распределяться на накладые с минимальной датой документа, накладные будут зачитывать авансы с минимальной датой документа.
-По плановой дате погашения - постоплаты будут сначала распределяться на накладные с минимальной датой платежа, накладные будут зачитывать авансы с минимальной датой погашения.</value>
-            </title>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -5053,31 +5078,40 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ЗачетОплатПоДатеПлатежаКонтекстноеМеню</name>
+            <name>ПорядокЗачетаОплатНакладныхКонтекстноеМеню</name>
             <id>2570</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>RadioButtonField</type>
+          <type>InputField</type>
           <groupHorizontalAlign>Left</groupHorizontalAlign>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-            <radioButtonsType>RadioButtons</radioButtonsType>
-            <columnsCount>1</columnsCount>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <listChoiceMode>true</listChoiceMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>По дате документа</value>
+                <value>По дате и виду документа</value>
               </presentation>
-              <value xsi:type="core:NumberValue">
-                <value>0</value>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеВидуДокумента</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>По дате и времени документа</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеВремениДокумента</value>
               </value>
             </choiceList>
             <choiceList>
@@ -5085,8 +5119,8 @@
                 <key>ru</key>
                 <value>По плановой дате погашения</value>
               </presentation>
-              <value xsi:type="core:NumberValue">
-                <value>1</value>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ПорядкиЗачетаОплатНакладных.EnumValue.ПоДатеПлановогоПогашения</value>
               </value>
             </choiceList>
           </extInfo>
@@ -5100,6 +5134,7 @@
           <key>ru</key>
           <value>Группа новая архитектура расчетов право</value>
         </title>
+        <groupHorizontalAlign>Left</groupHorizontalAlign>
         <extendedTooltip>
           <name>ГруппаНоваяАрхитектураРасчетовПравоРасширеннаяПодсказка</name>
           <id>2568</id>
@@ -5118,7 +5153,9 @@
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
           <group>Vertical</group>
+          <horizontalAlign>Left</horizontalAlign>
           <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
@@ -5395,6 +5432,10 @@
     <name>ОбработкаОповещения</name>
   </handlers>
   <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -5427,9 +5468,6 @@
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.АктуализироватьВзаиморасчетыПриФормированииОтчетов</segments>
-    </notDefaultUseAlwaysAttributes>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>НаборКонстант.ЗачетОплатПоДатеПлатежа</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.ИспользоватьДоверенностиНаПолучениеТМЦ</segments>
@@ -5510,6 +5548,9 @@
       <segments>НаборКонстант.ПоддержкаБанковскогоИКазначейскогоСопровожденияГосконтрактов</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ПорядокЗачетаОплатНакладных</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>НаборКонстант.УправлениеПредприятием</segments>
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
@@ -5588,10 +5629,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>РежимРаспределенияВзаиморасчетов</name>
+    <name>РежимРаспределенияВзаиморасчетовОнлайн</name>
     <title>
       <key>ru</key>
-      <value>Режим распределения взаиморасчетов</value>
+      <value>Режим распределения взаиморасчетов онлайн</value>
     </title>
     <id>8</id>
     <valueType>
@@ -5652,18 +5693,14 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ЗачетОплатПоДатеПлатежа</name>
+    <name>ПорядокЗачетаОплатНакладных</name>
     <title>
       <key>ru</key>
       <value>Порядок зачета оплат и накладных</value>
     </title>
     <id>12</id>
     <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>EnumRef.ПорядкиЗачетаОплатНакладных</types>
     </valueType>
     <view>
       <common>true</common>

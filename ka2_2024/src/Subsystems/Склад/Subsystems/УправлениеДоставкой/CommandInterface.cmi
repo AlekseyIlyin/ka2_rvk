@@ -26,11 +26,11 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.СервисДоставки.StandardCommand.Open</command>
+      <command>DataProcessor.ЭлектронныеПеревозочныеДокументы.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.ЭлектронныеПеревозочныеДокументы.StandardCommand.Open</command>
+      <command>DataProcessor.СервисДоставки.Command.ОтражениеДоставки</command>
       <visible/>
     </visibilityFragments>
   </commandsVisibility>
@@ -55,7 +55,14 @@
       <commands>Catalog.ТранспортныеСредства.StandardCommand.OpenList</commands>
       <commands>DataProcessor.РабочееМестоМенеджераПоДоставке.Command.УправлениеДоставкойОтПоставщиков</commands>
       <commands>Document.ПоручениеЭкспедитору.StandardCommand.OpenList</commands>
+      <commands>DataProcessor.СервисДоставки.Command.СписокЗаказов1ССДЭК</commands>
       <commands>DataProcessor.СервисДоставки.Command.СписокЗаказов</commands>
+      <commands>DataProcessor.СервисДоставки.Command.СписокЗаказов1СКурьер</commands>
+      <commands>DataProcessor.СервисДоставки.Command.СписокЗаказов1СКурьерика</commands>
+      <commands>DataProcessor.ЭлектронныеПеревозочныеДокументы.Command.ЭлектронныеПеревозочныеДокументы</commands>
+      <commands>InformationRegister.ЗоныДоставкиКурьеров.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СотрудникиМагазинов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СтатусыСборкиИДоставки.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelSeeAlso</group>

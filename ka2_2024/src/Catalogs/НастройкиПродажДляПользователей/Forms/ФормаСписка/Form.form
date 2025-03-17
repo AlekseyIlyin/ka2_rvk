@@ -25,8 +25,6 @@
       <skipOnInput>false</skipOnInput>
       <titleLocation>None</titleLocation>
       <excludedCommands>CopyToClipboard</excludedCommands>
-      <excludedCommands>Delete</excludedCommands>
-      <excludedCommands>OutputList</excludedCommands>
       <items xsi:type="form:FormField">
         <name>НаименованиеГруппы</name>
         <id>30</id>
@@ -514,8 +512,6 @@
       <skipOnInput>false</skipOnInput>
       <titleLocation>None</titleLocation>
       <excludedCommands>CopyToClipboard</excludedCommands>
-      <excludedCommands>Delete</excludedCommands>
-      <excludedCommands>OutputList</excludedCommands>
       <items xsi:type="form:FormField">
         <name>Наименование</name>
         <id>51</id>
@@ -1252,7 +1248,6 @@
     <event>BeforeLoadDataFromSettingsAtServer</event>
     <name>ПриЗагрузкеДанныхИзНастроекНаСервере</name>
   </handlers>
-  <excludedCommands>Create</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>

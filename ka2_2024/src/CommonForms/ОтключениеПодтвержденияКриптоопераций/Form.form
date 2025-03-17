@@ -8,7 +8,7 @@
     <name>ГруппаЗаголовок</name>
     <id>168</id>
     <items xsi:type="form:Decoration">
-      <name>ДекорациОписание</name>
+      <name>ДекорацияОписание</name>
       <id>173</id>
       <title>
         <key>ru</key>
@@ -22,13 +22,8 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ДекорациОписаниеРасширеннаяПодсказка</name>
+        <name>ДекорацияОписаниеРасширеннаяПодсказка</name>
         <id>175</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -37,13 +32,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ДекорациОписаниеКонтекстноеМеню</name>
+        <name>ДекорацияОписаниеКонтекстноеМеню</name>
         <id>174</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>Label</type>

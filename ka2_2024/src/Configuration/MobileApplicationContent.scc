@@ -60,7 +60,6 @@
   <usedItem metadata="Role.ЧтениеДвиженийДенежныеСредстваКонтрагент"/>
   <usedItem metadata="Role.ЧтениеДолжностей"/>
   <usedItem metadata="Role.ЧтениеДвиженийНоменклатураКонтрагент"/>
-  <usedItem metadata="CommonPicture.РамкаБелая6"/>
   <usedItem metadata="Role.ЧтениеПартийПроизводства"/>
   <usedItem metadata="Role.ЧтениеЦенПартнеров"/>
   <usedItem metadata="Role.ЧтениеБезПросмотраЗначенийТарифов"/>
@@ -1639,7 +1638,7 @@
   <unusedItem metadata="DataProcessor.МобильноеРабочееМестоКладовщика.Form.РасходныйОрдер"/>
   <unusedItem metadata="Catalog.Назначения.Form.ФормаСписка"/>
   <unusedItem metadata="Catalog.Номенклатура.Attribute.ШаблонЦенника"/>
-  <unusedItem metadata="Catalog.ВидыНоменклатуры.Attribute.КодОКВЭД2"/>
+  <unusedItem metadata="Catalog.ВидыНоменклатуры.Attribute.УдалитьКодОКВЭД2"/>
   <unusedItem metadata="Document.РасходныйОрдерНаТовары.Attribute.ОтгрузкаПоЗаданиюНаПеревозку"/>
   <unusedItem metadata="Catalog.Назначения.Attribute.Договор"/>
   <unusedItem metadata="Catalog.ИдентификаторыОбъектовРасширений.Attribute.Синоним"/>
@@ -1657,6 +1656,7 @@
   <unusedItem metadata="Catalog.ИдентификаторыОбъектовМетаданных.Form.ФормаЭлемента"/>
   <unusedItem metadata="Catalog.ВидыНоменклатуры.Attribute.АлкогольнаяПродукция"/>
   <unusedItem metadata="Document.ОтборРазмещениеТоваров.Form.ФормаДокумента"/>
+  <unusedItem metadata="Catalog.ВидыНоменклатуры.Attribute.КодОКВЭД2"/>
   <unusedItem metadata="Catalog.Склады.Attribute.ИндивидуальныйВидЦены"/>
   <unusedItem metadata="DataProcessor.МобильноеРабочееМестоКладовщика.Form.РазмещениеВЯчейки"/>
   <unusedItem metadata="Catalog.ВидыНоменклатуры.Attribute.НастройкиСерийБерутсяИзДругогоВидаНоменклатуры"/>
@@ -1907,6 +1907,7 @@
   <unusedItem metadata="Catalog.ВидыНоменклатуры.Form.ФормаСписка"/>
   <unusedItem metadata="Catalog.Склады.Attribute.ДатаНачалаДоставкиСвоимиКурьерами"/>
   <unusedItem metadata="Catalog.Номенклатура.Attribute.ИспользоватьУпаковки"/>
+  <unusedItem metadata="Catalog.Номенклатура.Attribute.КодОКВЭД2"/>
   <unusedItem metadata="Catalog.УпаковкиЕдиницыИзмерения.Attribute.ВесЕдиницаИзмерения"/>
   <unusedItem metadata="Catalog.Склады.Attribute.ТекущаяДолжностьОтветственного"/>
   <unusedItem metadata="Catalog.ИдентификаторыОбъектовМетаданных.Attribute.Имя"/>
@@ -2067,7 +2068,7 @@
   <unusedItem metadata="Catalog.Склады.Attribute.СпособСозданияРеализацииПриСборкеЗаказов"/>
   <unusedItem metadata="Catalog.УпаковкиЕдиницыИзмерения.Form.РазблокированиеРеквизитовУпаковки"/>
   <unusedItem metadata="Catalog.Номенклатура.Form.КонтрольУникальности"/>
-  <unusedItem metadata="Catalog.Номенклатура.Attribute.КодОКВЭД2"/>
+  <unusedItem metadata="Catalog.Номенклатура.Attribute.УдалитьКодОКВЭД2"/>
   <unusedItem metadata="Subsystem.ФинансовыйРезультатИКонтроллинг.Subsystem.ЗакрытиеМесяца"/>
   <unusedItem metadata="Catalog.УпаковкиЕдиницыИзмерения.Attribute.МеждународноеСокращение"/>
   <unusedItem metadata="Catalog.УпаковкиЕдиницыИзмерения.Form.ФормаВыбораЕдиницыИзмерения"/>

@@ -72,11 +72,26 @@
       <value>Метаданные шаблона</value>
     </synonym>
   </templates>
+  <templates uuid="5e27d02c-8503-40cb-a7c3-f268e3586ef6">
+    <name>МетаданныеШаблона2023Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метаданные шаблона</value>
+    </synonym>
+  </templates>
   <templates uuid="dd1d1f5a-869c-425e-a419-21b6e93df08a">
     <name>НастройкиЗагрузкиXML2021Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Настройки загрузки из файла XML 2021</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="fa0017d9-deb8-4627-a601-cc266824c9c7">
+    <name>НастройкиЗагрузкиXML2023Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2023</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -88,8 +103,23 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="a6136ede-0701-4f91-9994-aac03c242d9d">
+    <name>НастройкиСравнения2023Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сравнения отчетов 2023</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="f5603623-0582-4e2b-8766-2b082c68023b">
     <name>ПечатныйБланк2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатный бланк</value>
+    </synonym>
+  </templates>
+  <templates uuid="68eca3e9-e06a-4b4d-8e19-7602f420d166">
+    <name>ПечатныйБланк2023Кв3</name>
     <synonym>
       <key>ru</key>
       <value>Печатный бланк</value>
@@ -102,11 +132,25 @@
       <value>Списки выбора</value>
     </synonym>
   </templates>
+  <templates uuid="ee838471-ca55-4537-a2ae-a5e216ebba87">
+    <name>СпискиВыбора2023Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
   <templates uuid="b5dea6cc-c795-4b6e-9f0e-e0cec741479f">
     <name>СхемаВыгрузкиXML2021Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки XML2021 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="e3e042c2-1a37-4f66-b5e3-012245116c4f">
+    <name>СхемаВыгрузкиXML2023Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2023 кв. 3</value>
     </synonym>
   </templates>
   <templates uuid="4d587d57-c937-4225-aea3-d24eb795a6ca">
@@ -130,66 +174,6 @@
       <value>Титульный</value>
     </synonym>
   </templates>
-  <templates uuid="d0043a8e-c2b4-4005-afdb-e86a2cd54c22">
-    <name>ШаблонБанка2021Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон Банка России</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="c718f82b-cf31-4e3d-a584-f14385598b03">
-    <name>ШаблонБанка2021Кв1_Тест</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон Банка России</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="5e27d02c-8503-40cb-a7c3-f268e3586ef6">
-    <name>МетаданныеШаблона2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Метаданные шаблона</value>
-    </synonym>
-  </templates>
-  <templates uuid="fa0017d9-deb8-4627-a601-cc266824c9c7">
-    <name>НастройкиЗагрузкиXML2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки из файла XML 2023</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="a6136ede-0701-4f91-9994-aac03c242d9d">
-    <name>НастройкиСравнения2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки сравнения отчетов 2023</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="68eca3e9-e06a-4b4d-8e19-7602f420d166">
-    <name>ПечатныйБланк2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатный бланк</value>
-    </synonym>
-  </templates>
-  <templates uuid="ee838471-ca55-4537-a2ae-a5e216ebba87">
-    <name>СпискиВыбора2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора</value>
-    </synonym>
-  </templates>
-  <templates uuid="e3e042c2-1a37-4f66-b5e3-012245116c4f">
-    <name>СхемаВыгрузкиXML2023Кв3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки XML2023 кв. 3</value>
-    </synonym>
-  </templates>
   <templates uuid="d462f8ed-0659-493c-bcbf-f80e64c14616">
     <name>ФормаОтчета2023Кв3_Раздел1</name>
     <synonym>
@@ -210,6 +194,22 @@
       <key>ru</key>
       <value>Титульный</value>
     </synonym>
+  </templates>
+  <templates uuid="d0043a8e-c2b4-4005-afdb-e86a2cd54c22">
+    <name>ШаблонБанка2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон Банка России</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="c718f82b-cf31-4e3d-a584-f14385598b03">
+    <name>ШаблонБанка2021Кв1_Тест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон Банка России</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="6bc57691-bd59-436f-a45c-d7e4de4f3f2f">
     <name>ШаблонБанка2023Кв3</name>

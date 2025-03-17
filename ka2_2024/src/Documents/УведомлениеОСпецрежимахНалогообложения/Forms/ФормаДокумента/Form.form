@@ -251,6 +251,73 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>СсылкаНового</name>
+    <title>
+      <key>ru</key>
+      <value>Ссылка нового</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>DocumentRef.УведомлениеОСпецрежимахНалогообложения</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПереданаСсылкаНового</name>
+    <title>
+      <key>ru</key>
+      <value>Передана ссылка нового</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтруктураРеквизитовФормы</name>
+    <title>
+      <key>ru</key>
+      <value>Структура реквизитов формы</value>
+    </title>
+    <id>15</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>АдресДанныхПечати</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес данных печати</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>

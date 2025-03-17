@@ -206,6 +206,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.ВниманиеКрасный</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -2033,6 +2037,10 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>Document.ПоступлениеБезналичныхДенежныхСредств.StandardCommand.CreateBasedOn</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Document.ЗаявлениеОВвозеТоваровПолученное.StandardCommand.CreateBasedOn</command>
         <userVisible/>
       </cmiFragmentRecord>
     </commandBar>

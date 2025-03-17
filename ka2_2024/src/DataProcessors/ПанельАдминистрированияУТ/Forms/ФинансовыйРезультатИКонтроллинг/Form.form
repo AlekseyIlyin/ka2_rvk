@@ -4492,7 +4492,7 @@
         <id>2765</id>
         <title>
           <key>ru</key>
-          <value>Использовать исправительные документы</value>
+          <value>Исправление и сторно финансовых документов</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -4956,6 +4956,10 @@
         <items xsi:type="form:FormField">
           <name>ИспользоватьПроверкуФинансовыхДокументов</name>
           <id>3099</id>
+          <title>
+            <key>ru</key>
+            <value>Проверка финансовых документов</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -5389,7 +5393,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ГруппаИспользоватьМониторингЦелевыхПоказателейЛево</name>
+      <name>ЛокализацияГруппаИспользоватьМониторингЦелевыхПоказателейЛево</name>
       <id>2482</id>
       <items xsi:type="form:Button">
         <name>ВосстановитьПоставляемуюМодельПоказателей</name>
@@ -5438,13 +5442,8 @@
         <value>Группа открыть варианты отчетов</value>
       </title>
       <extendedTooltip>
-        <name>ГруппаИспользоватьМониторингЦелевыхПоказателейЛевоРасширеннаяПодсказка</name>
+        <name>ЛокализацияГруппаИспользоватьМониторингЦелевыхПоказателейЛевоРасширеннаяПодсказка</name>
         <id>2483</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

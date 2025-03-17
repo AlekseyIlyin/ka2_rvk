@@ -83,6 +83,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.ВходящееИсходящееОбменСБанками</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -369,6 +373,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.Скрепка</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -394,10 +402,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>ДеревоПисемСтрокаПоиска</name>
       <id>5</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>ДеревоПисемСтрокаПоискаРасширеннаяПодсказка</name>
         <id>7</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -412,7 +420,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>ДеревоПисемСтрокаПоискаКонтекстноеМеню</name>
         <id>6</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -432,10 +440,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>ДеревоПисемСостояниеПросмотра</name>
       <id>11</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>ДеревоПисемСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>13</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -450,7 +458,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>ДеревоПисемСостояниеПросмотраКонтекстноеМеню</name>
         <id>12</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -471,10 +479,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>Addition</name>
+      <name>ДеревоПисемУправлениеПоиском</name>
       <id>8</id>
       <extendedTooltip>
-        <name>ExtendedTooltip</name>
+        <name>ДеревоПисемУправлениеПоискомРасширеннаяПодсказка</name>
         <id>10</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -489,7 +497,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ContextMenu</name>
+        <name>ДеревоПисемУправлениеПоискомКонтекстноеМеню</name>
         <id>9</id>
         <visible>true</visible>
         <enabled>true</enabled>

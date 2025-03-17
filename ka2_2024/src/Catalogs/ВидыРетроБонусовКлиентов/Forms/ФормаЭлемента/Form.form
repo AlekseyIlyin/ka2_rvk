@@ -265,7 +265,7 @@
         <name>ГруппаПоказателиПродаж</name>
         <id>69</id>
         <items xsi:type="form:FormField">
-          <name>ПоказательПродаж</name>
+          <name>ПоказательТоваров</name>
           <id>19</id>
           <title>
             <key>ru</key>
@@ -278,7 +278,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ПоказательПродаж</segments>
+            <segments>Объект.ПоказательТоваров</segments>
           </dataPath>
           <toolTip>
             <key>ru</key>
@@ -292,16 +292,11 @@
           <toolTipRepresentation>Button</toolTipRepresentation>
           <handlers>
             <event>OnChange</event>
-            <name>ПоказательПродажПриИзменении</name>
+            <name>ПоказательТоваровПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>ПоказательПродажРасширеннаяПодсказка</name>
+            <name>ПоказательТоваровРасширеннаяПодсказка</name>
             <id>21</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -310,13 +305,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПоказательПродажКонтекстноеМеню</name>
+            <name>ПоказательТоваровКонтекстноеМеню</name>
             <id>20</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -698,9 +688,28 @@
           <maxWidth>29</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <listChoiceMode>true</listChoiceMode>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Пропорционально выручке</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ПорядкиРаспределенияРетроБонусов.EnumValue.ПропорциональноВыручке</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>FIFO</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ПорядкиРаспределенияРетроБонусов.EnumValue.FIFO</value>
+            </value>
+          </choiceList>
         </extInfo>
       </items>
       <visible>true</visible>

@@ -452,6 +452,10 @@
         <valuesPicture xsi:type="core:PictureRef">
           <picture>CommonPicture.КоллекцияСкрепка</picture>
         </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
         <fileDragMode>AsFileRef</fileDragMode>
       </extInfo>
     </items>
@@ -2044,6 +2048,14 @@
       <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
         <dataPath>ДополнительныеРеквизиты</dataPath>
         <field>ДополнительныеРеквизиты</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Дополнительные реквизиты</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Ссылка</dataPath>
@@ -2416,6 +2428,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИдентификаторЦепочки</dataPath>
         <field>ИдентификаторЦепочки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДоговорыСоглашения</dataPath>
+        <field>ДоговорыСоглашения</field>
       </fields>
       <parameters>
         <name>ДействующиеРедакции</name>

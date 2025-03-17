@@ -11,6 +11,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Оплачен</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>ОплаченПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>ОплаченРасширеннаяПодсказка</name>
       <id>20</id>
@@ -427,6 +431,7 @@
     <name>ПриСозданииНаСервере</name>
   </handlers>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
@@ -602,6 +607,23 @@
       <itemValueType/>
     </extInfo>
   </attributes>
+  <attributes>
+    <name>ПервичныйДокументДоступенЕслиОплачен</name>
+    <title>
+      <key>ru</key>
+      <value>Первичный документ доступен если оплачен</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Готово</name>
     <title>
@@ -674,6 +696,12 @@
   <parameters>
     <name>Организация</name>
     <valueType/>
+  </parameters>
+  <parameters>
+    <name>ПервичныйДокументДоступенЕслиОплачен</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
   </parameters>
   <commandInterface>
     <navigationPanel/>

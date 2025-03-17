@@ -1,9 +1,9 @@
 <Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Structure">
 	<Property name="Версия">
-		<Value xsi:type="xs:decimal">36</Value>
+		<Value xsi:type="xs:decimal">37</Value>
 	</Property>
 	<Property name="ОписаниеВерсии">
-		<Value xsi:type="xs:string">Изменение ключевой ставки с 16.09.2024 в соответствии с Информацией Банка России от 13.09.2024.</Value>
+		<Value xsi:type="xs:string">Изменение ключевой ставки с 28.10.2024 в соответствии с Информацией Банка России от 25.10.2024.</Value>
 	</Property>
 	<Property name="ПолноеИмя">
 		<Value xsi:type="xs:string">РегистрСведений.СтавкаРефинансированияЦБ</Value>
@@ -356,6 +356,10 @@
 			<row>
 				<Value>2024-09-16T00:00:00</Value>
 				<Value>19</Value>
+			</row>
+			<row>
+				<Value>2024-10-28T00:00:00</Value>
+				<Value>21</Value>
 			</row>
 		</Value>
 	</Property>

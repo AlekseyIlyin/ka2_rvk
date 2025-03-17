@@ -11,33 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="e86f9119-7ff0-4916-8595-a2dff12e3577">
-    <name>Форма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2014 1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="a222133f-ba4e-4da1-b018-0613fe379c9d">
-    <name>Форма2020_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сообщение о создании обособленных подразделений </value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="e4d28b32-1583-4d74-83cb-a3ad95e118bd">
-    <name>Форма2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сообщение о создании обособленных подразделений </value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="9e814da4-88df-41af-b0e9-f3112364d0ef">
     <name>Форма2023_1</name>
     <synonym>
@@ -47,76 +20,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="44b9f321-8c7b-4795-b79d-0d410965e4a7">
-    <name>Форма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2014 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="bfee3cbe-0783-4d47-8618-aa0ee779c9a2">
-    <name>ПараметрыФорма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры форма2014 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="e17e1881-c5dc-420f-be24-77a226fc028a">
-    <name>СхемаВыгрузкиФорма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки форма2014 1</value>
-    </synonym>
-  </templates>
   <templates uuid="06c7866b-85d6-477c-9736-6fe045dd5c1f">
     <name>Печать_MXL_Форма2014_1</name>
     <synonym>
       <key>ru</key>
       <value>Форма С-09-3-1</value>
-    </synonym>
-  </templates>
-  <templates uuid="a307a22a-a2e8-4b0a-8453-29b0d608bb31">
-    <name>TIFF_2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>1111053_5.01000_01.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="4e60987a-7886-4693-9030-e2f383c35243">
-    <name>Титульная_2020</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="29cbde74-acde-4a29-9742-7ff15d4ee9fd">
-    <name>СведОП_2020</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="625930c2-631c-475e-8b90-62b8093e1023">
-    <name>СпискиВыбора2020_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора</value>
-    </synonym>
-  </templates>
-  <templates uuid="4658c0d9-e5a4-48f3-8fd4-45c5378ea5a2">
-    <name>TIFF_2020_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>1111053_5.03000_03.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="e87e940a-659d-4113-87a2-2e6bf72f0331">
-    <name>СхемаВыгрузкиФорма2020_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки</value>
     </synonym>
   </templates>
   <templates uuid="bbe9bdef-48c4-438c-98d3-d79e09fa77b7">
@@ -133,34 +41,6 @@
       <value>Печатный бланк</value>
     </synonym>
   </templates>
-  <templates uuid="827c06c4-ab7c-4cf4-953a-7611ab14472f">
-    <name>Титульная_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="6628e6c3-1561-4c73-8125-0bebc818d7cc">
-    <name>СведОП_2022</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экранная форма</value>
-    </synonym>
-  </templates>
-  <templates uuid="c5528189-c306-4477-b8d2-fda2f4ed7f91">
-    <name>СпискиВыбора2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора</value>
-    </synonym>
-  </templates>
-  <templates uuid="2ab4b05f-1962-40d2-b505-d307e4d88082">
-    <name>СхемаВыгрузкиФорма2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки</value>
-    </synonym>
-  </templates>
   <templates uuid="f397e153-3ba6-4fb0-b8e7-7e17d92884c0">
     <name>Печать_Форма2022_1_Титульная</name>
     <synonym>
@@ -174,14 +54,6 @@
       <key>ru</key>
       <value>Печатный бланк</value>
     </synonym>
-  </templates>
-  <templates uuid="503378b2-93a9-4d45-ac59-598313803390">
-    <name>TIFF_2022_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>1111053_5.04000_04.tif</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="901401a3-9391-4536-bc36-9bc8a21340b2">
     <name>Титульная_2023</name>

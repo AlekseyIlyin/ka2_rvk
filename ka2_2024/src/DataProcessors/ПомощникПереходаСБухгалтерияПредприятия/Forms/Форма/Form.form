@@ -1251,6 +1251,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ФлажокИКрестик</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -1390,6 +1394,10 @@
                   <valuesPicture xsi:type="core:PictureRef">
                     <picture>CommonPicture.ФлажокИКрестик</picture>
                   </valuesPicture>
+                  <border xsi:type="core:BorderDef">
+                    <style>Single</style>
+                    <width>1</width>
+                  </border>
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
@@ -1772,10 +1780,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ДеревоНастроекУчетаSearchString</name>
+              <name>ДеревоНастроекУчетаСтрокаПоиска</name>
               <id>1140</id>
               <extendedTooltip>
-                <name>ДеревоНастроекУчетаSearchStringExtendedTooltip</name>
+                <name>ДеревоНастроекУчетаСтрокаПоискаРасширеннаяПодсказка</name>
                 <id>1142</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1790,7 +1798,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ДеревоНастроекУчетаSearchStringContextMenu</name>
+                <name>ДеревоНастроекУчетаСтрокаПоискаКонтекстноеМеню</name>
                 <id>1141</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1810,10 +1818,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ДеревоНастроекУчетаViewStatus</name>
+              <name>ДеревоНастроекУчетаСостояниеПросмотра</name>
               <id>1143</id>
               <extendedTooltip>
-                <name>ДеревоНастроекУчетаViewStatusExtendedTooltip</name>
+                <name>ДеревоНастроекУчетаСостояниеПросмотраРасширеннаяПодсказка</name>
                 <id>1145</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1828,7 +1836,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ДеревоНастроекУчетаViewStatusContextMenu</name>
+                <name>ДеревоНастроекУчетаСостояниеПросмотраКонтекстноеМеню</name>
                 <id>1144</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1850,10 +1858,10 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <name>ДеревоНастроекУчетаSearchControl</name>
+              <name>ДеревоНастроекУчетаУправлениеПоиском</name>
               <id>1146</id>
               <extendedTooltip>
-                <name>ДеревоНастроекУчетаSearchControlExtendedTooltip</name>
+                <name>ДеревоНастроекУчетаУправлениеПоискомРасширеннаяПодсказка</name>
                 <id>1148</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1868,7 +1876,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ДеревоНастроекУчетаSearchControlContextMenu</name>
+                <name>ДеревоНастроекУчетаУправлениеПоискомКонтекстноеМеню</name>
                 <id>1147</id>
                 <visible>true</visible>
                 <enabled>true</enabled>

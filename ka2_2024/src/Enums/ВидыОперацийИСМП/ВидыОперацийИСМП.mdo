@@ -196,6 +196,13 @@
       <value>Ввод в оборот (ввоз в РФ из стран ЕАЭС)</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="af506bcd-666a-4d90-9319-c006c7eb8dcb">
+    <name>ВнутреннееПеремещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее перемещение</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="ede3f997-d28c-48a7-a64e-530147034765">
     <name>ВозвратВОборот</name>
     <synonym>
@@ -232,10 +239,10 @@
     </synonym>
   </enumValues>
   <enumValues uuid="7af5a5f0-723a-4b18-8b81-ee9b974694e1">
-    <name>ВозвратВОборотТовараВыведенногоДляСобственныхНужд</name>
+    <name>ВозвратВОборотТовараВыведенногоИзОборотаВЦеляхНеСвязанныхСРеализацией</name>
     <synonym>
       <key>ru</key>
-      <value>Возврат товара, выведенного из оборота для собственных нужд</value>
+      <value>Возврат товара, выведенного из оборота в целях, не связанных с их последующей реализацией</value>
     </synonym>
   </enumValues>
   <enumValues uuid="7d73cca2-64b0-49d6-8e18-2b7dd0f04448">
@@ -243,6 +250,27 @@
     <synonym>
       <key>ru</key>
       <value>Возврат товара, возвращенного покупателем, приобретавшим его в целях, не связанных с последующей реализацией</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6a2ab1b4-054d-4b0b-b114-090c993aedef">
+    <name>ВозвратТовараВОборотПоСделкеСГосТайной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат товара, выведенного из оборота для продажи по сделке с государственной тайной</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="03ec6758-932d-463b-bf1a-29d120c7fd40">
+    <name>ВскрытиеПотребительскойУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вскрытие потребительской упаковки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="215b691a-5f34-4f2e-8b64-94dfdd37e2af">
+    <name>ВскрытиеПотребительскойУпаковкиРасчетСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение к оборудованию розлива (расчет статуса)</value>
     </synonym>
   </enumValues>
   <enumValues uuid="f4db0499-f7bb-431e-9900-00ce38a93ab5">
@@ -287,6 +315,14 @@
       <value>Вывод из оборота (Дистанционная продажа)</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="d4a6dd94-f3c3-4c8d-b23d-5c745709dd68">
+    <name>ВыводИзОборотаДляЦелейВРозницу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод из оборота (розничная продажа без применения ККТ)</value>
+    </synonym>
+    <comment>Для документа Вывод из оборота</comment>
+  </enumValues>
   <enumValues uuid="14e58c1b-d754-4f61-a7db-9882d77cf3b3">
     <name>ВыводИзОборотаДругиеПричины</name>
     <synonym>
@@ -299,6 +335,13 @@
     <synonym>
       <key>ru</key>
       <value>Вывод из оборота (другое)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6613fb82-4530-4f78-b250-2423c725efcd">
+    <name>ВыводИзОборотаИспользованиеДляВетеринарногоПрименения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод из оборота (Для ветеринарного применения)</value>
     </synonym>
   </enumValues>
   <enumValues uuid="8e29ac99-fe9b-4334-b7e4-d6426f2a1881">
@@ -440,6 +483,7 @@
       <key>ru</key>
       <value>Вывод из оборота (розничная продажа)</value>
     </synonym>
+    <comment>Для розничных продаж - чек, реализация</comment>
   </enumValues>
   <enumValues uuid="4b53ae81-7c33-4fb7-83d2-f6d363c465ec">
     <name>ВыводИзОборотаТестированиеПродукта</name>
@@ -672,6 +716,34 @@
       <value>Отгрузка трансграничная торговля аннулирование</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="6e980450-6813-4337-8294-a815330f55ed">
+    <name>ОтчетИСМПОтклоненияОбработаны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонения обработаны</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fab01f57-b92e-47f8-9988-dd99f00889c4">
+    <name>ОтчетИСМППолучениеРезультатаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение результата выгрузки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c337ae72-b407-4970-b720-de267373d6da">
+    <name>ОтчетИСМПСведенияОбОтклонениях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения об отклонениях</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="df8fff13-a365-45c4-9a40-5aaadb73e0dd">
+    <name>ОтчетИСМПСписокКИНаБалансе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список кодов маркировки</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="c5dba664-95ca-4378-8e9d-af936d208f9c">
     <name>ОтчетОбИспользованииКодовМаркировки</name>
     <synonym>
@@ -714,6 +786,48 @@
       <value>Перемаркировка</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="3e74c128-1cce-4382-afe3-c4834882f4e9">
+    <name>ПеремещениеМеждуМОД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между МОД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6013a810-1314-4c50-9690-38e03901bd8c">
+    <name>ПеремещениеМеждуМОДИсправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между МОД (исправление)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="59f4db77-152f-4d49-878c-f200e6ae6316">
+    <name>ПеремещениеМеждуМОДОтменаПредварительнойОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмена перемещение между МОД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8cc03bf2-6d4a-4823-960c-a4109cf5329b">
+    <name>ПеремещениеМеждуМОДПредварительнаяОтгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос разрешения на отгрузку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e4996bc-9a16-48a7-9dd3-defb42cfdc0b">
+    <name>ПеремещениеМеждуМОДФормированиеИПодписаниеТитулаПродавца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между МОД (предварительное сообщение)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="66966422-68ab-450b-b0e6-93a3cdf17c83">
+    <name>ПеремещениеМеждуМОДПредварительноеФормированиеТитулаПродавцаИПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между МОД (предварительное сообщение)</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="d6f83215-7244-4eea-971a-5d30053942d2">
     <name>ПовторноеПолучениеКодовМаркировкиИзСУЗ</name>
     <synonym>
@@ -726,20 +840,6 @@
     <synonym>
       <key>ru</key>
       <value>Повторное формирование сообщений</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="03ec6758-932d-463b-bf1a-29d120c7fd40">
-    <name>ВскрытиеПотребительскойУпаковки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вскрытие потребительской упаковки</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="215b691a-5f34-4f2e-8b64-94dfdd37e2af">
-    <name>ВскрытиеПотребительскойУпаковкиРасчетСтатуса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подключение к оборудованию розлива (расчет статуса)</value>
     </synonym>
   </enumValues>
   <enumValues uuid="4b1bbe00-5e99-4669-9b7d-1f38401de5bd">
@@ -987,39 +1087,18 @@
       <value>(не используется) Отчет о потере распечатанных КМ</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="df8fff13-a365-45c4-9a40-5aaadb73e0dd">
-    <name>ОтчетИСМПСписокКИНаБалансе</name>
+  <enumValues uuid="c0e7785d-9fc0-452b-b9e8-c45ec890b390">
+    <name>РазрешениеНаОтгрузку</name>
     <synonym>
       <key>ru</key>
-      <value>Список кодов маркировки</value>
+      <value>Разрешение на отгрузку</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="c337ae72-b407-4970-b720-de267373d6da">
-    <name>ОтчетИСМПСведенияОбОтклонениях</name>
+  <enumValues uuid="15dfb424-6b75-4569-9255-9be2e2f8e847">
+    <name>РазрешениеНаОтгрузкуАннулирование</name>
     <synonym>
       <key>ru</key>
-      <value>Сведения об отклонениях</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="fab01f57-b92e-47f8-9988-dd99f00889c4">
-    <name>ОтчетИСМППолучениеРезультатаВыгрузки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Получение результата выгрузки</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="6e980450-6813-4337-8294-a815330f55ed">
-    <name>ОтчетИСМПОтклоненияОбработаны</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отклонения обработаны</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="6613fb82-4530-4f78-b250-2423c725efcd">
-    <name>ВыводИзОборотаИспользованиеДляВетеринарногоПрименения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вывод из оборота (Для ветеринарного применения)</value>
+      <value>Отмена разрешения на отгрузку</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

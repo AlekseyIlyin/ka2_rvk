@@ -1204,46 +1204,16 @@
           <representation>Picture</representation>
         </extInfo>
       </items>
-      <items xsi:type="form:Button">
-        <name>СписокУстановитьСтатусКОплате</name>
-        <id>53</id>
-        <title>
-          <key>ru</key>
-          <value>Принять к оплате</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>СписокУстановитьСтатусКОплатеРасширеннаяПодсказка</name>
-          <id>80</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.УстановитьСтатусКОплате</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаУстановитьСтатус</name>
         <id>27</id>
         <items xsi:type="form:Button">
           <name>СписокУстановитьСтатусНеСогласовано</name>
           <id>28</id>
+          <title>
+            <key>ru</key>
+            <value>Не согласовано</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1275,6 +1245,10 @@
         <items xsi:type="form:Button">
           <name>СписокУстановитьСтатусСогласовано</name>
           <id>43</id>
+          <title>
+            <key>ru</key>
+            <value>Согласовано</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1304,8 +1278,46 @@
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
+          <name>СписокУстановитьСтатусКОплате</name>
+          <id>53</id>
+          <title>
+            <key>ru</key>
+            <value>К оплате</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокУстановитьСтатусКОплатеРасширеннаяПодсказка</name>
+            <id>80</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.УстановитьСтатусКОплате</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
           <name>СписокУстановитьСтатусОтклонена</name>
           <id>30</id>
+          <title>
+            <key>ru</key>
+            <value>Отклонена</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>

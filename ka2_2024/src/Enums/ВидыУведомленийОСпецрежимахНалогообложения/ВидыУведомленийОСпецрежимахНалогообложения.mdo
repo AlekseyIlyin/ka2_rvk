@@ -1026,7 +1026,7 @@
     <name>ВозвратНДФЛНПДБиоресурсы</name>
     <synonym>
       <key>ru</key>
-      <value>Заявление о возврате НДФЛ, НПД, сбора за биоресурсы</value>
+      <value>Заявление о возврате излишне уплаченных налогов, сборов, взносов, не учитываемых в совокупной обязанности</value>
     </synonym>
   </enumValues>
   <enumValues uuid="757fda1f-8f43-442d-bf63-75015becdc24">
@@ -1398,6 +1398,77 @@
     <synonym>
       <key>ru</key>
       <value>Снятие с учета иностранного лица в ФНС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4373d6d1-238a-499b-957e-039ce1969f47">
+    <name>ПриостановлениеВозобновлениеПониженныхТарифов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление о приостановлении (возобновлении) применения пониженных тарифов страховых взносов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fa2876d5-c900-4dca-923b-955c47c13300">
+    <name>ДополнительнаяИнформацияКЖалобе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные документы (информация) к жалобе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7826f376-60e5-49cf-9753-ae0546e662aa">
+    <name>ОтзывЖалобы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление об отзыве жалобы полностью или в части</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d95c2e4-56e9-4563-b52a-4689f9363c3f">
+    <name>ПриостановлениеИсполненияЖалобы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление о приостановлении исполнения обжалуемого решения полностью или частично</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="96a783ce-11f8-4105-a3d6-581ddaa3da25">
+    <name>ПриостановлениеРассмотренияЖалобы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ходатайство о приостановлении рассмотрения жалобы полностью или в части</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="114b973a-3880-4894-86be-4d3cc43ab14a">
+    <name>ВосстановлениеСрокаЖалобы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Восстановление срока жалобы</value>
+    </synonym>
+    <comment>Ходатайство о восстановлении пропущенного срока подачи жалобы</comment>
+  </enumValues>
+  <enumValues uuid="61cbbe73-1dff-49f0-908e-c8abf115b8bf">
+    <name>ВыборНОТуристическийНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление о выборе налогового органа, в который представляется налоговая декларация по туристическому налогу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eaf686ca-e813-4bd6-9448-6927cd13387d">
+    <name>ЗачетЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление о зачете суммы излишне уплаченного (взысканного) экологического сбора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0aefa9ba-61d9-4467-8334-6e90a345eb09">
+    <name>ВозвратЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление о возврате суммы излишне уплаченного (взысканного) экологического сбора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7b96c368-8e63-449a-8914-9597c73dfe66">
+    <name>СверкаЭкосбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление о проведении совместной сверки расчетов суммы экологического сбора</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

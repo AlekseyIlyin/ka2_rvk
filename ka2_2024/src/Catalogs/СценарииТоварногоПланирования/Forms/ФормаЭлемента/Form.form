@@ -1302,51 +1302,6 @@
         <titleLocation>None</titleLocation>
         <excludedCommands>CreateFolder</excludedCommands>
         <items xsi:type="form:FormField">
-          <name>СтруктураПлановЭтапПланирования</name>
-          <id>397</id>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>СтруктураПланов.ЭтапПланирования</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>СтруктураПлановЭтапПланированияРасширеннаяПодсказка</name>
-            <id>399</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>СтруктураПлановЭтапПланированияКонтекстноеМеню</name>
-            <id>398</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
           <name>СтруктураПлановВидПлана</name>
           <id>385</id>
           <title>

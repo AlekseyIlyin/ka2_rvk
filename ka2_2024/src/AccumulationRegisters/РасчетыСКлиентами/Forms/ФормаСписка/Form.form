@@ -1711,6 +1711,46 @@
       <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
     <items xsi:type="form:FormField">
+      <name>ОперацияВзаиморасчетов</name>
+      <id>139</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ОперацияВзаиморасчетов</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ОперацияВзаиморасчетовРасширеннаяПодсказка</name>
+        <id>141</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОперацияВзаиморасчетовКонтекстноеМеню</name>
+        <id>140</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>ХозяйственнаяОперация</name>
       <id>20</id>
       <visible>true</visible>
@@ -2114,6 +2154,7 @@
 	РасчетыСКлиентами.ПорядокЗачетаПоДатеПлатежа,
 	РасчетыСКлиентами.ВариантОплаты,
 	РасчетыСКлиентами.Сторно,
+	РасчетыСКлиентами.ОперацияВзаиморасчетов,
 	РасчетыСКлиентами.КорОбъектРасчетов,
 	РасчетыСКлиентами.КорАналитикаУчетаПоПартнерам,
 	РасчетыСКлиентами.ОбъектРасчетовПриемник,
@@ -2322,6 +2363,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ВалютаПриемник</dataPath>
         <field>ВалютаПриемник</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОперацияВзаиморасчетов</dataPath>
+        <field>ОперацияВзаиморасчетов</field>
       </fields>
     </extInfo>
   </attributes>

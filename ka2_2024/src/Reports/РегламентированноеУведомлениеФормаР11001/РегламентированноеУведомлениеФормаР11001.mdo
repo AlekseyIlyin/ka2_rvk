@@ -11,15 +11,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>CommonForm.ИнформацияОНевозможностиОткрытияУведомления</defaultForm>
-  <forms uuid="aa686c52-804a-4818-aa08-f6d88766f614">
-    <name>Форма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма2014 1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="6b0e83c1-cd12-482e-ad99-ac3332b07ad4">
     <name>Форма2020_4</name>
     <synonym>
@@ -29,11 +20,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="acb0ff4a-fd1d-481a-9e17-6a6925878ff8">
-    <name>TIFF_2014_1</name>
+  <templates uuid="9b95b921-cad7-49d4-94fa-f5b756f7adcf">
+    <name>БланкиПечати</name>
     <synonym>
       <key>ru</key>
-      <value>1111501_5.02000_06.tif</value>
+      <value>Бланки печати</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -44,188 +35,6 @@
       <value>1111501_5.03000_08.tif</value>
     </synonym>
     <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="185b126a-e618-41a2-8c68-2e60a8caecb7">
-    <name>Печать_Форма2014_1_Страница1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="d8dac7c8-636f-423c-aa24-7ac33a3a1977">
-    <name>Печать_Форма2014_1_Страница1_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="1580867f-18aa-478b-a27d-726b55572d0b">
-    <name>Печать_Форма2014_1_Страница1_2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="ced61267-620e-4db6-9580-61d94f582e25">
-    <name>Печать_Форма2014_1_Страница4</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="1fdccb37-1b00-4524-9b47-cff7a3aa609e">
-    <name>Печать_Форма2014_1_СтраницаА</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="d4dd7df1-bac2-4efa-99c4-1617a8a73387">
-    <name>Печать_Форма2014_1_СтраницаБ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="03d270cd-99e8-4da8-9557-fd32a6d5ec78">
-    <name>Печать_Форма2014_1_СтраницаВ1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="49028446-1e6a-4495-a6a6-35cebcaeb693">
-    <name>Печать_Форма2014_1_СтраницаВ2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="c476d745-197a-49b1-a00c-b2d10d515b34">
-    <name>Печать_Форма2014_1_СтраницаГ1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="d905a9e6-c0e7-42b1-8e67-4cd1a12de0b1">
-    <name>Печать_Форма2014_1_СтраницаГ2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="254743c6-515e-43e9-83fa-75caa21d98b0">
-    <name>Печать_Форма2014_1_СтраницаГ3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="5a81701b-6eb4-40a5-bfd9-49bae1dd2e4b">
-    <name>Печать_Форма2014_1_СтраницаД</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="bf0f94c4-b3c4-478c-a6d0-fb5b73da044a">
-    <name>Печать_Форма2014_1_СтраницаЕ1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="02d7d962-5ad9-4a05-8040-3734079eb451">
-    <name>Печать_Форма2014_1_СтраницаЕ2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="66717495-b352-439f-944c-c73c18cd0cbc">
-    <name>Печать_Форма2014_1_СтраницаЖ1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="15a400b8-92c0-4942-93d3-c9241c751a99">
-    <name>Печать_Форма2014_1_СтраницаЖ2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="fcc69f26-b6ce-4372-8e89-c958b2f84802">
-    <name>Печать_Форма2014_1_СтраницаЖ3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="9becb783-af96-4b37-b39a-ef5cf373676b">
-    <name>Печать_Форма2014_1_СтраницаЗ1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="1c138af0-08f6-46b4-92d0-e2905d6b4b55">
-    <name>Печать_Форма2014_1_СтраницаЗ2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="5f2dab0f-7b4d-49a6-9838-598fe2529fab">
-    <name>Печать_Форма2014_1_СтраницаИ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="1e3c9f31-7265-46dc-8d00-df80e155ba18">
-    <name>Печать_Форма2014_1_СтраницаК</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="06e23c6e-734f-4559-b07b-4cbafd395f86">
-    <name>Печать_Форма2014_1_СтраницаЛ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="49a5459c-b90f-4bec-a402-df20b06c36e5">
-    <name>Печать_Форма2014_1_СтраницаМ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="a71d5494-8ff7-4b08-b8d0-18feaf50cb8a">
-    <name>Печать_Форма2014_1_СтраницаН1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="38e93e9a-ad5b-49ca-898b-04ef82e74ccc">
-    <name>Печать_Форма2014_1_СтраницаН2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="3d14bdc0-80d8-4376-898b-ae7cb0bb283b">
-    <name>Печать_Форма2014_1_СтраницаН3</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма Р11001</value>
-    </synonym>
   </templates>
   <templates uuid="d290ac98-7d81-4927-a439-f1435af5b90a">
     <name>Печать_Форма2020_4_ЛистА_1</name>
@@ -367,25 +176,11 @@
       <value>МЧБ Форма Р11001 страница 4</value>
     </synonym>
   </templates>
-  <templates uuid="6fd8ba2e-628a-4cbf-895b-d168b0db7687">
-    <name>СпискиВыбора2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Списки выбора2014 1</value>
-    </synonym>
-  </templates>
   <templates uuid="893a8b30-b964-4b84-8b8c-486444870c12">
     <name>СпискиВыбора2020_4</name>
     <synonym>
       <key>ru</key>
       <value>Списки выбора формы Р11001</value>
-    </synonym>
-  </templates>
-  <templates uuid="015b653a-5311-440f-aac8-1c1c450fe790">
-    <name>СхемаВыгрузкиФорма2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки форма2014 1</value>
     </synonym>
   </templates>
   <templates uuid="5fb9d2dd-fb06-43d4-9639-dac12ff44531">
@@ -568,13 +363,6 @@
     <synonym>
       <key>ru</key>
       <value>Форма Р11001 страница 1</value>
-    </synonym>
-  </templates>
-  <templates uuid="5dae2564-3f9f-4063-baf9-3b11ae23496b">
-    <name>Форматы2014_1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форматы2014 1</value>
     </synonym>
   </templates>
   <templates uuid="58c401bf-a0d4-407c-8ab5-3ce836c5218a">

@@ -829,7 +829,7 @@
       <autoMaxHeight>true</autoMaxHeight>
       <extInfo xsi:type="form:PictureDecorationExtInfo">
         <picture xsi:type="core:PictureRef">
-          <picture>CommonPicture.Предупреждение</picture>
+          <picture>StdPicture.DialogExclamation</picture>
         </picture>
       </extInfo>
     </items>
@@ -1167,10 +1167,6 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Страна</segments>
           </dataPath>
-          <toolTip>
-            <key>ru</key>
-            <value>Страна адреса</value>
-          </toolTip>
           <handlers>
             <event>OnChange</event>
             <name>СтранаПриИзменении</name>
@@ -1253,7 +1249,7 @@
             </choiceParameters>
             <inputHint>
               <key>ru</key>
-              <value>Введите первые буквы названия страны</value>
+              <value>Выберите или введите название страны</value>
             </inputHint>
             <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
           </extInfo>
@@ -1274,10 +1270,6 @@
             <segments>НаселенныйПункт</segments>
           </dataPath>
           <defaultItem>true</defaultItem>
-          <toolTip>
-            <key>ru</key>
-            <value>Город, населенный пункт адреса</value>
-          </toolTip>
           <handlers>
             <event>OnChange</event>
             <name>НаселенныйПунктПриИзменении</name>
@@ -1338,7 +1330,7 @@
             <textEdit>true</textEdit>
             <inputHint>
               <key>ru</key>
-              <value>Введите первые буквы названия населенного пункта</value>
+              <value>Выберите или введите название населенного пункта</value>
             </inputHint>
           </extInfo>
         </items>
@@ -1359,7 +1351,7 @@
           </dataPath>
           <toolTip>
             <key>ru</key>
-            <value>Улица адреса</value>
+            <value>Введите первые буквы названия улицы</value>
           </toolTip>
           <handlers>
             <event>OnChange</event>
@@ -1420,10 +1412,6 @@
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
             <editTextUpdate>OnValueChange</editTextUpdate>
-            <inputHint>
-              <key>ru</key>
-              <value>Введите первые буквы названия улицы</value>
-            </inputHint>
           </extInfo>
         </items>
         <visible>true</visible>
@@ -3019,6 +3007,12 @@
             <multiLine>true</multiLine>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textColor xsi:type="core:ColorRef">
+              <color>Style.ПоясняющийТекст</color>
+            </textColor>
+            <borderColor xsi:type="core:ColorRef">
+              <color>Style.FormBackColor</color>
+            </borderColor>
           </extInfo>
         </items>
         <visible>true</visible>
@@ -3048,6 +3042,7 @@
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
           <group>Vertical</group>
+          <representation>WeakSeparation</representation>
           <showLeftMargin>true</showLeftMargin>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
@@ -4880,6 +4875,19 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ЦветПоясняющегоТекста</name>
+    <id>59</id>
+    <valueType>
+      <types>Color</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>КомандаОК</name>
     <title>
@@ -5199,10 +5207,6 @@
       <value>Отмена</value>
     </title>
     <id>6</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Команда отмена</value>
-    </toolTip>
     <use>
       <common>true</common>
     </use>

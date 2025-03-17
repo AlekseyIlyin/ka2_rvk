@@ -9,6 +9,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>НаправлениеДеятельности</dataPath>
 			<field>НаправлениеДеятельности</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаКонечныйОстатокКт</dataPath>
@@ -37,6 +40,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Подразделение</dataPath>
 			<field>Подразделение</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Валюта</dataPath>
@@ -125,6 +131,16 @@
 				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСвернутыйОборот</dataPath>
+			<field>СуммаСвернутыйОборот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма свернутый оборот</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ХозрасчетныйОстаткиИОбороты.Счет КАК Счет,
@@ -138,12 +154,20 @@
 	ХозрасчетныйОстаткиИОбороты.СуммаКонечныйОстатокКт КАК СуммаКонечныйОстатокКт,
 	ХозрасчетныйОстаткиИОбороты.СуммаКонечныйРазвернутыйОстатокДт КАК СуммаКонечныйРазвернутыйОстатокДт,
 	ХозрасчетныйОстаткиИОбороты.СуммаКонечныйРазвернутыйОстатокКт КАК СуммаКонечныйРазвернутыйОстатокКт,
-	ХозрасчетныйОстаткиИОбороты.Субконто1,
-	ХозрасчетныйОстаткиИОбороты.Субконто2,
-	ХозрасчетныйОстаткиИОбороты.Субконто3
+	ВЫБОР
+		КОГДА ХозрасчетныйОстаткиИОбороты.Счет.Вид = ЗНАЧЕНИЕ(ВидСчета.Активный)
+			ТОГДА -ХозрасчетныйОстаткиИОбороты.СуммаОборотДт
+		КОГДА ХозрасчетныйОстаткиИОбороты.Счет.Вид = ЗНАЧЕНИЕ(ВидСчета.Пассивный)
+			ТОГДА ХозрасчетныйОстаткиИОбороты.СуммаОборотКт
+		ИНАЧЕ ХозрасчетныйОстаткиИОбороты.СуммаОборот
+	КОНЕЦ КАК СуммаСвернутыйОборот,
+	ХозрасчетныйОстаткиИОбороты.Субконто1 КАК Субконто1,
+	ХозрасчетныйОстаткиИОбороты.Субконто2 КАК Субконто2,
+	ХозрасчетныйОстаткиИОбороты.Субконто3 КАК Субконто3,
+	ХозрасчетныйОстаткиИОбороты.Подразделение КАК Подразделение,
+	ХозрасчетныйОстаткиИОбороты.НаправлениеДеятельности КАК НаправлениеДеятельности
 ИЗ
-	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода,,, {(Счет В ИЕРАРХИИ (&amp;Счета))},
-		{(&amp;ВидыСубконто)}, Организация = &amp;Организация) КАК ХозрасчетныйОстаткиИОбороты</query>
+	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, , , {(Счет В ИЕРАРХИИ (&amp;Счета))}, {(&amp;ВидыСубконто)}, Организация = &amp;Организация) КАК ХозрасчетныйОстаткиИОбороты</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>ВидСчета</dataPath>
@@ -199,6 +223,10 @@
 		<dataPath>ВидСчета</dataPath>
 		<expression>ВидСчета</expression>
 		<group>Счет Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСвернутыйОборот</dataPath>
+		<expression>Сумма(СуммаСвернутыйОборот)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -353,6 +381,73 @@
 						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>СОБ</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Свернутые обороты</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Счет</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Субконто1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Субконто2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Субконто3</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаправлениеДеятельности</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидСчета</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСвернутыйОборот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаОборотДт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаОборотКт</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидыСубконто</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>

@@ -715,6 +715,271 @@
               </extInfo>
             </items>
             <items xsi:type="form:FormGroup">
+              <name>ГруппаЕжегодныеВычеты</name>
+              <id>199</id>
+              <items xsi:type="form:FormGroup">
+                <name>ЕжегодныйСтандартныйВычетГруппа</name>
+                <id>192</id>
+                <items xsi:type="form:FormField">
+                  <name>ЕжегодныеСтандартныеВычеты</name>
+                  <id>194</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>ЕжегодныйСтандартныйВычетИнфо</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>ЕжегодныеСтандартныеВычетыРасширеннаяПодсказка</name>
+                    <id>196</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ЕжегодныеСтандартныеВычетыКонтекстноеМеню</name>
+                    <id>195</id>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>LabelField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:LabelFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <height>3</height>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <verticalStretch>false</verticalStretch>
+                    <textColor xsi:type="core:ColorRef">
+                      <color>Style.ПоясняющийТекст</color>
+                    </textColor>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:Button">
+                  <name>ИсправитьЕжегодныйСтандартныйВычет</name>
+                  <id>197</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ИсправитьЕжегодныйСтандартныйВычетРасширеннаяПодсказка</name>
+                    <id>198</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>Hyperlink</type>
+                  <commandName>Form.Command.ИсправитьЕжегодныйСтандартныйВычет</commandName>
+                  <representation>Auto</representation>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <height>3</height>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <placementArea>UserCmds</placementArea>
+                  <representationInContextMenu>Auto</representationInContextMenu>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Ежегодный стандартный вычет группа</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Ежегодный стандартный вычет группа</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ЕжегодныйСтандартныйВычетГруппаРасширеннаяПодсказка</name>
+                  <id>193</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>ЕжегодныйСтандартныйВычетСдавшимГТОПрименятьС</name>
+                <id>189</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ЕжегодныйСтандартныйВычетПрименятьС</segments>
+                </dataPath>
+                <extendedTooltip>
+                  <name>ЕжегодныйСтандартныйВычетСдавшимГТОПрименятьСРасширеннаяПодсказка</name>
+                  <id>191</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ЕжегодныйСтандартныйВычетСдавшимГТОПрименятьСКонтекстноеМеню</name>
+                  <id>190</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>InputField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:InputFieldExtInfo">
+                  <width>10</width>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <horizontalStretch>false</horizontalStretch>
+                  <wrap>true</wrap>
+                  <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                  <chooseType>true</chooseType>
+                  <typeDomainEnabled>true</typeDomainEnabled>
+                  <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>ЕжегодныйСтандартныйВычетНалоговыйПериод</name>
+                <id>201</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ЕжегодныйСтандартныйВычетНалоговыйПериод</segments>
+                </dataPath>
+                <extendedTooltip>
+                  <name>ЕжегодныйСтандартныйВычетНалоговыйПериодРасширеннаяПодсказка</name>
+                  <id>203</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ЕжегодныйСтандартныйВычетНалоговыйПериодКонтекстноеМеню</name>
+                  <id>202</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>InputField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:InputFieldExtInfo">
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <wrap>true</wrap>
+                  <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                  <chooseType>true</chooseType>
+                  <typeDomainEnabled>true</typeDomainEnabled>
+                  <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>ЕжегодныйСтандартныйВычетСдавшимГТО</name>
+                <id>186</id>
+                <title>
+                  <key>ru</key>
+                  <value>Размер вычета</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ЕжегодныйСтандартныйВычетРазмерВычета</segments>
+                </dataPath>
+                <extendedTooltip>
+                  <name>ЕжегодныйСтандартныйВычетСдавшимГТОРасширеннаяПодсказка</name>
+                  <id>188</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ЕжегодныйСтандартныйВычетСдавшимГТОКонтекстноеМеню</name>
+                  <id>187</id>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>InputField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:InputFieldExtInfo">
+                  <width>10</width>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <wrap>true</wrap>
+                  <extendedEditMultipleValues>true</extendedEditMultipleValues>
+                  <chooseType>true</chooseType>
+                  <typeDomainEnabled>true</typeDomainEnabled>
+                  <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Ежегодные стандартные вычеты (ГТО)</value>
+              </title>
+              <extendedTooltip>
+                <name>ГруппаЕжегодныеВычетыРасширеннаяПодсказка</name>
+                <id>200</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <showTitle>true</showTitle>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
               <name>НовыеДокументыГруппа</name>
               <id>26</id>
               <items xsi:type="form:Button">
@@ -781,6 +1046,33 @@
                 <placementArea>UserCmds</placementArea>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
+              <items xsi:type="form:Button">
+                <name>ВвестиНовыеЕжегодныеСтандартныеВычеты</name>
+                <id>182</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ВвестиНовыеЕжегодныеСтандартныеВычетыРасширеннаяПодсказка</name>
+                  <id>183</id>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Hyperlink</type>
+                <commandName>Form.Command.ВвестиНовыеЕжегодныеСтандартныеВычеты</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>3</height>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -803,6 +1095,7 @@
               </extendedTooltip>
               <type>UsualGroup</type>
               <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>HorizontalIfPossible</group>
                 <showLeftMargin>true</showLeftMargin>
                 <united>true</united>
                 <throughAlign>Auto</throughAlign>
@@ -1899,6 +2192,32 @@
             </extendedTooltip>
             <type>Hyperlink</type>
             <commandName>Form.Command.ВвестиНовоеУведомлениеОПравеНаИмущественныйВычет</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ВвестиНовыеЕжегодныеСтандартныеВычеты1</name>
+            <id>184</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ВвестиНовыеЕжегодныеСтандартныеВычеты1РасширеннаяПодсказка</name>
+              <id>185</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Form.Command.ВвестиНовыеЕжегодныеСтандартныеВычеты</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4173,6 +4492,163 @@
     </edit>
     <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
   </attributes>
+  <attributes>
+    <name>ЕжегодныйСтандартныйВычетРазмерВычета</name>
+    <title>
+      <key>ru</key>
+      <value>Вычет ГТО</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ЕжегодныйСтандартныйВычетПрименятьС</name>
+    <title>
+      <key>ru</key>
+      <value>Вычет ГТО с</value>
+    </title>
+    <id>25</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеНалоговИВзносов</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ЕжегодныйСтандартныйВычет</name>
+    <title>
+      <key>ru</key>
+      <value>Ежегодный стандартный вычет</value>
+    </title>
+    <id>48</id>
+    <valueType>
+      <types>DocumentRef.ЕжегодныеСтандартныеВычеты</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ЕжегодныйСтандартныйВычетИнфо</name>
+    <title>
+      <key>ru</key>
+      <value>Заявление на предоставление ежегодных стандартных вычетов</value>
+    </title>
+    <id>49</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеНалоговИВзносов</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ЕжегодныйСтандартныйВычетНалоговыйПериод</name>
+    <title>
+      <key>ru</key>
+      <value>Налоговый период (год)</value>
+    </title>
+    <id>50</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеНалоговИВзносов</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+  </attributes>
   <formCommands>
     <name>ДоходыСПредыдущегоМестаРаботы</name>
     <title>
@@ -4498,6 +4974,57 @@
     </action>
     <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
     <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ВвестиНовыеЕжегодныеСтандартныеВычеты</name>
+    <title>
+      <key>ru</key>
+      <value>Ввести новый вычет ГТО</value>
+    </title>
+    <id>13</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести новые ежегодные стандартные вычеты</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВвестиНовыеЕжегодныеСтандартныеВычеты</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ИсправитьЕжегодныйСтандартныйВычет</name>
+    <title>
+      <key>ru</key>
+      <value>Исправить ежегодный стандартный вычет (ГТО)</value>
+    </title>
+    <id>14</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Исправить ежегодный стандартный вычет</value>
+    </toolTip>
+    <use>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеНалоговИВзносов</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ИсправитьЕжегодныйСтандартныйВычет</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <parameters>
     <name>АдресВХранилище</name>

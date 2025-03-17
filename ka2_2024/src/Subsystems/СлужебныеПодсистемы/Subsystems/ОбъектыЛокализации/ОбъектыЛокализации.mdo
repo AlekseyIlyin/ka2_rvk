@@ -1602,7 +1602,7 @@
   <content>CommonModule.ИнтеграцияЗЕРНОУТКлиентСервер</content>
   <content>CommonModule.УчетНДСРФКлиентСервер</content>
   <content>CommonPicture.КоллекцияСтатусовОбъектовТорговыхПлощадок</content>
-  <content>FunctionalOption.ПечататьОтдельныйСлипЧекЕГАИС</content>
+  <content>FunctionalOption.УдалитьПечататьОтдельныйСлипЧекЕГАИС</content>
   <content>InformationRegister.НастройкаПереходаНаФСБУ5</content>
   <content>Role.ДобавлениеИзменениеНастройкиПереходаНаФСБУ5</content>
   <content>Enum.ВидыСсылокСБП</content>
@@ -1615,7 +1615,7 @@
   <content>CommonModule.ОбменСКонтрагентамиУТВызовСервера</content>
   <content>CommonModule.ИнтерфейсДокументовЭДОУТКлиент</content>
   <content>StyleItem.ШрифтКомандИГиперссылок</content>
-  <content>Constant.ПечататьОтдельныйСлипЧекЕГАИС</content>
+  <content>Constant.УдалитьПечататьОтдельныйСлипЧекЕГАИС</content>
   <content>FunctionalOption.ПечататьОтдельныйСлипЧекЭквайринговойОперации</content>
   <content>Constant.ПечататьОтдельныйСлипЧекЭквайринговойОперации</content>
   <content>DataProcessor.ПомощникРаботыССамозанятыми</content>
@@ -1752,7 +1752,6 @@
   <content>ScheduledJob.ОчисткаИсторииОперацийОчередиЧеков</content>
   <content>ScheduledJob.РассылкаЭлектронныхЧеков</content>
   <content>CommonCommand.ОчередьЧековККТ</content>
-  <content>CommonCommand.СообщениеВТехническуюПоддержку</content>
   <content>CommonForm.КодВидаНоменклатурнойКлассификации</content>
   <content>CommonForm.НастройкаРегистрацииККТ</content>
   <content>CommonForm.ПодборСертификатовЭСНСПК</content>
@@ -1815,7 +1814,7 @@
   <content>CommonTemplate.ДрайверНЕВА54ФЗ4ФФД12_ru</content>
   <content>CommonTemplate.ДрайверПБФЭквайринговыеТерминалы_ru</content>
   <content>CommonTemplate.ДрайверРБСВесыCПечатьюЭтикеток_ru</content>
-  <content>CommonTemplate.ДрайверРБСВесыCПечатьюЭтикетокVenus</content>
+  <content>CommonTemplate.ДрайверРБСВесыCПечатьюЭтикетокVenus_ru</content>
   <content>CommonTemplate.ДрайверРусГардСчитывательМагнитныхКарт_ru</content>
   <content>CommonTemplate.ДрайверСервисПлюсВесыСПечатьюЭтикеток_ru</content>
   <content>CommonTemplate.ДрайверСервисПлюсЭлектронныеВесы_ru</content>
@@ -1833,7 +1832,7 @@
   <content>CommonTemplate.ДрайверШтрихМВесыСПечатьюЭтикетокШтрихПринтNG_ru</content>
   <content>CommonTemplate.ДрайверШтрихМККТ54ФЗ4ФФД12_517_ru</content>
   <content>CommonTemplate.ДрайверШтрихМККТ54ФЗ4ФФД12_ru</content>
-  <content>CommonTemplate.ДрайверШтрихМККТ54ФЗ4ФФД12NG_ru</content>
+  <content>CommonTemplate.ДрайверПОСЦентрККТ54ФЗ4ФФД12NG_ru</content>
   <content>CommonTemplate.ДрайверШтрихМПлатежныйТерминалYarus_ru</content>
   <content>CommonTemplate.ДрайверШтрихМЭлектронныеВесыPOS2_ru</content>
   <content>CommonTemplate.ДрайверЭвоторККТ54ФЗ_ru</content>
@@ -1877,10 +1876,10 @@
   <content>CommonModule.ОформлениеПередачиТоваровМеждуОрганизациямиКлиент</content>
   <content>CommonModule.ОформлениеПередачиТоваровМеждуОрганизациямиКлиентСервер</content>
   <content>CommonForm.ПроверкаКонтрольнойМаркиБПО</content>
-  <content>CommonModule.МенеджерОборудованияГлобальный</content>
   <content>CommonModule.МенеджерОборудованияМаркировкаКлиент</content>
   <content>Constant.СрокХраненияОперацийПроверкиКМ</content>
   <content>Constant.ХранитьУспешныеОперацииРазрешения</content>
+  <content>Constant.НастройкиОбменаНСПК</content>
   <content>InformationRegister.ОперацииПроверкиКМ</content>
   <content>ScheduledJob.ОчисткаИсторииОперацийПроверкиКМ</content>
   <content>CommonTemplate.ДрайверINVERSUMЭквайринговыеТерминалы_ru</content>
@@ -1891,9 +1890,20 @@
   <content>CommonCommand.ОбращениеВТехническуюПоддержкуФирмы1С</content>
   <content>CommonModule.ИнтернетПоддержкаПользователейУПКлиент</content>
   <content>Enum.ВидыДоходовИностранныхОрганизаций</content>
+  <content>Enum.ВариантыЗагрузкиОтчетаБанкаПоСБП</content>
   <content>Report.СправкаРасчетЗемельногоНалога</content>
   <content>CommonModule.ИнтеграцияСЯндексМаркетКлиентСервер</content>
   <content>XDTOPackage.MSC_TransfOrderAcc</content>
+  <content>AccumulationRegister.РНПТМатериаловВПроизводстве</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию</content>
+  <content>Role.ЧтениеПереносаРНПТМатериаловНаПродукцию</content>
+  <content>Role.ДобавлениеИзменениеПереносаРНПТМатериаловНаПродукцию</content>
+  <content>Role.ЧтениеРНПТМатериаловВПроизводстве</content>
+  <content>Report.ВедомостьПрослеживаемыхМатериаловВПроизводстве</content>
+  <content>CommonCommand.УчетРНПТВПроизводстве</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства</content>
+  <content>Role.ДобавлениеИзменениеВыбытияРНПТМатериаловИзПроизводства</content>
+  <content>Role.ЧтениеВыбытияРНПТМатериаловИзПроизводства</content>
   <content>InformationRegister.КрупнейшийНалогоплательщикИсторияРегистрацийВНалоговомОргане</content>
   <content>CommonModule.ИнтеграцияShareУТ</content>
   <content>CommonModule.ИнтеграцияСМаркетплейсамиПовтИсп</content>
@@ -1914,6 +1924,7 @@
   <content>CommonPicture.ВидПериодаМежотчетныйПериод</content>
   <content>FunctionalOption.ИспользуетсяОбменСЗарплатаИУправлениеПерсоналом</content>
   <content>DataProcessor.ПанельАдминистрированияБСД</content>
+  <content>CommonModule.СервисПрогнозированияПовтИсп</content>
   <content>InformationRegister.НастройкиУчетаНДСПриУСН</content>
   <content>CommonTemplate.ПФ_MXL_КорректировочныйСчетФактура1096</content>
   <content>CommonTemplate.ПФ_MXL_КорректировочныйСчетФактура1096Прослеж</content>
@@ -1930,6 +1941,34 @@
   <content>ScheduledJob.ЗагрузкаНеобработанныхЗаказовСТорговойПлощадки</content>
   <content>ScheduledJob.ОбновлениеСтатусовЗаказовТорговойПлощадки</content>
   <content>ScheduledJob.ПолучениеЭтикетокДляЗаказовТорговойПлощадки</content>
+  <content>Report.ОтчетСервисПрогнозированияВыгружаемыеДанные</content>
+  <content>InformationRegister.ИмпортируемыеТоварыТорговыхПлощадок</content>
   <content>CommonModule.ИнтеграцияСМаркетплейсамиСерверЛокализация</content>
+  <content>CommonPicture.Маг1СБиблиотекаЛоготип</content>
+  <content>CommonPicture.Маг1СБиблиотекаЛоготипПрозрачныйФон</content>
+  <content>Document.ЗаявлениеОВвозеТоваровПолученное</content>
+  <content>Catalog.ЗаявлениеОВвозеТоваровПолученноеПрисоединенныеФайлы</content>
+  <content>Role.ДобавлениеИзменениеЗаявленийОВвозеТоваровОтПокупателей</content>
+  <content>Role.ЧтениеЗаявленийОВвозеТоваровОтПокупателей</content>
+  <content>CommonPicture.СервисПрогнозированияПродажПромо</content>
+  <content>CommonModule.УчетОфшоров</content>
+  <content>CommonTemplate.ПереченьОфшоров</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводствеКлиент</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводстве</content>
+  <content>CommonModule.УчетПрослеживаемыхТоваровВПроизводствеВызовСервера</content>
+  <content>Role.ПросмотрОтчетаВедомостьПрослеживаемыхМатериаловВПроизводстве</content>
+  <content>DataProcessor.УправлениеПродажамиНаWB</content>
+  <content>CommonPicture.КрасныйПлюс</content>
+  <content>CommonPicture.ЛоготипWildberries</content>
+  <content>CommonPicture.ЛоготипЯндексМаркет2</content>
+  <content>CommonTemplate.КнигаПродаж1448</content>
+  <content>CommonTemplate.ДрайверMitsu54ФЗ4ФФД12_ru</content>
+  <content>CommonTemplate.ДрайверTACTILIONЭквайринговыеТерминалы_ru</content>
+  <content>CommonTemplate.ДрайверАТОЛККТ54ФЗ10XФФД12X_ru</content>
+  <content>CommonTemplate.ДрайверДримкасККТ54ФЗ44_ru</content>
+  <content>CommonModule.ЗаполнениеБухгалтерскойОтчетности2025Основная</content>
+  <content>DataProcessor.Помощь</content>
+  <content>CommonPicture.ПанельПомощь</content>
+  <content>CommonTemplate.ДрайверПОСЦентрККТ54ФЗ4ФФД12_ru</content>
   <parentSubsystem>Subsystem.СлужебныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

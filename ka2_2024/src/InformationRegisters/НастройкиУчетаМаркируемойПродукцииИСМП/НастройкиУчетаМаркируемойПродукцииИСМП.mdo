@@ -68,10 +68,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="13786027-758c-40e9-93e3-f70e8a8184b1">
-    <name>ДатаОбязательнойМаркировки</name>
+    <name>ДатаКонтрольПроизводства</name>
     <synonym>
       <key>ru</key>
-      <value>Дата обязательной маркировки</value>
+      <value>Дата контроля производства</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -86,11 +86,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="ad272df4-6cc5-480c-85c8-59956e82de9a">
-    <name>ДатаОбязательногоВключенияРазрешительногоРежима</name>
+  <resources uuid="b9d4a6ab-164a-4e85-b047-a3cd338d7aa5">
+    <name>ДатаКонтрольВыводИзОборота</name>
     <synonym>
       <key>ru</key>
-      <value>Дата обязательного включения разрешительного режима</value>
+      <value>Дата контроля при выводе из оборота</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -100,7 +100,132 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="68bb5385-6396-4544-b2fb-7a375d986da8">
+    <name>ДатаРозницаУведомительныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной проверки уведомительного режима (розница)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ad272df4-6cc5-480c-85c8-59956e82de9a">
+    <name>ДатаРозницаРазрешительныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной проверки разрешительного режима (розница)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5ee8aaa4-de22-4faf-bacc-673f36cc149a">
+    <name>ДатаРозницаЛокальныйРазрешительныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной локальной проверки разрешительного режима (розница)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="40b3db87-b572-4976-85c3-dd7eaf8274be">
+    <name>ДатаОптКонтрольПоштучно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной маркировки при продаже поштучно (опт)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b619ad7c-dede-488b-b546-637d81daa25f">
+    <name>ДатаОптКонтрольОСУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной маркировки при продаже по ОСУ (опт)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eeaf33e4-816b-4dc8-a1cc-2569d31abcfc">
+    <name>ДатаЗапретПродажиНемаркированныхОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запрета продажи немаркированных остатков</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="046d5d26-ea50-467c-9e11-4827420a48e4">
+    <name>ДатаПрослеживаемостьПеремещенияМеждуМОД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обязательной прослеживаемости перемещений между МОД</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>

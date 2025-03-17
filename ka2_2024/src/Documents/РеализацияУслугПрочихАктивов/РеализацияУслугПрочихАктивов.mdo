@@ -125,6 +125,7 @@
   <defaultObjectForm>Document.РеализацияУслугПрочихАктивов.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.РеализацияУслугПрочихАктивов.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Document.РеализацияУслугПрочихАктивов.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
   <sequenceFilling>AutoFillOff</sequenceFilling>
   <registerRecords>AccumulationRegister.ДвиженияПоНДС</registerRecords>
@@ -1450,6 +1451,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f176593b-7469-4272-82f8-36d1a06f9622">
+    <name>КодСпециальныхОбстоятельств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код специальных обстоятельств</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="c45f7c81-8b2e-40ab-b739-9ef101014e25">
     <name>ФормаДокумента</name>
     <synonym>
@@ -2091,6 +2110,11 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>ДатаСведений</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.РеализацияУслугПрочихАктивов.StandardAttribute.Date</field>
+      </choiceParameterLinks>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

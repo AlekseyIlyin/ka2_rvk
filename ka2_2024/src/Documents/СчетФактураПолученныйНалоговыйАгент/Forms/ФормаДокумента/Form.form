@@ -3256,6 +3256,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>Объект.ДокументыОснования.СуммаНДС</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>РасшифровкаСуммыСуммаНДСПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>РасшифровкаСуммыСуммаНДСРасширеннаяПодсказка</name>
               <id>636</id>

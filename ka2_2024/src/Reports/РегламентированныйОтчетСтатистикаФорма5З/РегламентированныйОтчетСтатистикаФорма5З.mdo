@@ -212,6 +212,14 @@
     </synonym>
     <comment>Дополнительные атрибуты для выгрузки в XML</comment>
   </templates>
+  <templates uuid="672599c2-b0e6-44be-a800-630920090c80">
+    <name>АтрибВыгрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атриб выгрузки XML2025 кв1</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
   <templates uuid="ed731fcf-a1ca-46ea-914a-b8258de2388c">
     <name>СхемаВыгрузкиXML2011Кв1</name>
     <synonym>
@@ -259,6 +267,13 @@
     <synonym>
       <key>ru</key>
       <value>Схема выгрузки XML 2014 кв. 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="c5b1cf31-1396-4d91-a357-274474c2321f">
+    <name>СхемаВыгрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2025 кв1</value>
     </synonym>
   </templates>
   <templates uuid="06b6b813-5524-49b4-b73f-32777e55399f">
@@ -317,11 +332,25 @@
       <value>Форма отчета2024 кв1 форма отчета</value>
     </synonym>
   </templates>
+  <templates uuid="5fcda22a-1052-4aa8-9a8b-f7493c5b54e8">
+    <name>ФормаОтчета2025Кв1_ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв1 форма отчета</value>
+    </synonym>
+  </templates>
   <templates uuid="e4aa9b2d-51f8-43d4-bcb3-9ff79f352a48">
     <name>МакетПереносаДанных2016Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Макет переноса данных2016 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="5a25c66b-c296-4292-bd71-5baca8238eb6">
+    <name>МакетПереносаДанных2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет переноса данных2025 кв1</value>
     </synonym>
   </templates>
   <templates uuid="3246cb31-fedd-4c59-b372-a34013031a47">
@@ -366,19 +395,26 @@
       <value>Состав показателей 2014 кв.1</value>
     </synonym>
   </templates>
-  <templates uuid="94ed1a37-2947-4047-801e-7f793755af8d">
-    <name>ШаблонРосстата2025Кв1</name>
+  <templates uuid="6d926c36-8d61-45fb-a782-3a8dc12e1818">
+    <name>СоставПоказателей2025Кв1</name>
     <synonym>
       <key>ru</key>
-      <value>Шаблон росстата2025 кв1</value>
+      <value>Состав показателей 2014 кв.1</value>
     </synonym>
-    <templateType>BinaryData</templateType>
   </templates>
   <templates uuid="059c1661-73a9-49c4-ad3c-cae6a100646d">
     <name>ШаблонРосстата2024Кв1</name>
     <synonym>
       <key>ru</key>
       <value>Шаблон росстата2024 кв1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="94ed1a37-2947-4047-801e-7f793755af8d">
+    <name>ШаблонРосстата2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон росстата2025 кв1</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
@@ -414,6 +450,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="2d4bfb56-1b9f-476d-bf10-b326080ea99d">
+    <name>НастройкиЗагрузкиXML2025Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки из файла XML 2016 (кв.1)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="5d15ae38-04eb-4164-ba99-25a459e91b3b">
     <name>НастройкиСравнения2016Кв1</name>
     <synonym>
@@ -435,50 +479,6 @@
     <synonym>
       <key>ru</key>
       <value>Настройки сравнения отчетов 2016 (кв.1)</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="672599c2-b0e6-44be-a800-630920090c80">
-    <name>АтрибВыгрузкиXML2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Атриб выгрузки XML2025 кв1</value>
-    </synonym>
-    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
-  </templates>
-  <templates uuid="c5b1cf31-1396-4d91-a357-274474c2321f">
-    <name>СхемаВыгрузкиXML2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема выгрузки XML2025 кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="5fcda22a-1052-4aa8-9a8b-f7493c5b54e8">
-    <name>ФормаОтчета2025Кв1_ФормаОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма отчета2025 кв1 форма отчета</value>
-    </synonym>
-  </templates>
-  <templates uuid="5a25c66b-c296-4292-bd71-5baca8238eb6">
-    <name>МакетПереносаДанных2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Макет переноса данных2025 кв1</value>
-    </synonym>
-  </templates>
-  <templates uuid="6d926c36-8d61-45fb-a782-3a8dc12e1818">
-    <name>СоставПоказателей2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состав показателей 2014 кв.1</value>
-    </synonym>
-  </templates>
-  <templates uuid="2d4bfb56-1b9f-476d-bf10-b326080ea99d">
-    <name>НастройкиЗагрузкиXML2025Кв1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки загрузки из файла XML 2016 (кв.1)</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

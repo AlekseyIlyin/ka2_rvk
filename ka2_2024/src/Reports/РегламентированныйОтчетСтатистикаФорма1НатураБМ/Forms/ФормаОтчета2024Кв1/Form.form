@@ -2602,17 +2602,15 @@
         </edit>
       </columns>
       <columns>
-        <name>ФильтрОКПД</name>
+        <name>Ключ</name>
         <title>
           <key>ru</key>
-          <value>Фильтр ОКПД</value>
+          <value>Ключ</value>
         </title>
-        <id>3</id>
+        <id>4</id>
         <valueType>
           <types>String</types>
-          <stringQualifiers>
-            <length>20</length>
-          </stringQualifiers>
+          <stringQualifiers/>
         </valueType>
         <view>
           <common>true</common>
@@ -3152,7 +3150,7 @@
       <valueType>
         <types>String</types>
         <stringQualifiers>
-          <length>250</length>
+          <length>5</length>
         </stringQualifiers>
       </valueType>
       <view>
@@ -3248,8 +3246,8 @@
       <valueType>
         <types>Number</types>
         <numberQualifiers>
-          <precision>17</precision>
-          <scale>2</scale>
+          <precision>18</precision>
+          <scale>3</scale>
         </numberQualifiers>
       </valueType>
       <view>
@@ -3387,7 +3385,7 @@
       <valueType>
         <types>String</types>
         <stringQualifiers>
-          <length>250</length>
+          <length>5</length>
         </stringQualifiers>
       </valueType>
       <view>
@@ -3756,7 +3754,7 @@
       <valueType>
         <types>String</types>
         <stringQualifiers>
-          <length>250</length>
+          <length>5</length>
         </stringQualifiers>
       </valueType>
       <view>
@@ -4041,7 +4039,7 @@
       <valueType>
         <types>String</types>
         <stringQualifiers>
-          <length>250</length>
+          <length>5</length>
         </stringQualifiers>
       </valueType>
       <view>
@@ -4319,6 +4317,24 @@
         <value>Название</value>
       </title>
       <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Ключ</name>
+      <title>
+        <key>ru</key>
+        <value>Ключ</value>
+      </title>
+      <id>3</id>
       <valueType>
         <types>String</types>
         <stringQualifiers/>

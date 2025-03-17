@@ -287,10 +287,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="15f142c6-bc98-4a5d-a385-501355a92aed">
-    <name>НормативОтчисленийВРезерв</name>
+    <name>НормативОтчисленийВРезервБУ</name>
     <synonym>
       <key>ru</key>
-      <value>Ежемесячный процент отчислений БУ</value>
+      <value>Ежемесячный процент отчислений (БУ)</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -302,6 +302,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -310,7 +311,7 @@
     <name>ПредельнаяВеличинаОтчисленийВРезервНУ</name>
     <synonym>
       <key>ru</key>
-      <value>Предельная сумма отчислений в резерв НУ</value>
+      <value>Предельная сумма отчислений в резерв (НУ)</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -322,6 +323,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -406,6 +408,112 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9fe7a7e5-3456-45d2-94e8-b3bde21189a5">
+    <name>ПериодВыплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период выплаты</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e513bc58-4755-42c5-87ad-aab48bdf3fb9">
+    <name>НормативОтчисленийВРезервНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ежемесячный процент отчислений (НУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dd2573f9-3073-42ab-9601-51dcec5e119d">
+    <name>ПредельнаяВеличинаОтчисленийВРезервБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предельная сумма отчислений в резерв (БУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="73e2c30b-8961-4ec7-9e1e-e45a38bb3532">
+    <name>ОграничиватьНачислениеПредельнойСуммойБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничивать начисление предельной суммой БУ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="126d2a93-fa8b-4af0-9ce9-5c9c60909159">
+    <name>ОпределятьИзлишкиЕжемесячноБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определять излишки ежемесячно БУ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45b2c197-f6c1-4ea3-9788-1bfac5d60791">
+    <name>ОпределятьИзлишкиЕжемесячноНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определять излишки ежемесячно НУ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

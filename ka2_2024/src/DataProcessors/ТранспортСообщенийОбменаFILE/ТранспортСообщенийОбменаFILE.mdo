@@ -29,6 +29,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="11cf336e-7890-4972-bf71-32d7416ff647">
+    <name>СжиматьФайлИсходящегоСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сжимать файл исходящего сообщения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="4c4d61a6-6bb6-4a15-9a81-25fdcf96ec4b">
     <name>ПарольАрхиваСообщенияОбмена</name>
     <synonym>
@@ -38,18 +50,6 @@
     <type>
       <types>String</types>
       <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="11cf336e-7890-4972-bf71-32d7416ff647">
-    <name>СжиматьФайлИсходящегоСообщения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сжимать файл исходящего сообщения</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

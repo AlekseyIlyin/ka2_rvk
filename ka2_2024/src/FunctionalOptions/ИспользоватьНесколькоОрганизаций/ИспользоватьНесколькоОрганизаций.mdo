@@ -387,12 +387,14 @@
   <content>DataProcessor.ПомощникРаботыССамозанятыми.Attribute.Организация</content>
   <content>Document.ИзменениеУсловийПередачиВАренду.Attribute.Организация</content>
   <content>Document.ВводОстатковИнвестицииВАренду.Attribute.Организация</content>
+  <content>AccumulationRegister.РНПТМатериаловВПроизводстве.Dimension.Организация</content>
+  <content>Document.ПереносРНПТМатериаловНаПродукцию.Attribute.Организация</content>
+  <content>Document.ВыбытиеРНПТМатериаловИзПроизводства.Attribute.Организация</content>
   <content>Document.НачислениеРетроБонусовКлиента.Attribute.Организация</content>
   <content>AccumulationRegister.РетроБонусыКлиентов.Dimension.Организация</content>
   <content>Document.СписаниеРетроБонусовКлиента.Attribute.Организация</content>
   <content>Document.УсловияРетроБонусовКлиентов.Attribute.Организация</content>
   <content>Document.ВводОстатковУзловКомпонентовАмортизации.Attribute.Организация</content>
-  <content>Catalog.ВидыНоменклатуры.Attribute.ОсобенностьУчета</content>
   <content>Document.ВводОстатковПоФинансовымИнструментам.Attribute.Организация</content>
   <content>Document.ВводОстатковТоваров.Attribute.Организация</content>
   <content>Document.ВводОстатковДенежныхСредств.Attribute.Организация</content>
@@ -409,4 +411,11 @@
   <content>InformationRegister.РетроБонусыКлиентовПериодыНачислений.Dimension.Организация</content>
   <content>InformationRegister.РетроБонусыКлиентовУсловия.Dimension.Организация</content>
   <content>DataProcessor.ГрупповоеНачислениеРетроБонусовКлиентов.Attribute.Организация</content>
+  <content>Document.СписаниеРетроБонусовПоставщика.Attribute.Организация</content>
+  <content>InformationRegister.РетроБонусыПоставщиковУсловия.Dimension.Организация</content>
+  <content>Document.УсловияРетроБонусовПоставщика.Attribute.Организация</content>
+  <content>Document.НачислениеРетроБонусовПоставщика.Attribute.Организация</content>
+  <content>Document.АктПремииПоставщика.Attribute.Организация</content>
+  <content>AccumulationRegister.РетроБонусыПоставщиков.Dimension.Организация</content>
+  <content>Document.ЗаявлениеОВвозеТоваровПолученное.Attribute.Организация</content>
 </mdclass:FunctionalOption>

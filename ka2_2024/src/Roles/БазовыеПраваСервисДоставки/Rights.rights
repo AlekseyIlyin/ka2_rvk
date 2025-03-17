@@ -18,24 +18,21 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.РазрешитьВводАдресовДоставкиВСвободнойФорме</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ДанныеНаложенныхПлатежейСервисДоставки</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -75,10 +72,17 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Resource.ДатаПоследнегоИзменения</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Resource.ДатаПоследнегоИзменения</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.СервисДоставки.Command.ОтражениеДоставки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -128,7 +132,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Dimension.ШагЗагрузки</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Dimension.ШагЗагрузки</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -156,7 +160,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Resource.Состояние</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Resource.Состояние</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -208,6 +212,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Продажи.Subsystem.СервисДоставки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеНаложенныхПлатежейСервисДоставки.Dimension.ОрганизацияБизнесСети</name>
 		<right>
 			<name>Edit</name>
@@ -234,7 +245,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Attribute.ИдентификаторДокумента</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Attribute.УдалитьИдентификаторДокумента</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -270,10 +281,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ИспользоватьСервис1ССДЭК</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СоответствиеОбъектовСервисовДоставки.Dimension.ТипОбъекта</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.СервисДоставки.Command.СписокЗаказов1ССДЭК</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -284,14 +313,33 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Dimension.ОрганизацияБизнесСети</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Dimension.ОрганизацияБизнесСети</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.Attribute.ДатаРегистрацииПлатежа</name>
+		<name>InformationRegister.ДанныеЧастичнойДоставкиСервисДоставки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.Attribute.ДатаРегистрации</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -301,6 +349,36 @@
 		<name>DataProcessor.СервисДоставки</name>
 		<right>
 			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналЗаказовСервисДоставки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ИспользоватьНаложенныеПлатежиСервис1ССДЭК</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -345,39 +423,47 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.StandardAttribute.Active</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.StandardAttribute.LineNumber</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.StandardAttribute.LineNumber</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.StandardAttribute.Recorder</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.StandardAttribute.Recorder</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостоянияЗагрузкиНаложенныхПлатежейСервисДоставки.StandardAttribute.Period</name>
+		<name>InformationRegister.СостоянияСинхронизацииСервисДоставки.StandardAttribute.Period</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -416,7 +502,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ИспользоватьНаложенныеПлатежиСервисДоставки</name>
+		<name>Constant.ИспользоватьНаложенныеПлатежиСервис1СКурьер</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

@@ -9,7 +9,6 @@
     <key>ru</key>
     <value>Досье контрагента</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <defaultForm>Report.ДосьеКонтрагента.Form.Форма</defaultForm>
   <forms uuid="8c1a0b0c-3618-4e66-98b8-8b9e7ca63ca2">
     <name>Форма</name>
@@ -90,20 +89,4 @@
       <value>Ошибки отчета</value>
     </synonym>
   </templates>
-  <commands uuid="17bc1760-fcd9-4c86-a7bd-89c7883f1abe">
-    <name>Досье</name>
-    <synonym>
-      <key>ru</key>
-      <value>Досье</value>
-    </synonym>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DefinedType.КонтрагентБИП</types>
-    </commandParameterType>
-    <representation>Auto</representation>
-    <toolTip>
-      <key>ru</key>
-      <value>Информация о контрагенте из ЕГРЮЛ (ЕГРИП)</value>
-    </toolTip>
-  </commands>
 </mdclass:Report>

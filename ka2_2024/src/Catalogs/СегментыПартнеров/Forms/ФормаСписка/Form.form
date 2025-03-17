@@ -1050,14 +1050,6 @@
         </dataPath>
         <skipOnInput>false</skipOnInput>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Create</excludedCommands>
-        <excludedCommands>CreateFolder</excludedCommands>
-        <excludedCommands>HierarchicalList</excludedCommands>
-        <excludedCommands>LevelDown</excludedCommands>
-        <excludedCommands>LevelUp</excludedCommands>
-        <excludedCommands>List</excludedCommands>
-        <excludedCommands>MoveItem</excludedCommands>
-        <excludedCommands>Tree</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СписокЗапретаОтгрузкиНаименование</name>
           <id>51</id>
@@ -1471,7 +1463,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СписокЗапретаОтгрузки.StandardCommand.Copy</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>

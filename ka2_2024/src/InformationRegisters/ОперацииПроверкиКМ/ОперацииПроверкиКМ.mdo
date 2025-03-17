@@ -259,6 +259,150 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="701be01b-b4e6-4042-b8b9-b9a1fbdc5f84">
+    <name>ПродажаРазрешена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа разрешена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ac04ecfb-7904-4b08-bde5-4f40a051bdf7">
+    <name>ПричинаЗапрета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина запрета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7b93612c-41b5-451f-ad20-a89373411018">
+    <name>ДополнительныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные сведения</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="af191b56-2fd6-4ab6-8c74-d85edddfdae4">
+    <name>ИдентификаторЗапросаЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор запроса ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="2a040a5b-658b-4a13-9463-fc2edcef7877">
+    <name>ПодписьЧекаЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подпись чека ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cd765452-1def-4b14-9aaa-610cae35b56d">
+    <name>ВходящееСообщениеЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящее сообщение ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СообщениеЕГАИСвБПО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fd28ddd8-c6cc-40d5-9b48-225e3a37adfe">
+    <name>ИсходящееСообщениеЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящее сообщение ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СообщениеЕГАИСвБПО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9375dde8-d7b9-4ad9-b501-c9806e555f08">
+    <name>СообщениеПереданоЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение передано ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="51fb98a8-3d69-4c28-a278-dda8bc997717">
+    <name>ТекстОшибкиЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <attributes uuid="8ec66b68-dbe9-42ec-923e-5ff8109ade18">
     <name>Дата</name>
     <synonym>
@@ -408,7 +552,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>100</length>
+        <length>210</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -416,9 +560,7 @@
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
   <forms uuid="55b9f6f5-b53e-4993-a8fb-1544574d9973">

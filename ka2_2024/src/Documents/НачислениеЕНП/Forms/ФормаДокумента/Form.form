@@ -659,6 +659,7 @@
           <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <mask>99999999999999999999</mask>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -2171,6 +2172,23 @@
           <common>true</common>
         </edit>
       </columns>
+      <columns>
+        <name>ВидПлатежаВБюджет</name>
+        <title>
+          <key>ru</key>
+          <value>Вид платежа в бюджет</value>
+        </title>
+        <id>26</id>
+        <valueType>
+          <types>EnumRef.ВидыПлатежейВГосБюджет</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
     </additionalColumns>
   </attributes>
   <attributes>
@@ -2274,10 +2292,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ТипыНалоговАгентскогоНДФЛ</name>
+    <name>ВидыНалогаАгентскийНДФЛ</name>
     <title>
       <key>ru</key>
-      <value>Типы налогов агентского НДФЛ</value>
+      <value>Виды налога агентский НДФЛ</value>
     </title>
     <id>23</id>
     <valueType/>
@@ -2301,6 +2319,49 @@
         <dateFractions>Date</dateFractions>
       </dateQualifiers>
     </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПорядокУплатыАвансовПоНалогуНаПрибыль</name>
+    <id>25</id>
+    <valueType>
+      <types>EnumRef.ПорядокУплатыАвансовПоНалогуНаПрибыль</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтатьиДоходовБюджетаРФ</name>
+    <title>
+      <key>ru</key>
+      <value>Статьи доходов бюджета РФ</value>
+    </title>
+    <id>26</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВидыНалогаПрибыль</name>
+    <title>
+      <key>ru</key>
+      <value>Виды налога прибыль</value>
+    </title>
+    <id>27</id>
+    <valueType/>
     <view>
       <common>true</common>
     </view>

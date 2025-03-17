@@ -36,21 +36,6 @@
     </synonym>
     <comment>(Общ)</comment>
   </enumValues>
-  <enumValues uuid="993f4a0c-12a2-491e-854a-06d81e4b2cd6">
-    <name>СнятоСУчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Снято с учета</value>
-    </synonym>
-    <comment>(Общ)</comment>
-  </enumValues>
-  <enumValues uuid="d02f691f-6f08-46d9-9b72-f73152989125">
-    <name>НеПринятоКУчету</name>
-    <synonym>
-      <key>ru</key>
-      <value>Не принято к учету</value>
-    </synonym>
-  </enumValues>
   <enumValues uuid="55a91ae9-0f0c-4883-bd28-ca760ba4a2a0">
     <name>ПринятоКЗабалансовомуУчету</name>
     <synonym>
@@ -77,6 +62,21 @@
     <synonym>
       <key>ru</key>
       <value>В аренде</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="993f4a0c-12a2-491e-854a-06d81e4b2cd6">
+    <name>СнятоСУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Снято с учета</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="d02f691f-6f08-46d9-9b72-f73152989125">
+    <name>НеПринятоКУчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не принято к учету</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

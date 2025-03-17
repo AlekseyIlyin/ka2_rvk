@@ -5,7 +5,7 @@
     <value>Табличный документ</value>
   </title>
   <items xsi:type="form:FormGroup">
-    <name>КоманданяПанельДокумента</name>
+    <name>КоманднаяПанельДокумента</name>
     <id>4</id>
     <items xsi:type="form:Button">
       <name>ДокументЗавершитьИЗакрыть</name>
@@ -1091,16 +1091,11 @@
     </userVisible>
     <title>
       <key>ru</key>
-      <value>Команданя панель документа</value>
+      <value>Командная панель документа</value>
     </title>
     <extendedTooltip>
-      <name>КоманданяПанельДокументаРасширеннаяПодсказка</name>
+      <name>КоманднаяПанельДокументаРасширеннаяПодсказка</name>
       <id>5</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>

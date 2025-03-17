@@ -818,6 +818,7 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
                 <maxWidth>28</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>
@@ -1100,6 +1101,8 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>17</width>
+                <autoMaxWidth>true</autoMaxWidth>
                 <maxWidth>14</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>false</horizontalStretch>
@@ -1164,6 +1167,8 @@
                   <event>StartChoice</event>
                   <name>КППКонтрагентаНачалоВыбора</name>
                 </handlers>
+                <width>14</width>
+                <autoMaxWidth>true</autoMaxWidth>
                 <maxWidth>14</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>
@@ -1596,6 +1601,7 @@
               <key>ru</key>
               <value>Идентификатор платежа используется для автоматического заполнения объекта расчетов в платежном поручении.</value>
             </toolTip>
+            <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИдентификаторПлатежаРасширеннаяПодсказка</name>
               <id>254</id>
@@ -1628,7 +1634,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <maxWidth>21</maxWidth>
+              <maxWidth>26</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
@@ -1682,8 +1688,8 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <width>7</width>
-              <autoMaxWidth>true</autoMaxWidth>
+              <width>5</width>
+              <maxWidth>5</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <horizontalStretch>false</horizontalStretch>
               <openButton>false</openButton>
@@ -1780,6 +1786,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
               <maxWidth>37</maxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -3229,6 +3236,10 @@
           <valuesPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.Наборы</picture>
           </valuesPicture>
+          <border xsi:type="core:BorderDef">
+            <style>Single</style>
+            <width>1</width>
+          </border>
           <fileDragMode>AsFileRef</fileDragMode>
         </extInfo>
       </items>
@@ -3458,6 +3469,10 @@
             <valuesPicture xsi:type="core:PictureRef">
               <picture>CommonPicture.СтатусыУказанияСерий</picture>
             </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">

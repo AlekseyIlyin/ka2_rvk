@@ -220,7 +220,7 @@
       </content>
       <content id="c7c15698-9e70-4eaf-a171-d8cd855a4513">
         <name>БухОтчетность</name>
-        <description>Бухгалтерская отчетность (с 2011 года)</description>
+        <description>Бухгалтерская отчетность</description>
         <code xsi:type="core:StringValue">
           <value>000000002</value>
         </code>
@@ -244,6 +244,13 @@
         <description>Бухгалтерский баланс (форма №1)</description>
         <code xsi:type="core:StringValue">
           <value>000000003</value>
+        </code>
+      </content>
+      <content id="eacb696d-a638-49d6-87b7-864cd759bf02">
+        <name>ФинОтчетностьМГК</name>
+        <description>Консолидированная финансовая отчетность МГК</description>
+        <code xsi:type="core:StringValue">
+          <value>000000662</value>
         </code>
       </content>
       <content id="f1849a8c-6c52-4f3a-bb52-8fd8e0c2752b">
@@ -1036,9 +1043,16 @@
       </content>
       <content id="10545a8f-9078-41f3-9ed5-51a996306477">
         <name>РеестрАкцизыВычетыВиноград</name>
-        <description>Реестр для налоговых вычетов по акцизам на виноград</description>
+        <description>Реестр для налоговых вычетов по акцизам на виноград (КНД 1150116)</description>
         <code xsi:type="core:StringValue">
           <value>000000580</value>
+        </code>
+      </content>
+      <content id="cd288dde-1a53-4d08-9af0-578c80fee5bf">
+        <name>РеестрАкцизыВычетыВиноматериалыВиногрИФруктСусло</name>
+        <description>Реестр для налоговых вычетов по акцизам на виноматериалы, виногр. и фрукт. сусло (КНД 1150115)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000579</value>
         </code>
       </content>
       <content id="a9253560-75aa-4cbe-b723-20d46d28562e">
@@ -1046,13 +1060,6 @@
         <description>Реестр для налоговых вычетов по акцизам на виноматериалы, виноград, вино</description>
         <code xsi:type="core:StringValue">
           <value>000000517</value>
-        </code>
-      </content>
-      <content id="cd288dde-1a53-4d08-9af0-578c80fee5bf">
-        <name>РеестрАкцизыВычетыВиноматериалыВиногрИФруктСусло</name>
-        <description>Реестр для налоговых вычетов по акцизам на виноматериалы, виноградное и фруктовое сусло</description>
-        <code xsi:type="core:StringValue">
-          <value>000000579</value>
         </code>
       </content>
       <content id="153479ce-aa33-4f14-9986-2f97801a1e61">
@@ -1064,14 +1071,14 @@
       </content>
       <content id="b51dad68-5019-4602-8613-7ef1001c29d4">
         <name>РеестрАкцизыВычетыДенатурированныйЭтиловыйСпирт</name>
-        <description>Реестр для налоговых вычетов по акцизам на этиловый спирт (денатурированный этиловый спирт)</description>
+        <description>Реестр для налоговых вычетов по акцизам на этиловый спирт (денатурир. этиловый спирт) (КНД 1150114)</description>
         <code xsi:type="core:StringValue">
           <value>000000574</value>
         </code>
       </content>
       <content id="62b133fa-d860-4a5c-a56d-ca1f6fa54f56">
         <name>РеестрАкцизыПриложение1</name>
-        <description>Реестр по акцизам: Приложение 01</description>
+        <description>Реестр по акцизам: Приложение 01 (КНД 1155124)</description>
         <code xsi:type="core:StringValue">
           <value>000000423</value>
         </code>
@@ -1216,37 +1223,44 @@
           <value>000000636</value>
         </code>
       </content>
+      <content id="ee5752a8-8bfa-4f5e-aa98-d00ffea1d2fa">
+        <name>РеестрНДС_КНД1155223</name>
+        <description>Реестр по НДС: КНД 1155223</description>
+        <code xsi:type="core:StringValue">
+          <value>000000660</value>
+        </code>
+      </content>
       <content id="8c6da043-7568-4df7-a9ba-e3d7de467d21">
         <name>РеестрСФНаПереработкуБензина</name>
-        <description>Реестр счетов-фактур на переработку бензина</description>
+        <description>Реестр счетов-фактур на переработку бензина (КНД 1115012)</description>
         <code xsi:type="core:StringValue">
           <value>000000424</value>
         </code>
       </content>
       <content id="d83b0a14-bb45-4a89-b033-f3114f5bac4f">
         <name>РеестрСФПоАвиационномуКеросину</name>
-        <description>Реестр счетов-фактур по авиационному керосину</description>
+        <description>Реестр счетов-фактур по авиационному керосину (КНД 1115014)</description>
         <code xsi:type="core:StringValue">
           <value>000000425</value>
         </code>
       </content>
       <content id="1d0d4bd7-83f8-4504-bdea-cae07d9811c2">
         <name>РеестрСФПоБензинуИзДавальческогоСырья</name>
-        <description>Реестр счетов-фактур по бензину из давальческого сырья</description>
+        <description>Реестр счетов-фактур по бензину из давальческого сырья (КНД 1115015)</description>
         <code xsi:type="core:StringValue">
           <value>000000426</value>
         </code>
       </content>
       <content id="2e62ae87-a8f1-4b9f-ab50-660aabefefda">
         <name>РеестрСФПоБензинуИзСобственногоСырья</name>
-        <description>Реестр счетов-фактур по бензину из собственного сырья</description>
+        <description>Реестр счетов-фактур по бензину из собственного сырья (КНД 1115011)</description>
         <code xsi:type="core:StringValue">
           <value>000000427</value>
         </code>
       </content>
       <content id="11e12fb8-8d8b-44af-8d0a-69528917131d">
         <name>РеестрСФПоБензолуПараксилолуОртоксилолу</name>
-        <description>Реестр счетов-фактур по бензолу, параксилолу, ортоксилолу</description>
+        <description>Реестр счетов-фактур по бензолу, параксилолу, ортоксилолу (КНД 1115013)</description>
         <code xsi:type="core:StringValue">
           <value>000000428</value>
         </code>
@@ -1267,14 +1281,14 @@
       </content>
       <content id="97ee64a9-18da-45cd-b8e3-f337a101b65e">
         <name>РеестрСФПоНефтяномуСырью</name>
-        <description>Реестр счетов-фактур по нефтяному сырью</description>
+        <description>Реестр счетов-фактур по нефтяному сырью (КНД 1115017)</description>
         <code xsi:type="core:StringValue">
           <value>000000493</value>
         </code>
       </content>
       <content id="1d9d2609-69b6-44e1-b7b3-84cb168602a7">
         <name>РеестрСФПоСреднимДистиллятам</name>
-        <description>Реестр счетов-фактур по средним дистиллятам</description>
+        <description>Реестр счетов-фактур по средним дистиллятам (КНД 1115016)</description>
         <code xsi:type="core:StringValue">
           <value>000000448</value>
         </code>
@@ -1291,6 +1305,13 @@
         <description>Сведения о выданных лицензиях на пользование объектами животного мира</description>
         <code xsi:type="core:StringValue">
           <value>000000491</value>
+        </code>
+      </content>
+      <content id="ccb4813b-ff70-4d0c-9bda-0370e8597b31">
+        <name>ЖивотныйМирСведенияОВыданныхРазрешениях</name>
+        <description>Сведения о выданных разрешениях на добычу объектов животного мира</description>
+        <code xsi:type="core:StringValue">
+          <value>000000663</value>
         </code>
       </content>
       <content id="e6552b10-d9ca-4e32-905f-46f4fe4262f2">
@@ -3190,7 +3211,7 @@
         </code>
       </content>
       <content id="7bbe6bc1-cf3e-46b6-8b79-b1192f4d6d75">
-        <name>СтатистикаФорма1СХбаланссрочная</name>
+        <name>СтатистикаФорма1СХБалансСрочная</name>
         <description>Форма 1-СХ (баланс)-срочная</description>
         <code xsi:type="core:StringValue">
           <value>000000144</value>
@@ -4506,11 +4527,25 @@
         <value>000000298</value>
       </code>
       <isFolder>true</isFolder>
+      <content id="dc23bd62-c136-4121-8e9c-27725a4fc5bd">
+        <name>ВосстановлениеСрокаЖалобы</name>
+        <description>Восстановление срока жалобы</description>
+        <code xsi:type="core:StringValue">
+          <value>000000659</value>
+        </code>
+      </content>
       <content id="2c6f3b03-ae8e-445f-b33c-29d2805e4702">
         <name>ВыборНалоговогоОрганаДляПостановкиНаУчет</name>
         <description>Выбор налогового органа для постановки на учет</description>
         <code xsi:type="core:StringValue">
           <value>000000297</value>
+        </code>
+      </content>
+      <content id="34374710-1221-4f78-9178-37f084e6c8d2">
+        <name>ДополнительнаяИнформацияКЖалобе</name>
+        <description>Дополнительные документы (информация) к жалобе</description>
+        <code xsi:type="core:StringValue">
+          <value>000000655</value>
         </code>
       </content>
       <content id="94224505-e1bf-4b4b-85a7-a1b11e3ac1b0">
@@ -4828,6 +4863,13 @@
           <value>000000597</value>
         </code>
       </content>
+      <content id="af76a278-6a4c-49c0-9230-cab406858efa">
+        <name>ПриостановлениеИсполненияЖалобы</name>
+        <description>Заявление о приостановлении исполнения обжалуемого решения полностью или частично</description>
+        <code xsi:type="core:StringValue">
+          <value>000000657</value>
+        </code>
+      </content>
       <content id="cc42a416-06c0-4815-8f3e-57ca8bc486a4">
         <name>ЗаявлениеОПроведенииНалоговогоМониторинга</name>
         <description>Заявление о проведении налогового мониторинга</description>
@@ -4861,6 +4903,13 @@
         <description>Заявление об отзыве банковской гарантии</description>
         <code xsi:type="core:StringValue">
           <value>000000639</value>
+        </code>
+      </content>
+      <content id="0d068515-b503-4536-888f-c6f8a479bf28">
+        <name>ОтзывЖалобы</name>
+        <description>Заявление об отзыве жалобы полностью или в части</description>
+        <code xsi:type="core:StringValue">
+          <value>000000656</value>
         </code>
       </content>
       <content id="0a4d22ba-39ce-4d2e-98be-d13e7b9af927">
@@ -5304,6 +5353,13 @@
           <value>000000508</value>
         </code>
       </content>
+      <content id="b0ecd5d6-8477-4737-b948-45530ddff946">
+        <name>ВыборНОТуристическийНалог</name>
+        <description>Уведомление о выборе налогового органа, в который представляется налоговая декларация по туристическ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000661</value>
+        </code>
+      </content>
       <content id="7ac51414-8276-4611-ae1c-15452d6e372a">
         <name>ФормаКИК</name>
         <description>Уведомление о контролируемых иностранных компаниях</description>
@@ -5400,6 +5456,13 @@
         <description>Уведомление о прекращении предпринимательской деятельности, в отношении которой применялся ЕСХН</description>
         <code xsi:type="core:StringValue">
           <value>000000497</value>
+        </code>
+      </content>
+      <content id="94b70683-af68-4bd9-b3eb-e9456562ce96">
+        <name>ПриостановлениеВозобновлениеПониженныхТарифов</name>
+        <description>Уведомление о приостановлении (возобновлении) применения пониженных тарифов страховых взносов</description>
+        <code xsi:type="core:StringValue">
+          <value>000000654</value>
         </code>
       </content>
       <content id="9e48c45d-4c18-4318-b95e-a79b99954045">
@@ -5540,6 +5603,13 @@
         <description>Учетная политика</description>
         <code xsi:type="core:StringValue">
           <value>000000537</value>
+        </code>
+      </content>
+      <content id="34123189-6b85-4777-a2eb-e8c4d8088890">
+        <name>ПриостановлениеРассмотренияЖалобы</name>
+        <description>Ходатайство о приостановлении рассмотрения жалобы полностью или в части</description>
+        <code xsi:type="core:StringValue">
+          <value>000000658</value>
         </code>
       </content>
     </items>

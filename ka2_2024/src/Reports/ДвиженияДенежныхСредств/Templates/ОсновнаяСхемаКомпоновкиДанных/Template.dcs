@@ -872,6 +872,22 @@
 			<dataPath>СтатьяЦелевыхСредств</dataPath>
 			<field>СтатьяЦелевыхСредств</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранзитнаяОперация</dataPath>
+			<field>ТранзитнаяОперация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транзитная операция</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+			</valueType>
+		</field>
 		<item xsi:type="DataSetQuery">
 			<name>Безналичные</name>
 			<field xsi:type="DataSetFieldField">
@@ -2050,6 +2066,16 @@
 				<dataPath>СтатьяЦелевыхСредств</dataPath>
 				<field>СтатьяЦелевыхСредств</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТранзитнаяОперация</dataPath>
+				<field>ТранзитнаяОперация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Транзитная операция</v8:content>
+					</v8:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	НастройкиХозяйственныхОпераций.ХозяйственнаяОперация КАК ХозяйственнаяОперация
@@ -2120,7 +2146,8 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 {ВЫБРАТЬ
 	Регистратор.*,
@@ -2231,7 +2258,8 @@
 			-ДанныеРегистра.СуммаОплатыРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваКонтрагент.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -2317,7 +2345,8 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваКонтрагент.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -2402,7 +2431,8 @@
 			-ДанныеРегистра.СуммаОплатыРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваКонтрагент.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -2711,6 +2741,16 @@
 				<dataPath>СтатьяЦелевыхСредств</dataPath>
 				<field>СтатьяЦелевыхСредств</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТранзитнаяОперация</dataPath>
+				<field>ТранзитнаяОперация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Транзитная операция</v8:content>
+					</v8:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	НастройкиХозяйственныхОпераций.ХозяйственнаяОперация КАК ХозяйственнаяОперация
@@ -2782,7 +2822,8 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 {ВЫБРАТЬ
 	Регистратор.*,
@@ -2894,7 +2935,8 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваДоходыРасходы.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -2979,7 +3021,8 @@
 			-ДанныеРегистра.СуммаРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваДоходыРасходы.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3064,7 +3107,8 @@
 			-ДанныеРегистра.СуммаРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваДоходыРасходы.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3149,7 +3193,8 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваДоходыРасходы.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3234,7 +3279,8 @@
 			-ДанныеРегистра.СуммаРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	ЛОЖЬ КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныеСредстваДоходыРасходы.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3511,6 +3557,19 @@
 				<dataPath>СтатьяЦелевыхСредств</dataPath>
 				<field>СтатьяЦелевыхСредств</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТранзитнаяОперация</dataPath>
+				<field>ТранзитнаяОперация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Транзитная операция</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ // Списания
 	ДанныеРегистра.Регистратор                         КАК Регистратор,
@@ -3577,7 +3636,13 @@
 			-ДанныеРегистра.СуммаРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+
+	КорТипДенежныхСредств В (
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваВПути),
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваУЭквайера)
+			) КАК ТранзитнаяОперация
+			
 {ВЫБРАТЬ
 	Регистратор.*,
 	ПериодСекунда,
@@ -3718,7 +3783,10 @@
 			-ДанныеРегистра.СуммаРеглОборот
 	КОНЕЦ КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	
+	ИСТИНА КАК ТранзитнаяОперация
+	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныхСредств.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
 		ХозяйственнаяОперация В (
@@ -3738,7 +3806,8 @@
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ИнкассацияДенежныхСредствИзБанка),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КонвертацияВалюты),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеДенежныхСредствОтКонвертацииВалюты),
-			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыПоПлатежнойКарте)
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыПоПлатежнойКарте),
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ВозвратОплатыНаПлатежнуюКарту)
 		)
 		И ТипДенежныхСредств В (
 			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваВПути),
@@ -3838,7 +3907,12 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	
+	ТипДенежныхСредств В (
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваВПути),
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваУЭквайера)
+			) КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныхСредств.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3860,7 +3934,8 @@
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КонвертацияВалюты),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыПоПлатежнойКарте),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ВозвратДенежныхСредствОтПодотчетника),
-			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеДенежныхСредствПоДепозитам)
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеДенежныхСредствПоДепозитам),
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ВозвратОплатыНаПлатежнуюКарту)
 		)
 		И КорТипДенежныхСредств В (
 			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.Наличные),
@@ -3956,7 +4031,9 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	
+	ИСТИНА КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныхСредств.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -3976,7 +4053,8 @@
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.СнятиеНаличныхДенежныхСредств),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ИнкассацияДенежныхСредствИзБанка),
 			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КонвертацияВалюты),
-			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыПоПлатежнойКарте)
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ПоступлениеОплатыПоПлатежнойКарте),
+			ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.ВозвратОплатыНаПлатежнуюКарту)
 		)
 		И КорТипДенежныхСредств В (
 			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваВПути),
@@ -4068,7 +4146,12 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	
+	ТипДенежныхСредств В (
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваВПути),
+			ЗНАЧЕНИЕ(Перечисление.ТипыДенежныхСредств.ДенежныеСредстваУЭквайера)
+			) КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныхСредств.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -4164,7 +4247,9 @@
 	
 	0                                                  КАК СуммаРасход,
 	
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление) КАК ТипДвижения,
+	
+	ИСТИНА КАК ТранзитнаяОперация
 	
 ИЗ
 	РегистрНакопления.ДвиженияДенежныхСредств.Обороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто,
@@ -4265,7 +4350,10 @@
 		КОГДА ДанныеРегистра.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание)
 		ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Поступление)
-	КОНЕЦ КАК ТипДвижения
+	КОНЕЦ КАК ТипДвижения,
+	
+	ЛОЖЬ КАК ТранзитнаяОперация
+	
 ИЗ
 	РегистрНакопления.ДенежныеСредстваВКассахККМ КАК ДанныеРегистра
 ГДЕ
@@ -4501,6 +4589,16 @@
 				<dataPath>БазоваяВалюта</dataPath>
 				<field>БазоваяВалюта</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТранзитнаяОперация</dataPath>
+				<field>ТранзитнаяОперация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Транзитная операция</v8:content>
+					</v8:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	КурсВалюты.Валюта КАК Валюта,
@@ -4615,7 +4713,10 @@
 			КОНЕЦ
 		ИНАЧЕ 0
 	КОНЕЦ КАК СуммаПланРасход,
-	ДанныеРегистра.ПоступлениеСписание КАК ТипДвижения
+	ДанныеРегистра.ПоступлениеСписание КАК ТипДвижения,
+
+	ДанныеРегистра.ТипСуммы Ссылка Перечисление.ВидыПереводовДенежныхСредств КАК ТранзитнаяОперация
+	
 {ВЫБРАТЬ
 	Регистратор.*,
 	ПериодСекунда,
@@ -4800,7 +4901,10 @@
 				(ЕСТЬNULL(КурсВалюты.КурсЗнаменатель, 1) * ЕСТЬNULL(КурсВалютыРегл.КурсЧислитель, 1))
 		КОНЕЦ
 	КОНЕЦ КАК СуммаПланРасход,
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	
+	ИСТИНА КАК ТранзитнаяОперация
+	
 ИЗ
 	РегистрСведений.ГрафикПлатежей КАК ДанныеРегистра
 		ЛЕВОЕ СОЕДИНЕНИЕ КурсыВалют КАК КурсВалюты
@@ -4968,7 +5072,10 @@
 				(ЕСТЬNULL(КурсВалюты.КурсЗнаменатель, 1) * ЕСТЬNULL(КурсВалютыРегл.КурсЧислитель, 1))
 		КОНЕЦ
 	КОНЕЦ КАК СуммаПланРасход,
-	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения
+	ЗНАЧЕНИЕ(Перечисление.ТипыДвиженияДенежныхСредств.Списание) КАК ТипДвижения,
+	
+	ИСТИНА КАК ТранзитнаяОперация
+	
 ИЗ
 	РегистрСведений.ГрафикПлатежей КАК ДанныеРегистра
 		ЛЕВОЕ СОЕДИНЕНИЕ КурсыВалют КАК КурсВалюты
@@ -5397,10 +5504,11 @@
 	<calculatedField>
 		<dataPath>ПредыдущаяСуммаРасчет</dataPath>
 		<expression>ВЫБОР
-	КОГДА &amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3
-		И ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
+	КОГДА (&amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3)
+		И (ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
+ИЛИ ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)") &gt; 1)
 	ТОГДА
-		0
+	0
 	ИНАЧЕ
 		ЕСТЬNULL(ВычислитьВыражение("ЕСТЬNULL(Сумма(СуммаПриход), 0) + ЕСТЬNULL(Сумма(СуммаРасход), 0) + ЕСТЬNULL(Сумма(СуммаПланПриход), 0) + ЕСТЬNULL(Сумма(СуммаПланРасход), 0)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая"), 0)
 КОНЕЦ</expression>
@@ -5451,12 +5559,13 @@
 	<calculatedField>
 		<dataPath>ПредыдущийНачальныйОстатокРасчет</dataPath>
 		<expression>ВЫБОР
-	КОГДА &amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3
-		И ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
-	ТОГДА
-		0
-	ИНАЧЕ
-		ЕСТЬNULL(ВычислитьВыражение("Сумма(СуммаНачальныйОстаток)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая"), 0)
+    КОГДА (&amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3)
+        И (ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
+ИЛИ ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)") &gt; 1)
+    ТОГДА
+    0
+    ИНАЧЕ
+        ЕСТЬNULL(ВычислитьВыражение("Сумма(СуммаНачальныйОстаток)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая"), 0)
 КОНЕЦ</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -5474,10 +5583,11 @@
 	<calculatedField>
 		<dataPath>ПредыдущийКонечныйОстатокРасчет</dataPath>
 		<expression>ВЫБОР
-	КОГДА &amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3
-		И ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
+	КОГДА (&amp;ДанныеОтчета = 1 ИЛИ &amp;ДанныеОтчета = 3)
+		И (ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая") &gt; 1
+ИЛИ ВычислитьВыражение("КОЛИЧЕСТВО(Различные Валюта)") &gt; 1)
 	ТОГДА
-		0
+    0
 	ИНАЧЕ
 		ЕСТЬNULL(ВычислитьВыражение("Сумма(СуммаКонечныйОстаток)", "Периоды.ДинамическийПериод", "Группировка", "Предыдущая", "Предыдущая"), 0)
 КОНЕЦ</expression>
@@ -5581,6 +5691,16 @@
 			<condition>true</condition>
 		</useRestriction>
 	</calculatedField>
+	<calculatedField>
+		<dataPath>Показатели.ТранзитныеОперации</dataPath>
+		<expression>НСтр("ru = 'Транзитные операции'")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Транзитные операции</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>Сумма</dataPath>
 		<expression>ВЫБОР
@@ -5588,7 +5708,7 @@
 		И НачальныйОстатокРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(НачальныйОстатокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(НачальныйОстатокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		НачальныйОстатокРасчет
 КОНЕЦ</expression>
@@ -5601,7 +5721,7 @@
 		И КонечныйОстатокРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(КонечныйОстатокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(КонечныйОстатокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		КонечныйОстатокРасчет
 КОНЕЦ</expression>
@@ -5614,7 +5734,7 @@
 		И ДенежныйПотокНарастающимИтогомРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокНарастающимИтогомРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокНарастающимИтогомРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		ДенежныйПотокНарастающимИтогомРасчет
 КОНЕЦ</expression>
@@ -5627,7 +5747,7 @@
 		И ДенежныйПотокРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		ДенежныйПотокРасчет
 КОНЕЦ</expression>
@@ -5639,7 +5759,7 @@
 		И Сумма(СуммаПриход) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПриход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПриход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаПриход)
 КОНЕЦ</expression>
@@ -5651,7 +5771,7 @@
 		И Сумма(СуммаРасход) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаРасход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаРасход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаРасход)
 КОНЕЦ</expression>
@@ -5663,7 +5783,7 @@
 		И Сумма(СуммаНачальныйОстаток) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаНачальныйОстаток), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаНачальныйОстаток), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаНачальныйОстаток)
 КОНЕЦ</expression>
@@ -5675,7 +5795,7 @@
 		И Сумма(СуммаКонечныйОстаток) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаКонечныйОстаток), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаКонечныйОстаток), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаКонечныйОстаток)
 КОНЕЦ</expression>
@@ -5687,7 +5807,7 @@
 		И Сумма(СуммаПланПриход) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПланПриход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПланПриход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаПланПриход)
 КОНЕЦ</expression>
@@ -5699,7 +5819,7 @@
 		И Сумма(СуммаПланРасход) &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПланРасход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(Сумма(СуммаПланРасход), ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		Сумма(СуммаПланРасход)
 КОНЕЦ</expression>
@@ -5711,7 +5831,7 @@
 		И ДенежныйПотокНарастающимИтогомРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокНарастающимИтогомРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокНарастающимИтогомРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		ДенежныйПотокНарастающимИтогомРасчет
 КОНЕЦ</expression>
@@ -5723,7 +5843,7 @@
 		И ДенежныйПотокРасчет &lt;&gt; 0
 		И КоличествоВалютВсего &gt; 1
 	ТОГДА
-		КомпоновкаДанныхСервер.СтрЗаменитьКомпоновка(СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта")), ";", "")
+		СоединитьСтроки(ВычислитьВыражениеСГруппировкойТаблицаЗначений("Формат(ДенежныйПотокРасчет, ""ЧДЦ=2; ЧН=0,00""), Валюта", "Валюта"),," ")
 	ИНАЧЕ
 		ДенежныйПотокРасчет
 КОНЕЦ</expression>
@@ -6135,6 +6255,10 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
 					<dcsset:userSettingID>638d9bf8-c43f-4fe4-bcba-d58462fbccb7</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
@@ -6379,8 +6503,11 @@
 									<dcscor:value xmlns:d10p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d10p1:ChartTrendlines">
 										<d10p1:trendLine>
 											<d10p1:approximationType>Polynomial</d10p1:approximationType>
+											<d10p1:line width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+											</d10p1:line>
 											<d10p1:equationArea>
-												<d10p1:font kind="AutoFont"/>
+												<d10p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
 												<d10p1:textColor>auto</d10p1:textColor>
 												<d10p1:backColor>auto</d10p1:backColor>
 												<d10p1:border width="1">
@@ -6444,8 +6571,9 @@
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ТипДиаграммы.ДополнительнаяШкалаЗначений</dcscor:parameter>
 								<dcscor:value xmlns:d9p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d9p1:ChartScale">
+									<d9p1:titleText xsi:type="v8:LocalStringType"/>
 									<d9p1:titleArea>
-										<d9p1:font kind="AutoFont"/>
+										<d9p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
 										<d9p1:textColor>auto</d9p1:textColor>
 										<d9p1:backColor>auto</d9p1:backColor>
 										<d9p1:border width="1">
@@ -6453,6 +6581,11 @@
 										</d9p1:border>
 										<d9p1:borderColor>auto</d9p1:borderColor>
 									</d9p1:titleArea>
+									<d9p1:gridLineColor>auto</d9p1:gridLineColor>
+									<d9p1:labelFont xsi:type="v8ui:Font" kind="AutoFont"/>
+									<d9p1:labelColor>auto</d9p1:labelColor>
+									<d9p1:labelFormat xsi:type="v8:LocalStringType"/>
+									<d9p1:scaleLineColor>auto</d9p1:scaleLineColor>
 								</dcscor:value>
 							</dcscor:item>
 						</dcscor:item>
@@ -6698,6 +6831,11 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -6761,6 +6899,11 @@
 									<dcsset:left xsi:type="dcscor:Field">АналитикаОборотов.ТипДвижения</dcsset:left>
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:order>
@@ -6828,6 +6971,11 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -6892,6 +7040,11 @@
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -6934,6 +7087,74 @@
 									</dcsset:appearance>
 								</dcsset:item>
 							</dcsset:conditionalAppearance>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Показатели.ТранзитныеОперации</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
+								<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств</dcsset:field>
+									<dcsset:groupType>Hierarchy</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств.РеквизитДопУпорядочивания</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
 							<dcsset:outputParameters>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
@@ -7682,6 +7903,11 @@
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
 								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -7714,6 +7940,11 @@
 										<dcsset:left xsi:type="dcscor:Field">АналитикаОборотов.ТипДвижения</dcsset:left>
 										<dcsset:comparisonType>Equal</dcsset:comparisonType>
 										<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 									</dcsset:item>
 								</dcsset:filter>
 								<dcsset:order>
@@ -7750,6 +7981,11 @@
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -7782,6 +8018,79 @@
 										<dcsset:left xsi:type="dcscor:Field">АналитикаОборотов.ТипДвижения</dcsset:left>
 										<dcsset:comparisonType>Equal</dcsset:comparisonType>
 										<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemField">
+										<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств.РеквизитДопУпорядочивания</dcsset:field>
+										<dcsset:orderType>Asc</dcsset:orderType>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:outputParameters>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+										<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+									</dcscor:item>
+								</dcsset:outputParameters>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Показатели.ТранзитныеОперации</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
+									<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств</dcsset:field>
+										<dcsset:groupType>Hierarchy</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 									</dcsset:item>
 								</dcsset:filter>
 								<dcsset:order>
@@ -8097,6 +8406,11 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -8132,6 +8446,11 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -8145,6 +8464,36 @@
 								<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
 								<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Показатели.ТранзитныеОперации</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:outputParameters>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
@@ -8212,6 +8561,10 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>638d9bf8-c43f-4fe4-bcba-d58462fbccb7</dcsset:userSettingID>
 				</dcsset:item>
@@ -8581,6 +8934,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -8640,6 +8998,11 @@
 								<dcsset:left xsi:type="dcscor:Field">АналитикаОборотов.ТипДвижения</dcsset:left>
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Поступление</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
@@ -8707,6 +9070,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
@@ -8767,6 +9135,11 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДвиженияДенежныхСредств.Списание</dcsset:right>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -8809,6 +9182,70 @@
 								</dcsset:appearance>
 							</dcsset:item>
 						</dcsset:conditionalAppearance>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+					</dcsset:item>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Показатели.ТранзитныеОперации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств</dcsset:field>
+								<dcsset:groupType>Hierarchy</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТранзитнаяОперация</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>АналитикаОборотов.СтатьяДвиженияДенежныхСредств.РеквизитДопУпорядочивания</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
 						<dcsset:outputParameters>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
@@ -9146,8 +9583,11 @@
 									<dcscor:value xmlns:d10p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d10p1:ChartTrendlines">
 										<d10p1:trendLine>
 											<d10p1:approximationType>Polynomial</d10p1:approximationType>
+											<d10p1:line width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+											</d10p1:line>
 											<d10p1:equationArea>
-												<d10p1:font kind="AutoFont"/>
+												<d10p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
 												<d10p1:textColor>auto</d10p1:textColor>
 												<d10p1:backColor>auto</d10p1:backColor>
 												<d10p1:border width="1">

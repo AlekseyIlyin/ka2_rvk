@@ -660,6 +660,47 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>ПротоколОбменаНСПК</name>
+      <id>69</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ПротоколОбменаНСПК</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПротоколОбменаНСПКРасширеннаяПодсказка</name>
+        <id>71</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПротоколОбменаНСПККонтекстноеМеню</name>
+        <id>70</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>ИдентификаторНСПК</name>
       <id>50</id>
       <visible>true</visible>
@@ -668,7 +709,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>ИдентификаторНСПК</segments>
+        <segments>Объект.ИдентификаторНСПК</segments>
       </dataPath>
       <extendedTooltip>
         <name>ИдентификаторНСПКРасширеннаяПодсказка</name>
@@ -718,7 +759,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>КлючКассыНСПК</segments>
+        <segments>Объект.КлючКассыНСПК</segments>
       </dataPath>
       <extendedTooltip>
         <name>КлючКассыНСПКРасширеннаяПодсказка</name>
@@ -913,50 +954,6 @@
     <savedData>true</savedData>
   </attributes>
   <attributes>
-    <name>ИдентификаторНСПК</name>
-    <title>
-      <key>ru</key>
-      <value>Идентификатор НСПК</value>
-    </title>
-    <id>3</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>18</length>
-      </stringQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <functionalOptions>FunctionalOption.ОплатаЭлектроннымиСертификатамиФСС</functionalOptions>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>КлючКассыНСПК</name>
-    <title>
-      <key>ru</key>
-      <value>Ключ кассы НСПК</value>
-    </title>
-    <id>4</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>36</length>
-      </stringQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <functionalOptions>FunctionalOption.ОплатаЭлектроннымиСертификатамиФСС</functionalOptions>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
     <name>КлючОрганизацииНСПК</name>
     <title>
       <key>ru</key>
@@ -988,6 +985,21 @@
     <valueType>
       <types>FormattedString</types>
     </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПараметрыПодключаемыхКоманд</name>
+    <title>
+      <key>ru</key>
+      <value>Параметры подключаемых команд</value>
+    </title>
+    <id>6</id>
+    <valueType/>
     <view>
       <common>true</common>
     </view>

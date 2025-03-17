@@ -111,7 +111,7 @@
             <id>74</id>
             <title>
               <key>ru</key>
-              <value>Настроить доступ.</value>
+              <value>Настроить доступ</value>
             </title>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1344,6 +1344,10 @@
                 <valuesPicture xsi:type="core:PictureRef">
                   <picture>CommonPicture.КоллекцияВариантыВажности</picture>
                 </valuesPicture>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
               </extInfo>
             </items>
             <commandBarLocation>None</commandBarLocation>
@@ -6576,7 +6580,6 @@
         <name>ПринятьКИсполнению</name>
       </handler>
     </action>
-    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -6951,7 +6954,6 @@
         <name>ОтменитьПринятиеКИсполнению</name>
       </handler>
     </action>
-    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>

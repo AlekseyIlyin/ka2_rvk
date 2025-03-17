@@ -7,7 +7,6 @@
   </synonym>
   <source>
     <types>DocumentObject.КорректировкаИзлишковНедостачПоТоварнымМестам</types>
-    <types>CatalogObject.ЗаявкаСотрудникаОтпускПрисоединенныеФайлы</types>
     <types>DocumentObject.СписаниеИзЭксплуатации</types>
     <types>DocumentObject.ЗаказПоставщику</types>
     <types>CatalogObject.СтраныМира</types>
@@ -25,6 +24,7 @@
     <types>ChartOfCharacteristicTypesObject.ШтатноеРасписаниеПодключаемыеХарактеристики</types>
     <types>CatalogObject.СоставыВоеннослужащих</types>
     <types>DocumentObject.ПередачаТоваровМеждуОрганизациями</types>
+    <types>CatalogObject.КодыДокументовКадровыхМероприятий</types>
     <types>CatalogObject.НастройкиРегламентныхЗаданийСАТУРН</types>
     <types>DocumentObject.АктОРасхожденияхПослеПеремещения</types>
     <types>DocumentObject.ОтгрузкаТоваровИСМП</types>
@@ -47,19 +47,20 @@
     <types>DocumentObject.ОтчетОбИмпортеЕГАИС</types>
     <types>CatalogObject.ФизическиеЛицаПрисоединенныеФайлы</types>
     <types>CatalogObject.КлассификаторБанков</types>
+    <types>CatalogObject.НачислениеРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ПараметрыКонтекстныхФункциональныхОпций</types>
     <types>CatalogObject.БронированиеГражданПребывающихВЗапасеПрисоединенныеФайлы</types>
     <types>CatalogObject.СтатьиРасходовЗарплата</types>
     <types>DocumentObject.ПередачаСырьяПереработчику</types>
     <types>CatalogObject.ПричиныСписанияОС</types>
     <types>DocumentObject.ВнутреннееПотребление</types>
-    <types>CatalogObject.ЗаявкаСотрудникаОтсутствиеПрисоединенныеФайлы</types>
     <types>DocumentObject.ПачкаРазделов6РасчетаРСВ_1</types>
     <types>CatalogObject.РегистрацияЦенНоменклатурыПоставщикаПрисоединенныеФайлы</types>
+    <types>DocumentObject.АктПремииКлиенту</types>
     <types>DocumentObject.АктВыполненныхВнутреннихРабот</types>
+    <types>DocumentObject.АктПремииПоставщика</types>
     <types>CatalogObject.ОтчетОСписанииТоваровУХранителяПрисоединенныеФайлы</types>
     <types>CatalogObject.РаспределениеОсновногоЗаработкаПрисоединенныеФайлы</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаОтсутствиеПоБолезни</types>
     <types>CatalogObject.ПереносОтпускаПрисоединенныеФайлы</types>
     <types>DocumentObject.РеализацияУслугПрочихАктивов</types>
     <types>CatalogObject.ПроизводствоБезЗаказаПрисоединенныеФайлы</types>
@@ -92,7 +93,6 @@
     <types>CatalogObject.ПеремещениеВДругоеПодразделениеПрисоединенныеФайлы</types>
     <types>CatalogObject.ОплатаДнейУходаЗаДетьмиИнвалидамиПрисоединенныеФайлы</types>
     <types>CatalogObject.ОперацияНалоговогоУчетаПоНДФЛПрисоединенныеФайлы</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаНалоговыйВычет</types>
     <types>CatalogObject.ПланПродажПоКатегориямПрисоединенныеФайлы</types>
     <types>CatalogObject.ГруппыИсполнителейЗадач</types>
     <types>DocumentObject.СписаниеНДСНаРасходы</types>
@@ -108,7 +108,6 @@
     <types>DocumentObject.ВводОстатковДенежныхСредств</types>
     <types>DocumentObject.КорректировкаСтоимостиИАмортизацииНМА</types>
     <types>CatalogObject.НастройкиАвторизацииИнтернетСервисов</types>
-    <types>CatalogObject.ЗаявкаСотрудникаСправка2НДФЛПрисоединенныеФайлы</types>
     <types>CatalogObject.РеестрДСВ_3ПрисоединенныеФайлы</types>
     <types>CatalogObject.ПолитикиУчетаСерий</types>
     <types>DocumentObject.УточнениеСведенийОКодахМаркировкиИСМП</types>
@@ -117,7 +116,6 @@
     <types>DocumentObject.ИндексацияЗаработка</types>
     <types>CatalogObject.ВерсииФайлов</types>
     <types>CatalogObject.ВедомостьПрочихДоходовВБанкПрисоединенныеФайлы</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаСправкаОстаткиОтпусков</types>
     <types>CatalogObject.СверкаВзаиморасчетов2_4ПрисоединенныеФайлы</types>
     <types>CatalogObject.ОтветственныеЛицаОрганизацийПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗарплатныеПроекты</types>
@@ -154,7 +152,6 @@
     <types>CatalogObject.ОтгрузкаТоваровСХраненияПрисоединенныеФайлы</types>
     <types>CatalogObject.ПачкаДокументовСПВ_1ПрисоединенныеФайлы</types>
     <types>CatalogObject.УдержаниеДобровольныхСтраховыхВзносовПрисоединенныеФайлы</types>
-    <types>CatalogObject.ЗаявкаСотрудникаСправкаСМестаРаботыПрисоединенныеФайлы</types>
     <types>CatalogObject.ПачкаДокументовАДВ_2ПрисоединенныеФайлы</types>
     <types>CatalogObject.Новости</types>
     <types>DocumentObject.СписаниеНМА</types>
@@ -206,8 +203,8 @@
     <types>DocumentObject.ОплатаДнейУходаЗаДетьмиИнвалидами</types>
     <types>CatalogObject.КлассификаторЗанятий</types>
     <types>DocumentObject.ОрдерНаОтражениеНедостачТоваров</types>
-    <types>CatalogObject.ЗаявкаСотрудникаДобровольныеСтраховыеВзносыПрисоединенныеФайлы</types>
     <types>CatalogObject.ВидыКартЛояльности</types>
+    <types>DocumentObject.УсловияРетроБонусовПоставщика</types>
     <types>CatalogObject.ВидыСтажа</types>
     <types>CatalogObject.ПереводКДругомуРаботодателюПрисоединенныеФайлы</types>
     <types>DocumentObject.РаботаВВыходныеИПраздничныеДни</types>
@@ -227,7 +224,6 @@
     <types>CatalogObject.РеализацияУслугПрочихАктивовПрисоединенныеФайлы</types>
     <types>DocumentObject.ТТНВходящаяЕГАИС</types>
     <types>DocumentObject.ПачкаДокументовДСВ_1</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаСправкаСМестаРаботы</types>
     <types>DocumentObject.ПерерасчетИмущественныхНалогов</types>
     <types>DocumentObject.КорректировкаОбособленногоУчетаЗапасов</types>
     <types>CatalogObject.РеестрПартийЗЕРНО</types>
@@ -307,7 +303,6 @@
     <types>CatalogObject.ГрафикиРаботыСотрудников</types>
     <types>CatalogObject.ПоказателиРасчетаЗарплаты</types>
     <types>CatalogObject.АктВыполненныхВнутреннихРаботПрисоединенныеФайлы</types>
-    <types>DocumentObject.СборГрафиковОтпусков</types>
     <types>DocumentObject.ЗапросОстатковПартийСАТУРН</types>
     <types>DocumentObject.ПачкаДокументовСЗВ_6_1</types>
     <types>DocumentObject.АктВыполненныхРабот</types>
@@ -389,7 +384,6 @@
     <types>DocumentObject.ПриходныйОрдерНаТовары</types>
     <types>DocumentObject.ВыкупТоваровХранителем</types>
     <types>DocumentObject.ВводОстатков</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаОтсутствие</types>
     <types>CatalogObject.ВзаимозачетЗадолженностиПрисоединенныеФайлы</types>
     <types>DocumentObject.РаспределениеДоходовПоНаправлениямДеятельности</types>
     <types>DocumentObject.ПризПодарок</types>
@@ -421,6 +415,7 @@
     <types>CatalogObject.ТипыПлатежейФЗ275</types>
     <types>DocumentObject.КорректировкаРегистров</types>
     <types>CatalogObject.ВнутреннееПотреблениеПрисоединенныеФайлы</types>
+    <types>CatalogObject.УсловияРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ТаможеннаяДекларацияЭкспортПрисоединенныеФайлы</types>
     <types>DocumentObject.СписаниеБезналичныхДенежныхСредств</types>
     <types>DocumentObject.СнятиеСРегистрацииЗемельныхУчастков</types>
@@ -439,6 +434,7 @@
     <types>DocumentObject.АмортизацияОС2_4</types>
     <types>DocumentObject.КорректировкаЗадолженностиПоФинансовымИнструментам</types>
     <types>CatalogObject.ОснованияИсчисляемогоСтраховогоСтажа</types>
+    <types>CatalogObject.КатегорииПолучателейСтимулирующихВыплатФСС</types>
     <types>DocumentObject.ПрекращениеСтандартныхВычетовНДФЛ</types>
     <types>CatalogObject.ОплатаПоСреднемуЗаработкуПрисоединенныеФайлы</types>
     <types>CatalogObject.ВидыЗапасов</types>
@@ -500,7 +496,6 @@
     <types>DocumentObject.НачальнаяШтатнаяРасстановка</types>
     <types>CatalogObject.УпаковкиЕдиницыИзмерения</types>
     <types>CatalogObject.ФорматыМагазинов</types>
-    <types>CatalogObject.ЗаявкаСотрудникаСправкаОстаткиОтпусковПрисоединенныеФайлы</types>
     <types>CatalogObject.АвансовыйПлатежИностранцаПоНДФЛПрисоединенныеФайлы</types>
     <types>CatalogObject.ГруппыФинансовогоУчетаВнеоборотныхАктивов</types>
     <types>CatalogObject.ШаблоныВыплатПоДоговорамОпеки</types>
@@ -526,6 +521,8 @@
     <types>CatalogObject.Инциденты</types>
     <types>CatalogObject.ОтчетКомитентуОЗакупкахПрисоединенныеФайлы</types>
     <types>CatalogObject.СделкиСКлиентамиПрисоединенныеФайлы</types>
+    <types>ChartOfCharacteristicTypesObject.НачисленияПодключаемыеХарактеристики</types>
+    <types>DocumentObject.СписаниеРетроБонусовПоставщика</types>
     <types>DocumentObject.НачислениеДивидендов</types>
     <types>CatalogObject.ГрафыБухОтчетности</types>
     <types>CatalogObject.Проекты</types>
@@ -540,6 +537,7 @@
     <types>CatalogObject.ИнцидентыПрисоединенныеФайлы</types>
     <types>DocumentObject.ЧекЕГАИС</types>
     <types>DocumentObject.НачислениеЕНП</types>
+    <types>CatalogObject.СписаниеРетроБонусовПоставщикаПрисоединенныеФайлы</types>
     <types>DocumentObject.КомпенсацияЗаЗадержкуЗарплаты</types>
     <types>DocumentObject.УвольнениеСписком</types>
     <types>DocumentObject.НазначениеОпросов</types>
@@ -557,6 +555,7 @@
     <types>DocumentObject.КорректировкаРасчетовПоНалогам</types>
     <types>DocumentObject.СписаниеЗатратНаВыпуск</types>
     <types>DocumentObject.ВозвратВОборотИСМП</types>
+    <types>CatalogObject.ОснованияПриостановленияТрудовыхДоговоровКонтрактов</types>
     <types>CatalogObject.ОтменаБронированияГражданПребывающихВЗапасеПрисоединенныеФайлы</types>
     <types>CatalogObject.СпособыОкругленияПриРасчетеЗарплаты</types>
     <types>CatalogObject.КлючиАналитикиУчетаПартий</types>
@@ -569,8 +568,8 @@
     <types>CatalogObject.РеестрЭлеваторовЗЕРНО</types>
     <types>CatalogObject.ПравилаПолученияФактаПоПоказателямБюджетов</types>
     <types>DocumentObject.ПереоценкаНМА</types>
+    <types>CatalogObject.ТерриторииСПовышающимКоэффициентомПоКоронавирусу</types>
     <types>DocumentObject.ПересчетТоваров</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаОтпуск</types>
     <types>DocumentObject.ПринятиеКУчетуОС</types>
     <types>CatalogObject.ВидыПрочихДоходовФизическихЛиц</types>
     <types>DocumentObject.СнятиеСРегистрацииТранспортныхСредств</types>
@@ -627,22 +626,24 @@
     <types>DocumentObject.СводнаяСправкаНДС</types>
     <types>DocumentObject.ВедомостьНаВыплатуЗарплатыПеречислением</types>
     <types>CatalogObject.ДоговорыКонтрагентов</types>
-    <types>CatalogObject.ЗаявкаСотрудникаОтсутствиеПоБолезниПрисоединенныеФайлы</types>
     <types>DocumentObject.ПоступлениеОтПереработчика</types>
     <types>CatalogObject.ГруппыАналитическогоУчетаНоменклатуры</types>
     <types>CatalogObject.ТемыЭтапыИсследованийИРазработок</types>
     <types>CatalogObject.Должности</types>
     <types>CatalogObject.ЗаявлениеОНазначенииПенсии</types>
+    <types>DocumentObject.ПриказОБронированииРаботников</types>
     <types>CatalogObject.УслугиБанков</types>
     <types>DocumentObject.ОтчетОСписанииТоваровУХранителя</types>
     <types>CatalogObject.ЛистокСообщенияДляВоенкоматаПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗаказНаВнутреннееПотреблениеПрисоединенныеФайлы</types>
     <types>CatalogObject.КадровыйПереводПрисоединенныеФайлы</types>
     <types>DocumentObject.ВводВыводДенежныхСредствПоНаправлению</types>
+    <types>DocumentObject.НачислениеРетроБонусовПоставщика</types>
     <types>CatalogObject.СтепениЗнанияЯзыка</types>
     <types>DocumentObject.ВводОстатковСПодотчетниками</types>
     <types>CatalogObject.СобытияОС</types>
     <types>CatalogObject.ЗаказКлиентаПрисоединенныеФайлы</types>
+    <types>DocumentObject.ЗаявлениеОВвозеТоваровПолученное</types>
     <types>CatalogObject.НастройкиПодключенияКСистемеБыстрыхПлатежей</types>
     <types>DocumentObject.РасходныйКассовыйОрдер</types>
     <types>CatalogObject.СОУН</types>
@@ -672,6 +673,7 @@
     <types>DocumentObject.ПачкаДокументовСЗВ_6_3</types>
     <types>CatalogObject.ЗаявлениеИЗапросВПФРОЗаработкеПрисоединенныеФайлы</types>
     <types>DocumentObject.УпаковочныйЛист</types>
+    <types>DocumentObject.РазрешениеНаОтгрузкуИСМП</types>
     <types>DocumentObject.РегистрацияСведенийОЗастрахованномЛицеФСС</types>
     <types>DocumentObject.ЗапросСкладскогоЖурналаВЕТИС</types>
     <types>DocumentObject.ЭлектронноеПисьмоВходящее</types>
@@ -744,7 +746,6 @@
     <types>DocumentObject.ПринятиеКУчетуУзловКомпонентовАмортизации</types>
     <types>CatalogObject.СкладскиеПомещения</types>
     <types>CatalogObject.ЗоныДоставки</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаИзменитьЛичныеДанные</types>
     <types>DocumentObject.ВводОстатковТоваров</types>
     <types>DocumentObject.ПростойСотрудников</types>
     <types>DocumentObject.ЕдиновременноеПособиеЗаСчетФСС</types>
@@ -755,6 +756,7 @@
     <types>CatalogObject.ПравилаОбработкиЭлектроннойПочты</types>
     <types>DocumentObject.УдержаниеВСчетРасчетовПоПрочимОперациям</types>
     <types>CatalogObject.СведенияОЗастрахованномЛицеФССПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПриказОПрекращенииБронированияПрисоединенныеФайлы</types>
     <types>CatalogObject.АктВыполненныхРаботПрисоединенныеФайлы</types>
     <types>CatalogObject.Номенклатура</types>
     <types>DocumentObject.ТранспортнаяНакладная</types>
@@ -778,12 +780,14 @@
     <types>DocumentObject.КорректировкаНазначенияТоваров</types>
     <types>DocumentObject.ИмпортПродукцииСАТУРН</types>
     <types>DocumentObject.ЗапросНаВыпискуИзЕГРЮЛ_ЕГРИП</types>
+    <types>CatalogObject.ЕжегодныеСтандартныеВычетыПрисоединенныеФайлы</types>
     <types>CatalogObject.ГруппыТиповОпераций</types>
     <types>DocumentObject.СогласиеНаПрисоединениеККЭДО</types>
     <types>CatalogObject.РазовоеНачислениеПрисоединенныеФайлы</types>
     <types>DocumentObject.ОтборРазмещениеТоваров</types>
     <types>CatalogObject.МедицинскиеОрганизации</types>
     <types>CatalogObject.ПравилаНачисленияИСписанияБонусныхБаллов</types>
+    <types>CatalogObject.ЗаявлениеОВвозеТоваровПолученноеПрисоединенныеФайлы</types>
     <types>CatalogObject.ПараметрыИсчисляемогоСтраховогоСтажа</types>
     <types>CatalogObject.Производители</types>
     <types>CatalogObject.ВидыРасчетовРезервовПоОплатеТруда</types>
@@ -793,7 +797,6 @@
     <types>CatalogObject.ТипыОперацийЕНП</types>
     <types>CatalogObject.ПартииПроизводства</types>
     <types>DocumentObject.ОперацияУчетаПоСтраховымВзносам</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаСправка2НДФЛ</types>
     <types>CatalogObject.ШаблоныВводаНефинансовыхПоказателей</types>
     <types>DocumentObject.СправкиНДФЛДляПередачиВНалоговыйОрган</types>
     <types>ChartOfCharacteristicTypesObject.РеквизитыЭлементовФинансовыхОтчетов</types>
@@ -862,6 +865,7 @@
     <types>DocumentObject.СогласиеНаУведомлениеОбЭЛН</types>
     <types>CatalogObject.ВидыРегистровУчета</types>
     <types>DocumentObject.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>CatalogObject.ПриказОБронированииРаботниковПрисоединенныеФайлы</types>
     <types>CatalogObject.КассовыеКниги</types>
     <types>DocumentObject.КнигаПродажДляПередачиВЭлектронномВиде</types>
     <types>CatalogObject.ВозмещениеБольничныхВЧастиФБПрисоединенныеФайлы</types>
@@ -923,7 +927,6 @@
     <types>DocumentObject.НачальнаяЗадолженностьПоЗарплате</types>
     <types>CatalogObject.ЗаписиСкладскогоЖурналаВЕТИС</types>
     <types>CatalogObject.ВидыНоменклатуры</types>
-    <types>CatalogObject.ЗаявкаСотрудникаИзменитьЛичныеДанныеПрисоединенныеФайлы</types>
     <types>CatalogObject.ОбъектыСтатистическогоНаблюдения</types>
     <types>DocumentObject.ВыпускПродукции</types>
     <types>DocumentObject.Совмещение</types>
@@ -931,7 +934,7 @@
     <types>DocumentObject.ЗапросКоммерческихПредложенийПоставщиков</types>
     <types>DocumentObject.ПерерасчетСтраховыхВзносов</types>
     <types>DocumentObject.ПеремещениеТоваров</types>
-    <types>CatalogObject.СборГрафиковОтпусковПрисоединенныеФайлы</types>
+    <types>ChartOfCharacteristicTypesObject.ДолжностиПодключаемыеХарактеристики</types>
     <types>CatalogObject.СостоянияОригиналовПервичныхДокументов</types>
     <types>DocumentObject.ТаможеннаяДекларацияЭкспорт</types>
     <types>CatalogObject.ТерриторииВыполненияРабот</types>
@@ -1012,6 +1015,7 @@
     <types>DocumentObject.ОприходованиеИзлишковТоваровУХранителя</types>
     <types>CatalogObject.ОснованияДосрочногоНазначенияПенсии</types>
     <types>CatalogObject.МоделиБюджетированияПрисоединенныеФайлы</types>
+    <types>DocumentObject.ПриказОПрекращенииБронирования</types>
     <types>CatalogObject.АктПроверкиСтраховыхВзносовПрисоединенныеФайлы</types>
     <types>BusinessProcessObject.СогласованиеЗакупки</types>
     <types>CatalogObject.СведенияОЗастрахованныхЛицахСЗВ_МПрисоединенныеФайлы</types>
@@ -1055,6 +1059,7 @@
     <types>CatalogObject.СоглашенияСПоставщикамиПрисоединенныеФайлы</types>
     <types>DocumentObject.ПогашениеСДИЗЗЕРНО</types>
     <types>CatalogObject.ИмпортируемаяПартияСАТУРН</types>
+    <types>DocumentObject.ПереносРНПТМатериаловНаПродукцию</types>
     <types>CatalogObject.ЗадачиПроектов</types>
     <types>CatalogObject.НаправленияДеятельности</types>
     <types>DocumentObject.РазукомплектацияОС</types>
@@ -1093,6 +1098,7 @@
     <types>DocumentObject.ЗаказКлиента</types>
     <types>CatalogObject.ГруппыДоступа</types>
     <types>CatalogObject.РодственникиФизическихЛиц</types>
+    <types>CatalogObject.ВидыРетроБонусовПоставщиков</types>
     <types>CatalogObject.ВозвратСырьяОтПереработчикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ПравилаИнтеграцииС1СДокументооборотом</types>
     <types>CatalogObject.ПоказателиНаработки</types>
@@ -1172,7 +1178,6 @@
     <types>DocumentObject.ПриемНаРаботу</types>
     <types>DocumentObject.УведомлениеОЗачисленииВалюты</types>
     <types>DocumentObject.УведомлениеОПолучателеДокументов</types>
-    <types>CatalogObject.ЗаявкаСотрудникаНалоговыйВычетПрисоединенныеФайлы</types>
     <types>CatalogObject.СценарииТоварногоПланирования</types>
     <types>DocumentObject.ИзменениеПлановыхНачислений</types>
     <types>CatalogObject.ОтчетКомитентуПрисоединенныеФайлы</types>
@@ -1208,6 +1213,7 @@
     <types>CatalogObject.ОтправкиРегистрацияЮЛ</types>
     <types>CatalogObject.ИзменениеШтатногоРасписанияПрисоединенныеФайлы</types>
     <types>CatalogObject.ПрочиеДоходыРасходыПрисоединенныеФайлы</types>
+    <types>CatalogObject.СписаниеРетроБонусовКлиентаПрисоединенныеФайлы</types>
     <types>DocumentObject.УведомлениеОКонтролируемыхСделках</types>
     <types>CatalogObject.ИсходящееСообщениеОСтраховомСлучаеФССПрисоединенныеФайлы</types>
     <types>CatalogObject.ТипыОпераций</types>
@@ -1258,16 +1264,19 @@
     <types>DocumentObject.УведомлениеОПравеНаИмущественныйВычетДляНДФЛ</types>
     <types>CatalogObject.ПричиныВозникновенияПретензий</types>
     <types>CatalogObject.ПравилаФинОтчетности</types>
+    <types>CatalogObject.АктПремииПоставщикаПрисоединенныеФайлы</types>
     <types>CatalogObject.ВариантыОтчетов</types>
     <types>CatalogObject.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
     <types>CatalogObject.ПеремещениеТоваровПрисоединенныеФайлы</types>
     <types>CatalogObject.ГруппыДоступаПартнеров</types>
     <types>CatalogObject.ИзменениеМестРаботыПрисоединенныеФайлы</types>
     <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.ВыбытиеРНПТМатериаловИзПроизводства</types>
     <types>DocumentObject.ПередачаОСВАренду2_4</types>
     <types>DocumentObject.ВедомостьПрочихДоходовПеречислением</types>
     <types>CatalogObject.РегламентированныеОтчеты</types>
     <types>CatalogObject.СменыРаботыСотрудников</types>
+    <types>DocumentObject.ПеремещениеМеждуМОДИСМП</types>
     <types>DocumentObject.БухучетЗарплатыСотрудников</types>
     <types>CatalogObject.СкладскиеГруппыНоменклатуры</types>
     <types>DocumentObject.МаркировкаТоваровГИСМ</types>
@@ -1348,6 +1357,7 @@
     <types>DocumentObject.АктОРасхожденияхПослеПриемки</types>
     <types>CatalogObject.ЗаданиеТорговомуПредставителюПрисоединенныеФайлы</types>
     <types>CatalogObject.НефинансовыеПоказателиБюджетов</types>
+    <types>DocumentObject.ЕжегодныеСтандартныеВычеты</types>
     <types>CatalogObject.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖПрисоединенныеФайлы</types>
     <types>DocumentObject.ВводОстатковВнеоборотныхАктивов2_4</types>
     <types>DocumentObject.ВходящийЗапросФССДляРасчетаПособия</types>
@@ -1419,7 +1429,6 @@
     <types>DocumentObject.ЖурналУчетаСчетовФактурДляПередачиВЭлектронномВиде</types>
     <types>CatalogObject.Военкоматы</types>
     <types>DocumentObject.СведенияОТрудовойДеятельностиРаботникаСТД_Р</types>
-    <types>BusinessProcessObject.ЗаявкаСотрудникаДобровольныеСтраховыеВзносы</types>
     <types>CatalogObject.УчетныеЗаписиМаркетплейсов</types>
     <types>DocumentObject.ФормированиеЗаписейРаздела7ДекларацииНДС</types>
     <types>DocumentObject.ОперацияБух</types>

@@ -811,7 +811,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Резерв</name>
+      <name>РезервироватьНаСкладеПоВсемЗаказамСводно</name>
       <id>85</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -819,16 +819,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Резерв</segments>
+        <segments>Список.РезервироватьНаСкладеПоВсемЗаказамСводно</segments>
       </dataPath>
       <extendedTooltip>
-        <name>РезервРасширеннаяПодсказка</name>
+        <name>РезервироватьНаСкладеПоВсемЗаказамСводноРасширеннаяПодсказка</name>
         <id>87</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -837,13 +832,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>РезервКонтекстноеМеню</name>
+        <name>РезервироватьНаСкладеПоВсемЗаказамСводноКонтекстноеМеню</name>
         <id>86</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>

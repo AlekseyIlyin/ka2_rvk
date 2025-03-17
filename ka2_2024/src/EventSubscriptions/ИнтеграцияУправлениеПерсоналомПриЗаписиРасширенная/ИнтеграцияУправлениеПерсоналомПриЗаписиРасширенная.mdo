@@ -7,10 +7,18 @@
   </synonym>
   <source>
     <types>BusinessProcessObject.ЗаявкаСотрудникаСправкаОстаткиОтпусков</types>
+    <types>DocumentObject.ЗаявкаКомпенсацияОтпускаКабинетСотрудника</types>
     <types>BusinessProcessObject.ЗаявкаСотрудникаСправкаСМестаРаботы</types>
     <types>CatalogObject.ГрафикиРаботыСотрудников</types>
     <types>DocumentObject.СборГрафиковОтпусков</types>
+    <types>DocumentObject.ЗаявкаУчебныйОтпускКабинетСотрудника</types>
     <types>BusinessProcessObject.ЗаявкаСотрудникаОтсутствие</types>
+    <types>ConstantValueManager.ИспользоватьРабочиеМестаОхраныТруда</types>
+    <types>DocumentObject.ЗаявкаСправкаОстаткиОтпусковКабинетСотрудника</types>
+    <types>CatalogObject.ВидыОтпусков</types>
+    <types>DocumentObject.ЗаявкаСправкаСМестаРаботыКабинетСотрудника</types>
+    <types>CatalogObject.РабочиеМестаОхраныТруда</types>
+    <types>DocumentObject.ЗаявкаДСВКабинетСотрудника</types>
     <types>BusinessProcessObject.ЗаявкаСотрудникаДобровольныеСтраховыеВзносы</types>
   </source>
   <event>OnWrite</event>

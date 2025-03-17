@@ -215,7 +215,7 @@
           </dataPath>
           <titleLocation>None</titleLocation>
           <extendedTooltip>
-            <name>ПолеТабличногоДокументаФормаОтчетаExtendedTooltip</name>
+            <name>ПолеТабличногоДокументаФормаОтчетаРасширеннаяПодсказка</name>
             <id>73</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -285,7 +285,7 @@
           <value>Форма 1-квотирование </value>
         </toolTip>
         <extendedTooltip>
-          <name>ФормаОтчетаExtendedTooltip</name>
+          <name>ФормаОтчетаРасширеннаяПодсказка</name>
           <id>72</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -319,7 +319,7 @@
         <value>Страницы</value>
       </toolTip>
       <extendedTooltip>
-        <name>СтраницыExtendedTooltip</name>
+        <name>СтраницыРасширеннаяПодсказка</name>
         <id>71</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -352,7 +352,7 @@
       <value>Отчет</value>
     </toolTip>
     <extendedTooltip>
-      <name>ОтчетExtendedTooltip</name>
+      <name>ОтчетРасширеннаяПодсказка</name>
       <id>70</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -397,7 +397,7 @@
         <name>КомментарийПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>КомментарийExtendedTooltip</name>
+        <name>КомментарийРасширеннаяПодсказка</name>
         <id>75</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -448,7 +448,7 @@
       <value>Подвал</value>
     </toolTip>
     <extendedTooltip>
-      <name>ПодвалExtendedTooltip</name>
+      <name>ПодвалРасширеннаяПодсказка</name>
       <id>74</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -516,7 +516,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>СохранитьExtendedTooltip</name>
+          <name>СохранитьРасширеннаяПодсказка</name>
           <id>93590</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -676,7 +676,7 @@
         </userVisible>
         <skipOnInput>false</skipOnInput>
         <extendedTooltip>
-          <name>ПоказатьБланкExtendedTooltip</name>
+          <name>ПоказатьБланкРасширеннаяПодсказка</name>
           <id>93584</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -737,7 +737,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОткрытьФормуНастроекExtendedTooltip</name>
+        <name>ОткрытьФормуНастроекРасширеннаяПодсказка</name>
         <id>55</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -769,7 +769,7 @@
       </userVisible>
       <skipOnInput>false</skipOnInput>
       <extendedTooltip>
-        <name>ОбновитьExtendedTooltip</name>
+        <name>ОбновитьРасширеннаяПодсказка</name>
         <id>56</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1364,6 +1364,41 @@
     <valueType>
       <types>String</types>
       <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>АдресХранилища</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес хранилища</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИдентификаторЗадания</name>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>UUID</types>
     </valueType>
     <view>
       <common>true</common>

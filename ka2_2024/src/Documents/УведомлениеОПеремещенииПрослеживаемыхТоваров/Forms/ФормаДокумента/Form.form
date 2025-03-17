@@ -1657,7 +1657,6 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -1711,7 +1710,6 @@
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
-        <readOnly>true</readOnly>
         <editMode>EnterOnInput</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -1762,7 +1760,6 @@
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
-        <readOnly>true</readOnly>
         <editMode>EnterOnInput</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2145,6 +2142,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.РНПТ</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыРНПТПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыРНПТРасширеннаяПодсказка</name>
         <id>92</id>

@@ -22,21 +22,8 @@
           <segments>ФизическиеЛица</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>ChangeHistory</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <excludedCommands>CopyToClipboard</excludedCommands>
-        <excludedCommands>Create</excludedCommands>
-        <excludedCommands>CreateFolder</excludedCommands>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>HierarchicalList</excludedCommands>
-        <excludedCommands>LevelDown</excludedCommands>
-        <excludedCommands>LevelUp</excludedCommands>
-        <excludedCommands>List</excludedCommands>
-        <excludedCommands>MoveItem</excludedCommands>
         <excludedCommands>SearchEverywhere</excludedCommands>
-        <excludedCommands>SetDeletionMark</excludedCommands>
-        <excludedCommands>Tree</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ФизическиеЛицаФизическоеЛицо</name>
           <id>117</id>
@@ -244,7 +231,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.ФизическиеЛица.StandardCommand.Refresh</commandName>
+            <commandName>0</commandName>
             <representation>Picture</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -512,11 +499,7 @@
           <segments>Позиции</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>ChangeHistory</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <excludedCommands>CopyToClipboard</excludedCommands>
-        <excludedCommands>Create</excludedCommands>
         <excludedCommands>SearchEverywhere</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ПозицииПозиция</name>
@@ -726,7 +709,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.Позиции.StandardCommand.Refresh</commandName>
+            <commandName>0</commandName>
             <representation>Picture</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>

@@ -189,7 +189,6 @@
       </contextMenu>
       <type>CheckBoxField</type>
       <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
@@ -244,6 +243,52 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
+    <items xsi:type="form:FormField">
+      <name>СписокПечатныхФормПараметрПредставление</name>
+      <id>103</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокПечатныхФорм.ПараметрПредставление</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СписокПечатныхФормПараметрПредставлениеРасширеннаяПодсказка</name>
+        <id>105</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокПечатныхФормПараметрПредставлениеКонтекстноеМеню</name>
+        <id>104</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>StartChoice</event>
+          <name>СписокПечатныхФормПараметрПредставлениеНачалоВыбора</name>
+        </handlers>
+        <handlers>
+          <event>ChoiceProcessing</event>
+          <name>СписокПечатныхФормПараметрПредставлениеОбработкаВыбора</name>
+        </handlers>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <listChoiceMode>true</listChoiceMode>
+        <typeDomainEnabled>true</typeDomainEnabled>
+      </extInfo>
+    </items>
     <commandBarLocation>None</commandBarLocation>
     <autoCommandBar>
       <name>СписокПечатныхФормКоманднаяПанель</name>
@@ -256,6 +301,14 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>СписокПечатныхФормПриАктивизацииСтроки</name>
+    </handlers>
+    <handlers>
+      <event>OnActivateCell</event>
+      <name>СписокПечатныхФормПриАктивизацииЯчейки</name>
+    </handlers>
     <searchStringAddition>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -984,6 +1037,41 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>НаименованиеПараметра</name>
+      <title>
+        <key>ru</key>
+        <value>Наименование параметра</value>
+      </title>
+      <id>18</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ДоступныеПараметры</name>
+      <title>
+        <key>ru</key>
+        <value>Доступные параметры</value>
+      </title>
+      <id>19</id>
+      <valueType>
+        <types>ValueList</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>ПараметрыЗаказа</name>
@@ -1060,36 +1148,6 @@
     <extInfo xsi:type="form:ValueListExtInfo">
       <itemValueType/>
     </extInfo>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьДоступныеПечатныеФормы</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить доступные печатные формы</value>
-    </title>
-    <id>7</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>ФоновоеЗаданиеПолучитьФайлыПечатныхФорм</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить файлы печатных форм</value>
-    </title>
-    <id>8</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <attributes>
     <name>ОрганизацияБизнесСетиСсылка</name>
@@ -1261,6 +1319,106 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>ДоступныеПараметры</name>
+      <title>
+        <key>ru</key>
+        <value>Доступные параметры</value>
+      </title>
+      <id>16</id>
+      <valueType>
+        <types>ValueList</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>НаименованиеПараметра</name>
+      <title>
+        <key>ru</key>
+        <value>Наименование параметра</value>
+      </title>
+      <id>17</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ПараметрЗначение</name>
+      <title>
+        <key>ru</key>
+        <value>Параметр значение</value>
+      </title>
+      <id>21</id>
+      <valueType/>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ПараметрПредставление</name>
+      <title>
+        <key>ru</key>
+        <value>Параметр</value>
+      </title>
+      <id>22</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>Кэш</name>
+    <title>
+      <key>ru</key>
+      <value>Кэш</value>
+    </title>
+    <id>15</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БлокироватьИзменениеСписка</name>
+    <title>
+      <key>ru</key>
+      <value>Блокировать изменение списка</value>
+    </title>
+    <id>23</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>Загрузить</name>

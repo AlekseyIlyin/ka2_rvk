@@ -43,8 +43,8 @@
   <content>Catalog.МЧД003</content>
   <content>XDTOPackage.ON_EMCHD_1_928_00_01_01_01</content>
   <content>Catalog.КлассификаторПолномочийФНСМЧД002</content>
-  <content>Catalog.КлассификаторПолномочийМЧД003</content>
   <content>Enum.ВариантыЗаполненияПолномочийМЧД</content>
+  <content>Catalog.КлассификаторПолномочийМЧД003</content>
   <content>EventSubscription.ЗаписатьМашиночитаемуюДоверенностьВЖурнал</content>
   <content>DefinedType.МашиночитаемаяДоверенность</content>
   <content>DefinedType.ИсточникЗаписиЖурналаМЧД</content>
@@ -55,5 +55,8 @@
   <content>Constant.ОтключитьПодборМЧДПоКПППриПодписанииИПроверке</content>
   <content>Constant.ОтключитьАвтоматическоеДовериеПолнымПолномочиям</content>
   <content>Constant.ОтключитьЗаполнениеТекстовыхПолномочийПоУмолчанию</content>
+  <content>InformationRegister.ОчередьЗапросовВРеестрМЧДЭДО</content>
+  <content>ScheduledJob.ОбработкаОчередиЗапросовВРеестрМЧДЭДО</content>
+  <content>CommonModule.МашиночитаемыеДоверенностиСлужебный</content>
   <parentSubsystem>Subsystem.ЭлектронноеВзаимодействие.Subsystem.ОбменСКонтрагентами</parentSubsystem>
 </mdclass:Subsystem>

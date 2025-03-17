@@ -287,7 +287,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.Resource.ИдентификаторПриложения</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.Resource.ИдентификаторЗаявки</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -363,14 +363,14 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.StandardAttribute.Active</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.StandardAttribute.Active</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -381,7 +381,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.StandardAttribute.LineNumber</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.StandardAttribute.LineNumber</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -392,7 +392,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.StandardAttribute.Recorder</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.StandardAttribute.Recorder</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -403,7 +403,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.StandardAttribute.Period</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.StandardAttribute.Period</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -449,45 +449,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ШаблоныОтветовНаЗаявкиКабинетСотрудника</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ПубличныеИдентификаторыОбъектовУправлениеПерсоналом.Dimension.Ссылка</name>
 		<right>
 			<name>Edit</name>
@@ -513,7 +474,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ИсключенияИзПравилПубликацииКабинетСотрудника</name>
+		<name>InformationRegister.ИсключенияИзПравилПубликацииУправлениеПерсоналом</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -711,6 +672,29 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиОтсутствийКабинетСотрудника</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>InformationRegister.НеобработанныеОбъектыУправлениеПерсоналом</name>
@@ -757,7 +741,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.БудущиеСобытияУправлениеПерсоналом.Dimension.Сотрудник</name>
+		<name>InformationRegister.БудущиеСобытияУправлениеПерсоналом.Dimension.Объект</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -831,7 +815,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СостояниеОтложенногоПодключенияКСервису.Resource.Состояние</name>
+		<name>InformationRegister.СостояниеПодключенияПриложенияУправлениеПерсоналом.Resource.Состояние</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

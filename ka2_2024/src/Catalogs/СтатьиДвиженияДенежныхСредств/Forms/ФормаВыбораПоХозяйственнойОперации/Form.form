@@ -161,20 +161,7 @@
           <segments>СписокПоХозяйственнойОперации</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Change</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <excludedCommands>CopyToClipboard</excludedCommands>
-        <excludedCommands>Create</excludedCommands>
-        <excludedCommands>CreateFolder</excludedCommands>
-        <excludedCommands>Delete</excludedCommands>
-        <excludedCommands>DynamicListStandardSettings</excludedCommands>
-        <excludedCommands>LevelDown</excludedCommands>
-        <excludedCommands>LevelUp</excludedCommands>
-        <excludedCommands>ListSettings</excludedCommands>
-        <excludedCommands>LoadDynamicListSettings</excludedCommands>
-        <excludedCommands>MoveItem</excludedCommands>
-        <excludedCommands>OutputList</excludedCommands>
-        <excludedCommands>SaveDynamicListSettings</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СписокПоХозяйственнойОперацииНаименование</name>
           <id>186</id>
@@ -251,7 +238,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СписокПоХозяйственнойОперации.StandardCommand.Choose</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -558,7 +545,6 @@
           <segments>СписокВсе</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
-        <excludedCommands>Create</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СписокВсеНаименование</name>
           <id>146</id>
@@ -635,7 +621,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СписокВсе.StandardCommand.Choose</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -702,7 +688,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>Form.Item.СписокВсе.StandardCommand.CreateFolder</commandName>
+            <commandName>0</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>

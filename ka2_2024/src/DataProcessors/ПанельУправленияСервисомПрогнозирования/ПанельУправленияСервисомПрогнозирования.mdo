@@ -121,6 +121,42 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="2e0e4d35-af38-4ea3-a7b5-779b0dc70eae">
+    <name>ОтчетПоПроблемам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по проблемам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="388438c3-3851-496a-b711-a522e064402d">
+    <name>ВопросПрерыванияОбученияМодели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопрос прерывания обучения модели</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="137d0e8c-858b-4d24-a083-3dd1f750cc4c">
+    <name>РасчетЗатратНаПостроениеПрогноза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет затрат на построение прогноза</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05bd6536-9142-407e-b4b3-e8b4c6ce3c0f">
+    <name>БлокировкаСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка сервиса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="17e49244-a3d3-402d-8ee2-98252adf2bf9">
     <name>ФильтрОтправляемыхДанныхНоменклатура</name>
     <synonym>
@@ -158,6 +194,37 @@
     <synonym>
       <key>ru</key>
       <value>Построитель графика сезонности</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c181e1c5-b6ca-4f4b-903c-5c1a6249b918">
+    <name>ТекстПользовательскогоСоглашения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст пользовательского соглашения</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e6934f79-d617-49b5-97fd-9a09a63be9ff">
+    <name>МакетПросмотрВыгружаемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет просмотр выгружаемых данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="1bfde77e-3796-45c9-af09-e178746d2eb3">
+    <name>ФильтрОтправляемыхДанныхОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр отправляемых данных операции</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="345bde97-bd37-4e69-8fed-bcbab192ffdf">
+    <name>ФильтрОтправляемыхДанныхДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр отправляемых данных документы</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

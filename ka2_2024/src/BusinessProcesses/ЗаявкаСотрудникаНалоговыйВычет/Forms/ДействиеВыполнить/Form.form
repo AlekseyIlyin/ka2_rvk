@@ -2237,12 +2237,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <excludedCommands>Activate</excludedCommands>
-  <excludedCommands>Copy</excludedCommands>
-  <excludedCommands>Delete</excludedCommands>
-  <excludedCommands>Execute</excludedCommands>
-  <excludedCommands>ExecuteAndClose</excludedCommands>
-  <excludedCommands>SetDeletionMark</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -2502,7 +2496,7 @@
     </title>
     <id>21</id>
     <valueType>
-      <types>CatalogRef.ШаблоныОтветовНаЗаявкиКабинетСотрудника</types>
+      <types>CatalogRef.ТиповыеОтветыНаЗаявкиКабинетСотрудника</types>
     </valueType>
     <view>
       <common>true</common>

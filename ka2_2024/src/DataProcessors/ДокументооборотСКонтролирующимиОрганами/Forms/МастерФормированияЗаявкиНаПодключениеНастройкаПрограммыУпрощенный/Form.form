@@ -3757,25 +3757,58 @@
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
+      <items xsi:type="form:Decoration">
+        <name>Отступ</name>
+        <id>715</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОтступРасширеннаяПодсказка</name>
+          <id>717</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОтступКонтекстноеМеню</name>
+          <id>716</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаЧтоДелать</name>
-        <id>128</id>
-        <items xsi:type="form:Decoration">
-          <name>Декорация3</name>
-          <id>455</id>
+        <name>ГруппаОтправитьСогласиеЕНС</name>
+        <id>702</id>
+        <items xsi:type="form:FormField">
+          <name>ОтправитьСогласиеЕНС</name>
+          <id>699</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ОтправитьСогласиеЕНС</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ОтправитьСогласиеЕНСПриИзменении</name>
+          </handlers>
           <extendedTooltip>
-            <name>Декорация3РасширеннаяПодсказка</name>
-            <id>457</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ОтправитьСогласиеЕНСРасширеннаяПодсказка</name>
+            <id>701</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -3784,28 +3817,23 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>Декорация3КонтекстноеМеню</name>
-            <id>456</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ОтправитьСогласиеЕНСКонтекстноеМеню</name>
+            <id>700</id>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
         <items xsi:type="form:Decoration">
-          <name>Рекомндации</name>
-          <id>428</id>
+          <name>ОтправитьСогласиеЕНСПояснение</name>
+          <id>704</id>
           <title>
             <key>ru</key>
-            <value>Рекомендуем:</value>
+            <value>Отправить &lt;link согласие>согласие&lt;/> для быстрой загрузки данных ЕНС. &lt;link https://buh.ru/articles/varianty-avtorizatsii-i-dostupa-k-dannym-lichnogo-kabineta-fns-iz-programm-1s.html>Подробнее&lt;/></value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -3813,13 +3841,8 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>РекомндацииРасширеннаяПодсказка</name>
-            <id>430</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ОтправитьСогласиеЕНСПояснениеРасширеннаяПодсказка</name>
+            <id>706</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -3828,108 +3851,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>РекомндацииКонтекстноеМеню</name>
-            <id>429</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <verticalStretch>false</verticalStretch>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </items>
-        <items xsi:type="form:Decoration">
-          <name>РекомендацияРезервныйКлюч</name>
-          <id>150</id>
-          <title>
-            <key>ru</key>
-            <value>- сделайте резервную копию &lt;link закрытого ключа>закрытого ключа&lt;/>. &lt;link Как сделать резервную копию ключа?>Подробнее...&lt;/></value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>РекомендацияРезервныйКлючРасширеннаяПодсказка</name>
-            <id>152</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>РекомендацияРезервныйКлючКонтекстноеМеню</name>
-            <id>151</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <formatted>true</formatted>
-          <type>Label</type>
-          <width>70</width>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <handlers>
-              <event>URLProcessing</event>
-              <name>ЗаголовокСообщитеОбОтправкеРекомендацияОбработкаНавигационнойСсылки</name>
-            </handlers>
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </items>
-        <items xsi:type="form:Decoration">
-          <name>РекомендацияДругиеПриложения</name>
-          <id>168</id>
-          <title>
-            <key>ru</key>
-            <value>- подключите организацию к 1С-Отчетности из других приложений 1С. &lt;link Подробнее...>Подробнее...&lt;/>
-</value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>РекомендацияДругиеПриложенияРасширеннаяПодсказка</name>
-            <id>170</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>РекомендацияДругиеПриложенияКонтекстноеМеню</name>
-            <id>169</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ОтправитьСогласиеЕНСПояснениеКонтекстноеМеню</name>
+            <id>705</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <formatted>true</formatted>
@@ -3938,49 +3861,8 @@
           <extInfo xsi:type="form:LabelDecorationExtInfo">
             <handlers>
               <event>URLProcessing</event>
-              <name>ЗаголовокДругиеПриложенияРекомендацияОбработкаНавигационнойСсылки</name>
+              <name>ОтправитьСогласиеЕНСПояснениеОбработкаНавигационнойСсылки</name>
             </handlers>
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </items>
-        <items xsi:type="form:Decoration">
-          <name>Декорация1</name>
-          <id>434</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>Декорация1РасширеннаяПодсказка</name>
-            <id>436</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>Декорация1КонтекстноеМеню</name>
-            <id>435</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <verticalStretch>false</verticalStretch>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </items>
@@ -3989,18 +3871,17 @@
         <userVisible>
           <common>true</common>
         </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа отправить согласие ЕНС</value>
+        </title>
         <toolTip>
           <key>ru</key>
-          <value>Группа что делать</value>
+          <value>Группа отправить согласие ЕНС</value>
         </toolTip>
         <extendedTooltip>
-          <name>ГруппаЧтоДелатьРасширеннаяПодсказка</name>
-          <id>129</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <name>ГруппаОтправитьСогласиеЕНСРасширеннаяПодсказка</name>
+          <id>703</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -4010,34 +3891,104 @@
         </extendedTooltip>
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>Vertical</group>
-          <verticalSpacing>None</verticalSpacing>
+          <group>AlwaysHorizontal</group>
+          <behavior>Auto</behavior>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
-      <items xsi:type="form:Decoration">
-        <name>ЗавершениеНастройки1СЭДО</name>
-        <id>188</id>
-        <title>
-          <key>ru</key>
-          <value>Далее будет выполнено завершение подключения к сервису 1С-ЭДО.</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ЗавершениеНастройки1СЭДОРасширеннаяПодсказка</name>
-          <id>190</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаЗавершениеНастройки1СЭДО</name>
+        <id>707</id>
+        <items xsi:type="form:FormField">
+          <name>ПродолжитьПодключениеЭДО</name>
+          <id>709</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ПродолжитьПодключениеЭДО</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПродолжитьПодключениеЭДОПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ПродолжитьПодключениеЭДОРасширеннаяПодсказка</name>
+            <id>711</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПродолжитьПодключениеЭДОКонтекстноеМеню</name>
+            <id>710</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ПродолжитьПодключениеЭДОПояснение</name>
+          <id>712</id>
+          <title>
+            <key>ru</key>
+            <value>Завершить подключение к сервису 1С-ЭДО.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ПродолжитьПодключениеЭДОПояснениеРасширеннаяПодсказка</name>
+            <id>714</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПродолжитьПодключениеЭДОПояснениеКонтекстноеМеню</name>
+            <id>713</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа завершение настройки1 СЭДО</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа завершение настройки1 СЭДО</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаЗавершениеНастройки1СЭДОРасширеннаяПодсказка</name>
+          <id>708</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -4045,22 +3996,14 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>ЗавершениеНастройки1СЭДОКонтекстноеМеню</name>
-          <id>189</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>Label</type>
-        <height>2</height>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-          <verticalAlign>Center</verticalAlign>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -4117,25 +4060,16 @@
           </extInfo>
         </items>
         <items xsi:type="form:Button">
-          <name>ЗавершитьПодключениеКЭДО</name>
-          <id>279</id>
-          <title>
-            <key>ru</key>
-            <value>Завершить подключение к 1С-ЭДО</value>
-          </title>
+          <name>ОК</name>
+          <id>718</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ЗавершитьПодключениеКЭДОРасширеннаяПодсказка</name>
-            <id>280</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <name>ОКРасширеннаяПодсказка</name>
+            <id>719</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4144,11 +4078,19 @@
             </extInfo>
           </extendedTooltip>
           <type>UsualButton</type>
-          <commandName>Form.Command.ЗавершитьПодключениеКЭДО</commandName>
+          <commandName>Form.Command.ОК</commandName>
           <representation>Auto</representation>
+          <width>9</width>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
+          <backColor xsi:type="core:ColorDef">
+            <red>252</red>
+            <green>225</green>
+          </backColor>
+          <font xsi:type="core:AutoFont">
+            <bold>true</bold>
+          </font>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
@@ -4713,6 +4655,10 @@
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
   <handlers>
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
@@ -5682,6 +5628,91 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ОтправитьСогласиеЕНС</name>
+    <title>
+      <key>ru</key>
+      <value>Отправить согласие ЕНС</value>
+    </title>
+    <id>53</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПродолжитьПодключениеЭДО</name>
+    <title>
+      <key>ru</key>
+      <value>Продолжить подключение ЭДО</value>
+    </title>
+    <id>57</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПодсистемаЕНССуществует</name>
+    <title>
+      <key>ru</key>
+      <value>Подсистема ЕНССуществует</value>
+    </title>
+    <id>58</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СогласиеЕНС</name>
+    <title>
+      <key>ru</key>
+      <value>Согласие ЕНС</value>
+    </title>
+    <id>59</id>
+    <valueType>
+      <types>DocumentRef.УведомлениеОСпецрежимахНалогообложения</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СогласиеЕНСОтправлено</name>
+    <title>
+      <key>ru</key>
+      <value>Согласие ЕНСОтправлено</value>
+    </title>
+    <id>60</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ПодготовитьНовоеЗаявление</name>
     <title>
@@ -5741,27 +5772,6 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>НастроитьАвтоматически</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ЗавершитьПодключениеКЭДО</name>
-    <title>
-      <key>ru</key>
-      <value>Завершить подключение к 1С-ЭДО</value>
-    </title>
-    <id>4</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Завершить подключение к 1С-ЭДО</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ЗавершитьПодключениеКЭДО</name>
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
@@ -5897,6 +5907,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОбратитьсяВИФНС</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОК</name>
+    <title>
+      <key>ru</key>
+      <value>ОК</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>ОК</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОК</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

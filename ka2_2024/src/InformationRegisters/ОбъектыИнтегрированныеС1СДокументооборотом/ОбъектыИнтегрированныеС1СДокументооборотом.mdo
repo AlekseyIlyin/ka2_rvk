@@ -15,6 +15,7 @@
     <value>Объекты, интегрированные с 1С:Документооборотом</value>
   </synonym>
   <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОбъектыИнтегрированныеС1СДокументооборотом.Form.ФормаЗаписи</defaultRecordForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -55,6 +56,24 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Объект, интегрированный с 1С:Документооборотом</value>
+  </recordPresentation>
+  <attributes uuid="e6490244-cb59-4fbd-ae2c-c9d118d7c7ea">
+    <name>ДополнительныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <dimensions uuid="b9ea4da9-4f2b-43da-b136-2921b8a1381f">
     <name>Объект</name>
     <synonym>
@@ -129,6 +148,15 @@
     <synonym>
       <key>ru</key>
       <value>Синхронизация связей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="67f25452-f751-45ed-af49-be4b0edfb8bf">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

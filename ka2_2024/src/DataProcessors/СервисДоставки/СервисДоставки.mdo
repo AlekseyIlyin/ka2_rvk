@@ -9,7 +9,6 @@
     <key>ru</key>
     <value>Сервис доставки</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.СервисДоставки.Form.Форма</defaultForm>
   <help>
     <pages>
@@ -90,6 +89,34 @@
     <synonym>
       <key>ru</key>
       <value>Карточка заказа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ad4d53d5-10bc-475a-9c44-9fb08392fbbf">
+    <name>КарточкаЗаказаКурьерика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка заказа (1С-Курьерика)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="39b44f4e-8850-4144-b74f-fafa02e2a03d">
+    <name>КарточкаЗаказаСДЭК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка заказа СДЭК</value>
     </synonym>
     <help>
       <pages>
@@ -284,48 +311,34 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="327febae-3e19-4a23-88a2-47d06b067dad">
-    <name>ФормаВыбораТипаГрузоперевозки</name>
+    <name>ВыборТипаГрузоперевозки</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора типа грузоперевозки</value>
+      <value>Выбор типа грузоперевозки</value>
     </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="ad4d53d5-10bc-475a-9c44-9fb08392fbbf">
-    <name>КарточкаЗаказаКурьерика</name>
-    <synonym>
-      <key>ru</key>
-      <value>Карточка заказа (1С-Курьерика)</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="c24e4656-6611-44ef-9c44-c31602af6c52">
-    <name>ФормаИсторииЗаказов</name>
+    <name>ИсторияЗаказов</name>
     <synonym>
       <key>ru</key>
-      <value>Форма истории заказов</value>
+      <value>История заказов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="81e12909-4fd6-4968-a8e4-2b6cfdc0d864">
-    <name>ФормаПросмотраЗаказа</name>
+    <name>ПросмотрЗаказа</name>
     <synonym>
       <key>ru</key>
-      <value>Форма просмотра заказа</value>
+      <value>Просмотр заказа</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="41e655eb-9bb4-4742-852b-7fe7a2868ad5">
-    <name>ФормаПросмотраPDF</name>
+    <name>ПросмотрPDF</name>
     <synonym>
       <key>ru</key>
       <value>Просмотр документа PDF</value>
@@ -334,28 +347,37 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="d88aa580-c546-4c6e-a3f1-979a27e4517b">
-    <name>ФормаПовторнойОтправкиЗаказов</name>
+    <name>ПовторнаяОтправкаЗаказов</name>
     <synonym>
       <key>ru</key>
-      <value>Форма повторной отправки заказов</value>
+      <value>Повторная отправка заказов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="d2834863-37ea-45cd-887d-7346154d72bd">
-    <name>ФормаГрупповогоСозданияЗаказовНаДоставку</name>
+    <name>ГрупповоеОформлениеЗаказов</name>
     <synonym>
       <key>ru</key>
-      <value>Форма группового создания заказов на доставку</value>
+      <value>Групповое оформление заказов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="79eea807-5064-49d3-ba87-f4325c5e52cc">
-    <name>ФормаПодчиненныхЗаказовНаДоставку</name>
+    <name>ПодчиненныеЗаказы</name>
     <synonym>
       <key>ru</key>
-      <value>Форма подчиненных заказов на доставку</value>
+      <value>Подчиненные заказы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dc132820-f255-47dd-99e8-57b22332b3e6">
+    <name>ОтражениеДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение доставки</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -423,21 +445,25 @@
       <value>Мультизаказ</value>
     </synonym>
   </templates>
-  <commands uuid="c8b3928d-3e7c-4ef8-907e-2176a4ed870e">
-    <name>СписокЗаказов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заказы сервиса 1С:Доставка</value>
-    </synonym>
-    <group>NavigationPanelOrdinary</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
   <commands uuid="eabfc8d6-810f-416c-9385-f5b55355722e">
     <name>ОтслеживаниеЗаказа</name>
     <synonym>
       <key>ru</key>
-      <value>Трекер заказов сервиса 1С:Доставка</value>
+      <value>Трекер заказов сервиса доставки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Перейти к трекеру заказов сервиса доставки</value>
+    </toolTip>
+  </commands>
+  <commands uuid="c8b3928d-3e7c-4ef8-907e-2176a4ed870e">
+    <name>СписокЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деловые линии (1C:Доставка)</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
     <commandParameterType/>
@@ -447,7 +473,7 @@
     <name>СписокЗаказов1СКурьер</name>
     <synonym>
       <key>ru</key>
-      <value>Заказы сервиса 1С:Курьер</value>
+      <value>Яндекс.Доставка (1C:Курьер)</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
     <commandParameterType/>
@@ -457,9 +483,29 @@
     <name>СписокЗаказов1СКурьерика</name>
     <synonym>
       <key>ru</key>
-      <value>Заказы сервиса 1С-Курьерика</value>
+      <value>Собственная курьерская служба (1C-Курьерика)</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="9880a067-20de-4843-8256-d33c49d5fa9b">
+    <name>СписокЗаказов1ССДЭК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы 1С:СДЭК</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="2720acd6-336f-4780-b0d0-992e16f5d035">
+    <name>ОтражениеДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение доставки</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
     <commandParameterType/>
     <representation>Auto</representation>
   </commands>

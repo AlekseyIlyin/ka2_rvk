@@ -106,6 +106,11 @@
     <valueField>Catalog.ВидыРетроБонусовКлиентов.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
   </characteristics>
   <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
@@ -197,19 +202,19 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="bc8f6266-1435-49e0-81f3-d74c9f013b84">
-    <name>ПоказательПродаж</name>
+    <name>ПоказательТоваров</name>
     <synonym>
       <key>ru</key>
-      <value>Показатель продаж</value>
+      <value>Целевой показатель продаж</value>
     </synonym>
     <type>
-      <types>EnumRef.ЦелевыеПоказателиПродажРетроБонусов</types>
+      <types>EnumRef.ЦелевыеПоказателиРетроБонусовПоТоварам</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ЦелевыеПоказателиПродажРетроБонусов.EnumValue.Количество</value>
+      <value>Enum.ЦелевыеПоказателиРетроБонусовПоТоварам.EnumValue.Количество</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -277,13 +282,13 @@
       <value>База расчета продаж</value>
     </synonym>
     <type>
-      <types>EnumRef.БазыРасчетаПродажРетроБонусов</types>
+      <types>EnumRef.БазыРасчетаРетроБонусов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.БазыРасчетаПродажРетроБонусов.EnumValue.ВыручкаВзаиморасчеты</value>
+      <value>Enum.БазыРасчетаРетроБонусов.EnumValue.ВыручкаВзаиморасчеты</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -315,6 +320,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:ReferenceValue">
       <value>Enum.ПорядкиРаспределенияРетроБонусов.EnumValue.ПропорциональноВыручке</value>
     </fillValue>

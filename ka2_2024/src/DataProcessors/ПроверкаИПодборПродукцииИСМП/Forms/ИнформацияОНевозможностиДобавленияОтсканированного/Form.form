@@ -229,6 +229,10 @@
               <valuesPicture xsi:type="core:PictureRef">
                 <picture>CommonPicture.УпаковкиПоВидамПродукцииИСМП</picture>
               </valuesPicture>
+              <border xsi:type="core:BorderDef">
+                <style>Single</style>
+                <width>1</width>
+              </border>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -668,7 +672,7 @@
             </userVisible>
             <title>
               <key>ru</key>
-              <value>Проверка и побор</value>
+              <value>Проверка и подбор</value>
             </title>
             <enableContentChange>true</enableContentChange>
             <extendedTooltip>
@@ -1461,6 +1465,7 @@
     <name>ПриСозданииНаСервере</name>
   </handlers>
   <width>90</width>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>

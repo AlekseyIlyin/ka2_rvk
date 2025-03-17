@@ -923,21 +923,6 @@
     </columns>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьГрафикДвиженияЗаказа</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить график движения заказа</value>
-    </title>
-    <id>4</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ОрганизацияБизнесСетиСсылка</name>
     <title>
       <key>ru</key>
@@ -1479,21 +1464,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ФоновоеЗаданиеПолучитьГрафикДвиженияЗаказаПоТрекНомеру</name>
-    <title>
-      <key>ru</key>
-      <value>Фоновое задание получить график движения заказа по трек номеру</value>
-    </title>
-    <id>36</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
     <name>ДополнительнаяИнформация</name>
     <title>
       <key>ru</key>
@@ -1623,6 +1593,21 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Кэш</name>
+    <title>
+      <key>ru</key>
+      <value>Кэш</value>
+    </title>
+    <id>43</id>
+    <valueType/>
     <view>
       <common>true</common>
     </view>
